@@ -1,0 +1,14 @@
+# dont backup compiled binaries
+*.exe 
+*.uld
+
+# Backups
+*.bak
+*.bak.*
+*.old
+*.tmp
+
+# Windows junk
+Thumbs.db
+desktop.ini
+
