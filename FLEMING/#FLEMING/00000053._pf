@@ -1,0 +1,3201 @@
+.head 0 +  Application Description: SQLWindows 5.01 Jans External Programs Class
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF580000 0058000000E80200 0091010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left:   0.15"
+.head 3 -  Top:    0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left:   5.1"
+.head 3 -  Top:    2.979"
+.head 3 -  Width:  4.688"
+.head 3 -  Height: 2.906"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   Default
+.head 3 -  Top:    Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   6.6"
+.head 3 -  Top:    0.521"
+.head 2 -  Fully Qualified External References? No
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: GENERAL.APL
+.head 2 -  File Include: BUTTON.APL
+.head 2 -  File Include: RUNPROG.APL
+.head 2 -  File Include: STRINGS.APL
+.head 2 -  File Include: DATES.APL
+.head 2 -  File Include: SPNFIELD.APL
+.head 2 -  File Include: VTSPIN.APL
+.head 2 -  File Include: BGTEXT.APL
+.head 2 -  File Include: DATFIELD.APL
+.head 2 -  File Include: DIALOG.APL
+.head 2 -  File Include: FORM.APL
+.head 2 -  File Include: VTWIN.APL
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Italic
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Black
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for EXTRNPRG.APL
+.head 4 -  Number: EXTRNPRGAplMsgOffSet = SAM_User + 8100
+.head 4 -  Number: EXTRNPRGAplConstOffSet = 4250
+.head 4 -  ! Message go up to AplOffSet + 99
+.head 4 -  !
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 1373187828
+0000: 8600000038000000 0000000000000000 020000050000004C 000000E0010D0000
+0020: 00FF3F5900B80000 0100FFFFE0660000 0001FE00FF837300 000001FB00FF0F80
+0040: 000000E8040D0000 FF3F
+.enddata
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 3085971705
+0000: 180A000015050000 0000000000000000 0200001700FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F0D003C00 001563006C737062
+0040: 5072696E00744743 4F7264657200466F 726D1E000000F001 000000E8010D0000
+0060: FF3F0180440D0000 010000F814636C07 416464724C806162 656C731E00EC0001
+0080: 00D9010D00FF7F01 0C800D00020000D0 0019636C700F4D61 696C0046696C654C
+00A0: 69737420696E671E 0000017A000001F6 0D00FF1F01800D03 00030000000C1C63
+00C0: 6C47656E40657261 6C1E0000F4010000 EC010D00FF3F0180 060D000400000038
+00E0: 09636C4578106974 1E000001003D0001 0DFB00FF0F018004 008100050000000C
+0100: 0350696345787020 616E641E0000017A 000002F4040000FF 1F01800403000600
+0120: 0000123C636C546F 0067676C65427574 74106F6E1E000001 00BD0002FB00FF0F
+0140: 01802E0000000007 00000011630A6C70 5374617200745072 6F6772616D60BA00
+0160: 00000700EF02FE00 FF9B040002FB00FF 0F08000000EE0200 FF3F0C00B0000001
+0180: 0D00FFFF80190000 00030400FE00FF83 1D00000002FB00FF 0F21000000EE0100
+01A0: FF3F0180660D0008 000E115370696E00 536561736F6E5965 1061721E00000100
+01C0: 3D00010DFB00FF8F 0180040100090000 000C63C364664765 3B6C00017A000003
+01E0: F700FF1F01802F00 0000000A00000010 04636C4469616C6F F867476560860000
+0200: 000500CF010DFE00 FF930D000002FB00 FF0F11000000E804 0D0000FF3F1E00B9
+0220: 000300FFFFE02200 000001FE00FF6301 802F00800B000000 0B636C0C466F4261
+0240: 7365648600000500 CF010DFE00FF9B0D 0002FB00FF6F1100 EE0400FFBF1EB900
+0260: 0300FFFFE6220001 FE00FF6301800D00 840C000017636C8F 5072690874426169
+0280: 63526560706F7274 1E00F4010000EC01 0D00FF3F01806604 000D000E10546F6F
+02A0: 6C0054697057696E 646F88771E000001 00DE0003FD00FFC7 01800D00000E0000
+02C0: 000B68634053716C 48616E6C88651E00 0001009E00010DFD 00FF070180340000
+02E0: C0000F000000140D 70656C6563007446 726F6D546162006C 656C00000004003D
+0300: 00010DFB00FF6F0D 00EE0100FF3F1A00 B800000100FFFFE0 2700000001FE00FF
+0320: 6301800400801000 00000D636C245365 6563496E10746F1E 00000100BD0003FB
+0340: 00FF0F0180220019 0011001D63026C54 626C4D616B786553 65650064526F774B
+0360: 6579410072726179 74000000F604008E 02000100FE00C180 01000000BF04B100
+0380: 010D00FFFFE61100 01FE00FF9B1E0002 FB00FF0F0180B700 000000120000000F
+03A0: 63366C6165471E65 6C3602C200150000 00B3010D00FFFFE4 0D000001FE00FF9B
+03C0: 1A0001FB00FF6F27 00EE0100FF3F3400 B9000200FFFFE038 00000002FE00FF83
+03E0: 3C00000002FB00FF 0F40000000EE0200 FF3F4400B8000002 00FFFFE048000000
+0400: 02FE00FF834C0000 0002FB00FF0F5000 00008E02000100FE 00C9800100003F54
+0420: 00300000010D0001 FA00002780010000 FFC058000000010D FE00FF8365000000
+0440: 01FB00FF0F720000 00EE0100FF3F7F00 B800000100FFFFE0 8C00000001FE00FF
+0460: 839900000001FB00 FF0FA6000000EE01 00FF3FB300B80000 0300FFFF1801800D
+0480: 0013003000000C63 63627E471EA30001 000067010D00FFFF 3101800400141000
+04A0: 00000C6654610743 61636865461E0001 0000EF03FE00FF43 0180150000061500
+04C0: 0B6366438E61506F 6F405A0000000300 008F071900800001 0100460A009E0080
+04E0: 01FC00001B040003 04FB00FF6F0800EC 010D00FF3F018024 110000160000660B
+0500: 4172794C506F4000 00F4020000880715 00000101E85E0A00 00C980010000BF04
+0520: B100010D00FFFF
+.enddata
+.head 3 +  Pushbutton Class: clspbCustomerPrg
+.head 4 -  Title: &Customer - F3
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  1.788"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: F3
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbCustomerPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbCustomerPrg.sLiveProgramDescription = 'Customer'
+.head 6 -  Set clspbCustomerPrg.sLiveProgramTitle = 'Customer'
+.head 6 -  Set clspbCustomerPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbCustomerPrg.sPlayProgramDescription = 'Customer'
+.head 6 -  Set clspbCustomerPrg.sPlayProgramTitle = 'Customer'
+.head 3 +  Pushbutton Class: clspbLoadPrg
+.head 4 -  Title: &Loads - F4
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  1.788"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: F4
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbLoadPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbLoadPrg.sLiveProgramDescription = 'Loads'
+.head 6 -  Set clspbLoadPrg.sLiveProgramTitle = 'Loads'
+.head 6 -  Set clspbLoadPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbLoadPrg.sPlayProgramDescription = 'Loads'
+.head 6 -  Set clspbLoadPrg.sPlayProgramTitle = 'Loads'
+.head 3 +  Pushbutton Class: clspbFarmsPrg
+.head 4 -  Title: F&arms
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  1.788"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbFarmsPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbFarmsPrg.sLiveProgramDescription = 'Farms'
+.head 6 -  Set clspbFarmsPrg.sLiveProgramTitle = 'Farms'
+.head 6 -  Set clspbFarmsPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbFarmsPrg.sPlayProgramDescription = 'Farms'
+.head 6 -  Set clspbFarmsPrg.sPlayProgramTitle = 'Farms'
+.head 3 +  Pushbutton Class: clspbMailListPrg
+.head 4 -  Title: Mailing List
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  1.788"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbMailListPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbMailListPrg.sLiveProgramDescription = 'Mailist List File'
+.head 6 -  Set clspbMailListPrg.sLiveProgramTitle = 'MailingList'
+.head 6 -  Set clspbMailListPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbMailListPrg.sPlayProgramDescription = 'Mailist List File'
+.head 6 -  Set clspbMailListPrg.sPlayProgramTitle = 'MailingList'
+.head 3 +  Pushbutton Class: clspbStockPrg
+.head 4 -  Title: Stock &Items - F2
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  1.788"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: F2
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbStockPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbStockPrg.sLiveProgramDescription = 'Stock Items'
+.head 6 -  Set clspbStockPrg.sLiveProgramTitle = 'StockItems'
+.head 6 -  Set clspbStockPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbStockPrg.sPlayProgramDescription = 'Stock Items'
+.head 6 -  Set clspbStockPrg.sPlayProgramTitle = 'StockItems'
+.head 3 +  Pushbutton Class: clspbMissedSalesPrg
+.head 4 -  Title: &Missed Sales - F5
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  1.788"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: F5
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbMissedSalesPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbMissedSalesPrg.sLiveProgramDescription = 'Missed Sales'
+.head 6 -  Set clspbMissedSalesPrg.sLiveProgramTitle = 'MissedSales'
+.head 6 -  Set clspbMissedSalesPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbMissedSalesPrg.sPlayProgramDescription = 'Missed Sales'
+.head 6 -  Set clspbMissedSalesPrg.sPlayProgramTitle = 'MissedSales'
+.head 3 +  Pushbutton Class: clspbCustCancelPrg
+.head 4 -  Title: Customer Ca&ncellation
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  1.788"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbCustCancelPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbCustCancelPrg.sLiveProgramDescription = 'Customer Cancelations'
+.head 6 -  Set clspbCustCancelPrg.sLiveProgramTitle = 'CustomerCancelation'
+.head 6 -  Set clspbCustCancelPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbCustCancelPrg.sPlayProgramDescription = 'Customer Cancelations'
+.head 6 -  Set clspbCustCancelPrg.sPlayProgramTitle = 'CustomerCancelation'
+.head 3 +  Pushbutton Class: clspbReceiveNPAsPrg
+.head 4 -  Title: Receive NPAs
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  1.788"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbReceiveNPAsPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbReceiveNPAsPrg.sLiveProgramDescription = 'Receive NPAs'
+.head 6 -  Set clspbReceiveNPAsPrg.sLiveProgramTitle = 'ReceiveNPAs'
+.head 6 -  Set clspbReceiveNPAsPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbReceiveNPAsPrg.sPlayProgramDescription = 'Receive NPAs'
+.head 6 -  Set clspbReceiveNPAsPrg.sPlayProgramTitle = 'ReceiveNPAs'
+.head 3 +  Pushbutton Class: clspbCashReceiptsPrg
+.head 4 -  Title: Cash &Receipts - F6
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  1.788"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: F6
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbCashReceiptsPrg.sLiveProgramSection = IniAccountsLiveSectionName
+.head 6 -  Set clspbCashReceiptsPrg.sLiveProgramDescription = 'Cash Receipts'
+.head 6 -  Set clspbCashReceiptsPrg.sLiveProgramTitle = 'CashReceipts'
+.head 6 -  Set clspbCashReceiptsPrg.sPlayProgramSection = IniAccountsPlaySectionName
+.head 6 -  Set clspbCashReceiptsPrg.sPlayProgramDescription = 'Cash Receipts'
+.head 6 -  Set clspbCashReceiptsPrg.sPlayProgramTitle = 'CashReceipts'
+.head 6 -  Set clspbCashReceiptsPrg.sUserTypeRestrictions = 'AccountsUsers'
+.head 3 +  Pushbutton Class: clspbTransactionsPrg
+.head 4 -  Title: &Transactions - F7
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  1.788"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: F7
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbTransactionsPrg.sLiveProgramSection = IniAccountsLiveSectionName
+.head 6 -  Set clspbTransactionsPrg.sLiveProgramDescription = 'Transactions'
+.head 6 -  Set clspbTransactionsPrg.sLiveProgramTitle = 'Transactions'
+.head 6 -  Set clspbTransactionsPrg.sPlayProgramSection = IniAccountsPlaySectionName
+.head 6 -  Set clspbTransactionsPrg.sPlayProgramDescription = 'Transactions'
+.head 6 -  Set clspbTransactionsPrg.sPlayProgramTitle = 'Transactions'
+.head 6 -  Set clspbTransactionsPrg.sUserTypeRestrictions = 'AccountsUsers'
+.head 3 +  Pushbutton Class: clspbMonthlyARPrg
+.head 4 -  Title: Monthl&y AR
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  1.788"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbMonthlyARPrg.sLiveProgramSection = IniAccountsLiveSectionName
+.head 6 -  Set clspbMonthlyARPrg.sLiveProgramDescription = 'Monthly AR'
+.head 6 -  Set clspbMonthlyARPrg.sLiveProgramTitle = 'MonthlyAR'
+.head 6 -  Set clspbMonthlyARPrg.sPlayProgramSection = IniAccountsPlaySectionName
+.head 6 -  Set clspbMonthlyARPrg.sPlayProgramDescription = 'Monthly AR'
+.head 6 -  Set clspbMonthlyARPrg.sPlayProgramTitle = 'MonthlyAR'
+.head 6 -  Set clspbMonthlyARPrg.sUserTypeRestrictions = 'AccountsUsers'
+.head 3 -  !
+.head 3 +  Pushbutton Class: clspbLabelsPrg
+.head 4 -  Title: &Labels
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbLabelsPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbLabelsPrg.sLiveProgramDescription = 'Labels'
+.head 6 -  Set clspbLabelsPrg.sLiveProgramTitle = 'Labels'
+.head 6 -  Set clspbLabelsPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbLabelsPrg.sPlayProgramDescription = 'Labels'
+.head 6 -  Set clspbLabelsPrg.sPlayProgramTitle = 'Labels'
+.head 3 +  Pushbutton Class: clspbLabelChargesPrg
+.head 4 -  Title: Label Charges
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbLabelChargesPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbLabelChargesPrg.sLiveProgramDescription = 'Label Charges'
+.head 6 -  Set clspbLabelChargesPrg.sLiveProgramTitle = 'LabelCharges'
+.head 6 -  Set clspbLabelChargesPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbLabelChargesPrg.sPlayProgramDescription = 'Label Charges'
+.head 6 -  Set clspbLabelChargesPrg.sPlayProgramTitle = 'LabelCharges'
+.head 3 +  Pushbutton Class: clspbFieldCountLabelsPrg
+.head 4 -  Title: Field Count Labels
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbFieldCountLabelsPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbFieldCountLabelsPrg.sLiveProgramDescription = 'Field Count Labels'
+.head 6 -  Set clspbFieldCountLabelsPrg.sLiveProgramTitle = 'FieldCountLabels'
+.head 6 -  Set clspbFieldCountLabelsPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbFieldCountLabelsPrg.sPlayProgramDescription = 'Field Count Labels'
+.head 6 -  Set clspbFieldCountLabelsPrg.sPlayProgramTitle = 'FieldCountLabels'
+.head 3 +  Pushbutton Class: clspbRoyaltiesPrg
+.head 4 -  Title: Royalties
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbRoyaltiesPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbRoyaltiesPrg.sLiveProgramDescription = 'Royalties'
+.head 6 -  Set clspbRoyaltiesPrg.sLiveProgramTitle = 'Royalties'
+.head 6 -  Set clspbRoyaltiesPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbRoyaltiesPrg.sPlayProgramDescription = 'Royalties'
+.head 6 -  Set clspbRoyaltiesPrg.sPlayProgramTitle = 'Royalties'
+.head 6 -  Set clspbRoyaltiesPrg.sUserTypeRestrictions = 'PriceAdjusters'
+.head 3 +  Pushbutton Class: clspbRoyaltyOwnerItemReportPrg
+.head 4 -  Title: Roy. Owner Item Report
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbRoyaltyOwnerItemReportPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbRoyaltyOwnerItemReportPrg.sLiveProgramDescription = 'Royalty Owner / Item Report'
+.head 6 -  Set clspbRoyaltyOwnerItemReportPrg.sLiveProgramTitle = 'RoyaltyOwnerItemReport'
+.head 6 -  Set clspbRoyaltyOwnerItemReportPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbRoyaltyOwnerItemReportPrg.sPlayProgramDescription = 'Royalty Owner / Item Report'
+.head 6 -  Set clspbRoyaltyOwnerItemReportPrg.sPlayProgramTitle = 'RoyaltyOwnerItemReport'
+.head 6 -  Set clspbRoyaltyOwnerItemReportPrg.sUserTypeRestrictions = 'PriceAdjusters'
+.head 3 +  Pushbutton Class: clspbFreightChargesPrg
+.head 4 -  Title: Freight Charges
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbFreightChargesPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbFreightChargesPrg.sLiveProgramDescription = 'Freight Charges'
+.head 6 -  Set clspbFreightChargesPrg.sLiveProgramTitle = 'FreightCharges'
+.head 6 -  Set clspbFreightChargesPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbFreightChargesPrg.sPlayProgramDescription = 'Freight Charges'
+.head 6 -  Set clspbFreightChargesPrg.sPlayProgramTitle = 'FreightCharges'
+.head 3 +  Pushbutton Class: clspbProhibitionsPrg
+.head 4 -  Title: Prohibitions
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbProhibitionsPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbProhibitionsPrg.sLiveProgramDescription = 'Prohibitions'
+.head 6 -  Set clspbProhibitionsPrg.sLiveProgramTitle = 'Prohibitions'
+.head 6 -  Set clspbProhibitionsPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbProhibitionsPrg.sPlayProgramDescription = 'Prohibitions'
+.head 6 -  Set clspbProhibitionsPrg.sPlayProgramTitle = 'Prohibitions'
+.head 3 +  Pushbutton Class: clspbPromoPrg
+.head 4 -  Title: Point Of Sale
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbPromoPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbPromoPrg.sLiveProgramDescription = 'Point Of Sale'
+.head 6 -  Set clspbPromoPrg.sLiveProgramTitle = 'PointOfSale'
+.head 6 -  Set clspbPromoPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbPromoPrg.sPlayProgramDescription = 'Point Of Sale'
+.head 6 -  Set clspbPromoPrg.sPlayProgramTitle = 'PointOfSale'
+.head 3 +  Pushbutton Class: clspbPriceBreaksPrg
+.head 4 -  Title: Price Breaks
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbPriceBreaksPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbPriceBreaksPrg.sLiveProgramDescription = 'Price Breaks'
+.head 6 -  Set clspbPriceBreaksPrg.sLiveProgramTitle = 'PriceBreaks'
+.head 6 -  Set clspbPriceBreaksPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbPriceBreaksPrg.sPlayProgramDescription = 'Price Breaks'
+.head 6 -  Set clspbPriceBreaksPrg.sPlayProgramTitle = 'PriceBreaks'
+.head 3 +  Pushbutton Class: clspbPaintMasterPrg
+.head 4 -  Title: Paint Master
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbPaintMasterPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbPaintMasterPrg.sLiveProgramDescription = 'Paint Master'
+.head 6 -  Set clspbPaintMasterPrg.sLiveProgramTitle = 'PaintMaster'
+.head 6 -  Set clspbPaintMasterPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbPaintMasterPrg.sPlayProgramDescription = 'Paint Master'
+.head 6 -  Set clspbPaintMasterPrg.sPlayProgramTitle = 'PaintMaster'
+.head 3 +  Pushbutton Class: clspbGradingPrg
+.head 4 -  Title: Grading
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbGradingPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbGradingPrg.sLiveProgramDescription = 'Grading Entry'
+.head 6 -  Set clspbGradingPrg.sLiveProgramTitle = 'GradingEntry'
+.head 6 -  Set clspbGradingPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbGradingPrg.sPlayProgramDescription = 'Grading Entry'
+.head 6 -  Set clspbGradingPrg.sPlayProgramTitle = 'GradingEntry'
+.head 3 +  Pushbutton Class: clspbDepositListingPrg
+.head 4 -  Title: Deposit Listing
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbDepositListingPrg.sLiveProgramSection = IniAccountsLiveSectionName
+.head 6 -  Set clspbDepositListingPrg.sLiveProgramDescription = 'Deposit Listing'
+.head 6 -  Set clspbDepositListingPrg.sLiveProgramTitle = 'DepositListing'
+.head 6 -  Set clspbDepositListingPrg.sPlayProgramSection = IniAccountsPlaySectionName
+.head 6 -  Set clspbDepositListingPrg.sPlayProgramDescription = 'Deposit Listing'
+.head 6 -  Set clspbDepositListingPrg.sPlayProgramTitle = 'DepositListing'
+.head 6 -  Set clspbDepositListingPrg.sUserTypeRestrictions = 'AccountsUsers'
+.head 3 +  Pushbutton Class: clspbDepositsUsedListingPrg
+.head 4 -  Title: Deposits Used Listing
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbDepositsUsedListingPrg.sLiveProgramSection = IniAccountsLiveSectionName
+.head 6 -  Set clspbDepositsUsedListingPrg.sLiveProgramDescription = 'Deposits Used Listing'
+.head 6 -  Set clspbDepositsUsedListingPrg.sLiveProgramTitle = 'DepositsUsedListing'
+.head 6 -  Set clspbDepositsUsedListingPrg.sPlayProgramSection = IniAccountsPlaySectionName
+.head 6 -  Set clspbDepositsUsedListingPrg.sPlayProgramDescription = 'Deposits Used Listing'
+.head 6 -  Set clspbDepositsUsedListingPrg.sPlayProgramTitle = 'DepositsUsedListing'
+.head 6 -  Set clspbDepositsUsedListingPrg.sUserTypeRestrictions = 'AccountsUsers'
+.head 3 +  Pushbutton Class: clspbCreditNoteListingPrg
+.head 4 -  Title: Credit Note Listing
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbCreditNoteListingPrg.sLiveProgramSection = IniAccountsLiveSectionName
+.head 6 -  Set clspbCreditNoteListingPrg.sLiveProgramDescription = 'Credit Note Listing'
+.head 6 -  Set clspbCreditNoteListingPrg.sLiveProgramTitle = 'CreditNoteListing'
+.head 6 -  Set clspbCreditNoteListingPrg.sPlayProgramSection = IniAccountsPlaySectionName
+.head 6 -  Set clspbCreditNoteListingPrg.sPlayProgramDescription = 'Credit Note Listing'
+.head 6 -  Set clspbCreditNoteListingPrg.sPlayProgramTitle = 'CreditNoteListing'
+.head 6 -  Set clspbCreditNoteListingPrg.sUserTypeRestrictions = 'AccountsUsers'
+.head 3 +  Pushbutton Class: clspbUpdateWhenAvailablePrg
+.head 4 -  Title: Update When Avail.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbUpdateWhenAvailablePrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbUpdateWhenAvailablePrg.sLiveProgramDescription = 'Update for When Available'
+.head 6 -  Set clspbUpdateWhenAvailablePrg.sLiveProgramTitle = 'ScheduledUpdateWhenAvailable'
+.head 6 -  Set clspbUpdateWhenAvailablePrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbUpdateWhenAvailablePrg.sPlayProgramDescription = 'Update for When Available'
+.head 6 -  Set clspbUpdateWhenAvailablePrg.sPlayProgramTitle = 'ScheduledUpdateWhenAvailable'
+.head 6 -  Set clspbUpdateWhenAvailablePrg.bLoadAndWait = TRUE
+.head 6 -  Set clspbUpdateWhenAvailablePrg.nRunMode = Window_Minimized
+.head 3 +  Pushbutton Class: clspbGenBarCodeItemCSVFile
+.head 4 -  Title: Generate Item Barcode CSV file
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbGenBarCodeItemCSVFile.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbGenBarCodeItemCSVFile.sLiveProgramDescription = 'Generate Item Barcode CSV file'
+.head 6 -  Set clspbGenBarCodeItemCSVFile.sLiveProgramTitle = 'GenItemBarcodeCSV'
+.head 6 -  Set clspbGenBarCodeItemCSVFile.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbGenBarCodeItemCSVFile.sPlayProgramDescription = 'Generate Item Barcode CSV file'
+.head 6 -  Set clspbGenBarCodeItemCSVFile.sPlayProgramTitle = 'GenItemBarcodeCSV'
+.head 3 +  Pushbutton Class: clspbSalesComparison
+.head 4 -  Title: Sales Comparison
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbSalesComparison.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbSalesComparison.sLiveProgramDescription = 'Sales Comparison Report'
+.head 6 -  Set clspbSalesComparison.sLiveProgramTitle = 'SalesComparison'
+.head 6 -  Set clspbSalesComparison.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbSalesComparison.sPlayProgramDescription = 'Sales Comparison Report'
+.head 6 -  Set clspbSalesComparison.sPlayProgramTitle = 'SalesComparison'
+.head 3 +  Pushbutton Class: clspbPrintGCOrderForm
+.head 4 -  Title: G.C.O.F.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\GCOF.BMP
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 +  Class Variables
+.head 5 -  Number: nPos
+.head 4 +  Instance Variables
+.head 5 -  ! PUBLIC
+.head 5 -  ! both arrays bellow must be NULL terminated
+.head 5 -  Number: naCustNos[*]
+.head 5 -  Date/Time: dtaMailListTimeStamps[*]
+.head 5 -  ! sOrderFormSourceType = 'CUSTOMER_MASTER' = default OR 'MAILING_LIST'
+.head 5 -  String: sOrderFormSourceType
+.head 5 -  ! nYear defaults to current season Year
+.head 5 -  Number: nYear
+.head 5 -  ! PRIVATE
+.head 5 -  String: sStringListFileName
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set nPos = 0
+.head 6 -  Set naCustNos[ nPos ] = NUMBER_Null
+.head 6 -  Set dtaMailListTimeStamps[ nPos ] = DATETIME_Null
+.head 6 -  Set sOrderFormSourceType = 'CUSTOMER_MASTER'
+.head 6 -  Set sStringListFileName = OurGetIniFileParameter( 'GENERAL', 'TempStoragePath', '' ) || '\\gcofrm.csv'
+.head 6 -  Set nYear = WhichSeasonYear( SalDateCurrent(  ) )
+.head 6 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbPrintGCOrderForm.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbPrintGCOrderForm.sLiveProgramDescription = 'Print Garden Centre Order Forms'
+.head 6 -  Set clspbPrintGCOrderForm.sLiveProgramTitle = 'PrintGCOrderForm'
+.head 6 -  Set clspbPrintGCOrderForm.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbPrintGCOrderForm.sPlayProgramDescription = 'Print Garden Centre Order Forms'
+.head 6 -  Set clspbPrintGCOrderForm.sPlayProgramTitle = 'PrintGCOrderForm'
+.head 5 +  On PAM_clsPB_CLICK
+.head 6 +  If SalSendMsg( hWndItem, PAM_cls_SETFIELDS, 0, 0 )
+.head 7 +  If sOrderFormSourceType = 'CUSTOMER_MASTER'
+.head 8 -  Call WriteNumArrayListToFile( sStringListFileName, naCustNos )
+.head 7 +  Else
+.head 8 -  Call WriteDateTimeArrayListToFile( sStringListFileName, dtaMailListTimeStamps )
+.head 7 -  Set sExtraParameterCommandLine = sStringListFileName || ' ' || sOrderFormSourceType || ' ' || SalNumberToStrX( nYear, 0 )
+.head 7 -  Return SalSendClassMessage( PAM_clsPB_CLICK, wParam, lParam )
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 -  ! TRAP PAM_cls_SETFIELDS to initialise selection arrays for each click of button and MAKE SURE
+  to return TRUE for processing to continue
+.head 3 +  Pushbutton Class: clspbPrintAddrLabels
+.head 4 -  Title: AddrLbl
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\LABELS.ICO
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 +  Class Variables
+.head 5 -  Number: nPos
+.head 4 +  Instance Variables
+.head 5 -  ! PUBLIC
+.head 5 -  ! both arrays bellow must be NULL terminated
+.head 5 -  Number: naCustNos[*]
+.head 5 -  Date/Time: dtaMailListTimeStamps[*]
+.head 5 -  ! sOrderFormSourceType = 'CUSTOMER_MASTER' = default OR 'MAILING_LIST'
+.head 5 -  String: sOrderFormSourceType
+.head 5 -  ! nYear defaults to current season Year
+.head 5 -  Number: nYear
+.head 5 -  ! PRIVATE
+.head 5 -  String: sStringListFileName
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set nPos = 0
+.head 6 -  Set naCustNos[ nPos ] = NUMBER_Null
+.head 6 -  Set dtaMailListTimeStamps[ nPos ] = DATETIME_Null
+.head 6 -  Set sOrderFormSourceType = 'CUSTOMER_MASTER'
+.head 6 -  Set sStringListFileName = OurGetIniFileParameter( 'GENERAL', 'TempStoragePath', '' ) || '\\addrlbl.csv'
+.head 6 -  Set nYear = WhichSeasonYear( SalDateCurrent(  ) )
+.head 6 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbPrintAddrLabels.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbPrintAddrLabels.sLiveProgramDescription = 'Print Address Labels'
+.head 6 -  Set clspbPrintAddrLabels.sLiveProgramTitle = 'PrintAddrLabels'
+.head 6 -  Set clspbPrintAddrLabels.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbPrintAddrLabels.sPlayProgramDescription = 'Print Address Labels'
+.head 6 -  Set clspbPrintAddrLabels.sPlayProgramTitle = 'PrintAddrLabels'
+.head 5 +  On PAM_clsPB_CLICK
+.head 6 +  If SalSendMsg( hWndItem, PAM_cls_SETFIELDS, 0, 0 )
+.head 7 +  If sOrderFormSourceType = 'CUSTOMER_MASTER'
+.head 8 -  Call WriteNumArrayListToFile( sStringListFileName, naCustNos )
+.head 7 +  Else
+.head 8 -  Call WriteDateTimeArrayListToFile( sStringListFileName, dtaMailListTimeStamps )
+.head 7 -  Set sExtraParameterCommandLine = sStringListFileName || ' ' || sOrderFormSourceType || ' ' || SalNumberToStrX( nYear, 0 )
+.head 7 -  Return SalSendClassMessage( PAM_clsPB_CLICK, wParam, lParam )
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 -  ! TRAP PAM_cls_SETFIELDS to initialise selection arrays for each click of button and MAKE SURE
+  to return TRUE for processing to continue
+.head 3 +  Pushbutton Class: clspbPrintMailFileListing
+.head 4 -  Title: Listing
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 +  Class Variables
+.head 5 -  Number: nPos
+.head 4 +  Instance Variables
+.head 5 -  ! PUBLIC
+.head 5 -  Date/Time: dtaMailListTimeStamps[*]
+.head 5 -  ! PRIVATE
+.head 5 -  String: sStringListFileName
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set nPos = 0
+.head 6 -  Set dtaMailListTimeStamps[ nPos ] = DATETIME_Null
+.head 6 -  Set sStringListFileName = OurGetIniFileParameter( 'GENERAL', 'TempStoragePath', '' ) || '\\mflist.csv'
+.head 6 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbPrintMailFileListing.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbPrintMailFileListing.sLiveProgramDescription = 'Print Mail File Listing'
+.head 6 -  Set clspbPrintMailFileListing.sLiveProgramTitle = 'PrintMailFileListing'
+.head 6 -  Set clspbPrintMailFileListing.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbPrintMailFileListing.sPlayProgramDescription = 'Print Mail File Listing'
+.head 6 -  Set clspbPrintMailFileListing.sPlayProgramTitle = 'PrintMailFileListing'
+.head 5 +  On PAM_clsPB_CLICK
+.head 6 +  If SalSendMsg( hWndItem, PAM_cls_SETFIELDS, 0, 0 )
+.head 7 -  Call WriteDateTimeArrayListToFile( sStringListFileName, dtaMailListTimeStamps )
+.head 7 -  Set sExtraParameterCommandLine = sStringListFileName
+.head 7 -  Return SalSendClassMessage( PAM_clsPB_CLICK, wParam, lParam )
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 -  ! TRAP PAM_cls_SETFIELDS to initialise selection arrays for each click of button and MAKE SURE
+  to return TRUE for processing to continue
+.head 3 +  Pushbutton Class: clspbQuotations
+.head 4 -  Title: Quots
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbQuotations.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbQuotations.sLiveProgramDescription = 'Customer Stock Quotations'
+.head 6 -  Set clspbQuotations.sLiveProgramTitle = 'CustStockQuotations'
+.head 6 -  Set clspbQuotations.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbQuotations.sPlayProgramDescription = 'Customer Stock Quotations'
+.head 6 -  Set clspbQuotations.sPlayProgramTitle = 'CustStockQuotations'
+.head 3 +  Pushbutton Class: clspbLoadCultivarProhibitions
+.head 4 -  Title: CV.Proh
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\PROHIB.BMP
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 +  Instance Variables
+.head 5 -  String: sCultId
+.head 5 -  String: sCultDesc
+.head 4 +  Functions
+.head 5 +  Function: SetCultProhibitionFields
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 +  Parameters
+.head 7 -  String: sNewCultId
+.head 7 -  String: sNewCultDesc
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 -  Set sCultId = sNewCultId
+.head 7 -  Set sCultDesc = sNewCultDesc
+.head 7 -  Return TRUE
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set sCultId = ''
+.head 6 -  Set sCultDesc = ''
+.head 6 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbLoadCultivarProhibitions.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbLoadCultivarProhibitions.sLiveProgramDescription = 'Cultivar Prohibitions'
+.head 6 -  Set clspbLoadCultivarProhibitions.sLiveProgramTitle = 'CVProhib'
+.head 6 -  Set clspbLoadCultivarProhibitions.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbLoadCultivarProhibitions.sPlayProgramDescription = 'Cultivar Prohibitions'
+.head 6 -  Set clspbLoadCultivarProhibitions.sPlayProgramTitle = 'CVProhib'
+.head 6 -  Set clspbLoadCultivarProhibitions.bLoadAndWait = TRUE
+.head 5 +  On PAM_clsPB_CLICK
+.head 6 -  Call SalSendMsg( hWndItem, PAM_cls_SETFIELDS, 0, 0 )
+.head 6 -  Set clspbLoadCultivarProhibitions.sExtraParameterCommandLine = sCultId || ' ' || sCultDesc
+.head 6 -  Return SalSendClassMessage( PAM_clsPB_CLICK, wParam, lParam )
+.head 3 +  Pushbutton Class: clspbLoadCultivarPollination
+.head 4 -  Title: Cult.Poll.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\POLLIN.BMP
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 +  Instance Variables
+.head 5 -  String: sCultId
+.head 5 -  String: sCultDesc
+.head 4 +  Functions
+.head 5 +  Function: SetCultPollinationFields
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 +  Parameters
+.head 7 -  String: sNewCultId
+.head 7 -  String: sNewCultDesc
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 -  Set sCultId = sNewCultId
+.head 7 -  Set sCultDesc = sNewCultDesc
+.head 7 -  Return TRUE
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set sCultId = ''
+.head 6 -  Set sCultDesc = ''
+.head 6 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbLoadCultivarPollination.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbLoadCultivarPollination.sLiveProgramDescription = 'Cultivar Pollination'
+.head 6 -  Set clspbLoadCultivarPollination.sLiveProgramTitle = 'CVPollin'
+.head 6 -  Set clspbLoadCultivarPollination.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbLoadCultivarPollination.sPlayProgramDescription = 'Cultivar Pollination'
+.head 6 -  Set clspbLoadCultivarPollination.sPlayProgramTitle = 'CVPollin'
+.head 6 -  Set clspbLoadCultivarPollination.bLoadAndWait = TRUE
+.head 5 +  On PAM_clsPB_CLICK
+.head 6 -  Call SalSendMsg( hWndItem, PAM_cls_SETFIELDS, 0, 0 )
+.head 6 -  Set clspbLoadCultivarPollination.sExtraParameterCommandLine = sCultId || ' ' || sCultDesc
+.head 6 -  Return SalSendClassMessage( PAM_clsPB_CLICK, wParam, lParam )
+.head 3 +  Pushbutton Class: clspbLoadCultivarRoyOwners
+.head 4 -  Title: Cult.Roy.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\CVRTROY.BMP
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 +  Instance Variables
+.head 5 -  String: sCultId
+.head 5 -  String: sCultDesc
+.head 5 -  String: sManyCultIdsFile
+.head 4 +  Functions
+.head 5 +  Function: SetCultRoyOwnerFields
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 +  Parameters
+.head 7 -  String: sNewCultId
+.head 7 -  String: sNewCultDesc
+.head 7 -  String: sNewManyCultIdsFile
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 -  Set sCultId = sNewCultId
+.head 7 -  Set sCultDesc = sNewCultDesc
+.head 7 -  Set sManyCultIdsFile = sNewManyCultIdsFile
+.head 7 -  Return TRUE
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set sCultId = ''
+.head 6 -  Set sCultDesc = ''
+.head 6 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbLoadCultivarRoyOwners.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbLoadCultivarRoyOwners.sLiveProgramDescription = 'Cultivar Royalty Owners'
+.head 6 -  Set clspbLoadCultivarRoyOwners.sLiveProgramTitle = 'CVRoyOwners'
+.head 6 -  Set clspbLoadCultivarRoyOwners.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbLoadCultivarRoyOwners.sPlayProgramDescription = 'Cultivar Royalty Owners'
+.head 6 -  Set clspbLoadCultivarRoyOwners.sPlayProgramTitle = 'CVRoyOwners'
+.head 6 -  Set clspbLoadCultivarRoyOwners.bLoadAndWait = TRUE
+.head 5 +  On PAM_clsPB_CLICK
+.head 6 -  Call SalSendMsg( hWndItem, PAM_cls_SETFIELDS, 0, 0 )
+.head 6 -  Set clspbLoadCultivarRoyOwners.sExtraParameterCommandLine = sCultId || ' ' || sCultDesc || ' ' || sManyCultIdsFile
+.head 6 -  Return SalSendClassMessage( PAM_clsPB_CLICK, wParam, lParam )
+.head 3 +  Pushbutton Class: clspbLoadRootRoyOwners
+.head 4 -  Title: Root.Roy
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\CVRTROY.BMP
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 +  Instance Variables
+.head 5 -  String: sCultId
+.head 5 -  String: sCultDesc
+.head 4 +  Functions
+.head 5 +  Function: SetRootRoyOwnerFields
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 +  Parameters
+.head 7 -  String: sNewCultId
+.head 7 -  String: sNewCultDesc
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 -  Set sCultId = sNewCultId
+.head 7 -  Set sCultDesc = sNewCultDesc
+.head 7 -  Return TRUE
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set sCultId = ''
+.head 6 -  Set sCultDesc = ''
+.head 6 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbLoadRootRoyOwners.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbLoadRootRoyOwners.sLiveProgramDescription = 'Rootstock Royalty Owners'
+.head 6 -  Set clspbLoadRootRoyOwners.sLiveProgramTitle = 'RTRoyOwners'
+.head 6 -  Set clspbLoadRootRoyOwners.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbLoadRootRoyOwners.sPlayProgramDescription = 'Rootstock Royalty Owners'
+.head 6 -  Set clspbLoadRootRoyOwners.sPlayProgramTitle = 'RTRoyOwners'
+.head 6 -  Set clspbLoadRootRoyOwners.bLoadAndWait = TRUE
+.head 5 +  On PAM_clsPB_CLICK
+.head 6 -  Call SalSendMsg( hWndItem, PAM_cls_SETFIELDS, 0, 0 )
+.head 6 -  Set clspbLoadRootRoyOwners.sExtraParameterCommandLine = sCultId || ' ' || sCultDesc
+.head 6 -  Return SalSendClassMessage( PAM_clsPB_CLICK, wParam, lParam )
+.head 3 +  Pushbutton Class: clspbLoadRootProhibitions
+.head 4 -  Title: RT.Proh
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\PROHIB.BMP
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 +  Instance Variables
+.head 5 -  String: sCultId
+.head 5 -  String: sCultDesc
+.head 4 +  Functions
+.head 5 +  Function: SetRootProhibitionFields
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 +  Parameters
+.head 7 -  String: sNewCultId
+.head 7 -  String: sNewCultDesc
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 -  Set sCultId = sNewCultId
+.head 7 -  Set sCultDesc = sNewCultDesc
+.head 7 -  Return TRUE
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set sCultId = ''
+.head 6 -  Set sCultDesc = ''
+.head 6 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbLoadRootProhibitions.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbLoadRootProhibitions.sLiveProgramDescription = 'Rootstock Prohibitions'
+.head 6 -  Set clspbLoadRootProhibitions.sLiveProgramTitle = 'RTProhib'
+.head 6 -  Set clspbLoadRootProhibitions.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbLoadRootProhibitions.sPlayProgramDescription = 'Rootstock Prohibitions'
+.head 6 -  Set clspbLoadRootProhibitions.sPlayProgramTitle = 'RTProhib'
+.head 6 -  Set clspbLoadRootProhibitions.bLoadAndWait = TRUE
+.head 5 +  On PAM_clsPB_CLICK
+.head 6 -  Call SalSendMsg( hWndItem, PAM_cls_SETFIELDS, 0, 0 )
+.head 6 -  Set clspbLoadRootProhibitions.sExtraParameterCommandLine = sCultId || ' ' || sCultDesc
+.head 6 -  Return SalSendClassMessage( PAM_clsPB_CLICK, wParam, lParam )
+.head 3 +  Pushbutton Class: clspbLoadHelp
+.head 4 -  Title: Help F1
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: F1
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\HELP2.BMP
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 +  Instance Variables
+.head 5 -  String: sHelpFileName
+.head 4 +  Functions
+.head 5 +  Function: SetHelpFields
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 +  Parameters
+.head 7 -  String: sNewHelpFileName
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 -  Set sHelpFileName = sNewHelpFileName
+.head 7 -  Return TRUE
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set sHelpFileName = ''
+.head 6 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbLoadHelp.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbLoadHelp.sLiveProgramDescription = "Fleming's System Help"
+.head 6 -  Set clspbLoadHelp.sLiveProgramTitle = 'HelpPrg'
+.head 6 -  Set clspbLoadHelp.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbLoadHelp.sPlayProgramDescription = "Fleming's System Help"
+.head 6 -  Set clspbLoadHelp.sPlayProgramTitle = 'HelpPrg'
+.head 6 -  Set clspbLoadHelp.bLoadAndWait = TRUE
+.head 5 +  On PAM_clsPB_CLICK
+.head 6 -  Call SalSendMsg( hWndItem, PAM_cls_SETFIELDS, 0, 0 )
+.head 6 -  Call ExtractHelpFileName( hWndForm, sHelpFileName )
+.head 6 -  Set clspbLoadHelp.sExtraParameterCommandLine = sHelpFileName
+.head 6 -  Return SalSendClassMessage( PAM_clsPB_CLICK, wParam, lParam )
+.head 3 +  Pushbutton Class: clspbFreightDetsFromPCode
+.head 4 -  Title: F.Dets.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbFreightDetsFromPCode.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbFreightDetsFromPCode.sLiveProgramDescription = 'Freight Details from Postcode'
+.head 6 -  Set clspbFreightDetsFromPCode.sLiveProgramTitle = 'FreightDetsFromPCode'
+.head 6 -  Set clspbFreightDetsFromPCode.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbFreightDetsFromPCode.sPlayProgramDescription = 'Freight Details from Postcode'
+.head 6 -  Set clspbFreightDetsFromPCode.sPlayProgramTitle = 'FreightDetsFromPCode'
+.head 3 +  Pushbutton Class: clspbStartSqlConsole
+.head 4 -  Title: SqlCon
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\SQLCON.ICO
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbStartSqlConsole.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbStartSqlConsole.sLiveProgramDescription = 'SQLConsole'
+.head 6 -  Set clspbStartSqlConsole.sLiveProgramTitle = 'SQLConsole'
+.head 6 -  Set clspbStartSqlConsole.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbStartSqlConsole.sPlayProgramDescription = 'SQLConsole'
+.head 6 -  Set clspbStartSqlConsole.sPlayProgramTitle = 'SQLConsole'
+.head 6 -  Set clspbStartSqlConsole.bStartGuptaApps = FALSE
+.head 6 -  Set clspbStartSqlConsole.sUserTypeRestrictions = 'SQLConsoleUsers'
+.head 3 +  Pushbutton Class: clspbStartSqlWindows
+.head 4 -  Title: Sqlwin
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\SQLWIN50.ICO
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbStartSqlWindows.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbStartSqlWindows.sLiveProgramDescription = 'SQLWindows'
+.head 6 -  Set clspbStartSqlWindows.sLiveProgramTitle = 'SqlWin'
+.head 6 -  Set clspbStartSqlWindows.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbStartSqlWindows.sPlayProgramDescription = 'SQLWindows'
+.head 6 -  Set clspbStartSqlWindows.sPlayProgramTitle = 'SqlWin'
+.head 6 -  Set clspbStartSqlWindows.bStartGuptaApps = FALSE
+.head 6 -  Set clspbStartSqlWindows.sUserTypeRestrictions = 'SqlWinUsers'
+.head 3 +  Pushbutton Class: clspbStartWinTalk
+.head 4 -  Title: SqlTalk
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\WINTALK.ICO
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbStartWinTalk.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbStartWinTalk.sLiveProgramDescription = 'SQLTalk'
+.head 6 -  Set clspbStartWinTalk.sLiveProgramTitle = 'WinTalk'
+.head 6 -  Set clspbStartWinTalk.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbStartWinTalk.sPlayProgramDescription = 'SQLTalk'
+.head 6 -  Set clspbStartWinTalk.sPlayProgramTitle = 'WinTalk'
+.head 6 -  Set clspbStartWinTalk.bStartGuptaApps = FALSE
+.head 6 -  Set clspbStartWinTalk.sUserTypeRestrictions = 'WinTalkUsers'
+.head 3 +  Pushbutton Class: clspbStartRepWindows
+.head 4 -  Title: RepWin
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\REPWIN30.ICO
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbStartRepWindows.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbStartRepWindows.sLiveProgramDescription = 'ReportWindows'
+.head 6 -  Set clspbStartRepWindows.sLiveProgramTitle = 'RepWin'
+.head 6 -  Set clspbStartRepWindows.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbStartRepWindows.sPlayProgramDescription = 'ReportWindows'
+.head 6 -  Set clspbStartRepWindows.sPlayProgramTitle = 'RepWin'
+.head 6 -  Set clspbStartRepWindows.bStartGuptaApps = FALSE
+.head 6 -  Set clspbStartRepWindows.sUserTypeRestrictions = 'RepWinUsers'
+.head 3 +  Pushbutton Class: clspbStartQuest
+.head 4 -  Title: Quest
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\QUEST30.ICO
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbStartQuest.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbStartQuest.sLiveProgramDescription = 'Quest'
+.head 6 -  Set clspbStartQuest.sLiveProgramTitle = 'Quest'
+.head 6 -  Set clspbStartQuest.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbStartQuest.sPlayProgramDescription = 'Quest'
+.head 6 -  Set clspbStartQuest.sPlayProgramTitle = 'Quest'
+.head 6 -  Set clspbStartQuest.bStartGuptaApps = FALSE
+.head 6 -  Set clspbStartQuest.sUserTypeRestrictions = 'QuestUsers'
+.head 3 +  Pushbutton Class: clspbStartTeamWin
+.head 4 -  Title: TeamWin
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\TEAMWIN.ICO
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbStartTeamWin.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbStartTeamWin.sLiveProgramDescription = 'TeamWindows'
+.head 6 -  Set clspbStartTeamWin.sLiveProgramTitle = 'TeamWin'
+.head 6 -  Set clspbStartTeamWin.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbStartTeamWin.sPlayProgramDescription = 'TeamWindows'
+.head 6 -  Set clspbStartTeamWin.sPlayProgramTitle = 'TeamWin'
+.head 6 -  Set clspbStartTeamWin.bStartGuptaApps = FALSE
+.head 6 -  Set clspbStartTeamWin.sUserTypeRestrictions = 'TeamWinUsers'
+.head 3 +  Pushbutton Class: clspbUnAppliedCashListing
+.head 4 -  Title: UnApp.Csh.Lst.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbUnAppliedCashListing.sLiveProgramSection = IniAccountsLiveSectionName
+.head 6 -  Set clspbUnAppliedCashListing.sLiveProgramDescription = 'Unapplied Cash Listing'
+.head 6 -  Set clspbUnAppliedCashListing.sLiveProgramTitle = 'UnAppliedCashListing'
+.head 6 -  Set clspbUnAppliedCashListing.sPlayProgramSection = IniAccountsPlaySectionName
+.head 6 -  Set clspbUnAppliedCashListing.sPlayProgramDescription = 'Unapplied Cash Listing'
+.head 6 -  Set clspbUnAppliedCashListing.sPlayProgramTitle = 'UnAppliedCashListing'
+.head 6 -  Set clspbUnAppliedCashListing.sUserTypeRestrictions = 'AccountsUsers'
+.head 3 +  Pushbutton Class: clspbCurrentStockPriceList
+.head 4 -  Title: Price List
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbCurrentStockPriceList.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbCurrentStockPriceList.sLiveProgramDescription = 'Current ord. / grow. Price List'
+.head 6 -  Set clspbCurrentStockPriceList.sLiveProgramTitle = 'CurrentOrdORGrowPriceList'
+.head 6 -  Set clspbCurrentStockPriceList.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbCurrentStockPriceList.sPlayProgramDescription = 'Current ord. / grow. Price List'
+.head 6 -  Set clspbCurrentStockPriceList.sPlayProgramTitle = 'CurrentOrdORGrowPriceList'
+.head 3 +  Pushbutton Class: clspbCountsVarientsReport
+.head 4 -  Title: Cnts.Varients
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbCountsVarientsReport.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbCountsVarientsReport.sLiveProgramDescription = 'Stock Counts Varients Report'
+.head 6 -  Set clspbCountsVarientsReport.sLiveProgramTitle = 'StockCountsVarientsReport'
+.head 6 -  Set clspbCountsVarientsReport.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbCountsVarientsReport.sPlayProgramDescription = 'Stock Counts Varients Report'
+.head 6 -  Set clspbCountsVarientsReport.sPlayProgramTitle = 'StockCountsVarientsReport'
+.head 3 +  Pushbutton Class: clspbGradingPalletsReports
+.head 4 -  Title: Grad.Pallets Rep.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbGradingPalletsReports.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbGradingPalletsReports.sLiveProgramDescription = 'Grading Pallets Report'
+.head 6 -  Set clspbGradingPalletsReports.sLiveProgramTitle = 'GradingPalletsReport'
+.head 6 -  Set clspbGradingPalletsReports.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbGradingPalletsReports.sPlayProgramDescription = 'Grading Pallets Report'
+.head 6 -  Set clspbGradingPalletsReports.sPlayProgramTitle = 'GradingPalletsReport'
+.head 3 +  Pushbutton Class: clspbBrokenBundleReport
+.head 4 -  Title: Cust.Brk.Bndl.Rep
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbBrokenBundleReport.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbBrokenBundleReport.sLiveProgramDescription = 'Customer Broken Bundle Report'
+.head 6 -  Set clspbBrokenBundleReport.sLiveProgramTitle = 'CustBrokenBundleReport'
+.head 6 -  Set clspbBrokenBundleReport.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbBrokenBundleReport.sPlayProgramDescription = 'Customer Broken Bundle Report'
+.head 6 -  Set clspbBrokenBundleReport.sPlayProgramTitle = 'CustBrokenBundleReport'
+.head 3 +  Pushbutton Class: clspbCustCutDownReport
+.head 4 -  Title: Cst.Cut down report
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbCustCutDownReport.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbCustCutDownReport.sLiveProgramDescription = 'Customer Cut Down Report'
+.head 6 -  Set clspbCustCutDownReport.sLiveProgramTitle = 'CustCutDownReport'
+.head 6 -  Set clspbCustCutDownReport.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbCustCutDownReport.sPlayProgramDescription = 'Customer Cut Down Report'
+.head 6 -  Set clspbCustCutDownReport.sPlayProgramTitle = 'CustCutDownReport'
+.head 3 +  Pushbutton Class: clspbTreeTotalsInfo
+.head 4 -  Title: Tree Totals Info.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbTreeTotalsInfo.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbTreeTotalsInfo.sLiveProgramDescription = 'Tree Totals Information'
+.head 6 -  Set clspbTreeTotalsInfo.sLiveProgramTitle = 'TreeTotalsInfo'
+.head 6 -  Set clspbTreeTotalsInfo.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbTreeTotalsInfo.sPlayProgramDescription = 'Tree Totals Information'
+.head 6 -  Set clspbTreeTotalsInfo.sPlayProgramTitle = 'TreeTotalsInfo'
+.head 6 -  Set clspbTreeTotalsInfo.sUserTypeRestrictions = 'StockControllers'
+.head 3 +  Pushbutton Class: clspbOldStockItemsExtras
+.head 4 -  Title: Old.StckItm.Extras
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbOldStockItemsExtras.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbOldStockItemsExtras.sLiveProgramDescription = 'Old Stock Items Extras'
+.head 6 -  Set clspbOldStockItemsExtras.sLiveProgramTitle = 'OldStockItemsExtras'
+.head 6 -  Set clspbOldStockItemsExtras.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbOldStockItemsExtras.sPlayProgramDescription = 'Old Stock Items Extras'
+.head 6 -  Set clspbOldStockItemsExtras.sPlayProgramTitle = 'OldStockItemsExtras'
+.head 6 -  Set clspbOldStockItemsExtras.bLoadAndWait = TRUE
+.head 3 +  Pushbutton Class: clspbPotsPlanReport
+.head 4 -  Title: Pot Plan
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbPotsPlanReport.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbPotsPlanReport.sLiveProgramDescription = 'Pots Plan Report'
+.head 6 -  Set clspbPotsPlanReport.sLiveProgramTitle = 'PotPlanReport'
+.head 6 -  Set clspbPotsPlanReport.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbPotsPlanReport.sPlayProgramDescription = 'Pots Plan Report'
+.head 6 -  Set clspbPotsPlanReport.sPlayProgramTitle = 'PotPlanReport'
+.head 3 +  Pushbutton Class: clspbPrintAssInventory
+.head 4 -  Title: Ass.Inv.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbPrintAssInventory.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbPrintAssInventory.sLiveProgramDescription = 'Print Assigned Inventory'
+.head 6 -  Set clspbPrintAssInventory.sLiveProgramTitle = 'PrintAssInventory'
+.head 6 -  Set clspbPrintAssInventory.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbPrintAssInventory.sPlayProgramDescription = 'Print Assigned Inventory'
+.head 6 -  Set clspbPrintAssInventory.sPlayProgramTitle = 'PrintAssInventory'
+.head 6 -  Set clspbPrintAssInventory.bLoadAndWait = TRUE
+.head 3 +  Pushbutton Class: clspbBCLabelQueue
+.head 4 -  Title: BC Que.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbBCLabelQueue.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbBCLabelQueue.sLiveProgramDescription = 'Barcode Printer Queue'
+.head 6 -  Set clspbBCLabelQueue.sLiveProgramTitle = 'BCLblQueue'
+.head 6 -  Set clspbBCLabelQueue.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbBCLabelQueue.sPlayProgramDescription = 'Barcode Printer Queue'
+.head 6 -  Set clspbBCLabelQueue.sPlayProgramTitle = 'BCLblQueue'
+.head 3 +  Pushbutton Class: clspbDailyOrdPickList
+.head 4 -  Title: DordPckLst
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbDailyOrdPickList.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbDailyOrdPickList.sLiveProgramDescription = 'Daily Ordered Pick List'
+.head 6 -  Set clspbDailyOrdPickList.sLiveProgramTitle = 'DailyOrderedPickList'
+.head 6 -  Set clspbDailyOrdPickList.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbDailyOrdPickList.sPlayProgramDescription = 'Daily Ordered Pick List'
+.head 6 -  Set clspbDailyOrdPickList.sPlayProgramTitle = 'DailyOrderedPickList'
+.head 3 +  Pushbutton Class: clspbPotsAlphaList
+.head 4 -  Title: P.Alph.Lst
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbPotsAlphaList.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbPotsAlphaList.sLiveProgramDescription = 'Pots Alpha List'
+.head 6 -  Set clspbPotsAlphaList.sLiveProgramTitle = 'PotsAlphaList'
+.head 6 -  Set clspbPotsAlphaList.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbPotsAlphaList.sPlayProgramDescription = 'Pots Alpha List'
+.head 6 -  Set clspbPotsAlphaList.sPlayProgramTitle = 'PotsAlphaList'
+.head 3 +  Pushbutton Class: clspbNumCultivarList
+.head 4 -  Title: No.Clt.Lst.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbNumCultivarList.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbNumCultivarList.sLiveProgramDescription = 'Numbered Cultivar List'
+.head 6 -  Set clspbNumCultivarList.sLiveProgramTitle = 'NumCultList'
+.head 6 -  Set clspbNumCultivarList.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbNumCultivarList.sPlayProgramDescription = 'Numbered Cultivar List'
+.head 6 -  Set clspbNumCultivarList.sPlayProgramTitle = 'NumCultList'
+.head 3 +  Pushbutton Class: clspbBrBundles54321
+.head 4 -  Title: Brk.Bnd.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbBrBundles54321.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbBrBundles54321.sLiveProgramDescription = 'Broken Bundles 5,4,3,2,1s'
+.head 6 -  Set clspbBrBundles54321.sLiveProgramTitle = 'BrokenBundles54321'
+.head 6 -  Set clspbBrBundles54321.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbBrBundles54321.sPlayProgramDescription = 'Broken Bundles 5,4,3,2,1s'
+.head 6 -  Set clspbBrBundles54321.sPlayProgramTitle = 'BrokenBundles54321'
+.head 3 +  Pushbutton Class: clspbPromoOrderedBy
+.head 4 -  Title: PromoOrdBy
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbPromoOrderedBy.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbPromoOrderedBy.sLiveProgramDescription = 'Promos Ordered By'
+.head 6 -  Set clspbPromoOrderedBy.sLiveProgramTitle = 'PromoOrderedBy'
+.head 6 -  Set clspbPromoOrderedBy.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbPromoOrderedBy.sPlayProgramDescription = 'Promos Ordered By'
+.head 6 -  Set clspbPromoOrderedBy.sPlayProgramTitle = 'PromoOrderedBy'
+.head 3 +  Pushbutton Class: clspbItmRoyBrkRep
+.head 4 -  Title: ItmRoyBrkRpt
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbItmRoyBrkRep.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbItmRoyBrkRep.sLiveProgramDescription = 'Item Roy. Breakdown Rpt.'
+.head 6 -  Set clspbItmRoyBrkRep.sLiveProgramTitle = 'ItemRoyBrkRpt'
+.head 6 -  Set clspbItmRoyBrkRep.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbItmRoyBrkRep.sPlayProgramDescription = 'Item Roy. Breakdown Rpt.'
+.head 6 -  Set clspbItmRoyBrkRep.sPlayProgramTitle = 'ItemRoyBrkRpt'
+.head 3 +  Pushbutton Class: clspbItmSupList
+.head 4 -  Title: ItmSupLst
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbItmSupList.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbItmSupList.sLiveProgramDescription = 'Item Suplementary List'
+.head 6 -  Set clspbItmSupList.sLiveProgramTitle = 'ItemSupList'
+.head 6 -  Set clspbItmSupList.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbItmSupList.sPlayProgramDescription = 'Item Suplementary List'
+.head 6 -  Set clspbItmSupList.sPlayProgramTitle = 'ItemSupList'
+.head 3 +  Pushbutton Class: clspbCombDupCust
+.head 4 -  Title: Cmb.Dup.Cst.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbCombDupCust.sLiveProgramSection = IniAccountsLiveSectionName
+.head 6 -  Set clspbCombDupCust.sLiveProgramDescription = 'Comb. Duplicate Cust.'
+.head 6 -  Set clspbCombDupCust.sLiveProgramTitle = 'CombDupCust'
+.head 6 -  Set clspbCombDupCust.sPlayProgramSection = IniAccountsPlaySectionName
+.head 6 -  Set clspbCombDupCust.sPlayProgramDescription = 'Comb. Duplicate Cust.'
+.head 6 -  Set clspbCombDupCust.sPlayProgramTitle = 'CombDupCust'
+.head 6 -  Set clspbCombDupCust.sUserTypeRestrictions = 'AccountsUsers'
+.head 3 -  !
+.head 3 +  Pushbutton Class: clspbCreditExceptionReportPrg
+.head 4 -  Title: Credit Exception Report
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbCreditExceptionReportPrg.sLiveProgramSection = IniAccountsLiveSectionName
+.head 6 -  Set clspbCreditExceptionReportPrg.sLiveProgramDescription = 'Credit Exception Report'
+.head 6 -  Set clspbCreditExceptionReportPrg.sLiveProgramTitle = 'CreditExceptionReport'
+.head 6 -  Set clspbCreditExceptionReportPrg.sPlayProgramSection = IniAccountsPlaySectionName
+.head 6 -  Set clspbCreditExceptionReportPrg.sPlayProgramDescription = 'Credit Exception Report'
+.head 6 -  Set clspbCreditExceptionReportPrg.sPlayProgramTitle = 'CreditExceptionReport'
+.head 6 -  Set clspbCreditExceptionReportPrg.sUserTypeRestrictions = 'AccountsUsers'
+.head 3 +  Pushbutton Class: clspbSalesReportsPrg
+.head 4 -  Title: Sales Reports
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbSalesReportsPrg.sLiveProgramSection = IniAccountsLiveSectionName
+.head 6 -  Set clspbSalesReportsPrg.sLiveProgramDescription = 'Sales Reports'
+.head 6 -  Set clspbSalesReportsPrg.sLiveProgramTitle = 'SalesReports'
+.head 6 -  Set clspbSalesReportsPrg.sPlayProgramSection = IniAccountsPlaySectionName
+.head 6 -  Set clspbSalesReportsPrg.sPlayProgramDescription = 'Sales Reports'
+.head 6 -  Set clspbSalesReportsPrg.sPlayProgramTitle = 'SalesReports'
+.head 6 -  Set clspbSalesReportsPrg.sUserTypeRestrictions = 'FlemingsFamily'
+.head 3 +  Pushbutton Class: clspbInvoiceFiguresPrg
+.head 4 -  Title: Inv.Fig.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbInvoiceFiguresPrg.sLiveProgramSection = IniAccountsLiveSectionName
+.head 6 -  Set clspbInvoiceFiguresPrg.sLiveProgramDescription = 'Invoice Figures'
+.head 6 -  Set clspbInvoiceFiguresPrg.sLiveProgramTitle = 'InvoiceFigures'
+.head 6 -  Set clspbInvoiceFiguresPrg.sPlayProgramSection = IniAccountsPlaySectionName
+.head 6 -  Set clspbInvoiceFiguresPrg.sPlayProgramDescription = 'Invoice Figures'
+.head 6 -  Set clspbInvoiceFiguresPrg.sPlayProgramTitle = 'InvoiceFigures'
+.head 6 -  Set clspbInvoiceFiguresPrg.sUserTypeRestrictions = 'FlemingsFamily'
+.head 3 +  Pushbutton Class: clspbOrdersPulledNotInvRepPrg
+.head 4 -  Title: Ords.Pull.Not.Inv.Rep
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbOrdersPulledNotInvRepPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbOrdersPulledNotInvRepPrg.sLiveProgramDescription = 'Orders Pulled, Not Invoiced Report'
+.head 6 -  Set clspbOrdersPulledNotInvRepPrg.sLiveProgramTitle = 'OrdersPulledNotInvoicedReport'
+.head 6 -  Set clspbOrdersPulledNotInvRepPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbOrdersPulledNotInvRepPrg.sPlayProgramDescription = 'Orders Pulled, Not Invoiced Report'
+.head 6 -  Set clspbOrdersPulledNotInvRepPrg.sPlayProgramTitle = 'OrdersPulledNotInvoicedReport'
+.head 3 +  Pushbutton Class: clspbPotsAssignedInventoryPrg
+.head 4 -  Title: Pts.Inv
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbPotsAssignedInventoryPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbPotsAssignedInventoryPrg.sLiveProgramDescription = 'Pots Assigned Inventory Report'
+.head 6 -  Set clspbPotsAssignedInventoryPrg.sLiveProgramTitle = 'PotsAssignedInventory'
+.head 6 -  Set clspbPotsAssignedInventoryPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbPotsAssignedInventoryPrg.sPlayProgramDescription = 'Pots Assigned Inventory Report'
+.head 6 -  Set clspbPotsAssignedInventoryPrg.sPlayProgramTitle = 'PotsAssignedInventory'
+.head 6 -  Set clspbPotsAssignedInventoryPrg.bLoadAndWait = TRUE
+.head 3 +  Pushbutton Class: clspbSubstitutesListingPrg
+.head 4 -  Title: Sbs.Lst
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbSubstitutesListingPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbSubstitutesListingPrg.sLiveProgramDescription = 'Item Substitutes Listing'
+.head 6 -  Set clspbSubstitutesListingPrg.sLiveProgramTitle = 'ItemSubsListing'
+.head 6 -  Set clspbSubstitutesListingPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbSubstitutesListingPrg.sPlayProgramDescription = 'Item Substitutes Listing'
+.head 6 -  Set clspbSubstitutesListingPrg.sPlayProgramTitle = 'ItemSubsListing'
+.head 6 -  Set clspbSubstitutesListingPrg.bLoadAndWait = TRUE
+.head 3 +  Pushbutton Class: clspbSpecialReqListingPrg
+.head 4 -  Title: Spc.Req
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbSpecialReqListingPrg.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbSpecialReqListingPrg.sLiveProgramDescription = 'Item Special Requirement Listing'
+.head 6 -  Set clspbSpecialReqListingPrg.sLiveProgramTitle = 'ItemSpecReqListing'
+.head 6 -  Set clspbSpecialReqListingPrg.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbSpecialReqListingPrg.sPlayProgramDescription = 'Item Special Requirement Listing'
+.head 6 -  Set clspbSpecialReqListingPrg.sPlayProgramTitle = 'ItemSpecReqListing'
+.head 6 -  Set clspbSpecialReqListingPrg.bLoadAndWait = TRUE
+.head 3 +  Pushbutton Class: clspbPrintCashReceipts
+.head 4 -  Title: Prnt.Csh.Rcpts.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbPrintCashReceipts.sLiveProgramSection = IniAccountsLiveSectionName
+.head 6 -  Set clspbPrintCashReceipts.sLiveProgramDescription = 'Print Cust. Cash Receipts'
+.head 6 -  Set clspbPrintCashReceipts.sLiveProgramTitle = 'PrintCashReceipts'
+.head 6 -  Set clspbPrintCashReceipts.sPlayProgramSection = IniAccountsPlaySectionName
+.head 6 -  Set clspbPrintCashReceipts.sPlayProgramDescription = 'Print Cust. Cash Receipts'
+.head 6 -  Set clspbPrintCashReceipts.sPlayProgramTitle = 'PrintCashReceipts'
+.head 6 -  Set clspbPrintCashReceipts.sUserTypeRestrictions = 'AccountsUsers'
+.head 3 -  !
+.head 3 +  Pushbutton Class: clspbCustOrdered
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbCustOrdered.sLiveProgramSection = IniGeneralLiveSectionName
+.head 6 -  Set clspbCustOrdered.sLiveProgramDescription = 'Ordered'
+.head 6 -  Set clspbCustOrdered.sLiveProgramTitle = 'Ordered'
+.head 6 -  Set clspbCustOrdered.sPlayProgramSection = IniGeneralPlaySectionName
+.head 6 -  Set clspbCustOrdered.sPlayProgramDescription = 'Ordered'
+.head 6 -  Set clspbCustOrdered.sPlayProgramTitle = 'Ordered'
+.head 3 +  Pushbutton Class: clspbCultRootRoy
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? No
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbStartProgram
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clspbCultRootRoy.sLiveProgramSection = IniAccountsLiveSectionName
+.head 6 -  Set clspbCultRootRoy.sLiveProgramDescription = 'Print Cult/Root Roy'
+.head 6 -  Set clspbCultRootRoy.sLiveProgramTitle = 'PrintCultRootRoy'
+.head 6 -  Set clspbCultRootRoy.sPlayProgramSection = IniAccountsPlaySectionName
+.head 6 -  Set clspbCultRootRoy.sPlayProgramDescription = 'Print Cult/Root Roy'
+.head 6 -  Set clspbCultRootRoy.sPlayProgramTitle = 'PrintCultRootRoy'
+.head 6 -  Set clspbCultRootRoy.sUserTypeRestrictions = 'AccountsUsers'
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Check Box:
+.head 3 -  Option Button:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text:
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 -  Application Actions

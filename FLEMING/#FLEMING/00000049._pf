@@ -1,0 +1,681 @@
+Application Description: Jans dates handling routines. Ver 5.01
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D80000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF160000 0016000000AA0200 0053010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+			Visible? Yes
+			Left:   6.05"
+			Top:    3.104"
+			Width:  3.738"
+			Height: 2.781"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   6.6"
+			Top:    0.521"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: vtcal.apl
+		File Include: strings.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Line
+				Line Color: Use Parent
+			Frame
+				Border Color: Use Parent
+				Background Color: Use Parent
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for STRINGS.APL
+				Number: DATESAplMsgOffSet = SAM_User + 2300
+				! Message go up to AplMsgOffSet + 99
+				Number: DATESAplConstOffSet = 1150
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 488736426
+0000: 8600000038000000 0000000000000000 020000050000001E 000000E0040D0000
+0020: 00FF3F2B00A00000 010D0000FFFFE038 00000001FE00FF83 4500000001FB00FF
+0040: 0F52000000EE0100 FF3F
+.enddata
+		Named Menus
+		Internal Functions
+			! Function: GetStrJulianDate
+				   Description: 
+				   Returns 
+					   String: 
+				   Parameters 
+					   Date/Time: dtDate
+				   Static Variables 
+				   Local variables 
+				   Actions 
+					   Return SalNumberToStrX( dtDate - SalDateYearBegin( dtDate ) + 1, 0 ) || SalStrMidX( SalNumberToStrX( SalDateYear( dtDate ), 0 ), 3, 1 )
+			! Function: DateMonthEnd
+				   Description: Returns the last day of the month given in date/time field
+				   Returns 
+					   Date/Time: 
+				   Parameters 
+					   Date/Time: dtGivenDate
+				   Static Variables 
+				   Local variables 
+					   Date/Time: dtTmpDate
+					   Number: nDay
+					   Number: nMonth
+					   Number: nYear
+				   Actions 
+					   Set nDay = SalDateDay( dtGivenDate )
+					   Set nMonth = SalDateMonth( dtGivenDate )
+					   If nMonth < 12
+						   Set nMonth = nMonth + 1
+					   Else 
+						   Set nMonth = 1
+					   Set nYear = SalDateYear( dtGivenDate )
+					   Set dtTmpDate = SalDateConstruct( nYear, nMonth, nDay, 0, 0, 0 )
+					   Set dtTmpDate = SalDateMonthBegin( dtTmpDate ) - 1
+					   Return dtTmpDate
+			! Function: SubtractMonthsFromMonth
+				   Description: Assumes the first parameter is a month and the second is the number
+						of months to subtract.  month parameter is assumed to be in the
+						month range 1..12 and NO range checking is performed
+				   Returns 
+					   Number: 
+				   Parameters 
+					   Number: nMonth
+					   Number: nSubMonths
+				   Static Variables 
+				   Local variables 
+					   Number: nCount
+				   Actions 
+					   Set nCount = nSubMonths
+					   While nCount > 0
+						   Set nMonth = nMonth - 1
+						   Set nCount = nCount - 1
+						   If nMonth < 1
+							   Set nMonth = 12
+					   Return nMonth
+			! Function: DaysDiffBetweenMonths
+				   Description: 
+				   Returns 
+					   Number: 
+				   Parameters 
+					   Number: nFirstMonth
+					   Number: nSecondMonth
+				   Static Variables 
+				   Local variables 
+					   Number: nMonths
+				   Actions 
+					   If nFirstMonth < nSecondMonth
+						   Set nMonths = nSecondMonth - nFirstMonth
+					   Else If nFirstMonth = nSecondMonth
+						   Set nMonths = 0
+					   Else 
+						   Set nMonths = nFirstMonth - nSecondMonth
+					   Return nMonths
+			! Function: OurDateYear
+				   Description: Because SqlWindows 3.0 SalDateYear returned a 2 digit year. eg 94
+						and SqlWindows 5.0 SalDateYear returns 1994 our database has
+						year fields as keys and we cannot change them, this function
+						takes the 1900 of the year if its not year 1997 or more.  Assumption
+						is that after year 1997 we will want to have 1997, 1998, 1999, 2000 etc 
+						year fields in the database.
+				   Returns 
+					   Number: 
+				   Parameters 
+					   Date/Time: dtCurrentDate
+				   Static Variables 
+				   Local variables 
+					   Number: nCurrentYear
+				   Actions 
+					   Set nCurrentYear = SalDateYear( dtCurrentDate )
+					   If nCurrentYear < 1997
+						   Set nCurrentYear = nCurrentYear - 1900
+					   Return nCurrentYear
+			! Function: AdjustYearToYearOfSale
+				   Description: 
+				   Returns 
+				   Parameters 
+					   Receive Number: nYear
+				   Static Variables 
+				   Local variables 
+				   Actions 
+					   If nYear < 1997 AND nYear > 1900
+						   Set nYear = nYear - 1900
+					   Else If nYear > 96 AND nYear < 100
+						   Set nYear = nYear + 1900
+					   Else If nYear >= 0 AND nYear < 50
+						   Set nYear = nYear + 2000
+			! Function: AdjustYearOfSaleToYear
+				   Description: 
+				   Returns 
+				   Parameters 
+					   Receive Number: nYear
+				   Static Variables 
+				   Local variables 
+				   Actions 
+					   If nYear < 100 AND nYear >= 50
+						   Set nYear = nYear + 1900
+					   Else If nYear >= 0 AND nYear < 50
+						   Set nYear = nYear + 2000
+			! Function: GetUniqueCurrentSysDT
+				   Description: 
+				   Returns 
+					   Date/Time: 
+				   Parameters 
+				   Static Variables 
+					   Date/Time: dtLastSysDT
+				   Local variables 
+					   Date/Time: dtSysDT
+				   Actions 
+					   Set dtSysDT = SalDateCurrent(  )
+					   While dtSysDT = dtLastSysDT
+						   Set dtSysDT = SalDateCurrent(  )
+					   Set dtLastSysDT = dtSysDT
+					   Return dtSysDT
+			! Function: DateToStrX
+				   Description: 
+				   Returns 
+					   String: 
+				   Parameters 
+					   Date/Time: dtDate
+				   Static Variables 
+				   Local variables 
+					   String: sStrDate
+				   Actions 
+					   Call SalDateToStr( dtDate, sStrDate ) 
+					   Return sStrDate
+			! Function: StrToDateTimeFromDateToStrX
+				   Description: assumption to this function is that the format came from DateToStrX( ) being YYYY-MM-DD-HH.MM.SS.TTTTTT
+				   Returns 
+					   Date/Time: 
+				   Parameters 
+					   String: sDateTime
+				   Static Variables 
+				   Local variables 
+				   Actions 
+					   Return SalDateConstruct( SalStrToNumber( SalStrLeftX( sDateTime, 4 ) ), 
+							SalStrToNumber( SalStrMidX( sDateTime, 5, 2 ) ), 
+							SalStrToNumber( SalStrMidX( sDateTime, 8, 2 ) ), 
+							SalStrToNumber( SalStrMidX( sDateTime, 11, 2 ) ), 
+							SalStrToNumber( SalStrMidX( sDateTime, 14, 2 ) ), 
+							SalStrToNumber( SalStrMidX( sDateTime, 17, 9 ) ) )
+			! Function: FmtGetPictureX
+				   Description: 
+				   Returns 
+					   String: 
+				   Parameters 
+					   Window Handle: hWnd
+				   Static Variables 
+				   Local variables 
+					   String: sPicture
+				   Actions 
+					   Call SalFmtGetPicture( hWnd, sPicture )
+					   Return sPicture
+			! The following have been taken back out of cdates.apl to get migration going
+			Function: GetStrJulianDate 
+				Description:
+				Returns
+					String:
+				Parameters
+					Date/Time: dtDate
+				Static Variables
+				Local variables
+				Actions
+					Return SalNumberToStrX( dtDate - SalDateYearBegin( dtDate ) + 1, 0 ) || SalStrMidX( SalNumberToStrX( SalDateYear( dtDate ), 0 ), 3, 1 )
+			Function: GetMonthBegEndDays
+				Description:
+				Returns
+				Parameters
+					Number: nMonth
+					Number: nYear
+					Receive Number: nBegDay
+					Receive Number: nEndDay
+				Static Variables
+				Local variables
+				Actions
+					Set nBegDay = 1
+					Set nEndDay = SalDateDay( DateMonthEnd( SalDateConstruct( nYear, nMonth, 1, 0, 0, 0 ) ) )
+			Function: DateMonthEnd  
+				Description: Returns the last day of the month given in date/time field
+				Returns
+					Date/Time:
+				Parameters
+					Date/Time: dtGivenDate  
+				Static Variables
+				Local variables
+					Date/Time: dtTmpDate  
+					Number: nDay  
+					Number: nMonth  
+					Number: nYear  
+				Actions
+					Set nDay = SalDateDay( dtGivenDate )
+					Set nMonth = SalDateMonth( dtGivenDate )
+					Set nYear = SalDateYear( dtGivenDate )
+					If nMonth < 12
+						Set nMonth = nMonth + 1
+					Else
+						Set nMonth = 1
+						Set nYear = nYear + 1
+					Set dtTmpDate = SalDateConstruct( nYear, nMonth, nDay, 0, 0, 0 )
+					Set dtTmpDate = SalDateMonthBegin( dtTmpDate ) - 1
+					Return dtTmpDate
+			Function: DateYearEnd  
+				Description: Returns the last day of the Year given in date/time field
+				Returns
+					Date/Time:
+				Parameters
+					Date/Time: dtGivenDate  
+				Static Variables
+				Local variables
+					Date/Time: dtTmpDate  
+					Number: nDay  
+					Number: nMonth  
+					Number: nYear  
+				Actions
+					Set nDay = SalDateDay( dtGivenDate )
+					Set nMonth = SalDateMonth( dtGivenDate )
+					Set nYear = SalDateYear( dtGivenDate ) + 1
+					Set dtTmpDate = SalDateConstruct( nYear, nMonth, nDay, 0, 0, 0 )
+					Set dtTmpDate = SalDateYearBegin( dtTmpDate ) - 1
+					Return dtTmpDate
+			Function: SubtractMonthsFromMonth  
+				Description: Assumes the first parameter is a month and the second is the number
+						of months to subtract.  month parameter is assumed to be in the
+						month range 1..12 and NO range checking is performed
+				Returns
+					Number:
+				Parameters
+					Number: nMonth  
+					Number: nSubMonths  
+				Static Variables
+				Local variables
+					Number: nCount  
+				Actions
+					Set nCount = nSubMonths
+					While nCount > 0
+						Set nMonth = nMonth - 1
+						Set nCount = nCount - 1
+						If nMonth < 1
+							Set nMonth = 12
+					Return nMonth
+			Function: DaysDiffBetweenMonths  
+				Description:
+				Returns
+					Number:
+				Parameters
+					Number: nFirstMonth  
+					Number: nSecondMonth  
+				Static Variables
+				Local variables
+					Number: nMonths  
+				Actions
+					If nFirstMonth < nSecondMonth
+						Set nMonths = nSecondMonth - nFirstMonth
+					Else If nFirstMonth = nSecondMonth
+						Set nMonths = 0
+					Else
+						Set nMonths = nFirstMonth - nSecondMonth
+					Return nMonths
+			Function: OurDateYear  
+				Description: Because SqlWindows 3.0 SalDateYear returned a 2 digit year. eg 94
+						and SqlWindows 5.0 SalDateYear returns 1994 our database has
+						year fields as keys and we cannot change them, this function
+						takes the 1900 of the year if its not year 1997 or more.  Assumption
+						is that after year 1997 we will want to have 1997, 1998, 1999, 2000 etc
+						year fields in the database.
+				Returns
+					Number:
+				Parameters
+					Date/Time: dtCurrentDate  
+				Static Variables
+				Local variables
+					Number: nCurrentYear  
+				Actions
+					Set nCurrentYear = SalDateYear( dtCurrentDate )
+					If nCurrentYear < 1997
+						Set nCurrentYear = nCurrentYear - 1900
+					Return nCurrentYear
+			Function: AdjustYearToYearOfSale  
+				Description:
+				Returns
+				Parameters
+					Receive Number: nYear  
+				Static Variables
+				Local variables
+				Actions
+					If nYear < 1997 AND nYear > 1900
+						Set nYear = nYear - 1900
+					Else If nYear > 96 AND nYear < 100
+						Set nYear = nYear + 1900
+					Else If nYear >= 0 AND nYear < 50
+						Set nYear = nYear + 2000
+			Function: AdjustYearOfSaleToYear  
+				Description:
+				Returns
+				Parameters
+					Receive Number: nYear  
+				Static Variables
+				Local variables
+				Actions
+					If nYear < 100 AND nYear >= 50
+						Set nYear = nYear + 1900
+					Else If nYear >= 0 AND nYear < 50
+						Set nYear = nYear + 2000
+			Function: GetUniqueCurrentSysDT  
+				Description:
+				Returns
+					Date/Time:
+				Parameters
+				Static Variables
+					Date/Time: dtLastSysDT  
+				Local variables
+					Date/Time: dtSysDT  
+				Actions
+					Set dtSysDT = SalDateCurrent(  )
+					While dtSysDT = dtLastSysDT
+						Set dtSysDT = SalDateCurrent(  )
+					Set dtLastSysDT = dtSysDT
+					Return dtSysDT
+			Function: DateToStrX  
+				Description:
+				Returns
+					String:
+				Parameters
+					Date/Time: dtDate  
+				Static Variables
+				Local variables
+					String: sStrDate  
+				Actions
+					Call SalDateToStr( dtDate, sStrDate )
+					Return sStrDate
+			Function: StrToDateTimeFromDateToStrX  
+				Description: assumption to this function is that the format came from DateToStrX( ) being YYYY-MM-DD-HH.MM.SS.TTTTTT
+				Returns
+					Date/Time:
+				Parameters
+					String: sDateTime  
+				Static Variables
+				Local variables
+				Actions
+					Return SalDateConstruct( SalStrToNumber( SalStrLeftX( sDateTime, 4 ) ),
+							SalStrToNumber( SalStrMidX( sDateTime, 5, 2 ) ),
+							SalStrToNumber( SalStrMidX( sDateTime, 8, 2 ) ),
+							SalStrToNumber( SalStrMidX( sDateTime, 11, 2 ) ),
+							SalStrToNumber( SalStrMidX( sDateTime, 14, 2 ) ),
+							SalStrToNumber( SalStrMidX( sDateTime, 17, 9 ) ) )
+			Function: FmtGetPictureX  
+				Description:
+				Returns
+					String:
+				Parameters
+					Window Handle: hWnd  
+				Static Variables
+				Local variables
+					String: sPicture  
+				Actions
+					Call SalFmtGetPicture( hWnd, sPicture )
+					Return sPicture
+			Function: DateTimeToStrHHMMSS
+				Description:
+				Returns
+					String:
+				Parameters
+					Date/Time: dtDateTime
+				Static Variables
+				Local variables
+					String: sHour
+					String: sMin
+					String: sSec
+				Actions
+					Set sHour = SalNumberToStrX( SalDateHour( dtDateTime ), 0 )
+					Call StringStartPad( sHour, '0', 2 )
+					Set sMin = SalNumberToStrX( SalDateMinute( dtDateTime ), 0 )
+					Call StringStartPad( sMin, '0', 2 )
+					Set sSec = SalNumberToStrX( SalDateSecond( dtDateTime ), 0 )
+					Call StringStartPad( sSec, '0', 2 )
+					Return sHour || sMin || sSec
+			Function: DateTimeToStrYYMMDD
+				Description:
+				Returns
+					String:
+				Parameters
+					Date/Time: dtDateTime
+				Static Variables
+				Local variables
+					String: sYear
+					String: sMonth
+					String: sDay
+				Actions
+					Set sYear = SalStrRightX( SalNumberToStrX( SalDateYear( dtDateTime ), 2 ), 0 )
+					Call StringStartPad( sYear, '0', 2 )
+					Set sMonth = SalNumberToStrX( SalDateMonth( dtDateTime ), 0 )
+					Call StringStartPad( sMonth, '0', 2 )
+					Set sDay = SalNumberToStrX( SalDateDay( dtDateTime ), 0 )
+					Call StringStartPad( sDay, '0', 2 )
+					Return sYear || sMonth || sDay
+		Class Definitions
+.data RESOURCE 0 0 1 3600663767
+0000: 590000004A000000 0000000000000000 0200000100FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F04003C00 001063006C73546F
+0040: 6F6C546900705769 6E646F771E900000 0001000047030400 00FFFF01
+.enddata
+			Custom Control Class: ccGeneralCalendarDropDown
+				DLL Name: C:\Centura\vti11.dll
+				Display Settings
+					DLL Name: C:\Centura\vti11.dll
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Dark Blue
+					Background Color: Class Default
+					DLL Settings
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: cCalendarDropDown
+				Class Variables
+				Instance Variables
+				Functions
+					Function: GetCalendarDate
+						Description:
+						Returns
+							Date/Time:
+						Parameters
+						Static Variables
+						Local variables
+							String: sDate
+						Actions
+							Call SalGetWindowText( hWndItem, sDate, MAX_DefaultDataField)
+							Return SalStrToDate( sDate )
+				Message Actions
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions

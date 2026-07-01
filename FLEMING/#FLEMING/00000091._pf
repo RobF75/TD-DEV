@@ -1,0 +1,5193 @@
+Application Description: SQLWindows 5.01 Stock Items function APL
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000A40000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF160000 0016000000AA0200 0053010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 1018B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.113"
+			Top:    2.896"
+			Width:  4.688"
+			Height: 2.99"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   8.263"
+			Top:    0.688"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: VTSPIN.APL
+		File Include: VTWIN.APL
+		File Include: VTMETER.APL
+		File Include: Meter.apl
+		File Include: Spnfield.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Italic
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Black
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for ITEMFUNC.APL
+				Number: ITMFUNCAplMsgOffSet = SAM_User + 2600
+				! Message go up to AplOffSet + 99
+				!
+				Number: ITEMFUNCAplConstOffSet = 1250
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 4124670859
+0000: CE050000F7010000 0000000000000000 020000390000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E002040000 00FF3FA200B80000 0200FFFFE0A60000 0001FE00FF83B300
+0060: 000001FB00FF0FC0 000000EE0100FF3F CD00B800000100FF FF80DA0000000304
+0080: 00FE00FF83DE0000 0002FB00FF0FE200 0000EE0100FF3FEF 00B800000100FFFF
+00A0: E0FC00000001FE00 FF830901000002FB 00FF8F0D0100EE02 00FF3F1101BA0002
+00C0: 00FFFFE815010001 FE00FFA322010001 FB00FF8F2F0100EE 0200FF3F3301BA00
+00E0: 0200FFFFE8370100 01FE00FFA3440100 01FB00FF8F510100 EE0100FF3F5E01BA
+0100: 000100FFFFE86B01 0003FE00FFA36F01 0002FB00FF8F7301 00EE0100FF3F8001
+0120: B800000100FFFFA8 8D01000100FE00FF A39A010002FB00FF 8F9E0100EE0200FF
+0140: 3FA201BA000200FF FFE8A6010001FE00 FFA3B3010001FB00 FF8FC00100EE0200
+0160: FF3FC401BA000200 FFFFE8C8010001FE 00FFA3D5010001FB 00FF8FE20100EE01
+0180: 00FF3FEF01BA0001 00FFFFE8FC010003 FE00FF4702000004 FB00FF8F040200EE
+01A0: 0100FF3F1102BA00 0100FFFFE81E0200 01FE00FFA32B0200 02FB00FF8F2F0200
+01C0: EE0200FF3F3302BA 000200FFFFE83702 0001FE00FFA34402 0001FB00FF8F5102
+01E0: 00EE0100FF3F5E02 BA000100FFFFE86B 020001FE00FFA378 020001FB00FF8F85
+0200: 0200E8040D0000FF 3F
+.enddata
+		Named Menus
+		Internal Functions
+			Function: CheckYearItemExists
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Boolean: bExists
+					Receive String: sSoldOutFlag
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					String: sGotSoldOutFlag
+					Number: nInd
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'SISYREXISTS' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT Sold_Out_Flag 
+									FROM Stock_Item_Sale 
+									WHERE Stock_Item_No = :1 AND Year_Of_Sale = :2 "
+							Set sName = 'SISYREXISTS'
+							Set sBind = ':nItemNo, :nYear'
+							Set sInto = ':sGotSoldOutFlag'
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set bExists = FALSE
+							Set sSoldOutFlag = ''
+							Set sGotSoldOutFlag = ''
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set bExists = TRUE
+								Else
+									Set bExists = FALSE
+								Set sSoldOutFlag = sGotSoldOutFlag
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: CalculateItemTotAvailForQueries
+				Description: Calculates the available trees for queries of stock items.
+						Ussually used under SAM_FetchRow
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Number: nTotal
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					Number: nInd
+					Number: nGotTotal
+					Number: nSubsTotal
+					String: sGeneric
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'QITMTOTAVAIL' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = "SELECT 
+									  Tot_Avail, 
+									  Generic_Stock_Item
+									FROM 
+									  Stock_Item_Sale, 
+									  Stock_Item 
+									WHERE 
+									  Stock_Item_Sale.Stock_Item_No = :1 AND 
+									  Stock_Item_Sale.Year_Of_Sale = :2 AND 
+									  Stock_Item_Sale.Stock_Item_No = Stock_Item.Item_No "
+							Set sName = 'QITMTOTAVAIL'
+							Set sBind = ':nItemNo, :nYear'
+							Set sInto = ':nGotTotal, :sGeneric'
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nTotal = NUMBER_Null
+							Set nGotTotal = NUMBER_Null
+							Set sGeneric = ''
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									If sGeneric = 'Y'
+										If CalculateSubstitutes( nItemNo, nYear, nGotTotal, SH_cls_Execute )
+											Set nTotal = nGotTotal
+											Return TRUE
+										Else
+											Return FALSE
+									Else
+										Set nSubsTotal = 0
+										Call CalculateSubstitutes( nItemNo, nYear, nSubsTotal, SH_cls_Execute )
+										Set nTotal = nGotTotal + nSubsTotal
+										Return TRUE
+								Else
+									Return FALSE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Call CalculateSubstitutes( 0, 0, nGotTotal, SH_cls_Disconnect )
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: CalcItemTotFutAvailForQueries
+				Description: Calculates the future available trees for queries of stock items.
+						Ussually used under SAM_FetchRow
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Number: nTotal
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					Number: nInd
+					Number: nGotTotal
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CalcItemTotFutAvailForQueries' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = "SELECT 
+									  SUM( Est_Avail_Count  )
+									FROM 
+									  Stock_Item_Sale 
+									WHERE 
+									  Stock_Item_Sale.Stock_Item_No = :1 AND 
+									  Stock_Item_Sale.Year_Of_Sale >= :2 "
+							Set sName = 'QITMTTFUTAVAL2'
+							Set sBind = ':nItemNo, :nYear'
+							Set sInto = ':nGotTotal'
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nTotal = NUMBER_Null
+							Set nGotTotal = NUMBER_Null
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set nTotal = nGotTotal
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: CalcItemTotFutGrowingForQueries
+				Description: Calculates the future Growing trees for queries of stock items.
+						Usually used under SAM_FetchRow
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Number: nTotal
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					Number: nInd
+					Number: nGotTotal
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CalcItemTotFutGrowingForQueries' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = "SELECT 
+									  SUM( AMT_Growing )
+									FROM 
+									  Stock_Item_Sale 
+									WHERE 
+									  Stock_Item_Sale.Stock_Item_No = :1 AND 
+									  Stock_Item_Sale.Year_Of_Sale >= :2 "
+							Set sName = 'QITMTTFUTGROW'
+							Set sBind = ':nItemNo, :nYear'
+							Set sInto = ':nGotTotal'
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nTotal = NUMBER_Null
+							Set nGotTotal = NUMBER_Null
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set nTotal = nGotTotal
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: CalculateSubstitutes
+				Description: For a given year and item no to add all of the substitutes together
+						to get an interactive total
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Number: nSubs
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurSubsHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nOuSubsHandleNo
+					Boolean: bOk
+					!
+					Number: nInd
+					Number: nSubsItemNo[*]
+					Number: nUpTo[*]
+					Number: nArray
+					Number: nCount
+					Number: nTotal
+					Number: nGraded
+				Actions
+					! Number: nOurHandleNo
+					! haSqlHandles[ nOurHandleNo ]
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CALCSUBTOTAVAIL' )
+					Set nOuSubsHandleNo = SqlHandlesGetReferenceNo( 'CALCITMSUBS' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = "SELECT Tot_Avail, Amt_Graded 
+									FROM Stock_Item_Sale 
+									WHERE Stock_Item_Sale.Stock_Item_No = :1
+									AND Stock_Item_Sale.Year_Of_Sale = :2 "
+							Set sName = 'CALCSUBTOTAVAIL'
+							Set sBind = ':nSubsItemNo[nArray], :nYear'
+							Set sInto = ':nTotal, :nGraded'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sSql = "SELECT Substitute_Item_No, Sub_Up_To_Max 
+									FROM Substitutes 
+									WHERE Stock_Item_No = :1 "
+							Set sName = 'CALCITMSUBS'
+							Set sBind = ':nItemNo'
+							Set sInto = ':nSubsItemNo[nArray], :nUpTo[nArray]'
+							Call haSqlHandles[ nOuSubsHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOuSubsHandleNo ].hSqlHandle )
+							!
+							Set nSubs = 0
+							Set nArray = 0
+							If haSqlHandles[ nOuSubsHandleNo ].Execute( )
+								While haSqlHandles[ nOuSubsHandleNo ].FetchNext( nInd )
+									Set nArray = nArray + 1
+							Else
+								Return FALSE
+							!
+							Set nCount = nArray
+							Set nArray = 0
+							While nArray < nCount
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									If NOT haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+										Return FALSE
+								Else
+									Return FALSE
+								If nInd != FETCH_EOF 
+									! Wrong -  when the graded amount is changed in tblInv then we adjust the
+											total available column then so we dont need to worry if we're using a graded
+											figure or not cos it is still the total available that we use!!!  Need to check firstly if we are using the graded amount or the total from
+											field counts amount - then need to check if it has an up to amount - if not
+											then assume all as subs,  if so then need to check if the amt available is
+											less than the up to amount cos we can only use what is available
+									If nUpTo[nArray] = NUMBER_Null
+										Set nSubs = nSubs + nTotal
+									Else
+										If nTotal > nUpTo[nArray]
+											Set nSubs = nSubs + nUpTo[nArray] 
+										Else
+											Set nSubs = nSubs + nTotal
+								Set nArray = nArray + 1
+							Return TRUE
+						Case SH_cls_Disconnect
+							Set bOk = TRUE
+							If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOuSubsHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							Return bOk
+			Function: ExistsFutureAvailStock
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Boolean: bExists
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nInd
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'ISFUTAVAILSTCK' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT 
+									  Location_Id
+									FROM 
+									  Growing_Sale
+									WHERE 
+									  Stock_Item_No = :1 AND 
+									  Year_Of_Sale = :2 AND 
+									  Est_Sale_Date > SYSDATE "
+							Set sName = 'ISFUTAVAILSTCK'
+							Set sBind = ':nItemNo, :nYear'
+							Set sInto = ''
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set bExists = FALSE
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set bExists = TRUE
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			!
+			Function: MakeItemYearComb
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+				Static Variables
+				Local variables
+				Actions
+					Return SalNumberToStrX( nYear, 0 ) || ',' || SalNumberToStrX( nItemNo, 0 )
+			Function: ExtractItemYearComb
+				Description:
+				Returns
+				Parameters
+					String: sString
+					Receive Number: nItemNo
+					Receive Number: nYear
+				Static Variables
+				Local variables
+				Actions
+					Set nItemNo = SalStrToNumber( SalStrRightX( sString, SalStrLength( sString ) - SalStrScan( sString, ',' ) - 1 ) )
+					Set nYear = SalStrToNumber( SalStrLeftX( sString, SalStrScan( sString, ',' ) ) )
+			!
+			Function: MakeItemYearLocIdComb
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Number: nLocationId
+				Static Variables
+				Local variables
+					String: sItemNo
+					String: sYear
+					String: sLocationId
+				Actions
+					Set sYear = SalNumberToStrX( nYear, 0 )
+					Set sItemNo = SalNumberToStrX( nItemNo, 0 )
+					Set sLocationId = SalNumberToStrX( nLocationId, 0 )
+					Call StringEndPad( sYear, ' ', 4 )
+					Call StringEndPad( sItemNo, ' ', 5 )
+					Call StringEndPad( sLocationId, ' ', 7 )
+					Return sYear || ',' || sItemNo || ',' || sLocationId
+			Function: ExtractItemYearLocIdComb
+				Description:
+				Returns
+				Parameters
+					String: sString
+					Receive Number: nItemNo
+					Receive Number: nYear
+					Receive Number: nLocationId
+				Static Variables
+				Local variables
+				Actions
+					Set nYear = SalStrToNumber( SalStrTrimX( SalStrLeftX( sString, 4 ) ) )
+					Set nItemNo = SalStrToNumber( SalStrTrimX( SalStrMidX( sString, 5, 5 ) ) )
+					Set nLocationId = SalStrToNumber( SalStrTrimX( SalStrRightX( sString, 7 ) ) )
+			!
+			Function: CheckForNewAvailPotsStock
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Date/Time: dtNowDate
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nInd
+					Number: naItemNos[2]
+					Number: nItemNo
+					String: sTmp
+					Number: nYear
+					Boolean: bOk
+					: fcStrRecalcItemsStack
+						Class: strStack
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CheckForNewAvailPotsStock' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT DISTINCT 
+									  Growing_Sale.Stock_Item_No, 
+									  Growing_Sale.Year_Of_Sale 
+									FROM 
+									  Growing_Sale, 
+									  Stock_Item 
+									WHERE 
+									  Growing_Sale.Stock_Item_No = Stock_Item.Item_No AND 
+									  Stock_Item.Stock_Type = 'C' AND 
+									  Growing_Sale.Est_Sale_Date <= :1 AND 
+									  Growing_Sale.Future_Stock = 'Y' AND 
+									  ( Growing_Sale.Not_For_Sale = 'N' OR 
+									    Growing_Sale.Not_For_Sale IS NULL ) 
+									ORDER BY 
+									  Growing_Sale.Stock_Item_No, 
+									  Growing_Sale.Year_Of_Sale "
+							Set sName = 'CHKFNAVAILPSTK'
+							Set sBind = ':dtNowDate'
+							Set sInto = ':nItemNo, :nYear'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								Set bOk = FALSE
+								Call fcStrRecalcItemsStack.StackInit( )
+								While haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Call fcStrRecalcItemsStack.StackPush( MakeItemYearComb( nItemNo, nYear ) )
+									Set bOk = TRUE
+								If bOk
+									If UpdateNewAvailPotsStock( dtNowDate, SH_cls_Execute )
+										Call UpdateNewAvailPotsStock( dtNowDate, SH_cls_Commit )
+										!
+										While fcStrRecalcItemsStack.StackPop( sTmp ) AND bOk
+											Call ExtractItemYearComb( sTmp, naItemNos[ 0 ], nYear )
+											Set naItemNos[ 1 ] = NUMBER_Null
+											If NOT RecalculateInventoryFigures( naItemNos, nYear, 'SELECTED', SH_cls_Execute )
+												Set bOk = FALSE
+									Else
+										Set bOk = FALSE
+								Else
+									Set bOk = TRUE
+								Return bOk
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Set bOk = TRUE
+							If NOT RecalculateInventoryFigures( naItemNos, 0, '', SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT UpdateNewAvailPotsStock( DATETIME_Null, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							Return bOk
+			Function: UpdateNewAvailPotsStock
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Date/Time: dtNowDate
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'UpdateNewAvailPotsStock' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " UPDATE Growing_Sale 
+									SET 
+									  Future_Stock = 'N' 
+									WHERE 
+									  Growing_Sale.Stock_Item_No = Stock_Item.Item_No AND 
+									  Stock_Item.Stock_Type = 'C' AND 
+									  Growing_Sale.Est_Sale_Date <= :1 AND 
+									  Growing_Sale.Future_Stock = 'Y' AND 
+									  ( Growing_Sale.Not_For_Sale = 'N' OR 
+									    Growing_Sale.Not_For_Sale IS NULL ) "
+							Set sName = 'CHKFNAVAILPSTK'
+							Set sBind = ':dtNowDate'
+							Set sInto = ''
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Return haSqlHandles[ nOurHandleNo ].Execute( )
+						Case SH_cls_Commit
+							Return haSqlHandles[ nOurHandleNo ].Commit( )
+						Case SH_cls_Rollback
+							Return haSqlHandles[ nOurHandleNo ].Rollback( )
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			!
+			Function: RecalculateInventoryFigures
+				Description: nItemNos[*] is NUMBER_Null terminated
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNos[*]
+					Number: nYear
+					! sItemType = 'SELECTED' Default OR 'ALL'
+					String: sItemType
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurSelHandleNo
+					Number: nOurAllHandleNo
+					!
+					Number: nInd
+					Number: nPos
+					Number: nSelectedItemNo
+					!
+					Boolean: bOk
+					!
+					Number: nItemNo
+					Number: nAmtGrowing
+					Number: nAmtGraded
+					Number: nAmtShipped
+					Number: nAmtOnOrder
+					Number: nTotAvail
+					Number: nOnOrdAsSubs
+					Number: nAmtSubsShipped
+					Number: nEstAvailCount
+					Number: nTotalGraded
+					String: sGenFlag
+					String: sStockType
+					Number: nAmtFutOnOrder
+					!
+					Number: nAmtCreditedReturned
+				Actions
+					Set nOurSelHandleNo = SqlHandlesGetReferenceNo( 'SISRECALCITMINV' )
+					Set nOurAllHandleNo = SqlHandlesGetReferenceNo( 'SISRECALCALLINV' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set bOk = TRUE
+							Set sInto = ':nItemNo, 
+									:nAmtGrowing, 
+									:nAmtGraded,
+									:nAmtShipped, 
+									:nAmtOnOrder, 
+									:nTotAvail, 
+									:nOnOrdAsSubs, 
+									:nAmtSubsShipped, 
+									:nEstAvailCount,
+									:nTotalGraded, 
+									:sGenFlag, 
+									:sStockType'
+							If sItemType = 'SELECTED'
+								Set sSql = " SELECT 
+										  Stock_Item_Sale.Stock_Item_No, 
+										  Stock_Item_Sale.Amt_Growing, 
+										  Stock_Item_Sale.Amt_Graded, 
+										  Stock_Item_Sale.Amt_Shipped, 
+										  Stock_Item_Sale.Amt_On_Order, 
+										  Stock_Item_Sale.Tot_Avail, 
+										  Stock_Item_Sale.On_Ord_As_Subs, 
+										  Stock_Item_Sale.Amt_Subs_Shipped, 
+										  Stock_Item_Sale.Est_Avail_Count, 
+										  Stock_Item_Sale.Total_Graded, 
+										  Stock_Item.Generic_Stock_Item, 
+										  Stock_Item.Stock_Type 
+										FROM 
+										  Stock_Item_Sale, 
+										  Stock_Item  
+										WHERE 
+										  Stock_Item_Sale.Stock_Item_No = Stock_Item.Item_No AND 
+										  Stock_Item_Sale.Stock_Item_No = :1 AND 
+										  Stock_Item_Sale.Year_Of_Sale = :2 "
+								Set sName = 'SISRECALCITMINV'
+								Set sBind = ':nSelectedItemNo, :nYear'
+								Call haSqlHandles[ nOurSelHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurSelHandleNo ].hSqlHandle )
+								!
+								Set nPos = 0
+								While nItemNos[ nPos ] != NUMBER_Null AND bOk
+									Set nSelectedItemNo = nItemNos[ nPos ]
+									If haSqlHandles[ nOurSelHandleNo ].Execute( )
+										If haSqlHandles[ nOurSelHandleNo ].FetchNext( nInd )
+											If sStockType = 'C'
+												If NOT RecalcItemInvPotsFigures( nItemNo, nYear, nAmtGraded, nAmtGrowing, nAmtOnOrder, nOnOrdAsSubs, nAmtShipped, 
+														nTotAvail, nEstAvailCount, SH_cls_Execute )
+													Set bOk = FALSE
+											Else
+												If NOT RecalcItemInvFigures( nItemNo, nYear, nAmtGrowing, nAmtGraded, nAmtShipped, 
+														nAmtOnOrder, nTotAvail, nOnOrdAsSubs, nAmtSubsShipped, 
+														nEstAvailCount, nTotalGraded, sGenFlag, sStockType, SH_cls_Execute )
+													Set bOk = FALSE
+									Else
+										Set bOk = FALSE
+									Set nPos = nPos + 1
+							Else
+								Set sSql = " SELECT 
+										  Stock_Item_Sale.Stock_Item_No, 
+										  Stock_Item_Sale.Amt_Growing, 
+										  Stock_Item_Sale.Amt_Graded, 
+										  Stock_Item_Sale.Amt_Shipped, 
+										  Stock_Item_Sale.Amt_On_Order, 
+										  Stock_Item_Sale.Tot_Avail, 
+										  Stock_Item_Sale.On_Ord_As_Subs, 
+										  Stock_Item_Sale.Amt_Subs_Shipped, 
+										  Stock_Item_Sale.Est_Avail_Count, 
+										  Stock_Item_Sale.Total_Graded, 
+										  Stock_Item.Generic_Stock_Item, 
+										  Stock_Item.Stock_Type 
+										FROM 
+										  Stock_Item_Sale, 
+										  Stock_Item
+										WHERE 
+										  Stock_Item_Sale.Stock_Item_No = Stock_Item.Item_No AND 
+										  Stock_Item_Sale.Year_Of_Sale = :1 "
+								Set sName = 'SISRECALCALLINV'
+								Set sBind = ':nYear'
+								Call haSqlHandles[ nOurAllHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurAllHandleNo ].hSqlHandle )
+								!
+								If haSqlHandles[ nOurAllHandleNo ].Execute( )
+									While haSqlHandles[ nOurAllHandleNo ].FetchNext( nInd ) AND bOk
+										If sStockType = 'C'
+											If NOT RecalcItemInvPotsFigures( nItemNo, nYear, nAmtGraded, nAmtGrowing, nAmtOnOrder, nOnOrdAsSubs, nAmtShipped, 
+													nTotAvail, nEstAvailCount, SH_cls_Execute )
+												Set bOk = FALSE
+										Else
+											If NOT RecalcItemInvFigures( nItemNo, nYear, nAmtGrowing, nAmtGraded, nAmtShipped, 
+													nAmtOnOrder, nTotAvail, nOnOrdAsSubs, nAmtSubsShipped, 
+													nEstAvailCount, nTotalGraded, sGenFlag, sStockType, SH_cls_Execute )
+												Set bOk = FALSE
+								Else
+									Set bOk = FALSE
+							Return bOk
+						Case SH_cls_Disconnect
+							Set bOk = TRUE
+							If NOT RecalcItemInvFigures( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT RecalcItemInvPotsFigures( 0, 0, 0, 0, 0, 0, 0, 0, 0, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurSelHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurAllHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							Return bOk
+			Function: RecalcItemInvPotsFigures
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Number: nSISTotalCurrCount
+					Number: nSISTotalFutCount
+					Number: nSISTotCurrOnOrder
+					Number: nSISTotFutOnOrder
+					Number: nSISTotalShipped
+					Number: nSISCurrTotAvail
+					Number: nSISTotalFutAvail
+					Number: nActionType
+				Static Variables
+				Local variables
+					Boolean: bOk
+					Number: naCurrLocIds[*]
+					Number: naCurrCurrStkCount[*]
+					Number: naCurrOrdered[*]
+					Number: naCurrActOrdered[*]
+					!
+					Number: naFutLocIds[*]
+					Number: naFutCurrStkCount[*]
+					Number: naFutOrdered[*]
+					Number: naFutActOrdered[*]
+					!
+					Number: nNewSISTotalCurrCount
+					Number: nNewSISTotalFutCount
+					Number: nNewSISTotCurrOnOrder
+					Number: nNewSISTotFutOnOrder
+					Number: nNewSISTotalShipped
+					Number: nNewSISCurrTotAvail
+					Number: nNewSISTotalFutAvail
+					!
+					Number: nPos
+					Boolean: bItemAffected
+				Actions
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set bOk = TRUE
+							Set nPos = 0
+							Set naCurrLocIds[ nPos ] = NUMBER_Null
+							Set naCurrCurrStkCount[ nPos ] = NUMBER_Null
+							Set naCurrOrdered[ nPos ] = NUMBER_Null
+							Set naCurrActOrdered[ nPos ] = NUMBER_Null
+							!
+							Set naFutLocIds[ nPos ] = NUMBER_Null
+							Set naFutCurrStkCount[ nPos ] = NUMBER_Null
+							Set naFutOrdered[ nPos ] = NUMBER_Null
+							Set naFutActOrdered[ nPos ] = NUMBER_Null
+							!
+							Set nNewSISTotalCurrCount = 0
+							Set nNewSISTotalFutCount = 0
+							Set nNewSISTotCurrOnOrder = 0
+							Set nNewSISTotFutOnOrder = 0
+							Set nNewSISTotalShipped = 0
+							Set nNewSISCurrTotAvail = 0
+							Set nNewSISTotalFutAvail = 0
+							!
+							If GetPotsCurrStockDetails( nItemNo, nYear, naCurrLocIds, naCurrCurrStkCount, naCurrOrdered, SH_cls_Execute )
+								If NOT GetPotsFutStockDetails( nItemNo, nYear, naFutLocIds, naFutCurrStkCount, naFutOrdered, SH_cls_Execute )
+									Set bOk = FALSE
+							Else
+								Set bOk = FALSE
+							!
+							If bOk
+								Set nPos = 0
+								While naCurrLocIds[ nPos ] != NUMBER_Null AND bOk
+									If CalcPotsBatchAmtOnOrder( nItemNo, nYear, naCurrLocIds[ nPos ], naCurrActOrdered[ nPos ], SH_cls_Execute )
+										Set nNewSISTotalCurrCount = nNewSISTotalCurrCount + naCurrCurrStkCount[ nPos ]
+										Set nNewSISTotCurrOnOrder = nNewSISTotCurrOnOrder + naCurrActOrdered[ nPos ]
+										Set nNewSISCurrTotAvail = nNewSISCurrTotAvail + ( naCurrCurrStkCount[ nPos ] - naCurrActOrdered[ nPos ] )
+									Else
+										Set bOk = FALSE
+									!
+									Set nPos = nPos + 1
+							If bOk
+								Set nPos = 0
+								While naFutLocIds[ nPos ] != NUMBER_Null AND bOk
+									If CalcPotsBatchAmtOnOrder( nItemNo, nYear, naFutLocIds[ nPos ], naFutActOrdered[ nPos ], SH_cls_Execute )
+										Set nNewSISTotalFutCount = nNewSISTotalFutCount + naFutCurrStkCount[ nPos ]
+										Set nNewSISTotFutOnOrder = nNewSISTotFutOnOrder + naFutActOrdered[ nPos ]
+										Set nNewSISTotalFutAvail = nNewSISTotalFutAvail + ( naFutCurrStkCount[ nPos ] - naFutActOrdered[ nPos ] )
+									Else
+										Set bOk = FALSE
+									!
+									Set nPos = nPos + 1
+							If bOk
+								If NOT CalcPotsAmtShipped( nItemNo, nYear, nNewSISTotalShipped, SH_cls_Execute )
+									Set bOk = FALSE
+							!
+							If bOk
+								Set bItemAffected = FALSE
+								If nSISTotalCurrCount != nNewSISTotalCurrCount OR 
+										   nSISTotalFutCount != nNewSISTotalFutCount OR 
+										   nSISTotCurrOnOrder != nNewSISTotCurrOnOrder OR 
+										   nSISTotFutOnOrder != nNewSISTotFutOnOrder OR 
+										   nSISTotalShipped != nNewSISTotalShipped OR 
+										   nSISCurrTotAvail != nNewSISCurrTotAvail OR 
+										   nSISTotalFutAvail != nNewSISTotalFutAvail
+									Set bItemAffected = TRUE
+									If NOT UpdatePotsRecalcInvFigures( nItemNo, nYear, nNewSISTotalCurrCount, nNewSISTotalFutCount, nNewSISTotCurrOnOrder, nNewSISTotFutOnOrder, nNewSISTotalShipped, nNewSISCurrTotAvail, nNewSISTotalFutAvail, SH_cls_Execute )
+										Set bOk = FALSE
+								!
+								If bOk
+									Set nPos = 0
+									While naCurrLocIds[ nPos ] != NUMBER_Null AND bOk
+										If naCurrOrdered[ nPos ] != naCurrActOrdered[ nPos ]
+											Set bItemAffected = TRUE
+											If NOT UpdatePotsBatchOrdered( nItemNo, nYear, naCurrLocIds[ nPos ], naCurrActOrdered[ nPos ], SH_cls_Execute )
+												Set bOk = FALSE
+										Set nPos = nPos + 1
+									!
+									If bOk
+										Set nPos = 0
+										While naFutLocIds[ nPos ] != NUMBER_Null AND bOk
+											If naFutOrdered[ nPos ] != naFutActOrdered[ nPos ]
+												Set bItemAffected = TRUE
+												If NOT UpdatePotsBatchOrdered( nItemNo, nYear, naFutLocIds[ nPos ], naFutActOrdered[ nPos ], SH_cls_Execute )
+													Set bOk = FALSE
+											Set nPos = nPos + 1
+										!
+										If bOk
+											! If bItemAffected
+												             If InsertPotsDailyItemAffected( nItemNo, nYear, SH_cls_Execute )
+													             Call InsertPotsDailyItemAffected( 0, 0, SH_cls_Commit )
+													             Call UpdatePotsBatchOrdered( 0, 0, 0, 0, SH_cls_Commit )
+													             Call UpdatePotsRecalcInvFigures( 0, 0, 0, 0, 0, 0, 0, 0, 0, SH_cls_Commit )
+												             Else 
+													             Set bOk = FALSE
+													             Call InsertPotsDailyItemAffected( 0, 0, SH_cls_Rollback )
+													             Call UpdatePotsBatchOrdered( 0, 0, 0, 0, SH_cls_Rollback )
+													             Call UpdatePotsRecalcInvFigures( 0, 0, 0, 0, 0, 0, 0, 0, 0, SH_cls_Rollback )
+											! Else
+											Call UpdatePotsBatchOrdered( 0, 0, 0, 0, SH_cls_Commit )
+											Call UpdatePotsRecalcInvFigures( 0, 0, 0, 0, 0, 0, 0, 0, 0, SH_cls_Commit )
+										Else
+											Call UpdatePotsBatchOrdered( 0, 0, 0, 0, SH_cls_Rollback )
+											Call UpdatePotsRecalcInvFigures( 0, 0, 0, 0, 0, 0, 0, 0, 0, SH_cls_Rollback )
+									Else
+										Call UpdatePotsBatchOrdered( 0, 0, 0, 0, SH_cls_Rollback )
+										Call UpdatePotsRecalcInvFigures( 0, 0, 0, 0, 0, 0, 0, 0, 0, SH_cls_Rollback )
+								Else
+									Call UpdatePotsRecalcInvFigures( 0, 0, 0, 0, 0, 0, 0, 0, 0, SH_cls_Rollback )
+							Return bOk
+						Case SH_cls_Disconnect
+							Set bOk = TRUE
+							!
+							If NOT GetPotsCurrStockDetails( 0, 0, naCurrLocIds, naCurrCurrStkCount, naCurrOrdered, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT GetPotsFutStockDetails( 0, 0, naFutLocIds, naFutCurrStkCount, naFutOrdered, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT CalcPotsBatchAmtOnOrder( 0, 0, 0, naCurrActOrdered[ 0 ], SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT CalcPotsAmtShipped( 0, 0, nNewSISTotalShipped, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT UpdatePotsBatchOrdered( 0, 0, 0, 0, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT UpdatePotsRecalcInvFigures( 0, 0, 0, 0, 0, 0, 0, 0, 0, SH_cls_Disconnect )
+								Set bOk = FALSE
+							! If NOT InsertPotsDailyItemAffected( 0, 0, SH_cls_Disconnect )
+								             Set bOk = FALSE
+							!
+							Return bOk
+			Function: GetPotsCurrStockDetails
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Number: naCurrLocIds[*]
+					Receive Number: naCurrStkCounts[*]
+					Receive Number: naCurrOrdered[*]
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nInd
+					!
+					Number: nGotLocId
+					Number: nGotCount
+					Number: nGotOrders
+					Number: nPos
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetPotsCurrStockDetails' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							!
+							Set nPos = 0
+							Set naCurrLocIds[ nPos ] = NUMBER_Null
+							Set naCurrStkCounts[ nPos ] = NUMBER_Null
+							Set naCurrOrdered[ nPos ] = NUMBER_Null
+							!
+							Set sSql = " SELECT 
+									  Location_Id, 
+									  Second_Count, 
+									  Current_Orders 
+									FROM 
+									  Growing_Sale
+									WHERE 
+									  Stock_Item_No = :1 AND 
+									  Year_Of_Sale = :2 AND 
+									  ( Not_For_Sale = 'N' OR 
+									  Not_For_Sale IS NULL ) AND 
+									  ( Est_Sale_Date <= SYSDATE OR 
+									    Est_Sale_Date IS NULL ) "
+							Set sName = 'PTCRSTKDTS'
+							Set sBind = ':nItemNo, :nYear'
+							Set sInto = ':nGotLocId, :nGotCount, :nGotOrders'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nGotLocId = NUMBER_Null
+							Set nGotCount = NUMBER_Null
+							Set nGotOrders = NUMBER_Null
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								While haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set naCurrLocIds[ nPos ] = nGotLocId
+									Set naCurrStkCounts[ nPos ] = nGotCount
+									Set naCurrOrdered[ nPos ] = nGotOrders
+									Set nPos = nPos + 1
+									Set naCurrLocIds[ nPos ] = NUMBER_Null
+									Set naCurrStkCounts[ nPos ] = NUMBER_Null
+									Set naCurrOrdered[ nPos ] = NUMBER_Null
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: GetPotsFutStockDetails
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Number: naFutLocIds[*]
+					Receive Number: naFutStkCounts[*]
+					Receive Number: naFutOrdered[*]
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nInd
+					!
+					Number: nGotLocId
+					Number: nGotCount
+					Number: nGotOrders
+					Number: nPos
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetPotsFutStockDetails' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							!
+							Set nPos = 0
+							Set naFutLocIds[ nPos ] = NUMBER_Null
+							Set naFutStkCounts[ nPos ] = NUMBER_Null
+							Set naFutOrdered[ nPos ] = NUMBER_Null
+							!
+							Set sSql = " SELECT 
+									  Location_Id, 
+									  Second_Count, 
+									  Current_Orders 
+									FROM 
+									  Growing_Sale
+									WHERE 
+									  Stock_Item_No = :1 AND 
+									  Year_Of_Sale = :2 AND 
+									  ( Not_For_Sale = 'N' OR 
+									  Not_For_Sale IS NULL ) AND 
+									  Est_Sale_Date > SYSDATE  "
+							Set sName = 'PTFTSTKDTS'
+							Set sBind = ':nItemNo, :nYear'
+							Set sInto = ':nGotLocId, :nGotCount, :nGotOrders'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nGotLocId = NUMBER_Null
+							Set nGotCount = NUMBER_Null
+							Set nGotOrders = NUMBER_Null
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								While haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set naFutLocIds[ nPos ] = nGotLocId
+									Set naFutStkCounts[ nPos ] = nGotCount
+									Set naFutOrdered[ nPos ] = nGotOrders
+									Set nPos = nPos + 1
+									Set naFutLocIds[ nPos ] = NUMBER_Null
+									Set naFutStkCounts[ nPos ] = NUMBER_Null
+									Set naFutOrdered[ nPos ] = NUMBER_Null
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: CalcPotsBatchAmtOnOrder
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Number: nLocationId
+					Receive Number: nAmtOnOrder
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nOurHistHandleNo
+					Number: nInd
+					!
+					Number: nGotAmtOnOrder
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CalcPotsBatchAmtOnOrder' )
+					Set nOurHistHandleNo = SqlHandlesGetReferenceNo( 'CalcPotsBatchAmtOnOrderHist' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							If nYear < WhichSeasonYear( SalDateCurrent(  ) ) AND nYear != 77
+								Set sSql = " SELECT 
+										  SUM( @IF(@ISNA( Conf_Amt ), Ordered_Amount, Conf_Amt ) )
+										FROM 
+										  Cust_Order_History 
+										WHERE 
+										  Stock_Item_No = :1 AND 
+										  Year_Of_Sale = :2 AND 
+										  ( Invoiced_Flag = 'N' OR 
+										    Invoiced_Flag IS NULL ) AND 
+										  Batch_Location_Id = :3 AND 
+										  Batch_Year_Of_Sale = :2 "
+								Set sName = 'HPTSBTCHORDERED'
+								Set sBind = ':nItemNo, :nYear, :nLocationId'
+								Set sInto = ':nGotAmtOnOrder'
+								Call haSqlHandles[ nOurHistHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHistHandleNo ].hSqlHandle )
+								!
+								Set nAmtOnOrder = 0
+								Set nGotAmtOnOrder = 0
+								!
+								If haSqlHandles[ nOurHistHandleNo ].Execute( )
+									If haSqlHandles[ nOurHistHandleNo ].FetchNext( nInd )
+										Set nAmtOnOrder = nGotAmtOnOrder
+										If nAmtOnOrder = NUMBER_Null
+											Set nAmtOnOrder = 0
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Set sSql = " SELECT 
+										  SUM( @IF(@ISNA( Conf_Amt ), Ordered_Amount, Conf_Amt ) )
+										FROM 
+										  Customer_Order
+										WHERE 
+										  Stock_Item_No = :1 AND 
+										  Year_Of_Sale = :2 AND 
+										  ( Invoiced_Flag = 'N' OR 
+										    Invoiced_Flag IS NULL ) AND 
+										  Batch_Location_Id = :3  AND 
+										  Batch_Year_Of_Sale = :2 "
+								Set sName = 'PTSBTCHORDERED'
+								Set sBind = ':nItemNo, :nYear, :nLocationId'
+								Set sInto = ':nGotAmtOnOrder'
+								Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+								!
+								Set nAmtOnOrder = 0
+								Set nGotAmtOnOrder = 0
+								!
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+										Set nAmtOnOrder = nGotAmtOnOrder
+										If nAmtOnOrder = NUMBER_Null
+											Set nAmtOnOrder = 0
+									Return TRUE
+								Else
+									Return FALSE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurHistHandleNo ].Disconnect( )
+							Return TRUE
+			Function: CalcPotsAmtShipped
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Number: nAmtShipped
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nOurHistHandleNo
+					Number: nInd
+					!
+					Number: nGotAmtShipped
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CalcPotsAmtShipped' )
+					Set nOurHistHandleNo = SqlHandlesGetReferenceNo( 'CalcPotsAmtShippedHist' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							If nYear < WhichSeasonYear( SalDateCurrent(  ) ) AND nYear != 77
+								Set sSql = " SELECT 
+										  SUM( @IF(@ISNA( Conf_Amt ), Ordered_Amount, Conf_Amt ) )
+										FROM 
+										  Cust_Order_History 
+										WHERE 
+										  Stock_Item_No = :1 AND 
+										  Year_Of_Sale = :2 AND 
+										  Invoiced_Flag = 'Y'  "
+								Set sName = 'HPTSSHIPED'
+								Set sBind = ':nItemNo, :nYear'
+								Set sInto = ':nGotAmtShipped'
+								Call haSqlHandles[ nOurHistHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHistHandleNo ].hSqlHandle )
+								!
+								Set nAmtShipped = 0
+								Set nGotAmtShipped = 0
+								!
+								If haSqlHandles[ nOurHistHandleNo ].Execute( )
+									If haSqlHandles[ nOurHistHandleNo ].FetchNext( nInd )
+										Set nAmtShipped = nGotAmtShipped
+										If nAmtShipped = NUMBER_Null
+											Set nAmtShipped = 0
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Set sSql = " SELECT 
+										  SUM( @IF(@ISNA( Conf_Amt ), Ordered_Amount, Conf_Amt ) )
+										FROM 
+										  Customer_Order
+										WHERE 
+										  Stock_Item_No = :1 AND 
+										  Year_Of_Sale = :2 AND 
+										  Invoiced_Flag = 'Y'  "
+								Set sName = 'PTSSHIPPED'
+								Set sBind = ':nItemNo, :nYear'
+								Set sInto = ':nGotAmtShipped'
+								Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+								!
+								Set nAmtShipped = 0
+								Set nGotAmtShipped = 0
+								!
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+										Set nAmtShipped = nGotAmtShipped
+										If nAmtShipped = NUMBER_Null
+											Set nAmtShipped = 0
+									Return TRUE
+								Else
+									Return FALSE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurHistHandleNo ].Disconnect( )
+							Return TRUE
+			Function: UpdatePotsRecalcInvFigures
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Number: nSISTotalCurrCount
+					Number: nSISTotalFutCount
+					Number: nSISTotCurrOnOrder
+					Number: nSISTotFutOnOrder
+					Number: nSISTotalShipped
+					Number: nSISCurrTotAvail
+					Number: nSISTotalFutAvail
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'UpdatePotsRecalcInvFigures' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " UPDATE Stock_Item_Sale 
+									SET  
+									  Amt_Graded = :3, 
+									  Amt_Growing = :4, 
+									  Amt_On_Order = :5, 
+									  On_Ord_As_Subs = :6, 
+									  Amt_Shipped = :7, 
+									  Tot_Avail = :8, 
+									  Est_Avail_Count = :9
+									WHERE 
+									  Stock_Item_No = :1 AND Year_Of_Sale = :2 "
+							Set sName = 'SISPTSUPTINV'
+							Set sBind = ':nItemNo, 
+									:nYear, 
+									:nSISTotalCurrCount, 
+									:nSISTotalFutCount, 
+									:nSISTotCurrOnOrder, 
+									:nSISTotFutOnOrder, 
+									:nSISTotalShipped, 
+									:nSISCurrTotAvail, 
+									:nSISTotalFutAvail '
+							Set sInto = ''
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Return haSqlHandles[ nOurHandleNo ].Execute( )
+						Case SH_cls_Commit
+							Return haSqlHandles[ nOurHandleNo ].Commit( )
+						Case SH_cls_Rollback
+							Return haSqlHandles[ nOurHandleNo ].Rollback( )
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: UpdatePotsBatchOrdered
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Number: nLocationId
+					Number: nOrders
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'UpdatePotsBatchOrdered' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " UPDATE Growing_Sale 
+									SET  
+									  Forward_Orders = :4
+									WHERE 
+									  Stock_Item_No = :1 AND 
+									  Year_Of_Sale = :2 AND 
+									  Location_Id = :3 "
+							Set sName = 'UPDTPTSBTCHORD'
+							Set sBind = ':nItemNo, :nYear, :nLocationId, :nOrders'
+							Set sInto = ''
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Return haSqlHandles[ nOurHandleNo ].Execute( )
+						Case SH_cls_Commit
+							Return haSqlHandles[ nOurHandleNo ].Commit( )
+						Case SH_cls_Rollback
+							Return haSqlHandles[ nOurHandleNo ].Rollback( )
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: InsertPotsDailyItemAffected
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Number: nLocationId
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					String: sUserId
+					Date/Time: dtSysDT
+				Actions
+					! Anychanges here should be reflected in the same function the customer and loads programs.
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'InsertPotsDailyItemAffected' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " INSERT INTO Day_Item_Affected 
+									( 
+									  Day_User_Id, 
+									  Day_SysDT, 
+									  Stock_Item_No, 
+									  Year_Of_Sale, 
+									  Location_Id 
+									) 
+									VALUES 
+									( :1, :2, :3, :4, :5 ) "
+							Set sName = 'INSPTSDYIAFC2'
+							Set sBind = ':sUserId, :dtSysDT, :nItemNo, :nYear, :nLocationId'
+							Set sInto = ''
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sUserId = SqlUser
+							Set dtSysDT = GetUniqueCurrentSysDT(  )
+							Return haSqlHandles[ nOurHandleNo ].Execute( )
+						Case SH_cls_Commit
+							Return haSqlHandles[ nOurHandleNo ].Commit( )
+						Case SH_cls_Rollback
+							Return haSqlHandles[ nOurHandleNo ].Rollback( )
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			!
+			Function: RecalcItemInvFigures
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Number: nAmtGrowing
+					Number: nAmtGraded
+					Number: nAmtShipped
+					Number: nAmtOnOrder
+					Number: nTotAvail
+					Number: nOnOrdAsSubs
+					Number: nAmtSubsShipped
+					Number: nEstAvailCount
+					Number: nTotalGraded
+					String: sGenFlag
+					String: sStockType
+					Number: nActionType
+				Static Variables
+				Local variables
+					Boolean: bOk
+					Number: nNewAmtGrowing
+					Number: nNewEstAvailCount
+					Number: nNewAmtShipped
+					Number: nNewAmtOnOrder
+					Number: nNewTotAvail
+					Number: nNewOnOrdAsSubs
+					Number: nNewAmtSubsShipped
+					Number: nAmtCreditedReturned
+					Number: nNewForwardOrders
+					Number: naGrowSaleLocations[*]
+					Number: naGrowSaleFwdOrds[*]
+					Number: naRecordedBatchLocIds[*]
+					Number: naInvFutBatchLocations[*]
+					Number: nPos
+				Actions
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set bOk = TRUE
+							Set naGrowSaleLocations[ 0 ] = NUMBER_Null
+							Set naGrowSaleFwdOrds[ 0 ] = NUMBER_Null
+							Set naRecordedBatchLocIds[ 0 ] = NUMBER_Null
+							Set naInvFutBatchLocations[ 0 ] = NUMBER_Null
+							If sGenFlag = 'Y'
+								Set nNewTotAvail = 0
+							Else
+								If NOT CalcOnOrdAsSubs( nItemNo, nYear, nNewOnOrdAsSubs, SH_cls_Execute )
+									Set bOk = FALSE
+								! If NOT CalcAmtOnOrder( nItemNo, nYear, nNewAmtOnOrder, nAmtOnForwardOrder, naBatchLocationIds, SH_cls_Execute )
+									                    Set bOk = FALSE
+								If NOT CalcAmtOnOrder( nItemNo, nYear, nNewAmtOnOrder, SH_cls_Execute )
+									Set bOk = FALSE
+								If NOT CalcItemGrowSale( nItemNo, nYear, naGrowSaleFwdOrds, naRecordedBatchLocIds, SH_cls_Execute )
+									Set bOk = FALSE
+								If NOT CalcCreditedTreesReturned( nItemNo, nYear, nAmtCreditedReturned, SH_cls_Execute )
+									Set bOk = FALSE
+								If NOT CalcItemGrowingSaleFigures( nItemNo, nYear, nNewEstAvailCount, nNewAmtGrowing, nNewForwardOrders, naGrowSaleLocations, naInvFutBatchLocations, SH_cls_Execute )
+									Set bOk = FALSE
+								If NOT CalcAmtShipped( nItemNo, nYear, nNewAmtShipped, SH_cls_Execute )
+									Set bOk = FALSE
+								If NOT CalcAmtSubsShipped( nItemNo, nYear, nNewAmtSubsShipped, SH_cls_Execute )
+									Set bOk = FALSE
+								!
+								If sStockType = 'C' OR nAmtGraded > 0
+									Set nNewAmtOnOrder = nNewAmtOnOrder + nNewForwardOrders
+									Set nNewTotAvail = nAmtGraded - nNewAmtOnOrder - nNewOnOrdAsSubs + nAmtCreditedReturned
+									! At this point in most routines we added a supplied value and deduct
+											a pending digging value - these arent implemented at this stage so I wont 
+											do in this section
+								Else
+									Set nNewAmtOnOrder = nNewAmtOnOrder + nNewForwardOrders
+									Set nNewTotAvail = nNewEstAvailCount - nNewAmtOnOrder - nNewOnOrdAsSubs - nNewAmtShipped - nNewAmtSubsShipped + nAmtCreditedReturned
+									! At this point in most routines we added a supplied value and deduct
+											a pending digging value - these arent implemented at this stage so I wont 
+											do in this section
+								!
+								If bOk
+									If nAmtGrowing != nNewAmtGrowing OR 
+											nEstAvailCount != nNewEstAvailCount OR 
+											nAmtShipped != nNewAmtShipped OR 
+											nAmtOnOrder != nNewAmtOnOrder OR 
+											nTotAvail != nNewTotAvail OR 
+											nOnOrdAsSubs != nNewOnOrdAsSubs OR 
+											nAmtSubsShipped != nNewAmtSubsShipped
+										If UpdateRecalcInvFigures( nItemNo, nYear, nNewAmtGrowing, nAmtGraded, nNewAmtShipped, 
+												nNewAmtOnOrder, nNewTotAvail, nNewOnOrdAsSubs, nNewAmtSubsShipped, 
+												nNewEstAvailCount, nTotalGraded, SH_cls_Execute )
+											If nNewForwardOrders > 0
+												Set nPos = 0
+												While naGrowSaleLocations[ nPos ] != NUMBER_Null
+													If UpdateForwardOrdGrowSale( nYear, naGrowSaleLocations[ nPos ], 0, SH_cls_Execute )
+														If ClearBatchKeyCustOrders( nYear, naGrowSaleLocations[ nPos ], SH_cls_Execute )
+															Call UpdateRecalcInvFigures( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, SH_cls_Commit )
+															Call UpdateForwardOrdGrowSale( 0, 0, 0, SH_cls_Commit )
+															Call ClearBatchKeyCustOrders( 0, 0, SH_cls_Commit )
+														Else
+															Call UpdateRecalcInvFigures( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, SH_cls_Rollback )
+															Call UpdateForwardOrdGrowSale( 0, 0, 0, SH_cls_Rollback )
+															Set bOk = FALSE
+													Else
+														Call UpdateRecalcInvFigures( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, SH_cls_Rollback )
+														Set bOk = FALSE
+													Set nPos = nPos + 1
+											Else
+												Call UpdateRecalcInvFigures( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, SH_cls_Commit )
+										Else
+											Set bOk = FALSE
+									! To reset the growing sale forward orders from the customer master table
+									Set nPos = 0
+									While naRecordedBatchLocIds[ nPos ] != NUMBER_Null
+										If DiffBWGrowSaleCustOrders( nYear, naRecordedBatchLocIds[ nPos ], naGrowSaleFwdOrds[ nPos ], SH_cls_Execute )
+											If UpdateForwardOrdGrowSale( nYear, naRecordedBatchLocIds[ nPos ], naGrowSaleFwdOrds[nPos], SH_cls_Execute )
+												Call UpdateForwardOrdGrowSale( 0, 0, 0, SH_cls_Commit )
+											Else
+												Call UpdateForwardOrdGrowSale( 0, 0, 0, SH_cls_Rollback )
+												Set bOk = FALSE
+										Set nPos = nPos + 1
+									! To Clear the Batch LocationId and Batch Year of sale off future invoiced orders
+									Set nPos = 0
+									While naInvFutBatchLocations[ nPos ] != NUMBER_Null
+										If ClearBatchKeyCustInvoicedOrders( nYear, naInvFutBatchLocations[ nPos ], SH_cls_Execute )
+											Call ClearBatchKeyCustInvoicedOrders( 0, 0, SH_cls_Commit )
+										Set nPos = nPos + 1
+							Return bOk
+						Case SH_cls_Disconnect
+							Set bOk = TRUE
+							If NOT UpdateRecalcInvFigures( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT CalcAmtShipped( 0, 0, nAmtShipped, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT CalcAmtSubsShipped( 0, 0, nAmtSubsShipped, SH_cls_Disconnect )
+								Set bOk = FALSE
+							! If NOT CalcAmtOnOrder( 0, 0, nAmtOnOrder, nAmtOnForwardOrder, naBatchLocationIds, SH_cls_Disconnect )
+								                    Set bOk = FALSE
+							If NOT CalcAmtOnOrder( 0, 0, nAmtOnOrder, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT CalcItemGrowSale( 0, 0,  naGrowSaleFwdOrds, naRecordedBatchLocIds, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT CalcOnOrdAsSubs( 0, 0, nOnOrdAsSubs, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT CalcCreditedTreesReturned( 0, 0, nAmtCreditedReturned, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT CalcItemGrowingSaleFigures( 0, 0, nNewEstAvailCount, nNewAmtGrowing, nNewForwardOrders, naGrowSaleLocations, naInvFutBatchLocations, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT ClearBatchKeyCustInvoicedOrders( 0, 0, SH_cls_Disconnect )
+								Set bOk = FALSE
+							Return bOk
+			Function: CalcItemGrowingSaleFigures
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Number: nEstAvailCount
+					Receive Number: nAmtGrowing
+					Receive Number: nForwardOrders
+					Receive Number: naGrowSaleLocations[*]
+					Receive Number: naInvFutBatchLocations[*]
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nInd
+					!
+					Boolean: bOk
+					Boolean: bFutBatchInvOrdExists
+					!
+					Number: nBudDiscPerc
+					Number: nFirstSecDiscPerc
+					Number: nSecGrDiscPerc
+					!
+					Number: nBegCount
+					Number: nFirstCount
+					Number: nSecondCount
+					Number: nGotForwardOrders
+					Number: nGotLocationId
+					!
+					Number: nPos
+					Number: nPosInvBatch
+					!
+					Number: nActualGrowing
+					Number: nTotalAvail
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETITMCOUNTS' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT 
+									  Beg_Count, 
+									  First_Count, 
+									  Second_Count, 
+									  Forward_Orders, 
+									  Location_Id  
+									FROM 
+									  Growing_Sale
+									WHERE 
+									  Stock_Item_No = :1 AND 
+									  Year_Of_Sale = :2 AND 
+									  ( Not_For_Sale = 'N' OR 
+									  Not_For_Sale IS NULL ) AND 
+									  ( Est_Sale_Date <= SYSDATE OR 
+									    Est_Sale_Date IS NULL ) "
+							Set sName = 'GETITMCOUNTS'
+							Set sBind = ':nItemNo, :nYear'
+							Set sInto = ':nBegCount, :nFirstCount, :nSecondCount, :nGotForwardOrders, :nGotLocationId'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nBegCount = NUMBER_Null
+							Set nFirstCount = NUMBER_Null
+							Set nSecondCount = NUMBER_Null
+							Set nForwardOrders = NUMBER_Null
+							Set nGotForwardOrders = NUMBER_Null
+							!
+							Set nActualGrowing = 0
+							Set nTotalAvail = 0
+							Set nPos = 0
+							Set naGrowSaleLocations[ nPos ] = NUMBER_Null
+							Set nPosInvBatch = 0
+							Set naInvFutBatchLocations[ nPosInvBatch ] = NUMBER_Null
+							!
+							If GetItemDiscPerc( nItemNo, nBudDiscPerc, nFirstSecDiscPerc, nSecGrDiscPerc, SH_cls_Execute )
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									While haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+										If nSecondCount >= 0
+											Set nTotalAvail = nTotalAvail + ( nSecondCount - ( ( nSecGrDiscPerc / 100 ) * nSecondCount ) ) 
+											Set nActualGrowing = nActualGrowing + nSecondCount
+										Else If nFirstCount >= 0
+											Set nTotalAvail = nTotalAvail + ( nFirstCount - ( ( nFirstSecDiscPerc / 100 ) * nFirstCount ) ) 
+											Set nActualGrowing = nActualGrowing + nFirstCount
+										Else
+											Set nTotalAvail = nTotalAvail + ( nBegCount - ( ( nBudDiscPerc / 100 ) * nBegCount ) ) 
+											Set nActualGrowing = nActualGrowing + nBegCount
+										!
+										Call CheckFutBatchInvOrdExist( nGotLocationId, nYear, bFutBatchInvOrdExists, SH_cls_Execute )
+										If bFutBatchInvOrdExists
+											Set naInvFutBatchLocations[ nPosInvBatch ] = nGotLocationId
+											Set nPosInvBatch = nPosInvBatch + 1
+											Set naInvFutBatchLocations[ nPosInvBatch ] = NUMBER_Null
+										!
+										If nGotForwardOrders > 0
+											Set naGrowSaleLocations[ nPos ] = nGotLocationId
+											Set nPos = nPos + 1
+											Set naGrowSaleLocations[ nPos ] = NUMBER_Null
+											Set nForwardOrders = nForwardOrders + nGotForwardOrders
+									Set nEstAvailCount = nTotalAvail
+									Set nAmtGrowing = nActualGrowing
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Set bOk = TRUE
+							If NOT GetItemDiscPerc( 0, nBudDiscPerc, nFirstSecDiscPerc, nSecGrDiscPerc, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT CheckFutBatchInvOrdExist( 0, 0, bFutBatchInvOrdExists, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							Return bOk
+			Function: ClearBatchKeyCustInvoicedOrders
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nYear
+					Number: nLocationId
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurHistHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nOurHistHandleNo
+					Number: nInd
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CLRBCHCSTINVORD' )
+					Set nOurHistHandleNo = SqlHandlesGetReferenceNo( 'HCLRBCHCSTINVORD' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							If nYear < WhichSeasonYear( SalDateCurrent(  ) ) AND nYear != 77
+								Set sSql = " UPDATE Cust_Order_History   
+										  SET  
+										    Batch_Year_Of_Sale = NULL, 
+										    Batch_Location_Id = NULL 
+										  WHERE 
+										    Batch_Year_Of_Sale = :1 AND 
+										    Batch_Location_Id = :2 AND 
+										    Invoiced_Flag = 'Y' "
+								Set sName = 'HCLRBCHCSTINVORD'
+								Set sBind = ':nYear, :nLocationId'
+								Set sInto = ''
+								Call haSqlHandles[ nOurHistHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHistHandleNo ].hSqlHandle )
+								!
+								If haSqlHandles[ nOurHistHandleNo ].Execute( )
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Set sSql = " UPDATE Customer_Order  
+										  SET  
+										    Batch_Year_Of_Sale = NULL, 
+										    Batch_Location_Id = NULL 
+										  WHERE 
+										    Batch_Year_Of_Sale = :1 AND 
+										    Batch_Location_Id = :2 AND 
+										    Invoiced_Flag = 'Y' "
+								Set sName = 'CLRBCHCSTINVORD'
+								Set sBind = ':nYear, :nLocationId'
+								Set sInto = ''
+								Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+								!
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									Return TRUE
+								Else
+									Return FALSE
+						Case SH_cls_Commit
+							Call haSqlHandles[ nOurHandleNo ].Commit( )
+							Call haSqlHandles[ nOurHistHandleNo ].Commit( )
+							Return TRUE
+						Case SH_cls_Rollback
+							Call haSqlHandles[ nOurHandleNo ].Rollback( )
+							Call haSqlHandles[ nOurHistHandleNo ].Rollback( )
+							Return TRUE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurHistHandleNo ].Disconnect( )
+							Return TRUE
+			Function: CheckFutBatchInvOrdExist
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nLocationId
+					Number: nYear
+					Receive Boolean: bExists
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurHistHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nOurHistHandleNo
+					Number: nInd
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'EXSTFBTCHINVO' )
+					Set nOurHistHandleNo = SqlHandlesGetReferenceNo( 'HEXSTFBTCHINVO' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							If nYear < WhichSeasonYear( SalDateCurrent(  ) ) AND nYear != 77
+								Set sSql = " SELECT 
+										  Cust_No 
+										FROM 
+										  Cust_Order_History
+										WHERE 
+										  Invoiced_Flag = 'Y' AND 
+										  Batch_Year_Of_Sale = :2 AND 
+										  Batch_Location_Id = :1 
+										ORDER BY 
+										  Batch_Year_Of_Sale, 
+										  Batch_Location_Id "
+								Set sName = 'HEXSTFBTCHINVO'
+								Set sBind = ':nLocationId, :nYear'
+								Set sInto = ''
+								Call haSqlHandles[ nOurHistHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHistHandleNo ].hSqlHandle )
+								!
+								Set bExists = FALSE
+								!
+								If haSqlHandles[ nOurHistHandleNo ].Execute( )
+									If haSqlHandles[ nOurHistHandleNo ].FetchNext( nInd )
+										Set bExists = TRUE
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Set sSql = " SELECT 
+										  Cust_No 
+										FROM 
+										  Customer_Order
+										WHERE 
+										  Invoiced_Flag = 'Y' AND 
+										  Batch_Year_Of_Sale = :2 AND 
+										  Batch_Location_Id = :1 "
+								Set sName = 'EXSTFBTCHINVO'
+								Set sBind = ':nLocationId, :nYear'
+								Set sInto = ''
+								Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+								!
+								Set bExists = FALSE
+								!
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+										Set bExists = TRUE
+									Return TRUE
+								Else
+									Return FALSE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurHistHandleNo ].Disconnect( )
+							Return TRUE
+			Function: CalcItemGrowSale
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Number: naGrowSaleFwdOrds[*]
+					Receive Number: naBatchLocationIds[*]
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nInd
+					!
+					Number: nPos
+					Number: nGotForwardOrders
+					Number: nGotBatchLocationId
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETFWDORDCNT' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT 
+									  Forward_Orders, 
+									  Location_Id   
+									FROM 
+									  Growing_Sale
+									WHERE 
+									  Stock_Item_No = :1 AND 
+									  Year_Of_Sale = :2 AND 
+									  ( Not_For_Sale = 'N' OR 
+									  Not_For_Sale IS NULL ) AND 
+									  Est_Sale_Date > SYSDATE  "
+							Set sName = 'GETFWDORDCNT'
+							Set sBind = ':nItemNo, :nYear'
+							Set sInto = ':nGotForwardOrders, :nGotBatchLocationId'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nGotForwardOrders = NUMBER_Null
+							Set nGotBatchLocationId = NUMBER_Null
+							Set nPos = 0
+							Set naBatchLocationIds[ nPos ] = NUMBER_Null
+							Set naGrowSaleFwdOrds[ nPos ] = NUMBER_Null
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								While haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set naGrowSaleFwdOrds[nPos] = nGotForwardOrders
+									Set naBatchLocationIds[ nPos ] = nGotBatchLocationId
+									Set nPos = nPos + 1
+									Set naBatchLocationIds[ nPos ] = NUMBER_Null
+									Set naGrowSaleFwdOrds[nPos] = NUMBER_Null
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: CalcItemAmtFutureGrowing
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Number: nEstFutureAvailCount
+					Receive Number: nAmtFutureGrowing
+					Receive Number: nAmtFwdOrders
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					Number: nLastItemNo
+					Number: nBudDiscPerc
+					Number: nFirstSecDiscPerc
+					Number: nSecGrDiscPerc
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nInd
+					!
+					Boolean: bOk
+					!
+					Number: nBegCount
+					Number: nFirstCount
+					Number: nSecondCount
+					Number: nGotForwardOrders
+					Number: nGotLocationId
+					!
+					Number: nActualGrowing
+					Number: nTotalAvail
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETITMFUTCNTS' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT 
+									  Beg_Count, 
+									  First_Count, 
+									  Second_Count, 
+									  Forward_Orders, 
+									  Location_Id  
+									FROM 
+									  Growing_Sale
+									WHERE 
+									  Stock_Item_No = :1 AND 
+									  Year_Of_Sale = :2 AND 
+									  ( Not_For_Sale = 'N' OR 
+									  Not_For_Sale IS NULL ) AND 
+									  Est_Sale_Date > SYSDATE "
+							Set sName = 'GETITMFUTCNTS'
+							Set sBind = ':nItemNo, :nYear'
+							Set sInto = ':nBegCount, :nFirstCount, :nSecondCount, :nGotForwardOrders, :nGotLocationId'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nBegCount = NUMBER_Null
+							Set nFirstCount = NUMBER_Null
+							Set nSecondCount = NUMBER_Null
+							Set nGotForwardOrders = NUMBER_Null
+							!
+							Set nActualGrowing = 0
+							Set nTotalAvail = 0
+							!
+							Set nEstFutureAvailCount = 0
+							Set nAmtFutureGrowing = 0
+							Set nAmtFwdOrders = 0
+							!
+							If nItemNo = nLastItemNo
+								Set bOk = TRUE
+							Else
+								Set bOk = GetItemDiscPerc( nItemNo, nBudDiscPerc, nFirstSecDiscPerc, nSecGrDiscPerc, SH_cls_Execute )
+							If bOk
+								Set nLastItemNo = nItemNo
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									While haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+										If nSecondCount >= 0
+											Set nTotalAvail = nTotalAvail + ( nSecondCount - ( ( nSecGrDiscPerc / 100 ) * nSecondCount ) ) 
+											Set nActualGrowing = nActualGrowing + nSecondCount
+										Else If nFirstCount >= 0
+											Set nTotalAvail = nTotalAvail + ( nFirstCount - ( ( nFirstSecDiscPerc / 100 ) * nFirstCount ) ) 
+											Set nActualGrowing = nActualGrowing + nFirstCount
+										Else
+											Set nTotalAvail = nTotalAvail + ( nBegCount - ( ( nBudDiscPerc / 100 ) * nBegCount ) ) 
+											Set nActualGrowing = nActualGrowing + nBegCount
+										Set nAmtFwdOrders = nAmtFwdOrders + nGotForwardOrders
+									Set nEstFutureAvailCount = nTotalAvail
+									Set nAmtFutureGrowing = nActualGrowing
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Set bOk = TRUE
+							If NOT GetItemDiscPerc( nItemNo, nBudDiscPerc, nFirstSecDiscPerc, nSecGrDiscPerc, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							Return bOk
+			Function: UpdateForwardOrdGrowSale
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nYear
+					Number: nLocationId
+					Number: nForwardOrders
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GRSALEUPDTFORD' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " UPDATE Growing_Sale 
+									SET  
+									  Forward_Orders = :3
+									WHERE 
+									  Year_Of_Sale = :1 AND 
+									  Location_Id = :2 "
+							Set sName = 'GRSALEUPDTFORD'
+							Set sBind = ':nYear, :nLocationId, :nForwardOrders'
+							Set sInto = ''
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Commit
+							Return haSqlHandles[ nOurHandleNo ].Commit( )
+						Case SH_cls_Rollback
+							Return haSqlHandles[ nOurHandleNo ].Rollback( )
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: ClearBatchKeyCustOrders
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nYear
+					Number: nLocationId
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurHistHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nOurHistHandleNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CLSBATCHCSTORD' )
+					Set nOurHistHandleNo = SqlHandlesGetReferenceNo( 'HCLSBATCHCSTORD' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							If nYear < WhichSeasonYear( SalDateCurrent(  ) ) AND nYear != 77
+								Set sSql = " UPDATE Cust_Order_History  
+										SET  
+										  Batch_Year_Of_Sale = NULL, 
+										  Batch_Location_Id = NULL 
+										WHERE 
+										  Batch_Year_Of_Sale = :1 AND 
+										  Batch_Location_Id = :2 "
+								Set sName = 'HCLSBATCHCSTORD'
+								Set sBind = ':nYear, :nLocationId'
+								Set sInto = ''
+								Call haSqlHandles[ nOurHistHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHistHandleNo ].hSqlHandle )
+								!
+								If haSqlHandles[ nOurHistHandleNo ].Execute( )
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Set sSql = " UPDATE Customer_Order  
+										SET  
+										  Batch_Year_Of_Sale = NULL, 
+										  Batch_Location_Id = NULL 
+										WHERE 
+										  Batch_Year_Of_Sale = :1 AND 
+										  Batch_Location_Id = :2 "
+								Set sName = 'CLSBATCHCSTORD'
+								Set sBind = ':nYear, :nLocationId'
+								Set sInto = ''
+								Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+								!
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									Return TRUE
+								Else
+									Return FALSE
+						Case SH_cls_Commit
+							Call haSqlHandles[ nOurHandleNo ].Commit( )
+							Call haSqlHandles[ nOurHistHandleNo ].Commit( )
+							Return TRUE
+						Case SH_cls_Rollback
+							Call haSqlHandles[ nOurHandleNo ].Rollback( )
+							Call haSqlHandles[ nOurHistHandleNo ].Rollback( )
+							Return TRUE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurHistHandleNo ].Disconnect( )
+							Return TRUE
+			Function: DiffBWGrowSaleCustOrders
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nYear
+					Number: nLocationId
+					Receive Number: nForwardOrder
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurHistHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nOurHistHandleNo
+					Number: nInd
+					Number: nGotSum
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETFWDCUSTORD' )
+					Set nOurHistHandleNo = SqlHandlesGetReferenceNo( 'GETFWDCUSTORDH' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							If nYear < WhichSeasonYear( SalDateCurrent(  ) ) AND nYear != 77
+								Set sSql = " SELECT 
+										  SUM( @IF(@ISNA( Conf_Amt ), Ordered_Amount, Conf_Amt ) )
+										FROM 
+										  Cust_Order_History
+										WHERE 
+										  ( Invoiced_Flag = 'N' OR 
+										    Invoiced_Flag IS NULL ) AND 
+										  Batch_Year_Of_Sale = :1 AND 
+										  Batch_Location_Id = :2 
+										ORDER BY 
+										  Batch_Year_Sale, 
+										  Batch_Location_Id "
+								Set sName = 'GETFWDCUSTORDH'
+								Set sBind = ':nYear, :nLocationId'
+								Set sInto = ':nGotSum'
+								Call haSqlHandles[ nOurHistHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHistHandleNo ].hSqlHandle )
+								!
+								Set nGotSum = NUMBER_Null
+								!
+								If haSqlHandles[ nOurHistHandleNo ].Execute( )
+									Call haSqlHandles[ nOurHistHandleNo ].FetchNext( nInd )
+									If nGotSum != nForwardOrder
+										Set nForwardOrder = nGotSum
+										Return TRUE
+									Else
+										Return FALSE
+								Else
+									Return FALSE
+							Else
+								Set sSql = " SELECT 
+										  SUM( @IF(@ISNA( Conf_Amt ), Ordered_Amount, Conf_Amt ) )
+										FROM 
+										  Customer_Order
+										WHERE 
+										      ( Invoiced_Flag = 'N' OR 
+										    Invoiced_Flag IS NULL )
+										AND BATCH_YEAR_OF_SALE = :1
+										 AND BATCH_LOCATION_ID = :2 "
+								Set sName = 'GETFWDCUSTORD'
+								Set sBind = ':nYear, :nLocationId'
+								Set sInto = ':nGotSum'
+								Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+								!
+								Set nGotSum = NUMBER_Null
+								!
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									Call haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									If nGotSum != nForwardOrder
+										Set nForwardOrder = nGotSum
+										Return TRUE
+									Else
+										Return FALSE
+								Else
+									Return FALSE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurHistHandleNo ].Disconnect( )
+							Return TRUE
+			Function: GetItemDiscPerc
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Receive Number: nBudDiscPerc
+					Receive Number: nFirstSecDiscPerc
+					Receive Number: nSecGrDiscPerc
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nInd
+					!
+					Number: nGotBudDiscPerc
+					Number: nGotFirstSecDiscPerc
+					Number: nGotSecGrDiscPerc
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETITMDISCPERC' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = ' SELECT 
+									  Bud_Disc_Perc, 
+									  First_Sec_Disc_Per, 
+									  Sec_Gr_Disc_Per 
+									FROM 
+									  Stock_Item
+									WHERE 
+									   Item_No = :1 '
+							Set sName = 'GETITMDISCPERC'
+							Set sBind = ':nItemNo'
+							Set sInto = ':nGotBudDiscPerc, :nGotFirstSecDiscPerc, :nGotSecGrDiscPerc'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nBudDiscPerc = NUMBER_Null
+							Set nFirstSecDiscPerc = NUMBER_Null
+							Set nSecGrDiscPerc = NUMBER_Null
+							Set nGotBudDiscPerc = NUMBER_Null
+							Set nGotFirstSecDiscPerc = NUMBER_Null
+							Set nGotSecGrDiscPerc = NUMBER_Null
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set nBudDiscPerc = nGotBudDiscPerc
+									Set nFirstSecDiscPerc = nGotFirstSecDiscPerc
+									Set nSecGrDiscPerc = nGotSecGrDiscPerc
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: UpdateRecalcInvFigures
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Number: nAmtGrowing
+					Number: nAmtGraded
+					Number: nAmtShipped
+					Number: nAmtOnOrder
+					Number: nTotAvail
+					Number: nOnOrdAsSubs
+					Number: nAmtSubsShipped
+					Number: nEstAvailCount
+					Number: nTotalGraded
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'SISUPDTITMINV' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " UPDATE Stock_Item_Sale 
+									SET  
+									  Amt_Growing = :3,
+									  Amt_Graded = :4, 
+									  Amt_Shipped = :5, 
+									  Amt_On_Order = :6, 
+									  Tot_Avail = :7, 
+									  On_Ord_As_Subs = :8, 
+									  Amt_Subs_Shipped = :9, 
+									  Est_Avail_Count = :10, 
+									  Total_Graded = :11 
+									WHERE 
+									  Stock_Item_No = :1 AND Year_Of_Sale = :2 "
+							Set sName = 'SISUPDTITMINV'
+							Set sBind = ':nItemNo, 
+									:nYear, 
+									:nAmtGrowing, 
+									:nAmtGraded, 
+									:nAmtShipped, 
+									:nAmtOnOrder, 
+									:nTotAvail, 
+									:nOnOrdAsSubs,
+									:nAmtSubsShipped,
+									:nEstAvailCount,
+									:nTotalGraded'
+							Set sInto = ''
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Commit
+							Return haSqlHandles[ nOurHandleNo ].Commit( )
+						Case SH_cls_Rollback
+							Return haSqlHandles[ nOurHandleNo ].Rollback( )
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: CalcAmtShipped
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Number: nAmtShipped
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurHistHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nOurHistHandleNo
+					Number: nInd
+					!
+					Number: nGotAmtShipped
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'AMTSHIPPED' )
+					Set nOurHistHandleNo = SqlHandlesGetReferenceNo( 'HAMTSHIPPED' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							If nYear < WhichSeasonYear( SalDateCurrent(  ) ) AND nYear != 77
+								Set sSql = " SELECT 
+										  SUM( Conf_Amt )
+										FROM 
+										  Cust_Order_History 
+										WHERE 
+										  Stock_Item_No = :1 AND 
+										  Year_Of_Sale = :2 AND 
+										  Invoiced_Flag = 'Y' AND 
+										  ( 
+										    Batch_Location_Id IS NULL OR 
+										    NOT Batch_Location_Id > 0 
+										  ) "
+								Set sName = 'HAMTSHIPPE3'
+								Set sBind = ':nItemNo, :nYear'
+								Set sInto = ':nGotAmtShipped'
+								Call haSqlHandles[ nOurHistHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHistHandleNo ].hSqlHandle )
+								!
+								Set nAmtShipped = 0
+								Set nGotAmtShipped = 0
+								!
+								If haSqlHandles[ nOurHistHandleNo ].Execute( )
+									If haSqlHandles[ nOurHistHandleNo ].FetchNext( nInd )
+										Set nAmtShipped = nGotAmtShipped
+										If nAmtShipped = NUMBER_Null
+											Set nAmtShipped = 0
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Set sSql = " SELECT 
+										  SUM( Conf_Amt )
+										FROM 
+										  Customer_Order
+										WHERE 
+										  Stock_Item_No = :1 AND 
+										  Year_Of_Sale = :2 AND 
+										  Invoiced_Flag = 'Y' AND 
+										  ( 
+										    NOT Batch_Location_Id > 0 OR  
+										    Batch_Location_Id IS NULL 
+										  ) "
+								Set sName = 'AMTSHIPPE3'
+								Set sBind = ':nItemNo, :nYear'
+								Set sInto = ':nGotAmtShipped'
+								Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+								!
+								Set nAmtShipped = 0
+								Set nGotAmtShipped = 0
+								!
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+										Set nAmtShipped = nGotAmtShipped
+										If nAmtShipped = NUMBER_Null
+											Set nAmtShipped = 0
+									Return TRUE
+								Else
+									Return FALSE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurHistHandleNo ].Disconnect( )
+							Return TRUE
+			Function: CalcAmtSubsShipped
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nSubsItemNo
+					Number: nYear
+					Receive Number: nAmtSubsShipped
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurHistHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nOurHistHandleNo
+					Number: nInd
+					!
+					Number: nGotAmtSubsShipped
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'AMTSUBSSHIPPED' )
+					Set nOurHistHandleNo = SqlHandlesGetReferenceNo( 'HAMTSUBSSHIPPED' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							If nYear < WhichSeasonYear( SalDateCurrent(  ) ) AND nYear != 77
+								Set sSql = " SELECT 
+										  SUM( Conf_Amt )
+										FROM 
+										  Cust_Order_History 
+										WHERE 
+										  Subs_Item_No = :1 AND 
+										  Year_Of_Sale = :2 AND 
+										  Invoiced_Flag = 'Y'  AND 
+										    ( 
+										    NOT Batch_Location_Id > 0 OR  
+										    Batch_Location_Id IS NULL 
+										  ) "
+								Set sName = 'HAMTSUBSSHIPPE3'
+								Set sBind = ':nSubsItemNo, :nYear'
+								Set sInto = ':nGotAmtSubsShipped'
+								Call haSqlHandles[ nOurHistHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHistHandleNo ].hSqlHandle )
+								!
+								Set nAmtSubsShipped = 0
+								Set nGotAmtSubsShipped = 0
+								!
+								If haSqlHandles[ nOurHistHandleNo ].Execute( )
+									If haSqlHandles[ nOurHistHandleNo ].FetchNext( nInd )
+										Set nAmtSubsShipped = nGotAmtSubsShipped
+										If nAmtSubsShipped = NUMBER_Null
+											Set nAmtSubsShipped = 0
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Set sSql = " SELECT 
+										  SUM( Conf_Amt )
+										FROM 
+										  Customer_Order
+										WHERE 
+										  Subs_Item_No = :1 AND 
+										  Year_Of_Sale = :2 AND 
+										  Invoiced_Flag = 'Y'  AND 
+										  ( 
+										    NOT Batch_Location_Id > 0 OR  
+										    Batch_Location_Id IS NULL 
+										  ) "
+								Set sName = 'AMTSUBSSHIPPE3'
+								Set sBind = ':nSubsItemNo, :nYear'
+								Set sInto = ':nGotAmtSubsShipped'
+								Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+								!
+								Set nAmtSubsShipped = 0
+								Set nGotAmtSubsShipped = 0
+								!
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+										Set nAmtSubsShipped = nGotAmtSubsShipped
+										If nAmtSubsShipped = NUMBER_Null
+											Set nAmtSubsShipped = 0
+									Return TRUE
+								Else
+									Return FALSE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurHistHandleNo ].Disconnect( )
+							Return TRUE
+			Function: CalcAmtOnOrder
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Number: nAmtOnOrder
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurHistHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nOurHistHandleNo
+					Number: nInd
+					!
+					Number: nGotAmtOnOrder
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'AMTONORDER' )
+					Set nOurHistHandleNo = SqlHandlesGetReferenceNo( 'HAMTONORDER' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							! Dont want to include forward orders in the amt on order calculation
+							If nYear < WhichSeasonYear( SalDateCurrent(  ) ) AND nYear != 77
+								Set sSql = " SELECT 
+										  SUM( @IF(@ISNA( Conf_Amt ), Ordered_Amount, Conf_Amt ) )
+										FROM 
+										  Cust_Order_History 
+										WHERE 
+										  Stock_Item_No = :1 AND 
+										  Year_Of_Sale = :2 AND 
+										  ( Invoiced_Flag = 'N' OR 
+										    Invoiced_Flag IS NULL ) AND 
+										  ( 
+										    NOT Batch_Year_Of_Sale > 0 OR 
+										    Batch_Year_Of_Sale IS NULL 
+										  ) AND 
+										  ( 
+										    NOT Batch_Location_Id > 0 OR  
+										    Batch_Location_Id IS NULL 
+										  ) "
+								Set sName = 'HAMTONORDE3'
+								Set sBind = ':nItemNo, :nYear'
+								Set sInto = ':nGotAmtOnOrder'
+								Call haSqlHandles[ nOurHistHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHistHandleNo ].hSqlHandle )
+								!
+								Set nAmtOnOrder = 0
+								Set nGotAmtOnOrder = 0
+								!
+								If haSqlHandles[ nOurHistHandleNo ].Execute( )
+									If haSqlHandles[ nOurHistHandleNo ].FetchNext( nInd )
+										Set nAmtOnOrder = nGotAmtOnOrder
+										If nAmtOnOrder = NUMBER_Null
+											Set nAmtOnOrder = 0
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Set sSql = " SELECT 
+										  SUM( @IF(@ISNA( Conf_Amt ), Ordered_Amount, Conf_Amt ) )
+										FROM 
+										  Customer_Order
+										WHERE 
+										  Stock_Item_No = :1 AND 
+										  Year_Of_Sale = :2 AND 
+										  ( Invoiced_Flag = 'N' OR 
+										    Invoiced_Flag IS NULL ) AND 
+										  ( 
+										    NOT Batch_Year_Of_Sale > 0 OR 
+										    Batch_Year_Of_Sale IS NULL 
+										  ) AND 
+										  ( 
+										    NOT Batch_Location_Id > 0 OR  
+										    Batch_Location_Id IS NULL 
+										  ) "
+								Set sName = 'AMTONORDE3'
+								Set sBind = ':nItemNo, :nYear'
+								Set sInto = ':nGotAmtOnOrder'
+								Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+								!
+								Set nAmtOnOrder = 0
+								Set nGotAmtOnOrder = 0
+								!
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+										Set nAmtOnOrder = nGotAmtOnOrder
+										If nAmtOnOrder = NUMBER_Null
+											Set nAmtOnOrder = 0
+									Return TRUE
+								Else
+									Return FALSE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurHistHandleNo ].Disconnect( )
+							Return TRUE
+			Function: CalcOnOrdAsSubs
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nSubsItemNo
+					Number: nYear
+					Receive Number: nOnOrdAsSubs
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurHistHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nOurHistHandleNo
+					Number: nInd
+					!
+					Number: nGotOnOrdAsSubs
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'ONORDASSUBS' )
+					Set nOurHistHandleNo = SqlHandlesGetReferenceNo( 'HONORDASSUBS' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							If nYear < WhichSeasonYear( SalDateCurrent(  ) ) AND nYear != 77
+								Set sSql = " SELECT 
+										  SUM( @IF(@ISNA( Conf_Amt ), Ordered_Amount, Conf_Amt ) )
+										FROM 
+										  Cust_Order_History 
+										WHERE 
+										  Subs_Item_No = :1 AND 
+										  Year_Of_Sale = :2 AND 
+										  ( Invoiced_Flag = 'N' OR 
+										    Invoiced_Flag IS NULL ) "
+								Set sName = 'HONORDASSUBS'
+								Set sBind = ':nSubsItemNo, :nYear'
+								Set sInto = ':nGotOnOrdAsSubs'
+								Call haSqlHandles[ nOurHistHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHistHandleNo ].hSqlHandle )
+								!
+								Set nOnOrdAsSubs = 0
+								Set nGotOnOrdAsSubs = 0
+								!
+								If haSqlHandles[ nOurHistHandleNo ].Execute( )
+									If haSqlHandles[ nOurHistHandleNo ].FetchNext( nInd )
+										Set nOnOrdAsSubs = nGotOnOrdAsSubs
+										If nOnOrdAsSubs = NUMBER_Null
+											Set nOnOrdAsSubs = 0
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Set sSql = " SELECT 
+										  SUM( @IF(@ISNA( Conf_Amt ), Ordered_Amount, Conf_Amt ) )
+										FROM 
+										  Customer_Order
+										WHERE 
+										  Subs_Item_No = :1 AND 
+										  Year_Of_Sale = :2 AND 
+										  ( Invoiced_Flag = 'N' OR 
+										    Invoiced_Flag IS NULL ) "
+								Set sName = 'ONORDASSUBS'
+								Set sBind = ':nSubsItemNo, :nYear'
+								Set sInto = ':nGotOnOrdAsSubs'
+								Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+								!
+								Set nOnOrdAsSubs = 0
+								Set nGotOnOrdAsSubs = 0
+								!
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+										Set nOnOrdAsSubs = nGotOnOrdAsSubs
+										If nOnOrdAsSubs = NUMBER_Null
+											Set nOnOrdAsSubs = 0
+									Return TRUE
+								Else
+									Return FALSE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurHistHandleNo ].Disconnect( )
+							Return TRUE
+			Function: CalcCreditedTreesReturned
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Number: nAmtCreditedReturned
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurHistHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nOurHistHandleNo
+					Number: nInd
+					!
+					Number: nGotAmtCreditedReturned
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'AMTCREDRETURN' )
+					Set nOurHistHandleNo = SqlHandlesGetReferenceNo( 'HAMTCREDRETURN' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							If nYear < WhichSeasonYear( SalDateCurrent(  ) ) AND nYear != 77
+								Set sSql = " SELECT 
+										  SUM( No_Trees_Credited )
+										FROM 
+										  Cust_Order_History
+										WHERE 
+										  Stock_Item_No = :1 AND 
+										  Year_Of_Sale = :2 AND 
+										  Return_To_Inv = 'Y' "
+								Set sName = 'HAMTCREDRETURN'
+								Set sBind = ':nItemNo, :nYear'
+								Set sInto = ':nGotAmtCreditedReturned'
+								Call haSqlHandles[ nOurHistHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHistHandleNo ].hSqlHandle )
+								!
+								Set nAmtCreditedReturned = 0
+								Set nGotAmtCreditedReturned = 0
+								!
+								If haSqlHandles[ nOurHistHandleNo ].Execute( )
+									If haSqlHandles[ nOurHistHandleNo ].FetchNext( nInd )
+										Set nAmtCreditedReturned = nGotAmtCreditedReturned
+										If nAmtCreditedReturned = NUMBER_Null
+											Set nAmtCreditedReturned = 0
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Set sSql = " SELECT 
+										  SUM( No_Trees_Credited )
+										FROM 
+										  Customer_Order
+										WHERE 
+										  Stock_Item_No = :1 AND 
+										  Year_Of_Sale = :2 AND 
+										  Return_To_Inv = 'Y' "
+								Set sName = 'AMTCREDRETURN'
+								Set sBind = ':nItemNo, :nYear'
+								Set sInto = ':nGotAmtCreditedReturned'
+								Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+								!
+								Set nAmtCreditedReturned = 0
+								Set nGotAmtCreditedReturned = 0
+								!
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+										Set nAmtCreditedReturned = nGotAmtCreditedReturned
+										If nAmtCreditedReturned = NUMBER_Null
+											Set nAmtCreditedReturned = 0
+									Return TRUE
+								Else
+									Return FALSE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurHistHandleNo ].Disconnect( )
+							Return TRUE
+			!
+			Function: GetSISQueryBasicInfo
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Boolean: bYearExists
+					Receive Boolean: bActiveItem
+					Receive String: sSoldOutFlag
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					String: sGotSoldOutFlag
+					Number: nGotAmtGrowing
+					Number: nGotAmtGraded
+					Number: nGotAmtShipped
+					Number: nGotAmtSupplied
+					Number: nGotAmtOnOrder
+					Number: nGotOnOrdAsSubs
+					Number: nGotAmtSubsShipped
+					Number: nInd
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'SISQBINFONW' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT 
+									  Amt_Growing, 
+									  Amt_Graded, 
+									  Amt_Shipped, 
+									  Amt_Supplied, 
+									  Amt_On_Order, 
+									  On_Ord_As_Subs, 
+									  Amt_Subs_Shipped, 
+									  Sold_Out_Flag 
+									FROM Stock_Item_Sale 
+									WHERE Stock_Item_No = :1 AND Year_Of_Sale = :2 "
+							Set sName = 'SISQBINFONW'
+							Set sBind = ':nItemNo, :nYear'
+							Set sInto = ':nGotAmtGrowing, :nGotAmtGraded, :nGotAmtShipped, :nGotAmtSupplied, 
+									:nGotAmtOnOrder, :nGotOnOrdAsSubs, :nGotAmtSubsShipped, :sGotSoldOutFlag'
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set bYearExists = FALSE
+							Set bActiveItem = FALSE
+							Set sSoldOutFlag = ''
+							Set sGotSoldOutFlag = ''
+							Set nGotAmtGrowing = NUMBER_Null
+							Set nGotAmtGraded = NUMBER_Null
+							Set nGotAmtShipped = NUMBER_Null
+							Set nGotAmtSupplied = NUMBER_Null
+							Set nGotAmtOnOrder = NUMBER_Null
+							Set nGotOnOrdAsSubs = NUMBER_Null
+							Set nGotAmtSubsShipped = NUMBER_Null
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set bYearExists = TRUE
+									Set sSoldOutFlag = sGotSoldOutFlag
+									If nGotAmtGrowing > 0 OR 
+											nGotAmtGraded > 0 OR 
+											nGotAmtShipped > 0 OR 
+											nGotAmtSupplied > 0 OR 
+											nGotAmtOnOrder > 0 OR 
+											nGotOnOrdAsSubs > 0 OR 
+											nGotAmtSubsShipped > 0
+										Set bActiveItem = TRUE
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			!
+			Function: CalcItemPriceForQueries
+				Description: Calculates the price of trees for queries of stock items.
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Receive Number: nPrice
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Boolean: bOk
+					Number: nInd
+					Number: nGotPrice
+					String: sCultId
+					String: sRootId
+					Number: nCultRoy
+					Number: nRootRoy
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CALCITMPRICE' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT Stock_Item.Base_Price, Cultivar_Id, Rootstock_Id 
+									  FROM Stock_Item  
+									  WHERE Stock_Item.Item_No = :1 "
+							Set sName = 'CALCITMPRICE'
+							Set sBind = ':nItemNo'
+							Set sInto = ':nGotPrice, :sCultId, :sRootId'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nPrice = NUMBER_Null
+							Set nGotPrice = NUMBER_Null
+							Set sCultId = ''
+							Set sRootId = ''
+							Set nCultRoy = NUMBER_Null
+							Set nRootRoy = NUMBER_Null
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set nPrice = nGotPrice
+									If sCultId != ''
+										Call CalcCultivarRoyalty( 0, sCultId, nItemNo, nCultRoy, SH_cls_Execute )
+										Set nPrice =  nPrice + nCultRoy
+									If sRootId != ''
+										Call CalcRootstockRoyalty( 0, sRootId, nItemNo, nRootRoy, SH_cls_Execute )
+										Set nPrice =  nPrice + nRootRoy
+								Return TRUE
+							Else
+								Return FALSE
+							Return TRUE
+						Case SH_cls_Disconnect
+							Set bOk = TRUE
+							If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT CalcCultivarRoyalty( 0, '', 0, nCultRoy, SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT CalcRootstockRoyalty( 0, '', 0, nRootRoy, SH_cls_Disconnect )
+								Set bOk = FALSE
+							Return bOk
+			Function: GetItemBasePrice
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Receive Number: nBasePrice
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nInd
+					Number: nOurHandleNo
+					!
+					Number: nGotBasePrice
+				Actions
+					! Number: nOurHandleNo
+					! haSqlHandles[ nOurHandleNo ]
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETITMBPRCE' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = ' SELECT 
+									  Base_Price 
+									FROM 
+									  Stock_Item
+									WHERE 
+									   Item_No = :1 '
+							Set sName = 'GETITMBPRCE'
+							Set sBind = ':nItemNo'
+							Set sInto = ':nGotBasePrice'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nBasePrice = NUMBER_Null
+							Set nGotBasePrice = NUMBER_Null
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set nBasePrice = nGotBasePrice
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: CalcRootstockRoyalty
+				Description: To find out if there are rootstock royalties applicable to this item
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					String: sRootId
+					Number: nItemNo
+					Receive Number: nTotRoy
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurFNAHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurRootHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSqlFNAHandle
+					String: sBindFNAHandle
+					String: sIntoFNAHandle
+					String: sNameFNAHandle
+					Number: nOurFNAHandleNo
+					Number: nOurRootHandleNo
+					!
+					String: sSqlRootHandle
+					String: sBindRootHandle
+					String: sIntoRootHandle
+					String: sNameRootHandle
+					!
+					Number: nInd
+					Number: nFNARoy
+					String: sRoyOwner
+					Number: nRoy
+					Number: nPercPayable
+					Number: nBasePrice
+					Boolean: bCallahans
+					Boolean: bOwnsRoyalty
+					String: sFNACust
+					String: sFMNRoyPay
+					String: sCstRoyOwnId
+				Actions
+					Set nOurFNAHandleNo = SqlHandlesGetReferenceNo( 'CUSTFMNFNAROY' )
+					Set nOurRootHandleNo = SqlHandlesGetReferenceNo( 'ROOTROYAMT' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSqlFNAHandle = " SELECT 
+									  Customer_Master.FNA_Flag, 
+									  Customer_Master.Royalty_Owner_Code, 
+									  Customer_Type.FMN_Roy_Payable 
+									FROM Customer_Type, Customer_Master 
+									WHERE Customer_Master.Cust_No = :1 AND 
+									Customer_Master.Customer_Type = Customer_Type.Cust_Type "
+							Set sNameFNAHandle = 'CUSTFMNFNAROY'
+							Set sBindFNAHandle = ':nCustNo'
+							Set sIntoFNAHandle = ':sFNACust, :sCstRoyOwnId, :sFMNRoyPay'
+							!
+							Set sSqlRootHandle = " SELECT Royalty_Owner_Id, Amount_Payable, Percentage_Payable 
+									FROM Royalty_Payable
+									WHERE Rootstock_Id = :1 "
+							Set sNameRootHandle = 'ROOTROYAMT'
+							Set sBindRootHandle = ':sRootId'
+							Set sIntoRootHandle = ':sRoyOwner, :nRoy, :nPercPayable'
+							!
+							Set sRoyOwner = ' '
+							Set sCstRoyOwnId = ' '
+							Set nRoy = 0
+							Set nTotRoy = 0
+							Set nFNARoy = 0
+							Set sFNACust = 'N'
+							Set bCallahans = FALSE
+							Set sFMNRoyPay = 'Y'
+							Call haSqlHandles[ nOurFNAHandleNo ].Setup( sSqlFNAHandle, sNameFNAHandle, sBindFNAHandle, sIntoFNAHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurFNAHandleNo ].hSqlHandle )
+							!
+							If nCustNo > 0
+								If haSqlHandles[ nOurFNAHandleNo ].Execute( )
+									Call haSqlHandles[ nOurFNAHandleNo ].FetchNext( nInd )
+								Else
+									Return FALSE
+							!
+							Call GetItemBasePrice( nItemNo, nBasePrice, SH_cls_Execute )
+							!
+							Call haSqlHandles[ nOurRootHandleNo ].Setup( sSqlRootHandle, sNameRootHandle, sBindRootHandle, sIntoRootHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurRootHandleNo ].hSqlHandle )
+							Set bOwnsRoyalty = FALSE
+							If haSqlHandles[ nOurRootHandleNo ].Execute( )
+								While haSqlHandles[ nOurRootHandleNo ].FetchNext( nInd )
+									If nPercPayable > 0
+										Set nRoy = nBasePrice * ( nPercPayable / 100 )
+									!
+									! This next Fna check is the one where the customer has his royalties accumulated
+											if the owner is FMN or FNA 
+									If sRoyOwner = sCstRoyOwnId
+										Set bOwnsRoyalty = TRUE
+									If sFNACust = 'Y'
+										If (sRoyOwner = 'FMN' OR sRoyOwner = 'FNA')  
+											Set nFNARoy = nFNARoy + nRoy
+										Else
+											Set nTotRoy = nTotRoy + nRoy
+										If sRoyOwner = 'MC'
+											Set bCallahans = TRUE
+									Else If sRoyOwner = 'FMN'
+										If sFMNRoyPay != 'N'
+											Set nTotRoy = nTotRoy + nRoy
+									Else If sRoyOwner = 'FNA'
+										If sFNACust != 'Y'
+											Set nTotRoy = nTotRoy + nRoy
+									Else
+										Set nTotRoy = nTotRoy + nRoy
+								! We need to be able to code for the 94 season - FNA prices are to be a total
+										of the FNA and FMN portion and halved as the FMN portion is the larger
+										portion and Flemings want to give FNA customers cheaper trees than their
+										portion deducted off the price would give - except for anything owned by Callahans
+								If sFNACust = 'Y'
+									If NOT bCallahans
+										Set nFNARoy = nFNARoy/2
+										! To round off to 2 decimal places
+										Set nFNARoy = nFNARoy + .005
+										Set nFNARoy = SalNumberTruncate( nFNARoy, 10, 2 )
+									Set nTotRoy = nTotRoy + nFNARoy
+								If bOwnsRoyalty
+									Set nTotRoy = 0
+								Set nTotRoy = RoundTo2Decimals( nTotRoy )
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurFNAHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurRootHandleNo ].Disconnect( )
+							Call GetItemBasePrice( 0, nBasePrice, SH_cls_Disconnect )
+							Return TRUE
+			Function: CalcCultivarRoyalty
+				Description: To find out if there are cultivar royalties applicable to this item
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					String: sCultId
+					Number: nItemNo
+					Receive Number: nTotRoy
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurFNAHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurCultHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSqlFNAHandle
+					String: sBindFNAHandle
+					String: sIntoFNAHandle
+					String: sNameFNAHandle
+					Number: nOurFNAHandleNo
+					Number: nOurCultHandleNo
+					!
+					String: sSqlCultHandle
+					String: sBindCultHandle
+					String: sIntoCultHandle
+					String: sNameCultHandle
+					!
+					Number: nInd
+					Number: nFNARoy
+					String: sRoyOwner
+					String: sCstRoyOwnId
+					Number: nRoy
+					Number: nPercPayable
+					Number: nBasePrice
+					Boolean: bCallahans
+					Boolean: bOwnsRoyalty
+					String: sFNACust
+					String: sFMNRoyPay
+				Actions
+					Set nOurFNAHandleNo = SqlHandlesGetReferenceNo( 'CUSTFMNFNAROY' )
+					Set nOurCultHandleNo = SqlHandlesGetReferenceNo( 'CULTROYAMT' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSqlFNAHandle = " SELECT 
+									  Customer_Master.FNA_Flag, 
+									  Customer_Master.Royalty_Owner_Code, 
+									  Customer_Type.FMN_Roy_Payable 
+									FROM Customer_Type, Customer_Master 
+									WHERE Customer_Master.Cust_No = :1 AND 
+									Customer_Master.Customer_Type = Customer_Type.Cust_Type "
+							Set sNameFNAHandle = 'CUSTFMNFNAROY'
+							Set sBindFNAHandle = ':nCustNo'
+							Set sIntoFNAHandle = ':sFNACust, :sCstRoyOwnId, :sFMNRoyPay'
+							!
+							Set sSqlCultHandle = " SELECT Royalty_Owner_Id, Amount_Payable, Percentage_Payable  
+									FROM Royalty_Payable
+									WHERE Cultivar_Id = :1 "
+							Set sNameCultHandle = 'CULTROYAMT'
+							Set sBindCultHandle = ':sCultId'
+							Set sIntoCultHandle = ':sRoyOwner, :nRoy, :nPercPayable'
+							!
+							Set sRoyOwner = ' '
+							Set sCstRoyOwnId = ' '
+							Set nRoy = 0
+							Set nTotRoy = 0
+							Set nFNARoy = 0
+							Set sFNACust = 'N'
+							Set bCallahans = FALSE
+							Set sFMNRoyPay = 'Y'
+							Call haSqlHandles[ nOurFNAHandleNo ].Setup( sSqlFNAHandle, sNameFNAHandle, sBindFNAHandle, sIntoFNAHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurFNAHandleNo ].hSqlHandle )
+							!
+							If nCustNo > 0
+								If haSqlHandles[ nOurFNAHandleNo ].Execute( )
+									Call haSqlHandles[ nOurFNAHandleNo ].FetchNext( nInd )
+								Else
+									Return FALSE
+							!
+							Call GetItemBasePrice( nItemNo, nBasePrice, SH_cls_Execute )
+							!
+							Call haSqlHandles[ nOurCultHandleNo ].Setup( sSqlCultHandle, sNameCultHandle, sBindCultHandle, sIntoCultHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurCultHandleNo ].hSqlHandle )
+							Set bOwnsRoyalty = FALSE
+							If haSqlHandles[ nOurCultHandleNo ].Execute( )
+								While haSqlHandles[ nOurCultHandleNo ].FetchNext( nInd )
+									If nPercPayable > 0
+										Set nRoy = nBasePrice * ( nPercPayable / 100 )
+									!
+									! This next Fna check is the one where the customer has his royalties accumulated
+											if the owner is FMN or FNA 
+									If sRoyOwner = sCstRoyOwnId
+										Set bOwnsRoyalty = TRUE
+									If sFNACust = 'Y'
+										If (sRoyOwner = 'FMN' OR sRoyOwner = 'FNA')  
+											Set nFNARoy = nFNARoy + nRoy
+										Else
+											Set nTotRoy = nTotRoy + nRoy
+										If sRoyOwner = 'MC'
+											Set bCallahans = TRUE
+									Else If sRoyOwner = 'FMN'
+										If sFMNRoyPay != 'N'
+											Set nTotRoy = nTotRoy + nRoy
+									Else If sRoyOwner = 'FNA'
+										If sFNACust != 'Y'
+											Set nTotRoy = nTotRoy + nRoy
+									Else
+										Set nTotRoy = nTotRoy + nRoy
+								! We need to be able to code for the 94 season - FNA prices are to be a total
+										of the FNA and FMN portion and halved as the FMN portion is the larger
+										portion and Flemings want to give FNA customers cheaper trees than their
+										portion deducted off the price would give
+								If sFNACust = 'Y'
+									If NOT bCallahans
+										Set nFNARoy = nFNARoy/2
+										! To round off to 2 decimal places
+										Set nFNARoy = nFNARoy + .005
+										Set nFNARoy = SalNumberTruncate( nFNARoy, 10, 2 )
+									Set nTotRoy = nTotRoy + nFNARoy
+								If bOwnsRoyalty
+									Set nTotRoy = 0
+								Set nTotRoy = RoundTo2Decimals( nTotRoy )
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurFNAHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurCultHandleNo ].Disconnect( )
+							Call GetItemBasePrice( 0, nBasePrice, SH_cls_Disconnect )
+							Return TRUE
+			!
+			Function: ExtractCultivarDescription
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sCultId
+					Receive String: sCultDesc
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sTmp
+				Actions
+					Return GetCultivarDenormDets( sCultId, sTmp, sTmp, sCultDesc, sTmp, sTmp, nActionType )
+			Function: ExtractRootstockDescription
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sRootId
+					Receive String: sRootDesc
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sTmp
+				Actions
+					Return GetRootstockDenormDets( sRootId, sRootDesc, sTmp, sTmp, nActionType )
+			!
+			Function: GetTreeTypeDenormDets
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sTreeType
+					Receive String: sTreeTypeDesc
+					Receive String: sTypeDescription
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					String: sGotTreeTypeDesc
+					String: sGotTypeDescription
+					Number: nInd
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'TRTYPEDENORM' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT 
+									  Tree_Type_Desc, 
+									  Type_Description 
+									FROM Tree_Type 
+									WHERE Tree_Type = :1"
+							Set sName = 'TRTYPEDENORM'
+							Set sBind = ':sTreeType'
+							Set sInto = ':sGotTreeTypeDesc, :sGotTypeDescription'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sTreeTypeDesc = ''
+							Set sTypeDescription = ''
+							Set sGotTreeTypeDesc = ''
+							Set sGotTypeDescription = ''
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set sTreeTypeDesc = sGotTreeTypeDesc
+									Set sTypeDescription = sGotTypeDescription
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: GetCultivarDenormDets
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sCultId
+					Receive String: sVarietyType
+					Receive String: sVariety
+					Receive String: sCultDesc
+					Receive String: sCVNotSaleFlag
+					Receive String: sCVNonPropFlag
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					String: sGotVarietyType
+					String: sGotVariety
+					String: sGotCultDesc
+					String: sGotCVNotSaleFlag
+					String: sGotCVNonPropFlag
+					String: sGotCVProRoyFlag
+					Number: nInd
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CULTDENORM' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT 
+									  Variety_Type, 
+									  Variety, 
+									  Cult_Desc, 
+									  CV_Not_Sale_Flag, 
+									  CV_Non_Prop_Flag,
+									  Prod_Royalty
+									FROM Cultivar 
+									WHERE Cult_Id = :1"
+							Set sName = 'CULTDENORM'
+							Set sBind = ':sCultId'
+							Set sInto = ':sGotVarietyType, :sGotVariety, :sGotCultDesc, :sGotCVNotSaleFlag, :sGotCVNonPropFlag, :sGotCVProRoyFlag'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sVarietyType = ''
+							Set sVariety = ''
+							Set sCultDesc = ''
+							Set sCVNotSaleFlag = ''
+							Set sCVNonPropFlag = ''
+							!
+							Set sGotVarietyType = ''
+							Set sGotVariety = ''
+							Set sGotCultDesc = ''
+							Set sGotCVNotSaleFlag = ''
+							Set sGotCVNonPropFlag = ''
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set sVarietyType = sGotVarietyType
+									Set sVariety = sGotVariety
+									Set sCultDesc = sGotCultDesc
+									Set sCVNotSaleFlag = sGotCVNotSaleFlag
+									Set sCVNonPropFlag = sGotCVNonPropFlag
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: GetRootstockDenormDets
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sRootId
+					Receive String: sRootDesc
+					Receive String: sRTNotSaleFlag
+					Receive String: sRTNonPropFlag
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					String: sGotRootDesc
+					String: sGotRTNotSaleFlag
+					String: sGotRTNonPropFlag
+					Number: nInd
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'ROOTDENORM' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT 
+									  Root_Desc, 
+									  RT_Not_Sale_Flag, 
+									  RT_Non_Prop_Flag 
+									FROM Rootstock 
+									WHERE Root_Id = :1"
+							Set sName = 'ROOTDENORM'
+							Set sBind = ':sRootId'
+							Set sInto = ':sGotRootDesc, :sGotRTNotSaleFlag, :sGotRTNonPropFlag'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sRootDesc = ''
+							Set sRTNotSaleFlag = ''
+							Set sRTNonPropFlag = ''
+							Set sGotRootDesc = ''
+							Set sGotRTNotSaleFlag = ''
+							Set sGotRTNonPropFlag = ''
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set sRootDesc = sGotRootDesc
+									Set sRTNotSaleFlag = sGotRTNotSaleFlag
+									Set sRTNonPropFlag = sGotRTNonPropFlag
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			!
+			Function: UpdtDenormStckItmFields
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					! naItemNos[*] is a number_null terminated array
+					Number: naItemNos[*]
+					! sItemType = 'SELECTED' Default OR 'ALL'
+					String: sItemType
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurTrTypeHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurCultHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurRootHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurRoyPaidTrTypeHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurRoyPaidCultHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurRoyPaidRootHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurRoyPaidCltRtDescHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					Number: nOurTrTypeHandleNo
+					Number: nOurCultHandleNo
+					Number: nOurRootHandleNo
+					Number: nOurRoyPaidTrTypeHandleNo
+					Number: nOurRoyPaidCultHandleNo
+					Number: nOurRoyPaidRootHandleNo
+					Number: nOurRoyPaidCltRtDescHandleNo
+					String: sSql
+					Number: nInd
+					Boolean: bOk
+					: fcTotalMeter
+						Class: clsMeterBar
+					: fcTrTypeMeter
+						Class: clsMeterBar
+					: fcCultMeter
+						Class: clsMeterBar
+					: fcRootMeter
+						Class: clsMeterBar
+					: fcRoyPaidTrTypeMeter
+						Class: clsMeterBar
+					: fcRoyPaidCultMeter
+						Class: clsMeterBar
+					: fcRoyPaidRootMeter
+						Class: clsMeterBar
+					: fcRoyPaidCltRtDescMeter
+						Class: clsMeterBar
+					Number: nTotal
+					String: sItemNoList
+					!
+					String: sGotTreeType
+					String: sGotTreeTypeDesc
+					String: sGotTypeDesc
+					!
+					String: sGotCultId
+					String: sGotVarietyType
+					String: sGotVariety
+					String: sGotCultDesc
+					String: sGotCVNotSaleFlag
+					String: sGotCVNonPropFlag
+					String: sGotCVProdRoy
+					String: sGotCVTest
+					String: sGotRTTest
+					!
+					String: sGotRootId
+					String: sGotRootDesc
+					String: sGotRTNotSaleFlag
+					String: sGotRTNonPropFlag
+					!
+					String: sGotCultRootType
+					String: sGotCultRootDesc
+					String: sGotCustName
+					Number: nGotInvNo
+					String: sGotRoyaltyOwnerId
+					Date/Time: dtGotPaidDateTime
+				Actions
+					Set nOurTrTypeHandleNo = SqlHandlesGetReferenceNo( 'TrType' )
+					Set nOurCultHandleNo = SqlHandlesGetReferenceNo( 'Cult1' )
+					Set nOurRootHandleNo = SqlHandlesGetReferenceNo( 'Root' )
+					Set nOurRoyPaidTrTypeHandleNo = SqlHandlesGetReferenceNo( 'RoyPaidTrType' )
+					Set nOurRoyPaidCultHandleNo = SqlHandlesGetReferenceNo( 'RoyPaidCult' )
+					Set nOurRoyPaidRootHandleNo = SqlHandlesGetReferenceNo( 'RoyPaidRoot' )
+					Set nOurRoyPaidCltRtDescHandleNo = SqlHandlesGetReferenceNo( 'RoyPaidCltRtDesc' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							If sItemType = 'SELECTED'
+								Call MakeNumberList( naItemNos, 0, ', ', '', sItemNoList )
+							Else
+								Set sItemNoList =''
+							!
+							If sItemType = 'SELECTED'
+								Set sSql = " SELECT DISTINCT 
+										  Stock_Item.Tree_Type, 
+										  Tree_Type.Tree_Type_Desc, 
+										  Tree_Type.Type_Description 
+										FROM 
+										  Stock_Item, 
+										  Tree_Type  
+										INTO 
+										  :sGotTreeType, 
+										  :sGotTreeTypeDesc, 
+										  :sGotTypeDesc 
+										WHERE 
+										  Stock_Item.Item_No IN ( " || sItemNoList || " ) AND 
+										  Stock_Item.Tree_Type = Tree_Type.Tree_Type AND 
+										  ( 
+										    NOT Stock_Item.Tree_Type_Desc = Tree_Type.Tree_Type_Desc OR 
+										    Stock_Item.Tree_Type_Desc IS NULL OR 
+										    NOT Stock_Item.Type_Description = Tree_Type.Type_Description OR 
+										    Stock_Item.Type_Description IS NULL 
+										  ) "
+							Else
+								Set sSql = " SELECT DISTINCT 
+										  Stock_Item.Tree_Type, 
+										  Tree_Type.Tree_Type_Desc, 
+										  Tree_Type.Type_Description 
+										FROM 
+										  Stock_Item, 
+										  Tree_Type 
+										INTO 
+										  :sGotTreeType, 
+										  :sGotTreeTypeDesc, 
+										  :sGotTypeDesc 
+										WHERE 
+										  Stock_Item.Tree_Type = Tree_Type.Tree_Type AND 
+										  ( 
+										    NOT Stock_Item.Tree_Type_Desc = Tree_Type.Tree_Type_Desc OR 
+										    Stock_Item.Tree_Type_Desc IS NULL OR 
+										    NOT Stock_Item.Type_Description = Tree_Type.Type_Description OR 
+										    Stock_Item.Type_Description IS NULL 
+										  ) "
+							Call haSqlHandles[ nOurTrTypeHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurTrTypeHandleNo ].hSqlHandle )
+							!
+							If sItemType = 'SELECTED'
+								Set sSql = " SELECT DISTINCT 
+										  Stock_Item.Cultivar_Id, 
+										  Cultivar.Variety_Type, 
+										  Cultivar.Variety, 
+										  Cultivar.Cult_Desc, 
+										  Cultivar.CV_Not_Sale_Flag, 
+										  Cultivar.CV_Non_Prop_Flag,
+										  Cultivar.Prod_Royalty,
+										  Cultivar.cv_on_trial_flag
+										FROM 
+										  Stock_Item, 
+										  Cultivar 
+										INTO 
+										  :sGotCultId, 
+										  :sGotVarietyType, 
+										  :sGotVariety, 
+										  :sGotCultDesc, 
+										  :sGotCVNotSaleFlag, 
+										  :sGotCVNonPropFlag,
+										  :sGotCVProdRoy,
+										 :sGotCVTest
+										WHERE 
+										  Stock_Item.Item_No IN ( " || sItemNoList || " ) AND 
+										  Stock_Item.Cultivar_Id = Cultivar.Cult_Id AND 
+										( 
+										  NOT Stock_Item.Variety_Type = Cultivar.Variety_Type OR 
+										  Stock_Item.Variety_Type IS NULL OR 
+										  NOT Stock_Item.Variety = Cultivar.Variety OR 
+										  Stock_Item.Variety IS NULL OR 
+										  NOT Stock_Item.Cult_Desc = Cultivar.Cult_Desc OR 
+										  Stock_Item.Cult_Desc IS NULL OR 
+										  NOT Stock_Item.CV_Not_Sale_Flag = Cultivar.CV_Not_Sale_Flag OR 
+										  Stock_Item.CV_Not_Sale_Flag IS NULL OR 
+										  NOT Stock_Item.CV_Non_Prop_Flag = Cultivar.CV_Non_Prop_Flag OR
+										  Stock_Item.CV_Non_Prop_Flag IS NULL or
+										  NOT Stock_Item.Prod_Royalty = Cultivar.Prod_Royalty OR
+										  Stock_Item.Prod_Royalty IS NULL or
+										  NOT Stock_Item.cv_on_trial_flag = Cultivar.cv_on_trial_flag OR
+										  Stock_Item.cv_on_trial_flag IS NULL
+										
+										) "
+							Else
+								Set sSql = " SELECT DISTINCT 
+										  Stock_Item.Cultivar_Id, 
+										  Cultivar.Variety_Type, 
+										  Cultivar.Variety, 
+										  Cultivar.Cult_Desc, 
+										  Cultivar.CV_Not_Sale_Flag, 
+										  Cultivar.CV_Non_Prop_Flag,
+										  Cultivar.Prod_Royalty ,
+										 Cultivar.cv_on_trial_flag
+										FROM 
+										  Stock_Item, 
+										  Cultivar 
+										INTO 
+										  :sGotCultId, 
+										  :sGotVarietyType, 
+										  :sGotVariety, 
+										  :sGotCultDesc, 
+										  :sGotCVNotSaleFlag, 
+										  :sGotCVNonPropFlag,
+										  :sGotCVProdRoy,
+										:sGotCVTest
+										WHERE 
+										  Stock_Item.Cultivar_Id = Cultivar.Cult_Id AND 
+										( 
+										  NOT Stock_Item.Variety_Type = Cultivar.Variety_Type OR 
+										  Stock_Item.Variety_Type IS NULL OR 
+										  NOT Stock_Item.Variety = Cultivar.Variety OR 
+										  Stock_Item.Variety IS NULL OR 
+										  NOT Stock_Item.Cult_Desc = Cultivar.Cult_Desc OR 
+										  Stock_Item.Cult_Desc IS NULL OR 
+										  NOT Stock_Item.CV_Not_Sale_Flag = Cultivar.CV_Not_Sale_Flag OR 
+										  Stock_Item.CV_Not_Sale_Flag IS NULL OR 
+										  NOT Stock_Item.CV_Non_Prop_Flag = Cultivar.CV_Non_Prop_Flag OR 
+										  Stock_Item.CV_Non_Prop_Flag IS NULL or
+										  NOT Stock_Item.Prod_Royalty = Cultivar.Prod_Royalty OR
+										  Stock_Item.Prod_Royalty IS NULL or
+										 NOT Stock_Item.cv_on_trial_flag = Cultivar.cv_on_trial_flag OR
+										  Stock_Item.cv_on_trial_flag IS NULL
+										
+										) "
+							Call haSqlHandles[ nOurCultHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurCultHandleNo ].hSqlHandle )
+							!
+							If sItemType = 'SELECTED'
+								Set sSql = " SELECT DISTINCT 
+										  Stock_Item.Rootstock_Id, 
+										  Rootstock.Root_Desc, 
+										  Rootstock.RT_Not_Sale_Flag, 
+										  Rootstock.RT_Non_Prop_Flag,
+										Rootstock.RT_on_trial_Flag
+										FROM 
+										  Stock_Item, 
+										  Rootstock 
+										INTO 
+										  :sGotRootId, 
+										  :sGotRootDesc, 
+										  :sGotRTNotSaleFlag, 
+										  :sGotRTNonPropFlag,
+										:sGotRTTest
+										WHERE 
+										  Stock_Item.Item_No IN ( " || sItemNoList || " ) AND 
+										  Stock_Item.Rootstock_Id = Rootstock.Root_Id AND 
+										( 
+										  NOT Stock_Item.Root_Desc = Rootstock.Root_Desc OR 
+										  Stock_Item.Root_Desc IS NULL OR 
+										  NOT Stock_Item.RT_Not_Sale_Flag = Rootstock.RT_Not_Sale_Flag OR 
+										  Stock_Item.RT_Not_Sale_Flag IS NULL OR 
+										  NOT Stock_Item.RT_Non_Prop_Flag = Rootstock.RT_Non_Prop_Flag OR 
+										  Stock_Item.RT_Non_Prop_Flag IS NULL OR 
+										  NOT Stock_Item.RT_on_trial_Flag = Rootstock.RT_on_trial_Flag OR 
+										  Stock_Item.RT_on_trial_Flag IS NULL 
+										) "
+							Else
+								Set sSql = " SELECT DISTINCT 
+										  Stock_Item.Rootstock_Id, 
+										  Rootstock.Root_Desc, 
+										  Rootstock.RT_Not_Sale_Flag, 
+										  Rootstock.RT_Non_Prop_Flag ,
+										Rootstock.RT_on_trial_Flag
+										FROM 
+										  Stock_Item, 
+										  Rootstock 
+										INTO 
+										  :sGotRootId, 
+										  :sGotRootDesc, 
+										  :sGotRTNotSaleFlag, 
+										  :sGotRTNonPropFlag,
+										:sGotRTTest
+										WHERE 
+										  Stock_Item.Rootstock_Id = Rootstock.Root_Id AND 
+										( 
+										  NOT Stock_Item.Root_Desc = Rootstock.Root_Desc OR 
+										  Stock_Item.Root_Desc IS NULL OR 
+										  NOT Stock_Item.RT_Not_Sale_Flag = Rootstock.RT_Not_Sale_Flag OR 
+										  Stock_Item.RT_Not_Sale_Flag IS NULL OR 
+										  NOT Stock_Item.RT_Non_Prop_Flag = Rootstock.RT_Non_Prop_Flag OR 
+										  Stock_Item.RT_Non_Prop_Flag IS NULL OR 
+										  NOT Stock_Item.RT_on_trial_Flag = Rootstock.RT_on_trial_Flag OR 
+										  Stock_Item.RT_on_trial_Flag IS NULL 
+										) "
+							Call haSqlHandles[ nOurRootHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurRootHandleNo ].hSqlHandle )
+							!
+							If sItemType = 'SELECTED'
+								Set sSql = " SELECT DISTINCT 
+										  Royalties_Paid.Tree_Type, 
+										  Tree_Type.Tree_Type_Desc
+										FROM 
+										  Royalties_Paid, 
+										  Tree_Type 
+										INTO 
+										  :sGotTreeType, 
+										  :sGotTreeTypeDesc 
+										WHERE 
+										  Royalties_Paid.Stock_Item_No IN ( " || sItemNoList || " )  AND 
+										  Royalties_Paid.Tree_Type = Tree_Type.Tree_Type AND 
+										(
+										  NOT Royalties_Paid.Tree_Type_Desc = Tree_Type.Tree_Type_Desc OR 
+										  Royalties_Paid.Tree_Type_Desc IS NULL
+										)"
+							Else
+								Set sSql = " SELECT DISTINCT 
+										  Royalties_Paid.Tree_Type, 
+										  Tree_Type.Tree_Type_Desc
+										FROM 
+										  Royalties_Paid, 
+										  Tree_Type 
+										INTO 
+										  :sGotTreeType, 
+										  :sGotTreeTypeDesc 
+										WHERE 
+										  Royalties_Paid.Tree_Type = Tree_Type.Tree_Type AND 
+										(
+										  NOT Royalties_Paid.Tree_Type_Desc = Tree_Type.Tree_Type_Desc OR 
+										  Royalties_Paid.Tree_Type_Desc IS NULL
+										)"
+							Call haSqlHandles[ nOurRoyPaidTrTypeHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurRoyPaidTrTypeHandleNo ].hSqlHandle )
+							!
+							If sItemType = 'SELECTED'
+								Set sSql = " SELECT DISTINCT 
+										  Royalties_Paid.Cult_Root_Id, 
+										  Cultivar.Cult_Desc
+										FROM 
+										  Royalties_Paid, 
+										  Cultivar 
+										INTO 
+										  :sGotCultId, 
+										  :sGotCultDesc 
+										WHERE 
+										    Royalties_Paid.Cult_Root_Type = 'C' AND
+										    Royalties_Paid.Stock_Item_No IN ( " || sItemNoList || " ) AND 
+										  Royalties_Paid.Cult_Root_Id = Cultivar.Cult_Id AND 
+										(
+										  NOT Royalties_Paid.Cult_Desc = Cultivar.Cult_Desc OR 
+										  NOT Royalties_Paid.Cult_Root_Desc = Cultivar.Cult_Desc OR 
+										  Royalties_Paid.Cult_Desc IS NULL OR 
+										  Royalties_Paid.Cult_Root_Desc IS NULL
+										) "
+							Else
+								Set sSql = " SELECT DISTINCT 
+										  Royalties_Paid.Cult_Root_Id, 
+										  Cultivar.Cult_Desc
+										FROM 
+										  Royalties_Paid, 
+										  Cultivar 
+										INTO 
+										  :sGotCultId, 
+										  :sGotCultDesc 
+										WHERE 
+										  Royalties_Paid.Cult_Root_Type = 'C' AND 
+										  Royalties_Paid.Cult_Root_Id = Cultivar.Cult_Id AND 
+										(
+										  NOT Royalties_Paid.Cult_Desc = Cultivar.Cult_Desc OR 
+										  NOT Royalties_Paid.Cult_Root_Desc = Cultivar.Cult_Desc OR 
+										  Royalties_Paid.Cult_Desc IS NULL OR 
+										  Royalties_Paid.Cult_Root_Desc IS NULL
+										) "
+							Call haSqlHandles[ nOurRoyPaidCultHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurRoyPaidCultHandleNo ].hSqlHandle )
+							!
+							If sItemType = 'SELECTED'
+								Set sSql = " SELECT DISTINCT 
+										  Royalties_Paid.Cult_Root_Id, 
+										  Rootstock.Root_Desc
+										FROM 
+										  Royalties_Paid, 
+										  Rootstock 
+										INTO 
+										  :sGotRootId, 
+										  :sGotRootDesc 
+										WHERE 
+										  Royalties_Paid.Cult_Root_Type = 'R' AND 
+										  Royalties_Paid.Stock_Item_No IN ( " || sItemNoList || " ) AND 
+										  Royalties_Paid.Cult_Root_Id = Rootstock.Root_Id AND 
+										(
+										  NOT Royalties_Paid.Root_Desc = Rootstock.Root_Desc OR 
+										  NOT Royalties_Paid.Cult_Root_Desc = Rootstock.Root_Desc OR 
+										  Royalties_Paid.Root_Desc IS NULL OR 
+										  Royalties_Paid.Cult_Root_Desc IS NULL
+										) "
+							Else
+								Set sSql = " SELECT DISTINCT 
+										  Royalties_Paid.Cult_Root_Id, 
+										  Rootstock.Root_Desc
+										FROM 
+										  Royalties_Paid, 
+										  Rootstock 
+										INTO 
+										  :sGotRootId, 
+										  :sGotRootDesc 
+										WHERE 
+										  Royalties_Paid.Cult_Root_Type = 'R' AND 
+										  Royalties_Paid.Cult_Root_Id = Rootstock.Root_Id AND 
+										(
+										  NOT Royalties_Paid.Root_Desc = Rootstock.Root_Desc OR 
+										  NOT Royalties_Paid.Cult_Root_Desc = Rootstock.Root_Desc OR 
+										  Royalties_Paid.Root_Desc IS NULL OR 
+										  Royalties_Paid.Cult_Root_Desc IS NULL
+										) "
+							Call haSqlHandles[ nOurRoyPaidRootHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurRoyPaidRootHandleNo ].hSqlHandle )
+							!
+							If TRUE
+								Set sSql = " SELECT 
+										  Cult_Root_Type, 
+										  Cult_Root_Desc, 
+										  Cust_Name, 
+										  Inv_No, 
+										  Royalty_Owner_Id, 
+										  Paid_Date_Time, 
+										  Cult_Desc, 
+										  Root_Desc 
+										FROM 
+										  Royalties_Paid 
+										INTO 
+										  :sGotCultRootType, 
+										  :sGotCultRootDesc, 
+										  :sGotCustName, 
+										  :nGotInvNo, 
+										  :sGotRoyaltyOwnerId, 
+										  :dtGotPaidDateTime, 
+										  :sGotCultDesc, 
+										  :sGotRootDesc 
+										WHERE 
+										 (
+										  Cult_Root_Type = 'C' AND 
+										  NOT Cult_Root_Desc = Cult_Desc 
+										 ) OR 
+										 (
+										  Cult_Root_Type = 'R' AND 
+										  NOT Cult_Root_Desc = Root_Desc 
+										 ) "
+							Call haSqlHandles[ nOurRoyPaidCltRtDescHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurRoyPaidCltRtDescHandleNo ].hSqlHandle )
+							!
+							Set bOk = TRUE
+							Call fcTotalMeter.Setup( 'Updating Denorm. Stock Items fields', 7 )
+							!
+							If haSqlHandles[ nOurTrTypeHandleNo ].PrepareAndExecute( )
+								Call fcTotalMeter.Increment( 1 )
+								Call haSqlHandles[ nOurTrTypeHandleNo ].ResultSetCount( nTotal )
+								Call fcTrTypeMeter.Setup( 'Updating Denorm. Stock Items Tree Type fields', nTotal )
+								While haSqlHandles[ nOurTrTypeHandleNo ].FetchNext( nInd ) AND bOk
+									If UpdtStckItmTrTypeDenormFields( sGotTreeType, sGotTreeTypeDesc, sGotTypeDesc, SH_cls_Execute )
+										Call UpdtStckItmTrTypeDenormFields( '', '', '', SH_cls_Commit )
+									Else
+										Set bOk = FALSE
+									Call fcTrTypeMeter.Increment( 1 )
+								Call fcTrTypeMeter.End( )
+							Else
+								Set bOk = FALSE
+								Call fcTotalMeter.Increment( 1 )
+							!
+							If haSqlHandles[ nOurCultHandleNo ].PrepareAndExecute( )
+								Call fcTotalMeter.Increment( 1 )
+								Call haSqlHandles[ nOurCultHandleNo ].ResultSetCount( nTotal )
+								Call fcCultMeter.Setup( 'Updating Denorm. Stock Items cultivar fields', nTotal )
+								While haSqlHandles[ nOurCultHandleNo ].FetchNext( nInd ) AND bOk
+									If UpdtStckItmCultDenormFields( sGotCultId, sGotVarietyType, sGotVariety, sGotCultDesc, sGotCVNotSaleFlag, sGotCVNonPropFlag, sGotCVProdRoy, sGotCVTest, SH_cls_Execute )
+										Call UpdtStckItmCultDenormFields( '', '', '', '', '', '', '', '', SH_cls_Commit )
+									Else
+										Call SalMessageBox('Error Updating stock item fields','Error UpdtDenormStckItmFields',MB_Ok)
+										Set bOk = FALSE
+									Call fcCultMeter.Increment( 1 )
+								Call fcCultMeter.End( )
+							Else
+								Set bOk = FALSE
+								Call fcTotalMeter.Increment( 1 )
+							!
+							If haSqlHandles[ nOurRootHandleNo ].PrepareAndExecute( )
+								Call fcTotalMeter.Increment( 1 )
+								Call haSqlHandles[ nOurRootHandleNo ].ResultSetCount( nTotal )
+								Call fcRootMeter.Setup( 'Updating Denorm. Stock Items rootstock fields', nTotal )
+								While haSqlHandles[ nOurRootHandleNo ].FetchNext( nInd ) AND bOk
+									If UpdtStckItmRootDenormFields( sGotRootId, sGotRootDesc, sGotRTNotSaleFlag, sGotRTNonPropFlag, sGotRTTest, SH_cls_Execute )
+										Call UpdtStckItmRootDenormFields( '', '', '', '', '', SH_cls_Commit )
+									Else
+										Set bOk = FALSE
+									Call fcRootMeter.Increment( 1 )
+								Call fcRootMeter.End( )
+							Else
+								Set bOk = FALSE
+								Call fcTotalMeter.Increment( 1 )
+							!
+							If haSqlHandles[ nOurRoyPaidTrTypeHandleNo ].PrepareAndExecute( )
+								Call fcTotalMeter.Increment( 1 )
+								Call haSqlHandles[ nOurRoyPaidTrTypeHandleNo ].ResultSetCount( nTotal )
+								Call fcRoyPaidTrTypeMeter.Setup( 'Updating Denorm. Royalties Paid Tree Type fields', nTotal )
+								While haSqlHandles[ nOurRoyPaidTrTypeHandleNo ].FetchNext( nInd ) AND bOk
+									If UpdtRoyPaidTrTypeDenormFields( sGotTreeType, sGotTreeTypeDesc, SH_cls_Execute )
+										Call UpdtRoyPaidTrTypeDenormFields( '', '', SH_cls_Commit )
+									Else
+										Set bOk = FALSE
+									Call fcRoyPaidTrTypeMeter.Increment( 1 )
+								Call fcRoyPaidTrTypeMeter.End( )
+							Else
+								Set bOk = FALSE
+								Call fcTotalMeter.Increment( 1 )
+							!
+							If haSqlHandles[ nOurRoyPaidCultHandleNo ].PrepareAndExecute( )
+								Call fcTotalMeter.Increment( 1 )
+								Call haSqlHandles[ nOurRoyPaidCultHandleNo ].ResultSetCount( nTotal )
+								Call fcRoyPaidCultMeter.Setup( 'Updating Denorm. Royalties Paid cultivar fields', nTotal )
+								While haSqlHandles[ nOurRoyPaidCultHandleNo ].FetchNext( nInd ) AND bOk
+									If UpdtRoyPaidCultDenormFields( sGotCultId, sGotCultDesc, SH_cls_Execute )
+										Call UpdtRoyPaidCultDenormFields( '', '', SH_cls_Commit )
+									Else
+										Set bOk = FALSE
+									Call fcRoyPaidCultMeter.Increment( 1 )
+								Call fcRoyPaidCultMeter.End( )
+							Else
+								Set bOk = FALSE
+								Call fcTotalMeter.Increment( 1 )
+							!
+							If haSqlHandles[ nOurRoyPaidRootHandleNo ].PrepareAndExecute( )
+								Call fcTotalMeter.Increment( 1 )
+								Call haSqlHandles[ nOurRoyPaidRootHandleNo ].ResultSetCount( nTotal )
+								Call fcRoyPaidRootMeter.Setup( 'Updating Denorm. Royalties Paid rootstock fields', nTotal )
+								While haSqlHandles[ nOurRoyPaidRootHandleNo ].FetchNext( nInd ) AND bOk
+									If UpdtRoyPaidRootDenormFields( sGotRootId, sGotRootDesc, SH_cls_Execute )
+										Call UpdtRoyPaidRootDenormFields( '', '', SH_cls_Commit )
+									Else
+										Set bOk = FALSE
+									Call fcRoyPaidRootMeter.Increment( 1 )
+								Call fcRoyPaidRootMeter.End( )
+							Else
+								Set bOk = FALSE
+								Call fcTotalMeter.Increment( 1 )
+							!
+							If haSqlHandles[ nOurRoyPaidCltRtDescHandleNo ].PrepareAndExecute( )
+								Call fcTotalMeter.Increment( 1 )
+								Call haSqlHandles[ nOurRoyPaidCltRtDescHandleNo ].ResultSetCount( nTotal )
+								Call fcRoyPaidCltRtDescMeter.Setup( 'Updating Denorm. Royalties Paid cultivar, rootstock key fields', nTotal )
+								While haSqlHandles[ nOurRoyPaidCltRtDescHandleNo ].FetchNext( nInd ) AND bOk
+									If UpdtRoyPaidCltRtDescDenormFields( sGotCultRootType, sGotCultRootDesc, sGotCustName, nGotInvNo, sGotRoyaltyOwnerId, dtGotPaidDateTime, sGotCultDesc, sGotRootDesc, SH_cls_Execute )
+										Call UpdtRoyPaidCltRtDescDenormFields( '', '', '', 0, '', DATETIME_Null, '', '', SH_cls_Commit )
+									Else
+										Set bOk = FALSE
+									Call fcRoyPaidCltRtDescMeter.Increment( 1 )
+								Call fcRoyPaidCltRtDescMeter.End( )
+							Else
+								Set bOk = FALSE
+								Call fcTotalMeter.Increment( 1 )
+							!
+							Call fcTotalMeter.End( )
+							Return bOk
+						Case SH_cls_Disconnect
+							Set bOk = TRUE
+							If NOT haSqlHandles[ nOurTrTypeHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurCultHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurRootHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurRoyPaidTrTypeHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurRoyPaidCultHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurRoyPaidRootHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurRoyPaidCltRtDescHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT UpdtStckItmTrTypeDenormFields( '', '', '', SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT UpdtStckItmCultDenormFields( '', '', '', '', '', '', '', '', SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT UpdtStckItmRootDenormFields( '', '', '', '', '', SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT UpdtRoyPaidTrTypeDenormFields( '', '', SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT UpdtRoyPaidCultDenormFields( '', '', SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT UpdtRoyPaidRootDenormFields( '', '', SH_cls_Disconnect )
+								Set bOk = FALSE
+							If NOT UpdtRoyPaidCltRtDescDenormFields( '', '', '', 0, '', DATETIME_Null, '', '', SH_cls_Disconnect )
+								Set bOk = FALSE
+							Return bOk
+			Function: UpdtStckItmTrTypeDenormFields
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sTreeType
+					String: sTreeTypeDesc
+					String: sTypeDesc
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					Number: nOurHandleNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'UpdtStckItmTrTypeDenormFields' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " UPDATE Stock_Item 
+									SET 
+									  Tree_Type_Desc = :sTreeTypeDesc, 
+									  Type_Description = :sTypeDesc
+									WHERE 
+									  Stock_Item.Tree_Type = :sTreeType "
+							Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Return haSqlHandles[ nOurHandleNo ].PrepareAndExecute( )
+						Case SH_cls_Commit
+							Return haSqlHandles[ nOurHandleNo ].Commit( )
+						Case SH_cls_Rollback
+							Return haSqlHandles[ nOurHandleNo ].Rollback( )
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: UpdtStckItmCultDenormFields
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sCultId
+					String: sVarietyType
+					String: sVariety
+					String: sCultDesc
+					String: sCVNotSaleFlag
+					String: sCVNonPropFlag
+					String: sCVProdRoy
+					String: sCVTest
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sCultSql
+					Number: nOurHandleNo
+					Number: nOurCultHandleNo
+					Boolean: bCult
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'UpdtStckItmCultDenormFields3' )
+					Set nOurCultHandleNo = SqlHandlesGetReferenceNo( 'UpdtCultDenormFields3' )
+					Set bCult = FALSE
+					Select Case nActionType
+						Case SH_cls_Execute
+							! If sCVNotSaleFlag = STRING_Null
+								  Set sCVNotSaleFlag = 'N'
+								  Set bCult = TRUE
+							! If sCVNonPropFlag = STRING_Null
+								  Set sCVNonPropFlag = 'N'
+								  Set bCult = TRUE
+							! If sCVProdRoy = STRING_Null
+								  Set sCVProdRoy = 'N'
+								  Set bCult = TRUE
+							! If sCVTest = STRING_Null
+								  Set sCVTest = 'N'
+								  Set bCult = TRUE
+							! If sRTTest = STRING_Null
+								  Set sRTTest = 'N'
+								  Set bCult = TRUE
+							If TRUE
+								Set sSql = " UPDATE Stock_Item 
+										SET 
+										  Variety_Type = :sVarietyType, 
+										  Variety = :sVariety, 
+										  Cult_Desc = :sCultDesc, 
+										  CV_Not_Sale_Flag = :sCVNotSaleFlag, 
+										  CV_Non_Prop_Flag = :sCVNonPropFlag,
+										  Prod_Royalty = :sCVProdRoy,
+										 cv_on_trial_flag = :sCVTest
+										WHERE 
+										  Stock_Item.Cultivar_Id = :sCultId "
+								! Set sCultSql = " UPDATE Cultivar 
+										SET 
+										  CV_Not_Sale_Flag = :sCVNotSaleFlag, 
+										  CV_Non_Prop_Flag = :sCVNonPropFlag,
+										  Prod_Royalty = :sCVProdRoy,
+										 cv_on_trial_flag = :sCVTest
+										WHERE 
+										  Cultivar.Cult_Id = :sCultId "
+							Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Return haSqlHandles[ nOurHandleNo ].PrepareAndExecute( )
+							! Call haSqlHandles[ nOurCultHandleNo ].PrepareSetup( sCultSql )
+							! Call SqlVarSetup( haSqlHandles[ nOurCultHandleNo ].hSqlHandle )
+							!
+							! Return haSqlHandles[ nOurCultHandleNo ].PrepareAndExecute( )
+						Case SH_cls_Commit
+							If haSqlHandles[ nOurHandleNo ].Commit( )
+								Return haSqlHandles[ nOurCultHandleNo ].Commit( )
+						Case SH_cls_Rollback
+							If haSqlHandles[ nOurHandleNo ].Rollback( )
+								Return haSqlHandles[ nOurCultHandleNo ].Rollback( )
+						Case SH_cls_Disconnect
+							If haSqlHandles[ nOurHandleNo ].Disconnect( )
+								Return haSqlHandles[ nOurCultHandleNo ].Disconnect( )
+			Function: UpdtStckItmRootDenormFields
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sRootId
+					String: sRootDesc
+					String: sRTNotSaleFlag
+					String: sRTNonPropFlag
+					String: sRTTest
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					Number: nOurHandleNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'UpdtStckItmRootDenormFields1' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " UPDATE Stock_Item 
+									SET 
+									  Root_Desc = :sRootDesc, 
+									  RT_Not_Sale_Flag = :sRTNotSaleFlag, 
+									  RT_Non_Prop_Flag = :sRTNonPropFlag,
+									 RT_on_trial_Flag = :sRTTest
+									WHERE 
+									  Stock_Item.Rootstock_Id = :sRootId "
+							Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Return haSqlHandles[ nOurHandleNo ].PrepareAndExecute( )
+						Case SH_cls_Commit
+							Return haSqlHandles[ nOurHandleNo ].Commit( )
+						Case SH_cls_Rollback
+							Return haSqlHandles[ nOurHandleNo ].Rollback( )
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			!
+			Function: UpdtRoyPaidTrTypeDenormFields
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sTreeType
+					String: sTreeTypeDesc
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					Number: nOurHandleNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'UpdtRoyPaidTrTypeDenormFields' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " UPDATE Royalties_Paid 
+									SET 
+									  Tree_Type_Desc = :sTreeTypeDesc 
+									WHERE 
+									  Royalties_Paid.Tree_Type = :sTreeType "
+							Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Return haSqlHandles[ nOurHandleNo ].PrepareAndExecute( )
+						Case SH_cls_Commit
+							Return haSqlHandles[ nOurHandleNo ].Commit( )
+						Case SH_cls_Rollback
+							Return haSqlHandles[ nOurHandleNo ].Rollback( )
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: UpdtRoyPaidCultDenormFields
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sCultId
+					String: sCultDesc
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					Number: nOurHandleNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'UpdtRoyPaidCultDenormFields' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " UPDATE Royalties_Paid 
+									SET 
+									  Cult_Desc = :sCultDesc 
+									WHERE 
+									  Royalties_Paid.Cult_Root_Type = 'C' AND 
+									  Royalties_Paid.Cult_Root_Id = :sCultId "
+							Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Return haSqlHandles[ nOurHandleNo ].PrepareAndExecute( )
+						Case SH_cls_Commit
+							Return haSqlHandles[ nOurHandleNo ].Commit( )
+						Case SH_cls_Rollback
+							Return haSqlHandles[ nOurHandleNo ].Rollback( )
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: UpdtRoyPaidRootDenormFields
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sRootId
+					String: sRootDesc
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					Number: nOurHandleNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'UpdtRoyPaidRootDenormFields' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " UPDATE Royalties_Paid 
+									SET 
+									  Root_Desc = :sRootDesc 
+									WHERE 
+									  Royalties_Paid.Cult_Root_Type = 'R' AND 
+									  Royalties_Paid.Cult_Root_Id = :sRootId "
+							Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Return haSqlHandles[ nOurHandleNo ].PrepareAndExecute( )
+						Case SH_cls_Commit
+							Return haSqlHandles[ nOurHandleNo ].Commit( )
+						Case SH_cls_Rollback
+							Return haSqlHandles[ nOurHandleNo ].Rollback( )
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: UpdtRoyPaidCltRtDescDenormFields
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sCultRootType
+					String: sCultRootDesc
+					String: sCustName
+					Number: nInvNo
+					String: sRoyaltyOwnerId
+					Date/Time: dtPaidDateTime
+					String: sCultDesc
+					String: sRootDesc
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sNewCultRootDesc
+					Number: nOurHandleNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'UpdtRoyPaidCltRtDescDenormFields' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " UPDATE Royalties_Paid 
+									SET 
+									  Cult_Root_Desc = :sNewCultRootDesc 
+									WHERE 
+									  Cult_Root_Type = :sCultRootType AND  
+									  Cult_Root_Desc = :sCultRootDesc AND 
+									  Cust_Name = :sCustName AND  
+									  Inv_No = :nInvNo AND 
+									  Royalty_Owner_Id = :sRoyaltyOwnerId AND 
+									  Paid_Date_Time = :dtPaidDateTime "
+							Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							If sCultRootType = 'C'
+								Set sNewCultRootDesc = sCultDesc
+							Else
+								Set sNewCultRootDesc = sRootDesc
+							Return haSqlHandles[ nOurHandleNo ].PrepareAndExecute( )
+						Case SH_cls_Commit
+							Return haSqlHandles[ nOurHandleNo ].Commit( )
+						Case SH_cls_Rollback
+							Return haSqlHandles[ nOurHandleNo ].Rollback( )
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			!
+			Function: ExistsCultId
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sCultId
+					Receive Boolean: bExists
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					Number: nInd
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'EXISTSCULTID' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT Cult_Id
+									FROM Cultivar 
+									WHERE Cult_Id = :1"
+							Set sName = 'EXISTSCULTID'
+							Set sBind = ':sCultId'
+							Set sInto = ''
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set bExists = FALSE
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set bExists = TRUE
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: ExistsRootId
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sRootId
+					Receive Boolean: bExists
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					Number: nInd
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'EXISTSROOTID' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT Root_Id
+									FROM Rootstock 
+									WHERE Root_Id = :1"
+							Set sName = 'EXISTSROOTID'
+							Set sBind = ':sRootId'
+							Set sInto = ''
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set bExists = FALSE
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set bExists = TRUE
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: ExistsPaintId
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sPaintId
+					Receive Boolean: bExists
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					Number: nInd
+				Actions
+					! Number: nOurHandleNo
+					! haSqlHandles[ nOurHandleNo ]
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'EXISTSPAINTMID' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT Paint_Id
+									FROM Paint_Master 
+									WHERE Paint_Id = :1"
+							Set sName = 'EXISTSPAINTMID'
+							Set sBind = ':sPaintId'
+							Set sInto = ''
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set bExists = FALSE
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set bExists = TRUE
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			!
+			Function: GetNextNewItemNo
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Receive Number: nItemNo
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nInd
+					!
+					Number: nGotItemNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GTNXTNITMNO' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT MAX( Item_No )+1 FROM Stock_Item"
+							Set sName = 'GTNXTNITMNO'
+							Set sBind = ''
+							Set sInto = ':nGotItemNo'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nItemNo = NUMBER_Null
+							Set nGotItemNo = NUMBER_Null
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set nItemNo = nGotItemNo
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: ExistsItemByItemFields
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sTreeType
+					String: sCultId
+					String: sRootId
+					Receive Boolean: bExists
+					Number: nActionType
+				Static Variables
+					: fcOurCultRootHandle
+						Class: hcSqlHandle
+					: fcOurCultOnlyHandle
+						Class: hcSqlHandle
+					: fcOurRootOnlyHandle
+						Class: hcSqlHandle
+				Local variables
+					String: sSql
+					Number: nOurCultRootHandleNo
+					Number: nOurCultOnlyHandleNo
+					Number: nOurRootOnlyHandleNo
+					Number: nInd
+					Boolean: bOk
+				Actions
+					Set nOurCultRootHandleNo = SqlHandlesGetReferenceNo( 'ExistsItemByItemFields_CultRoot' )
+					Set nOurCultOnlyHandleNo = SqlHandlesGetReferenceNo( 'ExistsItemByItemFields_CultOnly' )
+					Set nOurRootOnlyHandleNo = SqlHandlesGetReferenceNo( 'ExistsItemByItemFields_RootOnly' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT 
+									  Item_No 
+									FROM 
+									  Stock_Item 
+									WHERE 
+									  Tree_Type = :sTreeType AND 
+									  Cultivar_Id = :sCultId AND 
+									  Rootstock_Id = :sRootId "
+							Call haSqlHandles[ nOurCultRootHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurCultRootHandleNo ].hSqlHandle )
+							!
+							Set sSql = " SELECT 
+									  Item_No 
+									FROM 
+									  Stock_Item 
+									WHERE 
+									  Tree_Type = :sTreeType AND 
+									  Cultivar_Id = :sCultId AND 
+									  Rootstock_Id IS NULL "
+							Call haSqlHandles[ nOurCultOnlyHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurCultOnlyHandleNo ].hSqlHandle )
+							!
+							Set sSql = " SELECT 
+									  Item_No 
+									FROM 
+									  Stock_Item 
+									WHERE 
+									  Tree_Type = :sTreeType AND 
+									  Cultivar_Id IS NULL AND 
+									  Rootstock_Id = :sRootId "
+							Call haSqlHandles[ nOurRootOnlyHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurRootOnlyHandleNo ].hSqlHandle )
+							!
+							Set bExists = FALSE
+							!
+							If sCultId = ''
+								If haSqlHandles[ nOurRootOnlyHandleNo ].PrepareAndExecute( )
+									If haSqlHandles[ nOurRootOnlyHandleNo ].FetchNext( nInd )
+										Set bExists = TRUE
+									Return TRUE
+								Else
+									Return FALSE
+							Else If sRootId = ''
+								If haSqlHandles[ nOurCultOnlyHandleNo ].PrepareAndExecute( )
+									If haSqlHandles[ nOurCultOnlyHandleNo ].FetchNext( nInd )
+										Set bExists = TRUE
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								If haSqlHandles[ nOurCultRootHandleNo ].PrepareAndExecute( )
+									If haSqlHandles[ nOurCultRootHandleNo ].FetchNext( nInd )
+										Set bExists = TRUE
+									Return TRUE
+								Else
+									Return FALSE
+						Case SH_cls_Disconnect
+							Set bOk = TRUE
+							If NOT haSqlHandles[ nOurCultRootHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurCultOnlyHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurRootOnlyHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							Return bOk
+			Function: CheckItemOnOrder
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Receive Boolean: bExists
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurOrderHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurOrderHistHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					Number: nOurOrderHandleNo
+					Number: nOurOrderHistHandleNo
+					Number: nInd
+					Boolean: bOk
+				Actions
+					! Number: nOurHandleNo
+					! haSqlHandles[ nOurHandleNo ]
+					Set nOurOrderHandleNo = SqlHandlesGetReferenceNo( 'CheckItemOnOrder_Order' )
+					Set nOurOrderHistHandleNo = SqlHandlesGetReferenceNo( 'CheckItemOnOrder_OrderHist' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT 
+									  Stock_Item_No 
+									FROM 
+									  Customer_Order 
+									WHERE 
+									  Stock_Item_No = :nItemNo "
+							Call haSqlHandles[ nOurOrderHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurOrderHandleNo ].hSqlHandle )
+							!
+							Set sSql = " SELECT 
+									  Stock_Item_No 
+									FROM 
+									  Cust_Order_History 
+									WHERE 
+									  Stock_Item_No = :nItemNo "
+							Call haSqlHandles[ nOurOrderHistHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurOrderHistHandleNo ].hSqlHandle )
+							!
+							Set bExists = FALSE
+							!
+							If haSqlHandles[ nOurOrderHandleNo ].PrepareAndExecute( )
+								If haSqlHandles[ nOurOrderHandleNo ].FetchNext( nInd )
+									Set bExists = TRUE
+									Return TRUE
+								Else
+									If haSqlHandles[ nOurOrderHistHandleNo ].PrepareAndExecute( )
+										If haSqlHandles[ nOurOrderHistHandleNo ].FetchNext( nInd )
+											Set bExists = TRUE
+										Return TRUE
+									Else
+										Return FALSE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Set bOk = TRUE
+							If NOT haSqlHandles[ nOurOrderHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurOrderHistHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							Return bOk
+			Function: InsertSISRecord
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					Number: nYear
+					Number: nAmtGrowing
+					Number: nAmtGraded
+					Number: nAmtPendDigging
+					Number: nAmtShipped
+					Number: nAmtSupplied
+					Number: nAmtOnOrder
+					Number: nTotAvail
+					Number: nAmtOnOrderAsSubs
+					Number: nAmtSubsShipped
+					Number: nEstAvailCount
+					Number: nGCPoolReqd
+					Number: nGCPoolUsed
+					Number: nTotalGraded
+					String: sAllocFlag
+					String: sSoldOutFlag
+					String: sHailDamageFlag
+					String: sSizeOfUnit
+					String: sComment
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'INSNSISREC' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " INSERT INTO Stock_Item_Sale 
+									( 
+									  Stock_Item_No, 
+									  Year_Of_Sale, 
+									  Amt_Growing, 
+									  Amt_Graded, 
+									  Amt_Pend_Digging, 
+									  Amt_Shipped, 
+									  Amt_Supplied, 
+									  Amt_On_Order, 
+									  Tot_Avail, 
+									  On_Ord_As_Subs, 
+									  Amt_Subs_Shipped, 
+									  Est_Avail_Count, 
+									  GC_Pool_Reqd, 
+									  GC_Pool_Used, 
+									  Total_Graded, 
+									  Allocated_Flag, 
+									  Sold_Out_Flag, 
+									  Hail_Damage, 
+									  Size_Of_Unit, 
+									  Stock_Item_Comment 
+									) 
+									VALUES ( :1, :2, :3, :4, :5, :6, :7, :8, :9, :10, :11, :12, :13, :14, :15, :16, :17, :18, :19, :20 ) "
+							Set sName = 'INSNSISREC'
+							Set sBind = ':nItemNo, 
+									  :nYear, 
+									  :nAmtGrowing, 
+									  :nAmtGraded, 
+									  :nAmtPendDigging, 
+									  :nAmtShipped, 
+									  :nAmtSupplied, 
+									  :nAmtOnOrder, 
+									  :nTotAvail, 
+									  :nAmtOnOrderAsSubs, 
+									  :nAmtSubsShipped, 
+									  :nEstAvailCount, 
+									  :nGCPoolReqd, 
+									  :nGCPoolUsed, 
+									  :nTotalGraded, 
+									  :sAllocFlag, 
+									  :sSoldOutFlag, 
+									  :sHailDamageFlag, 
+									  :sSizeOfUnit, 
+									  :sComment'
+							Set sInto = ''
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Commit
+							Return haSqlHandles[ nOurHandleNo ].Commit( )
+						Case SH_cls_Rollback
+							Return haSqlHandles[ nOurHandleNo ].Rollback( )
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			!
+			Function: GetSeason
+				Description:
+				Returns
+					String:
+				Parameters
+					Date/Time: dtDate
+				Static Variables
+				Local variables
+					Number: nMonth
+				Actions
+					If dtDate = DATETIME_Null
+						Return 'Unknown'
+					Else
+						Set nMonth = SalDateMonth( dtDate )
+						!
+						If nMonth >= 3 AND nMonth <= 5
+							Return 'Autumn'
+						If nMonth >= 9 AND nMonth <= 11
+							Return 'Spring'
+						Else If nMonth >= 6 AND nMonth <= 8
+							Return 'Winter'
+						Else
+							Return 'Summer'
+			Function: GetSeasonColor
+				Description:
+				Returns
+					Number:
+				Parameters
+					String: sSeason
+				Static Variables
+				Local variables
+				Actions
+					If SalStrUpperX( sSeason ) = 'SPRING'
+						Return COLOR_DarkGreen
+					Else If SalStrUpperX( sSeason ) = 'SUMMER'
+						Return COLOR_Magenta
+					Else If SalStrUpperX( sSeason ) = 'AUTUMN'
+						Return COLOR_Red
+					Else If SalStrUpperX( sSeason ) = 'WINTER'
+						Return COLOR_Blue
+					Else
+						Return COLOR_Black
+			!
+			Function: GetEstAvailDate
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nLocationId
+					Number: nYear
+					Number: nItemNo
+					Receive Date/Time: dtEstAvailDate
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nInd
+					!
+					Date/Time: dtGotEstAvailDate
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'ORDFUTAVAILDT2' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT 
+									  Est_Sale_Date
+									FROM 
+									  Growing_Sale
+									WHERE 
+									  Location_Id = :1 AND 
+									  Year_Of_Sale = :2 AND
+									 Stock_Item_no = :3  "
+							Set sName = 'ORDFUTAVAILDT2'
+							Set sBind = ':nLocationId, :nYear, :nItemNo'
+							Set sInto = ':dtGotEstAvailDate'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set dtEstAvailDate = DATETIME_Null
+							Set dtGotEstAvailDate = DATETIME_Null
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set dtEstAvailDate = dtGotEstAvailDate
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+		Class Definitions
+.data RESOURCE 0 0 1 3476323090
+0000: DF0A000022050000 0000000000000000 0200001500FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F0D003C00 001163006C735370
+0040: 696E53650061736F 6E59656172001E00 0000010000008F01 0D00FE00FF030180
+0060: 3400000084010000 14636C0070625365 6C6563740046726F 6D5461626C00656C
+0080: 0000000400009E00 010DFD00FF270D00 0001F700FF1F1A00 00DC000100FF7F27
+00A0: 700000000100FFFF 2101800400000240 0000000D636C5312 656563496E74886F
+00C0: 1E000001001E0003 0400FD00FF070180 B700000000030000 0016636C0147656E
+00E0: 6572616C9C546147 658F360200F21500 00EC010D00FF3F0D 00B9000100FFFFE6
+0100: 1A0001FE00FF9B27 0001FB00FF4F3400 00E802040000FF3F 3800B800000200FF
+0120: FFE03C00000002FE 00FF834000000002 FB00FF0F44000000 EE0200FF3F4800B8
+0140: 00000200FFFFE04C 00000002FE00FF83 5000000002A30001 00007F80F0010000
+0160: 000F540000008C01 0D000100FE00C980 0100003F5800B000 00010D00FFFFE065
+0180: 00000001FE00FF83 7200000001FB00FF 0F7F000000EE0100 FF3F8C00B8000001
+01A0: 00FFFFE099000000 01FE00FF83A60000 0001FB00FF0FB300 0000EC030400FF3F
+01C0: 0180602200000004 00081D636C54626C 4D60616B65536563 016564526F774B65
+01E0: 0079417272617974 00D8000004003B02 0001FA0000278001 0000FFC60400010D
+0200: FE00FF8311000000 01FB00FF4F1E0000 EE0200FF3F018004 1100000500000008
+0220: 10636C436F6C75F0 6D6E4765886C3800 0002009E000204FD 00FF37040001F60D
+0240: 00FF1F01800D0200 00060000000C9463 6C7047654F1E0000 F4010000EC010D00
+0260: FF3F018004380000 070000003809636C 4865806C70860000 0005BD0002FB00FF
+0280: 6F0400EC010D00FF BF11B9000100FFFF E61E0001FE00FF83 2B00000001FB00FF
+02A0: 8F01800D81000800 0000090F45786974 441E0000010000CF 010DFE00FF630180
+02C0: 0400E0090000000C 0050696345787061 6E88641E00000100 DE0002FD00FFC701
+02E0: 800400000A000000 12636C0F546F6767 006C65427574746F 6E441E0000010000
+0300: EF02FE00FF630180 0400200B0000000C 6654066165436163 6888651E00000100
+0320: DE0003FD00FF8701 80150000000C0000 000B63661C436150 6F6F806C5A000000
+0340: 03001E0007190000 0000010100E20400 3D008001F9000037 040003F60400FFDF
+0360: 08D800010D00FF7F 01CC8004000D1000 0C636C646647FE65 D100010000BB0300
+0380: FFFF0001802F0000 000E002800000B6C 466F00726D426173 658600D9000500B3
+03A0: 010D00FFFFE60D00 02FE00FF1B110004 0DFA0000FF6F1E00 EE0300FF3F2200B9
+03C0: 000100FFFF180180 0D000F00E0000017 636C035072696E74 4202616963526570
+03E0: 6F1872741E000100 3D00010DFB00FF8F 01802F0100100000 001063034469616C
+0400: 6F677C476586B200 00050067010D00FF FFCD0D0002FD00FF 37110004F700FFDF
+0420: 1EDC000300FF7F22 73000100FFFF0101 802E000000116300 1163700153746172
+0440: 745072006F677261 6DBA0000E8000700 00DD0200FF7F0472 00000200FFFFCD08
+0460: 0002FD00FF270C00 0001F60D00FF9F19 00DC000300FF7F1D 700000000200FFFF
+0480: C12100000001FD00 FF07018036000000 00120000000F636C F953741FEE0000EC
+04A0: 000900D9010D00FF 7F0D73000100FFFF CD1A0002FD00FF37 1E0002F700FFDF22
+04C0: DC000200FF7F2670 0000000200FFFFC1 2A00000002FD00FF 272E000002F700FF
+04E0: 1F320000DC000200 FF7F010C80040013 00001C0010546F6F 0154697057696E64
+0500: 106F771E00000100 BD0003FB00FF8F01 8011010014000000 0C63E3636247336C
+0520: 3800027A000001F6 0D00FFDF0DD80002 0400FF7F
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions

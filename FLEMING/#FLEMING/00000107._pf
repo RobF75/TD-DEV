@@ -1,0 +1,4301 @@
+.head 0 +  Application Description: SQLWindows 5.01 Jans Rootstock Table APL
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D80000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF2C0000 002C000000C00200 0069010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left:   0.15"
+.head 3 -  Top:    0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? No
+.head 3 -  Left:   5.113"
+.head 3 -  Top:    2.896"
+.head 3 -  Width:  4.688"
+.head 3 -  Height: 2.99"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   Default
+.head 3 -  Top:    Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   8.263"
+.head 3 -  Top:    0.688"
+.head 2 -  Fully Qualified External References? No
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: VTMETER.APL
+.head 2 -  File Include: ROOTDETS.APL
+.head 2 -  File Include: ITEMFUNC.APL
+.head 2 -  File Include: PAINTMD.APL
+.head 2 -  File Include: VTSPIN.APL
+.head 2 -  File Include: RUNPROG.APL
+.head 2 -  File Include: EXTRNPRG.APL
+.head 2 -  File Include: VTWIN.APL
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Italic
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Black
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for ROOTTBLD.APL
+.head 4 -  Number: ROOTTBLAplMsgOffSet = SAM_User + 3200
+.head 4 -  ! Message go up to AplOffSet + 99
+.head 4 -  Number: ROOTTBLAplConstOffSet = 1550
+.head 4 -  !
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 698183698
+0000: FC1D0000F4080000 0000000000000000 0200003F01000041 02010DF8000000FF
+0020: 8F4E0201FB00FF8F 5B0201FB00FF8F68 0201FB00FF0F7502 0204F8000000FF8F
+0040: 790202FB00FF8F7D 0201FB00FF8F8A02 01FB00FF8F970201 FB00FF8FA40201FB
+0060: 00FF0FB1020304FA 0000FF8FB50201FB 00FF8FC20201FB00 FF8FCF0202FB00FF
+0080: 8FD30202FB00FF8F D70202FB00FF8FDB 0201FB00FF8FE802 02FB00FF8FEC0202
+00A0: FB00FF8FF00201FB 00FF8FFD0201FB00 FF0F0A03010DFB00 FF8F170301FB00FF
+00C0: 0F24030304FB00FF 8F280301FB00FF8F 350301FB00FF0F42 030204FB00FF8F46
+00E0: 0302FB00FF8F4A03 02FB00FF8F4E0301 FB00FF8F5B0302FB 00FF8F5F0302FB00
+0100: FF8F630301FB00FF 8F700301FB00FF8F 7D0301FB00FF8F8A 0301FB00FF8F9703
+0120: 03FB00FF8F9B0301 FB00FF8FA80301FB 00FF8FB50302FB00 FF8FB90302FB00FF
+0140: 8FBD0302FB00FF8F C10301FB00FF8FCE 0303FB00FF8FD203 01FB00FF8FDF0301
+0160: FB00FF8FEC0303FB 00FF8FF00301FB00 FF8FFD0301FB00FF 0F0A040304FB00FF
+0180: 0F0E04010DFB00FF 8F1B0401FB00FF8F 280403FB00FF8F2C 0401FB00FF8F3904
+01A0: 01FB00FF8F460403 FB00FF8F4A0401FB 00FF8F570401FB00 FF0F64040204FB00
+01C0: FF8F680402A30001 00007F80F0010000 008F6C0402B30001 007F80F20100008F
+01E0: 700403FB00FF8F74 0401FB00FF8F8104 01FB00FF8F8E0403 FB00FF8F920401FB
+0200: 00FF8F9F0401FB00 FF8FAC0403FB00FF 8FB00401FB00FF8F BD0401FB00FF8FCA
+0220: 0403FB00FF8FCE04 01FB00FF8FDB0401 FB00FF8FE80403FB 00FF8FEC0401FB00
+0240: FF8FF90401FB00FF 0F06050304FB00FF 0F0A05010DFB00FF 8F170501FB00FF8F
+0260: 240503FB00FF8F28 0501FB00FF8F3505 01FB00FF8F420503 FB00FF8F460501FB
+0280: 00FF8F530501FB00 FF8F600503FB00FF 8F640501FB00FF8F 710501FB00FF8F7E
+02A0: 0503FB00FF8F8205 01FB00FF8F8F0501 FB00FF8F9C0503FB 00FF8FA00501FB00
+02C0: FF8FAD0501FB00FF 8FBA0503FB00FF8F BE0501FB00FF8FCB 0501FB00FF8FD805
+02E0: 03FB00FF8FDC0501 FB00FF8FE90501FB 00FF8FF60503FB00 FF8FFA0501FB00FF
+0300: 0F0706010DFB00FF 0F14060304FB00FF 8F180601FB00FF8F 250601FB00FF8F32
+0320: 0603FB00FF8F3606 01FB00FF8F430601 FB00FF8F500603FB 00FF8F540601FB00
+0340: FF8F610601FB00FF 8F6E0603FB00FF8F 720601FB00FF8F7F 0601FB00FF8F8C06
+0360: 03FB00FF8F900601 FB00FF8F9D0601FB 00FF8FAA0603FB00 FF8FAE0601FB00FF
+0380: 8FBB0601FB00FF8F C80603FB00FF8FCC 0601FB00FF8FD906 01FB00FF8FE60603
+03A0: FB00FF8FEA0601FB 00FF8FF70601FB00 FF0F04070304FB00 FF0F0807010DFB00
+03C0: FF8F150701FB00FF 8F220703FB00FF8F 260701FB00FF8F33 0701FB00FF8F4007
+03E0: 03FB00FF8F440701 FB00FF8F510701FB 00FF8F5E0703FB00 FF8F620701FB00FF
+0400: 8F6F0701FB00FF8F 7C0703FB00FF8F80 0701FB00FF8F8D07 01FA0000FF8F9A07
+0420: 03FB00FF8F9E0701 FB00FF8FAB0701FB 00FF8FB80703FB00 FF8FBC0701FB00FF
+0440: 8FC90701FB00FF8F D60703FB00FF8FDA 0701FB00FF8FE707 01FB00FF8FF40703
+0460: FB00FF8FF80701FB 00FF0F0508010DFB 00FF0F12080304FB 00FF8F160801FB00
+0480: FF8F230801FB00FF 8F300803FB00FF8F 340801FB00FF8F41 0801FB00FF8F4E08
+04A0: 03FB00FF8F520801 FB00FF8F5F0801FB 00FF8F6C0803FB00 FF8F700801FB00FF
+04C0: 8F7D0801FB00FF8F 8A0803FB00FF8F8E 0801FB00FF0F9B08 0204FB00FF8F9F08
+04E0: 02FB00FF8FA30803 FB00FF8FA70801FB 00FF8FB40801FB00 FF8FC10803FB00FF
+0500: 8FC50801FB00FF8F D20801FB00FF8FDF 0803FB00FF8FE308 01FB00FF8FF00801
+0520: FB00FF8FFD0803FB 00FF0F0109010DFB 00FF0F0E090204FB 00FF8F120902FB00
+0540: FF0F16090304FB00 FF8F1A0901FB00FF 8F270901FB00FF8F 340903FB00FF8F38
+0560: 0901FB00FF8F4509 01FB00FF8F520903 FB00FF8F560901FB 00FF8F630901FB00
+0580: FF8F700903FB00FF 8F740901FB00FF8F 810902FB00FF8F85 0902FB00FF8F8909
+05A0: 03FB00FF8F8D0901 FA0000FF8F9A0901 FB00FF8FA70903FB 00FF8FAB0901FB00
+05C0: FF8FB80901FB00FF 8FC50903FB00FF8F C90901FB00FF8FD6 0901FB00FF8FE309
+05E0: 03FB00FF8FE70901 FB00FF8FF40901FB 00FF0F010A0304FB 00FF0F050A010DFB
+0600: 00FF8F120A01FB00 FF8F1F0A03FB00FF 8F230A01FB00FF8F 300A01FB00FF8F3D
+0620: 0A03FB00FF8F410A 01FB00FF8F4E0A01 FB00FF8F5B0A03FB 00FF8F5F0A01FB00
+0640: FF8F6C0A01FB00FF 8F790A03FB00FF8F 7D0A01FB00FF8F8A 0A01FB00FF8F970A
+0660: 03FB00FF8F9B0A01 FB00FF8FA80A01FB 00FF8FB50A03FB00 FF8FB90A01FB00FF
+0680: 8FC60A01FB00FF8F D30A03FB00FF8FD7 0A01FB00FF8FE40A 01FB00FF8FF10A03
+06A0: FB00FF8FF50A01FB 00FF0F020B010DFB 00FF0F0F0B0304FB 00FF8F130B01FB00
+06C0: FF8F200B01FB00FF 8F2D0B03FB00FF8F 310B01FB00FF8F3E 0B01FB00FF8F4B0B
+06E0: 03FB00FF8F4F0B01 FB00FF8F5C0B01FB 00FF8F690B03FB00 FF8F6D0B01FB00FF
+0700: 8F7A0B01FB00FF8F 870B03FB00FF8F8B 0B01FB00FF8F980B 01FB00FF8FA50B03
+0720: FB00FF8FA90B01FB 00FF8FB60B01FB00 FF8FC30B03FB00FF 8FC70B01FB00FF8F
+0740: D40B01FB00FF8FE1 0B03FB00FF8FE50B 01FB00FF8FF20B01 FB00FF8FFF0B03FB
+0760: 00FF0F030C010DFB 00FF8F100C01FB00 FF0F1D0C0304FB00 FF8F210C01FB00FF
+0780: 8F2E0C01FB00FF8F 3B0C03FB00FF8F3F 0C01FB00FF8F4C0C 01FB00FF8F590C03
+07A0: FB00FF8F5D0C01FB 00FF8F6A0C01FB00 FF8F770C03FB00FF 8F7B0C01FB00FF8F
+07C0: 880C01FB00FF8F95 0C03FB00FF8F990C 01FB00FF8FA60C01 FB00FF8FB30C03FB
+07E0: 00FF8FB70C01FB00 FF8FC40C01FB00FF 8FD10C03FB00FF8F D50C01FB00FF8FE2
+0800: 0C01FB00FF8FEF0C 03FB00FF8FF30C01 FB00FF1F0D010DFB 00FF0F0D0D0304FB
+0820: 00FF8F110D01FB00 FF8F1E0D01FB00FF 8F2B0D03FB00FF8F 2F0D01FB00FF8F3C
+0840: 0D01FB00FF8F490D 03FB00FF8F4D0D01 FB00FF8F5A0D01FB 00FF0F670D040DFA
+0860: 0000FF8F740D01FB 00FF8F810D03FB00 FF8F850D01FB00FF 8F920D01FB00FF8F
+0880: 9F0D03FB00FF8FA3 0D01FB00FF8FB00D 01FB00FF8FBD0D03 FB00FF8FC10D01FB
+08A0: 00FF8FCE0D01FB00 FF8FDB0D03FB00FF 8FDF0D01FB00FF8F EC0D01FB00FF8FF9
+08C0: 0D03FB00FF8FFD0D 01FB00FF0F0A0E01 0DFB00FF8F170E01 FB00FF8F240E01FB
+08E0: 00FF8F310E01FB00 FF8F3E0E01FB00FF 8F4B0E01FB00FF8F 580E01FB00FF8F65
+0900: 0E01FB00FF0F
+.enddata
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 3922798067
+0000: 78150000DC080000 0000000000000000 0200002600FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F08003C00 000F63006C737062
+0040: 526F6F740073746F 636B733400C00000 02000000E0020400 0000FF3F0400E003
+0060: 04000000FF3F0180 000D000000010000 003815636C507200 696E7447434F7264
+0080: 006572466F726D1C 00D800000100E801 0D0000FF3F018046 0D00020000F81463
+00A0: 6C07416464724C80 6162656C731C0068 0001000001F60D00 FF1F01802E000000
+00C0: 0003000000111463 6C70537461007274 50726F677261006D AC00000007000066
+00E0: 00020400FFFF3504 020000FFFF710800 0200FFFF610C0001 0D00FFFF61190003
+0100: 0400FFFF711D0002 00FFFF7121000100 FFFF010180080000 0004C30010636C21
+0120: 5061696E4D614073 7465723400003402 00000204FB00FFAF 0403F90000FF2F01
+0140: 3C00000000050000 00154F0075724672 6D576E6400576974 684368696C006454
+0160: 626C940000003006 000000010DFB00FF 8F0D0001F90000FF 8F1A0003FB00FF8F
+0180: 1E0001FB00FF8F2B 0001FB00FF8F3800 03FB00FF8F01803C 19000600124F8275
+01A0: 446C675769FFCF00 066600010D00FFFF 350D010000FFFF7D 1A00FFFF7D1E00FF
+01C0: FF7D2B00FFFF7D38 00FFFF0101801100 0000070300145069 636B00496E746F54
+01E0: 61626C6065506243 6C73463400020000 BB0300FFFFB20401 0D00FFFF8001807F
+0200: 0000000821000F4F 755F438E685F5461 2384010010004C00 00020400FE00FF6B
+0220: 040200FE00FFEB08 02FE00FFEB0C02FE 00FFEB1002FE00FF C31400010DFE00FF
+0240: FB21FE00FFE32E00 01FE00FF833B0004 0D00FE00FFE34800 01FE00FFE3550002
+0260: FE00FFE3590002FE 00FFE35D0001FE00 FFE36A0001FE00FF E3770002FE00FFE3
+0280: 7B0002FE00FF0301 8076000000000900 0000104E6577E44F 754368FC54616300
+02A0: 000002F700FF1F04 0002F30000FFDF08 F700FFDF0CF700FF 5F1002F700FF5F14
+02C0: 03F700FF1F180003 F700FF1F1C0001F6 0D00FF1F290001F7 00FF1F360001F700
+02E0: FF1F430001F700FF 1F500002F700FF1F 540001F700FF1F61 0001F700FF1F6E00
+0300: 02F700FF1F720002 F700FF1F01802100 0000000A0000000E 0C4F756F6C756D38
+0320: 6E436C9400D90006 00EE0200FFBF04E6 020000FFBF08EF00 FFBF0CEF00FFBF10
+0340: EF00FFBF14EC010D 00FF3F0180062100 0B00000008114F75 4461746180466965
+0360: 6C64436C9F0006ED 0002FE00FF6B0402 00FE00FFFB08FE00 FFFB0CFE00FFFB10
+0380: FE00FFDB140DFE00 FF430180040000E2 0C00001104546251 7565727904446C42
+03A0: 6F781C00D0000001 0000EE0300FF3F01 806611000D00100E 634F755365610073
+03C0: 6F6E5965617234A3 00020000D9010D00 FF7F0DD9020400FF 7F0100802B000000
+03E0: 0E00009800116346 6FB9436854036564 000000049B00010D FC0000FFD70D01FC
+0400: 0000FFD71A01FD00 FFC7270002FD00FF C701800DC0000F00 000011815370696E
+0420: 53653E73721CA200 00010000D9010D00 FF7F014C80040010 0010000C636C6D6C
+0440: 4700656E6572616C 1C00D100010000EE 0300FF3F01804052 000000110000E812
+0460: 636C46C044657473 476527AC0000079B 00010DFD00FFD70D 01FC0000FFF71AFD
+0480: 00FFD72701FD00FF C7340001FD00FFC7 410001FD00FFC74E 0002FD00FF470180
+04A0: 0800000012000000 0D636CC1636D6246 7217340000029A00 000204FD00FFD704
+04C0: 02FC0000FF170133 0000800013000000 1163E95462510279 69616C6F6794B200
+04E0: 000600DD0300FF7F 04CD020000FF7F08 DD0200FF7F0CD800 010D00FF7F19DD01
+0500: 00FF7F26DD0100FF 7F0140805D000000 14009C00115175F7 61472C01000CD900
+0520: 0002FD00FFD70402 FC0000FFF708FD00 FFD70C02FD00FF97 10010DFD00FFD71D
+0540: 01FD00FFC72A0002 D1000100003F8001 F8000000B72E0DFD 00FFD73B02FD00FF
+0560: C73F0001FD00FFC7 4C0002FD00FFD750 01FD00FFC701805D 8000150000001263
+0580: 3F436FE06D626F46 692F0C0000BB0200 FFFF9A04020000FF FFBE0800FFFFBA0C
+05A0: 0200FFFFB6100D00 FFFFBE1D00FFFF3E 2A0001FA00002780 010000FFB62E0D00
+05C0: FFFFBE3B00FFFFBE 3F00FFFFBE4C00FF FFBE5000FFFF8001 801A00000016F000
+05E0: 001563074F706572 61E0746F72466944 340000020000B301 0D00FFFF980D0001
+0600: 0000FFFF18018004 001700E000001363 6C03794342596573 004E6F466C61671C
+0620: 00D100010000EC02 0400FF3F01802434 00001800002C1463 705365006C656374
+0640: 46726F6DCC546165 646C00040001F60D 00FF5F0D01F30000 FF5F1A01F700FFDF
+0660: 27F700FF1F018004 13001900000D6663 53656399496E1C00 680001000003F700
+0680: FF1F01800D13001A 00000C8663636247 6563616C1C003401 0000010DFB00FF8F
+06A0: 01800D81001B0000 000CEB70473F0001 9A0000010DFD00FF C701800D0C001C00
+06C0: 09636C0745786974 1CA20000010000D9 010D00FF7F014C80 04001D009C000C50
+06E0: 6900457870616E64 1C00D100010000EE 0200FF3F01802604 001E00007E125400
+0700: 6F67676C65427574 20746F6E1C000001 DA000002FD00FFC7 018004C0001F0000
+0720: 000CE1646647651F 000100ED0003FE00 FF6301800D000020 0000000B68635320
+0740: 716C48616E6C6544 1C0000010000B301 0D00FFFF80018022 00000021A1001D63
+0760: 6C54814D616B6553 6505636564526F77 004B657941727261 79606C0000000400
+0780: 3B020001FA000027 80010000FFB20401 0D00FFFFB8110001 00FFFF9A1E020000
+07A0: FFFF000180B70000 00220071000F6361 E3654765216C0C02 001500CD00010DFE
+07C0: 00FF630D000100FE 00FFEB1A01FE00FF FB27FE00FFEB3402 FE00FFEB3802FE00
+07E0: FFE33C0002FE00FF E3400002FE00FFE3 440002FE00FFEB48 02FE00FFFB4CFE00
+0800: FFEB5002E8000100 009F8001FC0000DB 540DE8000100009F 8001FC0000C35800
+0820: 010DFE00FFE36500 01FE00FFEB7201FE 00FFE37F0001FE00 FFE38C0001FE00FF
+0840: E3990001FE00FFE3 A60001FE00FFE3B3 0003FE00FF030180 2F00000080230000
+0860: 000E636CC6466D47 65077C000000059B 00010DFD00FFD70D 02FD00FF9711040D
+0880: FC0000FFD71E03FD 00FFD72201FD00FF C701800D00002400 000017636C1F5072
+08A0: 6901744261736963 52C065706F72741C 680001000001F60D 00FF1F01802F0300
+08C0: 2500000010666344 696FF94765667C00 0500B3010D00FFFF BA0D0200FFFF9E11
+08E0: 0000FFFFBE1E00FF FFBE2200FFFF
+.enddata
+.head 3 +  Pushbutton Class: clspbRootstocks
+.head 4 -  Title: Roots.
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\ROOTS.BMP
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbPickInto
+.head 4 +  Class Variables
+.head 5 -  String: sTmp
+.head 5 -  Window Handle: hWndTmp
+.head 4 +  Instance Variables
+.head 5 -  ! PUBLIC
+.head 5 -  Window Handle: hWndPickIntoTable
+.head 5 -  ! PRIVATE
+.head 5 -  String: sRootId
+.head 5 -  String: sRootDesc
+.head 4 +  Functions
+.head 5 +  Function: SetRootstockFields
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 +  Parameters
+.head 7 -  String: sNewRootId
+.head 7 -  String: sNewRootDesc
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 -  Set sRootId = sNewRootId
+.head 7 -  Set sRootDesc = sNewRootDesc
+.head 7 -  Return TRUE
+.head 5 +  Function: GetRootstockFields
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 +  Parameters
+.head 7 -  Receive String: sNewRootId
+.head 7 -  Receive String: sNewRootDesc
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 -  Set sNewRootId = sRootId
+.head 7 -  Set sNewRootDesc = sRootDesc
+.head 7 -  Return TRUE
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set hWndPickIntoTable = hWndItem
+.head 6 -  Call SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 6 -  Set clspbRootstocks.nActivateWindowType = ACTIVATE_FormWindow
+.head 6 -  Set clspbRootstocks.sActivateDialogName = 'frmRoot'
+.head 6 -  Set clspbRootstocks.hWndTable = hWndPickIntoTable
+.head 6 -  Set clspbRootstocks.hWndFieldLookUp = hWndItem
+.head 5 +  On PAM_clsACTIVATE_PUSHFIELDS
+.head 6 -  Call SalSendMsg( hWndItem, PAM_cls_SETFIELDS, 0, 0 )
+.head 6 -  Call PushString( sRootId )
+.head 6 -  Call PushString( sRootDesc )
+.head 6 -  Call PushWndHdl( hWndItem )
+.head 6 -  Return TRUE
+.head 5 +  On PAM_clsPICK_LOOKUP
+.head 6 -  Call PopString( sRootDesc, TRUE )
+.head 6 -  Call PopString( sRootId, TRUE )
+.head 6 -  Call SalSendMsg( hWndItem, PAM_cls_GETFIELDS, 0, 0 )
+.head 6 -  Return TRUE
+.head 5 +  On PAM_clsACTIVATE_POPFIELDS
+.head 6 -  Call PopWndHdl( hWndTmp, TRUE )
+.head 6 -  Call PopString( sTmp, TRUE )
+.head 6 -  Call PopString( sTmp, TRUE )
+.head 6 -  Return TRUE
+.head 3 +  Form Window Class: clsfrmRoot
+.head 4 -  Title: Rootstocks
+.head 4 -  Icon File:
+.head 4 -  Accesories Enabled? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Display Settings
+.head 5 -  Display Style? Class Default
+.head 5 -  Visible at Design time? Yes
+.head 5 -  Automatically Created at Runtime? Class Default
+.head 5 -  Initial State: Class Default
+.head 5 -  Maximizable? Class Default
+.head 5 -  Minimizable? Class Default
+.head 5 -  System Menu? Class Default
+.head 5 -  Resizable? Class Default
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 5.354"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Form Size
+.head 6 -  Width:  Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Number of Pages: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 4 -  Next Class Child Key: 39
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clsFormChildTable
+.head 4 -  Menu
+.head 4 +  Tool Bar
+.head 5 -  Display Settings
+.head 6 -  Display Style? Class Default
+.head 6 -  Location? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Size: Class Default
+.head 6 -  Size Editable? Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 5 +  Contents
+.head 6 +  Pushbutton: pbSelect
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 20
+.head 7 -  Class: clspbSelectFromTable
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   1.2"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 +  Message Actions
+.head 8 +  On PAM_cls_SETINSTANCEVARS
+.head 9 -  Set pbSelect.hWndTable = tblRoot
+.head 9 -  Set pbSelect.hWndSelectParent = hWndForm.clsFormChildTable.hWndActivateButton
+.head 9 -  Set pbSelect.nSelectType = PICK_SelectManyToMany
+.head 8 +  On PAM_clsPICK_PUSHFIELDS
+.head 9 -  Call PushString( tblRoot.colRootId )
+.head 9 -  Call PushString( tblRoot.colRootDesc )
+.head 9 -  Return TRUE
+.head 8 +  On PAM_clsPICK_POPFIELDS
+.head 9 -  Call PopString( sTmp, TRUE )
+.head 9 -  Call PopString( sTmp, TRUE )
+.head 9 -  Return TRUE
+.head 6 +  Pushbutton: pbClearRows
+.head 7 -  Class Child Ref Key: 5
+.head 7 -  Class ChildKey: 7
+.head 7 -  Class: clsFormChildTable
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbAddRows
+.head 7 -  Class Child Ref Key: 6
+.head 7 -  Class ChildKey: 8
+.head 7 -  Class: clsFormChildTable
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbSaveRows
+.head 7 -  Class Child Ref Key: 7
+.head 7 -  Class ChildKey: 9
+.head 7 -  Class: clsFormChildTable
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbQuery
+.head 7 -  Class Child Ref Key: 8
+.head 7 -  Class ChildKey: 10
+.head 7 -  Class: clsFormChildTable
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   4.513"
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbDeleteRows
+.head 7 -  Class Child Ref Key: 9
+.head 7 -  Class ChildKey: 11
+.head 7 -  Class: clsFormChildTable
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbRePopulate
+.head 7 -  Class Child Ref Key: 11
+.head 7 -  Class ChildKey: 12
+.head 7 -  Class: clsFormChildTable
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   5.113"
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbTools
+.head 7 -  Class Child Ref Key: 23
+.head 7 -  Class ChildKey: 13
+.head 7 -  Class: clsFormChildTable
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   5.713"
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  ! clspbRootProhibition: pbRootProhibitions
+.head 7 +  Message Actions 
+.head 8 +  On PAM_cls_SETINSTANCEVARS
+.head 9 -  Set pbRootProhibitions.hWndPickIntoTable = tblRoot
+.head 8 +  On PAM_cls_SETFIELDS
+.head 9 -  Call pbRootProhibitions.SetRootProhibitionFields( tblRoot.colRootId, tblRoot.colRootDesc )
+.head 9 -  Return TRUE
+.head 6 +  Pushbutton: pbRootProhibitions
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 29
+.head 7 -  Class: clspbLoadRootProhibitions
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   6.313"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 +  Message Actions
+.head 8 +  On PAM_cls_SETFIELDS
+.head 9 -  Call pbRootProhibitions.SetRootProhibitionFields( tblRoot.colRootId, tblRoot.colRootDesc )
+.head 9 -  Return TRUE
+.head 6 +  ! clspbRootRoyOwners: pbRootRoyOwners
+.head 7 +  Message Actions 
+.head 8 +  On PAM_cls_SETINSTANCEVARS
+.head 9 -  Set pbRootRoyOwners.hWndPickIntoTable = tblRoot
+.head 8 +  On PAM_cls_SETFIELDS
+.head 9 -  Call pbRootRoyOwners.SetRootRoyOwnerFields( tblRoot.colRootId, tblRoot.colRootDesc )
+.head 9 -  Return TRUE
+.head 6 +  Pushbutton: pbRootRoyOwners
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 28
+.head 7 -  Class: clspbLoadRootRoyOwners
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   6.913"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 +  Message Actions
+.head 8 +  On PAM_cls_SETFIELDS
+.head 9 -  Call pbRootRoyOwners.SetRootRoyOwnerFields( tblRoot.colRootId, tblRoot.colRootDesc )
+.head 9 -  Return TRUE
+.head 6 +  ! clspbDispRecFormDets: pbDetsRoot
+.winattr class Pushbutton:
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 18
+.head 7 -  Class: clspbDispRecFormDets
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title: Details
+.head 7 -  Window Location and Size
+.head 8 -  Left:   7.6"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  0.6"
+.head 8 -  Width Editable? Yes
+.head 8 -  Height: 0.58"
+.head 8 -  Height Editable? Yes
+.head 7 -  Visible? Yes
+.head 7 -  Keyboard Accelerator: (none)
+.head 7 -  Font Name: Arial
+.head 7 -  Font Size: 8
+.head 7 -  Font Enhancement: Bold
+.head 7 -  Picture File Name: G:\APPS\GUPTA\ICONS\FRMINVIT.ICO
+.head 7 -  Picture Transparent Color: None
+.head 7 -  Image Style: Single
+.head 7 -  Text Color: Default
+.head 7 -  Background Color: Default
+.end
+.head 7 +  Message Actions 
+.head 8 +  On PAM_cls_SETINSTANCEVARS
+.head 9 -  Set pbDetsRoot.sActivateDialogName = 'frmRootDetails'
+.head 9 -  Set pbDetsRoot.hWndParentTable = tblRoot
+.head 8 +  On PAM_clsFRMDETS_PUSHFIELDS
+.head 9 -  Call PushString( tblRoot.colRootId )
+.head 9 -  Return TRUE
+.head 6 +  Pushbutton: pbDetsRoot
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 30
+.head 7 -  Class: clspbRootDetails
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   7.513"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 +  Message Actions
+.head 8 +  On PAM_cls_SETINSTANCEVARS
+.head 9 -  Set pbDetsRoot.hWndParentTable = tblRoot
+.head 8 +  On PAM_cls_SETFIELDS
+.head 9 -  Call pbDetsRoot.SetRootDetailsFields( tblRoot.colRootId )
+.head 9 -  Return TRUE
+.head 6 +  ! clspbNewRecFormDets: pbNewRoot
+.winattr class Pushbutton:
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 19
+.head 7 -  Class: clspbNewRecFormDets
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title: Add
+.head 7 -  Window Location and Size
+.head 8 -  Left:   8.2"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  0.6"
+.head 8 -  Width Editable? Yes
+.head 8 -  Height: 0.58"
+.head 8 -  Height Editable? Yes
+.head 7 -  Visible? Yes
+.head 7 -  Keyboard Accelerator: (none)
+.head 7 -  Font Name: Arial
+.head 7 -  Font Size: 8
+.head 7 -  Font Enhancement: Bold
+.head 7 -  Picture File Name: G:\APPS\GUPTA\ICONS\NEWMAIL.BMP
+.head 7 -  Picture Transparent Color: None
+.head 7 -  Image Style: Single
+.head 7 -  Text Color: Default
+.head 7 -  Background Color: Default
+.end
+.head 7 +  Message Actions 
+.head 8 +  On PAM_cls_SETINSTANCEVARS
+.head 9 -  Set pbNewRoot.sActivateDialogName = 'frmRootDetails'
+.head 8 +  On PAM_clsFRMDETS_PUSHFIELDS
+.head 9 -  Call PushString( '' )
+.head 9 -  Return TRUE
+.head 6 +  Pushbutton: pbNewRoot
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 31
+.head 7 -  Class: clspbRootDetNewRec
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   8.113"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbHelp
+.head 7 -  Class Child Ref Key: 42
+.head 7 -  Class ChildKey: 36
+.head 7 -  Class: clsFormChildTable
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbItemEnq
+.head 7 -  Class Child Ref Key: 43
+.head 7 -  Class ChildKey: 37
+.head 7 -  Class: clsFormChildTable
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbPrintForm
+.head 7 -  Class Child Ref Key: 44
+.head 7 -  Class ChildKey: 38
+.head 7 -  Class: clsFormChildTable
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbExit
+.head 7 -  Class Child Ref Key: 45
+.head 7 -  Class ChildKey: 39
+.head 7 -  Class: clsFormChildTable
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 4 +  Contents
+.head 5 -  !
+.head 5 +  Child Table: tblRoot
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 21
+.head 6 -  Class: clsTableGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Display Settings
+.head 7 -  Window Location and Size
+.head 8 -  Left:   0.05"
+.head 8 -  Top:    0.271"
+.head 8 -  Width:  9.713"
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: 4.354"
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  View: Class Default
+.head 7 -  Allow Row Sizing? Class Default
+.head 7 -  Lines Per Row: Class Default
+.head 6 -  Memory Settings
+.head 7 -  Maximum Rows in Memory: Class Default
+.head 7 -  Discardable? Class Default
+.head 6 +  Contents
+.head 7 +  Column: colRootId
+.head 8 -  Class Child Ref Key: 0
+.head 8 -  Class ChildKey: 22
+.head 8 -  Class: clsColumnGeneral
+.head 8 -  Property Template:
+.head 8 -  Class DLL Name:
+.head 8 -  Title: Root Id
+.head 8 -  Visible? Class Default
+.head 8 -  Editable? No
+.head 8 -  Maximum Data Length: Class Default
+.head 8 -  Data Type: Class Default
+.head 8 -  Justify: Class Default
+.head 8 -  Width:  0.95"
+.head 8 -  Width Editable? Class Default
+.head 8 -  Format: Uppercase
+.head 8 -  Country: Class Default
+.head 8 -  Input Mask: Class Default
+.head 8 -  Cell Options
+.head 9 -  Cell Type? Class Default
+.head 9 -  Multiline Cell? Class Default
+.head 9 -  Cell DropDownList
+.head 10 -  Sorted? Class Default
+.head 10 -  Vertical Scroll? Class Default
+.head 10 -  Auto Drop Down? Class Default
+.head 10 -  Allow Text Editing? Class Default
+.head 9 -  Cell CheckBox
+.head 10 -  Check Value:
+.head 10 -  Uncheck Value:
+.head 10 -  Ignore Case? Class Default
+.head 8 -  List Values
+.head 8 +  Message Actions
+.head 9 +  On PAM_cls_SETINSTANCEVARS
+.head 10 -  Set colRootId.bOrderBy = TRUE
+.head 7 +  Column: colRootDesc
+.head 8 -  Class Child Ref Key: 0
+.head 8 -  Class ChildKey: 23
+.head 8 -  Class: clsColumnGeneral
+.head 8 -  Property Template:
+.head 8 -  Class DLL Name:
+.head 8 -  Title: Rootstock Description
+.head 8 -  Visible? Class Default
+.head 8 -  Editable? No
+.head 8 -  Maximum Data Length: Class Default
+.head 8 -  Data Type: Class Default
+.head 8 -  Justify: Class Default
+.head 8 -  Width:  6.338"
+.head 8 -  Width Editable? Class Default
+.head 8 -  Format: Class Default
+.head 8 -  Country: Class Default
+.head 8 -  Input Mask: Class Default
+.head 8 -  Cell Options
+.head 9 -  Cell Type? Class Default
+.head 9 -  Multiline Cell? Class Default
+.head 9 -  Cell DropDownList
+.head 10 -  Sorted? Class Default
+.head 10 -  Vertical Scroll? Class Default
+.head 10 -  Auto Drop Down? Class Default
+.head 10 -  Allow Text Editing? Class Default
+.head 9 -  Cell CheckBox
+.head 10 -  Check Value:
+.head 10 -  Uncheck Value:
+.head 10 -  Ignore Case? Class Default
+.head 8 -  List Values
+.head 8 -  Message Actions
+.head 7 +  Column: colVFreeFlag
+.head 8 -  Class Child Ref Key: 0
+.head 8 -  Class ChildKey: 24
+.head 8 -  Class: clsColumnGeneral
+.head 8 -  Property Template:
+.head 8 -  Class DLL Name:
+.head 8 -  Title: V.Free
+.head 8 -  Visible? Class Default
+.head 8 -  Editable? No
+.head 8 -  Maximum Data Length: Class Default
+.head 8 -  Data Type: Class Default
+.head 8 -  Justify: Center
+.head 8 -  Width:  0.663"
+.head 8 -  Width Editable? Class Default
+.head 8 -  Format: Class Default
+.head 8 -  Country: Class Default
+.head 8 -  Input Mask: Class Default
+.head 8 -  Cell Options
+.head 9 -  Cell Type? Class Default
+.head 9 -  Multiline Cell? Class Default
+.head 9 -  Cell DropDownList
+.head 10 -  Sorted? Class Default
+.head 10 -  Vertical Scroll? Class Default
+.head 10 -  Auto Drop Down? Class Default
+.head 10 -  Allow Text Editing? Class Default
+.head 9 -  Cell CheckBox
+.head 10 -  Check Value:
+.head 10 -  Uncheck Value:
+.head 10 -  Ignore Case? Class Default
+.head 8 -  List Values
+.head 8 +  Message Actions
+.head 9 +  On PAM_cls_SETINSTANCEVARS
+.head 10 -  Set colVFreeFlag.bOrderBy = TRUE
+.head 7 +  Column: colNPAFlag
+.head 8 -  Class Child Ref Key: 0
+.head 8 -  Class ChildKey: 25
+.head 8 -  Class: clsColumnGeneral
+.head 8 -  Property Template:
+.head 8 -  Class DLL Name:
+.head 8 -  Title: NPA
+.head 8 -  Visible? Class Default
+.head 8 -  Editable? No
+.head 8 -  Maximum Data Length: Class Default
+.head 8 -  Data Type: Class Default
+.head 8 -  Justify: Center
+.head 8 -  Width:  0.488"
+.head 8 -  Width Editable? Class Default
+.head 8 -  Format: Class Default
+.head 8 -  Country: Class Default
+.head 8 -  Input Mask: Class Default
+.head 8 -  Cell Options
+.head 9 -  Cell Type? Class Default
+.head 9 -  Multiline Cell? Class Default
+.head 9 -  Cell DropDownList
+.head 10 -  Sorted? Class Default
+.head 10 -  Vertical Scroll? Class Default
+.head 10 -  Auto Drop Down? Class Default
+.head 10 -  Allow Text Editing? Class Default
+.head 9 -  Cell CheckBox
+.head 10 -  Check Value:
+.head 10 -  Uncheck Value:
+.head 10 -  Ignore Case? Class Default
+.head 8 -  List Values
+.head 8 +  Message Actions
+.head 9 +  On PAM_cls_SETINSTANCEVARS
+.head 10 -  Set colNPAFlag.bOrderBy = TRUE
+.head 7 +  Column: colNotSaleFlag
+.head 8 -  Class Child Ref Key: 0
+.head 8 -  Class ChildKey: 26
+.head 8 -  Class: clsColumnGeneral
+.head 8 -  Property Template:
+.head 8 -  Class DLL Name:
+.head 8 -  Title: Not Sale
+.head 8 -  Visible? Class Default
+.head 8 -  Editable? No
+.head 8 -  Maximum Data Length: Class Default
+.head 8 -  Data Type: Class Default
+.head 8 -  Justify: Center
+.head 8 -  Width:  0.763"
+.head 8 -  Width Editable? Class Default
+.head 8 -  Format: Class Default
+.head 8 -  Country: Class Default
+.head 8 -  Input Mask: Class Default
+.head 8 -  Cell Options
+.head 9 -  Cell Type? Class Default
+.head 9 -  Multiline Cell? Class Default
+.head 9 -  Cell DropDownList
+.head 10 -  Sorted? Class Default
+.head 10 -  Vertical Scroll? Class Default
+.head 10 -  Auto Drop Down? Class Default
+.head 10 -  Allow Text Editing? Class Default
+.head 9 -  Cell CheckBox
+.head 10 -  Check Value:
+.head 10 -  Uncheck Value:
+.head 10 -  Ignore Case? Class Default
+.head 8 -  List Values
+.head 8 +  Message Actions
+.head 9 +  On PAM_cls_SETINSTANCEVARS
+.head 10 -  Set colNotSaleFlag.bOrderBy = TRUE
+.head 7 +  Column: colUpperRootDesc
+.head 8 -  Class Child Ref Key: 0
+.head 8 -  Class ChildKey: 27
+.head 8 -  Class: clsColumnGeneral
+.head 8 -  Property Template:
+.head 8 -  Class DLL Name:
+.head 8 -  Title: Rootstock Description
+.head 8 -  Visible? No
+.head 8 -  Editable? Class Default
+.head 8 -  Maximum Data Length: Class Default
+.head 8 -  Data Type: Class Default
+.head 8 -  Justify: Class Default
+.head 8 -  Width:  5.075"
+.head 8 -  Width Editable? Class Default
+.head 8 -  Format: Class Default
+.head 8 -  Country: Class Default
+.head 8 -  Input Mask: Class Default
+.head 8 -  Cell Options
+.head 9 -  Cell Type? Class Default
+.head 9 -  Multiline Cell? Class Default
+.head 9 -  Cell DropDownList
+.head 10 -  Sorted? Class Default
+.head 10 -  Vertical Scroll? Class Default
+.head 10 -  Auto Drop Down? Class Default
+.head 10 -  Allow Text Editing? Class Default
+.head 9 -  Cell CheckBox
+.head 10 -  Check Value:
+.head 10 -  Uncheck Value:
+.head 10 -  Ignore Case? Class Default
+.head 8 -  List Values
+.head 8 +  Message Actions
+.head 9 +  On PAM_cls_SETINSTANCEVARS
+.head 10 -  Set colUpperRootDesc.bOrderBy = TRUE
+.head 6 -  Functions
+.head 6 -  Window Variables
+.head 6 +  Message Actions
+.head 7 +  On PAM_cls_SETINSTANCEVARS
+.head 8 -  Set sSQLPopHandle = ' SELECT 
+  Root_Id, 
+  Root_Desc, 
+  RT_VFree_Flag, 
+  RT_Non_Prop_Flag, 
+  RT_Not_Sale_Flag, 
+  @UPPER( Root_Desc ) 
+FROM 
+  Rootstock  
+ORDER BY 6 '
+.head 8 -  Set sNAMEPopHandle = 'ROOTTBL'
+.head 8 -  Set sBINDPopHandle = ''
+.head 8 -  Set sINTOPopHandle = ':clsfrmRoot.tblRoot.colRootId, 
+:clsfrmRoot.tblRoot.colRootDesc, 
+:clsfrmRoot.tblRoot.colVFreeFlag, 
+:clsfrmRoot.tblRoot.colNPAFlag, 
+:clsfrmRoot.tblRoot.colNotSaleFlag, 
+:clsfrmRoot.tblRoot.colUpperRootDesc'
+.head 8 -  !
+.head 8 -  Set sSQLRefreshHandle = ' SELECT 
+  Root_Desc, 
+  RT_VFree_Flag, 
+  RT_Non_Prop_Flag, 
+  RT_Not_Sale_Flag, 
+  @UPPER( Root_Desc ) 
+FROM 
+  Rootstock  
+WHERE Root_Id = :1 '
+.head 8 -  Set sNAMERefreshHandle = 'REFROOTTBL'
+.head 8 -  Set sBINDRefreshHandle = ':clsfrmRoot.tblRoot.colRootId'
+.head 8 -  Set sINTORefreshHandle = ':clsfrmRoot.tblRoot.colRootDesc, 
+:clsfrmRoot.tblRoot.colVFreeFlag, 
+:clsfrmRoot.tblRoot.colNPAFlag, 
+:clsfrmRoot.tblRoot.colNotSaleFlag, 
+:clsfrmRoot.tblRoot.colUpperRootDesc'
+.head 8 -  !
+.head 8 -  Set bAddAllowed = FALSE
+.head 8 -  Set bSaveAllowed = FALSE
+.head 8 -  Set bDeleteAllowed = FALSE
+.head 8 -  Set bUnDeleteAllowed = FALSE
+.head 8 -  Set bRepopulateAllowed = TRUE
+.head 8 -  Set bClearSelectAllowed = TRUE
+.head 8 -  Set bQueryAllowed = TRUE
+.head 8 -  Set bReportAllowed = FALSE
+.head 8 -  Set bOrderAllowed = TRUE
+.head 8 -  !
+.head 8 -  Set sQueryDialogName = 'dlgQueryRoot'
+.head 7 +  On PAM_clsTBL_PUSHFIELDS
+.head 8 -  Call PushString( hWndParent.clsfrmRoot.sRootId )
+.head 8 -  Call PushString( hWndParent.clsfrmRoot.sRootDesc )
+.head 8 -  Return TRUE
+.head 5 +  Data Field: dfDatabase
+.head 6 -  Class Child Ref Key: 46
+.head 6 -  Class ChildKey: 32
+.head 6 -  Class: clsFormChildTable
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Data
+.head 7 -  Maximum Data Length: Class Default
+.head 7 -  Data Type: Class Default
+.head 7 -  Editable? Class Default
+.head 6 -  Display Settings
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Border? Class Default
+.head 7 -  Justify: Class Default
+.head 7 -  Format: Class Default
+.head 7 -  Country: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Input Mask: Class Default
+.head 6 -  Message Actions
+.head 5 +  Data Field: dfUser
+.head 6 -  Class Child Ref Key: 47
+.head 6 -  Class ChildKey: 33
+.head 6 -  Class: clsFormChildTable
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Data
+.head 7 -  Maximum Data Length: Class Default
+.head 7 -  Data Type: Class Default
+.head 7 -  Editable? Class Default
+.head 6 -  Display Settings
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Border? Class Default
+.head 7 -  Justify: Class Default
+.head 7 -  Format: Class Default
+.head 7 -  Country: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Input Mask: Class Default
+.head 6 -  Message Actions
+.head 5 -  Background Text:
+.head 6 -  Resource Id: 57489
+.head 6 -  Class Child Ref Key: 48
+.head 6 -  Class ChildKey: 34
+.head 6 -  Class: clsFormChildTable
+.head 6 -  Window Location and Size
+.head 7 -  Left:   Class Default
+.head 7 -  Top:    Class Default
+.head 7 -  Width:  Class Default
+.head 7 -  Width Editable? Class Default
+.head 7 -  Height: Class Default
+.head 7 -  Height Editable? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 5 +  Custom Control: ccSeasonYear
+.head 6 -  Class Child Ref Key: 49
+.head 6 -  Class ChildKey: 35
+.head 6 -  Class: clsFormChildTable
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Display Settings
+.head 7 -  DLL Name:
+.head 7 -  MS Windows Class Name:
+.head 7 -  Style:  Class Default
+.head 7 -  ExStyle:  Class Default
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Border? Class Default
+.head 7 -  Etched Border? Class Default
+.head 7 -  Hollow? Class Default
+.head 7 -  Vertical Scroll? Class Default
+.head 7 -  Horizontal Scroll? Class Default
+.head 7 -  Tab Stop? Class Default
+.head 7 -  Tile To Parent? Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  DLL Settings
+.head 6 -  Message Actions
+.head 4 -  Class Variables
+.head 4 +  Instance Variables
+.head 5 -  String: sRootId
+.head 5 -  String: sRootDesc
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set bQueryAllowed = TRUE
+.head 6 -  Set bAddAllowed = FALSE
+.head 6 -  Set bSaveAllowed = FALSE
+.head 6 -  Set bDeleteAllowed = FALSE
+.head 6 -  Set bUnDeleteAllowed = FALSE
+.head 6 -  Set bReportAllowed = FALSE
+.head 6 -  Set bOrderAllowed = TRUE
+.head 6 -  Set hWndChildTable = tblRoot
+.head 6 -  Set nPopOrQueryOnStartUp = TBL_cls_QueryOnStartUp
+.head 5 +  On PAM_clsFRM_POPFIELDS
+.head 6 -  Call PopWndHdl( hWndActivateButton, TRUE )
+.head 6 -  Call PopString( sRootDesc, TRUE )
+.head 6 -  Call PopString( sRootId, TRUE )
+.head 6 -  Return TRUE
+.head 3 +  Dialog Box Class: clsdlgQueryRoot
+.head 4 -  Title: Query Rootstocks
+.head 4 -  Accesories Enabled? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Display Settings
+.head 5 -  Display Style? Class Default
+.head 5 -  Visible at Design time? Yes
+.head 5 -  Type of Dialog: Modal
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  7.975"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 3.125"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Absolute Screen Location? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 4 -  Next Class Child Key: 23
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Tool Bar
+.head 5 -  Display Settings
+.head 6 -  Display Style? Class Default
+.head 6 -  Location? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Size: Class Default
+.head 6 -  Size Editable? Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 5 +  Contents
+.head 6 +  Pushbutton: pbHelp
+.head 7 -  Class Child Ref Key: 16
+.head 7 -  Class ChildKey: 5
+.head 7 -  Class: clsTblQueryDialog
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbQuery
+.head 7 -  Class Child Ref Key: 7
+.head 7 -  Class ChildKey: 6
+.head 7 -  Class: clsTblQueryDialog
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   3.713"
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbPrintForm
+.head 7 -  Class Child Ref Key: 17
+.head 7 -  Class ChildKey: 7
+.head 7 -  Class: clsTblQueryDialog
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   6.65"
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbExit
+.head 7 -  Class Child Ref Key: 18
+.head 7 -  Class ChildKey: 8
+.head 7 -  Class: clsTblQueryDialog
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   7.25"
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbClear
+.head 7 -  Class Child Ref Key: 19
+.head 7 -  Class ChildKey: 23
+.head 7 -  Class: clsTblQueryDialog
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 4 +  Contents
+.head 5 -  !
+.head 5 -  Background Text: Rootstock Id
+.head 6 -  Resource Id: 58499
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 9
+.head 6 -  Class: clsBackTextGeneral
+.head 6 -  Window Location and Size
+.head 7 -  Left:   2.125"
+.head 7 -  Top:    0.646"
+.head 7 -  Width:  1.075"
+.head 7 -  Width Editable? Class Default
+.head 7 -  Height: Class Default
+.head 7 -  Height Editable? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 5 -  Background Text: Rootstock Description
+.head 6 -  Resource Id: 58501
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 10
+.head 6 -  Class: clsBackTextGeneral
+.head 6 -  Window Location and Size
+.head 7 -  Left:   1.363"
+.head 7 -  Top:    0.927"
+.head 7 -  Width:  1.838"
+.head 7 -  Width Editable? Class Default
+.head 7 -  Height: Class Default
+.head 7 -  Height Editable? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 5 -  !
+.head 5 +  Data Field: dfRootId
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 11
+.head 6 -  Class: clsQueryDataField
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Data
+.head 7 -  Maximum Data Length: Class Default
+.head 7 -  Data Type: String
+.head 7 -  Editable? Yes
+.head 6 -  Display Settings
+.head 7 -  Window Location and Size
+.head 8 -  Left:   4.163"
+.head 8 -  Top:    0.605"
+.head 8 -  Width:  1.063"
+.head 8 -  Width Editable? Yes
+.head 8 -  Height: 0.25"
+.head 8 -  Height Editable? Yes
+.head 7 -  Visible? Yes
+.head 7 -  Border? Yes
+.head 7 -  Justify: Left
+.head 7 -  Format: Uppercase
+.head 7 -  Country: Default
+.head 7 -  Font Name: Default
+.head 7 -  Font Size: Default
+.head 7 -  Font Enhancement: Default
+.head 7 -  Text Color: Default
+.head 7 -  Background Color: Default
+.head 7 -  Input Mask: Unformatted
+.head 6 +  Message Actions
+.head 7 +  On PAM_cls_SETINSTANCEVARS
+.head 8 -  Set dfRootId.sSQLCOLNAME = 'ROOTSTOCK.ROOT_ID'
+.head 8 -  Set dfRootId.hWndOperatorField = cmbRootIdOp
+.head 8 -  Set dfRootId.hWndNotField = cbNOTRootId
+.head 5 +  Data Field: dfRootDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 12
+.head 6 -  Class: clsQueryDataField
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Data
+.head 7 -  Maximum Data Length: Class Default
+.head 7 -  Data Type: String
+.head 7 -  Editable? Yes
+.head 6 -  Display Settings
+.head 7 -  Window Location and Size
+.head 8 -  Left:   4.163"
+.head 8 -  Top:    0.886"
+.head 8 -  Width:  3.4"
+.head 8 -  Width Editable? Yes
+.head 8 -  Height: 0.25"
+.head 8 -  Height Editable? Yes
+.head 7 -  Visible? Yes
+.head 7 -  Border? Yes
+.head 7 -  Justify: Left
+.head 7 -  Format: Unformatted
+.head 7 -  Country: Default
+.head 7 -  Font Name: Default
+.head 7 -  Font Size: Default
+.head 7 -  Font Enhancement: Default
+.head 7 -  Text Color: Default
+.head 7 -  Background Color: Default
+.head 7 -  Input Mask: Unformatted
+.head 6 +  Message Actions
+.head 7 +  On PAM_cls_SETINSTANCEVARS
+.head 8 -  Set dfRootDesc.sSQLCOLNAME = 'ROOTSTOCK.ROOT_DESC'
+.head 8 -  Set dfRootDesc.hWndOperatorField = cmbRootDescOp
+.head 8 -  Set dfRootDesc.hWndNotField = cbNOTRootDesc
+.head 8 -  Set dfRootDesc.sOperator = ' LIKE '
+.head 8 -  Set dfRootDesc.bCompareUpCase = TRUE
+.head 5 +  Check Box: cbVFree
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 13
+.head 6 -  Class: clsQueryCBYesNoFlag
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Virus Free Flag
+.head 6 -  Window Location and Size
+.head 7 -  Left:   4.163"
+.head 7 -  Top:    1.167"
+.head 7 -  Width:  1.525"
+.head 7 -  Width Editable? Class Default
+.head 7 -  Height: Class Default
+.head 7 -  Height Editable? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 6 +  Message Actions
+.head 7 +  On PAM_cls_SETINSTANCEVARS
+.head 8 -  Set cbVFree.sSQLCOLNAME = 'ROOTSTOCK.RT_VFREE_FLAG'
+.head 8 -  Set cbVFree.hWndNotField = cbNOTVFree
+.head 5 +  Check Box: cbNPA
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 14
+.head 6 -  Class: clsQueryCBYesNoFlag
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Non Prop. Flag
+.head 6 -  Window Location and Size
+.head 7 -  Left:   4.163"
+.head 7 -  Top:    1.438"
+.head 7 -  Width:  1.5"
+.head 7 -  Width Editable? Class Default
+.head 7 -  Height: Class Default
+.head 7 -  Height Editable? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 6 +  Message Actions
+.head 7 +  On PAM_cls_SETINSTANCEVARS
+.head 8 -  Set cbNPA.sSQLCOLNAME = 'ROOTSTOCK.RT_NON_PROP_FLAG'
+.head 8 -  Set cbNPA.hWndNotField = cbNOTNPA
+.head 5 +  Check Box: cbNotSale
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 15
+.head 6 -  Class: clsQueryCBYesNoFlag
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Not for Sale Flag
+.head 6 -  Window Location and Size
+.head 7 -  Left:   4.163"
+.head 7 -  Top:    1.709"
+.head 7 -  Width:  1.625"
+.head 7 -  Width Editable? Class Default
+.head 7 -  Height: Class Default
+.head 7 -  Height Editable? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 6 +  Message Actions
+.head 7 +  On PAM_cls_SETINSTANCEVARS
+.head 8 -  Set cbNotSale.sSQLCOLNAME = 'ROOTSTOCK.RT_NOT_SALE_FLAG'
+.head 8 -  Set cbNotSale.hWndNotField = cbNOTNotSale
+.head 5 -  !
+.head 5 +  Check Box: cbNOTRootId
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 16
+.head 6 -  Class: clsQueryNOTField
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: NOT
+.head 6 -  Window Location and Size
+.head 7 -  Left:   0.813"
+.head 7 -  Top:    0.605"
+.head 7 -  Width:  0.538"
+.head 7 -  Width Editable? Yes
+.head 7 -  Height: 0.25"
+.head 7 -  Height Editable? Yes
+.head 6 -  Visible? Yes
+.head 6 -  Font Name: Arial
+.head 6 -  Font Size: 8
+.head 6 -  Font Enhancement: Default
+.head 6 -  Text Color: Dark Blue
+.head 6 -  Background Color: Gray
+.head 6 +  Message Actions
+.head 7 +  On PAM_cls_SETINSTANCEVARS
+.head 8 -  Set cbNOTRootId.hWndQueryField = dfRootId
+.head 5 +  Check Box: cbNOTRootDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 17
+.head 6 -  Class: clsQueryNOTField
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: NOT
+.head 6 -  Window Location and Size
+.head 7 -  Left:   0.813"
+.head 7 -  Top:    0.886"
+.head 7 -  Width:  0.538"
+.head 7 -  Width Editable? Yes
+.head 7 -  Height: 0.25"
+.head 7 -  Height Editable? Yes
+.head 6 -  Visible? Yes
+.head 6 -  Font Name: Arial
+.head 6 -  Font Size: 8
+.head 6 -  Font Enhancement: Default
+.head 6 -  Text Color: Dark Blue
+.head 6 -  Background Color: Gray
+.head 6 +  Message Actions
+.head 7 +  On PAM_cls_SETINSTANCEVARS
+.head 8 -  Set cbNOTRootDesc.hWndQueryField = dfRootDesc
+.head 5 +  Check Box: cbNOTVFree
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 18
+.head 6 -  Class: clsQueryNOTField
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: NOT
+.head 6 -  Window Location and Size
+.head 7 -  Left:   3.575"
+.head 7 -  Top:    1.167"
+.head 7 -  Width:  0.538"
+.head 7 -  Width Editable? Yes
+.head 7 -  Height: 0.25"
+.head 7 -  Height Editable? Yes
+.head 6 -  Visible? Yes
+.head 6 -  Font Name: Arial
+.head 6 -  Font Size: 8
+.head 6 -  Font Enhancement: Default
+.head 6 -  Text Color: Dark Blue
+.head 6 -  Background Color: Gray
+.head 6 +  Message Actions
+.head 7 +  On PAM_cls_SETINSTANCEVARS
+.head 8 -  Set cbNOTVFree.hWndQueryField = cbVFree
+.head 5 +  Check Box: cbNOTNPA
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 19
+.head 6 -  Class: clsQueryNOTField
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: NOT
+.head 6 -  Window Location and Size
+.head 7 -  Left:   3.575"
+.head 7 -  Top:    1.438"
+.head 7 -  Width:  0.538"
+.head 7 -  Width Editable? Yes
+.head 7 -  Height: 0.25"
+.head 7 -  Height Editable? Yes
+.head 6 -  Visible? Yes
+.head 6 -  Font Name: Arial
+.head 6 -  Font Size: 8
+.head 6 -  Font Enhancement: Default
+.head 6 -  Text Color: Dark Blue
+.head 6 -  Background Color: Gray
+.head 6 +  Message Actions
+.head 7 +  On PAM_cls_SETINSTANCEVARS
+.head 8 -  Set cbNOTNPA.hWndQueryField = cbNPA
+.head 5 +  Check Box: cbNOTNotSale
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 20
+.head 6 -  Class: clsQueryNOTField
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Window Location and Size
+.head 7 -  Left:   3.575"
+.head 7 -  Top:    1.709"
+.head 7 -  Width:  Class Default
+.head 7 -  Width Editable? Class Default
+.head 7 -  Height: Class Default
+.head 7 -  Height Editable? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 6 +  Message Actions
+.head 7 +  On PAM_cls_SETINSTANCEVARS
+.head 8 -  Set cbNOTNotSale.hWndQueryField = cbNotSale
+.head 5 -  !
+.head 5 +  Combo Box: cmbRootIdOp
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 21
+.head 6 -  Class: clsQueryOperatorField
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Window Location and Size
+.head 7 -  Left:   3.25"
+.head 7 -  Top:    0.605"
+.head 7 -  Width:  0.863"
+.head 7 -  Width Editable? Yes
+.head 7 -  Height: 1.26"
+.head 7 -  Height Editable? Yes
+.head 6 -  Visible? Yes
+.head 6 -  Editable? No
+.head 6 -  String Type: String
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Sorted? No
+.head 6 -  Always Show List? No
+.head 6 -  Vertical Scroll? Yes
+.head 6 -  Font Name: Default
+.head 6 -  Font Size: Default
+.head 6 -  Font Enhancement: Default
+.head 6 -  Text Color: Default
+.head 6 -  Background Color: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  List Initialization
+.head 6 +  Message Actions
+.head 7 +  On PAM_cls_SETINSTANCEVARS
+.head 8 -  Set cmbRootIdOp.hWndQueryField = dfRootId
+.head 8 -  Set cmbRootIdOp.sOperator = ' = '
+.head 5 +  Combo Box: cmbRootDescOp
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 22
+.head 6 -  Class: clsQueryOperatorField
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Window Location and Size
+.head 7 -  Left:   3.25"
+.head 7 -  Top:    0.886"
+.head 7 -  Width:  0.863"
+.head 7 -  Width Editable? Yes
+.head 7 -  Height: 1.26"
+.head 7 -  Height Editable? Yes
+.head 6 -  Visible? Yes
+.head 6 -  Editable? No
+.head 6 -  String Type: String
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Sorted? No
+.head 6 -  Always Show List? No
+.head 6 -  Vertical Scroll? Yes
+.head 6 -  Font Name: Default
+.head 6 -  Font Size: Default
+.head 6 -  Font Enhancement: Default
+.head 6 -  Text Color: Default
+.head 6 -  Background Color: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  List Initialization
+.head 6 +  Message Actions
+.head 7 +  On PAM_cls_SETINSTANCEVARS
+.head 8 -  Set cmbRootDescOp.hWndQueryField = dfRootDesc
+.head 8 -  Set cmbRootDescOp.sOperator = ' LIKE '
+.head 5 -  !
+.head 5 +  Data Field: dfDatabase
+.head 6 -  Class Child Ref Key: 12
+.head 6 -  Class ChildKey: 1
+.head 6 -  Class: clsTblQueryDialog
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Data
+.head 7 -  Maximum Data Length: Class Default
+.head 7 -  Data Type: Class Default
+.head 7 -  Editable? Class Default
+.head 6 -  Display Settings
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Border? Class Default
+.head 7 -  Justify: Class Default
+.head 7 -  Format: Class Default
+.head 7 -  Country: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Input Mask: Class Default
+.head 6 -  Message Actions
+.head 5 +  Data Field: dfUser
+.head 6 -  Class Child Ref Key: 13
+.head 6 -  Class ChildKey: 2
+.head 6 -  Class: clsTblQueryDialog
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Data
+.head 7 -  Maximum Data Length: Class Default
+.head 7 -  Data Type: Class Default
+.head 7 -  Editable? Class Default
+.head 6 -  Display Settings
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Border? Class Default
+.head 7 -  Justify: Class Default
+.head 7 -  Format: Class Default
+.head 7 -  Country: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Input Mask: Class Default
+.head 6 -  Message Actions
+.head 5 +  Custom Control: ccSeasonYear
+.head 6 -  Class Child Ref Key: 14
+.head 6 -  Class ChildKey: 3
+.head 6 -  Class: clsTblQueryDialog
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Display Settings
+.head 7 -  DLL Name:
+.head 7 -  MS Windows Class Name:
+.head 7 -  Style:  Class Default
+.head 7 -  ExStyle:  Class Default
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   6.863"
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Border? Class Default
+.head 7 -  Etched Border? Class Default
+.head 7 -  Hollow? Class Default
+.head 7 -  Vertical Scroll? Class Default
+.head 7 -  Horizontal Scroll? Class Default
+.head 7 -  Tab Stop? Class Default
+.head 7 -  Tile To Parent? Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  DLL Settings
+.head 6 -  Message Actions
+.head 5 -  Background Text:
+.head 6 -  Resource Id: 58500
+.head 6 -  Class Child Ref Key: 15
+.head 6 -  Class ChildKey: 4
+.head 6 -  Class: clsTblQueryDialog
+.head 6 -  Window Location and Size
+.head 7 -  Left:   6.113"
+.head 7 -  Top:    Class Default
+.head 7 -  Width:  Class Default
+.head 7 -  Width Editable? Class Default
+.head 7 -  Height: Class Default
+.head 7 -  Height Editable? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 4 +  Derived From
+.head 5 -  Class: clsTblQueryDialog
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set bMapEnterToTab = TRUE
+.head 6 -  Set hWndFirstFocus = dfRootDesc
+.head 5 +  On PAM_clsDLG_POPFIELDS
+.head 6 -  Call PopString( dfRootDesc, TRUE )
+.head 6 -  Call PopString( dfRootId, TRUE )
+.head 6 -  Return TRUE
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Check Box:
+.head 3 -  Option Button:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text:
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 -  Application Actions
+.head 1 +  ! clsfrmRoot: frmRoot
+.winattr class Form Window:
+.head 2 -  Class: clsfrmRoot
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title: Rootstocks
+.head 2 -  Icon File:
+.head 2 -  Accesories Enabled? Yes
+.head 2 -  Visible? Yes
+.head 2 -  Display Settings
+.head 3 -  Display Style? Etched
+.head 3 -  Visible at Design time? No
+.head 3 -  Automatically Created at Runtime? No
+.head 3 -  Initial State: Maximized
+.head 3 -  Maximizable? Yes
+.head 3 -  Minimizable? Yes
+.head 3 -  System Menu? Yes
+.head 3 -  Resizable? Yes
+.head 3 -  Window Location and Size
+.head 4 -  Left:  
+.head 4 -  Top:   
+.head 4 -  Width:  8.025"
+.head 4 -  Width Editable? Yes
+.head 4 -  Height: 3.896"
+.head 4 -  Height Editable? Yes
+.head 3 -  Form Size
+.head 4 -  Width:  Default
+.head 4 -  Height: Default
+.head 4 -  Number of Pages: Dynamic
+.head 3 -  Font Name: Default
+.head 3 -  Font Size: Default
+.head 3 -  Font Enhancement: Default
+.head 3 -  Text Color: Default
+.head 3 -  Background Color: Default
+.end
+.head 2 -  Description: 
+.head 2 -  Named Menus 
+.head 2 -  Menu 
+.head 2 +  Tool Bar 
+.winattr
+.head 3 -  Display Settings
+.head 4 -  Display Style? Default
+.head 4 -  Location? Top
+.head 4 -  Visible? Yes
+.head 4 -  Size: 0.594"
+.head 4 -  Size Editable? Yes
+.head 4 -  Font Name: Default
+.head 4 -  Font Size: Default
+.head 4 -  Font Enhancement: Default
+.head 4 -  Text Color: Default
+.head 4 -  Background Color: Default
+.end
+.head 3 +  Contents 
+.head 4 +  Pushbutton: pbHelp
+.winattr
+.head 5 -  Class Child Ref Key: 5
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Help F1
+.head 5 -  Window Location and Size
+.head 6 -  Left:   0.0"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: F1
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\HELP2.BMP
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pbItemEnq
+.winattr
+.head 5 -  Class Child Ref Key: 6
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Enq
+.head 5 -  Window Location and Size
+.head 6 -  Left:   0.6"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\ENQUIRE.BMP
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pbSelect
+.winattr
+.head 5 -  Class Child Ref Key: 20
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: &Select
+.head 5 -  Window Location and Size
+.head 6 -  Left:   1.2"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\UPARR.ICO
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pbClearRows
+.winattr
+.head 5 -  Class Child Ref Key: 7
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Clear F3
+.head 5 -  Window Location and Size
+.head 6 -  Left:   1.8"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: F3
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\MAINT.ICO
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pbAddRows
+.winattr
+.head 5 -  Class Child Ref Key: 8
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Add F6
+.head 5 -  Window Location and Size
+.head 6 -  Left:   2.4"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: F6
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\FMTSTR.ICO
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pbSaveRows
+.winattr
+.head 5 -  Class Child Ref Key: 9
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Save F5
+.head 5 -  Window Location and Size
+.head 6 -  Left:   3.113"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: F5
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\DISK.BMP
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pbQuery
+.winattr
+.head 5 -  Class Child Ref Key: 10
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Query F7
+.head 5 -  Window Location and Size
+.head 6 -  Left:   4.525"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: F7
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\QUERY.BMP
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pbDeleteRows
+.winattr
+.head 5 -  Class Child Ref Key: 11
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Del F4
+.head 5 -  Window Location and Size
+.head 6 -  Left:   3.825"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: F4
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\DELREC.BMP
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pbRePopulate
+.winattr
+.head 5 -  Class Child Ref Key: 12
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Repop
+.head 5 -  Window Location and Size
+.head 6 -  Left:   5.2"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\STYLE.ICO
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pbTools
+.winattr
+.head 5 -  Class Child Ref Key: 13
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Tools
+.head 5 -  Window Location and Size
+.head 6 -  Left:   5.8"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\TOOLS.BMP
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pbRootProhibitions
+.winattr
+.head 5 -  Class Child Ref Key: 29
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: RT.Proh
+.head 5 -  Window Location and Size
+.head 6 -  Left:   6.4"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\PROHIB.BMP
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pbRootRoyOwners
+.winattr
+.head 5 -  Class Child Ref Key: 28
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Root.Roy
+.head 5 -  Window Location and Size
+.head 6 -  Left:   7.0"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\CVRTROY.BMP
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pbNewRoot
+.winattr
+.head 5 -  Class Child Ref Key: 19
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Add
+.head 5 -  Window Location and Size
+.head 6 -  Left:   8.2"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\NEWMAIL.BMP
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pbExit
+.winattr
+.head 5 -  Class Child Ref Key: 14
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Exit Esc
+.head 5 -  Window Location and Size
+.head 6 -  Left:   9.4"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: Esc
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: CLOSE.ICO
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pbPrintForm
+.winattr
+.head 5 -  Class Child Ref Key: 15
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Print
+.head 5 -  Window Location and Size
+.head 6 -  Left:   8.8"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\PRINT.ICO
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 4 +  Pushbutton: pb17
+.winattr
+.head 5 -  Class Child Ref Key: 30
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Details
+.head 5 -  Window Location and Size
+.head 6 -  Left:   7.6"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.58"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Bold
+.head 5 -  Picture File Name: G:\APPS\GUPTA\ICONS\FRMINVIT.ICO
+.head 5 -  Picture Transparent Color: None
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.end
+.head 5 -  Message Actions 
+.head 2 +  Contents 
+.head 3 +  Data Field: dfDatabase
+.winattr
+.head 4 -  Class Child Ref Key: 1
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsfrmRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Default
+.head 5 -  Data Type: String
+.head 5 -  Editable? No
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   0.0"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.875"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.25"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Border? No
+.head 5 -  Justify: Left
+.head 5 -  Format: Unformatted
+.head 5 -  Country: Default
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Default
+.head 5 -  Text Color: Magenta
+.head 5 -  Background Color: Gray
+.head 5 -  Input Mask: Unformatted
+.end
+.head 4 -  Message Actions 
+.head 3 +  Data Field: dfUser
+.winattr
+.head 4 -  Class Child Ref Key: 2
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsfrmRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Default
+.head 5 -  Data Type: String
+.head 5 -  Editable? No
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   0.9"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.875"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.25"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Border? No
+.head 5 -  Justify: Left
+.head 5 -  Format: Unformatted
+.head 5 -  Country: Default
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Default
+.head 5 -  Text Color: Magenta
+.head 5 -  Background Color: Gray
+.head 5 -  Input Mask: Unformatted
+.end
+.head 4 -  Message Actions 
+.head 3 -  Background Text: Season
+.winattr
+.head 4 -  Class Child Ref Key: 3
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsfrmRoot
+.head 4 -  Window Location and Size
+.head 5 -  Left:   8.3"
+.head 5 -  Top:    0.052"
+.head 5 -  Width:  0.663"
+.head 5 -  Width Editable? Yes
+.head 5 -  Height: 0.167"
+.head 5 -  Height Editable? Yes
+.head 4 -  Visible? Yes
+.head 4 -  Justify: Right
+.head 4 -  Font Name: Default
+.head 4 -  Font Size: Default
+.head 4 -  Font Enhancement: Default
+.head 4 -  Text Color: Default
+.head 4 -  Background Color: Default
+.end
+.head 3 +  Custom Control: ccSeasonYear
+.winattr
+.head 4 -  Class Child Ref Key: 4
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsfrmRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name: vt50.dll
+.head 4 -  Display Settings
+.head 5 -  DLL Name: vt50.dll
+.head 5 -  MS Windows Class Name: VT:cSpinField
+.head 5 -  Style:  0x00000000
+.head 5 -  ExStyle:  0x00000000
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   9.0"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  0.975"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.271"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Border? Yes
+.head 5 -  Etched Border? Yes
+.head 5 -  Hollow? No
+.head 5 -  Vertical Scroll? No
+.head 5 -  Horizontal Scroll? No
+.head 5 -  Tab Stop? Tab
+.head 5 -  Tile To Parent? No
+.head 5 -  Font Name: Default
+.head 5 -  Font Size: Default
+.head 5 -  Font Enhancement: Default
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: White
+.head 5 -  DLL Settings
+.end
+.head 4 -  Message Actions 
+.head 3 +  Child Table: tblRoot
+.winattr
+.head 4 -  Class Child Ref Key: 21
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsfrmRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   0.05"
+.head 6 -  Top:    0.458"
+.head 6 -  Width:  9.913"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 4.604"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Font Name: Default
+.head 5 -  Font Size: Default
+.head 5 -  Font Enhancement: Default
+.head 5 -  Text Color: Dark Blue
+.head 5 -  Background Color: Default
+.head 5 -  View: Table
+.head 5 -  Allow Row Sizing? No
+.head 5 -  Lines Per Row: Default
+.head 4 -  Memory Settings
+.head 5 -  Maximum Rows in Memory: Default
+.head 5 -  Discardable? Yes
+.end
+.head 4 +  Contents 
+.head 5 +  Column: colRootId
+.winattr
+.head 6 -  Class Child Ref Key: 22
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsfrmRoot
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Root Id
+.head 6 -  Visible? Yes
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Left
+.head 6 -  Width:  0.95"
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Uppercase
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.end
+.head 6 -  List Values 
+.head 6 -  Message Actions 
+.head 5 +  Column: colRootDesc
+.winattr
+.head 6 -  Class Child Ref Key: 23
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsfrmRoot
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Rootstock Description
+.head 6 -  Visible? Yes
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Left
+.head 6 -  Width:  6.338"
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.end
+.head 6 -  List Values 
+.head 6 -  Message Actions 
+.head 5 +  Column: colVFreeFlag
+.winattr
+.head 6 -  Class Child Ref Key: 24
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsfrmRoot
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: V.Free
+.head 6 -  Visible? Yes
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Center
+.head 6 -  Width:  0.663"
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.end
+.head 6 -  List Values 
+.head 6 -  Message Actions 
+.head 5 +  Column: colNPAFlag
+.winattr
+.head 6 -  Class Child Ref Key: 25
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsfrmRoot
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: NPA
+.head 6 -  Visible? Yes
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Center
+.head 6 -  Width:  0.488"
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.end
+.head 6 -  List Values 
+.head 6 -  Message Actions 
+.head 5 +  Column: colNotSaleFlag
+.winattr
+.head 6 -  Class Child Ref Key: 26
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsfrmRoot
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Not Sale
+.head 6 -  Visible? Yes
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Center
+.head 6 -  Width:  0.763"
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.end
+.head 6 -  List Values 
+.head 6 -  Message Actions 
+.head 5 +  Column: colUpperRootDesc
+.winattr
+.head 6 -  Class Child Ref Key: 27
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsfrmRoot
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Rootstock Description
+.head 6 -  Visible? No
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Left
+.head 6 -  Width:  5.075"
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.end
+.head 6 -  List Values 
+.head 6 -  Message Actions 
+.head 4 -  Functions 
+.head 4 -  Window Variables 
+.head 4 -  Message Actions 
+.head 2 -  Functions 
+.head 2 -  Window Parameters 
+.head 2 -  Window Variables 
+.head 2 -  Message Actions 
+.head 1 +  Form Window: frmRoot
+.head 2 -  Class: clsfrmRoot
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title:
+.head 2 -  Icon File:
+.head 2 -  Accesories Enabled? Class Default
+.head 2 -  Visible? Class Default
+.head 2 -  Display Settings
+.head 3 -  Display Style? Class Default
+.head 3 -  Visible at Design time? No
+.head 3 -  Automatically Created at Runtime? Class Default
+.head 3 -  Initial State: Class Default
+.head 3 -  Maximizable? Class Default
+.head 3 -  Minimizable? Class Default
+.head 3 -  System Menu? Class Default
+.head 3 -  Resizable? Class Default
+.head 3 -  Window Location and Size
+.head 4 -  Left:   0.0"
+.head 4 -  Top:    0.0"
+.head 4 -  Width:  Class Default
+.head 4 -  Width Editable? Class Default
+.head 4 -  Height: 5.948"
+.head 4 -  Height Editable? Class Default
+.head 3 -  Form Size
+.head 4 -  Width:  Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Number of Pages: Class Default
+.head 3 -  Font Name: Class Default
+.head 3 -  Font Size: Class Default
+.head 3 -  Font Enhancement: Class Default
+.head 3 -  Text Color: Class Default
+.head 3 -  Background Color: Class Default
+.head 2 -  Description:
+.head 2 -  Named Menus
+.head 2 -  Menu
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Class Default
+.head 4 -  Location? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Size: Class Default
+.head 4 -  Size Editable? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Contents
+.head 4 +  Pushbutton: pbSelect
+.head 5 -  Class Child Ref Key: 20
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbClearRows
+.head 5 -  Class Child Ref Key: 7
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbAddRows
+.head 5 -  Class Child Ref Key: 8
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbSaveRows
+.head 5 -  Class Child Ref Key: 9
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbQuery
+.head 5 -  Class Child Ref Key: 10
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbDeleteRows
+.head 5 -  Class Child Ref Key: 11
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbRePopulate
+.head 5 -  Class Child Ref Key: 12
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbTools
+.head 5 -  Class Child Ref Key: 13
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbRootProhibitions
+.head 5 -  Class Child Ref Key: 29
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbRootRoyOwners
+.head 5 -  Class Child Ref Key: 28
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbDetsRoot
+.head 5 -  Class Child Ref Key: 30
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbNewRoot
+.head 5 -  Class Child Ref Key: 31
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbHelp
+.head 5 -  Class Child Ref Key: 36
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbItemEnq
+.head 5 -  Class Child Ref Key: 37
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbPrintForm
+.head 5 -  Class Child Ref Key: 38
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbExit
+.head 5 -  Class Child Ref Key: 39
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsfrmRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 2 +  Contents
+.head 3 +  Child Table: tblRoot
+.head 4 -  Class Child Ref Key: 21
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsfrmRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  View: Class Default
+.head 5 -  Allow Row Sizing? Class Default
+.head 5 -  Lines Per Row: Class Default
+.head 4 -  Memory Settings
+.head 5 -  Maximum Rows in Memory: Class Default
+.head 5 -  Discardable? Class Default
+.head 4 +  Contents
+.head 5 +  Column: colRootId
+.head 6 -  Class Child Ref Key: 22
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsfrmRoot
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? Class Default
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colRootDesc
+.head 6 -  Class Child Ref Key: 23
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsfrmRoot
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? Class Default
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colVFreeFlag
+.head 6 -  Class Child Ref Key: 24
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsfrmRoot
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? Class Default
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colNPAFlag
+.head 6 -  Class Child Ref Key: 25
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsfrmRoot
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? Class Default
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colNotSaleFlag
+.head 6 -  Class Child Ref Key: 26
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsfrmRoot
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? Class Default
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colUpperRootDesc
+.head 6 -  Class Child Ref Key: 27
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsfrmRoot
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? Class Default
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 4 -  Functions
+.head 4 -  Window Variables
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfDatabase
+.head 4 -  Class Child Ref Key: 32
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsfrmRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfUser
+.head 4 -  Class Child Ref Key: 33
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsfrmRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 -  Background Text:
+.head 4 -  Resource Id: 57491
+.head 4 -  Class Child Ref Key: 34
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsfrmRoot
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Custom Control: ccSeasonYear
+.head 4 -  Class Child Ref Key: 35
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsfrmRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  DLL Name:
+.head 5 -  MS Windows Class Name:
+.head 5 -  Style:  Class Default
+.head 5 -  ExStyle:  Class Default
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Etched Border? Class Default
+.head 5 -  Hollow? Class Default
+.head 5 -  Vertical Scroll? Class Default
+.head 5 -  Horizontal Scroll? Class Default
+.head 5 -  Tab Stop? Class Default
+.head 5 -  Tile To Parent? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  DLL Settings
+.head 4 -  Message Actions
+.head 2 -  Functions
+.head 2 -  Window Parameters
+.head 2 -  Window Variables
+.head 2 -  Message Actions
+.head 1 +  Dialog Box: dlgQueryRoot
+.head 2 -  Class: clsdlgQueryRoot
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title:
+.head 2 -  Accesories Enabled? Class Default
+.head 2 -  Visible? Class Default
+.head 2 -  Display Settings
+.head 3 -  Display Style? Class Default
+.head 3 -  Visible at Design time? No
+.head 3 -  Type of Dialog: Modal
+.head 3 -  Window Location and Size
+.head 4 -  Left:   1.238"
+.head 4 -  Top:    1.51"
+.head 4 -  Width:  Class Default
+.head 4 -  Width Editable? Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Height Editable? Class Default
+.head 3 -  Absolute Screen Location? Class Default
+.head 3 -  Font Name: Class Default
+.head 3 -  Font Size: Class Default
+.head 3 -  Font Enhancement: Class Default
+.head 3 -  Text Color: Class Default
+.head 3 -  Background Color: Class Default
+.head 2 -  Description:
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Class Default
+.head 4 -  Location? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Size: Class Default
+.head 4 -  Size Editable? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Contents
+.head 4 +  Pushbutton: pbHelp
+.head 5 -  Class Child Ref Key: 5
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsdlgQueryRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbQuery
+.head 5 -  Class Child Ref Key: 6
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsdlgQueryRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbPrintForm
+.head 5 -  Class Child Ref Key: 7
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsdlgQueryRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbExit
+.head 5 -  Class Child Ref Key: 8
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsdlgQueryRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbClear
+.head 5 -  Class Child Ref Key: 23
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsdlgQueryRoot
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 2 +  Contents
+.head 3 -  Background Text:
+.head 4 -  Resource Id: 58503
+.head 4 -  Class Child Ref Key: 9
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 -  Background Text:
+.head 4 -  Resource Id: 58504
+.head 4 -  Class Child Ref Key: 10
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Data Field: dfRootId
+.head 4 -  Class Child Ref Key: 11
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfRootDesc
+.head 4 -  Class Child Ref Key: 12
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Check Box: cbVFree
+.head 4 -  Class Child Ref Key: 13
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Check Box: cbNPA
+.head 4 -  Class Child Ref Key: 14
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Check Box: cbNotSale
+.head 4 -  Class Child Ref Key: 15
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Check Box: cbNOTRootId
+.head 4 -  Class Child Ref Key: 16
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Check Box: cbNOTRootDesc
+.head 4 -  Class Child Ref Key: 17
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Check Box: cbNOTVFree
+.head 4 -  Class Child Ref Key: 18
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Check Box: cbNOTNPA
+.head 4 -  Class Child Ref Key: 19
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Check Box: cbNOTNotSale
+.head 4 -  Class Child Ref Key: 20
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Combo Box: cmbRootIdOp
+.head 4 -  Class Child Ref Key: 21
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Editable? Class Default
+.head 4 -  String Type: Class Default
+.head 4 -  Maximum Data Length: Class Default
+.head 4 -  Sorted? Class Default
+.head 4 -  Always Show List? Class Default
+.head 4 -  Vertical Scroll? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Input Mask: Class Default
+.head 4 -  List Initialization
+.head 4 -  Message Actions
+.head 3 +  Combo Box: cmbRootDescOp
+.head 4 -  Class Child Ref Key: 22
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Editable? Class Default
+.head 4 -  String Type: Class Default
+.head 4 -  Maximum Data Length: Class Default
+.head 4 -  Sorted? Class Default
+.head 4 -  Always Show List? Class Default
+.head 4 -  Vertical Scroll? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Input Mask: Class Default
+.head 4 -  List Initialization
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfDatabase
+.head 4 -  Class Child Ref Key: 1
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfUser
+.head 4 -  Class Child Ref Key: 2
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Custom Control: ccSeasonYear
+.head 4 -  Class Child Ref Key: 3
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  DLL Name:
+.head 5 -  MS Windows Class Name:
+.head 5 -  Style:  Class Default
+.head 5 -  ExStyle:  Class Default
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Etched Border? Class Default
+.head 5 -  Hollow? Class Default
+.head 5 -  Vertical Scroll? Class Default
+.head 5 -  Horizontal Scroll? Class Default
+.head 5 -  Tab Stop? Class Default
+.head 5 -  Tile To Parent? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  DLL Settings
+.head 4 -  Message Actions
+.head 3 -  Background Text:
+.head 4 -  Resource Id: 58505
+.head 4 -  Class Child Ref Key: 4
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdlgQueryRoot
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 2 -  Functions
+.head 2 -  Window Parameters
+.head 2 -  Window Variables
+.head 2 -  Message Actions

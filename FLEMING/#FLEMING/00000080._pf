@@ -1,0 +1,2379 @@
+Application Description: SQLWindows 5.01 Address functions APL
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D80000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF000000 0000000000140300 009F010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.113"
+			Top:    2.896"
+			Width:  4.688"
+			Height: 2.99"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   8.263"
+			Top:    0.688"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: GENERAL.APL
+		File Include: sqlhandl.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Italic
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Black
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for ADDRESS.APL
+				Number: ADDRAplMsgOffSet = SAM_User + 3300
+				! Message go up to AplOffSet + 99
+				!
+				Number: ADDRAplConstOffSet = 1600
+				String: sPICKUPADDRESSLINE1= "Customer Pickup"
+				String: sPICKUPADDRESSLINE2 = "from Fleming's Nurseries"
+				Number: MINOrdersForDelivery = 500
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 3669674552
+0000: 6C0000002D000000 0000000000000000 0200000400000008 000000E0010D0000
+0020: 00FF3F1500B80000 0100FFFFE0220000 0001FE00FF832F00 000001FB00FF0F
+.enddata
+		Named Menus
+		Internal Functions
+			Function: GetCustBusNames
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					Receive String: sCustName
+					Receive String: sBusName
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSqlHandle
+					String: sBindHandle
+					String: sIntoHandle
+					String: sNameHandle
+					Number: nOurHandleNo
+					Number: nInd
+					String: sGotCustName
+					String: sGotBusName
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETCUSTBUSNAME' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSqlHandle = " SELECT
+									  Cust_Name, 
+									  Bus_Name
+									FROM
+									  Customer_Master
+									WHERE
+									  Cust_No = :1 "
+							Set sNameHandle = 'GETCUSTBUSNAME'
+							Set sBindHandle = ':nCustNo'
+							Set sIntoHandle = ':sGotCustName, :sGotBusName'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSqlHandle, sNameHandle, sBindHandle, sIntoHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sCustName = ''
+							Set sBusName = ''
+							Set sGotCustName = ''
+							Set sGotBusName = ''
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set sCustName = sGotCustName
+									Set sBusName = sGotBusName
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: GetCustTypeAndDefDelType2
+				Description: Given a customer number this function returns the customer_type
+						and the second receive parameter classifies GC for Garden Centers
+						OR for orchadists and the third parameter returns the customers
+						Default delivery type
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					Receive String: sCustType
+					Receive String: sGCOR
+					Receive String: sDefDelType
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					Number: nInd
+					!
+					String: sGotCustType
+					String: sGotDefDelType
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETCUSTDELTYPES' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = "  SELECT Customer_Type, Def_Deliv_Type 
+									FROM Customer_Master 
+									WHERE Cust_No = :1 "
+							Set sName = 'GETCUSTDELTYPES'
+							Set sBind = ':nCustNo'
+							Set sInto = ':sGotCustType, :sGotDefDelType'
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sCustType = ''
+							Set sGotCustType = ''
+							Set sGCOR = ''
+							Set sDefDelType = ''
+							Set sGotDefDelType = ''
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set sCustType = sGotCustType
+									Set sDefDelType = sGotDefDelType
+									If ( SalStrScan( sCustType, 'OR%' ) >= 0 ) OR ( sCustType = 'NOR' )
+										Set sGCOR = 'OR'
+									Else
+										Set sGCOR = 'GC'
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: GetShipAddress
+				Description: Given a customer number this function returns the customer_type
+						and the second receive parameter classifies GC for Garden Centers
+						OR for orchadists and the third parameter returns the customers
+						Default delivery type
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					Number: nYear
+					Receive Date/Time: dtAddressDT
+					Receive String: sAddrType
+					Receive String: sAddressLine1
+					Receive String: sAddressLine2
+					Receive String: sSuburb
+					Receive String: sPostcode
+					Receive String: sState
+					Receive String: sCountry
+					Receive String: sAreaCode
+					Receive String: sPhoneNo
+					Receive String: sAreaCodeFax
+					Receive String: sFaxNo
+					Receive String: sComments
+					Receive String: sMeetId
+					Receive String: sMainAddressFlag
+					Receive Boolean: bPickUpAddress
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurConfAmtHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSqlHandle
+					String: sBindHandle
+					String: sIntoHandle
+					String: sNameHandle
+					!
+					Number: nOurHandleNo
+					Number: nOurConfAmtHandleNo
+					String: sSqlConfAmtHandle
+					String: sBindConfAmtHandle
+					String: sIntoConfAmtHandle
+					String: sNameConfAmtHandle
+					!
+					Date/Time: dtGotAddressDT
+					String: sGotAddressType
+					String: sGotAddressLine1
+					String: sGotAddressLine2
+					String: sGotSuburb
+					String: sGotPostcode
+					String: sGotState
+					String: sGotCountry
+					String: sGotAreaCode
+					String: sGotPhoneNo
+					String: sGotAreaCodeFax
+					String: sGotFaxNo
+					String: sGotComments
+					String: sGotMeetId
+					String: sGotMainAddressFlag
+					!
+					Number: nInd
+					!
+					String: sAddressType
+					String: sCustType
+					String: sGCOR
+					String: sDefDelType
+					Boolean: bStopFetch
+					Boolean: bAfterConfirmations
+					Number: nSumConfAmt
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETSHIPADDRS' )
+					Set nOurConfAmtHandleNo = SqlHandlesGetReferenceNo( 'CUSTTOTCONF' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSqlHandle = " SELECT 
+									Add_Added_DT, 
+									Address_Type, 
+									Address_1, 
+									Address_2,
+									Suburb,
+									Postcode,
+									State,
+									Country,
+									Area_Code,
+									Phone_No,
+									Area_Code_Fax,
+									Fax_No,
+									Comments,
+									Address_Meet_Id,
+									Main_Address_Flag 
+									FROM Customer_Address 
+									WHERE Cust_No = :1 AND Address_Type = :2 "
+							Set sNameHandle = 'GETSHIPADDRS'
+							Set sBindHandle = ':nCustNo, :sAddressType'
+							Set sIntoHandle = ':dtGotAddressDT, :sGotAddressType, :sGotAddressLine1, :sGotAddressLine2, :sGotSuburb, :sGotPostcode,:sGotState, 
+									:sGotCountry, :sGotAreaCode, :sGotPhoneNo, :sGotAreaCodeFax, :sGotFaxNo, :sGotComments, 
+									:sGotMeetId, :sGotMainAddressFlag'
+							!
+							Set sSqlConfAmtHandle = " SELECT Sum(Conf_Amt) 
+									FROM Customer_Order 
+									WHERE Cust_No = :1 AND Year_Of_Sale = :2 "
+							Set sNameConfAmtHandle = 'CUSTTOTCONF'
+							Set sBindConfAmtHandle = ':nCustNo, :nYear'
+							Set sIntoConfAmtHandle = ':nSumConfAmt'
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSqlHandle, sNameHandle, sBindHandle, sIntoHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Call haSqlHandles[ nOurConfAmtHandleNo ].Setup( sSqlConfAmtHandle, sNameConfAmtHandle, sBindConfAmtHandle, sIntoConfAmtHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurConfAmtHandleNo ].hSqlHandle )
+							!
+							Set sCustType = ''
+							Set sGCOR = ''
+							Set sDefDelType = ''
+							!
+							Set dtAddressDT = DATETIME_Null
+							Set sAddressType = ''
+							Set sAddressLine1 = ''
+							Set sAddressLine2 = ''
+							Set sSuburb = ''
+							Set sPostcode = ''
+							Set sState = ''
+							Set sCountry = ''
+							Set sAreaCode = ''
+							Set sPhoneNo = ''
+							Set sAreaCodeFax = ''
+							Set sFaxNo = ''
+							Set sComments = ''
+							Set sMeetId = ''
+							Set sMainAddressFlag = ''
+							!
+							Set dtGotAddressDT = DATETIME_Null
+							Set sGotAddressType = ''
+							Set sGotAddressLine1 = ''
+							Set sGotAddressLine2 = ''
+							Set sGotSuburb = ''
+							Set sGotPostcode = ''
+							Set sGotState = ''
+							Set sGotCountry = ''
+							Set sGotAreaCode = ''
+							Set sGotPhoneNo = ''
+							Set sGotAreaCodeFax = ''
+							Set sGotFaxNo = ''
+							Set sGotComments = ''
+							Set sGotMeetId = ''
+							Set sGotMainAddressFlag = ''
+							!
+							Set bPickUpAddress = FALSE
+							Call GetCustTypeAndDefDelType2( nCustNo, sCustType, sGCOR, sDefDelType, SH_cls_Execute )
+							If sGCOR = 'GC'
+								Set sAddressType = 'SHIP'
+								Set bStopFetch = FALSE
+								Set nInd = FETCH_EOF
+								While nInd != FETCH_Ok AND NOT bStopFetch
+									If haSqlHandles[ nOurHandleNo ].Execute( )
+										If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+											Set dtAddressDT = dtGotAddressDT
+											Set sAddrType = sGotAddressType
+											Set sAddressLine1 = sGotAddressLine1
+											Set sAddressLine2 = sGotAddressLine2
+											Set sSuburb = sGotSuburb
+											Set sPostcode = sGotPostcode
+											Set sState = sGotState
+											Set sCountry = sGotCountry
+											Set sAreaCode = sGotAreaCode
+											Set sPhoneNo = sGotPhoneNo
+											Set sAreaCodeFax = sGotAreaCodeFax
+											Set sFaxNo = sGotFaxNo
+											Set sComments = sGotComments
+											Set sMeetId = sGotMeetId
+											Set sMainAddressFlag = sGotMainAddressFlag
+											Return TRUE
+										Else If sAddressType = 'SHIP'
+											Set sAddressType = 'BUS'
+										Else If sAddressType = 'BUS'
+											Return TRUE
+										Else
+											Return TRUE
+									Else
+										Set bStopFetch = TRUE
+										Return FALSE
+							Else
+								If sDefDelType = 'PICKUP'
+									Set bPickUpAddress = TRUE
+									Return TRUE
+								!
+								If haSqlHandles[ nOurConfAmtHandleNo ].Execute( )
+									If haSqlHandles[ nOurConfAmtHandleNo ].FetchNext( nInd )
+										Set bAfterConfirmations = TRUE
+									Else
+										Set bAfterConfirmations = FALSE
+									!
+									If sDefDelType = 'DELIVER'
+										Set sAddressType = 'SHIP'
+										Set bStopFetch = FALSE
+										Set nInd = FETCH_EOF
+										While nInd != FETCH_Ok AND NOT bStopFetch
+											If haSqlHandles[ nOurHandleNo ].Execute( )
+												If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+													Set dtAddressDT = dtGotAddressDT
+													Set sAddrType = sGotAddressType
+													Set sAddressLine1 = sGotAddressLine1
+													Set sAddressLine2 = sGotAddressLine2
+													Set sSuburb = sGotSuburb
+													Set sPostcode = sGotPostcode
+													Set sState = sGotState
+													Set sCountry = sGotCountry
+													Set sAreaCode = sGotAreaCode
+													Set sPhoneNo = sGotPhoneNo
+													Set sAreaCodeFax = sGotAreaCodeFax
+													Set sFaxNo = sGotFaxNo
+													Set sComments = sGotComments
+													Set sMeetId = sGotMeetId
+													Set sMainAddressFlag = sGotMainAddressFlag
+													Return TRUE
+												Else If sAddressType = 'SHIP'
+													Set sAddressType = 'BUS'
+												Else If sAddressType = 'BUS'
+													If bAfterConfirmations
+														If nSumConfAmt < MINOrdersForDelivery
+															Set sAddressType = 'MEET'
+														Else
+															Return TRUE
+													Else
+														! The next line was added and the return uncommented
+														! Set sAddressType = 'MEET'
+														Return TRUE
+												Else If sAddressType = 'MEET'
+													Return TRUE
+												Else
+													Return TRUE
+											Else
+												Set bStopFetch = TRUE
+												Return FALSE
+									Else If sDefDelType = 'GROUP' 
+										! Else is for GROUP DefDelType
+										Set sAddressType = 'MEET'
+										Set bStopFetch = FALSE
+										Set nInd = FETCH_EOF
+										While nInd != FETCH_Ok AND NOT bStopFetch
+											If haSqlHandles[ nOurHandleNo ].Execute( )
+												If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+													Set dtAddressDT = dtGotAddressDT
+													Set sAddrType = sGotAddressType
+													Set sAddressLine1 = sGotAddressLine1
+													Set sAddressLine2 = sGotAddressLine2
+													Set sSuburb = sGotSuburb
+													Set sPostcode = sGotPostcode
+													Set sState = sGotState
+													Set sCountry = sGotCountry
+													Set sAreaCode = sGotAreaCode
+													Set sPhoneNo = sGotPhoneNo
+													Set sAreaCodeFax = sGotAreaCodeFax
+													Set sFaxNo = sGotFaxNo
+													Set sComments = sGotComments
+													Set sMeetId = sGotMeetId
+													Set sMainAddressFlag = sGotMainAddressFlag
+													Return TRUE
+												Else If sAddressType = 'MEET'
+													If bAfterConfirmations
+														If nSumConfAmt >= MINOrdersForDelivery
+															Set sAddressType = 'SHIP'
+														Else
+															Return TRUE
+													Else
+														! The next line was added and the return uncommented
+														! Set sAddressType = 'SHIP'
+														Return TRUE
+												Else If sAddressType = 'SHIP'
+													Set sAddressType = 'BUS'
+												Else If sAddressType = 'BUS'
+													Return TRUE
+												Else
+													Return TRUE
+											Else
+												Set bStopFetch = TRUE
+												Return FALSE
+									Else
+										! Else is for Blank DefDelType
+										If bAfterConfirmations AND nSumConfAmt >= MINOrdersForDelivery
+											Set sAddressType = 'SHIP'
+											Set bStopFetch = FALSE
+											Set nInd = FETCH_EOF
+											While nInd != FETCH_Ok AND NOT bStopFetch
+												If haSqlHandles[ nOurHandleNo ].Execute( )
+													If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+														Set dtAddressDT = dtGotAddressDT
+														Set sAddrType = sGotAddressType
+														Set sAddressLine1 = sGotAddressLine1
+														Set sAddressLine2 = sGotAddressLine2
+														Set sSuburb = sGotSuburb
+														Set sPostcode = sGotPostcode
+														Set sState = sGotState
+														Set sCountry = sGotCountry
+														Set sAreaCode = sGotAreaCode
+														Set sPhoneNo = sGotPhoneNo
+														Set sAreaCodeFax = sGotAreaCodeFax
+														Set sFaxNo = sGotFaxNo
+														Set sComments = sGotComments
+														Set sMeetId = sGotMeetId
+														Set sMainAddressFlag = sGotMainAddressFlag
+														Return TRUE
+													Else If sAddressType = 'SHIP'
+														Set sAddressType = 'BUS'
+													Else If sAddressType = 'BUS'
+														Set sAddressType = 'MEET'
+													Else If sAddressType = 'MEET'
+														Return TRUE
+													Else
+														Return TRUE
+												Else
+													Set bStopFetch = TRUE
+													Return FALSE
+										Else
+											Set sAddressType = 'MEET'
+											Set bStopFetch = FALSE
+											Set nInd = FETCH_EOF
+											While nInd != FETCH_Ok AND NOT bStopFetch
+												If haSqlHandles[ nOurHandleNo ].Execute( )
+													If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+														Set dtAddressDT = dtGotAddressDT
+														Set sAddrType = sGotAddressType
+														Set sAddressLine1 = sGotAddressLine1
+														Set sAddressLine2 = sGotAddressLine2
+														Set sSuburb = sGotSuburb
+														Set sPostcode = sGotPostcode
+														Set sState = sGotState
+														Set sCountry = sGotCountry
+														Set sAreaCode = sGotAreaCode
+														Set sPhoneNo = sGotPhoneNo
+														Set sAreaCodeFax = sGotAreaCodeFax
+														Set sFaxNo = sGotFaxNo
+														Set sComments = sGotComments
+														Set sMeetId = sGotMeetId
+														Set sMainAddressFlag = sGotMainAddressFlag
+														Return TRUE
+													Else If sAddressType = 'MEET'
+														Return TRUE
+													Else
+														Return TRUE
+												Else
+													Set bStopFetch = TRUE
+													Return FALSE
+								Else
+									Return FALSE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurConfAmtHandleNo ].Disconnect( )
+							Return TRUE
+			! Care needs to be taken modifying the select statements is GetBusAddress and GetBusAddressPrivateFunction
+					  as they are also declared and used with the same names in GetPostalAddress and GetPostalAddressPrivateFunction
+			Function: GetBusAddress
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					Receive Date/Time: dtAddressDT
+					Receive String: sAddrType
+					Receive String: sAddressLine1
+					Receive String: sAddressLine2
+					Receive String: sSuburb
+					Receive String: sPostcode
+					Receive String: sState
+					Receive String: sCountry
+					Receive String: sAreaCode
+					Receive String: sPhoneNo
+					Receive String: sAreaCodeFax
+					Receive String: sFaxNo
+					Receive String: sComments
+					Receive String: sMeetId
+					Receive String: sMainAddressFlag
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSqlHandle
+					String: sBindHandle
+					String: sIntoHandle
+					String: sNameHandle
+					Number: nOurHandleNo
+					Number: nInd
+					Number: nGotParentCustNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetBusAddressGETPARENTCSTNO' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							! if editing bellow sql statement NOTE that this exact name and statement is referenced in 
+									GetMainAddress function so you must change both.
+							Set sSqlHandle = " SELECT
+									  Ass_Cust_No
+									FROM
+									  Customer_Master
+									WHERE
+									  Cust_No = :1 "
+							Set sNameHandle = 'GETPARENTCSTNO'
+							Set sBindHandle = ':nCustNo'
+							Set sIntoHandle = ':nGotParentCustNo'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSqlHandle, sNameHandle, sBindHandle, sIntoHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nGotParentCustNo = NUMBER_Null
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									If nGotParentCustNo > 0
+										If GetBusAddressPrivateFunction( nGotParentCustNo,
+												dtAddressDT,
+												sAddrType,
+												sAddressLine1,
+												sAddressLine2,
+												sSuburb,
+												sPostcode,
+												sState,
+												sCountry,
+												sAreaCode,
+												sPhoneNo,
+												sAreaCodeFax,
+												sFaxNo,
+												sComments,
+												sMeetId,
+												sMainAddressFlag,
+												SH_cls_Execute )
+											Return TRUE
+							Return GetBusAddressPrivateFunction( nCustNo,
+									dtAddressDT,
+									sAddrType,
+									sAddressLine1,
+									sAddressLine2,
+									sSuburb,
+									sPostcode,
+									sState,
+									sCountry,
+									sAreaCode,
+									sPhoneNo,
+									sAreaCodeFax,
+									sFaxNo,
+									sComments,
+									sMeetId,
+									sMainAddressFlag,
+									SH_cls_Execute )
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call GetBusAddressPrivateFunction( 0,
+									dtAddressDT,
+									sAddrType,
+									sAddressLine1,
+									sAddressLine2,
+									sSuburb,
+									sPostcode,
+									sState,
+									sCountry,
+									sAreaCode,
+									sPhoneNo,
+									sAreaCodeFax,
+									sFaxNo,
+									sComments,
+									sMeetId,
+									sMainAddressFlag,
+									SH_cls_Disconnect )
+							Return TRUE
+			Function: GetBusAddressPrivateFunction
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					Receive Date/Time: dtAddressDT
+					Receive String: sAddrType
+					Receive String: sAddressLine1
+					Receive String: sAddressLine2
+					Receive String: sSuburb
+					Receive String: sPostcode
+					Receive String: sState
+					Receive String: sCountry
+					Receive String: sAreaCode
+					Receive String: sPhoneNo
+					Receive String: sAreaCodeFax
+					Receive String: sFaxNo
+					Receive String: sComments
+					Receive String: sMeetId
+					Receive String: sMainAddressFlag
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurAnyHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSqlHandle
+					String: sBindHandle
+					String: sIntoHandle
+					String: sNameHandle
+					!
+					Number: nOurHandleNo
+					Number: nOurAnyHandleNo
+					String: sSqlAnyHandle
+					String: sBindAnyHandle
+					String: sIntoAnyHandle
+					String: sNameAnyHandle
+					!
+					Date/Time: dtGotAddressDT
+					String: sGotAddressType
+					String: sGotAddressLine1
+					String: sGotAddressLine2
+					String: sGotSuburb
+					String: sGotPostcode
+					String: sGotState
+					String: sGotCountry
+					String: sGotAreaCode
+					String: sGotPhoneNo
+					String: sGotAreaCodeFax
+					String: sGotFaxNo
+					String: sGotComments
+					String: sGotMeetId
+					String: sGotMainAddressFlag
+					!
+					Number: nInd
+					!
+					String: sAddressType
+					Boolean: bStopFetch
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetBusAddressPrivateFunctionGETBUSADDRS' )
+					Set nOurAnyHandleNo = SqlHandlesGetReferenceNo( 'GetBusAddressPrivateFunctionGETBUSANYADDRS' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSqlHandle = " SELECT 
+									Add_Added_DT, 
+									Address_Type, 
+									Address_1, 
+									Address_2,
+									Suburb,
+									Postcode,
+									State,
+									Country,
+									Area_Code,
+									Phone_No,
+									Area_Code_Fax,
+									Fax_No,
+									Comments,
+									Address_Meet_Id,
+									Main_Address_Flag 
+									FROM Customer_Address 
+									WHERE Cust_No = :1 AND Address_Type = :2 "
+							Set sNameHandle = 'GETBUSADDRS'
+							Set sBindHandle = ':nCustNo, :sAddressType'
+							Set sIntoHandle = ':dtGotAddressDT, :sGotAddressType, :sGotAddressLine1, :sGotAddressLine2, :sGotSuburb, :sGotPostcode,:sGotState, 
+									:sGotCountry, :sGotAreaCode, :sGotPhoneNo, :sGotAreaCodeFax, :sGotFaxNo, :sGotComments, 
+									:sGotMeetId, :sGotMainAddressFlag'
+							!
+							Set sSqlAnyHandle = " SELECT 
+									Add_Added_DT, 
+									Address_Type, 
+									Address_1, 
+									Address_2,
+									Suburb,
+									Postcode,
+									State,
+									Country,
+									Area_Code,
+									Phone_No,
+									Area_Code_Fax,
+									Fax_No,
+									Comments,
+									Address_Meet_Id,
+									Main_Address_Flag 
+									FROM Customer_Address 
+									WHERE Cust_No = :1 "
+							Set sNameAnyHandle = 'GETBUSANYADDRS'
+							Set sBindAnyHandle = ':nCustNo'
+							Set sIntoAnyHandle = ':dtGotAddressDT, :sGotAddressType, :sGotAddressLine1, :sGotAddressLine2, :sGotSuburb, :sGotPostcode,:sGotState, 
+									:sGotCountry, :sGotAreaCode, :sGotPhoneNo, :sGotAreaCodeFax, :sGotFaxNo, :sGotComments, 
+									:sGotMeetId, :sGotMainAddressFlag'
+							!
+							Set dtAddressDT = DATETIME_Null
+							Set sAddressType = ''
+							Set sAddressLine1 = ''
+							Set sAddressLine2 = ''
+							Set sSuburb = ''
+							Set sPostcode = ''
+							Set sState = ''
+							Set sCountry = ''
+							Set sAreaCode = ''
+							Set sPhoneNo = ''
+							Set sAreaCodeFax = ''
+							Set sFaxNo = ''
+							Set sComments = ''
+							Set sMeetId = ''
+							Set sMainAddressFlag = ''
+							!
+							Set dtGotAddressDT = DATETIME_Null
+							Set sGotAddressType = ''
+							Set sGotAddressLine1 = ''
+							Set sGotAddressLine2 = ''
+							Set sGotSuburb = ''
+							Set sGotPostcode = ''
+							Set sGotState = ''
+							Set sGotCountry = ''
+							Set sGotAreaCode = ''
+							Set sGotPhoneNo = ''
+							Set sGotAreaCodeFax = ''
+							Set sGotFaxNo = ''
+							Set sGotComments = ''
+							Set sGotMeetId = ''
+							Set sGotMainAddressFlag = ''
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSqlHandle, sNameHandle, sBindHandle, sIntoHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sAddressType = 'BUS'
+							Set bStopFetch = FALSE
+							Set nInd = FETCH_EOF
+							While nInd != FETCH_Ok AND NOT bStopFetch
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+										Set dtAddressDT = dtGotAddressDT
+										Set sAddrType = sGotAddressType
+										Set sAddressLine1 = sGotAddressLine1
+										Set sAddressLine2 = sGotAddressLine2
+										Set sSuburb = sGotSuburb
+										Set sPostcode = sGotPostcode
+										Set sState = sGotState
+										Set sCountry = sGotCountry
+										Set sAreaCode = sGotAreaCode
+										Set sPhoneNo = sGotPhoneNo
+										Set sAreaCodeFax = sGotAreaCodeFax
+										Set sFaxNo = sGotFaxNo
+										Set sComments = sGotComments
+										Set sMeetId = sGotMeetId
+										Set sMainAddressFlag = sGotMainAddressFlag
+										Return TRUE
+									Else If sAddressType = 'BUS'
+										Set sAddressType = 'POSTAL'
+									Else If sAddressType = 'POSTAL'
+										Set sAddressType = 'HOME'
+									Else If sAddressType = 'HOME'
+										Set sAddressType = 'SHIP'
+									Else If sAddressType = 'SHIP'
+										Set sAddressType = 'RAIL'
+									Else If sAddressType = 'RAIL'
+										Set sAddressType = 'ANY'
+										Set bStopFetch = TRUE
+								Else
+									Set bStopFetch = TRUE
+									Return FALSE
+							!
+							Call haSqlHandles[ nOurAnyHandleNo ].Setup( sSqlAnyHandle, sNameAnyHandle, sBindAnyHandle, sIntoAnyHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurAnyHandleNo ].hSqlHandle )
+							!
+							If bStopFetch AND sAddressType = 'ANY'
+								If haSqlHandles[ nOurAnyHandleNo ].Execute( )
+									Call haSqlHandles[ nOurAnyHandleNo ].FetchNext( nInd )
+									!
+									Set dtAddressDT = dtGotAddressDT
+									Set sAddrType = sGotAddressType
+									Set sAddressLine1 = sGotAddressLine1
+									Set sAddressLine2 = sGotAddressLine2
+									Set sSuburb = sGotSuburb
+									Set sPostcode = sGotPostcode
+									Set sState = sGotState
+									Set sCountry = sGotCountry
+									Set sAreaCode = sGotAreaCode
+									Set sPhoneNo = sGotPhoneNo
+									Set sAreaCodeFax = sGotAreaCodeFax
+									Set sFaxNo = sGotFaxNo
+									Set sComments = sGotComments
+									Set sMeetId = sGotMeetId
+									Set sMainAddressFlag = sGotMainAddressFlag
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurAnyHandleNo ].Disconnect( )
+							Return TRUE
+			Function: GetPostalAddress
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					Receive Date/Time: dtAddressDT
+					Receive String: sAddrType
+					Receive String: sAddressLine1
+					Receive String: sAddressLine2
+					Receive String: sSuburb
+					Receive String: sPostcode
+					Receive String: sState
+					Receive String: sCountry
+					Receive String: sAreaCode
+					Receive String: sPhoneNo
+					Receive String: sAreaCodeFax
+					Receive String: sFaxNo
+					Receive String: sComments
+					Receive String: sMeetId
+					Receive String: sMainAddressFlag
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSqlHandle
+					String: sBindHandle
+					String: sIntoHandle
+					String: sNameHandle
+					Number: nOurHandleNo
+					Number: nInd
+					Number: nGotParentCustNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetPostalAddressGETPARENTCSTNO' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							! if editing bellow sql statement NOTE that this exact name and statement is referenced in 
+									GetMainAddress function so you must change both.
+							Set sSqlHandle = " SELECT
+									  Ass_Cust_No
+									FROM
+									  Customer_Master
+									WHERE
+									  Cust_No = :1 "
+							Set sNameHandle = 'GETPARENTCSTNO'
+							Set sBindHandle = ':nCustNo'
+							Set sIntoHandle = ':nGotParentCustNo'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSqlHandle, sNameHandle, sBindHandle, sIntoHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nGotParentCustNo = NUMBER_Null
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									If nGotParentCustNo > 0
+										If GetPostalAddressPrivateFunction( nGotParentCustNo,
+												dtAddressDT,
+												sAddrType,
+												sAddressLine1,
+												sAddressLine2,
+												sSuburb,
+												sPostcode,
+												sState,
+												sCountry,
+												sAreaCode,
+												sPhoneNo,
+												sAreaCodeFax,
+												sFaxNo,
+												sComments,
+												sMeetId,
+												sMainAddressFlag,
+												SH_cls_Execute )
+											Return TRUE
+							Return GetPostalAddressPrivateFunction( nCustNo,
+									dtAddressDT,
+									sAddrType,
+									sAddressLine1,
+									sAddressLine2,
+									sSuburb,
+									sPostcode,
+									sState,
+									sCountry,
+									sAreaCode,
+									sPhoneNo,
+									sAreaCodeFax,
+									sFaxNo,
+									sComments,
+									sMeetId,
+									sMainAddressFlag,
+									SH_cls_Execute )
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call GetPostalAddressPrivateFunction( 0,
+									dtAddressDT,
+									sAddrType,
+									sAddressLine1,
+									sAddressLine2,
+									sSuburb,
+									sPostcode,
+									sState,
+									sCountry,
+									sAreaCode,
+									sPhoneNo,
+									sAreaCodeFax,
+									sFaxNo,
+									sComments,
+									sMeetId,
+									sMainAddressFlag,
+									SH_cls_Disconnect )
+							Return TRUE
+			Function: GetPostalAddressPrivateFunction
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					Receive Date/Time: dtAddressDT
+					Receive String: sAddrType
+					Receive String: sAddressLine1
+					Receive String: sAddressLine2
+					Receive String: sSuburb
+					Receive String: sPostcode
+					Receive String: sState
+					Receive String: sCountry
+					Receive String: sAreaCode
+					Receive String: sPhoneNo
+					Receive String: sAreaCodeFax
+					Receive String: sFaxNo
+					Receive String: sComments
+					Receive String: sMeetId
+					Receive String: sMainAddressFlag
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: fcOurAnyHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSqlHandle
+					String: sBindHandle
+					String: sIntoHandle
+					String: sNameHandle
+					!
+					Number: nOurHandleNo
+					Number: nOurAnyHandleNo
+					String: sSqlAnyHandle
+					String: sBindAnyHandle
+					String: sIntoAnyHandle
+					String: sNameAnyHandle
+					!
+					Date/Time: dtGotAddressDT
+					String: sGotAddressType
+					String: sGotAddressLine1
+					String: sGotAddressLine2
+					String: sGotSuburb
+					String: sGotPostcode
+					String: sGotState
+					String: sGotCountry
+					String: sGotAreaCode
+					String: sGotPhoneNo
+					String: sGotAreaCodeFax
+					String: sGotFaxNo
+					String: sGotComments
+					String: sGotMeetId
+					String: sGotMainAddressFlag
+					!
+					Number: nInd
+					!
+					String: sAddressType
+					Boolean: bStopFetch
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetPostalAddressPrivateFunctionGETPOSADDRS' )
+					Set nOurAnyHandleNo = SqlHandlesGetReferenceNo( 'GetPostalAddressPrivateFunctionGETPOSANYADDRS' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSqlHandle = " SELECT 
+									Add_Added_DT, 
+									Address_Type, 
+									Address_1, 
+									Address_2,
+									Suburb,
+									Postcode,
+									State,
+									Country,
+									Area_Code,
+									Phone_No,
+									Area_Code_Fax,
+									Fax_No,
+									Comments,
+									Address_Meet_Id,
+									Main_Address_Flag 
+									FROM Customer_Address 
+									WHERE Cust_No = :1 AND Address_Type = :2 "
+							Set sNameHandle = 'GETBUSADDRS'
+							Set sBindHandle = ':nCustNo, :sAddressType'
+							Set sIntoHandle = ':dtGotAddressDT, :sGotAddressType, :sGotAddressLine1, :sGotAddressLine2, :sGotSuburb, :sGotPostcode,:sGotState, 
+									:sGotCountry, :sGotAreaCode, :sGotPhoneNo, :sGotAreaCodeFax, :sGotFaxNo, :sGotComments, 
+									:sGotMeetId, :sGotMainAddressFlag'
+							!
+							Set sSqlAnyHandle = " SELECT 
+									Add_Added_DT, 
+									Address_Type, 
+									Address_1, 
+									Address_2,
+									Suburb,
+									Postcode,
+									State,
+									Country,
+									Area_Code,
+									Phone_No,
+									Area_Code_Fax,
+									Fax_No,
+									Comments,
+									Address_Meet_Id,
+									Main_Address_Flag 
+									FROM Customer_Address 
+									WHERE Cust_No = :1 "
+							Set sNameAnyHandle = 'GETBUSANYADDRS'
+							Set sBindAnyHandle = ':nCustNo'
+							Set sIntoAnyHandle = ':dtGotAddressDT, :sGotAddressType, :sGotAddressLine1, :sGotAddressLine2, :sGotSuburb, :sGotPostcode,:sGotState, 
+									:sGotCountry, :sGotAreaCode, :sGotPhoneNo, :sGotAreaCodeFax, :sGotFaxNo, :sGotComments, 
+									:sGotMeetId, :sGotMainAddressFlag'
+							!
+							Set dtAddressDT = DATETIME_Null
+							Set sAddressType = ''
+							Set sAddressLine1 = ''
+							Set sAddressLine2 = ''
+							Set sSuburb = ''
+							Set sPostcode = ''
+							Set sState = ''
+							Set sCountry = ''
+							Set sAreaCode = ''
+							Set sPhoneNo = ''
+							Set sAreaCodeFax = ''
+							Set sFaxNo = ''
+							Set sComments = ''
+							Set sMeetId = ''
+							Set sMainAddressFlag = ''
+							!
+							Set dtGotAddressDT = DATETIME_Null
+							Set sGotAddressType = ''
+							Set sGotAddressLine1 = ''
+							Set sGotAddressLine2 = ''
+							Set sGotSuburb = ''
+							Set sGotPostcode = ''
+							Set sGotState = ''
+							Set sGotCountry = ''
+							Set sGotAreaCode = ''
+							Set sGotPhoneNo = ''
+							Set sGotAreaCodeFax = ''
+							Set sGotFaxNo = ''
+							Set sGotComments = ''
+							Set sGotMeetId = ''
+							Set sGotMainAddressFlag = ''
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSqlHandle, sNameHandle, sBindHandle, sIntoHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sAddressType = 'POSTAL'
+							Set bStopFetch = FALSE
+							Set nInd = FETCH_EOF
+							While nInd != FETCH_Ok AND NOT bStopFetch
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+										Set dtAddressDT = dtGotAddressDT
+										Set sAddrType = sGotAddressType
+										Set sAddressLine1 = sGotAddressLine1
+										Set sAddressLine2 = sGotAddressLine2
+										Set sSuburb = sGotSuburb
+										Set sPostcode = sGotPostcode
+										Set sState = sGotState
+										Set sCountry = sGotCountry
+										Set sAreaCode = sGotAreaCode
+										Set sPhoneNo = sGotPhoneNo
+										Set sAreaCodeFax = sGotAreaCodeFax
+										Set sFaxNo = sGotFaxNo
+										Set sComments = sGotComments
+										Set sMeetId = sGotMeetId
+										Set sMainAddressFlag = sGotMainAddressFlag
+										Return TRUE
+									Else If sAddressType = 'POSTAL'
+										Set sAddressType = 'BUS'
+									Else If sAddressType = 'BUS'
+										Set sAddressType = 'HOME'
+									Else If sAddressType = 'HOME'
+										Set sAddressType = 'SHIP'
+									Else If sAddressType = 'SHIP'
+										Set sAddressType = 'RAIL'
+									Else If sAddressType = 'RAIL'
+										Set sAddressType = 'ANY'
+										Set bStopFetch = TRUE
+								Else
+									Set bStopFetch = TRUE
+									Return FALSE
+							!
+							Call haSqlHandles[ nOurAnyHandleNo ].Setup( sSqlAnyHandle, sNameAnyHandle, sBindAnyHandle, sIntoAnyHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurAnyHandleNo ].hSqlHandle )
+							!
+							If bStopFetch AND sAddressType = 'ANY'
+								If haSqlHandles[ nOurAnyHandleNo ].Execute( )
+									Call haSqlHandles[ nOurAnyHandleNo ].FetchNext( nInd )
+									!
+									Set dtAddressDT = dtGotAddressDT
+									Set sAddrType = sGotAddressType
+									Set sAddressLine1 = sGotAddressLine1
+									Set sAddressLine2 = sGotAddressLine2
+									Set sSuburb = sGotSuburb
+									Set sPostcode = sGotPostcode
+									Set sState = sGotState
+									Set sCountry = sGotCountry
+									Set sAreaCode = sGotAreaCode
+									Set sPhoneNo = sGotPhoneNo
+									Set sAreaCodeFax = sGotAreaCodeFax
+									Set sFaxNo = sGotFaxNo
+									Set sComments = sGotComments
+									Set sMeetId = sGotMeetId
+									Set sMainAddressFlag = sGotMainAddressFlag
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call haSqlHandles[ nOurAnyHandleNo ].Disconnect( )
+							Return TRUE
+			Function: GetMainAddress
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					Receive Date/Time: dtAddressDT
+					Receive String: sAddrType
+					Receive String: sAddressLine1
+					Receive String: sAddressLine2
+					Receive String: sSuburb
+					Receive String: sPostcode
+					Receive String: sState
+					Receive String: sCountry
+					Receive String: sAreaCode
+					Receive String: sPhoneNo
+					Receive String: sAreaCodeFax
+					Receive String: sFaxNo
+					Receive String: sComments
+					Receive String: sMeetId
+					String: sMainAddressFlag
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSqlHandle
+					String: sBindHandle
+					String: sIntoHandle
+					String: sNameHandle
+					Number: nOurHandleNo
+					Number: nInd
+					Number: nGotParentCustNo
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetMainAddressGETPARENTCSTNO' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							! if editing bellow sql statement NOTE that this exact name and statement is referenced in 
+									GetBusAddress function so you must change both.
+							Set sSqlHandle = " SELECT
+									  Ass_Cust_No
+									FROM
+									  Customer_Master
+									WHERE
+									  Cust_No = :1 "
+							Set sNameHandle = 'GETPARENTCSTNO'
+							Set sBindHandle = ':nCustNo'
+							Set sIntoHandle = ':nGotParentCustNo'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSqlHandle, sNameHandle, sBindHandle, sIntoHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set nGotParentCustNo = NUMBER_Null
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									If nGotParentCustNo > 0
+										If GetMainAddressPrivateFunction( nGotParentCustNo,
+												dtAddressDT,
+												sAddrType,
+												sAddressLine1,
+												sAddressLine2,
+												sSuburb,
+												sPostcode,
+												sState,
+												sCountry,
+												sAreaCode,
+												sPhoneNo,
+												sAreaCodeFax,
+												sFaxNo,
+												sComments,
+												sMeetId,
+												sMainAddressFlag, 
+												SH_cls_Execute )
+											Return TRUE
+							Return GetMainAddressPrivateFunction( nCustNo,
+									dtAddressDT,
+									sAddrType,
+									sAddressLine1,
+									sAddressLine2,
+									sSuburb,
+									sPostcode,
+									sState,
+									sCountry,
+									sAreaCode,
+									sPhoneNo,
+									sAreaCodeFax,
+									sFaxNo,
+									sComments,
+									sMeetId,
+									sMainAddressFlag,
+									SH_cls_Execute )
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call GetMainAddressPrivateFunction( 0,
+									dtAddressDT,
+									sAddrType,
+									sAddressLine1,
+									sAddressLine2,
+									sSuburb,
+									sPostcode,
+									sState,
+									sCountry,
+									sAreaCode,
+									sPhoneNo,
+									sAreaCodeFax,
+									sFaxNo,
+									sComments,
+									sMeetId,
+									sMainAddressFlag,
+									SH_cls_Disconnect )
+							Return TRUE
+			Function: GetMainAddressPrivateFunction
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					Receive Date/Time: dtAddressDT
+					Receive String: sAddrType
+					Receive String: sAddressLine1
+					Receive String: sAddressLine2
+					Receive String: sSuburb
+					Receive String: sPostcode
+					Receive String: sState
+					Receive String: sCountry
+					Receive String: sAreaCode
+					Receive String: sPhoneNo
+					Receive String: sAreaCodeFax
+					Receive String: sFaxNo
+					Receive String: sComments
+					Receive String: sMeetId
+					String: sMainAddressFlag
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSqlHandle
+					String: sBindHandle
+					String: sIntoHandle
+					String: sNameHandle
+					!
+					Number: nOurHandleNo
+					Date/Time: dtGotAddressDT
+					String: sGotAddrType
+					String: sGotAddressLine1
+					String: sGotAddressLine2
+					String: sGotSuburb
+					String: sGotPostcode
+					String: sGotState
+					String: sGotCountry
+					String: sGotAreaCode
+					String: sGotPhoneNo
+					String: sGotAreaCodeFax
+					String: sGotFaxNo
+					String: sGotComments
+					String: sGotMeetId
+					String: sGotMainAddressFlag
+					!
+					Number: nInd
+					Boolean: bOk
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetMainAddressPrivateFunctionGETMAINADDRS' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSqlHandle = " SELECT 
+									Add_Added_DT, 
+									Address_Type, 
+									Address_1, 
+									Address_2,
+									Suburb,
+									Postcode,
+									State,
+									Country,
+									Area_Code,
+									Phone_No,
+									Area_Code_Fax,
+									Fax_No,
+									Comments,
+									Address_Meet_Id
+									FROM Customer_Address 
+									WHERE Cust_No = :1 AND Main_Address_Flag = 'Y' "
+							Set sNameHandle = 'GETMAINADDRS'
+							Set sBindHandle = ':nCustNo'
+							Set sIntoHandle = ':dtGotAddressDT, :sGotAddrType, :sGotAddressLine1, :sGotAddressLine2, :sGotSuburb, :sGotPostcode,:sGotState, 
+									:sGotCountry, :sGotAreaCode, :sGotPhoneNo, :sGotAreaCodeFax, :sGotFaxNo, :sGotComments, 
+									:sGotMeetId'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSqlHandle, sNameHandle, sBindHandle, sIntoHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set dtAddressDT = DATETIME_Null
+							Set sAddrType = ''
+							Set sAddressLine1 = ''
+							Set sAddressLine2 = ''
+							Set sSuburb = ''
+							Set sPostcode = ''
+							Set sState = ''
+							Set sCountry = ''
+							Set sAreaCode = ''
+							Set sPhoneNo = ''
+							Set sAreaCodeFax = ''
+							Set sFaxNo = ''
+							Set sComments = ''
+							Set sMeetId = ''
+							Set sMainAddressFlag = ''
+							!
+							Set dtGotAddressDT = DATETIME_Null
+							Set sGotAddrType = ''
+							Set sGotAddressLine1 = ''
+							Set sGotAddressLine2 = ''
+							Set sGotSuburb = ''
+							Set sGotPostcode = ''
+							Set sGotState = ''
+							Set sGotCountry = ''
+							Set sGotAreaCode = ''
+							Set sGotPhoneNo = ''
+							Set sGotAreaCodeFax = ''
+							Set sGotFaxNo = ''
+							Set sGotComments = ''
+							Set sGotMeetId = ''
+							Set sGotMainAddressFlag = ''
+							!
+							Set bOk = FALSE
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set dtAddressDT = dtGotAddressDT
+									Set sAddrType = sGotAddrType
+									Set sAddressLine1 = sGotAddressLine1
+									Set sAddressLine2 = sGotAddressLine2
+									Set sSuburb = sGotSuburb
+									Set sPostcode = sGotPostcode
+									Set sState = sGotState
+									Set sCountry = sGotCountry
+									Set sAreaCode = sGotAreaCode
+									Set sPhoneNo = sGotPhoneNo
+									Set sAreaCodeFax = sGotAreaCodeFax
+									Set sFaxNo = sGotFaxNo
+									Set sComments = sGotComments
+									Set sMeetId = sGotMeetId
+									Set sMainAddressFlag = sGotMainAddressFlag
+									Set bOk = TRUE
+								Else
+									Set bOk = FALSE
+							Else
+								Set bOk = FALSE
+							!
+							If bOk
+								Return TRUE
+							Else
+								Return GetBusAddressPrivateFunction( nCustNo,
+										dtAddressDT,
+										sAddrType,
+										sAddressLine1,
+										sAddressLine2,
+										sSuburb,
+										sPostcode,
+										sState,
+										sCountry,
+										sAreaCode,
+										sPhoneNo,
+										sAreaCodeFax,
+										sFaxNo,
+										sComments,
+										sMeetId,
+										sMainAddressFlag,
+										SH_cls_Execute )
+						Case SH_cls_Disconnect
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Call GetBusAddressPrivateFunction( 0,
+									dtAddressDT,
+									sAddrType,
+									sAddressLine1,
+									sAddressLine2,
+									sSuburb,
+									sPostcode,
+									sState,
+									sCountry,
+									sAreaCode,
+									sPhoneNo,
+									sAreaCodeFax,
+									sFaxNo,
+									sComments,
+									sMeetId,
+									sMainAddressFlag,
+									SH_cls_Disconnect )
+							Return TRUE
+			Function: GetAddressFromDelType
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					String: sAddressType
+					Receive String: sAddressLine1
+					Receive String: sAddressLine2
+					Receive String: sSuburb
+					Receive String: sPostcode
+					Receive String: sState
+					Receive String: sCountry
+					Receive String: sAreaCode
+					Receive String: sPhoneNo
+					Receive String: sAreaCodeFax
+					Receive String: sFaxNo
+					Receive String: sComments
+					Receive String: sMeetId
+					Receive String: sMainAddressFlag
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					String: sGotAddressLine1
+					String: sGotAddressLine2
+					String: sGotSuburb
+					String: sGotPostcode
+					String: sGotState
+					String: sGotCountry
+					String: sGotAreaCode
+					String: sGotPhoneNo
+					String: sGotAreaCodeFax
+					String: sGotFaxNo
+					String: sGotComments
+					String: sGotMeetId
+					String: sGotMainAddressFlag
+					!
+					Number: nInd
+					Boolean: bStopFetch
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETADDRSFRMTYPE' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT 
+									Address_1, 
+									Address_2,
+									Suburb,
+									Postcode,
+									State,
+									Country,
+									Area_Code,
+									Phone_No,
+									Area_Code_Fax,
+									Fax_No,
+									Comments,
+									Address_Meet_Id,
+									Main_Address_Flag 
+									FROM Customer_Address 
+									WHERE Cust_No = :1 AND Address_Type = :2 "
+							Set sName = 'GETADDRSFRMTYPE'
+							Set sBind = ':nCustNo, :sAddressType'
+							Set sInto = ':sGotAddressLine1, :sGotAddressLine2, :sGotSuburb, :sGotPostcode,:sGotState, 
+									:sGotCountry, :sGotAreaCode, :sGotPhoneNo, :sGotAreaCodeFax, :sGotFaxNo, :sGotComments, 
+									:sGotMeetId, :sGotMainAddressFlag'
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sAddressLine1 = ''
+							Set sAddressLine2 = ''
+							Set sSuburb = ''
+							Set sPostcode = ''
+							Set sState = ''
+							Set sCountry = ''
+							Set sAreaCode = ''
+							Set sPhoneNo = ''
+							Set sAreaCodeFax = ''
+							Set sFaxNo = ''
+							Set sComments = ''
+							Set sMeetId = ''
+							Set sMainAddressFlag = ''
+							!
+							Set sGotAddressLine1 = ''
+							Set sGotAddressLine2 = ''
+							Set sGotSuburb = ''
+							Set sGotPostcode = ''
+							Set sGotState = ''
+							Set sGotCountry = ''
+							Set sGotAreaCode = ''
+							Set sGotPhoneNo = ''
+							Set sGotAreaCodeFax = ''
+							Set sGotFaxNo = ''
+							Set sGotComments = ''
+							Set sGotMeetId = ''
+							Set sGotMainAddressFlag = ''
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								Call haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+								!
+								Set sAddressLine1 = sGotAddressLine1
+								Set sAddressLine2 = sGotAddressLine2
+								Set sSuburb = sGotSuburb
+								Set sPostcode = sGotPostcode
+								Set sState = sGotState
+								Set sCountry = sGotCountry
+								Set sAreaCode = sGotAreaCode
+								Set sPhoneNo = sGotPhoneNo
+								Set sAreaCodeFax = sGotAreaCodeFax
+								Set sFaxNo = sGotFaxNo
+								Set sComments = sGotComments
+								Set sMeetId = sGotMeetId
+								Set sMainAddressFlag = sGotMainAddressFlag
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: GetAddressFromAddrDT
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					Date/Time: dtAddrDT
+					Receive String: sAddressLine1
+					Receive String: sAddressLine2
+					Receive String: sSuburb
+					Receive String: sPostcode
+					Receive String: sState
+					Receive String: sCountry
+					Receive String: sAreaCode
+					Receive String: sPhoneNo
+					Receive String: sAreaCodeFax
+					Receive String: sFaxNo
+					Receive String: sComments
+					Receive String: sMeetId
+					Receive String: sMainAddressFlag
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					String: sGotAddressLine1
+					String: sGotAddressLine2
+					String: sGotSuburb
+					String: sGotPostcode
+					String: sGotState
+					String: sGotCountry
+					String: sGotAreaCode
+					String: sGotPhoneNo
+					String: sGotAreaCodeFax
+					String: sGotFaxNo
+					String: sGotComments
+					String: sGotMeetId
+					String: sGotMainAddressFlag
+					!
+					Number: nInd
+					Boolean: bStopFetch
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetAddressFromAddrDT' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT
+									Address_1,
+									Address_2,
+									Suburb,
+									Postcode,
+									State,
+									Country,
+									Area_Code,
+									Phone_No,
+									Area_Code_Fax,
+									Fax_No,
+									Comments,
+									Address_Meet_Id,
+									Main_Address_Flag
+									FROM Customer_Address
+									WHERE Cust_No = :1 AND Add_Added_DT = :2 "
+							Set sName = 'GTADRFADRDT'
+							Set sBind = ':nCustNo, :dtAddrDT'
+							Set sInto = ':sGotAddressLine1, :sGotAddressLine2, :sGotSuburb, :sGotPostcode,:sGotState,
+									:sGotCountry, :sGotAreaCode, :sGotPhoneNo, :sGotAreaCodeFax, :sGotFaxNo, :sGotComments,
+									:sGotMeetId, :sGotMainAddressFlag'
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sAddressLine1 = ''
+							Set sAddressLine2 = ''
+							Set sSuburb = ''
+							Set sPostcode = ''
+							Set sState = ''
+							Set sCountry = ''
+							Set sAreaCode = ''
+							Set sPhoneNo = ''
+							Set sAreaCodeFax = ''
+							Set sFaxNo = ''
+							Set sComments = ''
+							Set sMeetId = ''
+							Set sMainAddressFlag = ''
+							!
+							Set sGotAddressLine1 = ''
+							Set sGotAddressLine2 = ''
+							Set sGotSuburb = ''
+							Set sGotPostcode = ''
+							Set sGotState = ''
+							Set sGotCountry = ''
+							Set sGotAreaCode = ''
+							Set sGotPhoneNo = ''
+							Set sGotAreaCodeFax = ''
+							Set sGotFaxNo = ''
+							Set sGotComments = ''
+							Set sGotMeetId = ''
+							Set sGotMainAddressFlag = ''
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								Call haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+								!
+								Set sAddressLine1 = sGotAddressLine1
+								Set sAddressLine2 = sGotAddressLine2
+								Set sSuburb = sGotSuburb
+								Set sPostcode = sGotPostcode
+								Set sState = sGotState
+								Set sCountry = sGotCountry
+								Set sAreaCode = sGotAreaCode
+								Set sPhoneNo = sGotPhoneNo
+								Set sAreaCodeFax = sGotAreaCodeFax
+								Set sFaxNo = sGotFaxNo
+								Set sComments = sGotComments
+								Set sMeetId = sGotMeetId
+								Set sMainAddressFlag = sGotMainAddressFlag
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: GetMainContact
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					Receive String: sContactTitle
+					Receive String: sContactGivenName
+					Receive String: sContactSurname
+					Boolean: bForceOnlyMainContact
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					String: sGotContactTitle
+					String: sGotContactGivenName
+					String: sGotContactSurname
+					String: sGotMainContactFlag
+					!
+					Number: nInd
+					Boolean: bFound
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetMainContact' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT 
+									  Contact_Title, 
+									  Contact_Given_Name, 
+									  Contact_Surname, 
+									  Main_Contact_Flag 
+									FROM 
+									  Customer_Contacts 
+									WHERE 
+									  Cust_No = :1 
+									ORDER BY 
+									  Main_Contact_Flag DESC "
+							Set sName = 'GTCSTMAINCNTCT'
+							Set sBind = ':nCustNo'
+							Set sInto = ':sGotContactTitle, :sGotContactGivenName, :sGotContactSurname, :sGotMainContactFlag'
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sContactTitle = ''
+							Set sContactGivenName = ''
+							Set sContactSurname = ''
+							!
+							Set sGotContactTitle = ''
+							Set sGotContactGivenName = ''
+							Set sGotContactSurname = ''
+							Set sGotMainContactFlag = ''
+							Set bFound = FALSE
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								While haSqlHandles[ nOurHandleNo ].FetchNext( nInd ) AND NOT bFound
+									If bForceOnlyMainContact
+										If sGotMainContactFlag = 'Y'
+											Set bFound = TRUE
+										Else
+											Set bFound = FALSE
+									Else
+										Set bFound = TRUE
+									!
+									If bFound
+										Set sContactTitle = sGotContactTitle
+										Set sContactGivenName = sGotContactGivenName
+										Set sContactSurname = sGotContactSurname
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: FormatAttentionContactName
+				Description:
+				Returns
+					String:
+				Parameters
+					String: sTitle
+					String: sGivenName
+					String: sSurname
+				Static Variables
+				Local variables
+				Actions
+					Return 'Attn: ' || SalStrTrimX( sTitle ) || ' ' || SalStrTrimX( sGivenName ) || ' ' || SalStrTrimX( sSurname )
+			!
+			Function: FixLineSpaceAddress
+				Description: This function assumes that the variables passed in for all paramentes are strings of the 
+						same length.  Even though the database columns are not, data can be fetched into variables
+						of the same length.  This function will then remove any blank line ( ie null string ) by 
+						suffling DOWN the parameters values.  Therefore the names of the parements will not
+						necessaraly match the values.
+				Returns
+				Parameters
+					String: sAttention
+					String: sCustName
+					String: sBusName
+					String: sAddrL1
+					String: sAddrL2
+					String: sSuburb
+					String: sState
+					String: sPostcode
+					Receive String: sAddressLine1
+					Receive String: sAddressLine2
+					Receive String: sAddressLine3
+					Receive String: sAddressLine4
+					Receive String: sAddressLine5
+					Receive String: sAddressLine6
+				Static Variables
+					Number: nLine
+				Local variables
+					String: sField
+					Number: nField
+				Actions
+					Set nField = 1
+					Set sField = ''
+					While sField = '' AND nField <= 6
+						Set sField = NextField( sAttention, sCustName, sBusName, sAddrL1, sAddrL2, sSuburb, sState, sPostcode, nField )
+						Set nField = nField + 1
+					Set sAddressLine1 = sField
+					!
+					Set sField = ''
+					While sField = '' AND nField <= 6
+						Set sField = NextField( sAttention, sCustName, sBusName, sAddrL1, sAddrL2, sSuburb, sState, sPostcode, nField )
+						Set nField = nField + 1
+					Set sAddressLine2 = sField
+					!
+					Set sField = ''
+					While sField = '' AND nField <= 6
+						Set sField = NextField( sAttention, sCustName, sBusName, sAddrL1, sAddrL2, sSuburb, sState, sPostcode, nField )
+						Set nField = nField + 1
+					Set sAddressLine3 = sField
+					!
+					Set sField = ''
+					While sField = '' AND nField <= 6
+						Set sField = NextField( sAttention, sCustName, sBusName, sAddrL1, sAddrL2, sSuburb, sState, sPostcode, nField )
+						Set nField = nField + 1
+					Set sAddressLine4 = sField
+					!
+					Set sField = ''
+					While sField = '' AND nField <= 6
+						Set sField = NextField( sAttention, sCustName, sBusName, sAddrL1, sAddrL2, sSuburb, sState, sPostcode, nField )
+						Set nField = nField + 1
+					Set sAddressLine5 = sField
+					!
+					Set sField = ''
+					While sField = '' AND nField <= 6
+						Set sField = NextField( sAttention, sCustName, sBusName, sAddrL1, sAddrL2, sSuburb, sState, sPostcode, nField )
+						Set nField = nField + 1
+					Set sAddressLine6 = sField
+			Function: NextField
+				Description:
+				Returns
+					String:
+				Parameters
+					String: sAttention
+					String: sCustName
+					String: sBusName
+					String: sAddrL1
+					String: sAddrL2
+					String: sSuburb
+					String: sState
+					String: sPostcode
+					Number: nProcessingFieldNo
+				Static Variables
+				Local variables
+				Actions
+					Select Case nProcessingFieldNo
+						Case 1
+							Return sAttention
+						Case 2
+							Return sCustName
+						Case 3
+							Return sBusName
+						Case 4
+							Return sAddrL1
+						Case 5
+							Return sAddrL2
+						Case 6
+							Return sSuburb || '  ' || sState || '  ' || sPostcode
+						Default
+							Return ''
+					! Select Case nProcessingFieldNo
+						   Case 1
+							   If sCustName = ''
+								   Return sBusName
+							   Else 
+								   Return sCustName
+						   Case 2
+							   If sBusName = ''
+								   Return sAddrL1
+							   Else 
+								   Return sBusName
+						   Case 3
+							   If sAddrL1 = ''
+								   Return sAddrL2
+							   Else 
+								   Return sAddrL1
+						   Case 4
+							   If sAddrL2 = ''
+								   Return sSuburb || ' ' || sState || ' ' || sPostcode
+							   Else 
+								   Return sAddrL2
+						   Case 5
+							   Return sSuburb || ' ' || sState || ' ' || sPostcode
+						   Default 
+							   Return ''
+			Function: SwapSurnameWithFirstname
+				Description:
+				Returns
+				Parameters
+					Receive String: sCustName
+				Static Variables
+				Local variables
+					Number: nCommaPos
+					String: sCustLeftName
+					String: sCustRightName
+				Actions
+					Set nCommaPos = SalStrScan( sCustName, ',' )
+					If nCommaPos >= 0
+						Call SalStrLeft( sCustName, nCommaPos, sCustLeftName )
+						Call SalStrMid( sCustName, nCommaPos + 2, SalStrLength( sCustName ) - nCommaPos, sCustRightName )
+						Set sCustName = sCustRightName || ' ' || sCustLeftName
+			!
+			! Function: FormatAddressToAddressLines
+				   Description: 
+				   Returns 
+				   Parameters 
+					   String: sCustName
+					   String: sBusName
+					   String: sAddrL1
+					   String: sAddrL2
+					   String: sSuburb
+					   String: sState
+					   String: sPostcode
+					   Receive String: sAddressLine1
+					   Receive String: sAddressLine2
+					   Receive String: sAddressLine3
+					   Receive String: sAddressLine4
+					   Receive String: sAddressLine5
+				   Static Variables 
+				   Local variables 
+					   String: sAddressLines[5]
+					   String: sFormatedAddressLines[5]
+					   Number: nAddrPos
+					   Number: nFmtAddrPos
+				   Actions 
+					   Set sAddressLines[1] = sCustName
+					   Set sAddressLines[2] = sBusName
+					   Set sAddressLines[3] = sAddrL2
+					   Set sAddressLines[4] = sAddrL1
+					   Set sAddressLines[5] = sSuburb || ' ' || sState || ' ' || sPostcode
+					!
+					   Set sFormatedAddressLines[1] = ''
+					   Set sFormatedAddressLines[2] = ''
+					   Set sFormatedAddressLines[3] = ''
+					   Set sFormatedAddressLines[4] = ''
+					   Set sFormatedAddressLines[5] = ''
+					!
+					! Set nWorkPos = 1
+					! While nWorkPos < 6
+						   Set nPos = nWorkPos
+						   While sAddressLines[ nPos ] = ''
+							   While nPos < 6
+								   Set sAddressLines[ nPos ] = sAddressLines[ nPos + 1 ]
+								   Set nPos = nPos + 1
+							   Set sAddressLines[ nPos ] = ''
+						   Set nWorkPos = nWorkPos + 1
+					!
+					   Set nAddrPos = 1
+					   Set nFmtAddrPos = 1
+					   While nAddrPos <= 5
+						   If sAddressLines[ nAddrPos ] != ''
+							   Set sFormatedAddressLines[ nFmtAddrPos ] = sAddressLines[ nAddrPos ]
+							   Set nFmtAddrPos = nFmtAddrPos + 1
+						   Set nAddrPos = nAddrPos + 1
+					!
+					   Set sAddressLine1 = sFormatedAddressLines[1]
+					   Set sAddressLine2 = sFormatedAddressLines[2]
+					   Set sAddressLine3 = sFormatedAddressLines[3]
+					   Set sAddressLine4 = sFormatedAddressLines[4]
+					   Set sAddressLine5 = sFormatedAddressLines[5]
+			!
+			! Function: GetContactDetails
+				   Description: 
+				   Returns 
+					   Boolean: 
+				   Parameters 
+					   Number: nCustNo
+					   Receive String: sContactTitle
+					   Receive String: sContactGivenName
+					   Receive String: sContactSurname
+					   Receive String: sContactWrkPhCode
+					   Receive String: sContactWrkPh
+					   Receive String: sContactAHPhCode
+					   Receive String: sContactAHPh
+					   Number: nActionType
+				   Static Variables 
+					   : fcOurHandle
+					   : fcOurAnyHandle
+				   Local variables 
+					   String: sSql
+					   String: sFuncName
+					   Boolean: bOk
+					   Number: nInd
+					   String: sGotContactTitle
+					   String: sGotContactGivenName
+					   String: sGotContactSurname
+					   String: sGotContactWrkPhCode
+					   String: sGotContactWrkPh
+					   String: sGotContactAHPhCode
+					   String: sGotContactAHPh
+				   Actions 
+					   Select Case nActionType
+						   Case nExecute
+							   Loop Execute
+								   Loop Connect
+									   If NOT bHandleConnected
+										   Set bHandleConnected = SqlConnect( hSqlHandle ) 
+										   If bHandleConnected
+											   Call SqlSetLockTimeout( hSqlHandle, SQLTIMEOUT )
+											   Call SqlSetParameter( hSqlHandle, DBP_PRESERVE, TRUE, ''  )
+											! Break Connect
+										   Else 
+											   If IDNO = SalMessageBox( 'Could not connect handle in function '||sFuncName||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+												   Break Connect
+									   If bAnyHandleConnected
+										   Break Connect
+									   Else 
+										   Set bAnyHandleConnected = SqlConnect( hSqlAnyHandle ) 
+										   If bAnyHandleConnected
+											   Call SqlSetLockTimeout( hSqlAnyHandle, SQLTIMEOUT )
+											   Call SqlSetParameter( hSqlAnyHandle, DBP_PRESERVE, TRUE, ''  )
+											   Break Connect
+										   Else 
+											   If IDNO = SalMessageBox( 'Could not connect handle in function '||sFuncName||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+												   Break Connect
+								   Loop Prepare
+									   If NOT bHandlePrepared
+										   Set sSql = " SELECT Contact_Title, Contact_Given_Name, Contact_Surname, 
+												  Wrk_Phone_Code, Contact_Work_Phone, AH_Phone_code, Contact_AH_Phone
+												  FROM Customer_Contacts
+												  INTO :sGotContactTitle, :sGotContactGivenName, :sGotContactSurname, 
+												  :sGotContactWrkPhCode, :sGotContactWrkPh, :sGotContactAHPhCode, :sGotContactAHPh
+												  WHERE Cust_No = :nCustNo AND MAIN_CONTACT_FLAG = 'Y' "
+										   If SqlPrepare( hSqlHandle, sSql )
+											   Set bHandlePrepared = TRUE
+											! Break Prepare
+										   Else 
+											   Set bHandlePrepared = FALSE
+											   If IDNO = SalMessageBox( 'Could not prepare handle in function '||sFuncName||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+												   Break Prepare
+									   If bAnyHandlePrepared
+										   Break Prepare
+									   Else 
+										   Set sSql = ' SELECT Contact_Title, Contact_Given_Name, Contact_Surname, 
+												  Wrk_Phone_Code, Contact_Work_Phone, AH_Phone_code, Contact_AH_Phone
+												  FROM Customer_Contacts
+												  INTO :sGotContactTitle, :sGotContactGivenName, :sGotContactSurname, 
+												  :sGotContactWrkPhCode, :sGotContactWrkPh, :sGotContactAHPhCode, :sGotContactAHPh
+												  WHERE Cust_No = :nCustNo '
+										   If SqlPrepare( hSqlAnyHandle, sSql )
+											   Set bAnyHandlePrepared = TRUE
+											   Break Prepare
+										   Else 
+											   Set bAnyHandlePrepared = FALSE
+											   If IDNO = SalMessageBox( 'Could not prepare handle in function '||sFuncName||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+												   Break Prepare
+								!
+								   Set sGotContactTitle = ''
+								   Set sGotContactGivenName = ''
+								   Set sGotContactSurname = ''
+								   Set sGotContactWrkPhCode = ''
+								   Set sGotContactWrkPh = ''
+								   Set sGotContactAHPhCode = ''
+								   Set sGotContactAHPh = ''
+								!
+								   Set sContactTitle = ''
+								   Set sContactGivenName = ''
+								   Set sContactSurname = ''
+								   Set sContactWrkPhCode = ''
+								   Set sContactWrkPh = ''
+								   Set sContactAHPhCode = ''
+								   Set sContactAHPh = ''
+								!
+								   If SqlExecute( hSqlHandle )
+									   If SqlFetchNext( hSqlHandle, nInd )
+										   Set sContactTitle = sGotContactTitle
+										   Set sContactGivenName = sGotContactGivenName
+										   Set sContactSurname = sGotContactSurname
+										   Set sContactWrkPhCode = sGotContactWrkPhCode
+										   Set sContactWrkPh = sGotContactWrkPh
+										   Set sContactAHPhCode = sGotContactAHPhCode
+										   Set sContactAHPh = sGotContactAHPh
+										   Return TRUE
+									   Else 
+										   If SqlExecute( hSqlAnyHandle )
+											   Call SqlFetchNext( hSqlAnyHandle, nInd )
+											   Set sContactTitle = sGotContactTitle
+											   Set sContactGivenName = sGotContactGivenName
+											   Set sContactSurname = sGotContactSurname
+											   Set sContactWrkPhCode = sGotContactWrkPhCode
+											   Set sContactWrkPh = sGotContactWrkPh
+											   Set sContactAHPhCode = sGotContactAHPhCode
+											   Set sContactAHPh = sGotContactAHPh
+											   Return TRUE
+										   Else 
+											   Set bAnyHandlePrepared = FALSE
+											   If IDNO = SalMessageBox( 'Could not execute ANY handle in function '||sFuncName||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+												   Return FALSE
+								   Else 
+									   Set bHandlePrepared = FALSE
+									   If IDNO = SalMessageBox( 'Could not execute handle in function '||sFuncName||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+										   Return FALSE
+						   Case nDisconnect
+							   Set bOk = TRUE
+							   Loop Disconnect
+								   If bHandleConnected
+									   If SqlDisconnect( hSqlHandle )
+										   Set bHandleConnected = FALSE
+										   Set bHandlePrepared = FALSE
+									   Else 
+										   If IDNO = SalMessageBox( 'Could not disconnect handle in function '||sFuncName||'Contact programmers! RETRY?', 'Error', MB_YesNo )
+											   Set bOk = FALSE
+											   Break Disconnect
+								   If bAnyHandleConnected
+									   If SqlDisconnect( hSqlAnyHandle )
+										   Set bAnyHandleConnected = FALSE
+										   Set bAnyHandlePrepared = FALSE
+										   Break Disconnect
+									   Else 
+										   If IDNO = SalMessageBox( 'Could not disconnect ANY handle in function '||sFuncName||'Contact programmers! RETRY?', 'Error', MB_YesNo )
+											   Set bOk = FALSE
+											   Break Disconnect
+								   Else 
+									   Break Disconnect
+							   Return bOk
+						   Case nRePrepare
+							   Set bHandlePrepared = FALSE
+							   Set bAnyHandlePrepared = FALSE
+							   Return TRUE
+					! Select Case nActionType
+						   Case SH_cls_Execute
+							   Set sSql = " SELECT Sold_Out_Flag 
+									FROM Stock_Item_Sale 
+									WHERE Stock_Item_No = :1 AND Year_Of_Sale = :2 "
+							   Set sName = 'SISYREXISTS'
+							   Set sBind = ':nItemNo, :nYear'
+							   Set sInto = ':sGotSoldOutFlag'
+							!
+							   Call fcOurHandle.Setup( sSql, sName, sBind, sInto )
+							   Call SqlVarSetup( fcOurHandle.hSqlHandle )
+							!
+							   Set bExists = FALSE
+							   Set sSoldOutFlag = ''
+							   Set sGotSoldOutFlag = ''
+							!
+							   If fcOurHandle.Execute( )
+								   If fcOurHandle.FetchNext( nInd )
+									   Set bExists = TRUE
+								   Else 
+									   Set bExists = FALSE
+								   Set sSoldOutFlag = sGotSoldOutFlag
+								   Return TRUE
+							   Else 
+								   Return FALSE
+						   Case SH_cls_Disconnect
+							   Return fcOurHandle.Disconnect( )
+		Class Definitions
+.data RESOURCE 0 0 1 3600663767
+0000: 590000004A000000 0000000000000000 0200000100FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F04003C00 001063006C73546F
+0040: 6F6C546900705769 6E646F771E900000 0001000047030400 00FFFF01
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions

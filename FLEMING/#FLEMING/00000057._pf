@@ -1,0 +1,1850 @@
+Application Description: SQLWindows 5.01 Jans Form Details Class
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000C20000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF420000 0042000000D60200 007F010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D0200000007436C 617373657312636C
+0080: 73466F726D446574 7347656E6572616C
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.1"
+			Top:    2.896"
+			Width:  4.688"
+			Height: 2.99"
+		Class Editor Location
+			Visible? No
+			Left:   0.088"
+			Top:    0.042"
+			Width:  5.063"
+			Height: 2.719"
+		Tool Palette Location
+			Visible? No
+			Left:   6.6"
+			Top:    0.521"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: VTMETER.APL
+		File Include: VTSPIN.APL
+		File Include: RUNPROG.APL
+		File Include: VTWIN.APL
+		File Include: Cmbfield.apl
+		File Include: Mlfield.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Italic
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Black
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for FRMCTBL.APL
+				Number: FRMDETSaplOffSet = SAM_User + 2200
+				! Message go up to DLGCTBLaplOffSet + 99
+				Number: FRMDETSAplConstOffSet = 1100
+				! Messages
+				Number: PAM_clsFRMDETS_USERACTIONS = FRMDETSaplOffSet + 1
+				Number: PAM_clsFRMDETS_ROWINSERTED = FRMDETSaplOffSet + 2
+				Number: PAM_clsFRMDETS_ROWUPDATED = FRMDETSaplOffSet + 3
+				Number: PAM_clsFRMDETS_ROWDELETED = FRMDETSaplOffSet + 4
+				Number: PAM_clsFRMDETS_DATAVAL = FRMDETSaplOffSet + 5
+				Number: PAM_clsFRMDETS_CHECKROWNEW = FRMDETSaplOffSet + 6
+				Number: PAM_clsFRMDETS_CHECKROWEDITED = FRMDETSaplOffSet + 7
+				Number: PAM_clsFRMDETS_CHECKROWDELETED = FRMDETSaplOffSet + 8
+				Number: PAM_clsFRMDETS_DISPREC = FRMDETSaplOffSet + 9
+				Number: PAM_clsFRMDETS_NEWPREC = FRMDETSaplOffSet + 10
+				Number: PAM_clsFRMDETS_SAVE = FRMDETSaplOffSet + 11
+				Number: PAM_clsFRMDETS_DELETE = FRMDETSaplOffSet + 12
+				Number: PAM_clsFRMDETS_CLEAR = FRMDETSaplOffSet + 13
+				Number: PAM_clsFRMDETS_REPORT = FRMDETSaplOffSet + 14
+				Number: PAM_clsFRMDETS_CHECKCHANGES = FRMDETSaplOffSet + 15
+				Number: PAM_clsFRMDETS_VALIDATE = FRMDETSaplOffSet + 16
+				Number: PAM_clsFRMDETS_POPULATE = FRMDETSaplOffSet + 17
+				Number: PAM_clsFRMDETS_REPOPULATE = FRMDETSaplOffSet + 18
+				Number: PAM_clsFRMDETS_NOROWS = FRMDETSaplOffSet + 19
+				Number: PAM_clsFRMDETS_PUSHFIELDS = FRMDETSaplOffSet + 20
+				Number: PAM_clsFRMDETS_POPFIELDS = FRMDETSaplOffSet + 21
+				Number: PAM_clsFRMDETS_FIRSTREC = FRMDETSaplOffSet + 22
+				Number: PAM_clsFRMDETS_PREVREC = FRMDETSaplOffSet + 23
+				Number: PAM_clsFRMDETS_NEXTREC = FRMDETSaplOffSet + 24
+				Number: PAM_clsFRMDETS_LASTREC = FRMDETSaplOffSet + 25
+				! Number: PAM_clsFRMDETS_GETFIRSTREC = FRMDETSaplOffSet + 26
+				! Number: PAM_clsFRMDETS_GETPREVREC = FRMDETSaplOffSet + 27
+				! Number: PAM_clsFRMDETS_GETNEXTREC = FRMDETSaplOffSet + 28
+				! Number: PAM_clsFRMDETS_GETLASTREC = FRMDETSaplOffSet + 29
+				! Constants
+				Number: FRMDETS_cls_SAVE = FRMDETSAplConstOffSet + 1
+				Number: FRMDETS_cls_CLEAR = FRMDETSAplConstOffSet + 2
+				Number: FRMDETS_cls_DELETE = FRMDETSAplConstOffSet + 3
+				Number: FRMDETS_cls_REPOP = FRMDETSAplConstOffSet + 4
+				Number: FRMDETS_cls_REPORT = FRMDETSAplConstOffSet + 5
+				Number: FRMDETS_cls_NEWREC = FRMDETSAplConstOffSet + 6
+				Number: FRMDETS_cls_DISPREC = FRMDETSAplConstOffSet + 7
+				Number: FRMDETS_cls_FIRSTREC = FRMDETSAplConstOffSet + 8
+				Number: FRMDETS_cls_PREVREC = FRMDETSAplConstOffSet + 9
+				Number: FRMDETS_cls_NEXTREC = FRMDETSAplConstOffSet + 10
+				Number: FRMDETS_cls_LASTREC = FRMDETSAplConstOffSet + 11
+				!
+				Number: FRMDETS_clsChildrenTypes = TYPE_CheckBox | TYPE_DataField | TYPE_MultilineText | TYPE_ComboBox
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1347615921
+0000: 8600000038000000 0000000000000000 020000050000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E8040D0000 FF3F
+.enddata
+		Named Menus
+		Internal Functions
+			Function: UserFormActions
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Window Handle: hWndFormHdl
+					Number: wParam
+				Static Variables
+				Local variables
+				Actions
+					Select Case wParam
+						Case FRMDETS_cls_SAVE
+							Return SalSendMsg( hWndFormHdl, PAM_clsFRMDETS_SAVE, 0, 0 )
+						Case FRMDETS_cls_CLEAR
+							Return SalSendMsg( hWndFormHdl, PAM_clsFRMDETS_CLEAR, 0, 0 )
+						Case FRMDETS_cls_DELETE
+							Return SalSendMsg( hWndFormHdl, PAM_clsFRMDETS_DELETE, 0, 0 )
+						Case FRMDETS_cls_REPOP
+							Return SalSendMsg( hWndFormHdl, PAM_clsFRMDETS_REPOPULATE, 0, 0 )
+						Case FRMDETS_cls_REPORT
+							Return SalSendMsg( hWndFormHdl, PAM_clsFRMDETS_REPORT, 0, 0 )
+						Case FRMDETS_cls_FIRSTREC
+							Return SalSendMsg( hWndFormHdl, PAM_clsFRMDETS_FIRSTREC, 0, 0 )
+						Case FRMDETS_cls_PREVREC
+							Return SalSendMsg( hWndFormHdl, PAM_clsFRMDETS_PREVREC, 0, 0 )
+						Case FRMDETS_cls_NEXTREC
+							Return SalSendMsg( hWndFormHdl, PAM_clsFRMDETS_NEXTREC, 0, 0 )
+						Case FRMDETS_cls_LASTREC
+							Return SalSendMsg( hWndFormHdl, PAM_clsFRMDETS_LASTREC, 0, 0 )
+		Class Definitions
+.data RESOURCE 0 0 1 679029403
+0000: 470C0000B3050000 0000000000000000 0200001800FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F52003C00 001263006C73466F
+0040: 726D446500747347 656E657261006CBA 0000000700001E00 010D00FC0000FF27
+0060: 0D000001F700FF1F 1A0000DC000100FF 7F27700000000100 FFFFC13400000001
+0080: FD00FF0741000000 01F700FF1F4E0000 C0000204000000FF 7F01008008000000
+00A0: 01000010000D636C 636D627846726D38 8000000002000000 67020400FFFFC904
+00C0: 000002FD00FF0701 802E000008000200 0011636C01706253 746172740050726F
+00E0: 6772616DBAB20000 070067020400FFFF CD040002FD00FF27 08000002F700FF1F
+0100: 0C0000D800010D00 FF7F194000000003 040000FFFFC11D00 000002FD00FF0721
+0120: 00000001F700FF1F 0180360000000003 0000000FE4636C53 747FEE8000000009
+0140: 00000067010D00FF FFC90D000001FD00 FF371A0002F700FF 1F1E0000DC000200
+0160: FF7F227000000002 00FFFFC126000000 02FD00FF072A0000 0002F700FF9F2E00
+0180: DC000200FF7F3270 0000000200FFFF21 0180040000044300 0C636C6D786C4765
+01A0: 6C441E0000010000 CF0304FE00FF4301 800D0000E0050000 000CF27047658F00
+01C0: 01009E00010DFD00 FF87018038000000 0600000009636C07 48656C7086B00000
+01E0: 000500770200FFFF 8D0400010DFD00FF 071100000001F700 FFDF1EDC000100FF
+0200: 7F2B700000000100 FFFF3101800D0007 F300098145786974 1E00E800010000D9
+0220: 010D00FF7F01CC80 0400081C000C5069 6300457870616E64 1E00D100010000BB
+0240: 0200FFFF18018004 000900F900120154 6F67676C65428075 74746F6E1E00E800
+0260: 010000DD0200FF7F 010C8004000A0000 1C000C646647FE65 D100010000BB0300
+0280: FFFF0001802F0000 000B00A000000B63 6C46034261736586 00D9000500B3010D
+02A0: 00FFFFE60D0002FE 00FF1B1100040DFA 0000FF6F1E00EE03 00FFBF22B9000100
+02C0: FFFF1801800D000C 00E10017636C0350 72696E7442026169 635265706F187274
+02E0: 1E0001003D00010D FB00FF8F01802F19 000D001063026C44 69616C6F677C4765
+0300: 86B2000005006701 0D00FFFFCD0D0002 FD00FF37110004F7 00FFDF1EDC000300
+0320: FF7F2273000100FF FF3101800D000E60 0000001163530070 696E536561736F80
+0340: 6E596561721E00E8 00010000D9010D00 FF7F010880340000 0F0000500014636C
+0360: 705300656C656374 46726F006D546162 6C656C00D0000004 0000B3010D00FFFF
+0380: E60D0001FE00FF9B 1A0001FB00FF6F27 00EE0100FF3F0180 060400100000004C
+03A0: 0D63536565026349 6E746F1E00D10001 0000BB0300FFFF00 0180B70000001100
+03C0: A10016636C479F54 61F3476511360200 1500009E00010DFD 00FF270D000001F7
+03E0: 00FFDF1ADC000100 FF7F2773000100FF FFCD340002FD00FF 2738000002F700FF
+0400: 1F3C0000DC000200 FF7F407000000002 00FFFFC144000000 02FD00FF07480000
+0420: 0002F700FF1F4C00 00DC000200FF7F50 700000000200F401 00000F80010000FE
+0440: 008154000000010D D1000100003F8001 F900000758000000 01F60D00FF1F6500
+0460: 00DC000100FF7F72 700000000100FFFF C17F00000001FD00 FF078C00000001F7
+0480: 00FF1F990000DC00 0100FF7FA6700000 000100FFFFC1B300 000003FD00FF8701
+04A0: 8022000000120000 001D636C0154626C 4D616B652C536563 656400526F774B65
+04C0: 7941720072617974 000000047B000247 00010000FFE48001 0000DF04D800010D
+04E0: 00FF7F1173000100 FFFFCD1E0002FD00 FF87018011008000 1300000010630143
+0500: 6F6C756D6E471E65 6C3800D100020000 B3020400FFFFC604 00010DFE00FF6301
+0520: 801100C014000000 0C63F86362478F00 02009E00010DFD00 FF370D0002F60400
+0540: FF1F018004330015 001007546F6F6C54 00697057696E646F 77441E0000010000
+0560: EF03FE00FF630180 040020160000000C 6654066165436163 6888651E00000100
+0580: DE0003FD00FF8701 8015004000170000 000B661C4361506F 6F815A0000000300
+05A0: 1E00071900010001 01009C08003D0080 01F9000037040003 F60400FFDF08D800
+05C0: 010D00FF7F
+.enddata
+			Pushbutton Class: clspbNewRecFormDets
+				Title: Add
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name: C:\CENTURA\ICONS\NEWMAIL.BMP
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description: Trap ONLY - PAM_clsFRMDETS_PUSHFIELDS to send info to details screen
+				Derived From
+					Class: clspbActivateWindow
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On PAM_clsACTIVATE_PUSHFIELDS
+						Call PushNumber( FRMDETS_cls_NEWREC )
+						Call PushWndHdl( hWndItem )
+						Call SalSendMsg( hWndItem, PAM_clsFRMDETS_PUSHFIELDS, wParam, lParam )
+						Return TRUE
+			Pushbutton Class: clspbDispRecFormDets
+				Title: Details
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name: C:\CENTURA\ICONS\FRMINVIT.ICO
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description: Trap ONLY - PAM_clsFRMDETS_PUSHFIELDS to send info to details screen
+				Derived From
+					Class: clspbActivateWindow
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On PAM_clsACTIVATE_PUSHFIELDS
+						Call PushNumber( FRMDETS_cls_DISPREC )
+						Call PushWndHdl( hWndItem )
+						Call SalSendMsg( hWndItem, PAM_clsFRMDETS_PUSHFIELDS, wParam, lParam )
+						Return TRUE
+					!
+					On PAM_clsFRMDETS_FIRSTREC
+						Return SalSendMsg( hWndItem, PAM_clsACTIVATE_FIRSTREC, wParam, lParam )
+					On PAM_clsFRMDETS_PREVREC
+						Return SalSendMsg( hWndItem, PAM_clsACTIVATE_PREVREC, wParam, lParam )
+					On PAM_clsFRMDETS_NEXTREC
+						Return SalSendMsg( hWndItem, PAM_clsACTIVATE_NEXTREC, wParam, lParam )
+					On PAM_clsFRMDETS_LASTREC
+						Return SalSendMsg( hWndItem, PAM_clsACTIVATE_LASTREC, wParam, lParam )
+			!
+			Form Window Class: clsFormDetsGeneral
+				Title:
+				Icon File:
+				Accesories Enabled? Class Default
+				Visible? Class Default
+				Display Settings
+					Display Style? Class Default
+					Visible at Design time? Yes
+					Automatically Created at Runtime? Class Default
+					Initial State: Class Default
+					Maximizable? Class Default
+					Minimizable? Class Default
+					System Menu? Class Default
+					Resizable? Class Default
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Form Size
+						Width:  Class Default
+						Height: Class Default
+						Number of Pages: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+				Next Class Child Key: 41
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description: Trap ONLY - PAM_clsFRMDETS_POPFIELDS to receive info into details screen
+				Derived From
+					Class: clsFormGeneral
+				Menu
+					Named Menu: clsFormFileMenu
+						Resource Id: 49304
+					Popup Menu: &Form Actions
+						Resource Id: 55827
+						Enabled when:
+						Status Text:
+						Menu Item Name:
+						Menu Item: &Clear
+							Resource Id: 55828
+							Keyboard Accelerator: F3
+							Status Text: Reset Form for new record entry.
+							Menu Settings
+								Enabled when: bClearAllowed
+								Checked when:
+							Menu Actions
+								Call SalSendValidateMsg(  )
+								Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_CLEAR, 0 )
+							Menu Item Name:
+						Menu Separator
+						Menu Item: &Save
+							Resource Id: 55830
+							Keyboard Accelerator: F5
+							Status Text: Save any changes made to this form.
+							Menu Settings
+								Enabled when: bSaveAllowed
+								Checked when:
+							Menu Actions
+								Call SalSendValidateMsg(  )
+								Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_SAVE, 0 )
+							Menu Item Name:
+						Menu Separator
+						Menu Item: &Delete
+							Resource Id: 55831
+							Keyboard Accelerator: F4
+							Status Text: Delete the displayed record.
+							Menu Settings
+								Enabled when: bDeleteAllowed
+								Checked when:
+							Menu Actions
+								Call SalSendValidateMsg(  )
+								Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_DELETE, 0 )
+							Menu Item Name:
+						Menu Separator
+						Menu Item: R&ePop
+							Resource Id: 55826
+							Keyboard Accelerator: (none)
+							Status Text: Refresh Form from database.
+							Menu Settings
+								Enabled when: bRepopulateAllowed
+								Checked when:
+							Menu Actions
+								Call SalSendValidateMsg(  )
+								Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_REPOP, 0 )
+							Menu Item Name:
+						Menu Item: &Report
+							Resource Id: 55825
+							Keyboard Accelerator: (none)
+							Status Text: Produce a report of the displayed record on this screen.
+							Menu Settings
+								Enabled when: bReportAllowed
+								Checked when:
+							Menu Actions
+								Call SalSendValidateMsg(  )
+								Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_REPORT, 0 )
+							Menu Item Name:
+						Menu Separator
+						Menu Item: &First Record
+							Resource Id: 53899
+							Keyboard Accelerator: (none)
+							Status Text: First rows details of the parent table
+							Menu Settings
+								Enabled when: bFirstRecAllowed
+								Checked when:
+							Menu Actions
+								Call SalSendValidateMsg(  )
+								Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_FIRSTREC, 0 )
+							Menu Item Name:
+						Menu Item: &Previous Record
+							Resource Id: 53902
+							Keyboard Accelerator: (none)
+							Status Text: Previous rows details of the parent table
+							Menu Settings
+								Enabled when: bPrevRecAllowed
+								Checked when:
+							Menu Actions
+								Call SalSendValidateMsg(  )
+								Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_PREVREC, 0 )
+							Menu Item Name:
+						Menu Item: &Next Record
+							Resource Id: 53901
+							Keyboard Accelerator: (none)
+							Status Text: Next rows details of the parent table
+							Menu Settings
+								Enabled when: bNextRecAllowed
+								Checked when:
+							Menu Actions
+								Call SalSendValidateMsg(  )
+								Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_NEXTREC, 0 )
+							Menu Item Name:
+						Menu Item: &Last Record
+							Resource Id: 53900
+							Keyboard Accelerator: (none)
+							Status Text: Last rows details of the parent table
+							Menu Settings
+								Enabled when: bLastRecAllowed
+								Checked when:
+							Menu Actions
+								Call SalSendValidateMsg(  )
+								Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_LASTREC, 0 )
+							Menu Item Name:
+				Tool Bar
+					Display Settings
+						Display Style? Class Default
+						Location? Class Default
+						Visible? Class Default
+						Size: Class Default
+						Size Editable? Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Contents
+						Pushbutton: pbHelp
+							Class Child Ref Key: 1
+							Class ChildKey: 3
+							Class: clsFormGeneral
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbItemEnq
+							Class Child Ref Key: 5
+							Class ChildKey: 14
+							Class: clsFormGeneral
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						!
+						Pushbutton: pbClear
+							Class Child Ref Key: 0
+							Class ChildKey: 26
+							Class: clspbFrmDetsClear
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   1.8"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbSave
+							Class Child Ref Key: 0
+							Class ChildKey: 27
+							Class: clspbFrmDetsSave
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   2.4"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbDelete
+							Class Child Ref Key: 0
+							Class ChildKey: 28
+							Class: clspbFrmDetsDelete
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   3.0"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbRePopulate
+							Class Child Ref Key: 0
+							Class ChildKey: 29
+							Class: clspbFrmDetsRePop
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   4.2"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbReport
+							Class Child Ref Key: 0
+							Class ChildKey: 30
+							Class: clspbFrmDetsReport
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   4.8"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						!
+						Pushbutton: pbFirstRec
+							Class Child Ref Key: 0
+							Class ChildKey: 36
+							Class: clspbFirstRec
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   6.313"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+								On PAM_clsPB_CLICK
+									Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_FIRSTREC, 0 )
+						Pushbutton: pbPrevRec
+							Class Child Ref Key: 0
+							Class ChildKey: 37
+							Class: clspbPrevRec
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   6.913"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+								On PAM_clsPB_CLICK
+									Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_PREVREC, 0 )
+						Pushbutton: pbNextRec
+							Class Child Ref Key: 0
+							Class ChildKey: 38
+							Class: clspbNextRec
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   7.513"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+								On PAM_clsPB_CLICK
+									Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_NEXTREC, 0 )
+						Pushbutton: pbLastRec
+							Class Child Ref Key: 0
+							Class ChildKey: 39
+							Class: clspbLastRec
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   8.113"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+								On PAM_clsPB_CLICK
+									Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_LASTREC, 0 )
+						!
+						Pushbutton: pbExit
+							Class Child Ref Key: 2
+							Class ChildKey: 4
+							Class: clsFormGeneral
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbPrintForm
+							Class Child Ref Key: 6
+							Class ChildKey: 35
+							Class: clsFormGeneral
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+				Contents
+					Data Field: dfDatabase
+						Class Child Ref Key: 3
+						Class ChildKey: 1
+						Class: clsFormGeneral
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+							On PAM_clsFRMDETS_DATAVAL
+								Return TRUE
+							On PAM_clsFRMDETS_CHECKROWNEW
+								Return TRUE
+							On PAM_clsFRMDETS_CHECKROWEDITED
+								Return TRUE
+							On PAM_clsFRMDETS_CHECKROWDELETED
+								Return TRUE
+					Data Field: dfUser
+						Class Child Ref Key: 4
+						Class ChildKey: 2
+						Class: clsFormGeneral
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+							On PAM_clsFRMDETS_DATAVAL
+								Return TRUE
+							On PAM_clsFRMDETS_CHECKROWNEW
+								Return TRUE
+							On PAM_clsFRMDETS_CHECKROWEDITED
+								Return TRUE
+							On PAM_clsFRMDETS_CHECKROWDELETED
+								Return TRUE
+					Background Text:
+						Resource Id: 35188
+						Class Child Ref Key: 8
+						Class ChildKey: 40
+						Class: clsFormGeneral
+						Window Location and Size
+							Left:   Class Default
+							Top:    Class Default
+							Width:  Class Default
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Custom Control: ccSeasonYear
+						Class Child Ref Key: 7
+						Class ChildKey: 41
+						Class: clsFormGeneral
+						Property Template:
+						Class DLL Name:
+						Display Settings
+							DLL Name:
+							MS Windows Class Name:
+							Style:  Class Default
+							ExStyle:  Class Default
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Etched Border? Class Default
+							Hollow? Class Default
+							Vertical Scroll? Class Default
+							Horizontal Scroll? Class Default
+							Tab Stop? Class Default
+							Tile To Parent? Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							DLL Settings
+						Message Actions
+				Class Variables
+					Boolean: bOk
+					Boolean: bSaveOk
+					Boolean: bClearOk
+					Boolean: bDeleteOk
+					Number: nInd
+					Number: nSaveType
+					String: sTmp
+				Instance Variables
+					! PUBLIC
+					String: sSQLPopHandle
+					String: sNAMEPopHandle
+					String: sBINDPopHandle
+					String: sINTOPopHandle
+					!
+					String: sSQLInsertHandle
+					String: sNAMEInsertHandle
+					String: sBINDInsertHandle
+					String: sINTOInsertHandle
+					!
+					String: sSQLUpdateHandle
+					String: sNAMEUpdateHandle
+					String: sBINDUpdateHandle
+					String: sINTOUpdateHandle
+					!
+					String: sSQLDeleteHandle
+					String: sNAMEDeleteHandle
+					String: sBINDDeleteHandle
+					String: sINTODeleteHandle
+					!
+					Boolean: bSaveAllowed
+					Boolean: bDeleteAllowed
+					Boolean: bRepopulateAllowed
+					Boolean: bClearAllowed
+					Boolean: bReportAllowed
+					Boolean: bFirstRecAllowed
+					Boolean: bPrevRecAllowed
+					Boolean: bNextRecAllowed
+					Boolean: bLastRecAllowed
+					!
+					Boolean: bSaveConfirmation
+					Boolean: bDeleteConfirmation
+					Boolean: bClearOnAdd
+					Boolean: bClearOnSave
+					! PRIVATE
+					Boolean: bSELECTAllowed
+					Boolean: bINSERTAllowed
+					Boolean: bUPDATEAllowed
+					Boolean: bDELETEAllowed
+					!
+					! hcSqlHandle: hSqlPopHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					Number: nSqlPopHandleNo
+					! hcSqlHandle: hSqlInsertHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					Number: nSqlInsertHandleNo
+					! hcSqlHandle: hSqlUpdateHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					Number: nSqlUpdateHandleNo
+					! hcSqlHandle: hSqlDeleteHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					Number: nSqlDeleteHandleNo
+					Boolean: bEdit
+					Boolean: bNew
+					Boolean: bChanged
+					Number: nNewOrDetailsOnStartUp
+					Window Handle: hWndCallingButton
+					String: sFormItemName
+				Functions
+					Function: FormChildrenLoop
+						Description: Performs a loop through the children of the hWndFrmHdl, sending message nPAM_CHILDACTION
+								to each child with nMSG_wParam and nMSG_lParam as wParam and lParam to each child.
+								The type of children is determined by paramenter nType which should be constanst TYPE_....
+								nStopOnReturnValue is the value that a error will be detected on and loop terminated.
+								For a case like DATAVAL being sent around then FALSE should be nStopOnReturnValue to force
+								each child to trap that message.
+						Returns
+							Boolean:
+						Parameters
+							Window Handle: hWndFrmHdl
+							Number: nPAM_CHILDACTION
+							Number: nMSG_wParam
+							Number: nMSG_lParam
+							Number: nType
+							Number: nStopOnReturnValue
+						Static Variables
+						Local variables
+							Window Handle: hWndChild
+							Number: nActionReturn
+							Boolean: bError
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bError = FALSE
+							!
+							Set hWndChild = SalGetFirstChild( hWndFrmHdl, nType )
+							While hWndChild != hWndNULL
+								Set nActionReturn = SalSendMsg( hWndChild, nPAM_CHILDACTION, nMSG_wParam, nMSG_lParam )
+								If nActionReturn = nStopOnReturnValue
+									Set bError = TRUE
+									Break
+								Else
+									Set hWndChild = SalGetNextChild( hWndChild, nType )
+							!
+							Call OurWaitCursor( FALSE )
+							If bError
+								Return FALSE
+							Else
+								Return TRUE
+				Message Actions
+					On SAM_Create
+						Call OurWaitCursor( TRUE )
+						Set bSELECTAllowed = TRUE
+						Set bINSERTAllowed = TRUE
+						Set bUPDATEAllowed = TRUE
+						Set bDELETEAllowed = TRUE
+						!
+						Set sSQLPopHandle = ''
+						Set sNAMEPopHandle = ''
+						Set sBINDPopHandle = ''
+						Set sINTOPopHandle = ''
+						!
+						Set sSQLInsertHandle = ''
+						Set sNAMEInsertHandle = ''
+						Set sBINDInsertHandle = ''
+						Set sINTOInsertHandle = ''
+						!
+						Set sSQLUpdateHandle = ''
+						Set sNAMEUpdateHandle = ''
+						Set sBINDUpdateHandle = ''
+						Set sINTOUpdateHandle = ''
+						!
+						Set sSQLDeleteHandle = ''
+						Set sNAMEDeleteHandle = ''
+						Set sBINDDeleteHandle = ''
+						Set sINTODeleteHandle = ''
+						!
+						Set bSaveAllowed = TRUE
+						Set bDeleteAllowed = TRUE
+						Set bClearAllowed = TRUE
+						Set bRepopulateAllowed = TRUE
+						Set bReportAllowed = FALSE
+						Set bFirstRecAllowed = FALSE
+						Set bPrevRecAllowed = FALSE
+						Set bNextRecAllowed = FALSE
+						Set bLastRecAllowed = FALSE
+						Set bSaveConfirmation = TRUE
+						Set bDeleteConfirmation = TRUE
+						Set bClearOnAdd = TRUE
+						Set bClearOnSave = FALSE
+						Set nNewOrDetailsOnStartUp = FRMDETS_cls_NEWREC
+						Set bNew = TRUE
+						Set bEdit = FALSE
+						Set bChanged = FALSE
+						Set hWndCallingButton = hWndNULL
+						Call SalSendClassMessage( SAM_Create, wParam, lParam )
+						If NOT bSaveAllowed
+							Call SalSendMsg( pbSave, PAM_clsPB_HIDE, 0, 0 )
+						If NOT bDeleteAllowed
+							Call SalSendMsg( pbDelete, PAM_clsPB_HIDE, 0, 0 )
+						If NOT bClearAllowed
+							Call SalSendMsg( pbClear, PAM_clsPB_HIDE, 0, 0 )
+						If NOT bRepopulateAllowed
+							Call SalSendMsg( pbRePopulate, PAM_clsPB_HIDE, 0, 0 )
+						If NOT bReportAllowed
+							Call SalSendMsg( pbReport, PAM_clsPB_HIDE, 0, 0 )
+						If NOT bFirstRecAllowed
+							Call SalSendMsg( pbFirstRec, PAM_clsPB_HIDE, 0, 0 )
+						If NOT bPrevRecAllowed
+							Call SalSendMsg( pbPrevRec, PAM_clsPB_HIDE, 0, 0 )
+						If NOT bNextRecAllowed
+							Call SalSendMsg( pbNextRec, PAM_clsPB_HIDE, 0, 0 )
+						If NOT bLastRecAllowed
+							Call SalSendMsg( pbLastRec, PAM_clsPB_HIDE, 0, 0 )
+					On SAM_CreateComplete
+						Call SalSendClassMessage( SAM_CreateComplete, wParam, lParam )
+						! Call SalInvalidateWindow( hWndForm )
+						Call SalGetItemName( hWndForm, sFormItemName )
+						Call SalUpdateWindow( hWndForm )
+						If IsUserSELECTUser( SqlUser, FALSE )
+							If sNAMEPopHandle != ''
+								Set nSqlPopHandleNo = SqlHandlesGetReferenceNo( sFormItemName || 'POPHDL' )
+								Call haSqlHandles[ nSqlPopHandleNo ].Setup( sSQLPopHandle, sNAMEPopHandle, sBINDPopHandle, sINTOPopHandle )
+								! Call SqlVarSetup( haSqlHandles[ nSqlPopHandleNo].hSqlHandle )
+								! Call SqlVarSetup( hSqlSelectHandle.hSqlHandle )
+						Else
+							Set sNAMEPopHandle = ''
+							Set bSELECTAllowed = FALSE
+						If IsUserINSERTUser( SqlUser, FALSE )
+							If sNAMEInsertHandle != ''
+								Set nSqlInsertHandleNo = SqlHandlesGetReferenceNo( sFormItemName || 'INSHDL' )
+								Call haSqlHandles[ nSqlInsertHandleNo ].Setup( sSQLInsertHandle, sNAMEInsertHandle, sBINDInsertHandle, sINTOInsertHandle )
+								! Call SqlVarSetup( haSqlHandles[ nSqlPopHandleNo ].hSqlHandle )
+								! Call SqlVarSetup( hSqlInsertHandle.hSqlHandle )
+						Else
+							Set sNAMEInsertHandle = ''
+							Set bINSERTAllowed = FALSE
+						If IsUserUPDATEUser( SqlUser, FALSE )
+							If sNAMEUpdateHandle != ''
+								Set nSqlUpdateHandleNo = SqlHandlesGetReferenceNo( sFormItemName || 'UPDTHDL' )
+								Call haSqlHandles[ nSqlUpdateHandleNo ].Setup( sSQLUpdateHandle, sNAMEUpdateHandle, sBINDUpdateHandle, sINTOUpdateHandle )
+								! Call SqlVarSetup( haSqlHandles[ nSqlPopHandleNo ].hSqlHandle )
+								! Call SqlVarSetup( hSqlUpdateHandle.hSqlHandle )
+						Else
+							Set sNAMEUpdateHandle = ''
+							Set bUPDATEAllowed = FALSE
+						If IsUserDELETEUser( SqlUser, FALSE )
+							If sNAMEDeleteHandle != ''
+								Set nSqlDeleteHandleNo = SqlHandlesGetReferenceNo( sFormItemName || 'DELHDL' )
+								Call haSqlHandles[ nSqlDeleteHandleNo ].Setup( sSQLDeleteHandle, sNAMEDeleteHandle, sBINDDeleteHandle, sINTODeleteHandle )
+								! Call SqlVarSetup( haSqlHandles[ nSqlPopHandleNo ].hSqlHandle )
+								! Call SqlVarSetup( hSqlDeleteHandle.hSqlHandle )
+						Else
+							Set sNAMEDeleteHandle = ''
+							Set bDELETEAllowed = FALSE
+						!
+						If nNewOrDetailsOnStartUp = FRMDETS_cls_NEWREC OR NOT bSELECTAllowed
+							Call SalSendMsg( hWndForm, PAM_cls_INITIALISE, 0, 0 )
+							Set bNew = TRUE
+							Call SalSendMsg( hWndForm, PAM_clsFRMDETS_CLEAR, 0, 0 )
+						Else
+							Call SalSendMsg( hWndForm, PAM_clsFRMDETS_REPOPULATE, 0, 0 )
+							Set bNew = FALSE
+						Call OurWaitCursor( FALSE )
+					On PAM_clsFRM_SHOW
+						Call SalSendClassMessage( PAM_clsFRM_SHOW, wParam, lParam )
+						!
+						If nNewOrDetailsOnStartUp = FRMDETS_cls_NEWREC OR NOT bSELECTAllowed
+							Call SalSendMsg( hWndForm, PAM_cls_INITIALISE, 0, 0 )
+							Set bNew = TRUE
+							Call SalSendMsg( hWndForm, PAM_clsFRMDETS_CLEAR, 0, 0 )
+						Else
+							Call SalSendMsg( hWndForm, PAM_clsFRMDETS_REPOPULATE, 0, 0 )
+							Set bNew = FALSE
+						Return TRUE
+					On SAM_Destroy
+						If sNAMEPopHandle != ''
+							Call haSqlHandles[ nSqlPopHandleNo ].Disconnect( )
+						If sNAMEInsertHandle != ''
+							Call haSqlHandles[ nSqlInsertHandleNo ].Disconnect( )
+						If sNAMEUpdateHandle != ''
+							Call haSqlHandles[ nSqlUpdateHandleNo ].Disconnect( )
+						If sNAMEDeleteHandle != ''
+							Call haSqlHandles[ nSqlDeleteHandleNo ].Disconnect( )
+						Return SalSendClassMessage( SAM_Destroy, wParam, lParam )
+					On PAM_cls_EXIT
+						If SalSendMsg( hWndForm, PAM_clsFRMDETS_CHECKCHANGES, 0, 0 )
+							If bChanged
+								Call SalGetItemName( hWndCallingButton, sTmp )
+								Call SalPostMsg( SalParentWindow( hWndForm ), PAM_cls_CHILDCHANGED, 0, SalHStringToNumber( sTmp ) )
+							Return SalSendClassMessage( PAM_cls_EXIT, wParam, lParam )
+						Else
+							Return FALSE
+					On PAM_cls_REFRESHAFTRCHILDCHANGE
+						Return TRUE
+					On PAM_cls_CHILDCHANGED
+						Call SalShowWindow( hWndForm )
+						Call SalBringWindowToTop( hWndForm )
+						If SalSendMsg( hWndForm, PAM_cls_REFRESHAFTRCHILDCHANGE, wParam, lParam )
+							Call SalSendMsg( hWndForm, PAM_clsFRMDETS_REPOPULATE, 0, 0 )
+						Return TRUE
+					On PAM_clsFRM_POPFIELDS
+						Call SalSendMsg( hWndForm, PAM_clsFRMDETS_POPFIELDS, wParam, lParam )
+						Call PopNumber( nNewOrDetailsOnStartUp, TRUE )
+						Call PopWndHdl( hWndCallingButton, TRUE )
+						Return TRUE
+					On PAM_clsFRMDETS_USERACTIONS
+						Return UserFormActions( hWndForm, wParam )
+					!
+					On PAM_clsFRMDETS_POPULATE
+						Call OurWaitCursor( TRUE )
+						Set bOk = bSELECTAllowed
+						If bOk
+							If haSqlHandles[ nSqlPopHandleNo ].Execute( )
+								If haSqlHandles[ nSqlPopHandleNo ].FetchNext( nInd )
+									Call SalSendMsgToChildren( hWndForm, PAM_clsFRMDETS_DISPREC, nInd, 0 )
+								Else
+									Call SalSendMsg( hWndForm, PAM_clsFRMDETS_NOROWS, 0, 0 )
+									Call SalSendMsg( hWndForm, PAM_clsFRMDETS_CLEAR, 0, 0 )
+							Else
+								Set bOk = FALSE
+						Call OurWaitCursor( FALSE )
+						Return bOk
+					On PAM_clsFRMDETS_REPOPULATE
+						Call OurWaitCursor( TRUE )
+						Set bOk = bSELECTAllowed
+						If bOk
+							If bRepopulateAllowed
+								If NOT SalSendMsg( hWndForm, PAM_clsFRMDETS_CHECKCHANGES, 0, 0 )
+									Set bOk = FALSE
+								If bOk
+									Set bOk = SalSendMsg( hWndForm, PAM_clsFRMDETS_POPULATE, 0, 0 )
+							Else
+								Set bOk = FALSE
+						Call OurWaitCursor( FALSE )
+						Return bOk
+					On PAM_clsFRMDETS_CHECKCHANGES
+						If bEdit
+							If IDYES = SalMessageBox( 'Save Changes first?', sFormHeading, MB_YesNo )
+								If NOT SalSendMsg( hWndForm, PAM_clsFRMDETS_SAVE, 0, 0 )
+									Return FALSE
+						Return TRUE
+					On PAM_clsFRMDETS_NOROWS
+						Call SalMessageBox( 'No Record Found', sFormHeading, MB_Ok )
+					!
+					On PAM_clsFRMDETS_SAVE
+						Call OurWaitCursor( TRUE )
+						Set bSaveOk = TRUE
+						If bSaveOk
+							If NOT bEdit
+								Call SalMessageBox( 'Nothing has been modified!', sFormHeading, MB_Ok )
+								Set bSaveOk = FALSE
+						If bSaveOk
+							If bNew
+								Set nSaveType = FRMDETS_cls_NEWREC
+								If NOT bINSERTAllowed
+									Set bSaveOk = FALSE
+							Else
+								Set nSaveType = FRMDETS_cls_DISPREC
+								If NOT bUPDATEAllowed
+									Set bSaveOk = FALSE
+							If bSaveConfirmation
+								If IDNO = SalMessageBox( 'Are you ready to save your changes?', sFormHeading, MB_YesNo | MB_DefButton1 )
+									Set bSaveOk = FALSE
+						If bSaveOk
+							If NOT FormChildrenLoop( hWndForm, PAM_clsFRMDETS_DATAVAL, nSaveType, 0, FRMDETS_clsChildrenTypes, FALSE )
+								Set bSaveOk = FALSE
+						If bSaveOk
+							If bNew
+								If NOT FormChildrenLoop( hWndForm, PAM_clsFRMDETS_CHECKROWNEW, nSaveType, 0, FRMDETS_clsChildrenTypes, FALSE )
+									Set bSaveOk = FALSE
+							Else
+								If NOT FormChildrenLoop( hWndForm, PAM_clsFRMDETS_CHECKROWEDITED, nSaveType, 0, FRMDETS_clsChildrenTypes, FALSE )
+									Set bSaveOk = FALSE
+						If bSaveOk
+							If bNew
+								If haSqlHandles[ nSqlInsertHandleNo ].Execute( )
+									Call haSqlHandles[ nSqlInsertHandleNo ].Commit( )
+									Call SalSendMsgToChildren( hWndForm, PAM_clsFRMDETS_ROWINSERTED, nSaveType, 0 )
+									Set bEdit = FALSE
+									Set bChanged = TRUE
+									If bClearOnAdd
+										Call SalSendMsg( hWndForm, PAM_clsFRMDETS_CLEAR, 0, 0 )
+								Else
+									Set bSaveOk = FALSE
+							Else
+								If haSqlHandles[ nSqlUpdateHandleNo ].Execute( )
+									Call haSqlHandles[ nSqlUpdateHandleNo ].Commit( )
+									Call SalSendMsgToChildren( hWndForm, PAM_clsFRMDETS_ROWUPDATED, nSaveType, 0 )
+									Set bEdit = FALSE
+									Set bChanged = TRUE
+									If bClearOnSave
+										Call SalSendMsg( hWndForm, PAM_clsFRMDETS_CLEAR, 0, 0 )
+								Else
+									Set bSaveOk = FALSE
+						Call OurWaitCursor( FALSE )
+						Return bSaveOk
+					On PAM_clsFRMDETS_DELETE
+						Call OurWaitCursor( TRUE )
+						Set bDeleteOk = bDELETEAllowed
+						If bNew
+							Call SalSendMsg( pbClear, SAM_Click, 0, 0 )
+							Set bDeleteOk = FALSE
+						If bDeleteOk
+							If bDeleteConfirmation
+								If IDNO = SalMessageBox( 'Are you sure you wish to delete?', sFormHeading, MB_YesNo | MB_DefButton2 )
+									Set bDeleteOk = FALSE
+						If bDeleteOk
+							If NOT FormChildrenLoop( hWndForm, PAM_clsFRMDETS_DATAVAL, FRMDETS_cls_DELETE, 0, FRMDETS_clsChildrenTypes, FALSE )
+								Set bDeleteOk = FALSE
+						If bDeleteOk
+							If NOT FormChildrenLoop( hWndForm, PAM_clsFRMDETS_CHECKROWDELETED, FRMDETS_cls_DELETE, 0, FRMDETS_clsChildrenTypes, FALSE )
+								Set bDeleteOk = FALSE
+						If bDeleteOk
+							If haSqlHandles[ nSqlDeleteHandleNo ].Execute( )
+								Call haSqlHandles[ nSqlDeleteHandleNo ].Commit( )
+								Call SalSendMsgToChildren( hWndForm, PAM_clsFRMDETS_ROWDELETED, FRMDETS_cls_DELETE, 0 )
+								Set bEdit = FALSE
+								Set bChanged = TRUE
+								Call SalSendMsg( hWndForm, PAM_clsFRMDETS_CLEAR, 0, 0 )
+							Else
+								Set bDeleteOk = FALSE
+						Call OurWaitCursor( FALSE )
+						Return bDeleteOk
+					On PAM_clsFRMDETS_CLEAR
+						Call OurWaitCursor( TRUE )
+						Set bClearOk = TRUE
+						If NOT SalSendMsg( hWndForm, PAM_clsFRMDETS_CHECKCHANGES, 0, 0 )
+							Set bClearOk = FALSE
+						If bClearOk
+							Call SalSendMsgToChildren( hWndForm, PAM_cls_INITIALISE, 0, 0 )
+							Call SalSendMsgToChildren( hWndForm, PAM_clsFRMDETS_NEWPREC, 0, 0 )
+							Set bNew = TRUE
+							Set bEdit = FALSE
+						Call OurWaitCursor( FALSE )
+						Return bClearOk
+					On PAM_clsFRMDETS_REPORT
+						Call OurWaitCursor( TRUE )
+						Set bOk = TRUE
+						Call SalMessageBox( 'This action is not implemented as yet!', sFormHeading, MB_Ok )
+						Call OurWaitCursor( FALSE )
+						Return bOk
+					On PAM_clsFRMDETS_VALIDATE
+						Set bEdit = TRUE
+						Return TRUE
+					!
+					On PAM_clsFRMDETS_FIRSTREC
+						If SalSendMsg( hWndForm, PAM_clsFRMDETS_CHECKCHANGES, 0, 0 )
+							Set bEdit = FALSE
+							Return SalSendMsg( hWndCallingButton, PAM_clsFRMDETS_FIRSTREC, 0, 0 )
+						Else
+							Return FALSE
+					On PAM_clsFRMDETS_PREVREC
+						If SalSendMsg( hWndForm, PAM_clsFRMDETS_CHECKCHANGES, 0, 0 )
+							Set bEdit = FALSE
+							Return SalSendMsg( hWndCallingButton, PAM_clsFRMDETS_PREVREC, 0, 0 )
+						Else
+							Return FALSE
+					On PAM_clsFRMDETS_NEXTREC
+						If SalSendMsg( hWndForm, PAM_clsFRMDETS_CHECKCHANGES, 0, 0 )
+							Set bEdit = FALSE
+							Return SalSendMsg( hWndCallingButton, PAM_clsFRMDETS_NEXTREC, 0, 0 )
+						Else
+							Return FALSE
+					On PAM_clsFRMDETS_LASTREC
+						If SalSendMsg( hWndForm, PAM_clsFRMDETS_CHECKCHANGES, 0, 0 )
+							Set bEdit = FALSE
+							Return SalSendMsg( hWndCallingButton, PAM_clsFRMDETS_LASTREC, 0, 0 )
+						Else
+							Return FALSE
+			Pushbutton Class: clspbFrmDetsSave
+				Title: Save F5
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: F5
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name: C:\CENTURA\ICONS\DISK.BMP
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clspbGeneral
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On PAM_clsPB_CLICK
+						Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_SAVE, 0 )
+			Pushbutton Class: clspbFrmDetsClear
+				Title: Clear F3
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: F3
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name: C:\CENTURA\ICONS\MAINT.ICO
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clspbGeneral
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On PAM_clsPB_CLICK
+						Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_CLEAR, 0 )
+			Pushbutton Class: clspbFrmDetsDelete
+				Title: Del F4
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: F4
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name: C:\CENTURA\ICONS\DELREC.BMP
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clspbGeneral
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On PAM_clsPB_CLICK
+						Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_DELETE, 0 )
+			Pushbutton Class: clspbFrmDetsRePop
+				Title: Repop
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: (none)
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name: C:\CENTURA\ICONS\STYLE.ICO
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clspbGeneral
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On PAM_clsPB_CLICK
+						Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_REPOP, 0 )
+			Pushbutton Class: clspbFrmDetsReport
+				Title: Report
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: (none)
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name: C:\CENTURA\ICONS\LETTERS.BMP
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clspbGeneral
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On PAM_clsPB_CLICK
+						Call SalSendMsg( hWndForm, PAM_clsFRMDETS_USERACTIONS, FRMDETS_cls_REPORT, 0 )
+			!
+			Data Field Class: clsdfFrmDets
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clsdfGeneral
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On SAM_Validate
+						Call SalSendMsg( hWndForm, PAM_clsFRMDETS_VALIDATE, wParam, lParam )
+						Return VALIDATE_Ok
+					On PAM_clsRB_CLICK
+						Call SalSendMsg( hWndForm, PAM_clsFRMDETS_VALIDATE, wParam, lParam )
+						Return TRUE
+					On PAM_clsFRMDETS_DATAVAL
+						Return TRUE
+					On PAM_clsFRMDETS_CHECKROWNEW
+						Return TRUE
+					On PAM_clsFRMDETS_CHECKROWEDITED
+						Return TRUE
+					On PAM_clsFRMDETS_CHECKROWDELETED
+						Return TRUE
+			Check Box Class: clscbFrmDets
+				Title:
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clscbGeneral
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On PAM_clsFRMDETS_DISPREC
+						If sFlagValue = sFlagValueTRUE
+							Set MyValue = TRUE
+						Else
+							Set MyValue = FALSE
+					On PAM_clsCB_VALIDATE
+						Return SalSendMsg( hWndForm, PAM_clsFRMDETS_VALIDATE, wParam, lParam )
+					On PAM_clsRB_CLICK
+						Call SalSendMsg( hWndForm, PAM_clsFRMDETS_VALIDATE, wParam, lParam )
+						Return TRUE
+					On PAM_clsFRMDETS_DATAVAL
+						Return TRUE
+					On PAM_clsFRMDETS_CHECKROWNEW
+						Return TRUE
+					On PAM_clsFRMDETS_CHECKROWEDITED
+						Return TRUE
+					On PAM_clsFRMDETS_CHECKROWDELETED
+						Return TRUE
+			Combo Box Class: clscmbFrmDets
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Editable? Class Default
+				String Type: Class Default
+				Maximum Data Length: Class Default
+				Sorted? Class Default
+				Always Show List? Class Default
+				Vertical Scroll? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Input Mask: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clscmbGeneral
+				Class Variables
+					String: sTmp
+					Long String: lsTmp
+				Instance Variables
+				Functions
+				List Initialization
+				Message Actions
+					! On SAM_Validate
+						           Call SalSendMsg( hWndForm, PAM_clsFRMDETS_VALIDATE, wParam, lParam )
+						           Return VALIDATE_Ok
+					On SAM_SetFocus
+						Select Case SalGetDataType( hWndItem )
+							Case DT_String
+								Set sTmp = MyValue
+								Break
+							Case DT_LongString
+								Set lsTmp = MyValue
+								Break
+						Return TRUE
+					On SAM_KillFocus
+						Select Case SalGetDataType( hWndItem )
+							Case DT_String
+								If sTmp != MyValue
+									Call SalSendMsg( hWndForm, PAM_clsFRMDETS_VALIDATE, wParam, lParam )
+								Break
+							Case DT_LongString
+								If lsTmp != MyValue
+									Call SalSendMsg( hWndForm, PAM_clsFRMDETS_VALIDATE, wParam, lParam )
+								Break
+						Return TRUE
+					On PAM_clsRB_CLICK
+						Call SalSendMsg( hWndForm, PAM_clsFRMDETS_VALIDATE, wParam, lParam )
+						Return TRUE
+					On PAM_clsFRMDETS_DATAVAL
+						Return TRUE
+					On PAM_clsFRMDETS_CHECKROWNEW
+						Return TRUE
+					On PAM_clsFRMDETS_CHECKROWEDITED
+						Return TRUE
+					On PAM_clsFRMDETS_CHECKROWDELETED
+						Return TRUE
+			Multiline Field Class: clsmlFrmDets
+				Data
+					Maximum Data Length: Class Default
+					String Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Border? Class Default
+					Word Wrap? Class Default
+					Vertical Scroll? Class Default
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clsmlGeneral
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On SAM_Validate
+						Call SalSendMsg( hWndForm, PAM_clsFRMDETS_VALIDATE, wParam, lParam )
+						Return VALIDATE_Ok
+					On PAM_clsRB_CLICK
+						Call SalSendMsg( hWndForm, PAM_clsFRMDETS_VALIDATE, wParam, lParam )
+						Return TRUE
+					On PAM_clsFRMDETS_DATAVAL
+						Return TRUE
+					On PAM_clsFRMDETS_CHECKROWNEW
+						Return TRUE
+					On PAM_clsFRMDETS_CHECKROWEDITED
+						Return TRUE
+					On PAM_clsFRMDETS_CHECKROWDELETED
+						Return TRUE
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions

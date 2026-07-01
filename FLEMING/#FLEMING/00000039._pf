@@ -1,0 +1,961 @@
+Application Description: SQLWindows 5.01 Jans General Class for Compilation
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF000000 0000000000900200 0039010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.data DT_MAKERUNDLG
+0000: 03000000001D4B3A 5C43454E54555241 5C434C4153535C63 47656E6572616C2E
+0020: 6578651D4B3A5C43 454E545552415C43 4C4153535C634765 6E6572616C2E646C
+0040: 6C1D4B3A5C43454E 545552415C434C41 53535C6347656E65 72616C2E61706301
+0060: 000101011D4B3A5C 43454E545552415C 434C4153535C6347 656E6572616C2E72
+0080: 756E1D4B3A5C4345 4E545552415C434C 4153535C6347656E 6572616C2E646C6C
+00A0: 1D4B3A5C43454E54 5552415C434C4153 535C6347656E6572 616C2E6170630000
+00C0: 0101011D4B3A5C43 454E545552415C43 4C4153535C634765 6E6572616C2E6170
+00E0: 641D4B3A5C43454E 545552415C434C41 53535C6347656E65 72616C2E646C6C1D
+0100: 4B3A5C43454E5455 52415C434C415353 5C6347656E657261 6C2E617063000001
+0120: 01011E4B3A5C4345 4E545552415C434C 4153535C63634765 6E6572616C2E6170
+0140: 6C1D4B3A5C43454E 545552415C434C41 53535C6347656E65 72616C2E646C6C1D
+0160: 4B3A5C43454E5455 52415C434C415353 5C6347656E657261 6C2E617063010001
+0180: 0101
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 1018B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.1"
+			Top:    3.365"
+			Width:  4.688"
+			Height: 2.521"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   6.6"
+			Top:    0.521"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: None
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Blue
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+			Library name: user32.dll
+				Function: FindWindowA
+					Description: Find an application by window name
+					Export Ordinal: 0
+					Returns
+						Window Handle: HWND
+					Parameters
+						Number: DWORD
+						String: LPSTR
+				Function: ShowWindow
+					Description: Show an application by window name
+					Export Ordinal: 0
+					Returns
+						Boolean: BOOL
+					Parameters
+						Window Handle: HWND
+						Number: INT
+				Function: GetTopWindow
+					Description: Retrieves the handle of the top level child window
+					Export Ordinal: 0
+					Returns
+						Window Handle: HWND
+					Parameters
+						Window Handle: HWND
+				Function: SetActiveWindow
+					Description:
+					Export Ordinal: 0
+					Returns
+						Window Handle: HWND
+					Parameters
+						Window Handle: HWND
+				Function: GetWindowLongA
+					Description:
+					Export Ordinal: 0
+					Returns
+						Number: LONG
+					Parameters
+						Window Handle: HWND
+						Number: INT
+				Function: SetWindowLongA
+					Description:
+					Export Ordinal: 0
+					Returns
+						Number: LONG
+					Parameters
+						Window Handle: HWND
+						Number: INT
+						Number: LONG
+				Function: ClientToScreen
+					Description:
+					Export Ordinal: 0
+					Returns
+					Parameters
+						Window Handle: HWND
+						structPointer
+							Receive Number: INT
+							Receive Number: INT
+				Function: ChildWindowFromPoint
+					Description:
+					Export Ordinal: 0
+					Returns
+						Window Handle: HWND
+					Parameters
+						Window Handle: HWND
+						Number: LONG
+						Number: LONG
+				Function: CreatePopupMenu
+					Description:
+					Export Ordinal: 0
+					Returns
+						Number: WORD
+					Parameters
+				Function: TrackPopupMenu
+					Description:
+					Export Ordinal: 0
+					Returns
+						Boolean: BOOL
+					Parameters
+						Number: WORD
+						Number: INT
+						Number: INT
+						Number: INT
+						Number: INT
+						Window Handle: HWND
+						String: LPSTR
+				Function: InsertMenuA
+					Description:
+					Export Ordinal: 0
+					Returns
+						Boolean: BOOL
+					Parameters
+						Number: WORD
+						Number: UINT
+						Number: UINT
+						Number: UINT
+						String: LPCSTR
+				Function: MapWindowPoints
+					Description:
+					Export Ordinal: 0
+					Returns
+						Number: UINT
+					Parameters
+						Window Handle: HWND
+						Window Handle: HWND
+						structPointer
+							Receive Number: INT
+							Receive Number: INT
+						Number: UINT
+				Function: GetLastActivePopup
+					Description:
+					Export Ordinal: 0
+					Returns
+						Window Handle: HWND
+					Parameters
+						Window Handle: HWND
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+				Number: BS_TOP		= 0x400
+				Number: BS_RIGHT	= 0x200
+				Number: BS_BOTTOM	= 0x800
+				! ! Number: BS_CENTER = 768
+				Number: BS_CENTER 	= 0x300
+				! ! Number: BS_VCENTER = 3072
+				Number: BS_VCENTER 	= 0x00000C00
+				Number: BS_BITMAP 	= 0x00000080
+				! !
+				Number: BS_GROUPBOX 	= 7
+				Number: BS_LEFTTEXT 	= 0x00000020
+				Number: BS_RIGHTBUTTON	= BS_LEFTTEXT
+				Number: BS_FLAT 		= 0x8000
+				Number: BS_MULTILINE 	= 0x2000
+				Number: BS_PUSHLIKE 	= 0x1000
+				Number: GWL_STYLE 	= -16
+				Number: WS_BORDER = 0x00800000
+				Number: WS_NO_BORDER = 0xFFFCF9FF
+				Number: WS_NO_CAPTION = 0xFF3FFFFF
+				! !
+				Number: WM_SETCURSOR		= 0x0020
+				Number: WM_MOUSEMOVE		= 0x0200
+				Number: WM_LBUTTONDOWN	= 0x0201
+				Number: WM_LBUTTONUP		= 0x0202
+				Number: WM_NCMOUSEMOVE	= 0x00A0
+				Number: WM_NCCREATE 		= 0x0081
+				Number: WM_LBUTTONDBLCLK          = 0x0203
+				Number: WM_RBUTTONDOWN           = 0x0204
+				Number: WM_RBUTTONUP                  = 0x0205
+				Number: WM_RBUTTONDBLCLK         = 0x0206
+				Number: WM_MBUTTONDOWN           = 0x0207
+				Number: WM_MBUTTONUP                  = 0x0208
+				Number: WM_MBUTTONDBLCLK         = 0x0207
+				Number: WM_COMMAND                      = 0x0111
+				Number: MK_LBUTTON                         = 0x0001
+				Number: MK_RBUTTON                        = 0x0002
+				Number: MK_SHIFT                               = 0x0004
+				Number: MK_CONTROL                        = 0x0008
+				Number: MK_MBUTTON                       = 0x0010
+				!
+				Number: VTM_BaseR=0x6000
+				Number: VTM_MenuSelectR=VTM_BaseR+7
+				Number: MF_BYPOSITION = 0x0400
+			User
+				! For PAM_User messages for GENERAL.APL
+				Number: GENAplMsgOffSet = SAM_User + 0
+				! Message go up to AplMsgOffSet + 99
+				Number: GENAplConstOffSet = 1
+				! Messages
+				Number: PAM_cls_SETINSTANCEVARS = GENAplMsgOffSet + 1
+				Number: PAM_cls_EXIT = GENAplMsgOffSet + 2
+				Number: PAM_cls_CLOSE = GENAplMsgOffSet + 3
+				Number: PAM_cls_HELP = GENAplMsgOffSet + 4
+				Number: PAM_cls_ITEMENQUIRY = GENAplMsgOffSet + 5
+				Number: PAM_cls_INITIALISE = GENAplMsgOffSet + 6
+				Number: PAM_cls_CHILDCHANGED = GENAplMsgOffSet + 7
+				Number: PAM_cls_REFRESHAFTRCHILDCHANGE = GENAplMsgOffSet + 8
+				Number: PAM_cls_SETFIELDS = GENAplMsgOffSet + 9
+				Number: PAM_cls_GETFIELDS = GENAplMsgOffSet + 10
+				Number: PAM_cls_PARENTACTIVATE = GENAplMsgOffSet + 11
+				Number: PAM_cls_SETARRAY = GENAplMsgOffSet + 12
+				Number: PAM_cls_GETARRAY = GENAplMsgOffSet + 13
+				!
+				Number: WM_TIMER = 0x0113
+				Number: SW_MINIMIZE = 6
+				Number: SW_RESTORE = 9
+				Number: SW_SHOW = 5
+				! Constants
+				!
+				String: FlemSysIniFileName = 'flemsys.ini'
+				String: IniGeneralLiveSectionName = 'General Live'
+				String: IniGeneralPlaySectionName = 'General Play'
+				String: IniAccountsLiveSectionName = 'Accounts Live'
+				String: IniAccountsPlaySectionName = 'Accounts Play'
+				!
+				Number: GEN_CommingFromPopUp = GENAplConstOffSet + 1
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1012930761
+0000: 5200000024000000 0000000000000000 0200000300000004 000000E0010D0000
+0020: 00FF3F1100B80000 0100FFFFE01E0000 0001FE00FF03
+.enddata
+		Named Menus
+		Internal Functions
+			Function: DisplayHelp
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Window Handle: hWnd
+				Static Variables
+				Local variables
+					String: sHelpFileName
+				Actions
+					If ExtractHelpFileName( hWnd, sHelpFileName )
+						Set sHelpFileName = OurGetIniFileParameter( 'GENERAL', 'HelpStoragePath', '' ) || '\\' || sHelpFileName
+						Call SalMessageBox( 'Loading.. '||sHelpFileName, 'Help', MB_Ok )
+						Return TRUE
+					Else
+						Return FALSE
+			Function: ExtractHelpFileName
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Window Handle: hWnd
+					Receive String: sHelpFileName
+				Static Variables
+				Local variables
+					String: sTemplet
+					Number: nPos
+					Number: nTempletLength
+					Number: nNum
+				Actions
+					If SalGetItemName( hWnd, sTemplet )
+						Set sHelpFileName = ''
+						Set nTempletLength = SalStrLength( sTemplet )
+						Set nNum = 0
+						Set nPos = 1
+						While nPos <= nTempletLength
+							Set nNum = nNum + SalStrLop( sTemplet ) * nPos
+							Set nPos = nPos + 1
+						Set sHelpFileName = SalNumberToStrX( nNum, 0 ) || '.hlp'
+						Return TRUE
+					Else
+						Return FALSE
+			Function: OurGetIniFileParameter
+				Description: sGeneralOrAccounts = 'GENERAL' OR 'ACCOUNTS' exact strings only.
+						sEntry = 'Customer' is the name of the program eg  Customer='g:\apps\....'
+						sDefalt is what to return if entry cannot be found.
+				Returns
+					String:
+				Parameters
+					String: sGeneralOrAccounts
+					String: sEntry
+					String: sDefault
+				Static Variables
+				Local variables
+					String: sValue
+					String: sSection
+				Actions
+					Set sValue = ''
+					If SqlDatabase = 'STOCK'
+						If sGeneralOrAccounts = 'GENERAL'
+							Set sSection = IniGeneralLiveSectionName
+						Else
+							Set sSection = IniAccountsLiveSectionName
+					Else
+						If sGeneralOrAccounts = 'GENERAL'
+							Set sSection = IniGeneralPlaySectionName
+						Else
+							Set sSection = IniAccountsPlaySectionName
+					Call SalGetProfileString( sSection, sEntry, sDefault, sValue, FlemSysIniFileName )
+					Return sValue
+			Function: OurSetIniFileParameter
+				Description: sGeneralOrAccounts = 'GENERAL' OR 'ACCOUNTS' exact strings only.
+						sEntry = 'Customer' is the name of the program eg  Customer='g:\apps\....'
+						sValue is the entry value.
+				Returns
+					Boolean:
+				Parameters
+					String: sGeneralOrAccounts
+					String: sEntry
+					String: sValue
+				Static Variables
+				Local variables
+					String: sSection
+				Actions
+					If SqlDatabase = 'STOCK'
+						If sGeneralOrAccounts = 'GENERAL'
+							Set sSection = IniGeneralLiveSectionName
+						Else
+							Set sSection = IniAccountsLiveSectionName
+					Else
+						If sGeneralOrAccounts = 'GENERAL'
+							Set sSection = IniGeneralPlaySectionName
+						Else
+							Set sSection = IniAccountsPlaySectionName
+					Return SalSetProfileString( sSection, sEntry, sValue, FlemSysIniFileName )
+			Function: ValidateUserRightsList
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sValidUsers
+					String: sUser
+					Boolean: bNotify
+				Static Variables
+				Local variables
+				Actions
+					If SalStrScan( sValidUsers, sUser ) = -1
+						If bNotify
+							Call SalMessageBox( 'Your access rights are not sufficient.', 'Warning', MB_Ok )
+						Return FALSE
+					Else
+						Return TRUE
+			Function: IsUserAccounts
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sUserId
+					Boolean: bNotify
+				Static Variables
+				Local variables
+					String: sAccountsUsers
+				Actions
+					Set sAccountsUsers = OurGetIniFileParameter( 'ACCOUNTS', 'AccountsUsers', '' )
+					Return ValidateUserRightsList( sAccountsUsers, sUserId, bNotify )
+			Function: IsUserAdmin
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sUserId
+					Boolean: bNotify
+				Static Variables
+				Local variables
+					String: sAdminUsers
+				Actions
+					Set sAdminUsers = OurGetIniFileParameter( 'ACCOUNTS', 'SystemAdministrators', '' )
+					Return ValidateUserRightsList( sAdminUsers, sUserId, bNotify )
+			Function: IsUserStockController
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sUserId
+					Boolean: bNotify
+				Static Variables
+				Local variables
+					String: sStockControllers
+				Actions
+					Set sStockControllers = OurGetIniFileParameter( 'GENERAL', 'StockControllers', '' )
+					Return ValidateUserRightsList( sStockControllers, sUserId, bNotify )
+			Function: CheckProgramExistance
+				Description:
+				Returns
+				Parameters
+					String: sStartupWindowHeading
+					Boolean: bCheckDatabaseInfo
+				Static Variables
+				Local variables
+					Window Handle: hWndTmp
+				Actions
+					Set hWndTmp = FindWindowA( 0, sStartupWindowHeading )
+					If hWndTmp
+						Call SalBringWindowToTop( hWndTmp )
+						! Maximize the window
+						Call ShowWindow( hWndTmp, 3 )
+						Call SalMessageBeep( 1 )
+						Call SalQuit(  )
+					Else
+						If bCheckDatabaseInfo AND SqlDatabase = ''
+							If NOT SalModalDialog( dlgDatabaseInfo, hWndNULL )
+								Call SalQuit(  )
+			Function: OurWaitCursor  
+				Description:
+				Returns
+				Parameters
+					Boolean: bOn  
+				Static Variables
+				Local variables
+				Actions
+					Call OurWaitCursorOverride( bOn, FALSE )
+			Function: OurWaitCursorOverride  
+				Description:
+				Returns
+				Parameters
+					Boolean: bOn  
+					Boolean: bOverride  
+				Static Variables
+					Number: nWaitCount  
+					Boolean: bOverriden  
+				Local variables
+				Actions
+					If bOverride
+						If bOn
+							Call SalWaitCursor( TRUE )
+						Else
+							Call SalWaitCursor( FALSE )
+						Set bOverriden = TRUE
+					Else
+						If bOn
+							If NOT nWaitCount > 0 OR bOverriden
+								Call SalWaitCursor( TRUE )
+								Set bOverriden = FALSE
+							Set nWaitCount = nWaitCount + 1
+						Else
+							Set nWaitCount = nWaitCount - 1
+							If NOT nWaitCount > 0 OR bOverriden
+								Call SalWaitCursor( FALSE )
+								Set bOverriden = FALSE
+			Function: OurMapEnterToTab  
+				Description:
+				Returns
+				Parameters
+					Boolean: bOn  
+				Static Variables
+					Number: nCount  
+				Local variables
+				Actions
+					If bOn
+						If NOT nCount > 0
+							Call SalMapEnterToTab( TRUE )
+						Set nCount = nCount + 1
+					Else
+						Set nCount = nCount - 1
+						If NOT nCount > 0
+							Call SalMapEnterToTab( FALSE )
+			Function: RoundTo2Decimals  
+				Description:
+				Returns
+					Number:
+				Parameters
+					Number: nNumber  
+				Static Variables
+				Local variables
+				Actions
+					Return SalNumberTruncate( ( nNumber + 0.005 ), 10, 2 )
+			Function: GetFullItemName
+				Description: Gets full item name eg frmCust.tblCust.colCustNo.
+						If parameter is null then it is ignored
+				Returns
+					String:
+				Parameters
+					Window Handle: hWndParnt
+					Window Handle: hWndFrm
+					Window Handle: hWndItm
+				Static Variables
+				Local variables
+					String: sFullItmName
+					String: sItmName
+				Actions
+					If hWndItm = hWndNULL
+						Set sItmName = ''
+						Set sFullItmName = sItmName
+					Else
+						Call SalGetItemName( hWndItm, sItmName )
+						Set sFullItmName = sItmName
+					If hWndFrm = hWndNULL
+						Set sItmName = ''
+					Else
+						Call SalGetItemName( hWndFrm, sItmName )
+						Set sFullItmName = sItmName || '.' || sFullItmName
+					If hWndParnt = hWndNULL
+						Set sItmName = ''
+					Else
+						Call SalGetItemName( hWndParnt, sItmName )
+						Set sFullItmName = sItmName || '.' || sFullItmName
+					Return sFullItmName
+		Class Definitions
+.data RESOURCE 0 0 1 3600663767
+0000: 590000004A000000 0000000000000000 0200000100FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F04003C00 001063006C73546F
+0040: 6F6C546900705769 6E646F771E900000 0001000047030400 00FFFF01
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+	Dialog Box: dlgDatabaseInfo
+		Class:
+		Property Template:
+		Class DLL Name:
+		Title: Database Information
+		Accesories Enabled? No
+		Visible? Yes
+		Display Settings
+			Display Style? Default
+			Visible at Design time? Yes
+			Type of Dialog: Modal
+			Window Location and Size
+				Left:   3.725"
+				Top:    1.875"
+				Width:  2.538"
+				Width Editable? Yes
+				Height: 1.708"
+				Height Editable? Yes
+			Absolute Screen Location? Yes
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Default
+		Description:
+		Tool Bar
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: Default
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Contents
+		Contents
+			Combo Box: cmbDatabase
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Window Location and Size
+					Left:   1.075"
+					Top:    0.115"
+					Width:  1.2"
+					Width Editable? Yes
+					Height: 1.094"
+					Height Editable? Yes
+				Visible? Yes
+				Editable? Yes
+				String Type: String
+				Maximum Data Length: Default
+				Sorted? No
+				Always Show List? No
+				Vertical Scroll? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+				Input Mask: Unformatted
+				List Initialization
+					Text: STOCK
+					Text: STOCKDEV
+					Text: STKLOCAL
+				Message Actions
+			Combo Box: cmbUser
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Window Location and Size
+					Left:   1.075"
+					Top:    0.417"
+					Width:  1.2"
+					Width Editable? Yes
+					Height: 1.094"
+					Height Editable? Yes
+				Visible? Yes
+				Editable? Yes
+				String Type: String
+				Maximum Data Length: Default
+				Sorted? No
+				Always Show List? No
+				Vertical Scroll? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+				Input Mask: Unformatted
+				List Initialization
+					Text: AMANDA
+					Text: CAROL
+					Text: CATHY
+					Text: CHRIS
+					Text: CHRISTIN
+					Text: DANI
+					Text: DAWN
+					Text: GRAHAM
+					Text: GUEST
+					Text: ILEANA
+					Text: JAN
+					Text: JEAN
+					Text: LIZ
+					Text: LYNN
+					Text: MEAGHAN
+					Text: ROBYN
+					Text: TICKETS
+					Text: WES
+				Message Actions
+					On SAM_AnyEdit
+						Set dfPassword = cmbUser
+					On SAM_Validate
+						Set dfPassword = cmbUser
+						Return VALIDATE_Ok
+			Data Field: dfPassword
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left:   1.075"
+						Top:    0.719"
+						Width:  1.2"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+				Message Actions
+			Background Text: Database
+				Resource Id: 60977
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   0.188"
+					Top:    0.156"
+					Width:  0.825"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Right
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Background Text: User
+				Resource Id: 60978
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   0.488"
+					Top:    0.458"
+					Width:  0.525"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Right
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Background Text: Password
+				Resource Id: 60979
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   0.225"
+					Top:    0.76"
+					Width:  0.788"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Right
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Pushbutton: pbOk
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Ok
+				Window Location and Size
+					Left:   0.25"
+					Top:    1.052"
+					Width:  0.725"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: Enter
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Set SqlDatabase = SalStrUpperX( cmbDatabase )
+						Set SqlUser = SalStrUpperX( cmbUser )
+						Set SqlPassword = SalStrUpperX( dfPassword )
+						Return SalEndDialog( hWndForm, TRUE )
+			Pushbutton: pbCancel
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Cancel
+				Window Location and Size
+					Left:   1.538"
+					Top:    1.052"
+					Width:  0.725"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: Esc
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Return SalEndDialog( hWndForm, FALSE )
+		Functions
+		Window Parameters
+		Window Variables
+		Message Actions
+			On SAM_Create
+				Set cmbDatabase = 'STOCK'
+				Call SalSetFocus( cmbUser )

@@ -1,0 +1,578 @@
+Application Description: SQLWindows 5.01 Jans List Box Class
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF2C0000 002C000000BC0200 0065010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.1"
+			Top:    2.896"
+			Width:  4.688"
+			Height: 2.99"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   6.6"
+			Top:    0.521"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: Sqlhandl.apl
+		File Include: Dates.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Italic
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Black
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for LISTBOX.APL
+				Number: LBAplMsgOffSet = SAM_User + 8200
+				! Message go up to AplOffSet + 99
+				Number: LBAplConstOffSet = 4300
+				Number: PAM_clsLB_POPULATE = LBAplMsgOffSet + 1
+				Number: PAM_clsLB_RESET = LBAplMsgOffSet + 2
+				Number: PAM_clsLB_POPULATEDCOUNT = LBAplMsgOffSet + 3
+				Number: PAM_clsLB_FORMATCONTEXTROW = LBAplMsgOffSet + 4
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 2607263250
+0000: 8600000038000000 0000000000000000 0200000500000022 000000E0040D0000
+0020: 00FF3F2F00A00000 010D0000FFFFE03C 00000001FE00FF83 4900000001FB00FF
+0040: 0F56000000EE0100 FF3F
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 3600663767
+0000: 590000004A000000 0000000000000000 0200000100FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F04003C00 001063006C73546F
+0040: 6F6C546900705769 6E646F771E900000 0001000047030400 00FFFF01
+.enddata
+			List Box Class: clslbClass
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  1.2"
+					Width Editable? Class Default
+					Height: 0.854"
+					Height Editable? Class Default
+				Visible? Class Default
+				Multiple selection? Class Default
+				Sorted? Class Default
+				Vertical Scroll? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+				Class Variables
+				Instance Variables
+					String: sSqlPopStatement
+					! Set bUsedInQueryDialog = TRUE to fix wait cursor staying on after drop down on a query dialog
+					Boolean: bUsedInQueryDialog
+					Boolean: bPopulateOnce
+					Boolean: bGetCountOnPopulate
+					String: sCurrentSelectionString
+					Boolean: bPopulateOnStartup
+					! PRIVATE
+					Boolean: bListPopulated
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					Number: nOurHandleNo
+					Boolean: bOk
+					Number: nRowCount
+				Functions
+					Function: GetListSelectionString
+						Description:
+						Returns
+							String:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Return SalListQueryTextX( hWndItem, SalListQuerySelection( hWndItem ) )
+					Function: GetListSelectionNumber
+						Description:
+						Returns
+							Number:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Return SalListQuerySelection( hWndItem )
+				List Initialization
+				Message Actions
+					On SAM_Create
+						Set sSqlPopStatement = ''
+						Set bListPopulated = FALSE
+						Set bUsedInQueryDialog = FALSE
+						Set sCurrentSelectionString = ''
+						Set bPopulateOnce = TRUE
+						Set bGetCountOnPopulate = FALSE
+						Set bPopulateOnStartup = FALSE
+						Call SalSendMsg( hWndItem, PAM_cls_SETINSTANCEVARS, 0, 0 ) 
+						Set nOurHandleNo = SqlHandlesGetReferenceNo( GetFullItemName( hWndNULL, hWndForm, hWndItem ) || 'LB' )
+						If bPopulateOnStartup
+							Call SalPostMsg( hWndItem, PAM_clsLB_POPULATE, 0, 0 )
+					On PAM_clsLB_POPULATE
+						If bPopulateOnce
+							If NOT sSqlPopStatement = '' AND NOT bListPopulated
+								Set bOk = TRUE
+							Else
+								Set bOk = FALSE
+						Else
+							If NOT sSqlPopStatement = ''
+								Set bOk = TRUE
+							Else
+								Set bOk = FALSE
+						If bOk
+							If bUsedInQueryDialog
+								Call OurWaitCursorOverride( TRUE, TRUE )
+							Else
+								Call OurWaitCursor( TRUE )
+							If haSqlHandles[ nOurHandleNo ].Connect( )
+								If SalListPopulate( hWndItem, haSqlHandles[ nOurHandleNo ].hSqlHandle, sSqlPopStatement )
+									Set bListPopulated = TRUE
+									If bGetCountOnPopulate
+										Set nRowCount = SalListQueryCount( hWndItem )
+										Call SalSendMsg( hWndItem, PAM_clsLB_POPULATEDCOUNT, 0, nRowCount )
+							If bUsedInQueryDialog
+								Call OurWaitCursorOverride( FALSE, TRUE )
+							Else
+								Call OurWaitCursor( FALSE )
+					On PAM_clsLB_RESET
+						Set bListPopulated = FALSE
+						Return SalListClear( hWndItem )
+					On SAM_Destroy
+						Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+					On SAM_Click
+						Set sCurrentSelectionString = SalListQueryTextX( hWndItem, SalListQuerySelection( hWndItem ) ) 
+						Return TRUE
+			List Box Class: clsListBoxTable
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  1.2"
+					Width Editable? Class Default
+					Height: 0.854"
+					Height Editable? Class Default
+				Visible? Class Default
+				Multiple selection? Class Default
+				Sorted? Class Default
+				Vertical Scroll? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+				Class Variables
+				Instance Variables
+					! PUBLIC
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					!
+					String: sContextRow
+					!
+					Boolean: bPopulateOnStartup
+					! PRIVATE
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					Number: nOurHandleNo
+					Number: nContextRow
+					Number: nInd
+				Functions
+				List Initialization
+				Message Actions
+					On SAM_Create
+						Set sSql = ''
+						Set sName = ''
+						Set sBind = ''
+						Set sInto = ''
+						Set bPopulateOnStartup = TRUE
+						Set nContextRow = NUMBER_Null
+						Set sContextRow = ''
+						Call SalSendMsg( hWndItem, PAM_cls_SETINSTANCEVARS, 0, 0 ) 
+						Set nOurHandleNo = SqlHandlesGetReferenceNo( GetFullItemName( hWndNULL, hWndForm, hWndItem ) || 'LB' )
+						If bPopulateOnStartup
+							Call SalPostMsg( hWndItem, PAM_clsLB_POPULATE, 0, 0 )
+					On PAM_clsLB_POPULATE
+						Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+						Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+						!
+						If SalListClear( hWndItem )
+							Set nContextRow = NUMBER_Null
+							Set sContextRow = ''
+							Call SalSendMsg( hWndItem, PAM_clsLB_RESET, 0, 0 )
+						!
+						If haSqlHandles[ nOurHandleNo ].Execute( )
+							Set nContextRow = 0
+							While haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+								Set sContextRow = ''
+								Call SalSendMsg( hWndItem, PAM_clsLB_FORMATCONTEXTROW, 0, nContextRow )
+								If SalListAdd( hWndItem, sContextRow ) >= 0
+									Set nContextRow = nContextRow + 1
+							Return TRUE
+						Else
+							Return FALSE
+					On SAM_Destroy
+						Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+			List Box Class: clslbMonthsClass
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  1.025"
+					Width Editable? Class Default
+					Height: 2.021"
+					Height Editable? Class Default
+				Visible? Class Default
+				Multiple selection? Class Default
+				Sorted? No
+				Vertical Scroll? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clslbClass
+				Class Variables
+				Instance Variables
+					Number: nStartMonth
+				Functions
+					Function: GetSelectMonthBegEndDays
+						Description:
+						Returns
+						Parameters
+							Receive Number: nMonth
+							Receive Number: nBegDay
+							Receive Number: nEndDay
+							Number: nYear
+						Static Variables
+						Local variables
+						Actions
+							Set nMonth = clslbMonthsClass.GetSelectedMonth( )
+							Call GetMonthBegEndDays( nMonth, nYear, nBegDay, nEndDay )
+					Function: GetSelectedMonth
+						Description:
+						Returns
+							Number:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Return clslbMonthsClass.GetListSelectionNumber( ) + 1
+				List Initialization
+					Text: January
+					Text: February
+					Text: March
+					Text: April
+					Text: May
+					Text: June
+					Text: July
+					Text: August
+					Text: September
+					Text: October
+					Text: November
+					Text: December
+				Message Actions
+					On SAM_Create
+						Set nStartMonth = SalDateMonth( SalDateCurrent(  ) )
+						Call SalSendClassMessage( SAM_Create, wParam, lParam )
+						Call SalListSetSelect( hWndItem, nStartMonth - 1 )
+			List Box Class: clslbStatesClass
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  0.563"
+					Width Editable? Class Default
+					Height: 1.354"
+					Height Editable? Class Default
+				Visible? Class Default
+				Multiple selection? Class Default
+				Sorted? No
+				Vertical Scroll? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clslbClass
+				Class Variables
+				Instance Variables
+					! numbering of states in relation to list initialization bellow
+					Number: nStartState
+				Functions
+					Function: GetSelectState
+						Description:
+						Returns
+							String:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Return clslbStatesClass.GetListSelectionString( )
+					Function: GetCustNoRangeForState
+						Description:
+						Returns
+						Parameters
+							String: sState
+							Receive Number: nLoCustNo
+							Receive Number: nHiCustNo
+						Static Variables
+						Local variables
+						Actions
+							If sState = 'NT'
+								Set nLoCustNo = 080000
+								Set nHiCustNo = 099999 
+							Else If sState = 'NSW'
+								Set nLoCustNo = 200000
+								Set nHiCustNo = 299999
+							Else If sState = 'ACT'
+								Set nLoCustNo = 200000
+								Set nHiCustNo = 299999
+							Else If sState = 'VIC'
+								Set nLoCustNo = 300000
+								Set nHiCustNo = 399999
+							Else If sState = 'QLD'
+								Set nLoCustNo = 400000
+								Set nHiCustNo = 499999
+							Else If sState = 'SA'
+								Set nLoCustNo = 500000
+								Set nHiCustNo = 599999
+							Else If sState = 'WA'
+								Set nLoCustNo = 600000
+								Set nHiCustNo = 699999
+							Else If sState = 'TAS'
+								Set nLoCustNo = 700000
+								Set nHiCustNo = 799999
+							Else
+								Set nLoCustNo = 0
+								Set nHiCustNo = 0
+					Function: GetSelectStateCustNoRange
+						Description:
+						Returns
+						Parameters
+							Receive Number: nLoCustNo
+							Receive Number: nHiCustNo
+						Static Variables
+						Local variables
+						Actions
+							Call GetCustNoRangeForState( GetSelectState(  ), nLoCustNo, nHiCustNo )
+				List Initialization
+					Text: ACT
+					Text: NSW
+					Text: NT
+					Text: QLD
+					Text: SA
+					Text: TAS
+					Text: VIC
+					Text: WA
+				Message Actions
+					On SAM_Create
+						Set nStartState = 7
+						Call SalSendClassMessage( SAM_Create, wParam, lParam )
+						Call SalListSetSelect( hWndItem, nStartState - 1 )
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions

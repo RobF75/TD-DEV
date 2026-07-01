@@ -1,0 +1,1680 @@
+.head 0 +  Application Description: SQLWindows 5.01 Jans Table Query Class
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000DA0000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF160000 0016000000000300 0053010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left:   0.15"
+.head 3 -  Top:    0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 0818B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left:   5.1"
+.head 3 -  Top:    2.896"
+.head 3 -  Width:  4.688"
+.head 3 -  Height: 2.99"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   Default
+.head 3 -  Top:    Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   6.6"
+.head 3 -  Top:    0.521"
+.head 2 -  Fully Qualified External References? No
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: Dialog.apl
+.head 2 -  File Include: Cmbfield.apl
+.head 2 -  File Include: Table.apl
+.head 2 -  File Include: cache.apl
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Italic
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Black
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for QUERY.APL
+.head 4 -  Number: QUERYAplMsgOffSet = SAM_User + 1700
+.head 4 -  ! Message go up to AplOffSet + 99
+.head 4 -  Number: PAM_clsQUERYNOT_GETSTATE = QUERYAplMsgOffSet + 1
+.head 4 -  Number: PAM_clsQUERYFIELD_QBE = QUERYAplMsgOffSet + 2
+.head 4 -  !
+.head 4 -  Number: QUERYAplConstOffSet = 850
+.head 4 -  Number: Q_PreLikePercent = QUERYAplConstOffSet + 1
+.head 4 -  Number: Q_PostLikePercent = QUERYAplConstOffSet + 2
+.head 4 -  Number: Q_PreNPostLikePercent = QUERYAplConstOffSet + 3
+.head 4 -  Number: Q_NoLikePercent = QUERYAplConstOffSet + 4
+.head 4 -  !
+.head 4 -  !
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 1113073801
+0000: 8600000038000000 0000000000000000 020000050000005D 000000E0010D0000
+0020: 00FF3F6A00B80000 0100FFFFE0770000 0001FE00FF038400 0000040DFA0000FF
+0040: 0F91000000EE0100 FF3F
+.enddata
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 1053523970
+0000: 330C000088050000 0000000000000000 0200001500FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F33003C00 001163006C735462
+0040: 6C51756500727944 69616C6F6700A000 0000060000000F03 040000FE00FF1304
+0060: 00000204FA0000FF 0F08000000EE0200 FF3F0C0080000001 0D000000FFFFE019
+0080: 00000001FE00FF83 2600000001FB00FF 0F01805D00800000 0100000011F35175
+00A0: 006174614669656C 64684401000C00EF 02FE00FF9B040002 FB00FF6F0800EE02
+00C0: 00FFBF0CB9000200 FFFFC01000000001 0DFE00FF831D0000 0001FB00FF0F2A00
+00E0: 00008E02000100FE 00C180010000003F 2E00B00000010D00 FFFFE03B00000002
+0100: FE00FF833F000000 01FB00FF0F4C0000 00EE0200FF3F5000 B800000100FFFF18
+0120: 01805D000200E000 0012636C07436F6D 626FFC4669ED0C00 D9020400FF7F0473
+0140: 000200FFFFCD0800 02FD00FF370C0002 F700FFDF10D80001 0D00FF7F1D730001
+0160: 00FFFFCD2A0002D1 000100003F8001F9 0000372E0001F60D 00FFDF3BDC000200
+0180: FF7F3F73000100FF FFCD4C0002FD00FF 37500001F700FF1F 01801A0000000003
+01A0: 00000015FC636C00 4F70657261746F72 1C4669380000E800 020000D9010D00FF
+01C0: 7F0D7200000100FF FF21018004000004 C30013636C077943 42596500734E6F46
+01E0: 6C61671EA0000000 01000067020400FF FF01018022000000 05400000001D636C
+0200: 54034D616B655365 006C656374656452 6F00774B65794172 7261C07974000000
+0220: 04DE0002D1000100 003F8001F9000037 040001F60D00FF1F 110000DC000100FF
+0240: 7F1E7200000200FF FF010180B7000000 06C3000F636C0061 626C6547656E6540
+0260: 72616C3602001578 00000001F60D00FF DF0DDC000100FF7F 1A7200000100FFFF
+0280: C12700000001FD00 FF073400000002F7 00FF9F3800DC0002 00FF7F3C70000000
+02A0: 0200FFFFC1400000 0002FD00FF074400 000002F700FF1F48 0000DC000200FF7F
+02C0: 4C73000200FFFFCD 500002D100010000 3F8001F900000754 00000001460D0001
+02E0: 0000FFE480010000 1F580000D800010D 00FF7F6570000000 0100FFFFC1720000
+0300: 0001FD00FF077F00 000001F700FF1F8C 0000DC000100FF7F 99700000000100FF
+0320: FFC1A600000001FD 00FF07B300000003 F60400FF1F01802F 0000000007000000
+0340: 1064636C44696FF9 4765608600000005 00CF010DFE00FF9B 0D0002FB00FF6F11
+0360: 00E8040D0000FFBF 1EB9000300FFFFE4 22000001FE00FF43 01800D0000860800
+0380: 0C636CF070624765 891E000001009E00 010DFD00FFC70180 0D00000900000009
+03A0: 636C07457869741E A200000100006701 0D00FFFF31018004 000A700000000C50
+03C0: 006963457870616E 64441E0000010000 EF02FE00FF630180 0400E00B00000012
+03E0: 07546F67676C0065 427574746F6E1EA2 0000010000770200 FFFF3101802F000C
+0400: 4200000E636C46E0 6F726D47659B8600 053D00010DFB00FF 6F0D00EE0200FFBF
+0420: 11B9000400FFFFE6 1E0003FE00FF9B22 0001FB00FF8F0180 0D19000D0017633E
+0440: 6C507200696E7442 6173696380526570 6F72741ED1000100 00B3010D00FFFF18
+0460: 01800D000E000000 000B686353716C08 48616E6C651E00D1 00010000B3010D00
+0480: FFFF18018004000F 003000000C636466 7C47651EA3000100 00770300FFFF2101
+04A0: 802E000010620000 1163700153746172 745072006F677261 6DBA0000EC000700
+04C0: DD0200FF7F047200 000200FFFFCD0800 02FD00FF270C0000 01F60D00FFDF19DC
+04E0: 000300FF7F1D7200 000200FFFFC12100 000001FD00FFC701 800D880011000011
+0500: 63015370696E5365 6100736F6E596561 721EA20000010000 67010D00FFFF2101
+0520: 8034000012400000 0014636C7053656C 6346E0726F6D5461 606C0000000400CF
+0540: 010DFE00FF9B0D00 01FB00FF6F1A00EE 0100FFBF27B90001 00FFFF1801800400
+0560: 13002000000D636C 5365096563496E74 6F441E0000010000 EF03FE00FF630180
+0580: 0D00C0140000000C 63F86362478E6C00 01009E00010DFD00 FF07
+.enddata
+.head 3 +  Dialog Box Class: clsTblQueryDialog
+.head 4 -  Title:
+.head 4 -  Accesories Enabled? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Display Settings
+.head 5 -  Display Style? Class Default
+.head 5 -  Visible at Design time? Yes
+.head 5 -  Type of Dialog: Modal
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Absolute Screen Location? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 4 -  Next Class Child Key: 19
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Tool Bar
+.head 5 -  Display Settings
+.head 6 -  Display Style? Class Default
+.head 6 -  Location? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Size: Class Default
+.head 6 -  Size Editable? Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 5 +  Contents
+.head 6 +  Pushbutton: pbHelp
+.head 7 -  Class Child Ref Key: 6
+.head 7 -  Class ChildKey: 16
+.head 7 -  Class: clsDialogGeneral
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 +  Message Actions
+.head 8 +  On PAM_clsPB_CLICK
+.head 9 -  Call SalSendClassMessage( PAM_clsPB_CLICK, wParam, lParam ) 
+.head 9 -  Call OurWaitCursorOverride( FALSE, TRUE )
+.head 6 +  Pushbutton: pbClear
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 19
+.head 7 -  Class: clspbTblClearRows
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   0.6"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 -  !
+.head 6 +  Pushbutton: pbQuery
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 7
+.head 7 -  Class: clspbTblQuery
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   2.075"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 -  !
+.head 6 +  Pushbutton: pbPrintForm
+.head 7 -  Class Child Ref Key: 10
+.head 7 -  Class ChildKey: 17
+.head 7 -  Class: clsDialogGeneral
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbExit
+.head 7 -  Class Child Ref Key: 7
+.head 7 -  Class ChildKey: 18
+.head 7 -  Class: clsDialogGeneral
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 4 +  Contents
+.head 5 +  Data Field: dfDatabase
+.head 6 -  Class Child Ref Key: 8
+.head 6 -  Class ChildKey: 12
+.head 6 -  Class: clsDialogGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Data
+.head 7 -  Maximum Data Length: Class Default
+.head 7 -  Data Type: Class Default
+.head 7 -  Editable? Class Default
+.head 6 -  Display Settings
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Border? Class Default
+.head 7 -  Justify: Class Default
+.head 7 -  Format: Class Default
+.head 7 -  Country: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Input Mask: Class Default
+.head 6 -  Message Actions
+.head 5 +  Data Field: dfUser
+.head 6 -  Class Child Ref Key: 9
+.head 6 -  Class ChildKey: 13
+.head 6 -  Class: clsDialogGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Data
+.head 7 -  Maximum Data Length: Class Default
+.head 7 -  Data Type: Class Default
+.head 7 -  Editable? Class Default
+.head 6 -  Display Settings
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Border? Class Default
+.head 7 -  Justify: Class Default
+.head 7 -  Format: Class Default
+.head 7 -  Country: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Input Mask: Class Default
+.head 6 -  Message Actions
+.head 5 +  Custom Control: ccSeasonYear
+.head 6 -  Class Child Ref Key: 13
+.head 6 -  Class ChildKey: 14
+.head 6 -  Class: clsDialogGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Display Settings
+.head 7 -  DLL Name:
+.head 7 -  MS Windows Class Name:
+.head 7 -  Style:  Class Default
+.head 7 -  ExStyle:  Class Default
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Border? Class Default
+.head 7 -  Etched Border? Class Default
+.head 7 -  Hollow? Class Default
+.head 7 -  Vertical Scroll? Class Default
+.head 7 -  Horizontal Scroll? Class Default
+.head 7 -  Tab Stop? Class Default
+.head 7 -  Tile To Parent? Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  DLL Settings
+.head 6 -  Message Actions
+.head 5 -  Background Text: Season
+.head 6 -  Resource Id: 45038
+.head 6 -  Class Child Ref Key: 14
+.head 6 -  Class ChildKey: 15
+.head 6 -  Class: clsDialogGeneral
+.head 6 -  Window Location and Size
+.head 7 -  Left:   Class Default
+.head 7 -  Top:    Class Default
+.head 7 -  Width:  Class Default
+.head 7 -  Width Editable? Class Default
+.head 7 -  Height: Class Default
+.head 7 -  Height Editable? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 4 +  Derived From
+.head 5 -  Class: clsDialogGeneral
+.head 4 +  Class Variables
+.head 5 -  Window Handle: hWndChild
+.head 5 -  String: sBuildWhere
+.head 5 -  String: sItem
+.head 5 -  Boolean: bFirst
+.head 5 -  Boolean: bQuery
+.head 5 -  Boolean: bOk
+.head 4 +  Instance Variables
+.head 5 -  Window Handle: hWndTable
+.head 5 -  Window Handle: hWndFirstFocus
+.head 5 -  Boolean: bShowQueryMsg
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Call PopWndHdl( hWndTable, TRUE )
+.head 6 -  Set hWndFirstFocus = hWndNULL
+.head 6 -  Set bShowQueryMsg = TRUE
+.head 6 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On SAM_CreateComplete
+.head 6 -  Call SalSetFocus( hWndFirstFocus )
+.head 6 -  Set bOk = SalSendClassMessage( SAM_CreateComplete, wParam, lParam )
+.head 6 -  Call OurWaitCursorOverride( FALSE, TRUE )
+.head 6 -  Return bOk
+.head 5 +  On PAM_clsTBL_QUERY
+.head 6 -  Set bFirst = TRUE
+.head 6 -  Set sBuildWhere = ''
+.head 6 -  !
+.head 6 -  Set hWndChild = SalGetFirstChild( hWndForm, TYPE_DataField | TYPE_ComboBox | TYPE_CheckBox )
+.head 6 +  While hWndChild != hWndNULL
+.head 7 +  If SalSendMsg( hWndChild, PAM_clsQUERYFIELD_QBE, 0, 0 )
+.head 8 -  Call PopString( sItem, TRUE )
+.head 8 +  If bFirst
+.head 9 -  Set sBuildWhere = sItem
+.head 9 -  Set bFirst = FALSE
+.head 8 +  Else
+.head 9 -  Set sBuildWhere = sBuildWhere || ' AND ' || sItem
+.head 7 -  Set hWndChild = SalGetNextChild( hWndChild, TYPE_DataField | TYPE_ComboBox | TYPE_CheckBox )
+.head 6 -  !
+.head 6 +  If bShowQueryMsg
+.head 7 +  If sBuildWhere = ''
+.head 8 +  If IDYES = SalMessageBox( 'No query conditions specified.  This could be quite time consuming! Continue?', 'Warning', MB_YesNo | MB_DefButton2 )
+.head 9 -  Set bQuery = TRUE
+.head 8 +  Else
+.head 9 -  Set bQuery = FALSE
+.head 7 +  Else
+.head 8 -  Set bQuery = TRUE
+.head 6 +  Else
+.head 7 -  Set bQuery = TRUE
+.head 6 +  If bQuery
+.head 7 -  Call SalSendMsg( hWndForm, PAM_clsDLG_PUSHFIELDS, 0, 0 )
+.head 7 -  Call PushString( sBuildWhere )
+.head 7 -  Call SalSendMsg( hWndTable, PAM_clsTBL_SEARCH, TRUE, 0 )
+.head 6 -  Call SalEndDialog( hWndForm, 0 )
+.head 5 +  On PAM_clsTBL_CLEARSELECTIONS
+.head 6 -  Call SalSendMsgToChildren( hWndForm, PAM_cls_INITIALISE, 0, 0 )
+.head 6 -  Call SalSetFocus( hWndFirstFocus )
+.head 6 -  Call OurWaitCursorOverride( FALSE, TRUE )
+.head 6 -  Return TRUE
+.head 5 +  On PAM_clsTBL_USERACTIONS
+.head 6 -  Return UserTableActions( hWndForm, wParam, lParam )
+.head 3 +  Data Field Class: clsQueryDataField
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clsdfGeneral
+.head 4 +  Class Variables
+.head 5 -  String: sField
+.head 5 -  String: sTmpField
+.head 5 -  String: sTmp
+.head 5 -  String: sTmpOperator
+.head 5 -  Boolean: bListValue
+.head 5 -  Number: nNumTokens
+.head 5 -  String: saTokens[*]
+.head 5 -  Number: nPos
+.head 5 -  String: sORedFields
+.head 5 -  Number: nDataType
+.head 5 -  String: sFmtPicture
+.head 5 -  Boolean: bCorrected
+.head 4 +  Instance Variables
+.head 5 -  String: sSQLCOLNAME
+.head 5 -  String: sOperator
+.head 5 -  Boolean: bCompareUpCase
+.head 5 -  ! nDefaultLikePercent = Q_PreNPostLikePercent also can be Q_PreLikePercent OR 
+Q_PostLikePercent OR Q_NoLikePercent
+.head 5 -  Number: nDefaultLikePercent
+.head 5 -  Window Handle: hWndOperatorField
+.head 5 -  Window Handle: hWndNotField
+.head 4 +  Functions
+.head 5 +  Function: GetOperator
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  String:
+.head 6 -  Parameters
+.head 6 -  Static Variables
+.head 6 +  Local variables
+.head 7 -  String: sLocalOperator
+.head 6 +  Actions
+.head 7 +  If SalIsNull( hWndOperatorField )
+.head 8 -  Return sOperator
+.head 7 +  Else
+.head 8 -  Call SalGetWindowText( hWndOperatorField, sLocalOperator, 12 )
+.head 8 -  Return sLocalOperator
+.head 5 +  Function: GetValue
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  String:
+.head 6 +  Parameters
+.head 7 -  Receive Boolean: bListValue
+.head 7 -  String: sOperator
+.head 6 -  Static Variables
+.head 6 +  Local variables
+.head 7 -  String: sValue
+.head 7 -  Number: nNumTokens
+.head 7 -  String: saTokens[*]
+.head 7 -  Number: nPos
+.head 7 -  Boolean: bString
+.head 6 +  Actions
+.head 7 -  Set sValue = ''
+.head 7 -  Set bListValue = FALSE
+.head 7 -  ! Call SalFmtFieldToStr( hWndItem, sValue, FALSE )
+.head 7 -  Set sValue = MyValue
+.head 7 +  ! Select Case SalGetDataType( hWndItem )
+.head 8 +   Case DT_String
+.head 9 -   Call StringReplace( sValue, "'", "_" )
+.head 9 -   Set nNumTokens = SalStrTokenize( sValue, '', ',', saTokens )
+.head 9 +   If nNumTokens > 1
+.head 10 -   Set saTokens[ nNumTokens ] = ''
+.head 10 -  !
+.head 10 -   Set nPos = 0
+.head 10 +   While saTokens[ nPos ] != ''
+.head 11 -   Set saTokens[ nPos ] = SalStrTrimX( saTokens[ nPos ] )
+.head 11 -   Call SetPrePostBothPercent( saTokens[ nPos ], sOperator )
+.head 11 -   Set nPos = nPos + 1
+.head 10 -  !
+.head 10 -   Call MakeStringList( saTokens, ',', "'", sValue )
+.head 10 -   Call StringReplace( sValue, "(", " " )
+.head 10 -   Call StringReplace( sValue, ")", " " )
+.head 10 -   Set bListValue = TRUE
+.head 9 +   Else 
+.head 10 -   Call SetPrePostBothPercent( sValue, sOperator )
+.head 10 -   Set sValue = "'" || sValue || "'"
+.head 9 -   Break 
+.head 8 +   Case DT_LongString
+.head 9 -   Call StringReplace( sValue, "'", "_" )
+.head 9 -   Set nNumTokens = SalStrTokenize( sValue, '', ',', saTokens )
+.head 9 +   If nNumTokens > 1
+.head 10 -   Set saTokens[ nNumTokens ] = ''
+.head 10 -  !
+.head 10 -   Set nPos = 0
+.head 10 +   While saTokens[ nPos ] != ''
+.head 11 -   Set saTokens[ nPos ] = SalStrTrimX( saTokens[ nPos ] )
+.head 11 -   Call SetPrePostBothPercent( saTokens[ nPos ], sOperator )
+.head 11 -   Set nPos = nPos + 1
+.head 10 -  !
+.head 10 -   Call MakeStringList( saTokens, ',', "'", sValue )
+.head 10 -   Call StringReplace( sValue, "(", " " )
+.head 10 -   Call StringReplace( sValue, ")", " " )
+.head 10 -   Set bListValue = TRUE
+.head 9 +   Else 
+.head 10 -   Call SetPrePostBothPercent( sValue, sOperator )
+.head 10 -   Set sValue = "'" || sValue || "'"
+.head 9 -   Break 
+.head 7 +  Select Case SalGetDataType( hWndItem )
+.head 8 +  Case DT_String
+.head 9 -  Set bString = TRUE
+.head 9 -  Break
+.head 8 +  Case DT_LongString
+.head 9 -  Set bString = TRUE
+.head 9 -  Break
+.head 8 +  Default
+.head 9 -  Set bString = FALSE
+.head 9 -  Break
+.head 7 -  Call StringReplace( sValue, "'", "_" )
+.head 7 -  Set nNumTokens = SalStrTokenize( sValue, '', ',', saTokens )
+.head 7 +  If nNumTokens > 1
+.head 8 -  Set saTokens[ nNumTokens ] = ''
+.head 8 -  !
+.head 8 -  Set nPos = 0
+.head 8 +  While saTokens[ nPos ] != ''
+.head 9 -  Set saTokens[ nPos ] = SalStrTrimX( saTokens[ nPos ] )
+.head 9 -  Call SetPrePostBothPercent( saTokens[ nPos ], sOperator )
+.head 9 -  Set nPos = nPos + 1
+.head 8 -  !
+.head 8 +  If bString
+.head 9 -  Call MakeStringList( saTokens, ',', "'", sValue )
+.head 8 -  Call StringReplace( sValue, "(", " " )
+.head 8 -  Call StringReplace( sValue, ")", " " )
+.head 8 -  Set bListValue = TRUE
+.head 7 +  Else
+.head 8 +  If bString
+.head 9 -  Call SetPrePostBothPercent( sValue, sOperator )
+.head 9 -  Set sValue = "'" || sValue || "'"
+.head 7 +  If bCompareUpCase
+.head 8 -  Set sValue = SalStrUpperX( sValue )
+.head 7 -  Return sValue
+.head 5 +  Function: SetPrePostBothPercent
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 +  Parameters
+.head 7 -  Receive String: sValue
+.head 7 -  String: sOperator
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 +  If SalStrScan( sOperator, '%LIKE%' ) >= 0
+.head 8 +  If SalStrScan( sValue, '\\%' ) < 0 AND SalStrScan( sValue, '\\_' ) < 0
+.head 9 +  Select Case nDefaultLikePercent
+.head 10 +  Case Q_PreLikePercent
+.head 11 -  Set sValue = '%' || sValue
+.head 11 -  Break
+.head 10 +  Case Q_PostLikePercent
+.head 11 -  Set sValue = sValue || '%'
+.head 11 -  Break
+.head 10 +  Case Q_PreNPostLikePercent
+.head 11 -  Set sValue = '%' || sValue || '%'
+.head 11 -  Break
+.head 7 -  Return TRUE
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set sOperator = ' = '
+.head 6 -  Set sSQLCOLNAME = ''
+.head 6 -  Set bCompareUpCase = FALSE
+.head 6 -  Set hWndOperatorField = hWndNULL
+.head 6 -  Set hWndNotField = hWndNULL
+.head 6 -  Set nDefaultLikePercent = Q_PreNPostLikePercent
+.head 6 -  Call SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 6 +  If bCompareUpCase
+.head 7 -  Set sSQLCOLNAME = ' @UPPER( ' || sSQLCOLNAME || ' ) '
+.head 5 +  On PAM_clsQUERYFIELD_QBE
+.head 6 +  If SalIsNull( hWndItem )
+.head 7 -  Return FALSE
+.head 6 +  Else
+.head 7 +  If SalSendMsg( hWndNotField, PAM_clsQUERYNOT_GETSTATE, 0, 0 )
+.head 8 -  Set sField = ' NOT '
+.head 7 +  Else
+.head 8 -  Set sField = ''
+.head 7 -  Set sTmpOperator = GetOperator(  )
+.head 7 +  ! If SalStrScan( sTmpOperator, '%LIKE%' ) >= 0
+.head 8 -   Set sTmp = ''
+.head 8 -   Call SalFmtFieldToStr( hWndItem, sTmp, FALSE )
+.head 8 +   If SalStrScan( sTmp, '\\%' ) < 0 AND SalStrScan( sTmp, '\\_' ) < 0
+.head 9 +   Select Case nDefaultLikePercent
+.head 10 +   Case Q_PreLikePercent
+.head 11 -   Set sTmp = '%' || sTmp
+.head 11 -   Break 
+.head 10 +   Case Q_PostLikePercent
+.head 11 -   Set sTmp = sTmp || '%'
+.head 11 -   Break 
+.head 10 +   Case Q_PreNPostLikePercent
+.head 11 -   Set sTmp = '%' || sTmp || '%'
+.head 11 -   Break 
+.head 9 -   Call SalFmtStrToField( hWndItem, sTmp, FALSE )
+.head 7 -  Set sTmp = GetValue( bListValue, sTmpOperator )
+.head 7 -  ! Call SetPrePostBothPercent( sTmp, sTmpOperator, bListValue )
+.head 7 +  If bListValue
+.head 8 +  If SalStrScan( sTmpOperator, '%IN%' ) >= 0
+.head 9 -  Set sField = sField || ' ' || sSQLCOLNAME || ' ' || sTmpOperator || ' ( ' || sTmp || ' ) '
+.head 8 +  Else
+.head 9 -  Set nNumTokens = SalStrTokenize( sTmp, '', ',', saTokens )
+.head 9 +  If nNumTokens > 1
+.head 10 -  Set saTokens[ nNumTokens ] = ''
+.head 10 -  Set nPos = 0
+.head 10 -  Set sORedFields = ' ( '
+.head 10 +  While saTokens[ nPos ] != ''
+.head 11 -  Set sTmpField = sField || ' ' || sSQLCOLNAME || ' ' || sTmpOperator || saTokens[ nPos ]
+.head 11 -  !
+.head 11 +  If nPos = 0
+.head 12 -  Set sORedFields = sORedFields || sTmpField
+.head 11 +  Else
+.head 12 -  Set sORedFields = sORedFields || ' OR ' || sTmpField
+.head 11 -  !
+.head 11 -  Set nPos = nPos + 1
+.head 10 -  Set sORedFields = sORedFields || ' ) '
+.head 10 -  Set sField = sORedFields
+.head 9 +  Else
+.head 10 -  Set sField = sField || ' ' || sSQLCOLNAME || ' ' || sTmpOperator || sTmp
+.head 7 +  Else
+.head 8 -  Set sField = sField || ' ' || sSQLCOLNAME || ' ' || sTmpOperator || sTmp
+.head 7 -  Call PushString( sField )
+.head 7 -  Return TRUE
+.head 5 +  On SAM_Validate
+.head 6 -  Set nNumTokens = SalStrTokenize( MyValue, '', ',', saTokens ) 
+.head 6 +  If nNumTokens > 1
+.head 7 -  Set saTokens[ nNumTokens ] = ''
+.head 7 -  Set nDataType = SalGetDataType( hWndItem )
+.head 7 -  Set sFmtPicture = FmtGetPictureX( hWndItem )
+.head 7 -  Set nPos = 0
+.head 7 -  Set bCorrected = FALSE
+.head 7 +  While saTokens[ nPos ] != ''
+.head 8 +  If nDataType = DT_DateTime
+.head 9 -  Set saTokens[ nPos ] = SalFmtFormatDateTime( SalStrToDate( SalStrTrimX( saTokens[ nPos ] ) ), sFmtPicture )
+.head 9 -  Set bCorrected = TRUE
+.head 8 +  Else If nDataType = DT_Number
+.head 9 -  Set saTokens[ nPos ] = SalFmtFormatNumber( SalStrToNumber( SalStrTrimX( saTokens[ nPos ] ) ), sFmtPicture )
+.head 9 -  Set bCorrected = TRUE
+.head 8 -  Set nPos = nPos + 1
+.head 7 +  If bCorrected
+.head 8 -  Call MakeStringList( saTokens, ',', '', MyValue )
+.head 8 -  Call OurWaitCursorOverride( FALSE, TRUE )
+.head 7 -  Return VALIDATE_Ok
+.head 3 +  Combo Box Class: clsQueryComboField
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Editable? Class Default
+.head 4 -  String Type: Class Default
+.head 4 -  Maximum Data Length: Class Default
+.head 4 -  Sorted? Class Default
+.head 4 -  Always Show List? Class Default
+.head 4 -  Vertical Scroll? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Input Mask: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clscmbGeneral
+.head 4 +  Class Variables
+.head 5 -  String: sField
+.head 5 -  String: sTmpField
+.head 5 -  String: sTmp
+.head 5 -  String: sTmpOperator
+.head 5 -  Boolean: bListValue
+.head 5 -  Number: nNumTokens
+.head 5 -  String: saTokens[*]
+.head 5 -  Number: nPos
+.head 5 -  String: sORedFields
+.head 5 -  Number: nDataType
+.head 5 -  String: sFmtPicture
+.head 5 -  Boolean: bCorrected
+.head 4 +  Instance Variables
+.head 5 -  String: sSQLCOLNAME
+.head 5 -  String: sOperator
+.head 5 -  Boolean: bCompareUpCase
+.head 5 -  ! nDefaultLikePercent = Q_PreNPostLikePercent also can be Q_PreLikePercent OR 
+Q_PostLikePercent OR Q_NoLikePercent
+.head 5 -  Number: nDefaultLikePercent
+.head 5 -  Window Handle: hWndOperatorField
+.head 5 -  Window Handle: hWndNotField
+.head 4 +  Functions
+.head 5 +  Function: GetOperator
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  String:
+.head 6 -  Parameters
+.head 6 -  Static Variables
+.head 6 +  Local variables
+.head 7 -  String: sLocalOperator
+.head 6 +  Actions
+.head 7 +  If SalIsNull( hWndOperatorField )
+.head 8 -  Return sOperator
+.head 7 +  Else
+.head 8 -  Call SalGetWindowText( hWndOperatorField, sLocalOperator, 12 )
+.head 8 -  Return sLocalOperator
+.head 5 +  ! Function: GetValue
+.head 6 -   Description: 
+.head 6 +   Returns 
+.head 7 -   String: 
+.head 6 -   Parameters 
+.head 6 -   Static Variables 
+.head 6 +   Local variables 
+.head 7 -   String: sValue
+.head 6 +   Actions 
+.head 7 -   Set sValue = MyValue
+.head 7 +   Select Case SalGetDataType( hWndItem )
+.head 8 +   Case DT_String
+.head 9 -   Call StringReplace( sValue, "'", "_" )
+.head 9 -   Set sValue = "'" || sValue || "'"
+.head 9 -   Break 
+.head 8 +   Case DT_LongString
+.head 9 -   Call StringReplace( sValue, "'", "_" )
+.head 9 -   Set sValue = "'" || sValue || "'"
+.head 9 -   Break 
+.head 7 +   If bCompareUpCase
+.head 8 -   Set sValue = SalStrUpperX( sValue )
+.head 7 -   Return sValue
+.head 5 +  Function: GetValue
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  String:
+.head 6 +  Parameters
+.head 7 -  Receive Boolean: bListValue
+.head 7 -  String: sOperator
+.head 6 -  Static Variables
+.head 6 +  Local variables
+.head 7 -  String: sValue
+.head 7 -  Number: nNumTokens
+.head 7 -  String: saTokens[*]
+.head 7 -  Number: nPos
+.head 7 -  Boolean: bString
+.head 6 +  Actions
+.head 7 -  Set sValue = ''
+.head 7 -  Set bListValue = FALSE
+.head 7 -  ! Call SalFmtFieldToStr( hWndItem, sValue, FALSE )
+.head 7 -  Set sValue = MyValue
+.head 7 +  ! Select Case SalGetDataType( hWndItem )
+.head 8 +   Case DT_String
+.head 9 -   Call StringReplace( sValue, "'", "_" )
+.head 9 -   Set nNumTokens = SalStrTokenize( sValue, '', ',', saTokens )
+.head 9 +   If nNumTokens > 1
+.head 10 -   Set saTokens[ nNumTokens ] = ''
+.head 10 -  !
+.head 10 -   Set nPos = 0
+.head 10 +   While saTokens[ nPos ] != ''
+.head 11 -   Set saTokens[ nPos ] = SalStrTrimX( saTokens[ nPos ] )
+.head 11 -   Call SetPrePostBothPercent( saTokens[ nPos ], sOperator )
+.head 11 -   Set nPos = nPos + 1
+.head 10 -  !
+.head 10 -   Call MakeStringList( saTokens, ',', "'", sValue )
+.head 10 -   Call StringReplace( sValue, "(", " " )
+.head 10 -   Call StringReplace( sValue, ")", " " )
+.head 10 -   Set bListValue = TRUE
+.head 9 +   Else 
+.head 10 -   Call SetPrePostBothPercent( sValue, sOperator )
+.head 10 -   Set sValue = "'" || sValue || "'"
+.head 9 -   Break 
+.head 8 +   Case DT_LongString
+.head 9 -   Call StringReplace( sValue, "'", "_" )
+.head 9 -   Set nNumTokens = SalStrTokenize( sValue, '', ',', saTokens )
+.head 9 +   If nNumTokens > 1
+.head 10 -   Set saTokens[ nNumTokens ] = ''
+.head 10 -  !
+.head 10 -   Set nPos = 0
+.head 10 +   While saTokens[ nPos ] != ''
+.head 11 -   Set saTokens[ nPos ] = SalStrTrimX( saTokens[ nPos ] )
+.head 11 -   Call SetPrePostBothPercent( saTokens[ nPos ], sOperator )
+.head 11 -   Set nPos = nPos + 1
+.head 10 -  !
+.head 10 -   Call MakeStringList( saTokens, ',', "'", sValue )
+.head 10 -   Call StringReplace( sValue, "(", " " )
+.head 10 -   Call StringReplace( sValue, ")", " " )
+.head 10 -   Set bListValue = TRUE
+.head 9 +   Else 
+.head 10 -   Call SetPrePostBothPercent( sValue, sOperator )
+.head 10 -   Set sValue = "'" || sValue || "'"
+.head 9 -   Break 
+.head 7 +  Select Case SalGetDataType( hWndItem )
+.head 8 +  Case DT_String
+.head 9 -  Set bString = TRUE
+.head 9 -  Break
+.head 8 +  Case DT_LongString
+.head 9 -  Set bString = TRUE
+.head 9 -  Break
+.head 8 +  Default
+.head 9 -  Set bString = FALSE
+.head 9 -  Break
+.head 7 -  Call StringReplace( sValue, "'", "_" )
+.head 7 -  Set nNumTokens = SalStrTokenize( sValue, '', ',', saTokens )
+.head 7 +  If nNumTokens > 1
+.head 8 -  Set saTokens[ nNumTokens ] = ''
+.head 8 -  !
+.head 8 -  Set nPos = 0
+.head 8 +  While saTokens[ nPos ] != ''
+.head 9 -  Set saTokens[ nPos ] = SalStrTrimX( saTokens[ nPos ] )
+.head 9 -  Call SetPrePostBothPercent( saTokens[ nPos ], sOperator )
+.head 9 -  Set nPos = nPos + 1
+.head 8 -  !
+.head 8 +  If bString
+.head 9 -  Call MakeStringList( saTokens, ',', "'", sValue )
+.head 8 -  Call StringReplace( sValue, "(", " " )
+.head 8 -  Call StringReplace( sValue, ")", " " )
+.head 8 -  Set bListValue = TRUE
+.head 7 +  Else
+.head 8 +  If bString
+.head 9 -  Call SetPrePostBothPercent( sValue, sOperator )
+.head 9 -  Set sValue = "'" || sValue || "'"
+.head 7 +  If bCompareUpCase
+.head 8 -  Set sValue = SalStrUpperX( sValue )
+.head 7 -  Return sValue
+.head 5 +  Function: SetPrePostBothPercent
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 +  Parameters
+.head 7 -  Receive String: sValue
+.head 7 -  String: sOperator
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 +  If SalStrScan( sOperator, '%LIKE%' ) >= 0
+.head 8 +  If SalStrScan( sValue, '\\%' ) < 0 AND SalStrScan( sValue, '\\_' ) < 0
+.head 9 +  Select Case nDefaultLikePercent
+.head 10 +  Case Q_PreLikePercent
+.head 11 -  Set sValue = '%' || sValue
+.head 11 -  Break
+.head 10 +  Case Q_PostLikePercent
+.head 11 -  Set sValue = sValue || '%'
+.head 11 -  Break
+.head 10 +  Case Q_PreNPostLikePercent
+.head 11 -  Set sValue = '%' || sValue || '%'
+.head 11 -  Break
+.head 7 -  Return TRUE
+.head 4 -  List Initialization
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set sOperator = ' = '
+.head 6 -  Set sSQLCOLNAME = ''
+.head 6 -  Set bCompareUpCase = FALSE
+.head 6 -  Set hWndOperatorField = hWndNULL
+.head 6 -  Set hWndNotField = hWndNULL
+.head 6 -  Set nDefaultLikePercent = Q_PreNPostLikePercent
+.head 6 -  Call SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 6 +  If bCompareUpCase
+.head 7 -  Set sSQLCOLNAME = ' @UPPER( ' || sSQLCOLNAME || ' ) '
+.head 6 -  Call SalListSetMultiSelect( hWndItem, -1, TRUE )
+.head 5 +  ! On PAM_clsQUERYFIELD_QBE
+.head 6 +   If SalIsNull( hWndItem )
+.head 7 -   Return FALSE
+.head 6 +   Else 
+.head 7 +   If SalSendMsg( hWndNotField, PAM_clsQUERYNOT_GETSTATE, 0, 0 )
+.head 8 -   Set sField = ' NOT '
+.head 7 +   Else 
+.head 8 -   Set sField = ''
+.head 7 -   Set sTmpOperator = GetOperator(  )
+.head 7 +   If SalStrScan( sTmpOperator, '%LIKE%' ) >= 0
+.head 8 -   Set sTmp = ''
+.head 8 -   Call SalFmtFieldToStr( hWndItem, sTmp, FALSE )
+.head 8 +   If SalStrScan( sTmp, '\\%' ) < 0 AND SalStrScan( sTmp, '\\_' ) < 0
+.head 9 +   Select Case nDefaultLikePercent
+.head 10 +   Case Q_PreLikePercent
+.head 11 -   Set sTmp = '%' || sTmp
+.head 11 -   Break 
+.head 10 +   Case Q_PostLikePercent
+.head 11 -   Set sTmp = sTmp || '%'
+.head 11 -   Break 
+.head 10 +   Case Q_PreNPostLikePercent
+.head 11 -   Set sTmp = '%' || sTmp || '%'
+.head 11 -   Break 
+.head 9 -   Call SalFmtStrToField( hWndItem, sTmp, FALSE )
+.head 7 -   Set sField = sField || ' ' || sSQLCOLNAME || ' ' || sTmpOperator || GetValue(  )
+.head 7 -   Call PushString( sField )
+.head 7 -   Return TRUE
+.head 5 +  On PAM_clsQUERYFIELD_QBE
+.head 6 +  If SalIsNull( hWndItem )
+.head 7 -  Return FALSE
+.head 6 +  Else
+.head 7 +  If SalSendMsg( hWndNotField, PAM_clsQUERYNOT_GETSTATE, 0, 0 )
+.head 8 -  Set sField = ' NOT '
+.head 7 +  Else
+.head 8 -  Set sField = ''
+.head 7 -  Set sTmpOperator = GetOperator(  )
+.head 7 +  ! If SalStrScan( sTmpOperator, '%LIKE%' ) >= 0
+.head 8 -   Set sTmp = ''
+.head 8 -   Call SalFmtFieldToStr( hWndItem, sTmp, FALSE )
+.head 8 +   If SalStrScan( sTmp, '\\%' ) < 0 AND SalStrScan( sTmp, '\\_' ) < 0
+.head 9 +   Select Case nDefaultLikePercent
+.head 10 +   Case Q_PreLikePercent
+.head 11 -   Set sTmp = '%' || sTmp
+.head 11 -   Break 
+.head 10 +   Case Q_PostLikePercent
+.head 11 -   Set sTmp = sTmp || '%'
+.head 11 -   Break 
+.head 10 +   Case Q_PreNPostLikePercent
+.head 11 -   Set sTmp = '%' || sTmp || '%'
+.head 11 -   Break 
+.head 9 -   Call SalFmtStrToField( hWndItem, sTmp, FALSE )
+.head 7 -  Set sTmp = GetValue( bListValue, sTmpOperator )
+.head 7 -  ! Call SetPrePostBothPercent( sTmp, sTmpOperator, bListValue )
+.head 7 +  If bListValue
+.head 8 +  If SalStrScan( sTmpOperator, '%IN%' ) >= 0
+.head 9 -  Set sField = sField || ' ' || sSQLCOLNAME || ' ' || sTmpOperator || ' ( ' || sTmp || ' ) '
+.head 8 +  Else
+.head 9 -  Set nNumTokens = SalStrTokenize( sTmp, '', ',', saTokens )
+.head 9 +  If nNumTokens > 1
+.head 10 -  Set saTokens[ nNumTokens ] = ''
+.head 10 -  Set nPos = 0
+.head 10 -  Set sORedFields = ' ( '
+.head 10 +  While saTokens[ nPos ] != ''
+.head 11 -  Set sTmpField = sField || ' ' || sSQLCOLNAME || ' ' || sTmpOperator || saTokens[ nPos ]
+.head 11 -  !
+.head 11 +  If nPos = 0
+.head 12 -  Set sORedFields = sORedFields || sTmpField
+.head 11 +  Else
+.head 12 -  Set sORedFields = sORedFields || ' OR ' || sTmpField
+.head 11 -  !
+.head 11 -  Set nPos = nPos + 1
+.head 10 -  Set sORedFields = sORedFields || ' ) '
+.head 10 -  Set sField = sORedFields
+.head 9 +  Else
+.head 10 -  Set sField = sField || ' ' || sSQLCOLNAME || ' ' || sTmpOperator || sTmp
+.head 7 +  Else
+.head 8 -  Set sField = sField || ' ' || sSQLCOLNAME || ' ' || sTmpOperator || sTmp
+.head 7 -  Call PushString( sField )
+.head 7 -  Return TRUE
+.head 5 +  On SAM_Validate
+.head 6 -  Set nNumTokens = SalStrTokenize( MyValue, '', ',', saTokens ) 
+.head 6 +  If nNumTokens > 1
+.head 7 -  Set saTokens[ nNumTokens ] = ''
+.head 7 -  Set nDataType = SalGetDataType( hWndItem )
+.head 7 -  Set sFmtPicture = FmtGetPictureX( hWndItem )
+.head 7 -  Set nPos = 0
+.head 7 -  Set bCorrected = FALSE
+.head 7 +  While saTokens[ nPos ] != ''
+.head 8 +  If nDataType = DT_DateTime
+.head 9 -  Set saTokens[ nPos ] = SalFmtFormatDateTime( SalStrToDate( SalStrTrimX( saTokens[ nPos ] ) ), sFmtPicture )
+.head 9 -  Set bCorrected = TRUE
+.head 8 +  Else If nDataType = DT_Number
+.head 9 -  Set saTokens[ nPos ] = SalFmtFormatNumber( SalStrToNumber( SalStrTrimX( saTokens[ nPos ] ) ), sFmtPicture )
+.head 9 -  Set bCorrected = TRUE
+.head 8 -  Set nPos = nPos + 1
+.head 7 +  If bCorrected
+.head 8 -  Call MakeStringList( saTokens, ',', '', MyValue )
+.head 8 -  Call OurWaitCursorOverride( FALSE, TRUE )
+.head 7 -  Return VALIDATE_Ok
+.head 3 +  Combo Box Class: clsQueryComboCache
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Editable? Class Default
+.head 4 -  String Type: Class Default
+.head 4 -  Maximum Data Length: Class Default
+.head 4 -  Sorted? Class Default
+.head 4 -  Always Show List? Class Default
+.head 4 -  Vertical Scroll? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Input Mask: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: cfCachePool
+.head 5 -  Class: clscmbGeneral
+.head 4 +  Class Variables
+.head 5 -  String: sField
+.head 5 -  String: sTmpField
+.head 5 -  String: sTmp
+.head 5 -  String: sTmpOperator
+.head 5 -  Boolean: bListValue
+.head 5 -  Number: nNumTokens
+.head 5 -  String: saTokens[*]
+.head 5 -  Number: nPos
+.head 5 -  String: sORedFields
+.head 5 -  Number: nDataType
+.head 5 -  String: sFmtPicture
+.head 5 -  Boolean: bCorrected
+.head 4 +  Instance Variables
+.head 5 -  String: sSQLCOLNAME
+.head 5 -  String: sOperator
+.head 5 -  Boolean: bCompareUpCase
+.head 5 -  ! nDefaultLikePercent = Q_PreNPostLikePercent also can be Q_PreLikePercent OR 
+Q_PostLikePercent OR Q_NoLikePercent
+.head 5 -  Number: nDefaultLikePercent
+.head 5 -  Window Handle: hWndOperatorField
+.head 5 -  Window Handle: hWndNotField
+.head 5 -  Boolean: ibInitialized
+.head 5 -  String: isKey
+.head 4 +  Functions
+.head 5 +  Function: GetOperator
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  String:
+.head 6 -  Parameters
+.head 6 -  Static Variables
+.head 6 +  Local variables
+.head 7 -  String: sLocalOperator
+.head 6 +  Actions
+.head 7 +  If SalIsNull( hWndOperatorField )
+.head 8 -  Return sOperator
+.head 7 +  Else
+.head 8 -  Call SalGetWindowText( hWndOperatorField, sLocalOperator, 12 )
+.head 8 -  Return sLocalOperator
+.head 5 +  ! Function: GetValue
+.head 6 -   Description: 
+.head 6 +   Returns 
+.head 7 -   String: 
+.head 6 -   Parameters 
+.head 6 -   Static Variables 
+.head 6 +   Local variables 
+.head 7 -   String: sValue
+.head 6 +   Actions 
+.head 7 -   Set sValue = MyValue
+.head 7 +   Select Case SalGetDataType( hWndItem )
+.head 8 +   Case DT_String
+.head 9 -   Call StringReplace( sValue, "'", "_" )
+.head 9 -   Set sValue = "'" || sValue || "'"
+.head 9 -   Break 
+.head 8 +   Case DT_LongString
+.head 9 -   Call StringReplace( sValue, "'", "_" )
+.head 9 -   Set sValue = "'" || sValue || "'"
+.head 9 -   Break 
+.head 7 +   If bCompareUpCase
+.head 8 -   Set sValue = SalStrUpperX( sValue )
+.head 7 -   Return sValue
+.head 5 +  Function: GetValue
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  String:
+.head 6 +  Parameters
+.head 7 -  Receive Boolean: bListValue
+.head 7 -  String: sOperator
+.head 6 -  Static Variables
+.head 6 +  Local variables
+.head 7 -  String: sValue
+.head 7 -  Number: nNumTokens
+.head 7 -  String: saTokens[*]
+.head 7 -  Number: nPos
+.head 7 -  Boolean: bString
+.head 6 +  Actions
+.head 7 -  Set sValue = ''
+.head 7 -  Set bListValue = FALSE
+.head 7 -  ! Call SalFmtFieldToStr( hWndItem, sValue, FALSE )
+.head 7 -  Set sValue = MyValue
+.head 7 +  ! Select Case SalGetDataType( hWndItem )
+.head 8 +   Case DT_String
+.head 9 -   Call StringReplace( sValue, "'", "_" )
+.head 9 -   Set nNumTokens = SalStrTokenize( sValue, '', ',', saTokens )
+.head 9 +   If nNumTokens > 1
+.head 10 -   Set saTokens[ nNumTokens ] = ''
+.head 10 -  !
+.head 10 -   Set nPos = 0
+.head 10 +   While saTokens[ nPos ] != ''
+.head 11 -   Set saTokens[ nPos ] = SalStrTrimX( saTokens[ nPos ] )
+.head 11 -   Call SetPrePostBothPercent( saTokens[ nPos ], sOperator )
+.head 11 -   Set nPos = nPos + 1
+.head 10 -  !
+.head 10 -   Call MakeStringList( saTokens, ',', "'", sValue )
+.head 10 -   Call StringReplace( sValue, "(", " " )
+.head 10 -   Call StringReplace( sValue, ")", " " )
+.head 10 -   Set bListValue = TRUE
+.head 9 +   Else 
+.head 10 -   Call SetPrePostBothPercent( sValue, sOperator )
+.head 10 -   Set sValue = "'" || sValue || "'"
+.head 9 -   Break 
+.head 8 +   Case DT_LongString
+.head 9 -   Call StringReplace( sValue, "'", "_" )
+.head 9 -   Set nNumTokens = SalStrTokenize( sValue, '', ',', saTokens )
+.head 9 +   If nNumTokens > 1
+.head 10 -   Set saTokens[ nNumTokens ] = ''
+.head 10 -  !
+.head 10 -   Set nPos = 0
+.head 10 +   While saTokens[ nPos ] != ''
+.head 11 -   Set saTokens[ nPos ] = SalStrTrimX( saTokens[ nPos ] )
+.head 11 -   Call SetPrePostBothPercent( saTokens[ nPos ], sOperator )
+.head 11 -   Set nPos = nPos + 1
+.head 10 -  !
+.head 10 -   Call MakeStringList( saTokens, ',', "'", sValue )
+.head 10 -   Call StringReplace( sValue, "(", " " )
+.head 10 -   Call StringReplace( sValue, ")", " " )
+.head 10 -   Set bListValue = TRUE
+.head 9 +   Else 
+.head 10 -   Call SetPrePostBothPercent( sValue, sOperator )
+.head 10 -   Set sValue = "'" || sValue || "'"
+.head 9 -   Break 
+.head 7 +  Select Case SalGetDataType( hWndItem )
+.head 8 +  Case DT_String
+.head 9 -  Set bString = TRUE
+.head 9 -  Break
+.head 8 +  Case DT_LongString
+.head 9 -  Set bString = TRUE
+.head 9 -  Break
+.head 8 +  Default
+.head 9 -  Set bString = FALSE
+.head 9 -  Break
+.head 7 -  Call StringReplace( sValue, "'", "_" )
+.head 7 -  Set nNumTokens = SalStrTokenize( sValue, '', ',', saTokens )
+.head 7 +  If nNumTokens > 1
+.head 8 -  Set saTokens[ nNumTokens ] = ''
+.head 8 -  !
+.head 8 -  Set nPos = 0
+.head 8 +  While saTokens[ nPos ] != ''
+.head 9 -  Set saTokens[ nPos ] = SalStrTrimX( saTokens[ nPos ] )
+.head 9 -  Call SetPrePostBothPercent( saTokens[ nPos ], sOperator )
+.head 9 -  Set nPos = nPos + 1
+.head 8 -  !
+.head 8 +  If bString
+.head 9 -  Call MakeStringList( saTokens, ',', "'", sValue )
+.head 8 -  Call StringReplace( sValue, "(", " " )
+.head 8 -  Call StringReplace( sValue, ")", " " )
+.head 8 -  Set bListValue = TRUE
+.head 7 +  Else
+.head 8 +  If bString
+.head 9 -  Call SetPrePostBothPercent( sValue, sOperator )
+.head 9 -  Set sValue = "'" || sValue || "'"
+.head 7 +  If bCompareUpCase
+.head 8 -  Set sValue = SalStrUpperX( sValue )
+.head 7 -  Return sValue
+.head 5 +  Function: SetPrePostBothPercent
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 +  Parameters
+.head 7 -  Receive String: sValue
+.head 7 -  String: sOperator
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 +  If SalStrScan( sOperator, '%LIKE%' ) >= 0
+.head 8 +  If SalStrScan( sValue, '\\%' ) < 0 AND SalStrScan( sValue, '\\_' ) < 0
+.head 9 +  Select Case nDefaultLikePercent
+.head 10 +  Case Q_PreLikePercent
+.head 11 -  Set sValue = '%' || sValue
+.head 11 -  Break
+.head 10 +  Case Q_PostLikePercent
+.head 11 -  Set sValue = sValue || '%'
+.head 11 -  Break
+.head 10 +  Case Q_PreNPostLikePercent
+.head 11 -  Set sValue = '%' || sValue || '%'
+.head 11 -  Break
+.head 7 -  Return TRUE
+.head 5 +  Function: AddRow
+.head 6 -  Description:
+.head 6 -  Returns
+.head 6 +  Parameters
+.head 7 -  String: s1
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 -  Call SalListAdd( MyValue, s1)
+.head 5 +  Function: SetKey
+.head 6 -  Description:
+.head 6 -  Returns
+.head 6 +  Parameters
+.head 7 -  String: sKey
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 -  Set isKey = sKey
+.head 4 -  List Initialization
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set sOperator = ' = '
+.head 6 -  Set sSQLCOLNAME = ''
+.head 6 -  Set bCompareUpCase = FALSE
+.head 6 -  Set hWndOperatorField = hWndNULL
+.head 6 -  Set hWndNotField = hWndNULL
+.head 6 -  Set nDefaultLikePercent = Q_PreNPostLikePercent
+.head 6 -  Call SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 6 +  If bCompareUpCase
+.head 7 -  Set sSQLCOLNAME = ' @UPPER( ' || sSQLCOLNAME || ' ) '
+.head 6 -  Call SalListSetMultiSelect( hWndItem, -1, TRUE )
+.head 6 -  Set ibInitialized = FALSE
+.head 5 +  On PAM_clsQUERYFIELD_QBE
+.head 6 +  If SalIsNull( hWndItem )
+.head 7 -  Return FALSE
+.head 6 +  Else
+.head 7 +  If SalSendMsg( hWndNotField, PAM_clsQUERYNOT_GETSTATE, 0, 0 )
+.head 8 -  Set sField = ' NOT '
+.head 7 +  Else
+.head 8 -  Set sField = ''
+.head 7 -  Set sTmpOperator = GetOperator(  )
+.head 7 +  ! If SalStrScan( sTmpOperator, '%LIKE%' ) >= 0
+.head 8 -   Set sTmp = ''
+.head 8 -   Call SalFmtFieldToStr( hWndItem, sTmp, FALSE )
+.head 8 +   If SalStrScan( sTmp, '\\%' ) < 0 AND SalStrScan( sTmp, '\\_' ) < 0
+.head 9 +   Select Case nDefaultLikePercent
+.head 10 +   Case Q_PreLikePercent
+.head 11 -   Set sTmp = '%' || sTmp
+.head 11 -   Break 
+.head 10 +   Case Q_PostLikePercent
+.head 11 -   Set sTmp = sTmp || '%'
+.head 11 -   Break 
+.head 10 +   Case Q_PreNPostLikePercent
+.head 11 -   Set sTmp = '%' || sTmp || '%'
+.head 11 -   Break 
+.head 9 -   Call SalFmtStrToField( hWndItem, sTmp, FALSE )
+.head 7 -  Set sTmp = GetValue( bListValue, sTmpOperator )
+.head 7 -  ! Call SetPrePostBothPercent( sTmp, sTmpOperator, bListValue )
+.head 7 +  If bListValue
+.head 8 +  If SalStrScan( sTmpOperator, '%IN%' ) >= 0
+.head 9 -  Set sField = sField || ' ' || sSQLCOLNAME || ' ' || sTmpOperator || ' ( ' || sTmp || ' ) '
+.head 8 +  Else
+.head 9 -  Set nNumTokens = SalStrTokenize( sTmp, '', ',', saTokens )
+.head 9 +  If nNumTokens > 1
+.head 10 -  Set saTokens[ nNumTokens ] = ''
+.head 10 -  Set nPos = 0
+.head 10 -  Set sORedFields = ' ( '
+.head 10 +  While saTokens[ nPos ] != ''
+.head 11 -  Set sTmpField = sField || ' ' || sSQLCOLNAME || ' ' || sTmpOperator || saTokens[ nPos ]
+.head 11 -  !
+.head 11 +  If nPos = 0
+.head 12 -  Set sORedFields = sORedFields || sTmpField
+.head 11 +  Else
+.head 12 -  Set sORedFields = sORedFields || ' OR ' || sTmpField
+.head 11 -  !
+.head 11 -  Set nPos = nPos + 1
+.head 10 -  Set sORedFields = sORedFields || ' ) '
+.head 10 -  Set sField = sORedFields
+.head 9 +  Else
+.head 10 -  Set sField = sField || ' ' || sSQLCOLNAME || ' ' || sTmpOperator || sTmp
+.head 7 +  Else
+.head 8 -  Set sField = sField || ' ' || sSQLCOLNAME || ' ' || sTmpOperator || sTmp
+.head 7 -  Call PushString( sField )
+.head 7 -  Return TRUE
+.head 5 +  On SAM_Validate
+.head 6 -  Set nNumTokens = SalStrTokenize( MyValue, '', ',', saTokens ) 
+.head 6 +  If nNumTokens > 1
+.head 7 -  Set saTokens[ nNumTokens ] = ''
+.head 7 -  Set nDataType = SalGetDataType( hWndItem )
+.head 7 -  Set sFmtPicture = FmtGetPictureX( hWndItem )
+.head 7 -  Set nPos = 0
+.head 7 -  Set bCorrected = FALSE
+.head 7 +  While saTokens[ nPos ] != ''
+.head 8 +  If nDataType = DT_DateTime
+.head 9 -  Set saTokens[ nPos ] = SalFmtFormatDateTime( SalStrToDate( SalStrTrimX( saTokens[ nPos ] ) ), sFmtPicture )
+.head 9 -  Set bCorrected = TRUE
+.head 8 +  Else If nDataType = DT_Number
+.head 9 -  Set saTokens[ nPos ] = SalFmtFormatNumber( SalStrToNumber( SalStrTrimX( saTokens[ nPos ] ) ), sFmtPicture )
+.head 9 -  Set bCorrected = TRUE
+.head 8 -  Set nPos = nPos + 1
+.head 7 +  If bCorrected
+.head 8 -  Call MakeStringList( saTokens, ',', '', MyValue )
+.head 8 -  Call OurWaitCursorOverride( FALSE, TRUE )
+.head 7 -  Return VALIDATE_Ok
+.head 5 +  On SAM_DropDown
+.head 6 +  If NOT ibInitialized
+.head 7 -  Call clsQueryComboCache.Populate( isKey )
+.head 7 -  Set ibInitialized = TRUE
+.head 3 +  Check Box Class: clsQueryNOTField
+.head 4 -  Title: NOT
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  0.538"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Arial
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clscbGeneral
+.head 4 -  Class Variables
+.head 4 +  Instance Variables
+.head 5 -  Window Handle: hWndQueryField
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set hWndQueryField = hWndNULL
+.head 6 -  Call SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On PAM_clsQUERYNOT_GETSTATE
+.head 6 +  If SalIsButtonChecked( hWndItem )
+.head 7 -  Return TRUE
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 3 +  Combo Box Class: clsQueryOperatorField
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  0.863"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 1.427"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Editable? No
+.head 4 -  String Type: Class Default
+.head 4 -  Maximum Data Length: Class Default
+.head 4 -  Sorted? No
+.head 4 -  Always Show List? Class Default
+.head 4 -  Vertical Scroll? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Input Mask: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clscmbGeneral
+.head 4 +  Class Variables
+.head 5 -  Number: nDataType
+.head 5 -  Boolean: bOk
+.head 4 +  Instance Variables
+.head 5 -  Window Handle: hWndQueryField
+.head 5 -  String: sOperator
+.head 4 -  Functions
+.head 4 -  List Initialization
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set hWndQueryField = hWndNULL
+.head 6 -  Set sOperator = ' = '
+.head 6 -  Call SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 6 -  Set nDataType = SalGetDataType( hWndQueryField )
+.head 6 +  Select Case nDataType
+.head 7 +  Case DT_Boolean
+.head 8 -  Call SalListAdd( hWndItem, ' = ' )
+.head 8 -  Break
+.head 7 +  Case DT_DateTime
+.head 8 -  Call SalListAdd( hWndItem, ' = ' )
+.head 8 -  Call SalListAdd( hWndItem, ' < ' )
+.head 8 -  Call SalListAdd( hWndItem, ' > ' )
+.head 8 -  Call SalListAdd( hWndItem, ' <= ' )
+.head 8 -  Call SalListAdd( hWndItem, ' >= ' )
+.head 8 -  Call SalListAdd( hWndItem, ' IN ' )
+.head 8 -  Break
+.head 7 +  Case DT_Number
+.head 8 -  Call SalListAdd( hWndItem, ' = ' )
+.head 8 -  Call SalListAdd( hWndItem, ' < ' )
+.head 8 -  Call SalListAdd( hWndItem, ' > ' )
+.head 8 -  Call SalListAdd( hWndItem, ' <= ' )
+.head 8 -  Call SalListAdd( hWndItem, ' >= ' )
+.head 8 -  Call SalListAdd( hWndItem, ' IN ' )
+.head 8 -  Break
+.head 7 +  Case DT_String
+.head 8 -  Call SalListAdd( hWndItem, ' LIKE ' )
+.head 8 -  Call SalListAdd( hWndItem, ' = ' )
+.head 8 -  Call SalListAdd( hWndItem, ' < ' )
+.head 8 -  Call SalListAdd( hWndItem, ' > ' )
+.head 8 -  Call SalListAdd( hWndItem, ' <= ' )
+.head 8 -  Call SalListAdd( hWndItem, ' >= ' )
+.head 8 -  Call SalListAdd( hWndItem, ' IN ' )
+.head 8 -  Break
+.head 7 +  Case DT_LongString
+.head 8 -  Call SalListAdd( hWndItem, ' LIKE ' )
+.head 8 -  Call SalListAdd( hWndItem, ' = ' )
+.head 8 -  Call SalListAdd( hWndItem, ' < ' )
+.head 8 -  Call SalListAdd( hWndItem, ' > ' )
+.head 8 -  Call SalListAdd( hWndItem, ' <= ' )
+.head 8 -  Call SalListAdd( hWndItem, ' >= ' )
+.head 8 -  Call SalListAdd( hWndItem, ' IN ' )
+.head 8 -  Break
+.head 6 -  Call SalSetWindowText( hWndItem, sOperator )
+.head 5 +  On PAM_cls_INITIALISE
+.head 6 -  Set bOk = SalSendClassMessage( PAM_cls_INITIALISE, wParam, lParam )
+.head 6 -  Call SalSetWindowText( hWndItem, sOperator )
+.head 6 -  Return bOk
+.head 3 +  Check Box Class: clsQueryCBYesNoFlag
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clscbGeneral
+.head 4 +  Class Variables
+.head 5 -  String: sField
+.head 4 +  Instance Variables
+.head 5 -  String: sSQLCOLNAME
+.head 5 -  Window Handle: hWndNotField
+.head 5 -  String: sCheckedValue
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set sSQLCOLNAME = ''
+.head 6 -  Set sCheckedValue =  'Y' 
+.head 6 -  Set hWndNotField = hWndNULL
+.head 6 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On PAM_clsQUERYFIELD_QBE
+.head 6 +  If SalIsButtonChecked( hWndItem )
+.head 7 +  If SalSendMsg( hWndNotField, PAM_clsQUERYNOT_GETSTATE, 0, 0 )
+.head 8 -  Set sField = ' NOT '
+.head 7 +  Else
+.head 8 -  Set sField = ''
+.head 7 -  Set sField = sField || ' ' || sSQLCOLNAME || ' ' || " = '" || sCheckedValue || "' "
+.head 7 -  ! Set sField = sField || ' ' || sSQLCOLNAME || ' ' || ' = ' || sCheckedValue
+.head 7 -  ! Set sField = sField || ' ' || sSQLCOLNAME || ' ' || " = 'Y' "
+.head 7 -  Call PushString( sField )
+.head 7 -  Return TRUE
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Check Box:
+.head 3 -  Option Button:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text:
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 -  Application Actions

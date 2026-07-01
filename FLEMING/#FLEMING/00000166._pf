@@ -1,0 +1,2594 @@
+Application Description: SQLWindows 5.01 Flemings Main System Menu application
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000E00000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF420000 0042000000D60200 007F010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D02000000075769 6E646F77730A6672
+0080: 6D466C6D4D656E75
+.enddata
+.data DT_MAKERUNDLG
+0000: 000000001D433A5C 43454E545552415C 69636F6E735C466C 656D747265652E69
+0020: 636F1F4B3A5C4345 4E545552415C464C 454D4445565C466C 656D6D656E642E65
+0040: 78651F4B3A5C4345 4E545552415C464C 454D4445565C466C 656D6D656E642E64
+0060: 6C6C1F4B3A5C4345 4E545552415C464C 454D4445565C466C 656D6D656E642E61
+0080: 706300000101011F 4B3A5C43454E5455 52415C464C454D44 45565C466C656D6D
+00A0: 656E642E72756E1F 4B3A5C43454E5455 52415C464C454D44 45565C466C656D6D
+00C0: 656E642E646C6C1F 4B3A5C43454E5455 52415C464C454D44 45565C466C656D6D
+00E0: 656E642E61706300 000101011F4B3A5C 43454E545552415C 464C454D4445565C
+0100: 466C656D6D656E64 2E6170641F4B3A5C 43454E545552415C 464C454D4445565C
+0120: 466C656D6D656E64 2E646C6C1F4B3A5C 43454E545552415C 464C454D4445565C
+0140: 466C656D6D656E64 2E61706300000101 011F4B3A5C43454E 545552415C464C45
+0160: 4D4445565C466C65 6D6D656E642E6170 6C1F4B3A5C43454E 545552415C464C45
+0180: 4D4445565C466C65 6D6D656E642E646C 6C1F4B3A5C43454E 545552415C464C45
+01A0: 4D4445565C466C65 6D6D656E642E6170 630000010101
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 0518B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.113"
+			Top:    2.875"
+			Width:  4.675"
+			Height: 2.979"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   8.15"
+			Top:    0.469"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: GENERAL.APL
+		File Include: FLMLOGIN.APL
+		File Include: DIALOG.APL
+		File Include: BUTTON.APL
+		File Include: DATFIELD.APL
+		File Include: RADIOBTN.APL
+		File Include: BGTEXT.APL
+		File Include: FORM.APL
+		File Include: STACKS.APL
+		File Include: SQLHANDL.APL
+		File Include: SPNFIELD.APL
+		File Include: VTSPIN.APL
+		File Include: DATES.APL
+		File Include: RUNPROG.APL
+		File Include: EXTRNPRG.APL
+		File Include: STRINGS.APL
+		File Include: VTWIN.APL
+		File Include: ITEMFUNC.APL
+		File Include: vtdos.apl
+		File Include: picture.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: None
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Blue
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for FLEMMENU.APP
+				Number: FLEMMENUAppMsgOffSet = SAM_User + 6300
+				Number: PAM_SCHEDULER_START = FLEMMENUAppMsgOffSet + 1
+				! Message go up to AppOffSet + 99
+				Number: FLEMMENUAppConstOffSet = 4650
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 3060002821
+0000: CE050000F5010000 0000000000000000 020000390000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF039100 0000040DFA0000FF
+0040: 0F9E000000EE0100 FF3FAB00B8000001 00FFFFE0B8000000 01FE00FF83C50000
+0060: 0001FB00FF0FD200 0000EE0100FF3FDF 0080000002040000 00FFFFE0E3000000
+0080: 02FE00FF83E70000 0001FB00FF0FF400 0000EE0100FF3F01 01B400000D00FFFF
+00A0: E80E010001FE00FF 231B01000304FA00 00FF8F1F0100EE02 00FF3F2301BA0001
+00C0: 00FFFFE830010001 FE00FFA33D010001 FB00FF8F4A0100EE 0200FF3F4E01BA00
+00E0: 0200FFFFE8520100 02FE00FFA3560100 01FB00FF8F630100 EE0100FF3F7001BA
+0100: 000200FFFFE87401 0002FE00FFA37801 0001FB00FF8F8501 00EE0100FF3F9201
+0120: BA000100FFFFE89F 010001FE00FFA3AC 010003FB00FF8FB0 0100EE0200FF3FB4
+0140: 01BA000100FFFFE8 C1010001FE00FFA3 CE010001FB00FF8F DB0100EE0200FF3F
+0160: DF01BA000200FFFF E8E3010002FE00FF A3E7010001FB00FF 8FF40100EE0100FF
+0180: 3F0102B800000200 FFFFE805020002FE 00FF23090200010D FB00FF8F160200EE
+01A0: 0100FF3F2302BA00 0100FFFFE8300200 01FE00FFA33D0200 03FB00FF8F410200
+01C0: EE0200FF3F4502BA 000100FFFFE85202 0001FE00FFA35F02 0001FB00FF8F6C02
+01E0: 00EE0200FF3F7002 BA000200FFFFE874 020002FE00FFA378 020001FB00FF8F85
+0200: 0200EE0100FF3F
+.enddata
+		Named Menus
+			Menu: mnuCreditors
+				Resource Id: 25572
+				Title: Creditors
+				Description:
+				Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+				Status Text:
+				Menu Item Name:
+				Menu Item: &Bank Details
+					Resource Id: 25573
+					Keyboard Accelerator: Ctrl+B
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Call hWndForm.clsStartProgram..SetCreditorDatabase(  )
+						Call hWndForm.clsStartProgram..SetAppName( 'Bank'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Item: &Creditor Details
+					Resource Id: 25574
+					Keyboard Accelerator: Ctrl+C
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Call hWndForm.clsStartProgram..SetCreditorDatabase(  )
+						Call hWndForm.clsStartProgram..SetAppName( 'Creditor'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Item: &Purchase Order Register
+					Resource Id: 25575
+					Keyboard Accelerator: Ctrl+P
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Call hWndForm.clsStartProgram..SetCreditorDatabase(  )
+						Call hWndForm.clsStartProgram..SetAppName( 'PurchaseOrdRegister'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Item: &General Ledger Codes
+					Resource Id: 25576
+					Keyboard Accelerator: Ctrl+G
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Call hWndForm.clsStartProgram..SetCreditorDatabase(  )
+						Call hWndForm.clsStartProgram..SetAppName( 'GLCodes'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Item: &Item Sales
+					Resource Id: 25577
+					Keyboard Accelerator: Ctrl+I
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Call hWndForm.clsStartProgram..SetCreditorDatabase(  )
+						Call hWndForm.clsStartProgram..SetAppName( 'CreditorItems'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Popup Menu: &Reports
+					Resource Id: 25578
+					Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+					Status Text:
+					Menu Item Name:
+					Menu Item: Creditor &Trial Balance
+						Resource Id: 25579
+						Keyboard Accelerator: Shift+Ctrl+T
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+							Call hWndForm.clsStartProgram..SetCreditorDatabase(  )
+							Call hWndForm.clsStartProgram..SetAppName( 'CreditorTrialBalance'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: Cash Payment &Listing
+						Resource Id: 25580
+						Keyboard Accelerator: Shift+Ctrl+L
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+							Call hWndForm.clsStartProgram..SetCreditorDatabase(  )
+							Call hWndForm.clsStartProgram..SetAppName( 'CashPaymentListing'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: Purchase &Order Listing
+						Resource Id: 8146
+						Keyboard Accelerator: Shift+Ctrl+L
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+							Call hWndForm.clsStartProgram..SetCreditorDatabase(  )
+							Call hWndForm.clsStartProgram..SetAppName( 'PurchOrdListing'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+			Menu: mnuOther
+				Resource Id: 60967
+				Title: &Other Programs
+				Description:
+				Enabled when:
+				Status Text:
+				Menu Item Name:
+				Popup Menu: Labels
+					Resource Id: 41026
+					Enabled when:
+					Status Text:
+					Menu Item Name:
+					Menu Item: &Labels Program
+						Resource Id: 41027
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'Labels'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: &Cultivar Labels Inventory Program
+						Resource Id: 41118
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'CultivarLabelInventory'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: Label &Charges
+						Resource Id: 41028
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'LabelCharges'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: Field Cou&nt Labels
+						Resource Id: 41029
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'FieldCountLabels'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+				Menu Separator
+				Popup Menu: &Royalties
+					Resource Id: 60971
+					Enabled when: hWndForm.clsStartProgram..Enabled( USR_PRICEADJ )
+					Status Text:
+					Menu Item Name:
+					Menu Item: &Royalties Program
+						Resource Id: 60972
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_PRICEADJ )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'Royalties'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: &Royalty Owner / Item Report
+						Resource Id: 60973
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_PRICEADJ )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'RoyaltyOwnerItemReport'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: &Item Royalty Breakdown Report
+						Resource Id: 60974
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_PRICEADJ )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'ItemRoyBrkRpt'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Separator
+					Menu Item: Cultivar/Rootstock &Royalty Owners
+						Resource Id: 8145
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'PrintCultRootRoy'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+				Menu Separator
+				Menu Item: &Freight Charges
+					Resource Id: 60975
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..SetAppName( 'FreightCharges'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Item: &Prohibitions
+					Resource Id: 60976
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..SetAppName( 'Prohibitions'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Item: Point of &Sale
+					Resource Id: 60977
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..SetAppName( 'PointOfSale'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Item: Price &Breaks
+					Resource Id: 60978
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..SetAppName( 'PriceBreaks'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Item: Paint &Master
+					Resource Id: 60979
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..SetAppName( 'PaintMaster'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Separator
+				Popup Menu: &Grading
+					Resource Id: 60980
+					Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+					Status Text:
+					Menu Item Name:
+					Menu Item: &Grading Entry
+						Resource Id: 60981
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'GradingEntry'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: &Grading Pallets Report
+						Resource Id: 60982
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'GradingPalletsReport'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+				Menu Item: Pots Farms Program
+					Resource Id: 40564
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..SetAppName( 'PotsFarmMaster'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Separator
+				Menu Item: Gen. Item Barcode file
+					Resource Id: 60952
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..SetAppName( 'GenItemBarcodeCSV'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Item: Sales Comparison
+					Resource Id: 60964
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..SetAppName( 'SalesComparison'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Item: Customer Stock Quotations
+					Resource Id: 60961
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..SetAppName( 'CustStockQuotations'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Item: Freight Details from Postcode
+					Resource Id: 60955
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..SetAppName( 'FreightDetsFromPCode'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Separator
+				Popup Menu: Stock reports
+					Resource Id: 41023
+					Enabled when:
+					Status Text:
+					Menu Item Name:
+					Menu Item: Current Ord. / Grow. Stock Price List
+						Resource Id: 41022
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'CurrentOrdORGrowPriceList'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: Stock Counts Varients Report
+						Resource Id: 41016
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'StockCountsVarientsReport'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: Broken Bundles Report 5s, 4s, 3s, 2s and 1s
+						Resource Id: 41025
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'BrokenBundles54321'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Separator
+					Menu Item: Pots Plan Report
+						Resource Id: 41034
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'PotPlanReport'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: Pots Alpha Plan Report
+						Resource Id: 41021
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'PotsAlphaList'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: Pots Growing At Date Report
+						Resource Id: 41033
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'PrintPotsStockAtDate'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: Pots affected by change of available date Report
+						Resource Id: 13446
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'PrintChangedEstSaleDate'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Separator
+					Menu Item: Brief Alpha Orchard Plan Report
+						Resource Id: 41032
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'AlphaOrchPlanS'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Separator
+					Menu Item: Daily Changes List Report
+						Resource Id: 41031
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'DailyOrderedPickList'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Separator
+					Menu Item: Numbered Cultivar List Report
+						Resource Id: 41030
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'NumCultList'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: Item Supplementary List Report
+						Resource Id: 41020
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'ItemSupList'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+				Popup Menu: Customer reports
+					Resource Id: 41019
+					Enabled when:
+					Status Text:
+					Menu Item Name:
+					Menu Item: Customers ordered report
+						Resource Id: 41018
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'Ordered'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: Customer Broken Bundles Report
+						Resource Id: 41017
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'CustBrokenBundleReport'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: Customer Cut Down Report
+						Resource Id: 41015
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'CustCutDownReport'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Separator
+					Menu Item: Promo Ordered By Report
+						Resource Id: 41024
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'PromoOrderedBy'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: Customers in Regions Report
+						Resource Id: 8229
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..SetAppName( 'RegionCustReport'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+				Menu Separator
+				Menu Item: Tree Totals Information
+					Resource Id: 60965
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_STCKCONTROL )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..SetAppName( 'TreeTotalsInfo'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Separator
+				Menu Item: Barcode Label Printer Queue
+					Resource Id: 40563
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_GENERAL )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..SetAppName( 'BCLblQueue'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+			Menu: mnuAccounts
+				Resource Id: 25581
+				Title: Acco&unts Reports
+				Description:
+				Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+				Status Text:
+				Menu Item Name:
+				Menu Item: &Deposit Listing
+					Resource Id: 25586
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Call hWndForm.clsStartProgram..SetAppName( 'DepositListing'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Item: Deposits &Used Listing
+					Resource Id: 25587
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Call hWndForm.clsStartProgram..SetAppName( 'DepositsUsedListing'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Separator
+				Menu Item: &Credit Note Listing
+					Resource Id: 25588
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Call hWndForm.clsStartProgram..SetAppName( 'CreditNoteListing'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Separator
+				Menu Item: &Unapplied Cash Listing
+					Resource Id: 25589
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Call hWndForm.clsStartProgram..SetAppName( 'UnAppliedCashListing'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Separator
+				Menu Item: &Print Cust. Cash Receipts
+					Resource Id: 25591
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Call hWndForm.clsStartProgram..SetAppName( 'PrintCashReceipts'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Separator
+				Menu Item: &Reprint Trial balances in diff. styles
+					Resource Id: 3022
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+						Call hWndForm.clsStartProgram..SetAppName( 'RePrintTrialBalances'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Separator
+				Menu Item: Combining Duplicate Customers
+					Resource Id: 25590
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: hWndForm.clsStartProgram..Enabled( USR_SYSADM )
+						Checked when:
+					Menu Actions
+						Call hWndForm.clsStartProgram..Enabled( USR_SYSADM )
+						Call hWndForm.clsStartProgram..SetAppName( 'CombDupCust'  )
+						Call hWndForm.clsStartProgram..StartProgram(  )
+					Menu Item Name:
+				Menu Separator
+				Popup Menu: &Management
+					Resource Id: 25585
+					Enabled when:
+					Status Text:
+					Menu Item Name:
+					Menu Item: &Sales Reports
+						Resource Id: 25584
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_FAMILY )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..Enabled( USR_FAMILY )
+							Call hWndForm.clsStartProgram..SetAppName( 'SalesReports'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: &Invoice Figures
+						Resource Id: 25582
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_FAMILY )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..Enabled( USR_FAMILY )
+							Call hWndForm.clsStartProgram..SetAppName( 'InvoiceFigures'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+					Menu Item: &Season Rollover to history of Invoiced orders
+						Resource Id: 8228
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_FAMILY )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..Enabled( USR_FAMILY )
+							Call hWndForm.clsStartProgram..SetAppName( 'SeasonRollover'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+				Menu Separator
+				Popup Menu: P&lants Plus
+					Resource Id: 21385
+					Enabled when:
+					Status Text:
+					Menu Item Name:
+					Menu Item: &Sales Reports
+						Resource Id: 21384
+						Keyboard Accelerator: (none)
+						Status Text:
+						Menu Settings
+							Enabled when: hWndForm.clsStartProgram..Enabled( USR_FAMILY )
+							Checked when:
+						Menu Actions
+							Call hWndForm.clsStartProgram..Enabled( USR_ACCT )
+							Call hWndForm.clsStartProgram..SetAppName( 'PlantsPlusReports'  )
+							Call hWndForm.clsStartProgram..StartProgram(  )
+						Menu Item Name:
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 3869967529
+0000: A80B00009B050000 0000000000000000 0200001800FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 001063006C734469
+0040: 616C6F670047656E 6572616C86800000 000500000007010D 000000FFFF090D00
+0060: 00020400FC0000FF 071100000004F40D 0000FF1F1E0000D0 0003040000FF7F22
+0080: 700000000100FFFF 2101800D00000140 0000000C636C70F8 624765641E000001
+00A0: 00CF010DFE00FF03 0180380000008002 00000009636C0348 656C708600D90005
+00C0: 00B3020400FFFFC4 040000010DFE00FF 9B110001FB00FF6F 1E00EE0100FF3F2B
+00E0: 00B800000100FFFF 1801800D000300F8 0000094045786974 1E0000F4010000EC
+0100: 010D00FF3F018064 04000004000E0C50 696345807870616E 641E00E800010000
+0120: DD0200FF7F01CC80 040005F00012636C 00546F67676C6542 754074746F6E1E00
+0140: 00F4010000EE0200 FF3F018006040006 0000000E0C646647 65FFE800010000D9
+0160: 030400FF7F010880 2F00000700001000 0B636C466F72806D 426173658600EC00
+0180: 0500D9010D00FF7F 0D73000200FFFF8D 1100040DFD00FF37 1E0003F700FFDF22
+01A0: DC000100FF7F010C 800D00080000F000 17636C015072696E 7442610169635265
+01C0: 706F728C741E0001 009E00010DFD00FF C701800D00000900 000011636C015370
+01E0: 696E53656100736F 6E596561721EA200 0001000067010D00 FFFF0101802E0000
+0200: 000A700000001170 0153746172745072 006F6772616DBA00 00EC000700DD0200
+0220: FF7F047200000200 FFFFCD080002FD00 FF070C00000001F6 0D00FF1F190000DC
+0240: 000300FF7F1D7000 00000200FFFFC121 00000001FD00FF07 018036000000000B
+0260: 0000000F636CF953 741FEE0000EC0009 00D9010D00FF7F0D 73000100FFFFC11A
+0280: 00000002FD00FF37 1E0002F700FFDF22 DC000200FF7F2670 0000000200FFFFC1
+02A0: 2A00000002FD00FF 272E000002F700FF 1F320000DC000200 FF7F01CC800D000C
+02C0: 500015636C705004 72697447434F7220 646572466F6D1EA2 000001000067010D
+02E0: 00FFFF3101800D00 0DC30014636C3F41 640064724C616265 6C73441E00000100
+0300: 00CF010DFE00FF63 01800D00800E0000 0019636C7E704D00 61696C46696C654C
+0320: 00697374696E671E 00D100010000B301 0D00FFFF18018004 000F003800001054
+0340: 6F006F6C54697057 696E20646F771E00 00017A000003F700 FF1F018034000000
+0360: 0010000000141770 53656C0065637446 726F6D540061626C 656C000000F60400
+0380: EC010D00FFBF0DB9 000100FFFFE61A00 01FE00FF83270000 0001FB00FF8F0180
+03A0: 0411001100000D63 926C536565634049 6E746F1E0000F401 0000EE0300FF3F01
+03C0: 8000B70000001200 0000C816636C4765 E1616C54617C4765 3684020015000000
+03E0: 67010D00FFFFC90D 000001FD00FF371A 0001F700FFDF27DC 000100FF7F347200
+0400: 000200FFFFC93800 0002FD00FF073C00 000002F700FF1F40 0000DC000200FF7F
+0420: 44700000000200FF FFC14800000002FD 00FF074C00000002 F700FF1F5000001C
+0440: 0002000100FD0083 80010000007F5460 000000010D00F401 00004F800100FE00
+0460: 8158000000010DFD 00FF076500000001 F700FF1F720000DC 000100FF7F7F7000
+0480: 00000100FFFFC18C 00000001FD00FF07 9900000001F700FF 1FA60000DC000100
+04A0: FF7FB37000000003 00FFFF2101802200 0013400000001D63 6C5400626C4D616B
+04C0: 6553650B63656452 6F00774B65794172 7261C07974000000 04DE0002D1000100
+04E0: 003F8001F9000037 040001F60D00FFDF 11DC000100FF7F1E 73000200FFFF2101
+0500: 8011000014600000 00106343806F6C75 6D6E4765476C3800 00F4020000EC0204
+0520: 00FFBF04B100010D 00FFFF9801801100 1531000C636362FE 47A3000200006701
+0540: 0D00FFFF8D0D0002 04FD00FFC7018004 4000160000000C66 0C54616543616310
+0560: 68651E00000100BD 0003FB00FF0F0180 1500010017000000 0B6338664361506F
+0580: 026F5A0000000300 3D00071902000001 0100EA0B7A000080 F20100006F0400EC
+05A0: 030400FFBF08B100 010D00FFFF
+.enddata
+			! Functional Class: fcStartProgram
+.winattr
+.end
+				                              Description: 
+				                              Derived From 
+				                              Class Variables 
+					                              String: sIniFile
+					                              String: sAppFileName
+					                              String: sAppDescription
+					                              Number: nRunModeReturn
+					                              Window Handle: hWndThisWnd
+					                              String: sTmp
+					                              Number: nTmp
+				                              Instance Variables 
+					! PUBLIC
+					                              String: sLiveProgramSection
+					                              String: sLiveProgramDescription
+					                              String: sLiveProgramTitle
+					                              String: sLiveProgramDefaultPathNameExt
+					!
+					                              String: sPlayProgramSection
+					                              String: sPlayProgramDescription
+					                              String: sPlayProgramTitle
+					                              String: sPlayProgramDefaultPathNameExt
+					!
+					! sUserTypeRestrictions = NULL, SystemAdministrators, AccountsUsers, SQLConsoleUsers, 
+							WinTalkUsers, RepWinUsers, QuestUsers, TeamWinUsers, SqlWinUsers
+					                              String: sUserTypeRestrictions
+					                              Boolean: bLoadAndWait
+					                              Number: nRunMode
+					                              String: sExtraParameterCommandLine
+					                              Boolean: bStartGuptaApps
+					! PRIVATE
+					                              String: sLiveProgramPathNameExt
+					                              String: sPlayProgramPathNameExt
+					                              String: sLiveUsers
+					                              String: sPlayUsers
+					                              Boolean: bAccessGranted
+				                              Functions 
+					                              Function: Setup
+						                              Description: 
+						                              Returns 
+						                              Parameters 
+							                              String: sNewLiveProgramSection
+							                              String: sNewLiveProgramDescription
+							                              String: sNewLiveProgramTitle
+							                              String: sNewLiveProgramDefaultPathNameExt
+							                              String: sNewPlayProgramSection
+							                              String: sNewPlayProgramDescription
+							                              String: sNewPlayProgramTitle
+							                              String: sNewPlayProgramDefaultPathNameExt
+							                              String: sNewUserTypeRestrictions
+							                              Boolean: bNewLoadAndWait
+							                              Number: nNewRunMode
+							                              String: sNewExtraParameterCommandLine
+							                              Number: nNewTimerDelay
+							                              Number: nNewTimerId
+							                              Boolean: bNewStartGuptaApps
+						                              Static Variables 
+						                              Local variables 
+						                              Actions 
+							                              Set sIniFile = FlemSysIniFileName
+							                              Set sLiveProgramSection = IniGeneralLiveSectionName
+							                              Set sLiveProgramDescription = ''
+							                              Set sLiveProgramTitle = ''
+							                              Set sLiveProgramDefaultPathNameExt = ''
+							                              Set sLiveProgramPathNameExt = ''
+							                              Set sPlayProgramSection = IniGeneralPlaySectionName
+							                              Set sPlayProgramDescription = ''
+							                              Set sPlayProgramTitle = ''
+							                              Set sPlayProgramDefaultPathNameExt = ''
+							                              Set sPlayProgramPathNameExt = ''
+							                              Set sUserTypeRestrictions = ''
+							                              Set bLoadAndWait = FALSE
+							                              Set nRunMode = Window_Normal
+							                              Set sExtraParameterCommandLine = ''
+							                              Set nTimerDelay = 5000
+							                              Set nTimerId = 5000
+							                              Set bStartGuptaApps = TRUE
+							                              Set bAccessGranted = TRUE
+							!
+							                              Set sLiveProgramSection = sNewLiveProgramSection
+							                              Set sLiveProgramDescription = sNewLiveProgramDescription
+							                              Set sLiveProgramTitle = sNewLiveProgramTitle
+							                              Set sLiveProgramDefaultPathNameExt = sNewLiveProgramDefaultPathNameExt
+							                              Set sPlayProgramSection = sNewPlayProgramSection
+							                              Set sPlayProgramDescription = sNewPlayProgramDescription
+							                              Set sPlayProgramTitle = sNewPlayProgramTitle
+							                              Set sPlayProgramDefaultPathNameExt = sNewPlayProgramDefaultPathNameExt
+							                              Set sUserTypeRestrictions = sNewUserTypeRestrictions
+							                              Set bLoadAndWait = bNewLoadAndWait
+							                              Set nRunMode = nNewRunMode
+							                              Set sExtraParameterCommandLine = sNewExtraParameterCommandLine
+							                              Set nTimerDelay = nNewTimerDelay
+							                              Set nTimerId = nNewTimerId
+							                              Set bStartGuptaApps = bNewStartGuptaApps
+							!
+							                              Call SalGetProfileString( sLiveProgramSection, sLiveProgramTitle, sLiveProgramDefaultPathNameExt, sLiveProgramPathNameExt, sIniFile )
+							                              Call SalGetProfileString( sPlayProgramSection, sPlayProgramTitle, sPlayProgramDefaultPathNameExt, sPlayProgramPathNameExt, sIniFile )
+							                              If sUserTypeRestrictions != ''
+								                              Call SalGetProfileString( sLiveProgramSection, sUserTypeRestrictions, '', sLiveUsers, sIniFile )
+								                              Call SalGetProfileString( sPlayProgramSection, sUserTypeRestrictions, '', sPlayUsers, sIniFile )
+								                              If SqlDatabase = 'STOCK'
+									                              If NOT SalStrScan( sLiveUsers, SqlUser ) >= 0
+										                              Call SalSendMsg( hWndItem, PAM_clsPB_HIDE, 0, 0 )
+										                              Call SalSendMsg( hWndItem, PAM_clsPB_DISABLE, 0, 0 )
+										                              Set bAccessGranted = FALSE
+								                              Else 
+									                              If NOT SalStrScan( sPlayUsers, SqlUser ) >= 0
+										                              Call SalSendMsg( hWndItem, PAM_clsPB_HIDE, 0, 0 )
+										                              Call SalSendMsg( hWndItem, PAM_clsPB_DISABLE, 0, 0 )
+										                              Set bAccessGranted = FALSE
+							                              Return TRUE
+					                              Function: GetAppNameFromPath
+						                              Description: 
+						                              Returns 
+							                              String: 
+						                              Parameters 
+							                              String: sAppFullName
+						                              Static Variables 
+						                              Local variables 
+							                              String: sTokens[*]
+							                              Number: nNumTokens
+							                              String: sTmp
+							                              Number: nPos
+						                              Actions 
+							                              Set nNumTokens = SalStrTokenize( sAppFullName, '', '\\', sTokens )
+							                              Set sTmp = sTokens[ nNumTokens - 1 ]
+							                              Set nPos = SalStrScan( sTmp, '.' ) 
+							                              If nPos >= 0
+								                              Set sTmp = SalStrLeftX( sTmp, nPos )
+							                              Return SalStrUpperX( sTmp )
+			! General Window Class: clsStartProgram
+.winattr
+.end
+				                             Description: 
+				                             Derived From 
+				                             Class Variables 
+					                             Boolean: __cbLive
+					                             Boolean: __cbInitialized
+					                             String: __csAccUsers
+					                             String: __csSectionName
+					                             String: __csAccSectionName
+					                             String: __csFamUsers
+					                             String: __csPAdjUsers
+					                             String: __csSContUsers
+					                             String: __csSysAdmUsers
+				                             Instance Variables 
+					                             String: isAppName
+					                             String: isDBName
+					                             String: __isProgramExePath
+					                             String: isParams
+					                             Boolean: ibLoadAndWait
+					                             Number: inRunMode
+					                             Number: __inRunModeReturn
+					                             Boolean: ibExecProgram
+				                             Functions 
+					                             Function: LaunchApp
+						                             Description: 
+						                             Returns 
+						                             Parameters 
+						                             Static Variables 
+						                             Local variables 
+							                             Window Handle: hWnd
+						                             Actions 
+							! Try to find an existing instance of the app
+									and bring it to the top
+							                             Set hWnd = SalAppFind( __isProgramExePath, FALSE )
+							! If we found it
+							                             If hWnd
+								! GetLastActivePopup will return the handle of any modal dialogs in use
+								                             Set hWnd = GetLastActivePopup( hWnd )
+								                             Return SalBringWindowToTop( hWnd )
+							                             Else 
+								! The app was not found, try to load it
+								                             Return SalLoadApp( __isProgramExePath, isDBName||' '||SqlUser||' '||SqlPassword||' '||isParams )
+					                             Function: LaunchAppAndWait
+						                             Description: 
+						                             Returns 
+						                             Parameters 
+						                             Static Variables 
+						                             Local variables 
+							                             Window Handle: hWnd
+							                             Number: nRunModeReturn
+						                             Actions 
+							! Try to find an existing instance of the app
+									and bring it to the top
+							                             Set hWnd = SalAppFind( __isProgramExePath, FALSE )
+							! If we found it
+							                             If hWnd
+								! GetLastActivePopup will return the handle of any modal dialogs in use
+								                             Set hWnd = GetLastActivePopup( hWnd )
+								                             Return SalBringWindowToTop( hWnd )
+							                             Else 
+								! The app was not found, try to load it
+								                             Return SalLoadAppAndWait( __isProgramExePath, inRunMode, __inRunModeReturn )
+					                             Function: ExecProgram
+						                             Description: 
+						                             Returns 
+							                             Boolean: 
+						                             Parameters 
+						                             Static Variables 
+						                             Local variables 
+							                             Number: nTmp
+						                             Actions 
+							                             Set nTmp = WinExec( __isProgramExePath||' '||isParams, SW_SHOW )
+							                             If nTmp >= 32
+								                             Return TRUE
+							                             Else 
+								                             Return FALSE
+					                             Function: CloseApp
+						                             Description: 
+						                             Returns 
+						                             Parameters 
+							                             String: sApp
+						                             Static Variables 
+						                             Local variables 
+							                             Window Handle: hWnd
+							                             Window Handle: hWndChild
+						                             Actions 
+							! Try to find an existing instance of the app
+									and bring it to the top
+							                             Set hWnd = SalAppFind( sApp, FALSE )
+							! If we found it
+							                             If hWnd
+								! Post it a close message
+								! This message must be posted, if you send,
+										it screws up Windows
+								                             Call SalPostMsg( hWnd, SAM_Close, 0, 0 )
+							                             Return TRUE
+					                             Function: OnClose
+						                             Description: 
+						                             Returns 
+							                             Boolean: 
+						                             Parameters 
+							                             String: sProgName
+							                             Window Handle: hWndCalledFrom
+						                             Static Variables 
+						                             Local variables 
+						                             Actions 
+							                             If not CloseApp( sProgName )
+								                             Return FALSE
+							! Post ourselves a close message
+							                             Call SalPostMsg( hWndCalledFrom, PAM_cls_CLOSE, 0, 0  )
+					                             Function: ShutDown
+						                             Description: 
+						                             Returns 
+							                             Boolean: 
+						                             Parameters 
+							                             String: sProgName
+						                             Static Variables 
+						                             Local variables 
+						                             Actions 
+							! If either of the subsystem apps is still around, don't exit
+							                             If SalAppFind( sProgName, FALSE )
+								                             Return FALSE
+							                             Call SalQuit()
+					                             Function: Enabled
+						                             Description: 
+						                             Returns 
+							                             Boolean: 
+						                             Parameters 
+							                             Number: nUserType
+						                             Static Variables 
+						                             Local variables 
+						                             Actions 
+							                             Select Case nUserType
+								                             Case USR_ACCT
+									                             If SalStrScan( __csAccUsers, SqlUser ) >= 0
+										                             Return TRUE
+									                             Else 
+										                             Return FALSE
+								                             Case USR_FAMILY
+									                             If SalStrScan( __csFamUsers, SqlUser ) >= 0
+										                             Return TRUE
+									                             Else 
+										                             Return FALSE
+								                             Case USR_PRICEADJ
+									                             If SalStrScan( __csPAdjUsers, SqlUser ) >= 0
+										                             Return TRUE
+									                             Else 
+										                             Return FALSE
+								                             Case USR_STCKCONTROL
+									                             If SalStrScan( __csSContUsers, SqlUser ) >= 0
+										                             Return TRUE
+									                             Else 
+										                             Return FALSE
+								                             Case USR_SYSADM
+									                             If SalStrScan( __csSysAdmUsers, SqlUser ) >= 0
+										                             Return TRUE
+									                             Else 
+										                             Return FALSE
+								                             Case USR_GENERAL
+									                             Return TRUE
+								                             Default 
+									                             Return TRUE
+					                             Function: SetCreditorDatabase
+						                             Description: 
+						                             Returns 
+							                             Boolean: 
+						                             Parameters 
+						                             Static Variables 
+						                             Local variables 
+						                             Actions 
+							                             If sDatabase = 'LIVE'
+								                             Set isDBName = 'CREDITOR'
+							                             Else 
+								                             Set isDBName = 'CREDDEV'
+					                             Function: SetAppName
+						                             Description: 
+						                             Returns 
+							                             Boolean: 
+						                             Parameters 
+							                             String: sAppName
+						                             Static Variables 
+						                             Local variables 
+						                             Actions 
+							                             Set isAppName = sAppName
+					                             Function: SetParams
+						                             Description: 
+						                             Returns 
+							                             Boolean: 
+						                             Parameters 
+							                             String: sParams
+						                             Static Variables 
+						                             Local variables 
+						                             Actions 
+							                             Set isParams = sParams
+					                             Function: SetRunMode
+						                             Description: 
+						                             Returns 
+							                             Boolean: 
+						                             Parameters 
+							                             Number: nRunMode
+						                             Static Variables 
+						                             Local variables 
+						                             Actions 
+							                             Set inRunMode = nRunMode
+					                             Function: SetLoadAndWait
+						                             Description: 
+						                             Returns 
+							                             Boolean: 
+						                             Parameters 
+							                             Boolean: bLoadAndWait
+						                             Static Variables 
+						                             Local variables 
+						                             Actions 
+							                             Set ibLoadAndWait = bLoadAndWait
+					                             Function: SetExecProgram
+						                             Description: 
+						                             Returns 
+							                             Boolean: 
+						                             Parameters 
+							                             Boolean: bExecProgram
+						                             Static Variables 
+						                             Local variables 
+						                             Actions 
+							                             Set ibExecProgram = bExecProgram
+					                             Function: StartProgram
+						                             Description: 
+						                             Returns 
+							                             Boolean: 
+						                             Parameters 
+						                             Static Variables 
+						                             Local variables 
+						                             Actions 
+							                             Call DisplayStartMessage( )
+							                             Call SalGetProfileString( __csSectionName, isAppName, '', __isProgramExePath, FlemSysIniFileName )
+							                             If ibExecProgram
+								                             Call ExecProgram(  )
+							                             Else If ibLoadAndWait
+								                             Set __isProgramExePath = __isProgramExePath||' '||isDBName||' '||SqlUser||' '||SqlPassword||' '||isParams
+								                             Call LaunchAppAndWait(  )
+							                             Else 
+								                             Call LaunchApp(  )
+							                             Call SalSendMsg( hWndItem, PAM_clsPB_LOADING_END, 0, 0 )
+							                             Return TRUE
+					                             Function: DisplayStartMessage
+						                             Description: 
+						                             Returns 
+							                             Boolean: 
+						                             Parameters 
+						                             Static Variables 
+						                             Local variables 
+						                             Actions 
+							                             Call SalSendMsg( hWndForm, PAM_clsPB_LOADING_START, 0, SalHStringToNumber( isAppName ) )
+				                             Message Actions 
+					                             On SAM_Create
+						                             If NOT __cbInitialized
+							                             If sDatabase = 'LIVE'
+								                             Set __cbLive = TRUE 
+								                             Set __csSectionName = IniGeneralLiveSectionName
+								                             Set __csAccSectionName = IniAccountsLiveSectionName
+							                             Else 
+								                             Set __cbLive = FALSE
+								                             Set __csSectionName = IniGeneralPlaySectionName
+								                             Set __csAccSectionName = IniAccountsPlaySectionName
+							                             Call SalGetProfileString( __csAccSectionName, 'AccountsUsers', '', __csAccUsers, FlemSysIniFileName )
+							                             Call SalGetProfileString( __csAccSectionName, 'FlemingsFamily', '', __csFamUsers, FlemSysIniFileName )
+							                             Call SalGetProfileString( __csSectionName, 'PriceAdjusters', '', __csPAdjUsers, FlemSysIniFileName )
+							                             Call SalGetProfileString( __csSectionName, 'StockControllers', '', __csSContUsers, FlemSysIniFileName )
+							                             Call SalGetProfileString( __csAccSectionName, 'SystemAdministrators', '', __csSysAdmUsers, FlemSysIniFileName )
+							                             Set __cbInitialized = TRUE
+						                             Set isParams = ''
+						                             Set ibExecProgram = FALSE
+						                             Set inRunMode = Window_Normal
+						                             If sDatabase = 'LIVE'
+							                             Set isDBName = 'STOCK'
+						                             Else 
+							                             Set isDBName = 'STOCKDEV'
+						! do initialize code to get users path and rights etc
+			! Pushbutton Class: clspbStartProg
+.winattr
+				Title:
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  1.8"
+					Width Editable? Yes
+					Height: 0.6"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: (none)
+				Font Name: Arial
+				Font Size: 8
+				Font Enhancement: Bold
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+.end
+				                             Description: 
+				                             Derived From 
+					                             Class: clsStartProgram
+					                             Class: clspbGeneral
+				                             Class Variables 
+				                             Instance Variables 
+				                             Functions 
+				                             Message Actions 
+					                             On SAM_Create
+						                             Call SalSendClassMessageNamed( clsStartProgram, SAM_Create, wParam, lParam )
+						                             Return SalSendClassMessageNamed( clspbGeneral, SAM_Create, wParam, lParam )
+					                             On PAM_cls_SETINSTANCEVARS
+						                             Set clspbStartProg.bDoubleClickOK = FALSE
+					                             On PAM_clsPB_CLICK
+						                             Call hWndItem.clsStartProgram..StartProgram(  )
+						                             Return TRUE
+					                             On PAM_clsPB_LOADING_END
+						! If NOT bLoadAndWait
+							                             Call SalTimerKill ( hWndItem, nTimerId )
+							                             Call SalGetWindowText( hWndForm, sTmp, 60 )
+							                             Set hWndThisWnd = FindWindowA( 0, sTmp )
+							                             Call ShowWindow( hWndThisWnd, SW_MINIMIZE )
+						! Else
+							                             Call SalGetWindowText( hWndForm, sTmp, 60 )
+							                             Set hWndThisWnd = FindWindowA( 0, sTmp )
+							                             Call ShowWindow( hWndThisWnd, SW_RESTORE )
+						                             Call SalSendMsg( hWndForm, PAM_clsPB_LOADING_END, wParam, lParam )
+						                             Call SalSendMsg( hWndItem, PAM_clsPB_ENABLE, 2, 0 )
+						                             Call OurWaitCursor( FALSE )
+					                             On PAM_clsPB_ENABLE
+						                             If wParam = 2
+							                             Return SalSendClassMessage( PAM_clsPB_ENABLE, 0, 0 )
+						                             Else 
+							                             Return TRUE
+			! Data Field Class: clsdfStartProgram
+.winattr
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  Default
+						Width Editable? Yes
+						Height: Default
+						Height Editable? Yes
+					Visible? No
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+.end
+				                             Description: 
+				                             Derived From 
+					                             Class: clsStartProgram
+				                             Class Variables 
+				                             Instance Variables 
+				                             Functions 
+				                             Message Actions 
+					                             On PAM_clsPB_CLICK
+						                             Call hWndForm.clsStartProgram..StartProgram(  )
+						                             Return TRUE
+			! Form Window Class: clsfrmStartForm
+.winattr
+				Title:
+				Icon File:
+				Accesories Enabled? Yes
+				Visible? No
+				Display Settings
+					Display Style? Etched
+					Visible at Design time? Yes
+					Automatically Created at Runtime? No
+					Initial State: Normal
+					Maximizable? Yes
+					Minimizable? Yes
+					System Menu? Yes
+					Resizable? Yes
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  9.988"
+						Width Editable? Yes
+						Height: 5.948"
+						Height Editable? Yes
+					Form Size
+						Width:  Default
+						Height: Default
+						Number of Pages: Dynamic
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+				Next Class Child Key: 8
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+.end
+				                             Description: 
+				                             Derived From 
+					                             Class: clsFormGeneral
+					                             Class: clsStartProgram
+				                             Menu 
+				                             Tool Bar 
+					                             Contents 
+						                             Pushbutton: pbHelp
+							                             Message Actions 
+						                             Pushbutton: pbItemEnq
+							                             Message Actions 
+						                             Pushbutton: pbPrintForm
+							                             Message Actions 
+						                             Pushbutton: pbExit
+							                             Message Actions 
+				                             Contents 
+					                             Data Field: dfDatabase
+						                             Message Actions 
+					                             Data Field: dfUser
+						                             Message Actions 
+					                             Background Text: Season
+					                             Custom Control: ccSeasonYear
+						                             Message Actions 
+				                             Class Variables 
+				                             Instance Variables 
+				                             Functions 
+				                             Message Actions 
+					                             On SAM_Create
+						                             Call SalSendClassMessageNamed( clsFormBase, SAM_Create, wParam, lParam )
+						                             Call SalSendClassMessageNamed( clsStartProgram, SAM_Create, wParam, lParam )
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton: clspbStartProg
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				Call CheckProgramExistance( "Flemings Menu", FALSE )
+				!
+				Call SqlHandlesSetup(  )
+				If SalModalDialog( dlgLogin, hWndNULL, strArgArray[1], strArgArray[2] )
+					Call SalCreateWindow( frmFlmMenu, hWndNULL )
+			On SAM_AppExit
+				Call SqlHandlesDisconnectClose(  )
+	Form Window: frmFlmMenu
+		Class: clsfrmStartForm
+		Property Template:
+		Class DLL Name:
+		Title: Flemings Menu
+		Icon File: C:\Centura\icons\Flemtree.ico
+.data RESOURCE 2 0 1 3996228271
+0000: FE020000CC010000 0000000000000000 0200A20001000120 081000010400E802
+0020: 0000001600000028 0000000020000000 4000380000010000 A380020000FFFF8F
+0040: 8000000300808000 8000680000808080 0D008000C0C080C0 000000FF00000300
+0060: FFFF00FF00680000 FFFFFF8D00FF00FF FEFFFFFFFFFFFFFF 7F6F000000666886
+0080: 6666660360000FFF F6F600FFFFFFF008 666666E80000FFFF 0FF0866660F8FFFF
+00A0: FF0FF686660FF8FF FFFF6FF0FFFCFFFF EFF6FDFF0FF66666 FFFDFF0FF0666FFF
+00C0: FCFFFFA0FAFFFFFF F66FFDFF40F22FFA FAF066FAF466FFFF 00F3FFA66A266662
+00E0: A6F0AAFFFFFF00F3 3FAF2A22866FAAE0 AFAFFFFFFF00F222 2F2AA22228A2E822
+0100: AFFFFF00222A3222 A2A2282A60A22AFF FFFFF201AA322222 8822224622FFFFFF
+0120: F2002A2322222882 8A224022A228FFFF FFF200AA332A2882 22228250020222FF
+0140: FFF200A2A22A2822 22228200222A222F FFFFFFF211220382 28A22320222AA22F
+0160: FFFFF241F2388F22 88A2A0222A2022FF FF802222282A2222 22A0F22F2222FFFF
+0180: 00F220222A22823A 22300222222FFFF2 1022FF222A233A22 C822F222FFFF042F
+01A0: 222AA0A3A222DDF2 FFC12202A2A223E0 2FF2FFFFFF8922F2 22A3A2FAFFFF0722
+01C0: 2FAAAFFFFDFFA722 FFFF3F0000FE00FF FFFFFFFFFFFFFFFF FFFFFFFFFF3F
+.enddata
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? Yes
+			Automatically Created at Runtime? Class Default
+			Initial State: Maximized
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   0.0"
+				Top:    0.0"
+				Width:  10.0"
+				Width Editable? Class Default
+				Height: 5.958"
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+			Named Menu: clsFormFileMenu
+				Resource Id: 41035
+			Named Menu: mnuOther
+				Resource Id: 30626
+			Named Menu: mnuAccounts
+				Resource Id: 30627
+			Named Menu: mnuCreditors
+				Resource Id: 30628
+		Tool Bar
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: Default
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Contents
+				Pushbutton: pbHelp
+					Class Child Ref Key: 5
+					Class ChildKey: 0
+					Class: clsfrmStartForm
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbItemEnq
+					Class Child Ref Key: 6
+					Class ChildKey: 0
+					Class: clsfrmStartForm
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 7
+					Class ChildKey: 0
+					Class: clsfrmStartForm
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbExit
+					Class Child Ref Key: 8
+					Class ChildKey: 0
+					Class: clsfrmStartForm
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			! randomise the picture to prime the picture using salpicset
+			Picture: pic1
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsPicture
+				Property Template:
+				Class DLL Name:
+				Window Location and Size
+					Left:   3.175"
+					Top:    0.083"
+					Width:  3.55"
+					Width Editable? Class Default
+					Height: 1.667"
+					Height Editable? Class Default
+				Visible? Class Default
+				Editable? Class Default
+				File Name: C:\Centura\icons\pictures\Flemrain.tif
+				Storage: Class Default
+				Picture Transparent Color: Class Default
+				Fit: Class Default
+				Scaling
+					Width:  Class Default
+					Height:  Class Default
+				Corners: Class Default
+				Border Style: Class Default
+				Border Thickness: Class Default
+				Tile To Parent? Class Default
+				Border Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					! On SAM_Create
+						                           Call pic1.GetPicToLoad(  )
+						                           Call pic1.LoadPic(  )
+			Pushbutton: pbCustomer
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbStartProg
+				Property Template:
+				Class DLL Name:
+				Title: &Customer - F3
+				Window Location and Size
+					Left:   1.188"
+					Top:    1.906"
+					Width:  1.7"
+					Width Editable? Class Default
+					Height: 0.5"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: F3
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbCustomer.isAppName = 'Customer'
+						Set pbCustomer.bDoubleClickOK = FALSE
+						Set pbCustomer.nAppearanceOnClick = PB_Nothing
+			Pushbutton: pbLoads
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbStartProg
+				Property Template:
+				Class DLL Name:
+				Title: &Loads - F4
+				Window Location and Size
+					Left:   2.988"
+					Top:    1.906"
+					Width:  1.7"
+					Width Editable? Class Default
+					Height: 0.5"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: F4
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbLoads.isAppName = 'Loads'
+						Set pbLoads.bDoubleClickOK = FALSE
+						Set pbLoads.nAppearanceOnClick = PB_Nothing
+			Pushbutton: pbFarms
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbStartProg
+				Property Template:
+				Class DLL Name:
+				Title: F&arms
+				Window Location and Size
+					Left:   4.788"
+					Top:    1.906"
+					Width:  1.7"
+					Width Editable? Class Default
+					Height: 0.5"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbFarms.isAppName = 'Farms'
+						Set pbFarms.bDoubleClickOK = FALSE
+						Set pbFarms.nAppearanceOnClick = PB_Nothing
+			Pushbutton: pbMail
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbStartProg
+				Property Template:
+				Class DLL Name:
+				Title: Mailing List
+				Window Location and Size
+					Left:   6.588"
+					Top:    1.906"
+					Width:  1.7"
+					Width Editable? Class Default
+					Height: 0.5"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbMail.isAppName = 'MailingList'
+						Set pbMail.bDoubleClickOK = FALSE
+						Set pbMail.nAppearanceOnClick = PB_Nothing
+			Pushbutton: pbStock
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbStartProg
+				Property Template:
+				Class DLL Name:
+				Title: Stock &Items - F2
+				Window Location and Size
+					Left:   1.188"
+					Top:    2.49"
+					Width:  1.7"
+					Width Editable? Class Default
+					Height: 0.5"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: F2
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbStock.isAppName = 'StockItems'
+						Set pbStock.bDoubleClickOK = FALSE
+						Set pbStock.nAppearanceOnClick = PB_Nothing
+			Pushbutton: pbMissedSales
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbStartProg
+				Property Template:
+				Class DLL Name:
+				Title: &Missed Sales - F5
+				Window Location and Size
+					Left:   2.988"
+					Top:    2.49"
+					Width:  1.7"
+					Width Editable? Class Default
+					Height: 0.5"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: F5
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbMissedSales.isAppName = 'MissedSales'
+						Set pbMissedSales.bDoubleClickOK = FALSE
+						Set pbMissedSales.nAppearanceOnClick = PB_Nothing
+			Pushbutton: pbCustCanc
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbStartProg
+				Property Template:
+				Class DLL Name:
+				Title: Customer Canc&ellation
+				Window Location and Size
+					Left:   4.788"
+					Top:    2.49"
+					Width:  1.7"
+					Width Editable? Class Default
+					Height: 0.5"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbCustCanc.bDoubleLineTitle = TRUE
+						Set pbCustCanc.nAppearanceOnClick = PB_Nothing
+						Set pbCustCanc.isAppName = 'CustomerCancelation'
+						Set pbCustCanc.bDoubleClickOK = FALSE
+			Pushbutton: pbRecNPA
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbStartProg
+				Property Template:
+				Class DLL Name:
+				Title: Receive NPAs
+				Window Location and Size
+					Left:   6.588"
+					Top:    2.49"
+					Width:  1.7"
+					Width Editable? Class Default
+					Height: 0.5"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbRecNPA.isAppName = 'ReceiveNPAs'
+						Set pbRecNPA.nAppearanceOnClick = PB_Nothing
+						Set pbRecNPA.bDoubleClickOK = FALSE
+			Pushbutton: pbRecPRC
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbStartProg
+				Property Template:
+				Class DLL Name:
+				Title: PRC Returns
+				Window Location and Size
+					Left:   1.188"
+					Top:    3.073"
+					Width:  1.7"
+					Width Editable? Class Default
+					Height: 0.5"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbRecPRC.isAppName = 'ReceivePRCs'
+						Set pbRecPRC.nAppearanceOnClick = PB_Nothing
+						Set pbRecPRC.bDoubleClickOK = FALSE
+			Pushbutton: pbTAReturns
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbStartProg
+				Property Template:
+				Class DLL Name:
+				Title: Test Agree Return
+				Window Location and Size
+					Left:   2.988"
+					Top:    3.073"
+					Width:  1.7"
+					Width Editable? Class Default
+					Height: 0.5"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbTAReturns.isAppName = 'ReceiveTAs'
+						Set pbTAReturns.nAppearanceOnClick = PB_Nothing
+						Set pbTAReturns.bDoubleClickOK = FALSE
+			Pushbutton: pbCashRecpt
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbStartProg
+				Property Template:
+				Class DLL Name:
+				Title: Cash &Receipts - F6
+				Window Location and Size
+					Left:   1.188"
+					Top:    3.656"
+					Width:  1.7"
+					Width Editable? Class Default
+					Height: 0.5"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: F6
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbCashRecpt.isAppName = 'CashReceipts'
+						Set pbCashRecpt.bDoubleClickOK = FALSE
+						Set pbCashRecpt.nAppearanceOnClick = PB_Nothing
+						If pbCashRecpt.Enabled( USR_ACCT )
+							Call SalSendMsg( hWndItem, PAM_clsPB_SHOW, wParam, lParam )
+						Else
+							Call SalSendMsg( hWndItem, PAM_clsPB_HIDE, wParam, lParam )
+			Pushbutton: pbTrans
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbStartProg
+				Property Template:
+				Class DLL Name:
+				Title: &Transactions - F7
+				Window Location and Size
+					Left:   2.988"
+					Top:    3.656"
+					Width:  1.7"
+					Width Editable? Class Default
+					Height: 0.5"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbTrans.isAppName = 'Transactions'
+						Set pbTrans.bDoubleClickOK = FALSE
+						Set pbTrans.nAppearanceOnClick = PB_Nothing
+						If pbTrans.Enabled( USR_ACCT )
+							Call SalSendMsg( hWndItem, PAM_clsPB_SHOW, wParam, lParam )
+						Else
+							Call SalSendMsg( hWndItem, PAM_clsPB_HIDE, wParam, lParam )
+			Pushbutton: pbMonthlyAR
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbStartProg
+				Property Template:
+				Class DLL Name:
+				Title: Monthl&y AR
+				Window Location and Size
+					Left:   4.788"
+					Top:    3.656"
+					Width:  1.7"
+					Width Editable? Class Default
+					Height: 0.5"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbMonthlyAR.isAppName = 'MonthlyAR'
+						Set pbMonthlyAR.bDoubleClickOK = FALSE
+						Set pbMonthlyAR.nAppearanceOnClick = PB_Nothing
+						If pbMonthlyAR.Enabled( USR_ACCT )
+							Call SalSendMsg( hWndItem, PAM_clsPB_SHOW, wParam, lParam )
+						Else
+							Call SalSendMsg( hWndItem, PAM_clsPB_HIDE, wParam, lParam )
+			! clsdfStartProgram: dfUpdate
+.winattr class Data Field:
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfStartProgram
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left:   Default
+						Top:    Default
+						Width:  Default
+						Width Editable? Yes
+						Height: Default
+						Height Editable? Yes
+					Visible? No
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+.end
+				                            Message Actions 
+					                            On PAM_cls_SETINSTANCEVARS
+						                            Set dfUpdate.ibLoadAndWait = TRUE
+						                            Set dfUpdate.inRunMode = Window_Minimized
+						                            Set dfUpdate.isAppName = 'ScheduleUpdateWhenAvailable'
+			Data Field: dfLoading
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   0.038"
+						Top:    4.177"
+						Width:  9.775"
+						Width Editable? Class Default
+						Height: 0.417"
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? No
+					Justify: Center
+					Format: Class Default
+					Country: Class Default
+					Font Name: Arial
+					Font Size: 24
+					Font Enhancement: Class Default
+					Text Color: Blue
+					Background Color: Gray
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfDatabase
+				Class Child Ref Key: 1
+				Class ChildKey: 0
+				Class: clsfrmStartForm
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfUser
+				Class Child Ref Key: 2
+				Class ChildKey: 0
+				Class: clsfrmStartForm
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text:
+				Resource Id: 30629
+				Class Child Ref Key: 3
+				Class ChildKey: 0
+				Class: clsfrmStartForm
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 4
+				Class ChildKey: 0
+				Class: clsfrmStartForm
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+		Functions
+			Function: Scheduler
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: hCheckScheduleHdl
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: hUpdtScheduleHdl
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! hcSqlHandle: hInsScheduleHdl
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sName
+					String: sBind
+					String: sInto
+					Number: nOurCheckScheduleHandleNo
+					Number: nOurUpdtScheduleHandleNo
+					Number: nOurInsScheduleHandleNo
+					Boolean: bOk
+					!
+					Number: nInd
+					!
+					Date/Time: dtPerformedSysDT
+					String: sActivityDesc
+					String: sStatus
+					Date/Time: dtNextDateTime
+					String: sUserId
+				Actions
+					Set nOurCheckScheduleHandleNo = SqlHandlesGetReferenceNo( 'NEXTSCHEDULE' )
+					Set nOurUpdtScheduleHandleNo = SqlHandlesGetReferenceNo( 'UPDTSCHEDULE' )
+					Set nOurInsScheduleHandleNo = SqlHandlesGetReferenceNo( 'NEWSCHEDULE' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT 
+									  Performed_Sys_DT, 
+									  Activity_Desc, 
+									  Status, 
+									  Next_DateTime, 
+									  User_Id 
+									FROM 
+									  Schedule 
+									WHERE 
+									  Next_DateTime < SYSDATETIME AND 
+									  Status = 'READY' "
+							Set sName = 'NEXTSCHEDULE'
+							Set sBind = ''
+							Set sInto = ':dtPerformedSysDT, :sActivityDesc, :sStatus, :dtNextDateTime, :sUserId'
+							Call haSqlHandles[ nOurCheckScheduleHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurCheckScheduleHandleNo ].hSqlHandle )
+							!
+							Set sSql = "UPDATE Schedule 
+									SET 
+									  Status = :3, 
+									  User_Id = :4 
+									WHERE 
+									  Performed_Sys_DT = :1 AND 
+									  Activity_Desc = :2 "
+							Set sName = 'UPDTSCHEDULE'
+							Set sBind = ':dtPerformedSysDT, :sActivityDesc, :sStatus, :sUserId'
+							Set sInto = ''
+							Call haSqlHandles[ nOurUpdtScheduleHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurUpdtScheduleHandleNo ].hSqlHandle )
+							!
+							Set sSql = "INSERT INTO Schedule 
+									( Performed_Sys_DT, 
+									  Activity_Desc, 
+									  Status, 
+									  Next_DateTime, 
+									  User_Id ) 
+									VALUES ( :1, :2, :3, :4, :5 ) "
+							Set sName = 'NEWSCHEDULE'
+							Set sBind = ':dtPerformedSysDT, :sActivityDesc, :sStatus, :dtNextDateTime, :sUserId'
+							Set sInto = ''
+							Call haSqlHandles[ nOurInsScheduleHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurInsScheduleHandleNo ].hSqlHandle )
+							!
+							Set dtPerformedSysDT = DATETIME_Null
+							Set sActivityDesc = ''
+							Set sStatus = ''
+							Set dtNextDateTime = DATETIME_Null
+							Set sUserId = ''
+							!
+							If haSqlHandles[ nOurCheckScheduleHandleNo ].Execute( )
+								While haSqlHandles[ nOurCheckScheduleHandleNo ].FetchNext( nInd )
+									Set sStatus = 'PERFORMING'
+									If haSqlHandles[ nOurUpdtScheduleHandleNo ].Execute( )
+										Call haSqlHandles[ nOurUpdtScheduleHandleNo ].Commit( )
+										Set sUserId = SqlUser
+										If PerformAction( sActivityDesc, dtNextDateTime )
+											Set sStatus = 'COMPLETE'
+										Else
+											Set sStatus = 'INCOMPLETE'
+										If haSqlHandles[ nOurUpdtScheduleHandleNo ].Execute( )
+											Set sStatus = 'READY'
+											Set dtPerformedSysDT = SalDateCurrent(  )
+											If haSqlHandles[ nOurInsScheduleHandleNo ].Execute( )
+												Call haSqlHandles[ nOurInsScheduleHandleNo ].Commit( )
+												Call haSqlHandles[ nOurUpdtScheduleHandleNo ].Commit( )
+											Else
+												Call haSqlHandles[ nOurUpdtScheduleHandleNo ].Rollback( )
+												Return FALSE
+										Else
+											Return FALSE
+									Else
+										Return FALSE
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Set bOk = TRUE
+							If NOT haSqlHandles[ nOurCheckScheduleHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurUpdtScheduleHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							If NOT haSqlHandles[ nOurInsScheduleHandleNo ].Disconnect( )
+								Set bOk = FALSE
+							Return bOk
+			Function: PerformAction
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sActivityDesc
+					Receive Date/Time: dtNextDateTime
+				Static Variables
+				Local variables
+					Boolean: bOk
+					Number: nReturn
+				Actions
+					Set bOk = TRUE
+					If sActivityDesc = 'UPDT WHEN AVAILABLE'
+						! Call hWndForm.clsStartProgram..SetAppName( 'ScheduleUpdateWhenAvailable'  )
+						! Call hWndForm.clsStartProgram..SetLoadAndWait( TRUE )
+						! Call hWndForm.clsStartProgram..SetRunMode( Window_Minimized )
+						! If hWndForm.clsStartProgram..StartProgram(  )
+							                           Set dtNextDateTime = SalDateConstruct( SalDateYear( SalDateCurrent(  ) ), SalDateMonth( SalDateCurrent(  ) ), SalDateDay( SalDateCurrent(  ) ), 0, 0, 0 ) + 1
+						Call CheckForNewAvailPotsStock( SalDateCurrent(  ), SH_cls_Execute )
+						Set dtNextDateTime = SalDateConstruct( SalDateYear( SalDateCurrent(  ) ), SalDateMonth( SalDateCurrent(  ) ), SalDateDay( SalDateCurrent(  ) ), 0, 0, 0 ) + 1
+					Else If sActivityDesc = 'UPDT DENORM FIELDS'
+						Call UpdtDenormStckItmFields( naItemNos, 'ALL', SH_cls_Execute )
+						Set dtNextDateTime = SalDateConstruct( SalDateYear( SalDateCurrent(  ) ), SalDateMonth( SalDateCurrent(  ) ), SalDateDay( SalDateCurrent(  ) ), 0, 0, 0 ) + 1
+					Return bOk
+		Window Parameters
+		Window Variables
+			Number: naItemNos[*]
+		Message Actions
+			On SAM_CreateComplete
+				Call SalSendClassMessage( SAM_CreateComplete, wParam, lParam )
+				Call SalSendMsg( hWndForm, PAM_SCHEDULER_START, 0, 0 )
+				Call Scheduler( SH_cls_Disconnect )
+				Call UpdtDenormStckItmFields( naItemNos, '', SH_cls_Disconnect )
+				Call CheckForNewAvailPotsStock( DATETIME_Null, SH_cls_Disconnect )
+				Call SqlHandlesDisconnectClose(  )
+			On SAM_Destroy
+				Return SalSendClassMessage( SAM_Destroy, wParam, lParam )
+			On PAM_SCHEDULER_START
+				Call OurWaitCursor( TRUE )
+				Set dfLoading = 'Please Wait, Running - Scheduler'
+				If IsUserSELECTUser( SqlUser, FALSE ) AND 
+						IsUserINSERTUser( SqlUser, FALSE ) AND 
+						IsUserUPDATEUser( SqlUser, FALSE ) AND 
+						IsUserDELETEUser( SqlUser, FALSE )
+					Call Scheduler( SH_cls_Execute )
+				Set dfLoading = ''
+				Call OurWaitCursor( FALSE )
+			!
+			On PAM_clsPB_LOADING_START
+				Set dfLoading = 'Please Wait, Loading - '||SalNumberToHString( lParam )
+				Return TRUE
+			On PAM_clsPB_LOADING_END
+				Set dfLoading = ''
+				Return TRUE

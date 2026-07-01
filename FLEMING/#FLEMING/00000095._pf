@@ -1,0 +1,3313 @@
+Application Description: SQLWindows 5.01 Jans Stock Item Growing Locations APL
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D20000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF6E0000 006E000000020300 00AB010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 1018B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.113"
+			Top:    2.896"
+			Width:  4.688"
+			Height: 2.99"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   8.263"
+			Top:    0.688"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: VTMETER.APL
+		File Include: Frmctbl.apl
+		File Include: VTSPIN.APL
+		File Include: Query.apl
+		File Include: Itemfunc.apl
+		File Include: VTWIN.APL
+		File Include: address.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Italic
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Black
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for ITMGRLOC.APL
+				Number: ITMGRLOCAplMsgOffSet = SAM_User + 4800
+				! Message go up to AplOffSet + 99
+				Number: ITMGRLOCAplConstOffSet = 2350
+				Number: PAM_clsITMGRLOC_CALCTOTALGROWING = ITMGRLOCAplConstOffSet + 1
+				Number: PAM_clsITMGRLOC_CALCGROWING = ITMGRLOCAplConstOffSet + 2
+				Number: PAM_clsITMGRLOC_STOCKTYPE = ITMGRLOCAplConstOffSet + 3
+				!
+				Number: nITMGRLOC_POT = ITMGRLOCAplConstOffSet + 1
+				Number: nITMGRLOC_BAREROOT = ITMGRLOCAplConstOffSet + 2
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 3781141436
+0000: 9A050000E8010000 0000000000000000 020000370000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E002040000 00FF3FA200B80000 0200FFFFE0A60000 0001FE00FF83B300
+0060: 000001FB00FF0FC0 000000EE0100FF3F CD00B800000100FF FF80DA0000000304
+0080: 00FE00FF83DE0000 0002FB00FF0FE200 0000EE0100FF3FEF 00B800000100FFFF
+00A0: E0FC00000001FE00 FF830901000002FB 00FF8F0D0100EE02 00FF3F1101BA0002
+00C0: 00FFFFE815010001 FE00FFA322010002 FB00FF8F260100EE 0200FF3F2A01BA00
+00E0: 0100FFFFE8370100 01FE00FFA3440100 01FB00FF8F510100 EE0100FF3F5E01BA
+0100: 000300FFFFE86201 0002FE00FFA36601 0001FB00FF8F7301 00EE0100FF3F8001
+0120: B800000100FFFFE8 8D010002FE00FFA3 91010002FB00FF8F 950100EE0200FF3F
+0140: 9901AA00010000FF FFE8A6010002FE00 FFA3AA010002FB00 FF8FAE0100EE0100
+0160: FF3FBB01BA000100 FFFFE8C8010001FE 00FFA3D5010001FB 00FF8FE20100EE03
+0180: 00FF3FE601BA0002 00FFFFE8EA010001 FE00FFA3F7010001 FB00FF0F04020000
+01A0: EE0100FF3F1102BA 000200FFFFE81502 0002FE00FFA31902 0002FB00FF8F1D02
+01C0: 00EE0100FF3F2A02 BA000100FFFFE837 020001FE00FFA344 020001FB00FF8F51
+01E0: 0200EE0100FF3F5E 02BA000100FFFF88 6B0200040D00FE00 FF03
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 1268561539
+0000: EF110000E5070000 0000000000000000 0200001E00FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F15003C00 001463006C737062
+0040: 53494772006F774C 6F63617469006F6E 7352000000037800 000002F004000000
+0060: FF9F0400C000010D 000000FF7F114000 000003040000FFFF 0101802F00000001
+0080: 400000001A636C66 00726D4974656D47 7283696E674C6F3F 9600C00000050000
+00A0: 00B3010D00FFFFE4 0D000001FE00FF83 1A00000001FB00FF 0F270000008E0200
+00C0: 0100FE00C1800100 00003F2B00300000 010D0001FA000027 80010000FF100180
+00E0: 2B00000200200000 10636C466F00726D 4261736554610062 6C656C000000047B
+0100: 0001F60D00FFDF0D DC000100FF7F1A73 000100FFFF8D2700 0204FD00FF070180
+0120: 3300000800030000 11636C0154626C51 7565720079446961 6C6F67A080000000
+0140: 0600000067030400 FFFFCD040002FD00 FF070800000002F7 00FF1F0C0000D800
+0160: 010D00FF7F197000 00000100FFFFC126 00000001FD00FF07 01805D0000CC0004
+0180: 0011795175610074 614669656C6444B4 01000C00770200FF FFCD040002FD00FF
+01A0: 37080002F700FFDF 0CDC000200FF7F10 60000000010D00FF FFC11D00000001FD
+01C0: 00FF072A00000002 4700010000FFE480 0100001F2E0000D8 00010D00FF7F3B70
+01E0: 0000000200FFFFC1 3F00000001FD00FF 074C00000002F700 FF1F500000DC0001
+0200: 00FF7F01CC805D00 05F00012636C0343 6F6D626F46FE69F6 0C00EE0200FFBF04
+0220: B9000200FFFFE608 0002FE00FF9B0C00 02FB00FF6F1000EC 010D00FFBF1DB900
+0240: 0100FFFFE62A0002 E8000100009F8001 FC00001B2E00010D FB00FF6F3B00EE02
+0260: 00FFBF3FB9000100 FFFFE64C0002FE00 FF9B500001FB00FF 8F01805D99000600
+0280: 12FF0F43616368D8 6544010CDE0002FD 00FF37040002F700 FFDF08DC000200FF
+02A0: 7F0C73000200FFFF 8D1000010DFD00FF 371D0001F700FFDF 2A1C0002000100FD
+02C0: 0093800100007F2E 6300010D00FFFFCD 3B0002FD00FF373F 0001F700FFDF4CDC
+02E0: 000200FF7F507300 0100FFFF2101801A 000007C000000015 636C0F4F706572C0
+0300: 61746F7246698138 00000002009E0001 0DFD00FF370D0001 F700FF1F01800432
+0320: 00000800137C636C 790043425965734E 6F46006C61671E00 0000017A000002F6
+0340: 0400FF1F01802F03 00090000000BB463 6C466D0786000000 057B0001F60D00FF
+0360: DF0DDC000200FF7F 11420000040D0000 FFFFCD1E0003FD00 FF072200000001F7
+0380: 00FF1F01800D0200 000A000000177C63 6C504072696E7442 616900635265706F
+03A0: 72741EA200000100 0067010D00FFFF31 018004000B400000 000C636C64006647
+03C0: 656E6572616C441E 0000010000EF03FE 00FF030180B70000 00840C000016636C
+03E0: 7C476554C6616547 6547360200157A00 0001F60D00FFDF0D DC000100FF7F1A73
+0400: 000100FFFFCD2700 01FD00FF07340000 0002F700FF9F3800 DC000200FF7F3C70
+0420: 0000000200FFFFC1 4000000002FD00FF 074400000002F700 FF1F480000DC0002
+0440: 00FF7F4C73000200 FFFFCD500002D100 0100003F8001F900 0007540000000146
+0460: 0D00010000FFE480 0100001F580000D8 00010D00FF7F6570 0000000100FFFFC1
+0480: 7200000001FD00FF 077F00000001F700 FF1F8C0000DC0001 00FF7F9970000000
+04A0: 0100FFFFC1A60000 0001FD00FF07B300 000003F700FF1F01 80223200000D001D
+04C0: 34636C544D61006B 6553656C65637400 6564526F774B6579 0041727261797400
+04E0: 00E8000400001D02 000100FD00938001 00007F046300010D 00FFFFCD110001FD
+0500: 00FF371E0002F700 FF1F01802F03000E 0000001066634469 6F7947656C648600
+0520: 000500CF010DFE00 FF9B0D0002FB00FF 6F1100EC040D00FF BF1EB9000300FFFF
+0540: E6220001FE00FF63 01800400000F0000 000C636654C66165 4361891E00000100
+0560: DE0003FD00FF8701 8015000800100000 0B63661C4361506F 6F806C5A00000003
+0580: 001E000719000100 0101006206003D00 8001F90000270400 0003F60400FFDF08
+05A0: D800010D00FF7F01 CC800D0011180011 63537069006E5365 61736F6E59206561
+05C0: 721E0000017A0000 01F60D00FF1F0180 0D0300120000000B 00686353716C4861
+05E0: 6E30646C651E0001 7A000001F60D00FF 1F01800403001300 0000104663546F6F
+0600: 5400697057696E64 6F77441E00000100 00EF03FE00FF4301 802E0000E0140000
+0620: 0011067074617274 5000726F6772616D BA00D00000070000 BB0200FFFFE60400
+0640: 02FE00FF9B080002 FB00FF4F0C0000EC 010D00FFBF19B900 0300FFFFE41D0000
+0660: 02FE00FF83210000 0001FB00FF0F0180 360018000015000F 63F26C53743FEE00
+0680: D800000900B3010D 00FFFFE60D0001FE 00FF9B1A0002FB00 FF6F1E00EE0200FF
+06A0: BF22B9000200FFFF E6260002FE00FF9B 2A0002FB00FF6F2E 00EE0200FF3F3200
+06C0: B800000200FFFF18 01800D001600A000 000C636C703C4765 6C1EA30001000067
+06E0: 010D00FFFF210180 38000017C0000000 09636C8148656C70 8600EC000500DD02
+0700: 00FF7F046300010D 00FFFFC911000001 FD00FF371E0001F7 00FFDF2BDC000100
+0720: FF7F010C800D0018 00007C0009453078 69741E00017A0000 01F60D00FF1F0180
+0740: 04330019000C0750 696345784870616E 1E0000F4010000EE 0200FF3F01806604
+0760: 001A007C12635400 6F67676C65427574 20746F6E1E000001 7A000002F700FF1F
+0780: 0180340200001B00 0000141663705365 6C04656346726F6D 544E616C0000F604
+07A0: 00EC010D00FFBF0D B9000100FFFFE61A 0001FE00FF9B2700 01FB00FF8F018004
+07C0: 01001C0000000D63 926C536565634049 6E746F1E0000F401 0000EE0300FF3F01
+07E0: 80660D001D008E0C 636247FFE8000100 00D9010D00FF7F
+.enddata
+			Pushbutton Class: clspbSIGrowLocations
+				Title: Gr.Loc.
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name: C:\CENTURA\ICONS\ITMGRLOC.ICO
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clspbPickInto
+				Class Variables
+					String: sTmp
+					Number: nTmp
+					Window Handle: hWndTmp
+				Instance Variables
+					! PUBLIC
+					Window Handle: hWndPickIntoTable
+					! PRIVATE
+					Number: nYear
+					Number: nItemNo
+					String: sTreeTypeDesc
+					String: sCultDesc
+					String: sRootDesc
+					String: sStockType
+				Functions
+					Function: SetGrowLocationsFields
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: nNewYear
+							Number: nNewItemNo
+							String: sNewTreeTypeDesc
+							String: sNewCultDesc
+							String: sNewRootDesc
+							String: sNewStockType
+						Static Variables
+						Local variables
+						Actions
+							Set nYear = nNewYear
+							Set nItemNo = nNewItemNo
+							Set sTreeTypeDesc = sNewTreeTypeDesc
+							Set sCultDesc = sNewCultDesc
+							Set sRootDesc = sNewRootDesc
+							Set sStockType = sNewStockType
+							Return TRUE
+				Message Actions
+					On SAM_Create
+						Set hWndPickIntoTable = hWndItem
+						Call SalSendClassMessage( SAM_Create, wParam, lParam )
+						Set clspbSIGrowLocations.nActivateWindowType = ACTIVATE_FormWindow
+						Set clspbSIGrowLocations.sActivateDialogName = 'frmItemGrowingLocations'
+						Set clspbSIGrowLocations.hWndTable = hWndPickIntoTable
+						Set clspbSIGrowLocations.hWndParentTable = hWndPickIntoTable
+						Set clspbSIGrowLocations.hWndFieldLookUp = hWndItem
+					On PAM_clsACTIVATE_PUSHFIELDS
+						Call SalSendMsg( hWndItem, PAM_cls_SETFIELDS, 0, 0 )
+						Call PushWndHdl( hWndItem )
+						Call PushNumber( nYear )
+						Call PushNumber( nItemNo )
+						Call PushString( sTreeTypeDesc )
+						Call PushString( sCultDesc )
+						Call PushString( sRootDesc )
+						Call PushString( sStockType )
+						Return TRUE
+					On PAM_clsACTIVATE_POPFIELDS
+						Call PopString( sTmp, TRUE )
+						Call PopString( sTmp, TRUE )
+						Call PopString( sTmp, TRUE )
+						Call PopString( sTmp, TRUE )
+						Call PopNumber( nTmp, TRUE )
+						Call PopNumber( nTmp, TRUE )
+						Call PopWndHdl( hWndTmp, TRUE )
+						Return TRUE
+			Form Window Class: clsfrmItemGrowingLocations
+				Title: Stock Item Growing Locations
+				Icon File:
+				Accesories Enabled? Class Default
+				Visible? Class Default
+				Display Settings
+					Display Style? Class Default
+					Visible at Design time? Yes
+					Automatically Created at Runtime? Class Default
+					Initial State: Class Default
+					Maximizable? Class Default
+					Minimizable? Class Default
+					System Menu? Class Default
+					Resizable? Class Default
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: 5.354"
+						Height Editable? Class Default
+					Form Size
+						Width:  Class Default
+						Height: Class Default
+						Number of Pages: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+				Next Class Child Key: 90
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clsFormChildTable
+				Menu
+				Tool Bar
+					Display Settings
+						Display Style? Class Default
+						Location? Class Default
+						Visible? Class Default
+						Size: Class Default
+						Size Editable? Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Contents
+						Pushbutton: pbClearRows
+							Class Child Ref Key: 5
+							Class ChildKey: 7
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbAddRows
+							Class Child Ref Key: 6
+							Class ChildKey: 8
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbSaveRows
+							Class Child Ref Key: 7
+							Class ChildKey: 9
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbQuery
+							Class Child Ref Key: 8
+							Class ChildKey: 10
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   4.513"
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbDeleteRows
+							Class Child Ref Key: 9
+							Class ChildKey: 11
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbRePopulate
+							Class Child Ref Key: 11
+							Class ChildKey: 12
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   5.113"
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbTools
+							Class Child Ref Key: 23
+							Class ChildKey: 13
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   5.713"
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbFirstRec
+							Class Child Ref Key: 0
+							Class ChildKey: 16
+							Class: clspbFirstRec
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   6.313"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbPrevRec
+							Class Child Ref Key: 0
+							Class ChildKey: 17
+							Class: clspbPrevRec
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   6.913"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbNextRec
+							Class Child Ref Key: 0
+							Class ChildKey: 18
+							Class: clspbNextRec
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   7.513"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbLastRec
+							Class Child Ref Key: 0
+							Class ChildKey: 19
+							Class: clspbLastRec
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   8.113"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbHelp
+							Class Child Ref Key: 42
+							Class ChildKey: 86
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbItemEnq
+							Class Child Ref Key: 43
+							Class ChildKey: 87
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbPrintForm
+							Class Child Ref Key: 44
+							Class ChildKey: 88
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbExit
+							Class Child Ref Key: 45
+							Class ChildKey: 89
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+				Contents
+					!
+					Background Text: Year Of Sale
+						Resource Id: 64497
+						Class Child Ref Key: 0
+						Class ChildKey: 21
+						Class: clsBackTextGeneral
+						Window Location and Size
+							Left:   1.338"
+							Top:    0.302"
+							Width:  1.075"
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Background Text: Tree Type Desc.
+						Resource Id: 56465
+						Class Child Ref Key: 0
+						Class ChildKey: 20
+						Class: clsBackTextGeneral
+						Window Location and Size
+							Left:   1.063"
+							Top:    0.542"
+							Width:  1.35"
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Background Text: Cultivar Description
+						Resource Id: 56467
+						Class Child Ref Key: 0
+						Class ChildKey: 22
+						Class: clsBackTextGeneral
+						Window Location and Size
+							Left:   0.75"
+							Top:    0.792"
+							Width:  1.663"
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Background Text: Rootstock Description
+						Resource Id: 56464
+						Class Child Ref Key: 0
+						Class ChildKey: 23
+						Class: clsBackTextGeneral
+						Window Location and Size
+							Left:   0.588"
+							Top:    1.042"
+							Width:  1.825"
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Data Field: dfYearOfSale
+						Class Child Ref Key: 0
+						Class ChildKey: 24
+						Class: clsdfGeneral
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Number
+							Editable? No
+						Display Settings
+							Window Location and Size
+								Left:   2.475"
+								Top:    0.26"
+								Width:  0.588"
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: #0
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					Data Field: dfTreeTypeDesc
+						Class Child Ref Key: 0
+						Class ChildKey: 25
+						Class: clsdfGeneral
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? No
+						Display Settings
+							Window Location and Size
+								Left:   2.475"
+								Top:    0.51"
+								Width:  2.325"
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					Data Field: dfCultDesc
+						Class Child Ref Key: 0
+						Class ChildKey: 26
+						Class: clsdfGeneral
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? No
+						Display Settings
+							Window Location and Size
+								Left:   2.475"
+								Top:    0.76"
+								Width:  5.0"
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					Data Field: dfRootDesc
+						Class Child Ref Key: 0
+						Class ChildKey: 27
+						Class: clsdfGeneral
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? No
+						Display Settings
+							Window Location and Size
+								Left:   2.475"
+								Top:    1.01"
+								Width:  5.0"
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					!
+					Child Table: tblGrowingLocations
+						Class Child Ref Key: 0
+						Class ChildKey: 28
+						Class: clsTableGeneral
+						Property Template:
+						Class DLL Name:
+						Display Settings
+							Window Location and Size
+								Left:   0.025"
+								Top:    1.323"
+								Width:  9.738"
+								Width Editable? Class Default
+								Height: 2.979"
+								Height Editable? Class Default
+							Visible? Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							View: Class Default
+							Allow Row Sizing? Class Default
+							Lines Per Row: Class Default
+						Memory Settings
+							Maximum Rows in Memory: Class Default
+							Discardable? Class Default
+						Contents
+							Column: colLocationId
+								Class Child Ref Key: 0
+								Class ChildKey: 71
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: Loc.Id
+								Visible? No
+								Editable? Class Default
+								Maximum Data Length: Class Default
+								Data Type: Number
+								Justify: Right
+								Width:  0.725"
+								Width Editable? Class Default
+								Format: #0
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+							Column: colFarmId
+								Class Child Ref Key: 0
+								Class ChildKey: 30
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: Farm Id
+								Visible? Class Default
+								Editable? No
+								Maximum Data Length: Class Default
+								Data Type: String
+								Justify: Class Default
+								Width:  0.938"
+								Width Editable? Class Default
+								Format: Unformatted
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+									On PAM_cls_SETINSTANCEVARS
+										Set colFarmId.bOrderBy = TRUE
+							Column: colRowNo
+								Class Child Ref Key: 0
+								Class ChildKey: 33
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: Row
+								Visible? Class Default
+								Editable? No
+								Maximum Data Length: Class Default
+								Data Type: Number
+								Justify: Right
+								Width:  0.513"
+								Width Editable? Class Default
+								Format: #0
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+									On PAM_cls_SETINSTANCEVARS
+										Set colRowNo.bOrderBy = TRUE
+							Column: colSeqNo
+								Class Child Ref Key: 0
+								Class ChildKey: 34
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: Seq
+								Visible? Class Default
+								Editable? No
+								Maximum Data Length: Class Default
+								Data Type: Number
+								Justify: Right
+								Width:  0.525"
+								Width Editable? Class Default
+								Format: #0
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+									On PAM_cls_SETINSTANCEVARS
+										Set colSeqNo.bOrderBy = TRUE
+							Column: colBudCount
+								Class Child Ref Key: 0
+								Class ChildKey: 64
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: Bud.Count
+								Visible? Class Default
+								Editable? No
+								Maximum Data Length: Class Default
+								Data Type: Number
+								Justify: Right
+								Width:  1.188"
+								Width Editable? Class Default
+								Format: #0
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+									On PAM_cls_SETINSTANCEVARS
+										Set colBudCount.bOrderBy = TRUE
+									On PAM_clsITMGRLOC_STOCKTYPE
+										If wParam = nITMGRLOC_POT
+											Call SalHideWindow( hWndItem )
+							Column: colFirstCount
+								Class Child Ref Key: 0
+								Class ChildKey: 65
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: First Count
+								Visible? Class Default
+								Editable? No
+								Maximum Data Length: Class Default
+								Data Type: Number
+								Justify: Right
+								Width:  1.188"
+								Width Editable? Class Default
+								Format: #0
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+									On PAM_cls_SETINSTANCEVARS
+										Set colFirstCount.bOrderBy = TRUE
+									On PAM_clsITMGRLOC_STOCKTYPE
+										If wParam = nITMGRLOC_POT
+											Call SalHideWindow( hWndItem )
+							Column: colSecondCount
+								Class Child Ref Key: 0
+								Class ChildKey: 66
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: Sec./Stk Count
+								Visible? Class Default
+								Editable? No
+								Maximum Data Length: Class Default
+								Data Type: Number
+								Justify: Right
+								Width:  1.188"
+								Width Editable? Class Default
+								Format: #0
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+									On PAM_cls_SETINSTANCEVARS
+										Set colSecondCount.bOrderBy = TRUE
+							Column: colEstSaleDate
+								Class Child Ref Key: 0
+								Class ChildKey: 32
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: When Avail.
+								Visible? Class Default
+								Editable? No
+								Maximum Data Length: Class Default
+								Data Type: Date/Time
+								Justify: Class Default
+								Width:  1.163"
+								Width Editable? Class Default
+								Format: dd-MMM-yyyy
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+									On PAM_cls_SETINSTANCEVARS
+										Set colEstSaleDate.bOrderBy = TRUE
+							Column: colNotForSale
+								Class Child Ref Key: 0
+								Class ChildKey: 35
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: NFS
+								Visible? Class Default
+								Editable? No
+								Maximum Data Length: Class Default
+								Data Type: String
+								Justify: Center
+								Width:  0.413"
+								Width Editable? Class Default
+								Format: Class Default
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Check Box
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value: Y
+										Uncheck Value: N
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+									On PAM_cls_SETINSTANCEVARS
+										Set colNotForSale.bOrderBy = TRUE
+							Column: colForwardOrder
+								Class Child Ref Key: 0
+								Class ChildKey: 67
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: Ordered
+								Visible? Class Default
+								Editable? No
+								Maximum Data Length: Class Default
+								Data Type: Number
+								Justify: Right
+								Width:  1.175"
+								Width Editable? Class Default
+								Format: #0
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+									On PAM_cls_SETINSTANCEVARS
+										Set colForwardOrder.bOrderBy = TRUE
+							Column: colPlanted
+								Class Child Ref Key: 0
+								Class ChildKey: 68
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: Date Planted
+								Visible? Class Default
+								Editable? No
+								Maximum Data Length: Class Default
+								Data Type: Date/Time
+								Justify: Class Default
+								Width:  1.125"
+								Width Editable? Class Default
+								Format: dd-MMM-yyyy
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+									On PAM_cls_SETINSTANCEVARS
+										Set colPlanted.bOrderBy = TRUE
+							Column: colBudded
+								Class Child Ref Key: 0
+								Class ChildKey: 69
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: Date Budded
+								Visible? Class Default
+								Editable? No
+								Maximum Data Length: Class Default
+								Data Type: Date/Time
+								Justify: Class Default
+								Width:  1.138"
+								Width Editable? Class Default
+								Format: dd-MMM-yyyy
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+									On PAM_cls_SETINSTANCEVARS
+										Set colBudded.bOrderBy = TRUE
+							Column: colComments
+								Class Child Ref Key: 0
+								Class ChildKey: 70
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: Comments
+								Visible? Class Default
+								Editable? No
+								Maximum Data Length: Class Default
+								Data Type: String
+								Justify: Class Default
+								Width:  5.7"
+								Width Editable? Class Default
+								Format: Unformatted
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+									On PAM_cls_SETINSTANCEVARS
+										Set colComments.bOrderBy = TRUE
+						Functions
+						Window Variables
+						Message Actions
+							On PAM_cls_SETINSTANCEVARS
+								Set sSQLPopHandle = " SELECT 
+										  Growing_Sale.Location_Id, 
+										  Location.Farm_Name, 
+										  Location.Row#, 
+										  Location.Seq#, 
+										  Growing_Sale.Beg_Count, 
+										  Growing_Sale.First_Count, 
+										  Growing_Sale.Second_Count, 
+										  Growing_Sale.Est_Sale_Date, 
+										  Growing_Sale.Not_For_Sale, 
+										  Growing_Sale.Forward_Orders, 
+										  Growing_Sale.Date_Planted, 
+										  Growing_Sale.Date_Budded, 
+										  Growing_Sale.Growing_Comm
+										FROM 
+										  Growing_Sale, 
+										  Location  
+										WHERE 
+										  Growing_Sale.Stock_Item_No = :1 AND 
+										  Growing_Sale.Year_Of_Sale = :2 AND 
+										  Growing_Sale.Location_Id = Location.Location_Id 
+										ORDER BY 
+										  Location.Farm_Name, 
+										  Location.Row#, 
+										  Location.Seq#  "
+								Set sNAMEPopHandle = 'POPITMGRLOC'
+								Set sBINDPopHandle = ':hWndParent.clsfrmItemGrowingLocations.nItemNo, :hWndParent.dfYearOfSale'
+								Set sINTOPopHandle = ':clsfrmItemGrowingLocations.tblGrowingLocations.colLocationId,  
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colFarmId, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colRowNo, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colSeqNo, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colBudCount, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colFirstCount,
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colSecondCount, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colEstSaleDate,
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colNotForSale, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colForwardOrder, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colPlanted, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colBudded, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colComments'
+								!
+								Set sSQLRefreshHandle = " SELECT 
+										  Growing_Sale.Location_Id, 
+										  Location.Farm_Name, 
+										  Location.Row#, 
+										  Location.Seq#, 
+										  Growing_Sale.Beg_Count, 
+										  Growing_Sale.First_Count, 
+										  Growing_Sale.Second_Count, 
+										  Growing_Sale.Est_Sale_Date, 
+										  Growing_Sale.Not_For_Sale, 
+										  Growing_Sale.Forward_Orders, 
+										  Growing_Sale.Date_Planted, 
+										  Growing_Sale.Date_Budded, 
+										  Growing_Sale.Growing_Comm
+										FROM 
+										  Growing_Sale, 
+										  Location  
+										WHERE 
+										  Growing_Sale.Stock_Item_No = :1 AND 
+										  Growing_Sale.Year_Of_Sale = :2 AND 
+										  Growing_Sale.Location_Id = :3 AND 
+										  Growing_Sale.Location_Id = Location.Location_Id 
+										ORDER BY 
+										  Location.Farm_Name, 
+										  Location.Row#, 
+										  Location.Seq#  "
+								Set sNAMERefreshHandle = 'REFITMGRLOC'
+								Set sBINDRefreshHandle = ':hWndParent.clsfrmItemGrowingLocations.nItemNo, :hWndParent.dfYearOfSale, :clsfrmItemGrowingLocations.tblGrowingLocations.colLocationId'
+								Set sINTORefreshHandle = ':clsfrmItemGrowingLocations.tblGrowingLocations.colLocationId,  
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colFarmId, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colRowNo, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colSeqNo, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colBudCount, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colFirstCount,
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colSecondCount, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colEstSaleDate,
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colNotForSale, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colForwardOrder, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colPlanted, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colBudded, 
+										:clsfrmItemGrowingLocations.tblGrowingLocations.colComments'
+								!
+								Set sSQLInsertHandle = ''
+								Set sNAMEInsertHandle = ''
+								Set sBINDInsertHandle = ''
+								Set sINTOInsertHandle = ''
+								!
+								Set sSQLUpdateHandle = ''
+								Set sNAMEUpdateHandle = ''
+								Set sBINDUpdateHandle = ''
+								Set sINTOUpdateHandle = ''
+								!
+								Set sSQLDeleteHandle = ''
+								Set sNAMEDeleteHandle = ''
+								Set sBINDDeleteHandle = ''
+								!
+								Set bAddAllowed = FALSE
+								Set bSaveAllowed = FALSE
+								Set bDeleteAllowed = FALSE
+								Set bUnDeleteAllowed = FALSE
+								Set bRepopulateAllowed = TRUE
+								Set bClearSelectAllowed = TRUE
+								Set bQueryAllowed = FALSE
+								Set bReportAllowed = FALSE
+								Set bOrderAllowed = TRUE
+							On PAM_clsTBL_POPULATE
+								Call SalSendClassMessage( PAM_clsTBL_POPULATE, wParam, lParam )
+								Call SalSendMsg( hWndForm, PAM_clsITMGRLOC_CALCTOTALGROWING, wParam, lParam )
+								If cbShowTotalsByFarm
+									Call SalSendMsg( cbShowTotalsByFarm, PAM_clsCB_CLICK, TRUE, 0 )
+								Return TRUE
+							On PAM_clsTBL_SEARCH
+								Call SalSendClassMessage( PAM_clsTBL_SEARCH, wParam, lParam )
+								Return SalSendMsg( hWndForm, PAM_clsITMGRLOC_CALCTOTALGROWING, wParam, lParam )
+							On PAM_clsITMGRLOC_CALCTOTALGROWING
+								Set hWndParent.dfTotalGrowing = 0
+								Return TableLoop( hWndForm, hWndForm, PAM_clsITMGRLOC_CALCGROWING, 0, 0, 0, 'Calculating Total Growing', TBL_cls_LowToHi )
+							On PAM_clsITMGRLOC_CALCGROWING
+								If colSecondCount != NUMBER_Null
+									Set hWndParent.dfTotalGrowing = hWndParent.dfTotalGrowing + colSecondCount
+								Else If colFirstCount != NUMBER_Null
+									Set hWndParent.dfTotalGrowing = hWndParent.dfTotalGrowing + colFirstCount
+								Else
+									Set hWndParent.dfTotalGrowing = hWndParent.dfTotalGrowing + colBudCount
+								Return TRUE
+							On PAM_clsITMGRLOC_STOCKTYPE
+								Return SalSendMsgToChildren( hWndForm, PAM_clsITMGRLOC_STOCKTYPE, wParam, lParam )
+					!
+					Background Text: Total Growing
+						Resource Id: 26644
+						Class Child Ref Key: 0
+						Class ChildKey: 72
+						Class: clsBackTextGeneral
+						Window Location and Size
+							Left:   3.113"
+							Top:    4.365"
+							Width:  1.175"
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Data Field: dfTotalGrowing
+						Class Child Ref Key: 0
+						Class ChildKey: 73
+						Class: clsdfGeneral
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Number
+							Editable? No
+						Display Settings
+							Window Location and Size
+								Left:   4.35"
+								Top:    4.323"
+								Width:  0.875"
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Right
+							Format: #0
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					!
+					Check Box: cbShowTotalsByFarm
+						Class Child Ref Key: 0
+						Class ChildKey: 78
+						Class: clscbGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Show Totals by Farm
+						Window Location and Size
+							Left:   5.5"
+							Top:    0.385"
+							Width:  1.963"
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Blue
+						Background Color: Class Default
+						Message Actions
+							On PAM_clsCB_CLICK
+								If wParam
+									Call OurWaitCursor( TRUE )
+									Call SalShowWindow( tblTotalsByFarm )
+									!
+									Set nRow = 0
+									Set saFarmIds[ nRow ] = ''
+									Set naTotals[ nRow ] = NUMBER_Null
+									Call SalTblReset( tblTotalsByFarm )
+									!
+									Call TableLoop( tblGrowingLocations, hWndItem, PAM_clsTBL_ROWACTION, 0, 0, 0, 'Counting Up Farms', TBL_cls_LowToHi )
+									!
+									Set nPos = 0
+									While saFarmIds[ nPos ] != ''
+										Set nRow = SalTblInsertRow( tblTotalsByFarm, TBL_MaxRow )
+										Call SalTblSetContext( tblTotalsByFarm, nRow )
+										Call SalTblSetRowFlags( tblTotalsByFarm, nRow, ROW_HideMarks, TRUE )
+										Set tblTotalsByFarm.colFarmId = saFarmIds[ nPos ]
+										Set tblTotalsByFarm.colTotal = naTotals[ nPos ]
+										Set nPos = nPos + 1
+									Call OurWaitCursor( FALSE )
+								Else
+									Call SalHideWindow( tblTotalsByFarm )
+							On PAM_clsTBL_ROWACTION
+								Set bFound = FALSE
+								Set nPos = 0
+								While saFarmIds[ nPos ] != '' AND NOT bFound
+									If saFarmIds[ nPos ] = tblGrowingLocations.colFarmId
+										Set bFound = TRUE
+										!
+										If tblGrowingLocations.colSecondCount != NUMBER_Null
+											Set naTotals[ nPos ] = naTotals[ nPos ] + tblGrowingLocations.colSecondCount
+										Else If tblGrowingLocations.colFirstCount != NUMBER_Null
+											Set naTotals[ nPos ] = naTotals[ nPos ] + tblGrowingLocations.colFirstCount
+										Else
+											Set naTotals[ nPos ] = naTotals[ nPos ] + tblGrowingLocations.colBudCount
+									Set nPos = nPos + 1
+								If NOT bFound
+									Set saFarmIds[ nPos ] = tblGrowingLocations.colFarmId
+									If tblGrowingLocations.colSecondCount != NUMBER_Null
+										Set naTotals[ nPos ] = tblGrowingLocations.colSecondCount
+									Else If tblGrowingLocations.colFirstCount != NUMBER_Null
+										Set naTotals[ nPos ] = tblGrowingLocations.colFirstCount
+									Else
+										Set naTotals[ nPos ] = tblGrowingLocations.colBudCount
+									Set nPos = nPos + 1
+									Set saFarmIds[ nPos ] = ''
+									Set naTotals[ nPos ] = NUMBER_Null
+								Return TRUE
+					Child Table: tblTotalsByFarm
+						Class Child Ref Key: 0
+						Class ChildKey: 79
+						Class:
+						Property Template:
+						Class DLL Name:
+						Display Settings
+							Window Location and Size
+								Left:   7.475"
+								Top:    0.365"
+								Width:  2.275"
+								Width Editable? Yes
+								Height: 0.896"
+								Height Editable? Yes
+							Visible? Yes
+							Font Name: Arial
+							Font Size: 8
+							Font Enhancement: Default
+							Text Color: Default
+							Background Color: Default
+							View: Table
+							Allow Row Sizing? No
+							Lines Per Row: Default
+						Memory Settings
+							Maximum Rows in Memory: Default
+							Discardable? Yes
+						Contents
+							Column: colFarmId
+								Class Child Ref Key: 0
+								Class ChildKey: 80
+								Class:
+								Property Template:
+								Class DLL Name:
+								Title: Farm Id
+								Visible? Yes
+								Editable? No
+								Maximum Data Length: Default
+								Data Type: String
+								Justify: Left
+								Width:  1.15"
+								Width Editable? Yes
+								Format: Unformatted
+								Country: Default
+								Input Mask: Unformatted
+								Cell Options
+									Cell Type? Standard
+									Multiline Cell? No
+									Cell DropDownList
+										Sorted? Yes
+										Vertical Scroll? Yes
+										Auto Drop Down? No
+										Allow Text Editing? Yes
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Yes
+								List Values
+								Message Actions
+							Column: colTotal
+								Class Child Ref Key: 0
+								Class ChildKey: 81
+								Class:
+								Property Template:
+								Class DLL Name:
+								Title: Total Growing
+								Visible? Yes
+								Editable? No
+								Maximum Data Length: Default
+								Data Type: Number
+								Justify: Right
+								Width:  Default
+								Width Editable? Yes
+								Format: #0
+								Country: Default
+								Input Mask: Unformatted
+								Cell Options
+									Cell Type? Standard
+									Multiline Cell? No
+									Cell DropDownList
+										Sorted? Yes
+										Vertical Scroll? Yes
+										Auto Drop Down? No
+										Allow Text Editing? Yes
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Yes
+								List Values
+								Message Actions
+						Functions
+						Window Variables
+						Message Actions
+							On SAM_Create
+								Call SalHideWindow( hWndForm )
+					Data Field: dfDatabase
+						Class Child Ref Key: 46
+						Class ChildKey: 82
+						Class: clsFormChildTable
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					Data Field: dfUser
+						Class Child Ref Key: 47
+						Class ChildKey: 83
+						Class: clsFormChildTable
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					Background Text:
+						Resource Id: 15381
+						Class Child Ref Key: 48
+						Class ChildKey: 84
+						Class: clsFormChildTable
+						Window Location and Size
+							Left:   Class Default
+							Top:    Class Default
+							Width:  Class Default
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Custom Control: ccSeasonYear
+						Class Child Ref Key: 49
+						Class ChildKey: 85
+						Class: clsFormChildTable
+						Property Template:
+						Class DLL Name:
+						Display Settings
+							DLL Name:
+							MS Windows Class Name:
+							Style:  Class Default
+							ExStyle:  Class Default
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Etched Border? Class Default
+							Hollow? Class Default
+							Vertical Scroll? Class Default
+							Horizontal Scroll? Class Default
+							Tab Stop? Class Default
+							Tile To Parent? Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							DLL Settings
+						Message Actions
+				Class Variables
+					Number: nRow
+					Number: nPos
+					Boolean: bFound
+					String: saFarmIds[*]
+					Number: naTotals[*]
+				Instance Variables
+					Number: nItemNo
+					String: sStockType
+				Functions
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set bQueryAllowed = FALSE
+						Set bAddAllowed = FALSE
+						Set bSaveAllowed = FALSE
+						Set bDeleteAllowed = FALSE
+						Set bUnDeleteAllowed = FALSE
+						Set bReportAllowed = FALSE
+						Set bOrderAllowed = TRUE
+						Set hWndChildTable = tblGrowingLocations
+					On PAM_clsFRM_POPFIELDS
+						Call PopString( sStockType, TRUE )
+						Call PopString( dfRootDesc, TRUE )
+						Call PopString( dfCultDesc, TRUE )
+						Call PopString( dfTreeTypeDesc, TRUE )
+						Call PopNumber( nItemNo, TRUE )
+						Call PopNumber( dfYearOfSale, TRUE )
+						Call PopWndHdl( hWndActivateButton, TRUE )
+						Return TRUE
+					On SAM_CreateComplete
+						Call SalSendClassMessage( SAM_CreateComplete, wParam, lParam )
+						If sStockType = 'C'
+							Call SalSendMsgToChildren( hWndForm, PAM_clsITMGRLOC_STOCKTYPE, nITMGRLOC_POT, 0 )
+						Else
+							Call SalSendMsgToChildren( hWndForm, PAM_clsITMGRLOC_STOCKTYPE, nITMGRLOC_BAREROOT, 0 )
+			!
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+	Form Window: frmItemGrowingLocations
+		Class: clsfrmItemGrowingLocations
+		Property Template:
+		Class DLL Name:
+		Title:
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Automatically Created at Runtime? Class Default
+			Initial State: Class Default
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   0.0"
+				Top:    0.0"
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: 5.948"
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+				Pushbutton: pbClearRows
+					Class Child Ref Key: 7
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbAddRows
+					Class Child Ref Key: 8
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbSaveRows
+					Class Child Ref Key: 9
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbQuery
+					Class Child Ref Key: 10
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbDeleteRows
+					Class Child Ref Key: 11
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbRePopulate
+					Class Child Ref Key: 12
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbTools
+					Class Child Ref Key: 13
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbFirstRec
+					Class Child Ref Key: 16
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrevRec
+					Class Child Ref Key: 17
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbNextRec
+					Class Child Ref Key: 18
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbLastRec
+					Class Child Ref Key: 19
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbHelp
+					Class Child Ref Key: 86
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbItemEnq
+					Class Child Ref Key: 87
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 88
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbExit
+					Class Child Ref Key: 89
+					Class ChildKey: 0
+					Class: clsfrmItemGrowingLocations
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			Background Text:
+				Resource Id: 65472
+				Class Child Ref Key: 21
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text:
+				Resource Id: 65473
+				Class Child Ref Key: 20
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text:
+				Resource Id: 65474
+				Class Child Ref Key: 22
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text:
+				Resource Id: 65475
+				Class Child Ref Key: 23
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Data Field: dfYearOfSale
+				Class Child Ref Key: 24
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfTreeType
+				Class Child Ref Key: 25
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfCultDesc
+				Class Child Ref Key: 26
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfRootDesc
+				Class Child Ref Key: 27
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Child Table: tblGrowingLocations
+				Class Child Ref Key: 28
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					View: Class Default
+					Allow Row Sizing? Class Default
+					Lines Per Row: Class Default
+				Memory Settings
+					Maximum Rows in Memory: Class Default
+					Discardable? Class Default
+				Contents
+					Column: colLocationId
+						Class Child Ref Key: 71
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colFarmId
+						Class Child Ref Key: 30
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colRowNo
+						Class Child Ref Key: 33
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colSeqNo
+						Class Child Ref Key: 34
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colBudCount
+						Class Child Ref Key: 64
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colFirstCount
+						Class Child Ref Key: 65
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colSecondCount
+						Class Child Ref Key: 66
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colEstSaleDate
+						Class Child Ref Key: 32
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colNotForSale
+						Class Child Ref Key: 35
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colForwardOrder
+						Class Child Ref Key: 67
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colPlanted
+						Class Child Ref Key: 68
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colBudded
+						Class Child Ref Key: 69
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colComments
+						Class Child Ref Key: 70
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+				Functions
+				Window Variables
+				Message Actions
+			Background Text:
+				Resource Id: 65476
+				Class Child Ref Key: 72
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Data Field: dfTotalGrowing
+				Class Child Ref Key: 73
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Check Box: cbShowTotalsByFarm
+				Class Child Ref Key: 78
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Property Template:
+				Class DLL Name:
+				Title:
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+			Child Table: tblTotalsByFarm
+				Class Child Ref Key: 79
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					View: Class Default
+					Allow Row Sizing? Class Default
+					Lines Per Row: Class Default
+				Memory Settings
+					Maximum Rows in Memory: Class Default
+					Discardable? Class Default
+				Contents
+					Column: colFarmId
+						Class Child Ref Key: 80
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colTotal
+						Class Child Ref Key: 81
+						Class ChildKey: 0
+						Class: clsfrmItemGrowingLocations
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+				Functions
+				Window Variables
+				Message Actions
+			Data Field: dfDatabase
+				Class Child Ref Key: 82
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfUser
+				Class Child Ref Key: 83
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text:
+				Resource Id: 15382
+				Class Child Ref Key: 84
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 85
+				Class ChildKey: 0
+				Class: clsfrmItemGrowingLocations
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+		Functions
+		Window Parameters
+		Window Variables
+		Message Actions

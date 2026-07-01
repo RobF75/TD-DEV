@@ -1,0 +1,3672 @@
+.head 0 +  Application Description: Centura Application to Combine Duplicate Customers
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000A50000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF000000 0000000000140300 009F010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 00001027F5140500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left:   0.15"
+.head 3 -  Top:    0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 1018B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left:   5.113"
+.head 3 -  Top:    2.885"
+.head 3 -  Width:  4.675"
+.head 3 -  Height: 2.969"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   Default
+.head 3 -  Top:    Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   8.15"
+.head 3 -  Top:    0.469"
+.head 2 -  Fully Qualified External References? Yes
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: GENERAL.APL
+.head 2 -  File Include: SQLHANDL.APL
+.head 2 -  File Include: STRINGS.APL
+.head 2 -  File Include: STACKS.APL
+.head 2 -  File Include: Form.apl
+.head 2 -  File Include: Datfield.apl
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: None
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for PRITMINV.APP
+.head 4 -  Number: PRITMINVAppMsgOffSet = SAM_User + 8000
+.head 4 -  Number: PAM_clsPRITMINV_GETSELECTEDITEMS = PRITMINVAppMsgOffSet + 1
+.head 4 -  Number: PAM_clsPRITMINV_GETSELECTED = PRITMINVAppMsgOffSet + 2
+.head 4 -  Number: PAM_clsPRITMINV_WRITTENLOGENTRY = PRITMINVAppMsgOffSet + 3
+.head 4 -  ! Message go up to AppOffSet + 99
+.head 4 -  Number: PRITMINVAppConstOffSet = 5500
+.head 4 -  !
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 3685054801
+0000: 8600000038000000 0000000000000000 0200000500000050 000000E0010D0000
+0020: 00FF3F5D00B80000 0100FFFFE06A0000 0001FE00FF837700 000001FB00FF0F84
+0040: 000000E8040D0000 FF3F
+.enddata
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 2989242224
+0000: 080A0000D5040000 0000000000000000 0200001400FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F0D003C00 000B68006353716C
+0040: 48616E64006C651E 00000001003C0000 010DFA0000FF0F01 802F001000000100
+0060: 000B63006C73466F 726D426100736586 00000005003C0000 010DFB00FF4F0D00
+0080: 00E00204000000FF 3F1100A00000040D 0000FFFF841E0000 030400FE00FF8322
+00A0: 00000001FB00FF0F 01800D0001000200 000017633E6C5072 20696E7442616963
+00C0: 005265706F72741E 00D100010000B301 0D00FFFF10018004 000003002000000C
+00E0: 636C64660047656E 6572616C1EA20000 01000067030400FF FF31018004000442
+0100: 000010636C54006F 6F6C546970576940 6E646F771E0000F4 010000EE0300FF3F
+0120: 0180602E00000005 000811636C706253 740061727450726F 677200616DBA0000
+0140: 0007003C00000204 FB00FF6F0400EE02 00FF3F0800B80000 0200FFFFC00C0000
+0160: 00010DFE00FF8319 00000003FB00FF0F 1D000000EE0200FF 3F2100B800000100
+0180: FFFF000180360000 0006002000000F63 6C5374FF03EE0000 0009003C0000010D
+01A0: FB00FF6F0D00EE01 00FF3F1A00B80000 0200FFFFE61E0002 FE00FF9B220002FB
+01C0: 00FF0F26000000EE 0200FF3F2A00B800 000200FFFFE42E00 0002FE00FF833200
+01E0: 000002FB00FF8F01 802F990007001003 4469616C6F673C47 656C86B200000500
+0200: 67010D00FFFFCD0D 0002FD00FF271100 0004F60D00FFDF1E DC000300FF7F2273
+0220: 000100FFFF310180 0D00086300116353 0070696E53656173 6F806E596561721E
+0240: 00E800010000D901 0D00FF7F01C08034 00000009D0001463 6C7000656C656374
+0260: 46726F006D546162 6C656C00D0000004 0000B3010D00FFFF E60D0001FE00FF9B
+0280: 1A0001FB00FF0F27 000000EE0100FF3F 01800604000A0000 00480D636C536565
+02A0: 0263496E746F1E00 D100010000BB0300 FFFF000180B70000 000B002000001663
+02C0: 6C47659F5461F347 6511360200150000 9E00010DFD00FF27 0D000001F700FFDF
+02E0: 1ADC000100FF7F27 73000100FFFFC934 000002FD00FF0738 00000002F700FF1F
+0300: 3C0000DC000200FF 7F40700000000200 FFFFC14400000002 FD00FF0748000000
+0320: 02F700FF1F4C0000 DC000200FF7F5070 0000000200F40100 000F80010000FE00
+0340: 8154000000010DD1 000100003F8001F9 0000075800000001 F60D00FF1F650000
+0360: DC000100FF7F7270 0000000100FFFFC1 7F00000001FD00FF 078C00000001F700
+0380: FF1F990000DC0001 00FF7FA670000000 0100FFFFC1B30000 0003FD00FF870180
+03A0: 22000C000C001D63 6C0154626C4D616B 652C536563656400 526F774B65794172
+03C0: 0072617974000000 047B000247000100 00FFE480010000DF 04D800010D00FF7F
+03E0: 117200000100FFFF CD1E0002FD00FFC7 01800D8C000D000C 63E163624765196C
+0400: 1E0001003D00010D FB00FF8F01800D81 000E0000000CEB70 473F00017A000001
+0420: F60D00FF1F01800D 03000F000000091C 636C4578698C741E 0001009E00010DFD
+0440: 00FFC7018004C000 100000000C015069 6345787061126E1E 00000100BD0002FB
+0460: 00FF8F0180041900 110012631E6C546F 6700676C65427574 746F886E1E000001
+0480: 00DE0002FD00FFC7 0180044000120000 000C660C54616543 61631868651E0001
+04A0: 00BD0003FB00FF0F 0180150001001300 00000B6338664361 506F026F5A000000
+04C0: 03003D0007190200 00010100BE077A00 0080F20100006F04 00EC030400FFBF08
+04E0: B100010D00FFFF
+.enddata
+.head 3 +  Functional Class: clsStrLogFile
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clsStrFileHandle
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 +  Functions
+.head 5 +  Function: WriteLogEntry
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 +  Parameters
+.head 7 -  String: sEntry
+.head 7 -  Window Handle: hWnd
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 +  If hWnd
+.head 8 -  Call SalSendMsg( hWnd, PAM_clsPRITMINV_WRITTENLOGENTRY, 0, SalHStringToNumber( sEntry ) )
+.head 8 -  Call SalUpdateWindow( hWnd )
+.head 7 -  Return Write( sEntry )
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field: clsdfGeneral
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton: clspbOk
+.head 3 -  Radio Button:
+.head 3 -  Check Box: clscbGeneral
+.head 3 -  Option Button:
+.head 3 -  Child Table: clsTableGeneral
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text: clsBackTextGeneral
+.head 3 -  Group Box: clsgbGeneral
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 +  Application Actions
+.head 3 +  On SAM_AppStartup
+.head 4 +  If strArgArray[0] = ''
+.head 5 -  Set SqlDatabase = 'STOCKDEV'
+.head 5 -  Set SqlUser = 'JAN'
+.head 5 -  Set SqlPassword = 'JAN'
+.head 4 +  Else
+.head 5 -  Set SqlDatabase = strArgArray[1]
+.head 5 -  Set SqlUser = strArgArray[2]
+.head 5 -  Set SqlPassword = strArgArray[3]
+.head 4 -  !
+.head 4 -  Call CheckProgramExistance( 'Combining Duplicate Customers', TRUE )
+.head 4 -  !
+.head 4 -  Call SqlHandlesSetup(  )
+.head 3 +  On SAM_AppExit
+.head 4 -  Call SqlHandlesDisconnectClose(  )
+.head 1 +  Form Window: frmCombDupCust
+.head 2 -  Class: clsFormGeneral
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title: Combining Duplicate Customers
+.head 2 -  Icon File:
+.head 2 -  Accesories Enabled? Class Default
+.head 2 -  Visible? Class Default
+.head 2 -  Display Settings
+.head 3 -  Display Style? Class Default
+.head 3 -  Visible at Design time? Yes
+.head 3 -  Automatically Created at Runtime? Yes
+.head 3 -  Initial State: Class Default
+.head 3 -  Maximizable? Class Default
+.head 3 -  Minimizable? Class Default
+.head 3 -  System Menu? Class Default
+.head 3 -  Resizable? Class Default
+.head 3 -  Window Location and Size
+.head 4 -  Left:   0.0"
+.head 4 -  Top:    0.0"
+.head 4 -  Width:  Class Default
+.head 4 -  Width Editable? Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Height Editable? Class Default
+.head 3 -  Form Size
+.head 4 -  Width:  Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Number of Pages: Class Default
+.head 3 -  Font Name: Class Default
+.head 3 -  Font Size: Class Default
+.head 3 -  Font Enhancement: Class Default
+.head 3 -  Text Color: Class Default
+.head 3 -  Background Color: Class Default
+.head 2 -  Description:
+.head 2 -  Named Menus
+.head 2 -  Menu
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Class Default
+.head 4 -  Location? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Size: Class Default
+.head 4 -  Size Editable? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Contents
+.head 4 +  Pushbutton: pbHelp
+.head 5 -  Class Child Ref Key: 1
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbItemEnq
+.head 5 -  Class Child Ref Key: 5
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbPrintForm
+.head 5 -  Class Child Ref Key: 6
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbExit
+.head 5 -  Class Child Ref Key: 2
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbOk
+.head 5 -  Class Child Ref Key: 0
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clspbOk
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   4.463"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbReport
+.head 5 -  Class Child Ref Key: 0
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clspbTblTableReport
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   5.075"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 +  Message Actions
+.head 6 +  On PAM_cls_SETINSTANCEVARS
+.head 7 -  Set pbReport.sToolTipText = 'Prints the current combining
+of customers results log'
+.head 6 +  On PAM_clsPB_CLICK
+.head 7 -  Call SalCreateWindow( frmPrintResultLog, hWndForm, sOutputLogFileName )
+.head 2 +  Contents
+.head 3 +  Data Field: dfDatabase
+.head 4 -  Class Child Ref Key: 3
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfUser
+.head 4 -  Class Child Ref Key: 4
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 -  Background Text:
+.head 4 -  Resource Id: 65428
+.head 4 -  Class Child Ref Key: 8
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Custom Control: ccSeasonYear
+.head 4 -  Class Child Ref Key: 7
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  DLL Name:
+.head 5 -  MS Windows Class Name:
+.head 5 -  Style:  Class Default
+.head 5 -  ExStyle:  Class Default
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Etched Border? Class Default
+.head 5 -  Hollow? Class Default
+.head 5 -  Vertical Scroll? Class Default
+.head 5 -  Horizontal Scroll? Class Default
+.head 5 -  Tab Stop? Class Default
+.head 5 -  Tile To Parent? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  DLL Settings
+.head 4 -  Message Actions
+.head 3 -  !
+.head 3 -  Background Text: Cust.No. ORIGINAL
+.head 4 -  Resource Id: 23584
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsBackTextGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.188"
+.head 5 -  Top:    0.083"
+.head 5 -  Width:  1.613"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Blue
+.head 4 -  Background Color: Class Default
+.head 3 -  Background Text: Cust.No. DUPLICATE
+.head 4 -  Resource Id: 23583
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsBackTextGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   4.775"
+.head 5 -  Top:    0.083"
+.head 5 -  Width:  1.675"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Blue
+.head 4 -  Background Color: Class Default
+.head 3 +  Data Field: dfCustNoOrg
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdfGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Number
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   3.85"
+.head 6 -  Top:    0.042"
+.head 6 -  Width:  0.863"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: #0
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfCustNoDuplicate
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdfGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Number
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   6.5"
+.head 6 -  Top:    0.042"
+.head 6 -  Width:  0.863"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: #0
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 -  !
+.head 3 +  List Box: lbProgress
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   0.075"
+.head 5 -  Top:    0.313"
+.head 5 -  Width:  9.7"
+.head 5 -  Width Editable? Yes
+.head 5 -  Height: 4.229"
+.head 5 -  Height Editable? Yes
+.head 4 -  Visible? Yes
+.head 4 -  Multiple selection? No
+.head 4 -  Sorted? No
+.head 4 -  Vertical Scroll? Yes
+.head 4 -  Font Name: Default
+.head 4 -  Font Size: Default
+.head 4 -  Font Enhancement: Default
+.head 4 -  Text Color: Default
+.head 4 -  Background Color: Default
+.head 4 -  Horizontal Scroll? No
+.head 4 -  List Initialization
+.head 4 +  Message Actions
+.head 5 +  On PAM_clsPRITMINV_WRITTENLOGENTRY
+.head 6 -  Set nListIndex = SalListAdd( hWndItem, SalNumberToHString( lParam ) )
+.head 6 -  Call SalListSetSelect( hWndItem, nListIndex )
+.head 6 -  Return TRUE
+.head 3 -  Background Text: NOTE: For best results, use this program when no other database activity is in progress.
+.head 4 -  Resource Id: 60992
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsBackTextGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   1.3"
+.head 5 -  Top:    4.698"
+.head 5 -  Width:  7.175"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 2 +  Functions
+.head 3 +  Function: GetDatabaseTableColumns
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  String: sTableName
+.head 5 -  ! saColumns[*] is a NULL terminated array.
+.head 5 -  Receive String: saColumns[*]
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurHandleNo
+.head 5 -  !
+.head 5 -  String: sGotColumn
+.head 5 -  Number: nInd
+.head 5 -  Number: nPos
+.head 5 -  !
+.head 5 -  Boolean: bOk
+.head 5 -  String: sSqlPrevUser
+.head 5 -  String: sSqlPrevPassword
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetDatabaseTableColumns' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSqlPrevUser = SqlUser
+.head 7 -  Set sSqlPrevPassword = SqlPassword
+.head 7 -  Set SqlUser = 'SYSADM'
+.head 7 -  Set SqlPassword = 'DANI'
+.head 7 -  !
+.head 7 -  Set sSql = "SELECT 
+  Name 
+FROM 
+  SYSCOLUMNS 
+WHERE 
+  TBName = :1 "
+.head 7 -  Set sName = 'DBTBLCOLS'
+.head 7 -  Set sBind = ':sTableName'
+.head 7 -  Set sInto = ':sGotColumn'
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set nPos = 0
+.head 7 -  Set saColumns[ nPos ] = ''
+.head 7 -  Set sGotColumn = ''
+.head 7 -  !
+.head 7 -  Set bOk = TRUE
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  While haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 9 -  Set saColumns[ nPos ] = sGotColumn
+.head 9 -  Set nPos = nPos + 1
+.head 9 -  Set saColumns[ nPos ] = ''
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Set bOk = FALSE
+.head 7 -  !
+.head 7 -  Set SqlUser = sSqlPrevUser
+.head 7 -  Set SqlPassword = sSqlPrevPassword
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 -  !
+.head 3 +  Function: CombineActionReqTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineActionReqTable' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " UPDATE Action_Req 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Action_Req Table successfull.', hWndForm.lbProgress )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Action_Req Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: CombineAuditTrailTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineAuditTrailTable' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " UPDATE Audit_Trail 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Audit_Trail Table successfull.', hWndForm.lbProgress )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Audit_Trail Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: CombineCashApplicationTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineCashApplicationTable' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " UPDATE Cash_Application 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cash_Application Table successfull.', hWndForm.lbProgress )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cash_Application Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: CombineCashReceiptTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineCashReceiptTable' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " UPDATE Cash_Receipt 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cash_Receipt Table successfull.', hWndForm.lbProgress )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cash_Receipt Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: CombineCustCancellationTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineCustCancellationTable' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " UPDATE Cust_Cancellation 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_Cancellation Table successfull.', hWndForm.lbProgress )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_Cancellation Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: CombineCustOrderTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Number: nInd
+.head 5 -  Date/Time: dtGotOrderDT
+.head 5 -  Boolean: bOk
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineCustOrderTableSELECT' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'CombineCustOrderTableUPDATE' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  Order_Date_Time 
+FROM 
+  Customer_Order 
+INTO 
+  :dtGotOrderDT 
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " UPDATE Customer_Order 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nDUPCustNo AND 
+  Order_Date_Time = :dtGotOrderDT "
+.head 7 -  Call haSqlHandles[ nOurUpdtHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set dtGotOrderDT = DATETIME_Null
+.head 7 -  Set bOk = TRUE
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  While haSqlHandles[ nOurHandleNo ].FetchNext( nInd ) AND bOk
+.head 9 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Execute( )
+.head 10 -  Set bOk = FALSE
+.head 8 +  If bOk
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Order Table successfull.', hWndForm.lbProgress )
+.head 9 -  Return TRUE
+.head 8 +  Else
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Order Table FAILED.', hWndForm.lbProgress )
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Order Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: CombineCustPromoTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Number: nInd
+.head 5 -  Boolean: bOk
+.head 5 -  Number: nCustNo
+.head 5 -  Date/Time: dtPromoDT
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineCustPromoTableSelect' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'CombineCustPromoTableUpdt' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  Cust_No, 
+  Promo_DT_Stamp 
+FROM 
+  Cust_Promo 
+INTO 
+  :nCustNo, 
+  :dtPromoDT 
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " UPDATE Cust_Promo 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nCustNo AND 
+  Promo_DT_Stamp = :dtPromoDT "
+.head 7 -  Call haSqlHandles[ nOurUpdtHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set nCustNo = NUMBER_Null
+.head 7 -  Set dtPromoDT = DATETIME_Null
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Set bOk = TRUE
+.head 8 +  While haSqlHandles[ nOurHandleNo ].FetchNext( nInd ) AND bOk
+.head 9 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Execute( )
+.head 10 -  Set bOk = FALSE
+.head 8 +  If bOk
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_Promo Table successfull.', hWndForm.lbProgress )
+.head 8 +  Else
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_Promo Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return bOk
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_Promo Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: CombineCustOrderHistoryTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Number: nInd
+.head 5 -  Date/Time: dtGotOrderDT
+.head 5 -  Boolean: bOk
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineCustOrderHistoryTableSELECT' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'CombineCustOrderHistoryTableUPDATE' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  Order_Date_Time 
+FROM 
+  Cust_Order_History 
+INTO 
+  :dtGotOrderDT 
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " UPDATE Cust_Order_History 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nDUPCustNo AND 
+  Order_Date_Time = :dtGotOrderDT "
+.head 7 -  Call haSqlHandles[ nOurUpdtHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set dtGotOrderDT = DATETIME_Null
+.head 7 -  Set bOk = TRUE
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  While haSqlHandles[ nOurHandleNo ].FetchNext( nInd ) AND bOk
+.head 9 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Execute( )
+.head 10 -  Set bOk = FALSE
+.head 8 +  If bOk
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_Order_History Table successfull.', hWndForm.lbProgress )
+.head 9 -  Return TRUE
+.head 8 +  Else
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_Order_History Table FAILED.', hWndForm.lbProgress )
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_Order_History Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: CombineCustLetterTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Number: nInd
+.head 5 -  Boolean: bOk
+.head 5 -  Number: nCustNo
+.head 5 -  Number: nSeqNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineCustLetterTableSelect' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'CombineCustLetterTableUpdt' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  Cust_No, 
+  Seq_No 
+FROM 
+  Cust_Letter 
+INTO 
+  :nCustNo, 
+  :nSeqNo 
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " UPDATE Cust_Letter 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nCustNo AND 
+  Seq_No = :nSeqNo "
+.head 7 -  Call haSqlHandles[ nOurUpdtHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set nCustNo = NUMBER_Null
+.head 7 -  Set nSeqNo = NUMBER_Null
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Set bOk = TRUE
+.head 8 +  While haSqlHandles[ nOurHandleNo ].FetchNext( nInd ) AND bOk
+.head 9 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Execute( )
+.head 10 -  Set bOk = FALSE
+.head 8 +  If bOk
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_Letter Table successfull.', hWndForm.lbProgress )
+.head 8 +  Else
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_Letter Table successfull.', hWndForm.lbProgress )
+.head 8 -  Return bOk
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_Letter Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: CombineDepositHistoryTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineDepositHistoryTable' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " UPDATE Deposit_History 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Deposit_History Table successfull.', hWndForm.lbProgress )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Deposit_History Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: CombineInvoiceNoRegisterTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineInvoiceNoRegisterTable' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " UPDATE Inv_No_Register 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Invoice_No_Register Table successfull.', hWndForm.lbProgress )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Invoice_No_Register Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  ! Function: CombineMiscHistoryTable
+.head 4 -  Description: 
+.head 4 +  Returns 
+.head 5 -  Boolean: 
+.head 4 +  Parameters 
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.winattr class
+.head 6 -  Class: clsStrLogFile
+.end
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables 
+.head 4 +  Local variables 
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions 
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineMiscHistoryTable' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " UPDATE Misc_History 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Misc_History Table successfull.', hWndForm.lbProgress )
+.head 8 -  Return TRUE
+.head 7 +  Else 
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Misc_History Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: CombineMissedSalesTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineMissedSalesTable' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " UPDATE Missed_Sales 
+SET 
+  Customer_No = :nORGCustNo
+WHERE 
+  Customer_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Missed_Sales Table successfull.', hWndForm.lbProgress )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Missed_Sales Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: CombineOutstandDepositTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineOutstandDepositTable' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " UPDATE Outstand_Deposit 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Outstand_Deposit Table successfull.', hWndForm.lbProgress )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Outstand_Deposit Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: CombineRoyaltiesPaidTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  String: sORGCustName
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Number: nInd
+.head 5 -  Boolean: bOk
+.head 5 -  !
+.head 5 -  String: sCultRootType
+.head 5 -  String: sCultRootDesc
+.head 5 -  String: sCustName
+.head 5 -  Number: nInvNo
+.head 5 -  String: sRoyaltyOwnerId
+.head 5 -  Date/Time: dtPaidDateTime
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineRoyaltiesPaidTableSelect' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'CombineRoyaltiesPaidTableUpdt' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  Cult_Root_Type, 
+  Cult_Root_Desc, 
+  Cust_Name, 
+  Inv_No, 
+  Royalty_Owner_Id, 
+  Paid_Date_Time 
+FROM 
+  Royalties_Paid 
+INTO 
+  :sCultRootType, 
+  :sCultRootDesc, 
+  :sCustName, 
+  :nInvNo, 
+  :sRoyaltyOwnerId, 
+  :dtPaidDateTime 
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " UPDATE Royalties_Paid 
+SET 
+  Cust_No = :nORGCustNo, 
+  Cust_Name = :sORGCustName 
+WHERE 
+  Cult_Root_Type = :sCultRootType AND 
+  Cult_Root_Desc = :sCultRootDesc AND 
+  Cust_Name = :sCustName AND  
+  Inv_No = :nInvNo AND  
+  Royalty_Owner_Id = :sRoyaltyOwnerId AND  
+  Paid_Date_Time = :dtPaidDateTime "
+.head 7 -  Call haSqlHandles[ nOurUpdtHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sCultRootType = ''
+.head 7 -  Set sCultRootDesc = ''
+.head 7 -  Set sCustName = ''
+.head 7 -  Set nInvNo = NUMBER_Null
+.head 7 -  Set sRoyaltyOwnerId = ''
+.head 7 -  Set dtPaidDateTime = DATETIME_Null
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Set bOk = TRUE
+.head 8 +  While haSqlHandles[ nOurHandleNo ].FetchNext( nInd ) AND bOk
+.head 9 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Execute( )
+.head 10 -  Set bOk = FALSE
+.head 8 +  If bOk
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Royalties_Paid Table successfull.', hWndForm.lbProgress )
+.head 9 -  Return TRUE
+.head 8 +  Else
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Royalties_Paid Table FAILED.', hWndForm.lbProgress )
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Royalties_Paid Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: CombineTransHistoryTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineTransHistoryTable' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " UPDATE Trans_History 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Trans_History Table successfull.', hWndForm.lbProgress )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Trans_History Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: CombineTransactionTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'CombineTransactionTable' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " UPDATE Transaction 
+SET 
+  Cust_No = :nORGCustNo
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Transaction Table successfull.', hWndForm.lbProgress )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Combining of Transaction Table FAILED.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 -  !
+.head 3 +  Function: CombineCustCommentsTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nInd
+.head 5 -  Number: nOurGeneralHandleNo
+.head 5 -  Number: nOurUpdateHandleNo
+.head 5 -  !
+.head 5 -  Number: nCustNo
+.head 5 -  Boolean: bOk
+.head 5 -  Long String: lsCustComments
+.head 5 -  Long String: lsDUPCustComments
+.head 5 -  Long String: lsORGCustComments
+.head 4 +  Actions
+.head 5 -  Set nOurGeneralHandleNo = SqlHandlesGetReferenceNo( 'CombCstComTblGeneral' )
+.head 5 -  Set nOurUpdateHandleNo = SqlHandlesGetReferenceNo( 'CombCstComTblUpdt' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  Customer_Comments 
+FROM 
+  Cust_Comments
+INTO 
+  :lsCustComments 
+WHERE 
+  Cust_No = :nCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurGeneralHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurGeneralHandleNo ].hSqlHandle )
+.head 7 -  Set nCustNo = dfCustNoDuplicate
+.head 7 -  Set lsCustComments = ''
+.head 7 -  Set lsDUPCustComments = ''
+.head 7 -  Set lsORGCustComments = ''
+.head 7 -  !
+.head 7 -  Set nCustNo = dfCustNoDuplicate
+.head 7 -  Set bOk = TRUE
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurGeneralHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurGeneralHandleNo ].FetchNext( nInd )
+.head 9 -  Set lsDUPCustComments = lsCustComments
+.head 9 -  !
+.head 9 -  Set nCustNo = dfCustNoOrg
+.head 9 +  If haSqlHandles[ nOurGeneralHandleNo ].Execute( )
+.head 10 +  If haSqlHandles[ nOurGeneralHandleNo ].FetchNext( nInd )
+.head 11 -  Set lsORGCustComments = lsCustComments || '
+******* COMMENTS FROM DUPLICATE CUSTOMER ******
+' || lsDUPCustComments
+.head 11 -  ! update with concatination
+.head 11 -  Set sSql = " UPDATE Cust_Comments  
+SET 
+  Customer_Comments = :lsORGCustComments 
+WHERE 
+  Cust_No = :nCustNo "
+.head 10 +  Else
+.head 11 -  ! insert new record
+.head 11 -  Set sSql = " INSERT INTO Cust_Comments  
+SET 
+  Cust_Comments = :lsDUPCustComments 
+WHERE 
+  Cust_No = :nCustNo "
+.head 10 -  !
+.head 10 -  Call haSqlHandles[ nOurUpdateHandleNo ].PrepareSetup( sSql )
+.head 10 -  Call SqlVarSetup( haSqlHandles[ nOurUpdateHandleNo ].hSqlHandle )
+.head 10 -  !
+.head 10 +  If haSqlHandles[ nOurUpdateHandleNo ].Execute( )
+.head 11 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_Comments Table successfull.', hWndForm.lbProgress )
+.head 11 -  Return TRUE
+.head 10 +  Else
+.head 11 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_Comments Table FAILED.', hWndForm.lbProgress )
+.head 11 -  Return FALSE
+.head 9 +  Else
+.head 10 -  Set bOk = FALSE
+.head 7 +  Else
+.head 8 -  Set bOk = FALSE
+.head 7 -  !
+.head 7 -  Return bOk
+.head 7 -  !
+.head 7 -  !
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurUpdateHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurUpdateHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurGeneralHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdateHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: CombineCustARNotesTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nInd
+.head 5 -  Number: nOurGeneralHandleNo
+.head 5 -  Number: nOurUpdateHandleNo
+.head 5 -  !
+.head 5 -  Number: nCustNo
+.head 5 -  Boolean: bOk
+.head 5 -  Long String: lsCustComments
+.head 5 -  Long String: lsDUPCustComments
+.head 5 -  Long String: lsORGCustComments
+.head 4 +  Actions
+.head 5 -  Set nOurGeneralHandleNo = SqlHandlesGetReferenceNo( 'CombCstARNTblGeneral' )
+.head 5 -  Set nOurUpdateHandleNo = SqlHandlesGetReferenceNo( 'CombCstARNTblUpdt' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  AR_Comments 
+FROM 
+  Cust_ARNotes
+INTO 
+  :lsCustComments 
+WHERE 
+  Cust_No = :nCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurGeneralHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurGeneralHandleNo ].hSqlHandle )
+.head 7 -  Set nCustNo = dfCustNoDuplicate
+.head 7 -  Set lsCustComments = ''
+.head 7 -  Set lsDUPCustComments = ''
+.head 7 -  Set lsORGCustComments = ''
+.head 7 -  !
+.head 7 -  Set nCustNo = dfCustNoDuplicate
+.head 7 -  Set bOk = TRUE
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurGeneralHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurGeneralHandleNo ].FetchNext( nInd )
+.head 9 -  Set lsDUPCustComments = lsCustComments
+.head 9 -  !
+.head 9 -  Set nCustNo = dfCustNoOrg
+.head 9 +  If haSqlHandles[ nOurGeneralHandleNo ].Execute( )
+.head 10 +  If haSqlHandles[ nOurGeneralHandleNo ].FetchNext( nInd )
+.head 11 -  Set lsORGCustComments = lsCustComments || '
+******* COMMENTS FROM DUPLICATE CUSTOMER ******
+' || lsDUPCustComments
+.head 11 -  ! update with concatination
+.head 11 -  Set sSql = " UPDATE Cust_ARNotes  
+SET 
+  AR_Comments = :lsORGCustComments 
+WHERE 
+  Cust_No = :nCustNo "
+.head 10 +  Else
+.head 11 -  ! insert new record
+.head 11 -  Set sSql = " INSERT INTO Cust_ARNotes  
+SET 
+  AR_Comments = :lsDUPCustComments 
+WHERE 
+  Cust_No = :nCustNo "
+.head 10 -  !
+.head 10 -  Call haSqlHandles[ nOurUpdateHandleNo ].PrepareSetup( sSql )
+.head 10 -  Call SqlVarSetup( haSqlHandles[ nOurUpdateHandleNo ].hSqlHandle )
+.head 10 -  !
+.head 10 +  If haSqlHandles[ nOurUpdateHandleNo ].Execute( )
+.head 11 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_ARNotes Table successfull.', hWndForm.lbProgress )
+.head 11 -  Return TRUE
+.head 10 +  Else
+.head 11 -  Call fcOutputLog.WriteLogEntry( 'Combining of Cust_ARNotes Table FAILED.', hWndForm.lbProgress )
+.head 11 -  Return FALSE
+.head 9 +  Else
+.head 10 -  Set bOk = FALSE
+.head 7 +  Else
+.head 8 -  Set bOk = FALSE
+.head 7 -  !
+.head 7 -  Return bOk
+.head 7 -  !
+.head 7 -  !
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurUpdateHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurUpdateHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurGeneralHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdateHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: CombineLoadCustomersTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurGeneralHandleNo
+.head 5 -  Number: nOurDeleteHandleNo
+.head 5 -  Number: nInd
+.head 5 -  String: sGotLoadId
+.head 5 -  Boolean: bOk
+.head 4 +  Actions
+.head 5 -  Set nOurGeneralHandleNo = SqlHandlesGetReferenceNo( 'CombLdCstTblGeneral' )
+.head 5 -  Set nOurDeleteHandleNo = SqlHandlesGetReferenceNo( 'CombLdCstTblUpdt' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  Load_Id  
+FROM 
+  Load_Customers 
+INTO 
+  :sGotLoadId 
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  Call haSqlHandles[ nOurGeneralHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurGeneralHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sGotLoadId = ''
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurGeneralHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurGeneralHandleNo ].FetchNext( nInd )
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Load_Customers Table, Duplicate customer was on a load ( Load_Id ) = ' || sGotLoadId, hWndForm.lbProgress )
+.head 8 -  Set sSql = " DELETE FROM Load_Customers 
+WHERE Cust_No = :nDUPCustNo "
+.head 8 -  Call haSqlHandles[ nOurDeleteHandleNo ].PrepareSetup( sSql )
+.head 8 -  Call SqlVarSetup( haSqlHandles[ nOurDeleteHandleNo ].hSqlHandle )
+.head 8 -  !
+.head 8 +  If haSqlHandles[ nOurDeleteHandleNo ].Execute( )
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Load_Customers Table successfull.', hWndForm.lbProgress )
+.head 9 -  Return TRUE
+.head 8 +  Else
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Load_Customers Table FAILED.', hWndForm.lbProgress )
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurDeleteHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurDeleteHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurGeneralHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurDeleteHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: CombineCustAddressTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurGeneralHandleNo
+.head 5 -  Number: nOurDeleteHandleNo
+.head 5 -  Number: nInd
+.head 5 -  Boolean: bOk
+.head 5 -  Boolean: bFound
+.head 5 -  !
+.head 5 -  Date/Time: dtGotAddressDT
+.head 5 -  String: sGotAddressType
+.head 5 -  String: sGotAddressL1
+.head 5 -  String: sGotAddressL2
+.head 5 -  String: sGotSuburb
+.head 5 -  String: sGotPostcode
+.head 5 -  String: sGotState
+.head 5 -  String: sGotCountry
+.head 5 -  String: sGotAreaCode
+.head 5 -  String: sGotPhoneNo
+.head 5 -  String: sGotAreaCodeFax
+.head 5 -  String: sGotFaxNo
+.head 5 -  String: sGotComments
+.head 4 +  Actions
+.head 5 -  Set nOurGeneralHandleNo = SqlHandlesGetReferenceNo( 'CombCstAddrTblGeneral' )
+.head 5 -  Set nOurDeleteHandleNo = SqlHandlesGetReferenceNo( 'CombCstAddrTblUpdt' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  Add_Added_DT, 
+  Address_Type, 
+  Address_1, 
+  Address_2, 
+  Suburb, 
+  Postcode, 
+  State, 
+  Country, 
+  Area_Code, 
+  Phone_No, 
+  Area_Code_Fax, 
+  Fax_No, 
+  Comments   
+FROM 
+  Customer_Address 
+INTO 
+  :dtGotAddressDT,
+  :sGotAddressType,
+  :sGotAddressL1,
+  :sGotAddressL2,
+  :sGotSuburb,
+  :sGotPostcode,
+  :sGotState,
+  :sGotCountry,
+  :sGotAreaCode,
+  :sGotPhoneNo,
+  :sGotAreaCodeFax,
+  :sGotFaxNo,
+  :sGotComments
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  Call haSqlHandles[ nOurGeneralHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurGeneralHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set dtGotAddressDT = DATETIME_Null
+.head 7 -  Set sGotAddressType = ''
+.head 7 -  Set sGotAddressL1 = ''
+.head 7 -  Set sGotAddressL2 = ''
+.head 7 -  Set sGotSuburb = ''
+.head 7 -  Set sGotPostcode = ''
+.head 7 -  Set sGotState = ''
+.head 7 -  Set sGotCountry = ''
+.head 7 -  Set sGotAreaCode = ''
+.head 7 -  Set sGotPhoneNo = ''
+.head 7 -  Set sGotAreaCodeFax = ''
+.head 7 -  Set sGotFaxNo = ''
+.head 7 -  Set sGotComments = ''
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurGeneralHandleNo ].Execute( )
+.head 8 -  Set bFound = FALSE
+.head 8 +  While haSqlHandles[ nOurGeneralHandleNo ].FetchNext( nInd )
+.head 9 -  Set bFound = TRUE
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Address Table DUP Cust No ' || SalNumberToStrX( nDUPCustNo, 0 ) || ' had the following address details.', hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  AddressType = ' || sGotAddressType, hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  Address Line 1 = ' || sGotAddressL1, hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  Address Line 2 = ' || sGotAddressL2, hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  Suburb = ' || sGotSuburb, hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  Postcode = ' || sGotPostcode, hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  State = ' || sGotState, hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  Country = ' || sGotCountry, hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  Area_Code = ' || sGotAreaCode || ', Phone_No = ' || sGotPhoneNo, hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  Area_Code Fax = ' || sGotAreaCodeFax || ', Fax_No = ' || sGotFaxNo, hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  Comments = ' || sGotComments, hWndForm.lbProgress )
+.head 8 +  If bFound
+.head 9 -  Set sSql = " DELETE FROM Customer_Address 
+WHERE Cust_No = :nDUPCustNo"
+.head 9 -  Call haSqlHandles[ nOurDeleteHandleNo ].PrepareSetup( sSql )
+.head 9 -  Call SqlVarSetup( haSqlHandles[ nOurDeleteHandleNo ].hSqlHandle )
+.head 9 -  !
+.head 9 +  If haSqlHandles[ nOurDeleteHandleNo ].Execute( )
+.head 10 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Address Table successfull.', hWndForm.lbProgress )
+.head 10 -  Return TRUE
+.head 9 +  Else
+.head 10 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Address Table FAILED.', hWndForm.lbProgress )
+.head 10 -  Return FALSE
+.head 8 +  Else
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'No entries in Customer_Address Table.  Combining successfull.', hWndForm.lbProgress )
+.head 9 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurDeleteHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurDeleteHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurGeneralHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurDeleteHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: CombineCustContactsTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurGeneralHandleNo
+.head 5 -  Number: nOurDeleteHandleNo
+.head 5 -  Number: nInd
+.head 5 -  Boolean: bOk
+.head 5 -  Boolean: bFound
+.head 5 -  !
+.head 5 -  Date/Time: dtGotCCAddedDT
+.head 5 -  String: sGotContactTitle
+.head 5 -  String: sGotContactGivenName
+.head 5 -  String: sGotContactSurname
+.head 5 -  String: sGotContactMailFlag
+.head 5 -  String: sGotWrkPhoneCode
+.head 5 -  String: sGotContactWrkPhone
+.head 5 -  String: sGotAHPhoneCode
+.head 5 -  String: sGotContactAHPhone
+.head 5 -  String: sGotContactPosition
+.head 5 -  String: sGotNotificationType
+.head 4 +  Actions
+.head 5 -  Set nOurGeneralHandleNo = SqlHandlesGetReferenceNo( 'CombCstContTblGeneral' )
+.head 5 -  Set nOurDeleteHandleNo = SqlHandlesGetReferenceNo( 'CombCstContTblUpdt' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  CC_Added_DT, 
+  Contact_Title, 
+  Contact_Given_Name, 
+  Contact_Surname, 
+  Contact_Mail_Flag, 
+  Wrk_Phone_Code, 
+  Contact_Work_Phone, 
+  AH_Phone_Code, 
+  Contact_AH_Phone, 
+  Contact_Position, 
+  Notification_Type   
+FROM 
+  Customer_Contacts
+INTO 
+  :dtGotCCAddedDT,
+  :sGotContactTitle,
+  :sGotContactGivenName,
+  :sGotContactSurname,
+  :sGotContactMailFlag,
+  :sGotWrkPhoneCode,
+  :sGotContactWrkPhone,
+  :sGotAHPhoneCode,
+  :sGotContactAHPhone,
+  :sGotContactPosition,
+  :sGotNotificationType 
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  Call haSqlHandles[ nOurGeneralHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurGeneralHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set dtGotCCAddedDT = DATETIME_Null
+.head 7 -  Set sGotContactTitle = ''
+.head 7 -  Set sGotContactGivenName = ''
+.head 7 -  Set sGotContactSurname = ''
+.head 7 -  Set sGotContactMailFlag = ''
+.head 7 -  Set sGotWrkPhoneCode = ''
+.head 7 -  Set sGotContactWrkPhone = ''
+.head 7 -  Set sGotAHPhoneCode = ''
+.head 7 -  Set sGotContactAHPhone = ''
+.head 7 -  Set sGotContactPosition = ''
+.head 7 -  Set sGotNotificationType  = ''
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurGeneralHandleNo ].Execute( )
+.head 8 -  Set bFound = FALSE
+.head 8 +  While haSqlHandles[ nOurGeneralHandleNo ].FetchNext( nInd )
+.head 9 -  Set bFound = TRUE
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Contacts Table DUP Cust No ' || SalNumberToStrX( nDUPCustNo, 0 ) || ' had the following address details.', hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  Contact_Title = ' || sGotContactTitle || ', Given_Name = ' || sGotContactGivenName || ', Surname = ' || sGotContactSurname, hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  Mail_Flag = ' || sGotContactMailFlag, hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  Area_Code = ' || sGotWrkPhoneCode || ', Work_Phone_No = ' || sGotContactWrkPhone, hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  AH_Area_Code = ' || sGotAHPhoneCode || ', AH_Phone_No = ' || sGotContactAHPhone, hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  Contact_Position = ' || sGotContactPosition, hWndForm.lbProgress )
+.head 9 -  Call fcOutputLog.WriteLogEntry( '  Notification_Type = ' || sGotNotificationType, hWndForm.lbProgress )
+.head 8 +  If bFound
+.head 9 -  Set sSql = " DELETE FROM Customer_Contacts 
+WHERE Cust_No = :nDUPCustNo"
+.head 9 -  Call haSqlHandles[ nOurDeleteHandleNo ].PrepareSetup( sSql )
+.head 9 -  Call SqlVarSetup( haSqlHandles[ nOurDeleteHandleNo ].hSqlHandle )
+.head 9 -  !
+.head 9 +  If haSqlHandles[ nOurDeleteHandleNo ].Execute( )
+.head 10 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Contacts Table successfull.', hWndForm.lbProgress )
+.head 10 -  Return TRUE
+.head 9 +  Else
+.head 10 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Contacts Table FAILED.', hWndForm.lbProgress )
+.head 10 -  Return FALSE
+.head 8 +  Else
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'No entries in Customer_Contacts Table.  Combining successfull.', hWndForm.lbProgress )
+.head 9 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurDeleteHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurDeleteHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurGeneralHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurDeleteHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: CombineQuotationTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurGeneralHandleNo
+.head 5 -  Number: nOurGenDiscHandleNo
+.head 5 -  Number: nOurUpdateHandleNo
+.head 5 -  Number: nOurDeleteHandleNo
+.head 5 -  Number: nInd
+.head 5 -  String: sGotUserId
+.head 5 -  Date/Time: dtGotSysDT
+.head 5 -  !
+.head 5 -  Boolean: bFirst
+.head 5 -  Number: nGotYearOfSale
+.head 5 -  String: sGotTreeTypeDesc
+.head 5 -  String: sGotCultDesc
+.head 5 -  String: sGotRootDesc
+.head 5 -  Number: nGotContractPrice
+.head 5 -  !
+.head 5 -  Boolean: bOk
+.head 4 +  Actions
+.head 5 -  Set nOurGeneralHandleNo = SqlHandlesGetReferenceNo( 'CombQuotTblGeneral' )
+.head 5 -  Set nOurGenDiscHandleNo = SqlHandlesGetReferenceNo( 'CombQuotTblGenDisc' )
+.head 5 -  Set nOurUpdateHandleNo = SqlHandlesGetReferenceNo( 'CombQuotTblUpdt' )
+.head 5 -  Set nOurDeleteHandleNo = SqlHandlesGetReferenceNo( 'CombQuotTblDel' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  Q1.User_Id, 
+  Q1.Sys_Date_Time 
+FROM 
+  Quotation Q1 
+INTO 
+  :sGotUserId, 
+  :dtGotSysDT 
+WHERE 
+  Q1.Cust_No = :nDUPCustNo AND 
+  NOT EXISTS 
+  (
+    SELECT 
+      Q2.Sys_Date_Time 
+    FROM 
+      Quotation Q2
+    WHERE 
+      Q2.Cust_No = :nORGCustNo AND 
+      Q2.Year_Of_Sale = Q1.Year_Of_Sale AND 
+      Q2.Stock_Item_No = Q1.Stock_Item_No
+  ) "
+.head 7 -  Call haSqlHandles[ nOurGeneralHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurGeneralHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = "UPDATE Quotation 
+SET Cust_No = :nORGCustNo 
+WHERE 
+  User_Id = :sGotUserId AND 
+  Sys_Date_Time = :dtGotSysDT "
+.head 7 -  Call haSqlHandles[ nOurUpdateHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdateHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " SELECT 
+  Q1.Year_Of_Sale, 
+  Stock_Item.Tree_Type_Desc, 
+  Stock_Item.Cult_Desc, 
+  Stock_Item.Root_Desc, 
+  Q1.Contract_Price 
+FROM 
+  Quotation Q1, 
+  Stock_Item, 
+  Quotation Q2 
+INTO 
+  :nGotYearOfSale, 
+  :sGotTreeTypeDesc, 
+  :sGotCultDesc, 
+  :sGotRootDesc, 
+  :nGotContractPrice 
+WHERE 
+  Q1.Stock_Item_No = Stock_Item.Item_No AND 
+  Q1.Cust_No = :nDUPCustNo AND 
+  Q2.Cust_No = :nORGCustNo AND 
+  Q2.Year_Of_Sale = Q1.Year_Of_Sale AND 
+  Q2.Stock_Item_No = Q1.Stock_Item_No AND 
+  NOT Q2.Contract_Price = Q1.Contract_Price "
+.head 7 -  Call haSqlHandles[ nOurGenDiscHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurGenDiscHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sGotUserId = ''
+.head 7 -  Set dtGotSysDT = DATETIME_Null
+.head 7 -  !
+.head 7 -  Set nGotYearOfSale = NUMBER_Null
+.head 7 -  Set sGotTreeTypeDesc = ''
+.head 7 -  Set sGotCultDesc = ''
+.head 7 -  Set sGotRootDesc = ''
+.head 7 -  Set nGotContractPrice = NUMBER_Null
+.head 7 -  !
+.head 7 -  Set bOk = TRUE
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurGeneralHandleNo ].Execute( )
+.head 8 +  If bOk
+.head 9 +  If haSqlHandles[ nOurGenDiscHandleNo ].Execute( )
+.head 10 -  Set bFirst = TRUE
+.head 10 +  While haSqlHandles[ nOurGenDiscHandleNo ].FetchNext( nInd )
+.head 11 +  If bFirst
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Duplicate quotations for between Original and Duplicate Customers with discripancies between the Contract Price follows.', hWndForm.lbProgress )
+.head 12 -  Set bFirst = FALSE
+.head 11 -  Call fcOutputLog.WriteLogEntry( 'Quotations: ' || SalNumberToStrX( nGotYearOfSale, 0 ) || ', ' || 
+sGotTreeTypeDesc || ', ' || sGotCultDesc || ', ' || sGotRootDesc || ', ' || SalNumberToStrX( nGotContractPrice, 2 ), hWndForm.lbProgress )
+.head 9 +  Else
+.head 10 -  Set bOk = FALSE
+.head 8 -  !
+.head 8 +  If bOk
+.head 9 +  While haSqlHandles[ nOurGeneralHandleNo ].FetchNext( nInd ) AND bOk
+.head 10 +  If NOT haSqlHandles[ nOurUpdateHandleNo ].Execute( )
+.head 11 -  Set bOk = FALSE
+.head 8 -  !
+.head 8 +  If bOk
+.head 9 -  Set sSql = " DELETE FROM Quotation 
+WHERE Cust_No = :nDUPCustNo "
+.head 9 -  Call haSqlHandles[ nOurDeleteHandleNo ].PrepareSetup( sSql )
+.head 9 -  Call SqlVarSetup( haSqlHandles[ nOurDeleteHandleNo ].hSqlHandle )
+.head 9 -  !
+.head 9 +  If NOT haSqlHandles[ nOurDeleteHandleNo ].Execute( )
+.head 10 -  Set bOk = FALSE
+.head 8 -  !
+.head 8 +  If bOk
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Quotations Table successfull.', hWndForm.lbProgress )
+.head 8 +  Else
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Combining of Quotations Table FAILED.', hWndForm.lbProgress )
+.head 7 +  Else
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurUpdateHandleNo ].Commit( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurDeleteHandleNo ].Commit( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurUpdateHandleNo ].Rollback( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurDeleteHandleNo ].Rollback( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurGeneralHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurGenDiscHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdateHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurDeleteHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 -  !
+.head 3 +  Function: LogHeaderForCustMasterComb
+.head 4 -  Description:
+.head 4 -  Returns
+.head 4 +  Parameters
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 4 -  Static Variables
+.head 4 -  Local variables
+.head 4 +  Actions
+.head 5 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Master Table.', hWndForm.lbProgress )
+.head 5 -  Call fcOutputLog.WriteLogEntry( '  Start of different field values between ORGINAL and DUPLICATE Customer.', hWndForm.lbProgress )
+.head 3 +  Function: CombineCustMasterTable
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Receive String: sORGCustName
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurGenOrgHandleNo
+.head 5 -  Number: nOurGenDupHandleNo
+.head 5 -  Number: nInd
+.head 5 -  Boolean: bOk
+.head 5 -  Boolean: bFirst
+.head 5 -  !
+.head 5 -  ! ORIGINAL CUST FIELDS
+.head 5 -  String: sGotOrgCustomerType
+.head 5 -  String: sGotOrgRegionId
+.head 5 -  String: sGotOrgCustName
+.head 5 -  String: sGotOrgBusName
+.head 5 -  String: sGotOrgCustComments
+.head 5 -  String: sGotOrgFNAFlag
+.head 5 -  String: sGotOrgContPriceFlag
+.head 5 -  String: sGotOrgDepReqdFlag
+.head 5 -  String: sGotOrgCODFlag
+.head 5 -  String: sGotOrgDontSellFlag
+.head 5 -  String: sGotOrgMailingListFlag
+.head 5 -  Number: nGotOrgAssCustNo
+.head 5 -  String: sGotOrgACNNo
+.head 5 -  Number: nGotOrgPrev93YearOrdAmt
+.head 5 -  Number: nGotOrgPrev92YearOrdAmt
+.head 5 -  Number: nGotOrgPrev91YearOrdAmt
+.head 5 -  Number: nGotOrgPrev90YearOrdAmt
+.head 5 -  String: sGotOrgNPARefusalFlag
+.head 5 -  String: sGotOrgBarCodeLblsReqd
+.head 5 -  Number: nGotOrgCustCreditLimit
+.head 5 -  Number: nGotOrgCreditTerm
+.head 5 -  Number: nGotOrgCustARBalance
+.head 5 -  String: sGotOrgBadDebtFlag
+.head 5 -  Number: nGotOrgPercCod
+.head 5 -  String: sGotOrgCODRequestedFlag
+.head 5 -  Date/Time: dtGotOrgSvChrgFromDate
+.head 5 -  String: sGotOrgOverrideFrCode
+.head 5 -  Number: nGotOrgServiceCharge
+.head 5 -  String: sGotOrgRoyaltyOwnercode
+.head 5 -  String: sGotOrgDefDelivInstruct
+.head 5 -  String: sGotOrgDefDelivtype
+.head 5 -  Number: nGotOrgInitCreditTerm
+.head 5 -  String: sGotOrgOrderNotes
+.head 5 -  String: sGotOrgLabelNotes
+.head 5 -  String: sGotOrgLoadNotes
+.head 5 -  String: sGotOrgClosedAccount
+.head 5 -  String: sGotOrgCreditStop
+.head 5 -  String: sGotOrgPurchOrdNoReqd
+.head 5 -  String: sGotOrgInvoiceNotes
+.head 5 -  String: sGotOrgSendOrgInv
+.head 5 -  String: sGotOrgPayBefDespatch
+.head 5 -  String: sGotOrgWithDebtCollect
+.head 5 -  Date/Time: dtGotOrgAccntOpenDate
+.head 5 -  Date/Time: dtGotOrgAccntCloseDate
+.head 5 -  String: sGotOrgAddedBy
+.head 5 -  Number: nGotOrgDaysOfCredit
+.head 5 -  String: sGotOrgCombStatement
+.head 5 -  !
+.head 5 -  ! DUPLICATE CUST FIELDS
+.head 5 -  String: sGotDupCustomerType
+.head 5 -  String: sGotDupRegionId
+.head 5 -  String: sGotDupCustName
+.head 5 -  String: sGotDupBusName
+.head 5 -  String: sGotDupCustComments
+.head 5 -  String: sGotDupFNAFlag
+.head 5 -  String: sGotDupContPriceFlag
+.head 5 -  String: sGotDupDepReqdFlag
+.head 5 -  String: sGotDupCODFlag
+.head 5 -  String: sGotDupDontSellFlag
+.head 5 -  String: sGotDupMailingListFlag
+.head 5 -  Number: nGotDupAssCustNo
+.head 5 -  String: sGotDupACNNo
+.head 5 -  Number: nGotDupPrev93YearOrdAmt
+.head 5 -  Number: nGotDupPrev92YearOrdAmt
+.head 5 -  Number: nGotDupPrev91YearOrdAmt
+.head 5 -  Number: nGotDupPrev90YearOrdAmt
+.head 5 -  String: sGotDupNPARefusalFlag
+.head 5 -  String: sGotDupBarCodeLblsReqd
+.head 5 -  Number: nGotDupCustCreditLimit
+.head 5 -  Number: nGotDupCreditTerm
+.head 5 -  Number: nGotDupCustARBalance
+.head 5 -  String: sGotDupBadDebtFlag
+.head 5 -  Number: nGotDupPercCod
+.head 5 -  String: sGotDupCODRequestedFlag
+.head 5 -  Date/Time: dtGotDupSvChrgFromDate
+.head 5 -  String: sGotDupOverrideFrCode
+.head 5 -  Number: nGotDupServiceCharge
+.head 5 -  String: sGotDupRoyaltyOwnercode
+.head 5 -  String: sGotDupDefDelivInstruct
+.head 5 -  String: sGotDupDefDelivtype
+.head 5 -  Number: nGotDupInitCreditTerm
+.head 5 -  String: sGotDupOrderNotes
+.head 5 -  String: sGotDupLabelNotes
+.head 5 -  String: sGotDupLoadNotes
+.head 5 -  String: sGotDupClosedAccount
+.head 5 -  String: sGotDupCreditStop
+.head 5 -  String: sGotDupPurchOrdNoReqd
+.head 5 -  String: sGotDupInvoiceNotes
+.head 5 -  String: sGotDupSendOrgInv
+.head 5 -  String: sGotDupPayBefDespatch
+.head 5 -  String: sGotDupWithDebtCollect
+.head 5 -  Date/Time: dtGotDupAccntOpenDate
+.head 5 -  Date/Time: dtGotDupAccntCloseDate
+.head 5 -  String: sGotDupAddedBy
+.head 5 -  Number: nGotDupDaysOfCredit
+.head 5 -  String: sGotDupCombStatement
+.head 5 -  !
+.head 4 +  Actions
+.head 5 -  Set nOurGenOrgHandleNo = SqlHandlesGetReferenceNo( 'CombCstMasterTblGenOrg' )
+.head 5 -  Set nOurGenDupHandleNo = SqlHandlesGetReferenceNo( 'CombCstMasterTblGenDup' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = "SELECT 
+  Customer_Type,
+  Region_Id,
+  Cust_Name,
+  Bus_Name,
+  Cust_Comments,
+  FNA_Flag,
+  Cont_Price_Flag,
+  Dep_Reqd_Flag,
+  COD_Flag,
+  Dont_Sell_Flag,
+  Mailing_List_Flag,
+  Ass_Cust_No,
+  ACN_No,
+  Prev_93YearOrdAmt,
+  Prev_92YearOrdAmt,
+  Prev_91YearOrdAmt,
+  Prev_90YearOrdAmt,
+  NPA_Refusal_Flag,
+  Bar_Code_Lbls_Reqd,
+  Cust_Credit_Limit,
+  Credit_Term,
+  Cust_AR_Balance,
+  Bad_Debt_Flag,
+  Perc_Cod,
+  COD_Requested_Flag,
+  Sv_Chrg_From_Date,
+  Override_FrCode,
+  Service_Charge,
+  Royalty_Owner_code,
+  Def_Deliv_Instruct,
+  Def_Deliv_type,
+  Init_Credit_Term,
+  Order_Notes,
+  Label_Notes,
+  Load_Notes,
+  Closed_Account,
+  Credit_Stop,
+  Purch_Ord_No_Reqd,
+  Invoice_Notes,
+  Send_Org_Inv,
+  Pay_Bef_Despatch,
+  With_Debt_Collect,
+  Accnt_Open_Date,
+  Accnt_Close_Date,
+  Added_By,
+  Days_Of_Credit,
+  Comb_Statement 
+FROM 
+  Customer_Master 
+INTO 
+  :sGotOrgCustomerType,
+  :sGotOrgRegionId,
+  :sGotOrgCustName,
+  :sGotOrgBusName,
+  :sGotOrgCustComments,
+  :sGotOrgFNAFlag,
+  :sGotOrgContPriceFlag,
+  :sGotOrgDepReqdFlag,
+  :sGotOrgCODFlag,
+  :sGotOrgDontSellFlag,
+  :sGotOrgMailingListFlag,
+  :nGotOrgAssCustNo,
+  :sGotOrgACNNo,
+  :nGotOrgPrev93YearOrdAmt,
+  :nGotOrgPrev92YearOrdAmt,
+  :nGotOrgPrev91YearOrdAmt,
+  :nGotOrgPrev90YearOrdAmt,
+  :sGotOrgNPARefusalFlag,
+  :sGotOrgBarCodeLblsReqd,
+  :nGotOrgCustCreditLimit,
+  :nGotOrgCreditTerm,
+  :nGotOrgCustARBalance,
+  :sGotOrgBadDebtFlag,
+  :nGotOrgPercCod,
+  :sGotOrgCODRequestedFlag,
+  :dtGotOrgSvChrgFromDate,
+  :sGotOrgOverrideFrCode,
+  :nGotOrgServiceCharge,
+  :sGotOrgRoyaltyOwnercode,
+  :sGotOrgDefDelivInstruct,
+  :sGotOrgDefDelivtype,
+  :nGotOrgInitCreditTerm,
+  :sGotOrgOrderNotes,
+  :sGotOrgLabelNotes,
+  :sGotOrgLoadNotes
+  :sGotOrgClosedAccount,
+  :sGotOrgCreditStop,
+  :sGotOrgPurchOrdNoReqd,
+  :sGotOrgInvoiceNotes,
+  :sGotOrgSendOrgInv,
+  :sGotOrgPayBefDespatch,
+  :sGotOrgWithDebtCollect,
+  :dtGotOrgAccntOpenDate,
+  :dtGotOrgAccntCloseDate,
+  :sGotOrgAddedBy,
+  :nGotOrgDaysOfCredit,
+  :sGotOrgCombStatement
+WHERE 
+  Cust_No = :nORGCustNo "
+.head 7 -  Call haSqlHandles[ nOurGenOrgHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurGenOrgHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = "SELECT 
+  Customer_Type,
+  Region_Id,
+  Cust_Name,
+  Bus_Name,
+  Cust_Comments,
+  FNA_Flag,
+  Cont_Price_Flag,
+  Dep_Reqd_Flag,
+  COD_Flag,
+  Dont_Sell_Flag,
+  Mailing_List_Flag,
+  Ass_Cust_No,
+  ACN_No,
+  Prev_93YearOrdAmt,
+  Prev_92YearOrdAmt,
+  Prev_91YearOrdAmt,
+  Prev_90YearOrdAmt,
+  NPA_Refusal_Flag,
+  Bar_Code_Lbls_Reqd,
+  Cust_Credit_Limit,
+  Credit_Term,
+  Cust_AR_Balance,
+  Bad_Debt_Flag,
+  Perc_Cod,
+  COD_Requested_Flag,
+  Sv_Chrg_From_Date,
+  Override_FrCode,
+  Service_Charge,
+  Royalty_Owner_code,
+  Def_Deliv_Instruct,
+  Def_Deliv_type,
+  Init_Credit_Term,
+  Order_Notes,
+  Label_Notes,
+  Load_Notes,
+  Closed_Account,
+  Credit_Stop,
+  Purch_Ord_No_Reqd,
+  Invoice_Notes,
+  Send_Org_Inv,
+  Pay_Bef_Despatch,
+  With_Debt_Collect,
+  Accnt_Open_Date,
+  Accnt_Close_Date,
+  Added_By,
+  Days_Of_Credit,
+  Comb_Statement 
+FROM 
+  Customer_Master 
+INTO 
+  :sGotDupCustomerType,
+  :sGotDupRegionId,
+  :sGotDupCustName,
+  :sGotDupBusName,
+  :sGotDupCustComments,
+  :sGotDupFNAFlag,
+  :sGotDupContPriceFlag,
+  :sGotDupDepReqdFlag,
+  :sGotDupCODFlag,
+  :sGotDupDontSellFlag,
+  :sGotDupMailingListFlag,
+  :nGotDupAssCustNo,
+  :sGotDupACNNo,
+  :nGotDupPrev93YearOrdAmt,
+  :nGotDupPrev92YearOrdAmt,
+  :nGotDupPrev91YearOrdAmt,
+  :nGotDupPrev90YearOrdAmt,
+  :sGotDupNPARefusalFlag,
+  :sGotDupBarCodeLblsReqd,
+  :nGotDupCustCreditLimit,
+  :nGotDupCreditTerm,
+  :nGotDupCustARBalance,
+  :sGotDupBadDebtFlag,
+  :nGotDupPercCod,
+  :sGotDupCODRequestedFlag,
+  :dtGotDupSvChrgFromDate,
+  :sGotDupOverrideFrCode,
+  :nGotDupServiceCharge,
+  :sGotDupRoyaltyOwnercode,
+  :sGotDupDefDelivInstruct,
+  :sGotDupDefDelivtype,
+  :nGotDupInitCreditTerm,
+  :sGotDupOrderNotes,
+  :sGotDupLabelNotes,
+  :sGotDupLoadNotes
+  :sGotDupClosedAccount,
+  :sGotDupCreditStop,
+  :sGotDupPurchOrdNoReqd,
+  :sGotDupInvoiceNotes,
+  :sGotDupSendOrgInv,
+  :sGotDupPayBefDespatch,
+  :sGotDupWithDebtCollect,
+  :dtGotDupAccntOpenDate,
+  :dtGotDupAccntCloseDate,
+  :sGotDupAddedBy,
+  :nGotDupDaysOfCredit,
+  :sGotDupCombStatement
+WHERE 
+  Cust_No = :nDUPCustNo "
+.head 7 -  Call haSqlHandles[ nOurGenDupHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurGenDupHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sGotOrgCustomerType = ''
+.head 7 -  Set sGotOrgRegionId = ''
+.head 7 -  Set sGotOrgCustName = ''
+.head 7 -  Set sGotOrgBusName = ''
+.head 7 -  Set sGotOrgCustComments = ''
+.head 7 -  Set sGotOrgFNAFlag = ''
+.head 7 -  Set sGotOrgContPriceFlag = ''
+.head 7 -  Set sGotOrgDepReqdFlag = ''
+.head 7 -  Set sGotOrgCODFlag = ''
+.head 7 -  Set sGotOrgDontSellFlag = ''
+.head 7 -  Set sGotOrgMailingListFlag = ''
+.head 7 -  Set nGotOrgAssCustNo = NUMBER_Null
+.head 7 -  Set sGotOrgACNNo = ''
+.head 7 -  Set nGotOrgPrev93YearOrdAmt = NUMBER_Null
+.head 7 -  Set nGotOrgPrev92YearOrdAmt = NUMBER_Null
+.head 7 -  Set nGotOrgPrev91YearOrdAmt = NUMBER_Null
+.head 7 -  Set nGotOrgPrev90YearOrdAmt = NUMBER_Null
+.head 7 -  Set sGotOrgNPARefusalFlag = ''
+.head 7 -  Set sGotOrgBarCodeLblsReqd = ''
+.head 7 -  Set nGotOrgCustCreditLimit = NUMBER_Null
+.head 7 -  Set nGotOrgCreditTerm = NUMBER_Null
+.head 7 -  Set nGotOrgCustARBalance = NUMBER_Null
+.head 7 -  Set sGotOrgBadDebtFlag = ''
+.head 7 -  Set nGotOrgPercCod = NUMBER_Null
+.head 7 -  Set sGotOrgCODRequestedFlag = ''
+.head 7 -  Set dtGotOrgSvChrgFromDate = DATETIME_Null
+.head 7 -  Set sGotOrgOverrideFrCode = ''
+.head 7 -  Set nGotOrgServiceCharge = NUMBER_Null
+.head 7 -  Set sGotOrgRoyaltyOwnercode = ''
+.head 7 -  Set sGotOrgDefDelivInstruct = ''
+.head 7 -  Set sGotOrgDefDelivtype = ''
+.head 7 -  Set nGotOrgInitCreditTerm = NUMBER_Null
+.head 7 -  Set sGotOrgOrderNotes = ''
+.head 7 -  Set sGotOrgLabelNotes = ''
+.head 7 -  Set sGotOrgLoadNotes = ''
+.head 7 -  Set sGotOrgClosedAccount = ''
+.head 7 -  Set sGotOrgCreditStop = ''
+.head 7 -  Set sGotOrgPurchOrdNoReqd = ''
+.head 7 -  Set sGotOrgInvoiceNotes = ''
+.head 7 -  Set sGotOrgSendOrgInv = ''
+.head 7 -  Set sGotOrgPayBefDespatch = ''
+.head 7 -  Set sGotOrgWithDebtCollect = ''
+.head 7 -  Set dtGotOrgAccntOpenDate = DATETIME_Null
+.head 7 -  Set dtGotOrgAccntCloseDate = DATETIME_Null
+.head 7 -  Set sGotOrgAddedBy = ''
+.head 7 -  Set nGotOrgDaysOfCredit = NUMBER_Null
+.head 7 -  Set sGotOrgCombStatement = ''
+.head 7 -  !
+.head 7 -  Set sGotDupCustomerType = ''
+.head 7 -  Set sGotDupRegionId = ''
+.head 7 -  Set sGotDupCustName = ''
+.head 7 -  Set sGotDupBusName = ''
+.head 7 -  Set sGotDupCustComments = ''
+.head 7 -  Set sGotDupFNAFlag = ''
+.head 7 -  Set sGotDupContPriceFlag = ''
+.head 7 -  Set sGotDupDepReqdFlag = ''
+.head 7 -  Set sGotDupCODFlag = ''
+.head 7 -  Set sGotDupDontSellFlag = ''
+.head 7 -  Set sGotDupMailingListFlag = ''
+.head 7 -  Set nGotDupAssCustNo = NUMBER_Null
+.head 7 -  Set sGotDupACNNo = ''
+.head 7 -  Set nGotDupPrev93YearOrdAmt = NUMBER_Null
+.head 7 -  Set nGotDupPrev92YearOrdAmt = NUMBER_Null
+.head 7 -  Set nGotDupPrev91YearOrdAmt = NUMBER_Null
+.head 7 -  Set nGotDupPrev90YearOrdAmt = NUMBER_Null
+.head 7 -  Set sGotDupNPARefusalFlag = ''
+.head 7 -  Set sGotDupBarCodeLblsReqd = ''
+.head 7 -  Set nGotDupCustCreditLimit = NUMBER_Null
+.head 7 -  Set nGotDupCreditTerm = NUMBER_Null
+.head 7 -  Set nGotDupCustARBalance = NUMBER_Null
+.head 7 -  Set sGotDupBadDebtFlag = ''
+.head 7 -  Set nGotDupPercCod = NUMBER_Null
+.head 7 -  Set sGotDupCODRequestedFlag = ''
+.head 7 -  Set dtGotDupSvChrgFromDate = DATETIME_Null
+.head 7 -  Set sGotDupOverrideFrCode = ''
+.head 7 -  Set nGotDupServiceCharge = NUMBER_Null
+.head 7 -  Set sGotDupRoyaltyOwnercode = ''
+.head 7 -  Set sGotDupDefDelivInstruct = ''
+.head 7 -  Set sGotDupDefDelivtype = ''
+.head 7 -  Set nGotDupInitCreditTerm = NUMBER_Null
+.head 7 -  Set sGotDupOrderNotes = ''
+.head 7 -  Set sGotDupLabelNotes = ''
+.head 7 -  Set sGotDupLoadNotes = ''
+.head 7 -  Set sGotDupClosedAccount = ''
+.head 7 -  Set sGotDupCreditStop = ''
+.head 7 -  Set sGotDupPurchOrdNoReqd = ''
+.head 7 -  Set sGotDupInvoiceNotes = ''
+.head 7 -  Set sGotDupSendOrgInv = ''
+.head 7 -  Set sGotDupPayBefDespatch = ''
+.head 7 -  Set sGotDupWithDebtCollect = ''
+.head 7 -  Set dtGotDupAccntOpenDate = DATETIME_Null
+.head 7 -  Set dtGotDupAccntCloseDate = DATETIME_Null
+.head 7 -  Set sGotDupAddedBy = ''
+.head 7 -  Set nGotDupDaysOfCredit = NUMBER_Null
+.head 7 -  Set sGotDupCombStatement = ''
+.head 7 -  !
+.head 7 -  Set bOk = TRUE
+.head 7 +  If haSqlHandles[ nOurGenOrgHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurGenOrgHandleNo ].FetchNext( nInd )
+.head 9 -  Set sORGCustName = sGotOrgCustName
+.head 9 -  !
+.head 9 +  If haSqlHandles[ nOurGenDupHandleNo ].Execute( )
+.head 10 +  If haSqlHandles[ nOurGenDupHandleNo ].FetchNext( nInd )
+.head 11 -  Set bFirst = TRUE
+.head 11 +  If NOT sGotOrgCustomerType = sGotDupCustomerType
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Customer_Type = ' || sGotDupCustomerType, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgRegionId = sGotDupRegionId
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Region_Id = ' || sGotDupRegionId, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgCustName = sGotDupCustName
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Cust_Name = ' || sGotDupCustName, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgBusName = sGotDupBusName
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Bus_Name = ' || sGotDupBusName, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgFNAFlag = sGotDupFNAFlag
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, FNA_Flag = ' || sGotDupFNAFlag, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgContPriceFlag = sGotDupContPriceFlag
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Cont_Price_Flag = ' || sGotDupContPriceFlag, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgDepReqdFlag = sGotDupDepReqdFlag
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Dep_Reqd_Flag = ' || sGotDupDepReqdFlag, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgCODFlag = sGotDupCODFlag
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, COD_Flag = ' || sGotDupCODFlag, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgDontSellFlag = sGotDupDontSellFlag
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Dont_Sell_Flag = ' || sGotDupDontSellFlag, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgMailingListFlag = sGotDupMailingListFlag
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Mailing_List_Flag = ' || sGotDupMailingListFlag, hWndForm.lbProgress )
+.head 11 +  If NOT nGotOrgAssCustNo = nGotDupAssCustNo
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Associate_Cust_No = ' || SalNumberToStrX( nGotDupAssCustNo, 0 ), hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgACNNo = sGotDupACNNo
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, ACN_No = ' || sGotDupACNNo, hWndForm.lbProgress )
+.head 11 +  If NOT nGotOrgPrev93YearOrdAmt = nGotDupPrev93YearOrdAmt
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Prev93YearOrdAmt = ' || SalNumberToStrX( nGotDupPrev93YearOrdAmt, 0 ), hWndForm.lbProgress )
+.head 11 +  If NOT nGotOrgPrev92YearOrdAmt = nGotDupPrev92YearOrdAmt
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Prev92YearOrdAmt = ' || SalNumberToStrX( nGotDupPrev92YearOrdAmt, 0 ), hWndForm.lbProgress )
+.head 11 +  If NOT nGotOrgPrev91YearOrdAmt = nGotDupPrev91YearOrdAmt
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Prev91YearOrdAmt = ' || SalNumberToStrX( nGotDupPrev91YearOrdAmt, 0 ), hWndForm.lbProgress )
+.head 11 +  If NOT nGotOrgPrev90YearOrdAmt = nGotDupPrev90YearOrdAmt
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Prev90YearOrdAmt = ' || SalNumberToStrX( nGotDupPrev90YearOrdAmt, 0 ), hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgNPARefusalFlag = sGotDupNPARefusalFlag
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, NPA_Refusal_Flag = ' || sGotDupNPARefusalFlag, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgBarCodeLblsReqd = sGotDupBarCodeLblsReqd
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Bar_Code_LblsReqd = ' || sGotDupBarCodeLblsReqd, hWndForm.lbProgress )
+.head 11 +  If NOT nGotOrgCustCreditLimit = nGotDupCustCreditLimit
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Credit_Limit = ' || SalNumberToStrX( nGotDupCustCreditLimit, 0 ), hWndForm.lbProgress )
+.head 11 +  If NOT nGotOrgCreditTerm = nGotDupCreditTerm
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Credit_Term = ' || SalNumberToStrX( nGotDupCreditTerm, 0 ), hWndForm.lbProgress )
+.head 11 +  If NOT nGotOrgCustARBalance = nGotDupCustARBalance
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Cust_AR_Balance = ' || SalNumberToStrX( nGotDupCustARBalance, 0 ), hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgBadDebtFlag = sGotDupBadDebtFlag
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Bad_Debt_Flag = ' || sGotDupBadDebtFlag, hWndForm.lbProgress )
+.head 11 +  If NOT nGotOrgPercCod = nGotDupPercCod
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Perc_Cod = ' || SalNumberToStrX( nGotDupPercCod, 0 ), hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgCODRequestedFlag = sGotDupCODRequestedFlag
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, COD_Requested_Flag = ' || sGotDupCODRequestedFlag, hWndForm.lbProgress )
+.head 11 +  If NOT dtGotOrgSvChrgFromDate = dtGotDupSvChrgFromDate
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Service Change From Date = ' || DateToStrX( dtGotDupSvChrgFromDate ), hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgOverrideFrCode = sGotDupOverrideFrCode
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Override Freight Code = ' || sGotDupOverrideFrCode, hWndForm.lbProgress )
+.head 11 +  If NOT nGotOrgServiceCharge = nGotDupServiceCharge
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Service_Charge = ' || SalNumberToStrX( nGotDupServiceCharge, 4 ), hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgRoyaltyOwnercode = sGotDupRoyaltyOwnercode
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Royalty_Owner_Code = ' || sGotDupRoyaltyOwnercode, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgDefDelivInstruct = sGotDupDefDelivInstruct
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Default Delivery Instructions = ' || sGotDupDefDelivInstruct, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgDefDelivtype = sGotDupDefDelivtype
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Default Delivery Type = ' || sGotDupDefDelivtype, hWndForm.lbProgress )
+.head 11 +  If NOT nGotOrgInitCreditTerm = nGotDupInitCreditTerm
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Initial Credit Term = ' || SalNumberToStrX( nGotDupInitCreditTerm, 0 ), hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgOrderNotes = sGotDupOrderNotes
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Order_Notes = ' || sGotDupOrderNotes, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgLabelNotes = sGotDupLabelNotes
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call LogHeaderForCustMasterComb( fcOutputLog )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Label_Notes = ' || sGotDupLabelNotes, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgLoadNotes = sGotDupLoadNotes
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Master Table Start of different field values between ORGINAL and DUPLICATE Customer Numbers.', hWndForm.lbProgress )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Load_Notes = ' || sGotDupLoadNotes, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgClosedAccount = sGotDupClosedAccount
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Master Table Start of different field values between ORGINAL and DUPLICATE Customer Numbers.', hWndForm.lbProgress )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Close_Account = ' || sGotDupClosedAccount, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgCreditStop = sGotDupCreditStop
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Master Table Start of different field values between ORGINAL and DUPLICATE Customer Numbers.', hWndForm.lbProgress )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Credit_Stop = ' || sGotDupCreditStop, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgPurchOrdNoReqd = sGotDupPurchOrdNoReqd
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Master Table Start of different field values between ORGINAL and DUPLICATE Customer Numbers.', hWndForm.lbProgress )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Purchase_Order_No_Required = ' || sGotDupPurchOrdNoReqd, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgInvoiceNotes = sGotDupInvoiceNotes
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Master Table Start of different field values between ORGINAL and DUPLICATE Customer Numbers.', hWndForm.lbProgress )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Invoice_Notes = ' || sGotDupInvoiceNotes, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgSendOrgInv = sGotDupSendOrgInv
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Master Table Start of different field values between ORGINAL and DUPLICATE Customer Numbers.', hWndForm.lbProgress )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Send_Original_Invoice = ' || sGotDupSendOrgInv, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgPayBefDespatch = sGotDupPayBefDespatch
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Master Table Start of different field values between ORGINAL and DUPLICATE Customer Numbers.', hWndForm.lbProgress )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Pay_Before_Despatch = ' || sGotDupPayBefDespatch, hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgWithDebtCollect = sGotDupWithDebtCollect
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Master Table Start of different field values between ORGINAL and DUPLICATE Customer Numbers.', hWndForm.lbProgress )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, With_Debt_Collectors = ' || sGotDupWithDebtCollect, hWndForm.lbProgress )
+.head 11 +  If NOT nGotOrgDaysOfCredit = nGotDupDaysOfCredit
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Master Table Start of different field values between ORGINAL and DUPLICATE Customer Numbers.', hWndForm.lbProgress )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Days_Of_Credit = ' || SalNumberToStrX( nGotDupDaysOfCredit, 0 ), hWndForm.lbProgress )
+.head 11 +  If NOT sGotOrgCombStatement = sGotDupCombStatement
+.head 12 +  If bFirst
+.head 13 -  Set bFirst = FALSE
+.head 13 -  Call fcOutputLog.WriteLogEntry( 'Combining of Customer_Master Table Start of different field values between ORGINAL and DUPLICATE Customer Numbers.', hWndForm.lbProgress )
+.head 12 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer Numbers, Combined_Statement = ' || sGotDupCombStatement, hWndForm.lbProgress )
+.head 10 +  Else
+.head 11 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Duplicate Customer does not exist.  Cannot combined.', hWndForm.lbProgress )
+.head 11 -  Set bOk = FALSE
+.head 9 +  Else
+.head 10 -  Set bOk = FALSE
+.head 8 +  Else
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Customer_Master, Original Customer does not exist.  Cannot combined.', hWndForm.lbProgress )
+.head 9 -  Set bOk = FALSE
+.head 7 +  Else
+.head 8 -  Set bOk = FALSE
+.head 7 -  !
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurGenOrgHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurGenDupHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: DeleteDuplicateCustomer
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'DeleteDuplicateCustomer' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " DELETE FROM Customer_Master 
+WHERE Cust_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Duplicate Customer: ' || SalNumberToStrX( nDUPCustNo, 0 ) || ' has been deleted successfully.', hWndForm.lbProgress )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call fcOutputLog.WriteLogEntry( 'Duplicate Customer: ' || SalNumberToStrX( nDUPCustNo, 0 ) || ' has FAILED to deleted.', hWndForm.lbProgress )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 -  !
+.head 3 -  !
+.head 3 +  Function: IsORGDUPCustAParent
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Receive Boolean: bResult
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nInd
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'IsORGDUPCustAParent' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  Cust_No 
+FROM 
+  Customer_Master 
+WHERE 
+  Ass_Cust_No = :nORGCustNo OR 
+  Ass_Cust_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set bResult = FALSE
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 9 -  Call fcOutputLog.WriteLogEntry( 'Cannot combine as one of the customers is a parent customer!', hWndForm.lbProgress )
+.head 9 -  Set bResult = TRUE
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: AreORGDUPAssCustNoEqual
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nORGCustNo
+.head 5 -  Number: nDUPCustNo
+.head 5 -  : fcOutputLog
+.head 6 -  Class: clsStrLogFile
+.head 5 -  Receive Boolean: bResult
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nInd
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nAssCustNo
+.head 5 -  Number: nPrevAssCustNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'IsORGDUPCustAParent' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  Ass_Cust_No 
+FROM 
+  Customer_Master 
+INTO 
+  :nAssCustNo 
+WHERE 
+  Cust_No = :nORGCustNo OR 
+  Cust_No = :nDUPCustNo "
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set nAssCustNo = NUMBER_Null
+.head 7 -  Set nPrevAssCustNo = NUMBER_Null
+.head 7 -  Set bResult = TRUE
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 9 -  Set nPrevAssCustNo = nAssCustNo
+.head 9 +  If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 10 +  If NOT nPrevAssCustNo = nAssCustNo
+.head 11 -  Set bResult = FALSE
+.head 11 -  Call fcOutputLog.WriteLogEntry( 'Cannot combine as the parent customers of do not match!', hWndForm.lbProgress )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 2 -  Window Parameters
+.head 2 +  Window Variables
+.head 3 -  Boolean: bOk
+.head 3 -  Boolean: bResult
+.head 3 -  String: sOutputLogFileName
+.head 3 -  String: sORGCustName
+.head 3 -  : fcOutputLog
+.head 4 -  Class: clsStrLogFile
+.head 3 -  Number: nListIndex
+.head 2 +  Message Actions
+.head 3 +  On SAM_CreateComplete
+.head 4 -  Call SalSetFocus( dfCustNoOrg )
+.head 4 -  Set sOutputLogFileName = OurGetIniFileParameter( 'GENERAL', 'TempStorage', 'C:\\TEMP' ) || '\\CombDupCust.log'
+.head 4 -  Return SalSendClassMessage( SAM_CreateComplete, wParam, lParam )
+.head 3 +  On PAM_clsPB_OKACTION
+.head 4 -  Call OurWaitCursor( TRUE )
+.head 4 -  !
+.head 4 +  If IDYES = SalMessageBox( 'This action should be done out of hours or when no other database activity is occouring! Please confirm with database administrators.  Continue?', 'Warning', MB_YesNo | MB_DefButton2 )
+.head 5 -  Set bOk = TRUE
+.head 5 -  !
+.head 5 -  Call fcOutputLog.Setup( sOutputLogFileName, NUMBER_Null, NUMBER_Null )
+.head 5 +  If fcOutputLog.Open( )
+.head 6 -  Call fcOutputLog.WriteLogEntry( '*', hWndForm.lbProgress )
+.head 6 -  Call fcOutputLog.WriteLogEntry( '**********START COMBINATION**********', hWndForm.lbProgress )
+.head 6 -  Call fcOutputLog.WriteLogEntry( 'On the ' || DateToStrX( SalDateCurrent(  ) ), hWndForm.lbProgress )
+.head 6 -  Call fcOutputLog.WriteLogEntry( '  combining of ORIGINAL Cust_No: ' || SalNumberToStrX( dfCustNoOrg, 0 ) || ' and DUPLICATE Cust_No: ' || SalNumberToStrX( dfCustNoDuplicate, 0 ), hWndForm.lbProgress )
+.head 6 -  Call fcOutputLog.WriteLogEntry( '  was performed as follows:-', hWndForm.lbProgress )
+.head 5 +  Else
+.head 6 -  Set bOk = FALSE
+.head 5 -  !
+.head 5 +  If bOk
+.head 6 +  If SalIsNull( dfCustNoOrg )
+.head 7 -  Set bOk = FALSE
+.head 7 -  Call SalMessageBox( 'Please enter a Cust_No into the ORIGINAL field!', 'Warning', MB_Ok )
+.head 7 -  Call SalSetFocus( dfCustNoOrg )
+.head 6 +  If SalIsNull( dfCustNoDuplicate )
+.head 7 -  Set bOk = FALSE
+.head 7 -  Call SalMessageBox( 'Please enter a Cust_No into the DUPLICATE field!', 'Warning', MB_Ok )
+.head 7 -  Call SalSetFocus( dfCustNoDuplicate )
+.head 5 +  If bOk
+.head 6 -  Call IsORGDUPCustAParent( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, bResult, SH_cls_Execute )
+.head 6 +  If bResult
+.head 7 -  Set bOk = FALSE
+.head 7 -  Call SalMessageBox( 'Cannot combine as one the customers is a parent customer!', 'Warning', MB_Ok )
+.head 5 +  If bOk
+.head 6 -  Call AreORGDUPAssCustNoEqual( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, bResult, SH_cls_Execute )
+.head 6 +  If NOT bResult
+.head 7 -  Set bOk = FALSE
+.head 7 -  Call SalMessageBox( 'Cannot combine as the parent customers of do not match!', 'Warning', MB_Ok )
+.head 5 -  ! Starting combining process here
+.head 5 +  If bOk
+.head 6 +  If CombineCustMasterTable( dfCustNoOrg, sORGCustName, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 7 +  If CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 8 +  If CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 9 +  If CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 10 +  If CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 11 +  If CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 12 +  If CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 13 +  If CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 14 +  If CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 15 +  If CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 16 +  If CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 17 +  If CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 18 +  If CombineMissedSalesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 19 +  If CombineOutstandDepositTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 20 +  If CombineRoyaltiesPaidTable( dfCustNoOrg, sORGCustName, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 21 +  If CombineTransHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 22 +  If CombineTransactionTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 23 +  If CombineCustCommentsTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 24 +  If CombineCustARNotesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 25 +  If CombineLoadCustomersTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 26 +  If CombineCustAddressTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 27 +  If CombineCustContactsTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 28 +  If CombineQuotationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 29 +  If DeleteDuplicateCustomer( dfCustNoDuplicate, fcOutputLog, SH_cls_Execute )
+.head 30 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineMissedSalesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineOutstandDepositTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineRoyaltiesPaidTable( dfCustNoOrg, sORGCustName, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineTransHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineTransactionTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineCustCommentsTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineCustARNotesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineLoadCustomersTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineCustAddressTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineCustContactsTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call CombineQuotationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 30 -  Call DeleteDuplicateCustomer( dfCustNoDuplicate, fcOutputLog, SH_cls_Commit )
+.head 29 +  Else
+.head 30 -  Set bOk = FALSE
+.head 30 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineMissedSalesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineOutstandDepositTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineRoyaltiesPaidTable( dfCustNoOrg, sORGCustName, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineTransHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineTransactionTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineCustCommentsTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineCustARNotesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineLoadCustomersTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineCustAddressTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineCustContactsTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 30 -  Call CombineQuotationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 +  Else
+.head 29 -  Set bOk = FALSE
+.head 29 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineMissedSalesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineOutstandDepositTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineRoyaltiesPaidTable( dfCustNoOrg, sORGCustName, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineTransHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineTransactionTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineCustCommentsTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineCustARNotesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineLoadCustomersTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineCustAddressTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 29 -  Call CombineCustContactsTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 +  Else
+.head 28 -  Set bOk = FALSE
+.head 28 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineMissedSalesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineOutstandDepositTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineRoyaltiesPaidTable( dfCustNoOrg, sORGCustName, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineTransHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineTransactionTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineCustCommentsTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineCustARNotesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineLoadCustomersTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 28 -  Call CombineCustAddressTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 +  Else
+.head 27 -  Set bOk = FALSE
+.head 27 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineMissedSalesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineOutstandDepositTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineRoyaltiesPaidTable( dfCustNoOrg, sORGCustName, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineTransHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineTransactionTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineCustCommentsTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineCustARNotesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 27 -  Call CombineLoadCustomersTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 +  Else
+.head 26 -  Set bOk = FALSE
+.head 26 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineMissedSalesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineOutstandDepositTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineRoyaltiesPaidTable( dfCustNoOrg, sORGCustName, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineTransHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineTransactionTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineCustCommentsTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 26 -  Call CombineCustARNotesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 +  Else
+.head 25 -  Set bOk = FALSE
+.head 25 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineMissedSalesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineOutstandDepositTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineRoyaltiesPaidTable( dfCustNoOrg, sORGCustName, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineTransHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineTransactionTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 25 -  Call CombineCustCommentsTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 +  Else
+.head 24 -  Set bOk = FALSE
+.head 24 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineMissedSalesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineOutstandDepositTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineRoyaltiesPaidTable( dfCustNoOrg, sORGCustName, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineTransHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 24 -  Call CombineTransactionTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 22 +  Else
+.head 23 -  Set bOk = FALSE
+.head 23 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 -  Call CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 -  Call CombineMissedSalesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 -  Call CombineOutstandDepositTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 -  Call CombineRoyaltiesPaidTable( dfCustNoOrg, sORGCustName, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 23 -  Call CombineTransHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 21 +  Else
+.head 22 -  Set bOk = FALSE
+.head 22 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 22 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 22 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 22 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 22 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 22 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 22 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 22 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 22 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 22 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 22 -  Call CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 22 -  Call CombineMissedSalesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 22 -  Call CombineOutstandDepositTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 22 -  Call CombineRoyaltiesPaidTable( dfCustNoOrg, sORGCustName, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 20 +  Else
+.head 21 -  Set bOk = FALSE
+.head 21 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 21 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 21 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 21 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 21 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 21 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 21 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 21 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 21 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 21 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 21 -  Call CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 21 -  Call CombineMissedSalesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 21 -  Call CombineOutstandDepositTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 19 +  Else
+.head 20 -  Set bOk = FALSE
+.head 20 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 20 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 20 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 20 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 20 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 20 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 20 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 20 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 20 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 20 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 20 -  Call CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 20 -  Call CombineMissedSalesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 18 +  Else
+.head 19 -  Set bOk = FALSE
+.head 19 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 19 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 19 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 19 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 19 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 19 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 19 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 19 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 19 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 19 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 19 -  Call CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 17 +  Else
+.head 18 -  Set bOk = FALSE
+.head 18 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 18 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 18 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 18 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 18 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 18 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 18 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 18 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 18 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 18 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 16 +  Else
+.head 17 -  Set bOk = FALSE
+.head 17 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 17 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 17 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 17 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 17 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 17 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 17 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 17 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 17 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 15 +  Else
+.head 16 -  Set bOk = FALSE
+.head 16 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 16 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 16 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 16 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 16 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 16 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 16 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 16 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 14 +  Else
+.head 15 -  Set bOk = FALSE
+.head 15 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 15 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 15 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 15 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 15 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 15 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 15 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 13 +  Else
+.head 14 -  Set bOk = FALSE
+.head 14 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 14 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 14 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 14 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 14 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 14 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 12 +  Else
+.head 13 -  Set bOk = FALSE
+.head 13 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 13 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 13 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 13 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 13 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 11 +  Else
+.head 12 -  Set bOk = FALSE
+.head 12 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 12 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 12 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 12 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 10 +  Else
+.head 11 -  Set bOk = FALSE
+.head 11 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 11 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 11 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 9 +  Else
+.head 10 -  Set bOk = FALSE
+.head 10 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 10 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 8 +  Else
+.head 9 -  Set bOk = FALSE
+.head 9 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Rollback )
+.head 7 +  Else
+.head 8 -  Set bOk = FALSE
+.head 6 +  Else
+.head 7 -  Set bOk = FALSE
+.head 5 -  !
+.head 5 -  Call fcOutputLog.WriteLogEntry( '**********END COMBINATION**********', hWndForm.lbProgress )
+.head 5 -  Call fcOutputLog.Close( )
+.head 4 -  Call OurWaitCursor( FALSE )
+.head 3 +  On SAM_Destroy
+.head 4 -  Call IsORGDUPCustAParent( 0, 0, fcOutputLog, bResult, SH_cls_Disconnect )
+.head 4 -  Call AreORGDUPAssCustNoEqual( 0, 0, fcOutputLog, bResult, SH_cls_Disconnect )
+.head 4 -  !
+.head 4 -  Call CombineCustMasterTable( dfCustNoOrg, sORGCustName, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineActionReqTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineAuditTrailTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineCashApplicationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineCashReceiptTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineCustCancellationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineCustOrderTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineCustPromoTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineCustOrderHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineCustLetterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineDepositHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineInvoiceNoRegisterTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineMissedSalesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineOutstandDepositTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineRoyaltiesPaidTable( dfCustNoOrg, sORGCustName, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineTransHistoryTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineTransactionTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineCustCommentsTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineCustARNotesTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineLoadCustomersTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineCustAddressTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineCustContactsTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call CombineQuotationTable( dfCustNoOrg, dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Call DeleteDuplicateCustomer( dfCustNoDuplicate, fcOutputLog, SH_cls_Disconnect )
+.head 4 -  Return SalSendClassMessage( SAM_Destroy, wParam, lParam )
+.head 1 +  Form Window: frmPrintResultLog
+.head 2 -  Class: clsFormPrintReport
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title:
+.head 2 -  Icon File:
+.head 2 -  Accesories Enabled? Class Default
+.head 2 -  Visible? Class Default
+.head 2 -  Display Settings
+.head 3 -  Display Style? Class Default
+.head 3 -  Visible at Design time? Yes
+.head 3 -  Automatically Created at Runtime? Class Default
+.head 3 -  Initial State: Class Default
+.head 3 -  Maximizable? Class Default
+.head 3 -  Minimizable? Class Default
+.head 3 -  System Menu? Class Default
+.head 3 -  Resizable? Class Default
+.head 3 -  Window Location and Size
+.head 4 -  Left:   Default
+.head 4 -  Top:    Default
+.head 4 -  Width:  Class Default
+.head 4 -  Width Editable? Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Height Editable? Class Default
+.head 3 -  Form Size
+.head 4 -  Width:  Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Number of Pages: Class Default
+.head 3 -  Font Name: Class Default
+.head 3 -  Font Size: Class Default
+.head 3 -  Font Enhancement: Class Default
+.head 3 -  Text Color: Class Default
+.head 3 -  Background Color: Class Default
+.head 2 -  Description:
+.head 2 -  Named Menus
+.head 2 -  Menu
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Class Default
+.head 4 -  Location? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Size: Class Default
+.head 4 -  Size Editable? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 -  Contents
+.head 2 -  Contents
+.head 2 -  Functions
+.head 2 +  Window Parameters
+.head 3 -  String: sLogFileName
+.head 2 +  Window Variables
+.head 3 -  String: sLogLine
+.head 3 -  : fcLogFile
+.head 4 -  Class: clsStrFileHandle
+.head 2 +  Message Actions
+.head 3 +  On PAM_cls_SETINSTANCEVARS
+.head 4 -  Set sReportFileNameNoPath = 'CombDupCust.qrp'
+.head 4 -  Set sReportBind = ':frmPrintResultLog.sLogLine'
+.head 4 -  Set sReportInto = 'sLogLine'
+.head 3 +  On SAM_ReportStart
+.head 4 -  Call fcLogFile.Setup( sLogFileName, OF_Read | OF_Text, NUMBER_Null )
+.head 4 -  Return fcLogFile.Open( )
+.head 3 +  On SAM_ReportFetchInit
+.head 4 -  Return fcLogFile.Seek( 0, FILE_SeekBegin )
+.head 3 +  On SAM_ReportFetchNext
+.head 4 -  Return fcLogFile.Read( sLogLine )
+.head 3 +  On SAM_ReportFinish
+.head 4 -  Call fcLogFile.Close( )
+.head 4 -  Return SalSendClassMessage( SAM_ReportFinish, wParam, lParam )

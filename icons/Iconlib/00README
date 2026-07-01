@@ -1,0 +1,84 @@
+Hi,
+
+Thank you for trying my Icon Library product.
+
+There are more than 5400 icons in 154 categories in this shareware version.
+I hope you like them! By registering, you will receive a total of more than
+10,000 icons.
+
+The icon viewer program has a few new facilities which I think you will
+find useful.
+
+---------------------------------------------------------------------------
+To install this product, follow these steps:
+
+- Create a new directory to hold the icon libraries, the viewer program and
+  other related files.
+  eg.  MD C:\icolib4
+
+- Change to this directory and copy icolib04.zip into this directory.
+  eg.  CD C:\icolib4
+
+- Unzip the archive file.  You must use the "-d" option of pkunzip. 
+  eg.  pkunzip -d icolib04
+  You can now delete the icolib04.zip file from this directory, but make
+  sure that you have a backup elsewhere.
+
+- Use the Windows File Manager to copy the icolib.exe file to a Program Manager
+  group. The program is now ready to run; just click on the icon to start the
+  program.
+
+---------------------------------------------------------------------------
+Version 3 has had the following major improvements made:
+
+- Allow 2 levels of hierarchy in the menu system.
+- Change heading to show menu description rather than the ICL filename.
+- Provide facility to reload menus without restarting program.
+- Clicking on an icon in the client area will allow the user to save that
+  icon to a .ICO file.
+- Include Common Dialog routines for File Save and Choose Color.
+- Provide ability to clear the icon screen without loading new icons.
+- Increase icon collection from 3000 icons in 60 categories to over
+  10,200 icons in 154 categories in the registered version.
+- All icons have been "tidied" up, in particular where the background was a
+  fixed color (usually white) it has been changed to be transparent. The icons
+  usually look much better this way.
+- Allow the background color of the display area to be changed. Note that if
+  there are multiple instances of ICOLIB running, all will have the same
+  background color after the next repaint of each client area.
+- Fixed a bug which limited the number of categories to 143.
+- The help file was updated to describe these changes.
+
+------------------------------------------------------------------------------
+Version 4 has had the following major improvements made:
+
+- Save window position and size on program exit in INI file. Restore this
+  position and size when restarting the program.
+- Allow the use of path names for ICL files specified in the icolib.ini file.
+  There is a limit of 66 characters for the pathname. Examples...
+     Item_1=icons\rabbit.icl,This is a rabbit...
+     Item_2=..\icondir\rabbit.icl,This is a rabbit...
+     Item_3=d:\tmp\rabbit.icl,This is a rabbit...
+     Item_4=\top_dir\icons\rabbit.icl,This is a rabbit...
+     Item_5=c:\windows\progman.exe,Windows Program Manager Icons...
+- Bug Fix: If user saved an icon and changed directory for this save
+  operation, the icolib.ini file would be written to this new location
+  rather than the directory containing the icolib.exe file.
+
+
+If you have any comments, suggestions or problems, I am happy to hear from
+you. I can be contacted by email at steve@cc.monash.edu.au or by paper mail
+at:  PO Box 414
+     Caulfield East 3145
+     Victoria, Australia.
+
+Don't forget that if you register you will receive a total of more than
+10,000 icons and the latest version of the program. Please register if
+you plan to use this product for more than 30 days. By registering, you
+help promote the future development of this product. You can register by
+following the instructions in the file ORDERFRM.TXT which is included with
+this product.
+
+Regards,
+
+  Steve Balogh

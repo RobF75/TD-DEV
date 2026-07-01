@@ -1,0 +1,1896 @@
+Application Description: Centura 1.1.0 Jans Invoice figures Program
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 00000000007B0000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF7B0000 00580000000F0300 0095010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 1018B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.113"
+			Top:    2.906"
+			Width:  4.688"
+			Height: 2.979"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   8.263"
+			Top:    1.76"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: GENERAL.APL
+		File Include: FORM.APL
+		File Include: BUTTON.APL
+		File Include: DATFIELD.APL
+		File Include: BGTEXT.APL
+		File Include: GROUPBOX.APL
+		File Include: CHECKBOX.APL
+		File Include: TABLE.APL
+		File Include: SQLHANDL.APL
+		File Include: STRINGS.APL
+		File Include: METER.APL
+		File Include: STACKS.APL
+		File Include: VTMETER.APL
+		File Include: FLAGS.APL
+		File Include: DIALOG.APL
+		File Include: FRMCTBL.APL
+		File Include: QUERY.APL
+		File Include: CMBFIELD.APL
+		File Include: RADIOBTN.APL
+		File Include: SPNFIELD.APL
+		File Include: VTSPIN.APL
+		File Include: DATES.APL
+		File Include: PICK.APL
+		File Include: ACTIVATE.APL
+		File Include: RUNPROG.APL
+		File Include: BCODE.APL
+		File Include: VTWIN.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: None
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Blue
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+			Number: ###0
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for INVFIGD.APL
+				! Number: INVFIGDAplMsgOffSet = SAM_User + ?
+				! Message go up to AplMsgOffSet + 99
+				! Number: INVFIGDAplConstOffSet = ?
+				! Messages
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1347615921
+0000: 8600000038000000 0000000000000000 020000050000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E8040D0000 FF3F
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 3362116174
+0000: BB1000004B070000 0000000000000000 0200001C00FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 000B63006C73466F
+0040: 726D426100736586 00000005003C0000 010DF8000000FF4F 0D0000E002040000
+0060: 00FF3F1100A00000 040D0000FFFF801E 000000030400FE00 FF832200000001FB
+0080: 00FF0F01800D0001 000100000017633E 6C507220696E7442 616963005265706F
+00A0: 72741E00D9000100 B3010D00FFFF1801 800D000200200000 0C636C7062004765
+00C0: 6E6572616C1EA200 0001000067010D00 FFFF010180380000 0003C00000000963
+00E0: 6C8148656C708600 EC000500D9020400 FF7F04620000010D 00FFFFCD110001FD
+0100: 00FF371E0001F700 FF1F2B0000DC0001 00FF7F01CC800D00 047C000945307869
+0120: 741E00017A000001 F60D00FF1F018004 32000005000C0750 696345784070616E
+0140: 641E0000F4010000 EE0200FF3F018006 0400060000007812 636C54006F67676C
+0160: 6542757420746F6E 1E0000017A000002 F700FF1F01800403 00070000000C8764
+0180: 6647657F00F40100 00EC030400FF3F01 80060D0008000000 8E0C636247FFE800
+01A0: 010000D9010D00FF 7F010080B7000000 090000900016636C 47650F5461626CF8
+01C0: 6547650836020015 000000CF010DFE00 FF9B0D0001FB00FF 0F1A000000EE0100
+01E0: FF3F2700B8000001 00FFFFE034000000 02FE00FF93380000 02FB00FF0F3C0000
+0200: 00EE0200FF3F4000 B800000200FFFFE0 4400000002FE00FF 834800000002FB00
+0220: FF0F4C000000EE02 00FF3F5000380000 020001FA00000780 01000000FFC05400
+0240: 0000010DE8000100 009F8001FC000003 58000000010DFB00 FF0F65000000EE01
+0260: 00FF3F7200B80000 0100FFFFE07F0000 0001FE00FF838C00 000001FB00FF0F99
+0280: 000000EE0100FF3F A600B800000100FF FFE0B300000003FE 00FF430180220000
+02A0: 800A0000001D636C 0054626C4D616B65 5300656C65637465 6452006F774B6579
+02C0: 4172728061797400 000004BD0002A300 0100007F80F20100 006F0400EC010D00
+02E0: FFBF11B9000100FF FFE61E0002FE00FF 6301800D00000B00 00000B6863532071
+0300: 6C48616E6C65441E 0000010000CF010D FE00FF4301802F00 00800C0000001063
+0320: 6C004469616C6F67 47658F6C8600EC00 0500D9010D00FF7F 0D73000200FFFF8D
+0340: 1100040DFD00FF37 1E0003F700FFDF22 DC000100FF7F01C8 802B00000DDC0010
+0360: 468C6D4265546101 656C00000004003D 00010DFB00FF6F0D 00EE0100FFBF1AB9
+0380: 000100FFFFE62700 02FE00FF03018033 000000800E000000 11636C0654517565
+03A0: 72792C44696FA000 D800000600BB0300 FFFFE6040002FE00 FF9B080002FB00FF
+03C0: 6F0C00EC010D00FF 3F1900B800000100 FFFFE02600000001 FE00FF0301805D00
+03E0: 0000E00F00000011 3C51756174006146 69656C644401DA00 0C00BB0200FFFFE6
+0400: 040002FE00FF9B08 0002FB00FF6F0C00 EE0200FF3F1000B0 0000010D00FFFFE0
+0420: 1D00000001FE00FF 832A00000002A300 0100007F80F20100 000F2E000000EC01
+0440: 0D00FF3F3B00B800 000200FFFFE03F00 000001FE00FF9B4C 0002FB00FF6F5000
+0460: EE0100FF3F018066 5D001000FE120143 6F6D626F46697F0C 7B0002F700FFDF04
+0480: DC000200FF7F0873 000200FFFFCD0C00 02FD00FF37100001 F60D00FFDF1DDC00
+04A0: 0100FF7F2A730002 00F40100004F8001 00FE008D2E00010D FD00FF373B0002F7
+04C0: 00FFDF3FDC000100 FF7F4C73000200FF FFCD500001FD00FF C701805DC8001100
+04E0: 0012FF0743616368 656C44010C00EF02 FE00FF9B040002FB 00FF6F0800EE0200
+0500: FFBF0CB9000200FF FFC61000010DFE00 FF9B1D0001FB00FF 6F2A008E02000100
+0520: FE00C980010000BF 2EB100010D00FFFF E63B0002FE00FF9B 3F0001FB00FF6F4C
+0540: 00EE0200FFBF50B9 000100FFFF100180 1A00001200E00000 15636C074F706572
+0560: 61E0746F72466944 380000020000CF01 0DFE00FF9B0D0001 FB00FF8F01800401
+0580: 001300000013633E 6C79430042596573 4E6F466C1061671E 000001003D000204
+05A0: FB00FF8F01800D01 0014000000116303 5370696E53650061 736F6E5965617244
+05C0: 1E0000010000CF01 0DFE00FF43018034 0000841500001463 6C827053656C6563
+05E0: C046726F6D5461C8 656C0000049E0001 0DFD00FF370D0001 F700FFDF1ADC0001
+0600: 00FF7F2773000100 FFFF310180040016 400000000D636C53 12656563496E7488
+0620: 6F1E00000100DE00 03FD00FF8701802E 00C0001700000011 0D70746172740050
+0640: 726F6772616DBAB0 0000000700770200 FFFFCD040002FD00 FF37080002F700FF
+0660: DF0CD800010D00FF 7F1973000300FFFF CD1D0002FD00FF07 2100000001F700FF
+0680: 1F01803600000000 180000000FE4636C 53747FEEB0000000 090067010D00FFFF
+06A0: C90D000001FD00FF 371A0002F700FFDF 1EDC000200FF7F22 73000200FFFFCD26
+06C0: 0002FD00FF372A00 02F700FFDF2EDC00 0200FF7F32700000 000200FFFF310180
+06E0: 0400196300106354 006F6F6C54697057 69406E646F771E00 00F4010000EE0300
+0700: FF3F01806604001A 00E00C63665461DC 43611EE800010000 DD0300FF7F010880
+0720: 1500001B0000C000 0B6366436111506F 6F5A0000E8000300 0011071900000101
+0740: D000C60800009380 0100007F04630003 0400FFFF8D080001 0DFD00FF07
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field: clsdfGeneral
+			Spin Field:
+			Multiline Field:
+			Pushbutton: clspbOk
+			Radio Button: clsrbGeneral
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text: clsBackTextGeneral
+			Group Box: clsgbGeneral
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				If strArgArray[0] = ''
+					Set SqlDatabase = 'STOCKDEV'
+					Set SqlUser = 'JAN'
+					Set SqlPassword = 'JAN'
+				Else
+					Set SqlDatabase = strArgArray[1]
+					Set SqlUser = strArgArray[2]
+					Set SqlPassword = strArgArray[3]
+				!
+				Call CheckProgramExistance( 'Invoice Figures', TRUE )
+				!
+				Call SqlHandlesSetup(  )
+			On SAM_AppExit
+				Call SqlHandlesDisconnectClose(  )
+	Form Window: frmInvFigures
+		Class: clsFormGeneral
+		Property Template:
+		Class DLL Name:
+		Title: Invoice Figures
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Automatically Created at Runtime? Yes
+			Initial State: Class Default
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   0.0"
+				Top:    0.0"
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+				Pushbutton: pbHelp
+					Class Child Ref Key: 1
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbItemEnq
+					Class Child Ref Key: 5
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				! clspbGeneral: pbExecuteAll
+.winattr class Pushbutton:
+					Class Child Ref Key: 0
+					Class ChildKey: 0
+					Class: clspbGeneral
+					Property Template:
+					Class DLL Name:
+					Title: Execute
+					Window Location and Size
+						Left:   4.5"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: (none)
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name:
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					     Message Actions 
+						     On PAM_clsPB_CLICK
+							     Call SalSendMsg( pbExecCurrent, SAM_Click, 0, 0 )
+							     Call SalSendMsg( pbExecuteHistory, SAM_Click, 0, 0 )
+				Pushbutton: pbClear
+					Class Child Ref Key: 0
+					Class ChildKey: 0
+					Class: clspbTblClearRows
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   1.313"
+						Top:    0.0"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+						On PAM_cls_SETINSTANCEVARS
+							Set pbClear.hWndTable = tblInvFigures
+				Pushbutton: pbAdd
+					Class Child Ref Key: 0
+					Class ChildKey: 0
+					Class: clspbTblAddRows
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   1.913"
+						Top:    0.0"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+						On PAM_cls_SETINSTANCEVARS
+							Set pbAdd.hWndTable = tblInvFigures
+				Pushbutton: pbReport
+					Class Child Ref Key: 0
+					Class ChildKey: 0
+					Class: clspbTblTableReport
+					Property Template:
+					Class DLL Name:
+					Title: Report
+					Window Location and Size
+						Left:   4.763"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: (none)
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: C:\CENTURA\ICONS\LETTERS.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+					Message Actions
+						On PAM_cls_SETINSTANCEVARS
+							Set pbReport.hWndTable = tblInvFigures
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 6
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbExit
+					Class Child Ref Key: 2
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			Data Field: dfDatabase
+				Class Child Ref Key: 3
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfUser
+				Class Child Ref Key: 4
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text:
+				Resource Id: 1040
+				Class Child Ref Key: 8
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Window Location and Size
+					Left:   Class Default
+					Top:    0.021"
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 7
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+			!
+			Child Table: tblInvFigures
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsTableGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left:   0.05"
+						Top:    0.385"
+						Width:  9.738"
+						Width Editable? Class Default
+						Height: 3.438"
+						Height Editable? Class Default
+					Visible? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					View: Class Default
+					Allow Row Sizing? Class Default
+					Lines Per Row: Class Default
+				Memory Settings
+					Maximum Rows in Memory: Class Default
+					Discardable? No
+				Contents
+					Column: colMonth
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Month
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  0.813"
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Drop Down List
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? No
+								Vertical Scroll? Class Default
+								Auto Drop Down? Yes
+								Allow Text Editing? No
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+							Text:
+							Text: Jan
+							Text: Feb
+							Text: Mar
+							Text: Apr
+							Text: May
+							Text: Jun
+							Text: Jul
+							Text: Aug
+							Text: Sep
+							Text: Oct
+							Text: Nov
+							Text: Dec
+						Message Actions
+							On SAM_AnyEdit
+								If colMonth = 'Jan'
+									Call MonthFromAndToDates( 1, colFromDate, colToDate )
+								Else If colMonth = 'Feb'
+									Call MonthFromAndToDates( 2, colFromDate, colToDate )
+								Else If colMonth = 'Mar'
+									Call MonthFromAndToDates( 3, colFromDate, colToDate )
+								Else If colMonth = 'Apr'
+									Call MonthFromAndToDates( 4, colFromDate, colToDate )
+								Else If colMonth = 'May'
+									Call MonthFromAndToDates( 5, colFromDate, colToDate )
+								Else If colMonth = 'Jun'
+									Call MonthFromAndToDates( 6, colFromDate, colToDate )
+								Else If colMonth = 'Jul'
+									Call MonthFromAndToDates( 7, colFromDate, colToDate )
+								Else If colMonth = 'Aug'
+									Call MonthFromAndToDates( 8, colFromDate, colToDate )
+								Else If colMonth = 'Sep'
+									Call MonthFromAndToDates( 9, colFromDate, colToDate )
+								Else If colMonth = 'Oct'
+									Call MonthFromAndToDates( 10, colFromDate, colToDate )
+								Else If colMonth = 'Nov'
+									Call MonthFromAndToDates( 11, colFromDate, colToDate )
+								Else If colMonth = 'Dec'
+									Call MonthFromAndToDates( 12, colFromDate, colToDate )
+								Return VALIDATE_Ok
+					Column: colFromDate
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: From Date
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Date/Time
+						Justify: Center
+						Width:  1.213"
+						Width Editable? Class Default
+						Format: dd-MMM-yyyy
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+							On SAM_Validate
+								Set colFetchedActual = 'N'
+								Return VALIDATE_Ok
+					Column: colToDate
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: To Date
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Date/Time
+						Justify: Center
+						Width:  1.213"
+						Width Editable? Class Default
+						Format: dd-MMM-yyyy
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+							On SAM_Validate
+								Set colFetchedActual = 'N'
+								Return VALIDATE_Ok
+					Column: colCalcActual
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Calc.Act.
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  0.788"
+						Width Editable? Class Default
+						Format: Uppercase
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Check Box
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value: Y
+								Uncheck Value: N
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+							On SAM_AnyEdit
+								Set dfActualTotal = NUMBER_Null
+								Call TableLoop( hWndForm, hWndForm, PAM_clsTBL_ROWACTION, 1, 0, 0, 'Calculating Actual Total', TBL_cls_LowToHi )
+								Return TRUE
+					Column: colInvTotalActual
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Actual
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Number
+						Justify: Right
+						Width:  1.375"
+						Width Editable? Class Default
+						Format: ###000;###000
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colStockType
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Stock Type
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  1.575"
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Drop Down List
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Yes
+								Allow Text Editing? No
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+							Text: Bare
+							Text: Bare & Cont
+							Text: Cont
+						Message Actions
+							On SAM_Validate
+								Set colFetchedEstimate = 'N'
+								Set colFetchedCatagory = 'N'
+								Return VALIDATE_Ok
+					Column: colCalcCatagory
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Calc.Cat.
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  0.788"
+						Width Editable? Class Default
+						Format: Uppercase
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Check Box
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value: Y
+								Uncheck Value: N
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+							On SAM_AnyEdit
+								Set dfCatagoryTotal = NUMBER_Null
+								Call TableLoop( hWndForm, hWndForm, PAM_clsTBL_ROWACTION, 3, 0, 0, 'Calculating Catagory Total', TBL_cls_LowToHi )
+								Return TRUE
+					Column: colInvTotalCatagory
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Catagory
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Number
+						Justify: Right
+						Width:  1.375"
+						Width Editable? Class Default
+						Format: ###000;###000
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colCalcEstimate
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Calc.Est.
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  0.788"
+						Width Editable? Class Default
+						Format: Uppercase
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Check Box
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value: Y
+								Uncheck Value: N
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+							On SAM_AnyEdit
+								Set dfEstimatedTotal = NUMBER_Null
+								Call TableLoop( hWndForm, hWndForm, PAM_clsTBL_ROWACTION, 2, 0, 0, 'Calculating Estimate Total', TBL_cls_LowToHi )
+								Return TRUE
+					Column: colInvTotalEstimated
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Estimated
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Number
+						Justify: Right
+						Width:  1.375"
+						Width Editable? Class Default
+						Format: ###000;###000
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colFetchedActual
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Fetched Actual
+						Visible? No
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colFetchedCatagory
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Fetched Catagory
+						Visible? No
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colFetchedEstimate
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Fetched Estimate
+						Visible? No
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+				Functions
+					Function: MonthFromAndToDates
+						Description:
+						Returns
+						Parameters
+							Number: nMonth
+							Receive Date/Time: dtFromDate
+							Receive Date/Time: dtToDate
+						Static Variables
+						Local variables
+						Actions
+							Set dtFromDate = SalDateConstruct( SalDateYear( SalDateCurrent(  ) ), nMonth, 1, 0, 0, 0 )
+							Set dtToDate = DateMonthEnd( dtFromDate )
+					Function: CalcActualInvoiced
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Date/Time: dtFromDate
+							Date/Time: dtToDate
+							Receive Number: nInvoiced
+							Number: nActionType
+						Static Variables
+						Local variables
+							String: sSql
+							String: sBind
+							String: sInto
+							String: sName
+							Number: nInvTransHandleNo
+							Number: nCredTransHandleNo
+							Number: nInvHistTransHandleNo
+							Number: nCredHistTransHandleNo
+							Number: nInd
+							Boolean: bOk
+							!
+							Number: nGotInvTrans
+							Number: nGotCredTrans
+							Number: nGotInvHistTrans
+							Number: nGotCredHistTrans
+						Actions
+							Set nInvTransHandleNo = SqlHandlesGetReferenceNo( 'CalcActualInvoicedInvTrans' )
+							Set nCredTransHandleNo = SqlHandlesGetReferenceNo( 'CalcActualInvoicedCredTrans' )
+							Set nInvHistTransHandleNo = SqlHandlesGetReferenceNo( 'CalcActualInvoicedInvHistTrans' )
+							Set nCredHistTransHandleNo = SqlHandlesGetReferenceNo( 'CalcActualInvoicedCredHistTrans' )
+							Select Case nActionType
+								Case SH_cls_Execute
+									Set sSql = "SELECT 
+											  SUM( Transaction_Amount ) 
+											FROM 
+											  Transaction 
+											WHERE 
+											  Transaction_Type = 'INVOICE' AND 
+											  Transaction_Code = 'DR' AND 
+											  Transaction_Date BETWEEN :1 AND :2 "
+									Set sName = 'INVFIGINVTRANS'
+									Set sBind = ':dtFromDate, :dtToDate'
+									Set sInto = ':nGotInvTrans'
+									Call haSqlHandles[ nInvTransHandleNo ].Setup( sSql, sName, sBind, sInto )
+									Call SqlVarSetup( haSqlHandles[ nInvTransHandleNo ].hSqlHandle )
+									!
+									Set sSql = "SELECT 
+											  SUM( Transaction_Amount ) 
+											FROM 
+											  Transaction 
+											WHERE 
+											  Transaction_Type = 'CREDNOTE' AND 
+											  Transaction_Code = 'CR' AND 
+											  Transaction_Date BETWEEN :1 AND :2 "
+									Set sName = 'INVFIGCREDTRANS'
+									Set sBind = ':dtFromDate, :dtToDate'
+									Set sInto = ':nGotCredTrans'
+									Call haSqlHandles[ nCredTransHandleNo ].Setup( sSql, sName, sBind, sInto )
+									Call SqlVarSetup( haSqlHandles[ nCredTransHandleNo ].hSqlHandle )
+									!
+									Set sSql = "SELECT 
+											  SUM( Hist_Trans_Amount ) 
+											FROM 
+											  Trans_History 
+											WHERE 
+											  Hist_Trans_Type = 'INVOICE' AND 
+											  Hist_Trans_Code = 'DR' AND 
+											  Hist_Trans_Date BETWEEN :1 AND :2"
+									Set sName = 'INVFIGINVHTRNS'
+									Set sBind = ':dtFromDate, :dtToDate'
+									Set sInto = ':nGotInvHistTrans'
+									Call haSqlHandles[ nInvHistTransHandleNo ].Setup( sSql, sName, sBind, sInto )
+									Call SqlVarSetup( haSqlHandles[ nInvHistTransHandleNo ].hSqlHandle )
+									!
+									Set sSql = "SELECT 
+											  SUM( Hist_Trans_Amount ) 
+											FROM 
+											  Trans_History 
+											WHERE 
+											  Hist_Trans_Type = 'CREDNOTE' AND 
+											  Hist_Trans_Code = 'CR' AND 
+											  Hist_Trans_Date BETWEEN :1 AND :2 "
+									Set sName = 'INVFIGCREDHTRNS'
+									Set sBind = ':dtFromDate, :dtToDate'
+									Set sInto = ':nGotCredHistTrans'
+									Call haSqlHandles[ nCredHistTransHandleNo ].Setup( sSql, sName, sBind, sInto )
+									Call SqlVarSetup( haSqlHandles[ nCredHistTransHandleNo ].hSqlHandle )
+									!
+									Set nInvoiced = NUMBER_Null
+									Set nGotInvTrans = NUMBER_Null
+									Set nGotCredTrans = NUMBER_Null
+									Set nGotInvHistTrans = NUMBER_Null
+									Set nGotCredHistTrans = NUMBER_Null
+									!
+									Set bOk = TRUE
+									If bOk
+										If haSqlHandles[ nInvTransHandleNo ].Execute( )
+											If haSqlHandles[ nInvTransHandleNo ].FetchNext( nInd )
+										Else
+											Set bOk = FALSE
+									If bOk
+										If haSqlHandles[ nCredTransHandleNo ].Execute( )
+											If haSqlHandles[ nCredTransHandleNo ].FetchNext( nInd )
+										Else
+											Set bOk = FALSE
+									If bOk
+										If haSqlHandles[ nInvHistTransHandleNo ].Execute( )
+											If haSqlHandles[ nInvHistTransHandleNo ].FetchNext( nInd )
+										Else
+											Set bOk = FALSE
+									If bOk
+										If haSqlHandles[ nCredHistTransHandleNo ].Execute( )
+											If haSqlHandles[ nCredHistTransHandleNo ].FetchNext( nInd )
+										Else
+											Set bOk = FALSE
+									!
+									If bOk
+										Set nInvoiced = nGotInvTrans + nGotInvHistTrans - nGotCredTrans - nGotCredHistTrans
+										Return TRUE
+									Else
+										Return FALSE
+								Case SH_cls_Disconnect
+									Set bOk = TRUE
+									If NOT haSqlHandles[ nInvTransHandleNo ].Disconnect( )
+										Set bOk = FALSE
+									If NOT haSqlHandles[ nCredTransHandleNo ].Disconnect( )
+										Set bOk = FALSE
+									If NOT haSqlHandles[ nInvHistTransHandleNo ].Disconnect( )
+										Set bOk = FALSE
+									If NOT haSqlHandles[ nCredHistTransHandleNo ].Disconnect( )
+										Set bOk = FALSE
+									Return bOk
+					Function: CalcEstimateInvoiced
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Date/Time: dtFromDate
+							Date/Time: dtToDate
+							String: sStockTypeDesc
+							Receive Number: nInvoiced
+							Number: nActionType
+						Static Variables
+						Local variables
+							String: sSql
+							String: sBind
+							String: sInto
+							String: sName
+							Number: nAllHandleNo
+							Number: nStockTypeHandleNo
+							Number: nInd
+							Boolean: bOk
+							!
+							String: sStockType
+							Number: nGotInvoiced
+						Actions
+							Set nAllHandleNo = SqlHandlesGetReferenceNo( 'CalcEstimateInvoicedAll' )
+							Set nStockTypeHandleNo = SqlHandlesGetReferenceNo( 'CalcEstimateInvoicedStockType' )
+							Select Case nActionType
+								Case SH_cls_Execute
+									Set nInvoiced = NUMBER_Null
+									Set nGotInvoiced = NUMBER_Null
+									!
+									If sStockTypeDesc = 'Bare & Cont'
+										Set sSql = "SELECT 
+												  SUM( Customer_Order.Conf_Amt * Stock_Item.Base_Price ) 
+												FROM 
+												  Customer_Order, 
+												  Stock_Item, 
+												  Load 
+												WHERE 
+												  Customer_Order.Load_Id = Load.Load_Id AND 
+												  ( NOT Customer_Order.Invoiced_Flag = 'Y' OR 
+												    Customer_Order.Invoiced_Flag IS NULL ) AND 
+												  Customer_Order.Stock_Item_No = Stock_Item.Item_No AND 
+												  Load.Shipping_Date BETWEEN :1 AND :2  "
+										Set sName = 'INVFIGESTINVSTP'
+										Set sBind = ':dtFromDate, :dtToDate'
+										Set sInto = ':nGotInvoiced'
+										Call haSqlHandles[ nAllHandleNo ].Setup( sSql, sName, sBind, sInto )
+										Call SqlVarSetup( haSqlHandles[ nAllHandleNo ].hSqlHandle )
+										!
+										If haSqlHandles[ nAllHandleNo ].Execute( )
+											If haSqlHandles[ nAllHandleNo ].FetchNext( nInd )
+												Set nInvoiced = nGotInvoiced
+											Return TRUE
+										Else
+											Return FALSE
+									Else
+										Set sSql = "SELECT 
+												  SUM( Customer_Order.Conf_Amt * Stock_Item.Base_Price ) 
+												FROM 
+												  Customer_Order, 
+												  Stock_Item, 
+												  Load 
+												WHERE 
+												  Customer_Order.Load_Id = Load.Load_Id AND 
+												  ( NOT Customer_Order.Invoiced_Flag = 'Y' OR 
+												    Customer_Order.Invoiced_Flag IS NULL ) AND 
+												  Customer_Order.Stock_Item_No = Stock_Item.Item_No AND 
+												  Load.Shipping_Date BETWEEN :1 AND :2 AND 
+												  Stock_Item.Stock_Type = :3 "
+										Set sName = 'INVFIGSTINVSTP'
+										Set sBind = ':dtFromDate, :dtToDate, :sStockType'
+										Set sInto = ':nGotInvoiced'
+										Call haSqlHandles[ nStockTypeHandleNo ].Setup( sSql, sName, sBind, sInto )
+										Call SqlVarSetup( haSqlHandles[ nStockTypeHandleNo ].hSqlHandle )
+										!
+										If sStockTypeDesc = 'Bare'
+											Set sStockType = 'B'
+										Else
+											Set sStockType = 'C'
+										!
+										If haSqlHandles[ nStockTypeHandleNo ].Execute( )
+											If haSqlHandles[ nStockTypeHandleNo ].FetchNext( nInd )
+												Set nInvoiced = nGotInvoiced
+											Return TRUE
+										Else
+											Return FALSE
+								Case SH_cls_Disconnect
+									Set bOk = TRUE
+									If NOT haSqlHandles[ nAllHandleNo ].Disconnect( )
+										Set bOk = FALSE
+									If NOT haSqlHandles[ nStockTypeHandleNo ].Disconnect( )
+										Set bOk = FALSE
+									Return bOk
+					Function: CalcCatagoryInvoiced
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Date/Time: dtFromDate
+							Date/Time: dtToDate
+							String: sStockTypeDesc
+							Receive Number: nInvoiced
+							Number: nActionType
+						Static Variables
+						Local variables
+							String: sSql
+							String: sBind
+							String: sInto
+							String: sName
+							Number: nAllHandleNo
+							Number: nStockTypeHandleNo
+							Number: nInd
+							Boolean: bOk
+							!
+							String: sStockType
+							Number: nGotInvoiced
+						Actions
+							Set nAllHandleNo = SqlHandlesGetReferenceNo( 'CalcCatagoryInvoicedAll' )
+							Set nStockTypeHandleNo = SqlHandlesGetReferenceNo( 'CalcCatagoryInvoicedStockType' )
+							Select Case nActionType
+								Case SH_cls_Execute
+									Set nInvoiced = NUMBER_Null
+									Set nGotInvoiced = NUMBER_Null
+									!
+									If sStockTypeDesc = 'Bare & Cont'
+										Set sSql = " SELECT 
+												  SUM( Customer_Order.Conf_Amt * @IF(@ISNA( Customer_Order.Invoice_Tree_Price ), Stock_Item.Base_Price, Customer_Order.Invoice_Tree_Price ) ) 
+												FROM 
+												  Customer_Order, 
+												  Stock_Item 
+												WHERE 
+												  Customer_Order.Invoiced_Flag = 'Y' AND 
+												  Customer_Order.Stock_Item_No = Stock_Item.Item_No AND 
+												  Customer_Order.Invoiced_Date BETWEEN :1 AND :2
+												UNION ALL 
+												SELECT 
+												  SUM( Cust_Order_History.Conf_Amt * @IF(@ISNA( Cust_Order_History.Invoice_Tree_Price ), Stock_Item.Base_Price, Cust_Order_History.Invoice_Tree_Price ) ) 
+												FROM 
+												  Cust_Order_History, 
+												  Stock_Item 
+												WHERE 
+												  Cust_Order_History.Invoiced_Flag = 'Y' AND 
+												  Cust_Order_History.Stock_Item_No = Stock_Item.Item_No AND 
+												  Cust_Order_History.Invoiced_Date BETWEEN :1 AND :2 "
+										Set sName = 'INVFIGCATINVSTP'
+										Set sBind = ':dtFromDate, :dtToDate'
+										Set sInto = ':nGotInvoiced'
+										Call haSqlHandles[ nAllHandleNo ].Setup( sSql, sName, sBind, sInto )
+										Call SqlVarSetup( haSqlHandles[ nAllHandleNo ].hSqlHandle )
+										!
+										If haSqlHandles[ nAllHandleNo ].Execute( )
+											While haSqlHandles[ nAllHandleNo ].FetchNext( nInd )
+												Set nInvoiced = nInvoiced + nGotInvoiced
+											Return TRUE
+										Else
+											Return FALSE
+									Else
+										Set sSql = " SELECT 
+												  SUM( Customer_Order.Conf_Amt * @IF(@ISNA( Customer_Order.Invoice_Tree_Price ), Stock_Item.Base_Price, Customer_Order.Invoice_Tree_Price ) ) 
+												FROM 
+												  Customer_Order, 
+												  Stock_Item 
+												WHERE 
+												  Customer_Order.Invoiced_Flag = 'Y' AND 
+												  Customer_Order.Stock_Item_No = Stock_Item.Item_No AND 
+												  Customer_Order.Invoiced_Date BETWEEN :1 AND :2 AND 
+												  Stock_Item.Stock_Type = :3 
+												UNION ALL 
+												SELECT 
+												  SUM( Cust_Order_History.Conf_Amt * @IF(@ISNA( Cust_Order_History.Invoice_Tree_Price ), Stock_Item.Base_Price, Cust_Order_History.Invoice_Tree_Price ) ) 
+												FROM 
+												  Cust_Order_History, 
+												  Stock_Item 
+												WHERE 
+												  Cust_Order_History.Invoiced_Flag = 'Y' AND 
+												  Cust_Order_History.Stock_Item_No = Stock_Item.Item_No AND 
+												  Cust_Order_History.Invoiced_Date BETWEEN :1 AND :2 AND 
+												  Stock_Item.Stock_Type = :3 "
+										Set sName = 'INVFIGCATSTISTP'
+										Set sBind = ':dtFromDate, :dtToDate, :sStockType'
+										Set sInto = ':nGotInvoiced'
+										Call haSqlHandles[ nStockTypeHandleNo ].Setup( sSql, sName, sBind, sInto )
+										Call SqlVarSetup( haSqlHandles[ nStockTypeHandleNo ].hSqlHandle )
+										!
+										If sStockTypeDesc = 'Bare'
+											Set sStockType = 'B'
+										Else
+											Set sStockType = 'C'
+										!
+										If haSqlHandles[ nStockTypeHandleNo ].Execute( )
+											While haSqlHandles[ nStockTypeHandleNo ].FetchNext( nInd )
+												Set nInvoiced = nInvoiced + nGotInvoiced
+											Return TRUE
+										Else
+											Return FALSE
+								Case SH_cls_Disconnect
+									Set bOk = TRUE
+									If NOT haSqlHandles[ nAllHandleNo ].Disconnect( )
+										Set bOk = FALSE
+									If NOT haSqlHandles[ nStockTypeHandleNo ].Disconnect( )
+										Set bOk = FALSE
+									Return bOk
+				Window Variables
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set bAddAllowed = TRUE
+						Set bAddRowBellow = TRUE
+						!
+						Set bReportAllowed = TRUE
+						Set sReportFileName = 'InvFig.qrp'
+						Set sRepBind = ':frmInvFigures.tblInvFigures.colMonth,
+								:frmInvFigures.tblInvFigures.colFromDate,
+								:frmInvFigures.tblInvFigures.colToDate,
+								:frmInvFigures.tblInvFigures.colInvTotalActual,
+								:frmInvFigures.tblInvFigures.colStockType,
+								:frmInvFigures.tblInvFigures.colInvTotalCatagory,
+								:frmInvFigures.tblInvFigures.colInvTotalEstimated'
+						Set sRepInto = 'sMonth,
+								dtFromDate,
+								dtToDate,
+								nInvTotalActual,
+								sStockType,
+								nInvTotalCatagory, 
+								nInvTotalEstimated'
+					On SAM_CreateComplete
+						Call SalSendMsg( hWndForm, PAM_clsTBL_ADDROW, 0, 0 )
+						Set colMonth = 'Jan'
+						Call MonthFromAndToDates( 1, colFromDate, colToDate )
+						!
+						Call SalSendMsg( hWndForm, PAM_clsTBL_ADDROW, 0, 0 )
+						Set colMonth = 'Feb'
+						Call MonthFromAndToDates( 2, colFromDate, colToDate )
+						!
+						Call SalSendMsg( hWndForm, PAM_clsTBL_ADDROW, 0, 0 )
+						Set colMonth = 'Mar'
+						Call MonthFromAndToDates( 3, colFromDate, colToDate )
+						!
+						Call SalSendMsg( hWndForm, PAM_clsTBL_ADDROW, 0, 0 )
+						Set colMonth = 'Apr'
+						Call MonthFromAndToDates( 4, colFromDate, colToDate )
+						!
+						Call SalSendMsg( hWndForm, PAM_clsTBL_ADDROW, 0, 0 )
+						Set colMonth = 'May'
+						Call MonthFromAndToDates( 5, colFromDate, colToDate )
+						!
+						Call SalSendMsg( hWndForm, PAM_clsTBL_ADDROW, 0, 0 )
+						Set colMonth = 'Jun'
+						Call MonthFromAndToDates( 6, colFromDate, colToDate )
+						!
+						Call SalSendMsg( hWndForm, PAM_clsTBL_ADDROW, 0, 0 )
+						Set colMonth = 'Jul'
+						Call MonthFromAndToDates( 7, colFromDate, colToDate )
+						!
+						Call SalSendMsg( hWndForm, PAM_clsTBL_ADDROW, 0, 0 )
+						Set colMonth = 'Aug'
+						Call MonthFromAndToDates( 8, colFromDate, colToDate )
+						!
+						Call SalSendMsg( hWndForm, PAM_clsTBL_ADDROW, 0, 0 )
+						Set colMonth = 'Sep'
+						Call MonthFromAndToDates( 9, colFromDate, colToDate )
+						!
+						Call SalSendMsg( hWndForm, PAM_clsTBL_ADDROW, 0, 0 )
+						Set colMonth = 'Oct'
+						Call MonthFromAndToDates( 10, colFromDate, colToDate )
+						!
+						Call SalSendMsg( hWndForm, PAM_clsTBL_ADDROW, 0, 0 )
+						Set colMonth = 'Nov'
+						Call MonthFromAndToDates( 11, colFromDate, colToDate )
+						!
+						Call SalSendMsg( hWndForm, PAM_clsTBL_ADDROW, 0, 0 )
+						Set colMonth = 'Dec'
+						Call MonthFromAndToDates( 12, colFromDate, colToDate )
+						!
+						Return TRUE
+					On PAM_clsTBL_ADDROW
+						Call SalSendClassMessage( PAM_clsTBL_ADDROW, wParam, lParam )
+						Call SalTblSetRowFlags( hWndForm, SalTblQueryContext( hWndForm ), ROW_HideMarks, TRUE )
+						Return TRUE
+					On PAM_clsTBL_ROWNEWINIT
+						Set colStockType = 'Bare & Cont'
+						Set colFetchedActual = 'N'
+						Set colFetchedEstimate = 'N'
+						Set colFetchedCatagory = 'N'
+						Return TRUE
+					On PAM_clsTBL_ROWACTION
+						If wParam = 1
+							If colCalcActual = 'Y'
+								If colFetchedActual = 'N'
+									If CalcActualInvoiced( colFromDate, colToDate, colInvTotalActual, SH_cls_Execute )
+										Set colFetchedActual = 'Y'
+									Else
+										Call SalClearField( colInvTotalActual )
+								Set dfActualTotal = dfActualTotal + colInvTotalActual
+						Else If wParam = 2
+							If colCalcEstimate = 'Y'
+								If colFetchedEstimate = 'N'
+									If CalcEstimateInvoiced( colFromDate, colToDate, colStockType, colInvTotalEstimated, SH_cls_Execute )
+										Set colFetchedEstimate = 'Y'
+									Else
+										Call SalClearField( colInvTotalEstimated )
+								Set dfEstimatedTotal = dfEstimatedTotal + colInvTotalEstimated
+						Else If wParam = 3
+							If colCalcCatagory = 'Y'
+								If colFetchedCatagory = 'N'
+									If CalcCatagoryInvoiced( colFromDate, colToDate, colStockType, colInvTotalCatagory, SH_cls_Execute )
+										Set colFetchedCatagory = 'Y'
+									Else
+										Call SalClearField( colInvTotalCatagory )
+								Set dfCatagoryTotal = dfCatagoryTotal + colInvTotalCatagory
+						Else
+							Return FALSE
+						Return TRUE
+					On SAM_Destroy
+						Call CalcActualInvoiced( colFromDate, colToDate, colInvTotalActual, SH_cls_Disconnect )
+						Call CalcEstimateInvoiced( colFromDate, colToDate, colStockType, colInvTotalEstimated, SH_cls_Disconnect )
+						Call CalcCatagoryInvoiced( colFromDate, colToDate, colStockType, colInvTotalCatagory, SH_cls_Disconnect )
+						Return SalSendClassMessage( SAM_Destroy, wParam, lParam )
+			Background Text: Actual Total
+				Resource Id: 16124
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   2.575"
+					Top:    3.875"
+					Width:  1.025"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Blue
+				Background Color: Class Default
+			Data Field: dfActualTotal
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Number
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   3.65"
+						Top:    3.833"
+						Width:  2.088"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Right
+					Format: ###000;###000
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Blue
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text: Catagory Total
+				Resource Id: 18445
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   6.038"
+					Top:    3.875"
+					Width:  1.3"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Blue
+				Background Color: Class Default
+			Data Field: dfCatagoryTotal
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Number
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   7.388"
+						Top:    3.833"
+						Width:  2.088"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Right
+					Format: ###000;###000
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Blue
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text: Estimated Total
+				Resource Id: 17929
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   6.038"
+					Top:    4.115"
+					Width:  1.3"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Blue
+				Background Color: Class Default
+			Data Field: dfEstimatedTotal
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Number
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   7.388"
+						Top:    4.073"
+						Width:  2.088"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Right
+					Format: ###000;###000
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Blue
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			!
+			Background Text: Calculation Legend :-
+				Resource Id: 17930
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.075"
+					Top:    4.115"
+					Width:  1.75"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text: Actual = The sum of all invoices for the selected period minus the sum of all credit notes for the same period.
+				Resource Id: 17927
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.263"
+					Top:    4.333"
+					Width:  6.613"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Arial
+				Font Size: 8
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text: Catagory = The sum of all invoiced orders for the selected period fitting the selected stock type criteria.
+				Resource Id: 18446
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.263"
+					Top:    4.542"
+					Width:  6.313"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Arial
+				Font Size: 8
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text: Estimated = The sum of all orders confirmed amounts multiplied by base price only, which are due for shipping in the selected period.
+				Resource Id: 17928
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.263"
+					Top:    4.729"
+					Width:  8.075"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Arial
+				Font Size: 8
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+		Functions
+		Window Parameters
+		Window Variables
+			! hcSqlHandle: fcCurrentHdl
+.winattr class :
+				Class: hcSqlHandle
+.end
+			! hcSqlHandle: fcHistoryHdl
+.winattr class :
+				Class: hcSqlHandle
+.end
+			! String: sSql
+			! Number: nInd
+			!
+			! Number: nYear
+		Message Actions

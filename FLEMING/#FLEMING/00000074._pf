@@ -1,0 +1,1723 @@
+Application Description: SQLWindows version 5.0 
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D70000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF420000 0042000000D20200 007B010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000C819DD0A0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   -0.05"
+			Top:    0.01"
+			Width:  8.025"
+			Height: 5.042"
+		Options Box Location
+.data VIEWINFO
+0000: 1018B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.625"
+			Top:    2.844"
+			Width:  4.175"
+			Height: 3.031"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   6.875"
+			Top:    1.927"
+		Fully Qualified External References? Yes
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: General.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Light Green
+			Dialog Box
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Light Green
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Gray
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Dark Green
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Green
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Gray
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Dark Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Number: 0000000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+			Date/Time: dd-MMM-yyyy hh:mm:ss AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for SQLHANDL.APL
+				Number: SQLAplMsgOffSet = SAM_User + 800
+				! Message go up to AplMsgOffSet + 99
+				Number: SQLAplConstOffSet = 400
+				! Messages
+				! Constants
+				Number: SH_cls_SQLTIMEOUT = 30
+				! The next four constants should always be in the series 2,4,8,16,32,64,128........
+				Number: SH_cls_Execute = 2
+				Number: SH_cls_Commit = 4
+				Number: SH_cls_Rollback = 8
+				Number: SH_cls_Disconnect = 16
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1370342177
+0000: 5200000024000000 0000000000000000 0200000300000008 000000E0010D0000
+0020: 00FF3F1500B80000 0100FFFFE0220000 0001FE00FF03
+.enddata
+			: haSqlHandles[*]
+				Class: hcSqlHandle
+		Named Menus
+		Internal Functions
+			Function: SqlHandlesSetup
+				Description:
+				Returns
+				Parameters
+				Static Variables
+				Local variables
+				Actions
+					Set haSqlHandles[ 0 ].sHandleIdKey = ''
+			Function: SqlHandlesGetReferenceNo
+				Description:
+				Returns
+					Number:
+				Parameters
+					String: sKey
+				Static Variables
+				Local variables
+					Number: nPos
+					Boolean: bFound
+					Number: nAllocPos
+				Actions
+					Call OurWaitCursor( TRUE )
+					Set sKey = sKey || GetFullItemName( SalParentWindow( hWndForm ), hWndForm, hWndItem )
+					Set nAllocPos = 0
+					Set bFound = FALSE
+					Set nPos = 0
+					While haSqlHandles[ nPos ].sHandleIdKey != '' AND NOT bFound
+						If haSqlHandles[ nPos ].sHandleIdKey = sKey
+							Set bFound = TRUE
+						Else
+							Set nPos = nPos + 1
+					If bFound
+						Set nAllocPos = nPos
+					Else
+						!
+						Set nPos = 0
+						While haSqlHandles[ nPos ].sHandleIdKey != '' AND NOT bFound
+							If haSqlHandles[ nPos ].sHandleIdKey = ' ' AND haSqlHandles[ nPos ].bHandleConnected = TRUE
+								Set bFound = TRUE
+							Else
+								Set nPos = nPos + 1
+						!
+						If bFound
+							Call haSqlHandles[ nPos ].ReuseInit( )
+							Set haSqlHandles[ nPos ].sHandleIdKey = sKey
+							Set nAllocPos = nPos
+						Else
+							!
+							Set nPos = 0
+							While haSqlHandles[ nPos ].sHandleIdKey != '' AND NOT bFound
+								If haSqlHandles[ nPos ].sHandleIdKey = ' '
+									Set bFound = TRUE
+								Else
+									Set nPos = nPos + 1
+							!
+							If bFound
+								Call haSqlHandles[ nPos ].ReuseInit( )
+								Set haSqlHandles[ nPos ].sHandleIdKey = sKey
+								Set nAllocPos = nPos
+							Else
+								Call haSqlHandles[ nPos ].Init( )
+								Set haSqlHandles[ nPos ].sHandleIdKey = sKey
+								Set nPos = nPos + 1
+								Call haSqlHandles[ nPos ].Init( )
+								Set haSqlHandles[ nPos ].sHandleIdKey = ''
+								Set nAllocPos = nPos - 1
+					Call OurWaitCursor( FALSE )
+					Return nAllocPos
+			Function: SqlHandlesDisconnectClose
+				Description:
+				Returns
+				Parameters
+				Static Variables
+				Local variables
+					Number: nPos
+				Actions
+					Call OurWaitCursor( TRUE )
+					Set nPos = 0
+					While haSqlHandles[ nPos ].sHandleIdKey != ''
+						Call haSqlHandles[ nPos ].DisconnectClose( )
+						Set nPos = nPos + 1
+					Call OurWaitCursor( FALSE )
+			Function: GetSqlHandlesStats
+				Description:
+				Returns
+					Number:
+				Parameters
+					Receive Number: nTotalUsedConnected
+					Receive Number: nTotalReuseConnected
+					Receive Number: nTotalHandles
+					Receive Number: nTotalReuseHandles
+				Static Variables
+				Local variables
+					Number: nPos
+				Actions
+					Call OurWaitCursor( TRUE )
+					Set nTotalUsedConnected = 0
+					Set nTotalReuseConnected = 0
+					Set nTotalHandles = 0
+					Set nTotalReuseHandles = 0
+					!
+					Set nPos = 0
+					While haSqlHandles[ nPos ].sHandleIdKey != ''
+						If haSqlHandles[ nPos ].sHandleIdKey = ' '
+							Set nTotalHandles = nTotalHandles + 1
+							Set nTotalReuseHandles = nTotalReuseHandles + 1
+							If haSqlHandles[ nPos ].bHandleConnected = TRUE
+								Set nTotalReuseConnected = nTotalReuseConnected + 1
+						Else If haSqlHandles[ nPos ].sHandleIdKey != ''
+							Set nTotalHandles = nTotalHandles + 1
+							If haSqlHandles[ nPos ].bHandleConnected = TRUE
+								Set nTotalUsedConnected = nTotalUsedConnected + 1
+						!
+						Set nPos = nPos + 1
+					Call OurWaitCursor( FALSE )
+					Return nPos
+			!
+			! uncomment bellow function when ConvertSql can handle UPDATES, INSERST AND DELETES
+			! Function: GetTempCommandName
+				    Description: 
+				    Returns 
+					    String: 
+				    Parameters 
+				    Static Variables 
+					    Number: nLastValue
+				    Local variables 
+					    String: sNewName
+					    Number: nPos
+					    Number: nTotalValue
+					    Number: nLength
+				    Actions 
+					    Set sNewName = SalNumberToStrX( SalDateDay( SalDateCurrent( ) ), 0 ) || 
+							SalNumberToStrX( SalDateMonth( SalDateCurrent( ) ), 0 ) || 
+							SalNumberToStrX( SalDateYear( SalDateCurrent( ) ), 0 ) || 
+							SalNumberToStrX( SalDateHour( SalDateCurrent( ) ), 0 )  || 
+							SalNumberToStrX( SalDateMinute( SalDateCurrent( ) ), 0 ) || 
+							SalNumberToStrX( SalDateSecond( SalDateCurrent( ) ), 0 ) 
+					    Set nPos = 0
+					    Set nTotalValue = SalNumberRandom(  )
+					    Set nLength = SalStrLength( sNewName )
+					    While nPos < nLength
+						    Set nTotalValue = nTotalValue + SalStrToNumber( SalStrMidX( sNewName, nPos, 1 ) )
+						    Set nPos = nPos + 1
+					    While nTotalValue = nLastValue 
+						    Set nTotalValue = nTotalValue + SalNumberRandom(  )
+					    Set nLastValue = nTotalValue
+					    Return 'T' || SalNumberToStrX( nTotalValue, 0 )
+			! !
+		Class Definitions
+.data RESOURCE 0 0 1 3014280054
+0000: 9100000070000000 0000000000000000 0200000200FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F0D003C00 000B68006353716C
+0040: 48616E64006C651E 00000001003C0000 010DFA0000FF0F01 8004001000000100
+0060: 001063006C73546F 6F6C546900705769 6E646F771EB20000 01004703040000FF
+0080: FF01
+.enddata
+			Functional Class: hcSqlHandle
+				Description: Use : STORED COMMANDS METHOD
+						  1 - hcSqlHandle.Setup( 'SELECT..', 'GETTOTAVAIL', ':nItemNo',':nGotTotAvail' ) 
+						  2 - OPTIONAL hcSqlHandle.SetParam( timeout 30, resultset TRUE, preserve TRUE, fetchthroughFALSE )
+						  3 - hcSqlHandle.SqlVarSetup( hcSqlHandle.hSqlHandle )
+						  4 - hcSqlHandle.Execute( )
+						  5 - hcSqlHandle.Commit OR Rollback OR FetchNext etc.
+						  6 - hcSqlHandle.Disconnect( ) 
+						OR SQL STATEMENT METHOD
+						  1 - hcSqlHandle.PrepareSetup( 'SELECT..' )
+						  2 - OPTIONAL hcSqlHandle.SetParam( timeout 30, resultset TRUE, preserve TRUE, fetchthroughFALSE )
+						  3 - hcSqlHandle.SqlVarSetup( hcSqlHandle.hSqlHandle )
+						  4 - hcSqlhandle.PrepareAndExecute( )
+						  5 - hcSqlHandle.Commit OR Rollback OR FetchNext etc.
+						  6 - hcSqlHandle.Disconnect( ) 
+				Derived From
+				Class Variables
+				Instance Variables
+					! Bellow instance variables are PUBLIC
+					String: sIsolationLevel
+					String: sSqlStatement
+					Number: nCursorLockTimeout
+					Boolean: bCursorResultSetMode
+					Boolean: bCursorPreserve
+					Boolean: bCursorFetchThrough
+					! Bellow instance variable should ONLY be treated as public for the SqlVarSetup( )
+					Sql Handle: hSqlHandle
+					! Bellow instance variables should be treated as private
+					String: sHandleIdKey
+					Boolean: bHandleConnected
+					Boolean: bHandleRetrieved
+					Boolean: bHandleConverted
+					String: sIdName
+					String: sSqlBind
+					String: sSqlInto
+					!
+					Boolean: bDefaultCursorParamSet
+					Boolean: bIsolationLevelSet
+				Functions
+					! Bellow functions should be treated as public
+					Function: Setup
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: sStatement
+							String: sName
+							String: sBind
+							String: sInto
+						Static Variables
+						Local variables
+							Boolean: bOk
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bOk = TRUE
+							Set sSqlStatement = sStatement
+							Set sIdName = sName
+							Set sSqlBind = sBind
+							Set sSqlInto = sInto
+							If Connect(  )
+								If NOT Retrieve(  )
+									Set bOk = FALSE
+							Else
+								Set bOk = FALSE
+							Call OurWaitCursor( FALSE )
+							Return bOk
+					Function: PrepareSetup
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: sStatement
+						Static Variables
+						Local variables
+							Boolean: bOk
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bOk = TRUE
+							If Connect(  )
+								Set sSqlStatement = sStatement
+								If NOT Prepare( )
+									Set bOk = FALSE
+								! bellow 2 line replace with 2 above line when ConvertSql can handle UPDATEs INSERTS and DELETES 
+										and traps case of changing SqlStatement on repedative calls. ( needs to drop current command and create a new one )
+								! If NOT bHandleConverted
+									    Call ConvertSqlSELECTToCommand( sStatement, sSqlStatement, sIdName, sSqlBind, sSqlInto )
+									    Set bHandleConverted = TRUE
+								! If NOT Retrieve(  )
+									    Set bOk = FALSE
+							Else
+								Set bOk = FALSE
+							Call OurWaitCursor( FALSE )
+							Return bOk
+					Function: SetParam
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: nTimeout
+							Boolean: bResultSetMode
+							Boolean: bPreserve
+							Boolean: bFetchThrough
+							String: sNewIsolationLevel
+						Static Variables
+						Local variables
+							Boolean: bOk
+						Actions
+							Set nCursorLockTimeout = nTimeout
+							Set bCursorResultSetMode = bResultSetMode
+							Set bCursorPreserve = bPreserve
+							Set bCursorFetchThrough = bFetchThrough
+							Set sIsolationLevel = sNewIsolationLevel
+							!
+							Set bOk = TRUE
+							If NOT bIsolationLevelSet = TRUE
+								If SetIsolationLevel( sIsolationLevel )
+									Set bIsolationLevelSet = TRUE
+								Else
+									Set bOk = FALSE
+							If NOT SetTimeOut( nCursorLockTimeout )
+								Set bOk = FALSE
+							! If NOT bCursorResultSetMode = TRUE
+								    If NOT SetResultSetMode( bCursorResultSetMode )
+									    Set bOk = FALSE
+							!
+							If NOT SetResultSetMode( bCursorResultSetMode )
+								Set bOk = FALSE
+							!
+							If NOT SetContextPreserve( bCursorPreserve )
+								Set bOk = FALSE
+							If NOT SetFetchThrough( bCursorFetchThrough )
+								Set bOk = FALSE
+							Return bOk
+					Function: SetTimeOut
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: nTimeout
+						Static Variables
+						Local variables
+						Actions
+							Set nCursorLockTimeout = nTimeout
+							If Connect( )
+								Return SqlSetLockTimeout( hSqlHandle, nCursorLockTimeout )
+							Else
+								Return FALSE
+					Function: SetResultSetMode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Boolean: bResultSetMode
+						Static Variables
+						Local variables
+						Actions
+							Set bCursorResultSetMode = bResultSetMode
+							If Connect( )
+								Return SqlSetResultSet( hSqlHandle, bCursorResultSetMode )
+							Else
+								Return FALSE
+					Function: SetContextPreserve
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Boolean: bPreserve
+						Static Variables
+						Local variables
+						Actions
+							Set bCursorPreserve = bPreserve
+							If Connect( )
+								Return SqlSetParameter( hSqlHandle, DBP_PRESERVE, bCursorPreserve, ''  )
+							Else
+								Return FALSE
+					Function: SetFetchThrough
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Boolean: bFetchThrough
+						Static Variables
+						Local variables
+						Actions
+							Set bCursorFetchThrough = bFetchThrough
+							If Connect( )
+								Return SqlSetParameter( hSqlHandle, DBP_FETCHTHROUGH, bCursorFetchThrough, ''  )
+							Else
+								Return FALSE
+					Function: SetIsolationLevel
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: sNewIsolationLevel
+						Static Variables
+						Local variables
+						Actions
+							Set sIsolationLevel = sNewIsolationLevel
+							If Connect( )
+								Return SqlSetIsolationLevel( hSqlHandle, sIsolationLevel )
+							Else
+								Return FALSE
+					Function: Execute
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: bOk
+							Boolean: bFirst
+							Boolean: bErrorTrapped
+							Number: nHandleError
+							Number: nPos
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bFirst = TRUE
+							Set bErrorTrapped = FALSE
+							Set bOk = TRUE
+							Loop Execute
+								If Connect(  )
+									If Retrieve(  )
+										When SqlError
+											Call SqlExtractArgs( wParam, lParam, hSqlHandle, nHandleError, nPos )
+											! timeout, deadlock, no compiled command
+											If nHandleError = -1805 OR nHandleError = 1805 OR 
+													   nHandleError = -1801 OR nHandleError = 1801 OR 
+													   nHandleError = -201 OR nHandleError = 201
+												Set bErrorTrapped = TRUE
+												Return FALSE
+										If SqlExecute( hSqlHandle )
+											Break Execute
+										Else
+											If bErrorTrapped = TRUE
+												If nHandleError = 1805 OR nHandleError = -1805
+													! time out
+													If IDNO = SalMessageBox( 'TIME OUT has occurred! Please contact Computer Services to resolve this! RETRY?', 'Error', MB_YesNo )
+														Set bOk = FALSE
+														Break Execute
+													Else
+														Set bHandleRetrieved = FALSE
+												Else If nHandleError = 1801 OR nHandleError = -1801
+													! dead lock -1801
+													If IDNO = SalMessageBox( 'DEAD LOCK has occurred! Please contact Computer Services to resolve this! RETRY?', 'Error', MB_YesNo )
+														Set bOk = FALSE
+														Break Execute
+													Else
+														Set bHandleRetrieved = FALSE
+												Else If nHandleError = 201 OR nHandleError = -201
+													! no compiled command  201
+													If bFirst
+														Set bHandleRetrieved = FALSE
+														Set bFirst = FALSE
+													Else
+														If IDNO = SalMessageBox( 'NO COMPILED COMMAND has occurred! Please contact Computer Services to resolve this! RETRY?', 'Error', MB_YesNo )
+															Set bOk = FALSE
+															Break Execute
+														Else
+															Set bHandleRetrieved = FALSE
+											Else
+												If IDNO = SalMessageBox( 'Could not execute Statement Named '||sIdName||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+													Set bOk = FALSE
+													Break Execute
+												Else
+													Set bHandleRetrieved = FALSE
+									Else
+										Set bOk = FALSE
+										Break Execute
+								Else
+									Set bOk = FALSE
+									Break Execute
+							Call OurWaitCursor( FALSE )
+							Return bOk
+					! Function: PrepareAndExecute
+						    Description: 
+						    Returns 
+							    Boolean: 
+						    Parameters 
+						    Static Variables 
+						    Local variables 
+						    Actions 
+							    Return Execute( )
+					! uncomment above function and comment bellow function when ConvertSql can handle UPDATE, INSERTS AND DELETES
+					Function: PrepareAndExecute
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: bOk
+							Boolean: bFirst
+							Boolean: bErrorTrapped
+							Number: nHandleError
+							Number: nPos
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bFirst = TRUE
+							Set bErrorTrapped = FALSE
+							Set bOk = TRUE
+							Loop Execute
+								If Connect(  )
+									If Prepare(  )
+										When SqlError
+											Call SqlExtractArgs( wParam, lParam, hSqlHandle, nHandleError, nPos )
+											! timeout, deadlock, no compiled command
+											If nHandleError = -1805 OR nHandleError = 1805 OR 
+													   nHandleError = -1801 OR nHandleError = 1801 OR 
+													   nHandleError = -201 OR nHandleError = 201
+												Set bErrorTrapped = TRUE
+												Return FALSE
+										If SqlExecute( hSqlHandle )
+											Break Execute
+										Else
+											If bErrorTrapped = TRUE
+												If nHandleError = 1805 OR nHandleError = -1805
+													! time out
+													If IDNO = SalMessageBox( 'TIME OUT has occurred! Please contact Computer Services to resolve this! RETRY?', 'Error', MB_YesNo )
+														Set bOk = FALSE
+														Break Execute
+													Else
+														Set bHandleRetrieved = FALSE
+												Else If nHandleError = 1801 OR nHandleError = -1801
+													! dead lock -1801
+													If IDNO = SalMessageBox( 'DEAD LOCK has occurred! Please contact Computer Services to resolve this! RETRY?', 'Error', MB_YesNo )
+														Set bOk = FALSE
+														Break Execute
+													Else
+														Set bHandleRetrieved = FALSE
+												Else If nHandleError = 201 OR nHandleError = -201
+													! no compiled command  201
+													If bFirst
+														Set bHandleRetrieved = FALSE
+														Set bFirst = FALSE
+													Else
+														If IDNO = SalMessageBox( 'NO COMPILED COMMAND has occurred! Please contact Computer Services to resolve this! RETRY?', 'Error', MB_YesNo )
+															Set bOk = FALSE
+															Break Execute
+														Else
+															Set bHandleRetrieved = FALSE
+											Else
+												If IDNO = SalMessageBox( 'Could not execute Statement Named '||sSqlStatement||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+													Set bOk = FALSE
+													Break Execute
+												Else
+													Set bHandleRetrieved = FALSE
+									Else
+										Set bOk = FALSE
+										Break Execute
+								Else
+									Set bOk = FALSE
+									Break Execute
+							Call OurWaitCursor( FALSE )
+							Return bOk
+					Function: RePrepare
+						Description:
+						Returns
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Set bHandleRetrieved = FALSE
+					!
+					Function: Disconnect
+						Description:
+						Returns
+						Parameters
+						Static Variables
+						Local variables
+							Number: nTotalReuseConnected
+							Number: nTmp
+						Actions
+							If bHandleConnected AND bHandleConverted
+								If DropStoredCmd( )
+									Call Commit(  )
+							Call GetSqlHandlesStats( nTmp, nTotalReuseConnected, nTmp, nTmp )
+							If nTotalReuseConnected  > 5
+								Call DisconnectClose(  )
+							Else
+								Call ReuseInit(  )
+								Call Commit(  )
+					Function: Commit
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: bOk
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bOk = TRUE
+							Loop Commit
+								If bHandleConnected = TRUE
+									If SqlCommit( hSqlHandle )
+										Break Commit
+									Else
+										If IDNO = SalMessageBox( 'Could not commit handle for '||sSqlStatement||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+											Set bOk = FALSE
+											Break Commit
+								Else
+									Break Commit
+							Call OurWaitCursor( FALSE )
+							Return bOk
+					Function: Rollback
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: bOk
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bOk = TRUE
+							Loop Rollback
+								If bHandleConnected = TRUE
+									Set bHandleRetrieved = FALSE
+									If SqlPrepareAndExecute( hSqlHandle, 'ROLLBACK' )
+										Break Rollback
+									Else
+										If IDNO = SalMessageBox( 'Could not rollback handle in function '||sSqlStatement||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+											Set bOk = FALSE
+											Break Rollback
+								Else
+									Break Rollback
+							Call OurWaitCursor( FALSE )
+							Return bOk
+					!
+					Function: FetchFirst
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: nInd
+						Static Variables
+						Local variables
+						Actions
+							Return SqlFetchRow( hSqlHandle, 0, nInd )
+					Function: FetchNext
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: nInd
+						Static Variables
+						Local variables
+						Actions
+							Return SqlFetchNext( hSqlHandle, nInd )
+					Function: FetchPrevious
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: nInd
+						Static Variables
+						Local variables
+						Actions
+							Return SqlFetchPrevious( hSqlHandle, nInd )
+					Function: FetchRow
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: nRow
+							Receive Number: nInd
+						Static Variables
+						Local variables
+						Actions
+							Return SqlFetchRow( hSqlHandle, nRow, nInd )
+					Function: GetModifiedRows
+						Description:
+						Returns
+							Number:
+						Parameters
+						Static Variables
+						Local variables
+							Number: nModifiedRows
+						Actions
+							Call SqlGetModifiedRows( hSqlHandle, nModifiedRows )
+							Return nModifiedRows
+					!
+					! Bellow function should be treated as private
+					!
+					Function: Init
+						Description:
+						Returns
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Set sSqlStatement = ''
+							Set sHandleIdKey = ' '
+							Set bHandleConnected = FALSE
+							Set bHandleRetrieved = FALSE
+							Set bHandleConverted = FALSE
+							Set sIdName = ''
+							Set sSqlBind = ''
+							Set sSqlInto = ''
+					Function: ReuseInit
+						Description:
+						Returns
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Set sSqlStatement = ''
+							Set sHandleIdKey = ' '
+							Set bHandleRetrieved = FALSE
+							Set bHandleConverted = FALSE
+							Set sIdName = ''
+							Set sSqlBind = ''
+							Set sSqlInto = ''
+							Call SetDefaultParam(  )
+							If SetParam( nCursorLockTimeout, bCursorResultSetMode, bCursorPreserve, bCursorFetchThrough, sIsolationLevel )
+								Set bDefaultCursorParamSet = TRUE
+					Function: Connect
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: bOk
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bOk = TRUE
+							Loop Connect
+								If bHandleConnected = TRUE
+									Break Connect
+								Else
+									Set bHandleConnected = SqlConnect( hSqlHandle ) 
+									If bHandleConnected = TRUE
+										If NOT bDefaultCursorParamSet = TRUE
+											Call SetDefaultParam(  )
+										If SetParam( nCursorLockTimeout, bCursorResultSetMode, bCursorPreserve, bCursorFetchThrough, sIsolationLevel )
+											Set bDefaultCursorParamSet = TRUE
+										Set bHandleRetrieved = FALSE
+										Break Connect
+									Else
+										If IDNO = SalMessageBox( 'Could not connect handle for Command '||sIdName||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+											Set bOk = FALSE
+											Break Connect
+							Call OurWaitCursor( FALSE )
+							Return bOk
+					Function: SetDefaultParam
+						Description:
+						Returns
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Set nCursorLockTimeout = SH_cls_SQLTIMEOUT
+							Set bCursorResultSetMode = TRUE
+							Set bCursorPreserve = TRUE
+							Set bCursorFetchThrough = FALSE
+							Set sIsolationLevel = 'RL'
+					Function: DisconnectClose
+						Description:
+						Returns
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Call OurWaitCursor( TRUE )
+							Loop Disconnect
+								If bHandleConnected
+									If SqlDisconnect( hSqlHandle )
+										Call Init( )
+										Break Disconnect
+									Else
+										If IDNO = SalMessageBox( 'Could not disconnect handle in function '||sSqlStatement||'Contact programmers! RETRY?', 'Error', MB_YesNo )
+											Break Disconnect
+								Else
+									Call Init(  )
+									Break Disconnect
+							Call OurWaitCursor( FALSE )
+					Function: DropStoredCmd
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: bOk
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bOk = TRUE
+							Loop Drop
+								If bHandleConnected = TRUE
+									If SqlDropStoredCmd( hSqlHandle, sIdName )
+										Break Drop
+									Else
+										If IDNO = SalMessageBox( 'Could not drop stored command for '||sSqlStatement||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+											Set bOk = FALSE
+											Break Drop
+								Else
+									Break Drop
+							Call OurWaitCursor( FALSE )
+							Return bOk
+					!
+					Function: Retrieve
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: bOk
+							Boolean: bFirst
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bOk = TRUE
+							Set bFirst = TRUE
+							Loop Retrieve
+								If bHandleRetrieved = TRUE
+									Break Retrieve
+								Else
+									When SqlError
+										Return FALSE
+									If SqlRetrieve( hSqlHandle, sIdName, sSqlBind, sSqlInto )
+										Set bHandleRetrieved = TRUE
+										Break Retrieve
+									Else
+										If bFirst
+											Set bFirst = FALSE
+											Call Store(  )
+										Else
+											If IDNO = SalMessageBox( 'Could not Retrieve Command '||sIdName||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+												Set bOk = FALSE
+												Break Retrieve
+							Call OurWaitCursor( FALSE )
+							Return bOk
+					Function: Prepare
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: bOk
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bOk = TRUE
+							Loop Prepare
+								If bHandleRetrieved = TRUE
+									Break Prepare
+								Else
+									When SqlError
+										Return FALSE
+									If SqlPrepare( hSqlHandle, sSqlStatement )
+										Set bHandleRetrieved = TRUE
+										Break Prepare
+									Else
+										If IDNO = SalMessageBox( 'Could not Prepare Command '||sSqlStatement||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+											Set bOk = FALSE
+											Break Prepare
+							Call OurWaitCursor( FALSE )
+							Return bOk
+					Function: Store
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: bOk
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bOk = TRUE
+							Loop Store
+								If SqlStore( hSqlHandle, sIdName, sSqlStatement )
+									Call SqlCommit( hSqlHandle )
+									Break Store
+								Else
+									If IDNO = SalMessageBox( 'Could not Store Command '||sIdName||'! Contact programmers! RETRY?', 'Error', MB_YesNo )
+										Set bOk = FALSE
+										Break Store
+							Call OurWaitCursor( FALSE )
+							Return bOk
+					!
+					Function: TablePopulate
+						Description: Assumes that Setup( ) and SetSqlVars( ) and Execute( ) have been run before.
+						Returns
+							Boolean:
+						Parameters
+							Window Handle: hWndTable
+							Number: nMethod
+						Static Variables
+						Local variables
+							Boolean: bOk
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bOk = TRUE
+							Call SalTblReset( hWndTable )
+							If NOT SalTblPopulate( hWndTable, hSqlHandle, '', nMethod )
+								Set bOk = FALSE
+							Call OurWaitCursor( FALSE )
+							Return bOk
+					Function: ResultSetCount
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: nCount
+						Static Variables
+						Local variables
+							Boolean: bOk
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bOk = SqlGetResultSetCount( hSqlHandle, nCount )
+							Call OurWaitCursor( FALSE )
+							Return bOk
+					!
+					! uncomment bellow functions when ConvertSql can handle UPDATES, INSERTS, and DELETES
+					! Function: ExtractSELECTPart
+						    Description: 
+						    Returns 
+							    String: 
+						    Parameters 
+							    String: sSqlStatement
+						    Static Variables 
+						    Local variables 
+							    Number: nSelectStart
+							    Number: nEndTokenStart
+						    Actions 
+							    Set nSelectStart = SalStrScan( sSqlStatement, 'SELECT' )
+							    If nSelectStart >= 0
+								    Set nEndTokenStart = SalStrScan( sSqlStatement, 'FROM' )
+								    If nEndTokenStart >= 0
+									    Return PrivateExtractBetweenTokens( nSelectStart, 'SELECT', nEndTokenStart, 'FROM', sSqlStatement )
+								    Else 
+									    Set nEndTokenStart = SalStrScan( sSqlStatement, 'INTO' )
+									    If nEndTokenStart >= 0
+										    Return PrivateExtractBetweenTokens( nSelectStart, 'SELECT', nEndTokenStart, 'INTO', sSqlStatement )
+									    Else 
+										    Set nEndTokenStart = SalStrScan( sSqlStatement, 'WHERE' )
+										    If nEndTokenStart >= 0
+											    Return PrivateExtractBetweenTokens( nSelectStart, 'SELECT', nEndTokenStart, 'WHERE', sSqlStatement  )
+										    Else 
+											    Set nEndTokenStart = SalStrScan( sSqlStatement, 'GROUP BY' )
+											    If nEndTokenStart >= 0
+												    Return PrivateExtractBetweenTokens( nSelectStart, 'SELECT', nEndTokenStart, 'GROUP BY', sSqlStatement )
+											    Else 
+												    Set nEndTokenStart = SalStrScan( sSqlStatement, 'HAVING' )
+												    If nEndTokenStart >= 0
+													    Return PrivateExtractBetweenTokens( nSelectStart, 'SELECT', nEndTokenStart, 'HAVING', sSqlStatement )
+												    Else 
+													    Set nEndTokenStart = SalStrScan( sSqlStatement, 'ORDER BY' )
+													    If nEndTokenStart >= 0
+														    Return PrivateExtractBetweenTokens( nSelectStart, 'SELECT', nEndTokenStart, 'ORDER BY', sSqlStatement )
+													    Else 
+														    Set nEndTokenStart = SalStrScan( sSqlStatement, 'FOR UPDATE OF' )
+														    If nEndTokenStart >= 0
+															    Return PrivateExtractBetweenTokens( nSelectStart, 'SELECT', nEndTokenStart, 'FOR UPDATE OF', sSqlStatement )
+														    Else 
+															    Return SalStrMidX( sSqlStatement, nSelectStart + SalStrLength( 'SELECT' ), SalStrLength( sSqlStatement ) - ( nSelectStart + SalStrLength( 'SELECT' ) ) )
+							    Else 
+								    Return ''
+					! Function: ExtractFROMPart
+						    Description: 
+						    Returns 
+							    String: 
+						    Parameters 
+							    String: sSqlStatement
+						    Static Variables 
+						    Local variables 
+							    Number: nSelectStart
+							    Number: nEndTokenStart
+						    Actions 
+							    Set nSelectStart = SalStrScan( sSqlStatement, 'FROM' )
+							    If nSelectStart >= 0
+								    Set nEndTokenStart = SalStrScan( sSqlStatement, 'INTO' )
+								    If nEndTokenStart >= 0
+									    Return PrivateExtractBetweenTokens( nSelectStart, 'FROM', nEndTokenStart, 'INTO', sSqlStatement )
+								    Else 
+									    Set nEndTokenStart = SalStrScan( sSqlStatement, 'WHERE' )
+									    If nEndTokenStart >= 0
+										    Return PrivateExtractBetweenTokens( nSelectStart, 'FROM', nEndTokenStart, 'WHERE', sSqlStatement  )
+									    Else 
+										    Set nEndTokenStart = SalStrScan( sSqlStatement, 'GROUP BY' )
+										    If nEndTokenStart >= 0
+											    Return PrivateExtractBetweenTokens( nSelectStart, 'FROM', nEndTokenStart, 'GROUP BY', sSqlStatement )
+										    Else 
+											    Set nEndTokenStart = SalStrScan( sSqlStatement, 'HAVING' )
+											    If nEndTokenStart >= 0
+												    Return PrivateExtractBetweenTokens( nSelectStart, 'FROM', nEndTokenStart, 'HAVING', sSqlStatement )
+											    Else 
+												    Set nEndTokenStart = SalStrScan( sSqlStatement, 'ORDER BY' )
+												    If nEndTokenStart >= 0
+													    Return PrivateExtractBetweenTokens( nSelectStart, 'FROM', nEndTokenStart, 'ORDER BY', sSqlStatement )
+												    Else 
+													    Set nEndTokenStart = SalStrScan( sSqlStatement, 'FOR UPDATE OF' )
+													    If nEndTokenStart >= 0
+														    Return PrivateExtractBetweenTokens( nSelectStart, 'FROM', nEndTokenStart, 'FOR UPDATE OF', sSqlStatement )
+													    Else 
+														    Return SalStrMidX( sSqlStatement, nSelectStart + SalStrLength( 'FROM' ), SalStrLength( sSqlStatement ) - ( nSelectStart + SalStrLength( 'FROM' ) ) )
+							    Else 
+								    Return ''
+					! Function: ExtractINTOPart
+						    Description: 
+						    Returns 
+							    String: 
+						    Parameters 
+							    String: sSqlStatement
+						    Static Variables 
+						    Local variables 
+							    Number: nSelectStart
+							    Number: nEndTokenStart
+						    Actions 
+							    Set nSelectStart = SalStrScan( sSqlStatement, 'INTO' )
+							    If nSelectStart >= 0
+								    Set nEndTokenStart = SalStrScan( sSqlStatement, 'WHERE' )
+								    If nEndTokenStart >= 0
+									    Return PrivateExtractBetweenTokens( nSelectStart, 'INTO', nEndTokenStart, 'WHERE', sSqlStatement  )
+								    Else 
+									    Set nEndTokenStart = SalStrScan( sSqlStatement, 'GROUP BY' )
+									    If nEndTokenStart >= 0
+										    Return PrivateExtractBetweenTokens( nSelectStart, 'INTO', nEndTokenStart, 'GROUP BY', sSqlStatement )
+									    Else 
+										    Set nEndTokenStart = SalStrScan( sSqlStatement, 'HAVING' )
+										    If nEndTokenStart >= 0
+											    Return PrivateExtractBetweenTokens( nSelectStart, 'INTO', nEndTokenStart, 'HAVING', sSqlStatement )
+										    Else 
+											    Set nEndTokenStart = SalStrScan( sSqlStatement, 'ORDER BY' )
+											    If nEndTokenStart >= 0
+												    Return PrivateExtractBetweenTokens( nSelectStart, 'INTO', nEndTokenStart, 'ORDER BY', sSqlStatement )
+											    Else 
+												    Set nEndTokenStart = SalStrScan( sSqlStatement, 'FOR UPDATE OF' )
+												    If nEndTokenStart >= 0
+													    Return PrivateExtractBetweenTokens( nSelectStart, 'INTO', nEndTokenStart, 'FOR UPDATE OF', sSqlStatement )
+												    Else 
+													    Return SalStrMidX( sSqlStatement, nSelectStart + SalStrLength( 'INTO' ), SalStrLength( sSqlStatement ) - ( nSelectStart + SalStrLength( 'INTO' ) ) )
+							    Else 
+								    Return ''
+					! Function: ExtractWHEREPart
+						    Description: 
+						    Returns 
+							    String: 
+						    Parameters 
+							    String: sSqlStatement
+						    Static Variables 
+						    Local variables 
+							    Number: nSelectStart
+							    Number: nEndTokenStart
+						    Actions 
+							    Set nSelectStart = SalStrScan( sSqlStatement, 'WHERE' )
+							    If nSelectStart >= 0
+								    Set nEndTokenStart = SalStrScan( sSqlStatement, 'GROUP BY' )
+								    If nEndTokenStart >= 0
+									    Return PrivateExtractBetweenTokens( nSelectStart, 'WHERE', nEndTokenStart, 'GROUP BY', sSqlStatement )
+								    Else 
+									    Set nEndTokenStart = SalStrScan( sSqlStatement, 'HAVING' )
+									    If nEndTokenStart >= 0
+										    Return PrivateExtractBetweenTokens( nSelectStart, 'WHERE', nEndTokenStart, 'HAVING', sSqlStatement )
+									    Else 
+										    Set nEndTokenStart = SalStrScan( sSqlStatement, 'ORDER BY' )
+										    If nEndTokenStart >= 0
+											    Return PrivateExtractBetweenTokens( nSelectStart, 'WHERE', nEndTokenStart, 'ORDER BY', sSqlStatement )
+										    Else 
+											    Set nEndTokenStart = SalStrScan( sSqlStatement, 'FOR UPDATE OF' )
+											    If nEndTokenStart >= 0
+												    Return PrivateExtractBetweenTokens( nSelectStart, 'WHERE', nEndTokenStart, 'FOR UPDATE OF', sSqlStatement )
+											    Else 
+												    Set nEndTokenStart = SalStrScan( sSqlStatement, 'INTO' )
+												    If nEndTokenStart >= nSelectStart
+													    Return PrivateExtractBetweenTokens( nSelectStart, 'WHERE', nEndTokenStart, 'INTO', sSqlStatement )
+												    Else 
+													    Return SalStrMidX( sSqlStatement, nSelectStart + SalStrLength( 'WHERE' ), SalStrLength( sSqlStatement ) - ( nSelectStart + SalStrLength( 'WHERE' ) ) )
+							    Else 
+								    Return ''
+					! Function: ExtractGROUPBYPart
+						    Description: 
+						    Returns 
+							    String: 
+						    Parameters 
+							    String: sSqlStatement
+						    Static Variables 
+						    Local variables 
+							    Number: nSelectStart
+							    Number: nEndTokenStart
+						    Actions 
+							    Set nSelectStart = SalStrScan( sSqlStatement, 'GROUP BY' )
+							    If nSelectStart >= 0
+								    Set nEndTokenStart = SalStrScan( sSqlStatement, 'HAVING' )
+								    If nEndTokenStart >= 0
+									    Return PrivateExtractBetweenTokens( nSelectStart, 'GROUP BY', nEndTokenStart, 'HAVING', sSqlStatement )
+								    Else 
+									    Set nEndTokenStart = SalStrScan( sSqlStatement, 'ORDER BY' )
+									    If nEndTokenStart >= 0
+										    Return PrivateExtractBetweenTokens( nSelectStart, 'GROUP BY', nEndTokenStart, 'ORDER BY', sSqlStatement )
+									    Else 
+										    Set nEndTokenStart = SalStrScan( sSqlStatement, 'FOR UPDATE OF' )
+										    If nEndTokenStart >= 0
+											    Return PrivateExtractBetweenTokens( nSelectStart, 'GROUP BY', nEndTokenStart, 'FOR UPDATE OF', sSqlStatement )
+										    Else 
+											    Set nEndTokenStart = SalStrScan( sSqlStatement, 'INTO' )
+											    If nEndTokenStart >= nSelectStart
+												    Return PrivateExtractBetweenTokens( nSelectStart, 'GROUP BY', nEndTokenStart, 'INTO', sSqlStatement )
+											    Else 
+												    Return SalStrMidX( sSqlStatement, nSelectStart + SalStrLength( 'GROUP BY' ), SalStrLength( sSqlStatement ) - ( nSelectStart + SalStrLength( 'GROUP BY' ) ) )
+							    Else 
+								    Return ''
+					! Function: ExtractHAVINGPart
+						    Description: 
+						    Returns 
+							    String: 
+						    Parameters 
+							    String: sSqlStatement
+						    Static Variables 
+						    Local variables 
+							    Number: nSelectStart
+							    Number: nEndTokenStart
+						    Actions 
+							    Set nSelectStart = SalStrScan( sSqlStatement, 'HAVING' )
+							    If nSelectStart >= 0
+								    Set nEndTokenStart = SalStrScan( sSqlStatement, 'ORDER BY' )
+								    If nEndTokenStart >= 0
+									    Return PrivateExtractBetweenTokens( nSelectStart, 'HAVING', nEndTokenStart, 'ORDER BY', sSqlStatement )
+								    Else 
+									    Set nEndTokenStart = SalStrScan( sSqlStatement, 'FOR UPDATE OF' )
+									    If nEndTokenStart >= 0
+										    Return PrivateExtractBetweenTokens( nSelectStart, 'HAVING', nEndTokenStart, 'FOR UPDATE OF', sSqlStatement )
+									    Else 
+										    Set nEndTokenStart = SalStrScan( sSqlStatement, 'INTO' )
+										    If nEndTokenStart >= nSelectStart
+											    Return PrivateExtractBetweenTokens( nSelectStart, 'HAVING', nEndTokenStart, 'INTO', sSqlStatement )
+										    Else 
+											    Return SalStrMidX( sSqlStatement, nSelectStart + SalStrLength( 'HAVING' ), SalStrLength( sSqlStatement ) - ( nSelectStart + SalStrLength( 'HAVING' ) ) )
+							    Else 
+								    Return ''
+					! Function: ExtractORDERBYPart
+						    Description: 
+						    Returns 
+							    String: 
+						    Parameters 
+							    String: sSqlStatement
+						    Static Variables 
+						    Local variables 
+							    Number: nSelectStart
+							    Number: nEndTokenStart
+						    Actions 
+							    Set nSelectStart = SalStrScan( sSqlStatement, 'ORDER BY' )
+							    If nSelectStart >= 0
+								    Set nEndTokenStart = SalStrScan( sSqlStatement, 'FOR UPDATE OF' )
+								    If nEndTokenStart >= 0
+									    Return PrivateExtractBetweenTokens( nSelectStart, 'ORDER BY', nEndTokenStart, 'FOR UPDATE OF', sSqlStatement )
+								    Else 
+									    Set nEndTokenStart = SalStrScan( sSqlStatement, 'INTO' )
+									    If nEndTokenStart >= nSelectStart
+										    Return PrivateExtractBetweenTokens( nSelectStart, 'ORDER BY', nEndTokenStart, 'INTO', sSqlStatement )
+									    Else 
+										    Return SalStrMidX( sSqlStatement, nSelectStart + SalStrLength( 'ORDER BY' ), SalStrLength( sSqlStatement ) - ( nSelectStart + SalStrLength( 'ORDER BY' ) ) )
+							    Else 
+								    Return ''
+					! Function: ExtractFORUPDATEOFPart
+						    Description: 
+						    Returns 
+							    String: 
+						    Parameters 
+							    String: sSqlStatement
+						    Static Variables 
+						    Local variables 
+							    Number: nSelectStart
+							    Number: nEndTokenStart
+						    Actions 
+							    Set nSelectStart = SalStrScan( sSqlStatement, 'FOR UPDATE OF' )
+							    If nSelectStart >= 0
+								    Set nEndTokenStart = SalStrScan( sSqlStatement, 'INTO' )
+								    If nEndTokenStart >= nSelectStart
+									    Return PrivateExtractBetweenTokens( nSelectStart, 'FOR UPDATE OF', nEndTokenStart, 'INTO', sSqlStatement )
+								    Else 
+									    Return SalStrMidX( sSqlStatement, nSelectStart + SalStrLength( 'FOR UPDATE OF' ), SalStrLength( sSqlStatement ) - ( nSelectStart + SalStrLength( 'FOR UPDATE OF' ) ) )
+							    Else 
+								    Return ''
+					! Function: PrivateExtractBetweenTokens
+						    Description: 
+						    Returns 
+							    String: 
+						    Parameters 
+							    Number: nFirstTokenStart
+							    String: sFirstToken
+							    Number: nSecondTokenStart
+							    String: sSecondToken
+							    String: sSqlStatement
+						    Static Variables 
+						    Local variables 
+						    Actions 
+							    Return SalStrMidX( sSqlStatement, nFirstTokenStart + SalStrLength( sFirstToken ), nSecondTokenStart - ( nFirstTokenStart + SalStrLength( sFirstToken ) ) )
+					! Function: ExtractSqlWHEREBinds
+						    Description: 
+						    Returns 
+						    Parameters 
+							    String: sWHEREPart
+							    Receive String: saBindVars[*]
+						    Static Variables 
+						    Local variables 
+							    String: sTmpWHEREPart
+							    Number: nWHEREPartLength
+							    Number: nColonPos
+							    String: sToken
+							    String: sCurrentChar
+							    Number: nPos
+							    Boolean: bStop
+						    Actions 
+							    Set saBindVars[ 0 ] = ''
+							    Set sTmpWHEREPart = sWHEREPart
+							    While nColonPos >= 0
+								    Set nColonPos = SalStrScan( sTmpWHEREPart, ':' )
+								    If nColonPos >= 0
+									    Set bStop = FALSE
+									    Set sToken = ''
+									    Set nPos = nColonPos + 1
+									    Set nWHEREPartLength = SalStrLength( sTmpWHEREPart )
+									    While nPos <= nWHEREPartLength AND NOT bStop
+										    Set sCurrentChar = SalStrMidX( sTmpWHEREPart, nPos, 1 )
+										    If sCurrentChar = ' ' OR sCurrentChar = ''
+											    Set bStop = TRUE
+										    Else 
+											    Set sToken = sToken || sCurrentChar
+										    Set nPos = nPos + 1
+									!
+									    Set sTmpWHEREPart = SalStrMidX( sTmpWHEREPart, nPos, SalStrLength( sTmpWHEREPart ) - nPos )
+									!
+									! insert sToken into a unique list
+									    Set nPos = 0
+									    Set bStop = FALSE
+									    While saBindVars[ nPos ] != '' AND NOT bStop
+										    If saBindVars[ nPos ] = sToken
+											    Set bStop = TRUE
+										    Set nPos = nPos + 1
+									    If NOT bStop
+										    Set saBindVars[ nPos ] = sToken
+										    Set saBindVars[ nPos + 1 ] = ''
+									!
+					! Function: ConvertSqlSELECTToCommand
+						    Description: 
+						    Returns 
+						    Parameters 
+							    String: sSqlFullSELECTStatement
+							    Receive String: sSqlStatement
+							    Receive String: sName
+							    Receive String: sBind
+							    Receive String: sInto
+						    Static Variables 
+						    Local variables 
+							    String: sSELECTPart
+							    String: sFROMPart
+							    String: sINTOPart
+							    String: sWHEREPart
+							    String: sGROUPBYPart
+							    String: sHAVINGPart
+							    String: sORDERBYPart
+							    String: sFORUPDATEOFPart
+							    String: saBindVars[*]
+							    Number: nBindStartPos
+							    Number: nPos
+						    Actions 
+							    Call OurWaitCursor( TRUE )
+							    Set sSELECTPart = ExtractSELECTPart( sSqlFullSELECTStatement )
+							    Set sFROMPart = ExtractFROMPart( sSqlFullSELECTStatement )
+							    Set sINTOPart = ExtractINTOPart( sSqlFullSELECTStatement )
+							    Set sWHEREPart = ExtractWHEREPart( sSqlFullSELECTStatement )
+							    Set sGROUPBYPart = ExtractGROUPBYPart( sSqlFullSELECTStatement )
+							    Set sHAVINGPart = ExtractHAVINGPart( sSqlFullSELECTStatement )
+							    Set sORDERBYPart = ExtractORDERBYPart( sSqlFullSELECTStatement )
+							    Set sFORUPDATEOFPart = ExtractFORUPDATEOFPart( sSqlFullSELECTStatement )
+							!
+							    Call ExtractSqlWHEREBinds( sWHEREPart, saBindVars )
+							    Set sBind = ''
+							!
+							    Set nPos = 0
+							    While saBindVars[ nPos ] != ''
+								!
+								    Set nBindStartPos = SalStrScan( sWHEREPart, saBindVars[ nPos ] )
+								    If nBindStartPos >= 0
+									    If sBind = ''
+										    Set sBind = ':' || saBindVars[ nPos ]
+									    Else 
+										    Set sBind = sBind || ', :' || saBindVars[ nPos ]
+									!
+									! replace saBindVars[ nPos ] with nPos + 1 in sWHEREPart
+									    Set sWHEREPart = SalStrMidX( sWHEREPart, 0, nBindStartPos ) || 
+											SalNumberToStrX( nPos + 1, 0 ) || ' ' || 
+											SalStrMidX( sWHEREPart, nBindStartPos + SalStrLength( saBindVars[ nPos ] ) + 1, SalStrLength( sWHEREPart ) - ( nBindStartPos + SalStrLength( saBindVars[ nPos ] )  ) )
+								!
+								    Set nPos = nPos + 1
+							!
+							    Set sName = GetTempCommandName( )
+							    Set sInto = sINTOPart
+							!
+							    Set sSqlStatement = ''
+							    If NOT sSELECTPart = ''
+								    Set sSqlStatement = ' SELECT ' || sSELECTPart 
+							    If NOT sFROMPart = ''
+								    Set sSqlStatement = sSqlStatement || ' FROM ' || sFROMPart 
+							    If NOT sWHEREPart = ''
+								    Set sSqlStatement = sSqlStatement || ' WHERE ' || sWHEREPart 
+							    If NOT sGROUPBYPart = ''
+								    Set sSqlStatement = sSqlStatement || ' GROUP BY ' || sGROUPBYPart 
+							    If NOT sHAVINGPart = ''
+								    Set sSqlStatement = sSqlStatement || ' HAVING ' || sHAVINGPart 
+							    If NOT sORDERBYPart = ''
+								    Set sSqlStatement = sSqlStatement || ' ORDER BY ' || sORDERBYPart 
+							    If NOT sFORUPDATEOFPart = ''
+								    Set sSqlStatement = sSqlStatement || ' FOR UPDATE OF ' || sFORUPDATEOFPart 
+							    Call OurWaitCursor( FALSE )
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control: cSpinField
+		Application Actions
+	Table Window: tblHandlesStats
+		Class:
+		Property Template:
+		Class DLL Name:
+		Title: Application Sql Handles
+		Icon File:
+		Accesories Enabled? No
+		Visible? Yes
+		Display Settings
+			Visible at Design time? Yes
+			Automatically Created at Runtime? No
+			Initial State: Normal
+			Maximizable? Yes
+			Minimizable? Yes
+			System Menu? Yes
+			Resizable? Yes
+			Window Location and Size
+				Left:   1.55"
+				Top:    0.938"
+				Width:  8.013"
+				Width Editable? Yes
+				Height: 4.177"
+				Height Editable? Yes
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Default
+			View: Table
+			Allow Row Sizing? No
+			Lines Per Row: Default
+		Memory Settings
+			Maximum Rows in Memory: Default
+			Discardable? Yes
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: Default
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Contents
+		Contents
+			Column: colPos
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Pos
+				Visible? Yes
+				Editable? No
+				Maximum Data Length: Default
+				Data Type: Number
+				Justify: Right
+				Width:  0.5"
+				Width Editable? Yes
+				Format: #0
+				Country: Default
+				Input Mask: Unformatted
+				Cell Options
+					Cell Type? Standard
+					Multiline Cell? No
+					Cell DropDownList
+						Sorted? Yes
+						Vertical Scroll? Yes
+						Auto Drop Down? No
+						Allow Text Editing? Yes
+					Cell CheckBox
+						Check Value:
+						Uncheck Value:
+						Ignore Case? Yes
+				List Values
+				Message Actions
+			Column: colHandleIdKey
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: HandleIDKey
+				Visible? Yes
+				Editable? No
+				Maximum Data Length: Default
+				Data Type: String
+				Justify: Left
+				Width:  2.875"
+				Width Editable? Yes
+				Format: Unformatted
+				Country: Default
+				Input Mask: Unformatted
+				Cell Options
+					Cell Type? Standard
+					Multiline Cell? No
+					Cell DropDownList
+						Sorted? Yes
+						Vertical Scroll? Yes
+						Auto Drop Down? No
+						Allow Text Editing? Yes
+					Cell CheckBox
+						Check Value:
+						Uncheck Value:
+						Ignore Case? Yes
+				List Values
+				Message Actions
+			Column: colHandleConnected
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Connected
+				Visible? Yes
+				Editable? No
+				Maximum Data Length: Default
+				Data Type: Number
+				Justify: Left
+				Width:  0.963"
+				Width Editable? Yes
+				Format: #0
+				Country: Default
+				Input Mask: Unformatted
+				Cell Options
+					Cell Type? Check Box
+					Multiline Cell? No
+					Cell DropDownList
+						Sorted? Yes
+						Vertical Scroll? Yes
+						Auto Drop Down? No
+						Allow Text Editing? Yes
+					Cell CheckBox
+						Check Value: 1
+						Uncheck Value: 0
+						Ignore Case? Yes
+				List Values
+				Message Actions
+			Column: colHandleRetrieved
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Retrieved
+				Visible? Yes
+				Editable? No
+				Maximum Data Length: Default
+				Data Type: Number
+				Justify: Left
+				Width:  0.863"
+				Width Editable? Yes
+				Format: #0
+				Country: Default
+				Input Mask: Unformatted
+				Cell Options
+					Cell Type? Check Box
+					Multiline Cell? No
+					Cell DropDownList
+						Sorted? Yes
+						Vertical Scroll? Yes
+						Auto Drop Down? No
+						Allow Text Editing? Yes
+					Cell CheckBox
+						Check Value: 1
+						Uncheck Value: 0
+						Ignore Case? Yes
+				List Values
+				Message Actions
+			Column: colHandleIDName
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: HandleIDName
+				Visible? Yes
+				Editable? No
+				Maximum Data Length: Default
+				Data Type: String
+				Justify: Left
+				Width:  2.213"
+				Width Editable? Yes
+				Format: Unformatted
+				Country: Default
+				Input Mask: Unformatted
+				Cell Options
+					Cell Type? Standard
+					Multiline Cell? No
+					Cell DropDownList
+						Sorted? Yes
+						Vertical Scroll? Yes
+						Auto Drop Down? No
+						Allow Text Editing? Yes
+					Cell CheckBox
+						Check Value:
+						Uncheck Value:
+						Ignore Case? Yes
+				List Values
+				Message Actions
+		Functions
+		Window Parameters
+		Window Variables
+			Number: nPos
+			Number: nRow
+		Message Actions
+			On SAM_CreateComplete
+				Call OurWaitCursor( TRUE )
+				Set nPos = 0
+				While haSqlHandles[ nPos ].sHandleIdKey != ''
+					If haSqlHandles[ nPos ].sHandleIdKey != ''
+						Set nRow = SalTblInsertRow( hWndForm, TBL_MaxRow )
+						Call SalTblSetContext( hWndForm, nRow )
+						Call SalTblSetRowFlags( hWndForm, nRow, ROW_HideMarks, TRUE )
+						!
+						Set colPos = nPos
+						Set colHandleIdKey = haSqlHandles[ nPos ].sHandleIdKey
+						Set colHandleConnected = haSqlHandles[ nPos ].bHandleConnected
+						Set colHandleRetrieved = haSqlHandles[ nPos ].bHandleRetrieved
+						Set colHandleIDName = haSqlHandles[ nPos ].sIdName
+						!
+						If colHandleIdKey = ' '
+							Set colHandleIdKey = '>' || colHandleIdKey || '<'
+					Set nPos = nPos + 1
+				Call OurWaitCursor( FALSE )

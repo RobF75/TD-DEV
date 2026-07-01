@@ -1,0 +1,211 @@
+CONNECT WORKSHOP SYSADM DANI;
+SET TIMEOUT 1;
+
+CREATE TABLE Vehicle
+      (Vehicle_Id           INTEGER NOT NULL,
+       Vehicle_Type         CHAR(40) NOT NULL,
+       Location             CHAR(40) NOT NULL, 
+       Make                 CHAR(40) NOT NULL,
+       Model                CHAR(40),
+       Build_Date           DATE, 
+       VIN                  CHAR(40),
+       Reg_No               CHAR(40),
+       Engine_No            CHAR(40),
+       Trans_Type           CHAR(40), 
+       Trans_No             CHAR(40),
+       Diff_Type            CHAR(40),
+       Diff_No              CHAR(40),
+       Fuel_Type            CHAR(20), 
+       Fuel_Filter_No       CHAR(40),
+       Oil_Filter_No        CHAR(40),
+       Air_Filter_No        CHAR(40), 
+       Water_Filter_No      CHAR(40),
+       Pwr_Str_Filter_No    CHAR(40),
+       Voltage              SMALLINT, 
+       Battery_Type         CHAR(20), 
+       Engine_Oil_Type      CHAR(20), 
+       Engine_Oil_Cap       SMALLINT,  
+       Trans_Oil_Type       CHAR(20), 
+       Trans_Oil_Cap        SMALLINT, 
+       Diff_Oil_Type        CHAR(20), 
+       Diff_Oil_Cap         SMALLINT, 
+       Pwr_Steer_Oil_Type   CHAR(20), 
+       Pwr_Steer_Oil_Cap    SMALLINT, 
+       Hubs_F_Oil_Type      CHAR(20), 
+       Hubs_R_Oil_Type      CHAR(20), 
+       Tyres_Type           CHAR(20),
+       Tyres_Quantity       SMALLINT, 
+       Spark_Plug_Type      CHAR(20), 
+       Spark_Plug_Quant     SMALLINT, 
+       Spark_Plug_Gap       REAL, 
+       Ignition_Timing      REAL, 
+       Valve_Clearance_In   REAL, 
+       Valve_Clearance_Ex   REAL, 
+       Serv_Period_Days     SMALLINT, 
+       Serv_Distance        CHAR(20), 
+       Driver               CHAR(40)
+);
+
+
+CREATE UNIQUE INDEX PKVehicle
+  ON Vehicle
+(
+Vehicle_Id    ASC
+);
+
+CREATE TABLE Vehicle_Check_List
+      (Check_List_Id        INTEGER NOT NULL, 
+       Vehicle_Type         CHAR(40) NOT NULL, 
+       Seq_No               INTEGER NOT NULL, 
+       Left_Condition       CHAR(80), 
+       Right_Condition      CHAR(80)
+);
+
+CREATE UNIQUE INDEX PKVehicleCheckList
+  ON Vehicle_Check_List
+(
+Check_List_Id ASC, 
+Vehicle_Type  ASC
+);
+
+CREATE TABLE Part
+      (Part_Id              INTEGER NOT NULL,
+       Part_Type            CHAR(40) NOT NULL, 
+       Part_Name            CHAR(40) NOT NULL,
+       Location             CHAR(40) NOT NULL, 
+       Re_Order_No          CHAR(40),
+       Quantity_On_Hand     INTEGER NOT NULL WITH DEFAULT
+);
+
+CREATE UNIQUE INDEX PKPart
+  ON Part
+(
+Part_Id       ASC
+);
+
+CREATE TABLE Vehicle_Parts
+      (Instance_No          INTEGER NOT NULL, 
+       Vehicle_Id           INTEGER NOT NULL, 
+       Part_Id              INTEGER NOT NULL,
+       Quantity_Needed      INTEGER NOT NULL WITH DEFAULT
+);
+
+CREATE UNIQUE INDEX PKInstVehParts
+  ON Vehicle_Parts
+(
+Instance_No       ASC, 
+Vehicle_Id        ASC,
+Part_Id           ASC
+);
+
+CREATE INDEX IEVehicleParts
+  ON Vehicle_Parts
+(
+Vehicle_Id        ASC, 
+Part_Id           ASC, 
+Instance_No       ASC
+);
+
+CREATE INDEX IEPartsVehicle
+  ON Vehicle_Parts
+(
+Part_Id           ASC, 
+Vehicle_Id        ASC, 
+Instance_No       ASC
+);
+
+CREATE TABLE Vehicle_Service
+      (Service_No           INTEGER NOT NULL, 
+       Vehicle_Id           INTEGER NOT NULL, 
+       Service_Due_Date     DATE NOT NULL, 
+       Service_Done_Date    DATE, 
+       Service_Due_Dist     CHAR(20),  
+       Service_Done_Dist    CHAR(20), 
+       Service_Mechanic     CHAR(20), 
+       General_Conditions   LONG VARCHAR, 
+       Further_Require      LONG VARCHAR, 
+       Done_Above_Service   LONG VARCHAR
+);
+
+CREATE UNIQUE INDEX PKVehicleService
+  ON Vehicle_Service
+(
+Service_No        ASC
+);
+
+CREATE TABLE Service_Parts_Used
+      (Service_No           INTEGER NOT NULL, 
+       Vehicle_Id           INTEGER NOT NULL, 
+       Part_Id              INTEGER NOT NULL, 
+       Quantity_Used        INTEGER NOT NULL WITH DEFAULT
+);
+
+CREATE UNIQUE INDEX PKServicePartsUsed
+  ON Service_Parts_Used
+(
+Service_No        ASC, 
+Vehicle_Id        ASC, 
+Part_Id           ASC
+);
+
+ALTER TABLE Vehicle
+       PRIMARY KEY (Vehicle_Id)
+;
+
+ALTER TABLE Vehicle_Check_List
+       PRIMARY KEY (Check_List_Id, Vehicle_Type)
+;
+
+ALTER TABLE Part
+       PRIMARY KEY (Part_Id)
+;
+
+ALTER TABLE Vehicle_Parts
+       PRIMARY KEY (Instance_No, Vehicle_Id, Part_Id)
+;
+
+ALTER TABLE Vehicle_Service
+       PRIMARY KEY (Service_No)
+;
+
+ALTER TABLE Service_Parts_Used
+       PRIMARY KEY (Service_No, Vehicle_Id, Part_Id)
+;
+
+GRANT CONNECT TO SYSADM IDENTIFIED BY DANI;
+GRANT CONNECT TO DANI IDENTIFIED BY DANI;
+GRANT CONNECT TO JAN IDENTIFIED BY JAN;
+GRANT CONNECT TO LEO IDENTIFIED BY LEO;
+GRANT CONNECT TO MARK IDENTIFIED BY MARK;
+GRANT CONNECT TO WORKSHOP IDENTIFIED BY WORKSHOP;
+
+GRANT DBA TO DANI;
+GRANT DBA TO JAN;
+
+CREATE PUBLIC SYNONYM VEHICLE FOR SYSADM.VEHICLE;
+CREATE PUBLIC SYNONYM VEHICLE_CHECK_LIST FOR SYSADM.VEHICLE_CHECK_LIST;
+CREATE PUBLIC SYNONYM PART FOR SYSADM.PART;
+CREATE PUBLIC SYNONYM VEHICLE_PARTS FOR SYSADM.VEHICLE_PARTS;
+CREATE PUBLIC SYNONYM VEHICLE_SERVICE FOR SYSADM.VEHICLE_SERVICE;
+CREATE PUBLIC SYNONYM SERVICE_PARTS_USED FOR SYSADM.SERVICE_PARTS_USED;
+
+GRANT ALL ON VEHICLE TO DANI,JAN,LEO,MARK,WORKSHOP;
+GRANT ALL ON VEHICLE_CHECK_LIST TO DANI,JAN,LEO,MARK,WORKSHOP;
+GRANT ALL ON PART TO DANI,JAN,LEO,MARK,WORKSHOP;
+GRANT ALL ON VEHICLE_PARTS TO DANI,JAN,LEO,MARK,WORKSHOP;
+GRANT ALL ON VEHICLE_SERVICE TO DANI,JAN,LEO,MARK,WORKSHOP;
+GRANT ALL ON SERVICE_PARTS_USED TO DANI,JAN,LEO,MARK,WORKSHOP;
+
+COMMIT;
+DISCONNECT WORKSHOP;
+
+
+
+
+
+
+
+
+
+
+

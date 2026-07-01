@@ -1,0 +1,3 @@
+Turning on Common Relay Channel 135, 04 B3 appears OK.
+To be tested Channel 134, 04 B2 FAILED test.
+Turning off Common Relay Channel 135, 04 B3 appears OK.

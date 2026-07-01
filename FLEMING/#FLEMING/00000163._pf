@@ -1,0 +1,796 @@
+.head 0 +  Application Description: Centura  Builder starter application
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000A50000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFFFFFFFF FF000000007C0200 004D010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Normal
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600040003002D00 0000000000000000 0000B71E5D0E0500 1D00FFFF4D61696E
+0020: 0000000000000000 0000000000000000 0000003B00010000 00000000000000E9
+0040: 1E800A00008600FF FF496E7465726E61 6C2046756E637469 6F6E730000000000
+0060: 0000000000000000 0000000000003200 0100000000000000 0000E91E800A0000
+0080: DF00FFFF56617269 61626C6573000000 0000000000000000 0000000000000000
+00A0: 3000010000000000 00000000F51E100D 0000F400FFFF436C 6173736573000000
+00C0: 0000000000000000 0000000000000000
+.enddata
+.data VIEWSIZE
+0000: D000
+.enddata
+.head 3 -  Left:   -0.013"
+.head 3 -  Top:    0.0"
+.head 3 -  Width:  8.013"
+.head 3 -  Height: 4.969"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 0418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left:   4.15"
+.head 3 -  Top:    1.885"
+.head 3 -  Width:  3.8"
+.head 3 -  Height: 2.073"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   0.575"
+.head 3 -  Top:    0.094"
+.head 3 -  Width:  5.063"
+.head 3 -  Height: 2.719"
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   6.388"
+.head 3 -  Top:    0.729"
+.head 2 -  Fully Qualified External References? Yes
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? Yes
+.head 2 -  Use Release 4.0 Scope Rules? No
+.head 1 +  Libraries
+.head 2 -  File Include: General.apl
+.head 2 -  File Include: Sqlhandl.apl
+.head 2 -  File Include: Form.apl
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Line
+.head 4 -  Line Color: Use Parent
+.head 3 +  Frame
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: 3D Face Color
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0'%'
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;'($'###000')'
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 1347615921
+0000: 8600000038000000 0000000000000000 020000050000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E8040D0000 FF3F
+.enddata
+.head 2 +  Internal Functions
+.head 2 +  Named Menus
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 298311125
+0000: A60A000010050000 0000000000000000 0200001500FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F0D003C00 000B68006353716C
+0040: 48616E64006C651E 00000001003C0000 010DFA0000FF0F01 8004001000000100
+0060: 001063006C73546F 6F6C546900705769 6E646F771EB20000 01004703040000FF
+0080: FF0101802F000000 02400000000B636C 46006F726D426173 6586800000000500
+00A0: 000067010D00FFFF 090D0000020400FD 00FF071100000004 F40D0000FF9F1E00
+00C0: DC000300FF7F2270 0000000100FFFF21 01800D000003C000 000017636C075072
+00E0: 696E740442616963 526570206F72741E 0000017A000001F6 0D00FF1F01802E20
+0100: 0000000400001104 636C706253746100 727450726F677261 006DBA0000000700
+0120: 00DE0002FD00FF37 040002F700FF1F08 0000DC000200FF7F 0C60000000010D00
+0140: FFFF811900000003 04FD00FF071D0000 0002F700FF1F2100 00DC000100FF7F01
+0160: C080360000000590 000F636C5374FF01 EE0000000900009E 00010DFD00FF370D
+0180: 0001F700FF1F1A00 00DC000200FF7F1E 73000200FFFFCD22 0002FD00FF072600
+01A0: 000002F700FF1F2A 0000DC000200FF7F 2E7200000200FFFF C13200000002FD00
+01C0: FFC701800D000006 0000000C636C0570 47656E657210616C 1E000001003D0001
+01E0: 0DFB00FF0F018038 0018000007000963 0E6C48656C706486 00000500EF02FE00
+0200: FF1B0400010DFB00 FF4F110000EE0100 FFBF1EB9000100FF FFE02B00000001FE
+0220: 00FF6301800D00E6 0800098345786974 1ED100010000B301 0D00FFFF18018004
+0240: 00090039000C5069 4063457870616E1E A200000100007702 00FFFF3101800400
+0260: 0AC000000012636C 03546F67676C6500 427574746F6E1E00 D100010000BB0200
+0280: FFFF18018004000B 003800000C6466FC 4765A30001000077 0300FFFF3101802F
+02A0: 000C720000104480 69616C6F6747654F 860000F60500EC01 0D00FFBF0DB90002
+02C0: 00FFFFC61100040D FE00FF9B1E0003FB 00FF6F2200EE0100 FF3F0180660D000D
+02E0: 000C11635370696E 00536561736F6E59 651061721E000001 003D00010DFB00FF
+0300: 0F01803400000000 0E00000014630A6C 7053656C65006374 46726F6D54610062
+0320: 6C656C000000047A 000001F60D00FFDF 0DDC000100FF7F1A 73000100FFFFC127
+0340: 00000001FD00FFC7 01800400000F0000 000D636C49536565 6349206E746F1E00
+0360: 00017A000003F700 FF1F0180B7000000 001000000016E463 6C4765735461473E
+0380: 653602CA00150000 B3010D00FFFFE40D 000001FE00FF9B1A 0001FB00FF6F2700
+03A0: EE0100FF3F3400B9 000200FFFFE43800 0002FE00FF833C00 000002FB00FF0F40
+03C0: 000000EE0200FF3F 4400B800000200FF FFE04800000002FE 00FF834C00000002
+03E0: FB00FF0F50000000 8E02000100FE00C1 80010000003F5400 300000010D0001FA
+0400: 00002780010000FF C058000000010DFE 00FF836500000001 FB00FF0F72000000
+0420: EE0100FF3F7F00B8 00000100FFFFE08C 00000001FE00FF83 9900000001FB00FF
+0440: 0FA6000000EE0100 FF3FB300B8000003 00FFFF1001802200 00110021001D636C
+0460: 5462806C4D616B65 536505636564526F 77004B6579417272 6179607400000004
+0480: 00EF02E800010000 9F8001FC00001B04 00010DFB00FF6F11 00EE0100FFBF1EB9
+04A0: 000200FFFF180180 0D0012003000000C 6363623E476C1EA3 0001000067010D00
+04C0: FFFF310180040013 100000000C665461 0365436163686546 1E00010000EF03FE
+04E0: 00FF430180150000 00140000000B6366 438E61506F6F405A 0000000300008F07
+0500: 1900800001010094 07009E008001FC00 001B04000304FB00 FF6F0800EC010D00
+0520: FF3F
+.enddata
+.head 2 +  Default Classes
+.head 3 -  MDI Window: cBaseMDI
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Option Button:
+.head 3 -  Check Box:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window: cQuickDatabase
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text:
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 +  Application Actions
+.head 3 +  On SAM_AppStartup
+.head 4 +  If strArgArray[0] = ''
+.head 5 -  Set SqlDatabase = 'STKLOCAL'
+.head 5 -  Set SqlUser = 'SYSADM'
+.head 5 -  Set SqlPassword = 'DANI'
+.head 4 +  Else
+.head 5 -  Set SqlDatabase = strArgArray[1]
+.head 5 -  Set SqlUser = strArgArray[2]
+.head 5 -  Set SqlPassword = strArgArray[3]
+.head 4 -  Call CheckProgramExistance( "Erase Stored Commands", TRUE )
+.head 4 -  Call SqlHandlesSetup(  )
+.head 3 +  On SAM_AppExit
+.head 4 -  Call SqlHandlesDisconnectClose(  )
+.head 1 +  Form Window: frmStoredCommands
+.head 2 -  Class: clsFormGeneral
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title: Erase Stored Commands
+.head 2 -  Icon File:
+.head 2 -  Accesories Enabled? Class Default
+.head 2 -  Visible? Class Default
+.head 2 -  Display Settings
+.head 3 -  Display Style? Class Default
+.head 3 -  Visible at Design time? Yes
+.head 3 -  Automatically Created at Runtime? Yes
+.head 3 -  Initial State: Class Default
+.head 3 -  Maximizable? Class Default
+.head 3 -  Minimizable? Class Default
+.head 3 -  System Menu? Class Default
+.head 3 -  Resizable? Class Default
+.head 3 -  Window Location and Size
+.head 4 -  Left:   1.463"
+.head 4 -  Top:    0.458"
+.head 4 -  Width:  10.083"
+.head 4 -  Width Editable? Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Height Editable? Class Default
+.head 3 -  Form Size
+.head 4 -  Width:  Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Number of Pages: Class Default
+.head 3 -  Font Name: Class Default
+.head 3 -  Font Size: Class Default
+.head 3 -  Font Enhancement: Class Default
+.head 3 -  Text Color: Class Default
+.head 3 -  Background Color: Class Default
+.head 2 -  Description:
+.head 2 -  Named Menus
+.head 2 -  Menu
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Class Default
+.head 4 -  Location? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Size: Class Default
+.head 4 -  Size Editable? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Contents
+.head 4 +  Pushbutton: pbHelp
+.head 5 -  Class Child Ref Key: 1
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbItemEnq
+.head 5 -  Class Child Ref Key: 5
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbPrintForm
+.head 5 -  Class Child Ref Key: 6
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbExit
+.head 5 -  Class Child Ref Key: 2
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 2 +  Contents
+.head 3 +  Data Field: dfDatabase
+.head 4 -  Class Child Ref Key: 3
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfUser
+.head 4 -  Class Child Ref Key: 4
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 -  Background Text:
+.head 4 -  Resource Id: 5714
+.head 4 -  Class Child Ref Key: 8
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Custom Control: ccSeasonYear
+.head 4 -  Class Child Ref Key: 7
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  DLL Name:
+.head 5 -  MS Windows Class Name:
+.head 5 -  Style:  Class Default
+.head 5 -  ExStyle:  Class Default
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Etched Border? Class Default
+.head 5 -  Hollow? Class Default
+.head 5 -  Vertical Scroll? Class Default
+.head 5 -  Horizontal Scroll? Class Default
+.head 5 -  Tab Stop? Class Default
+.head 5 -  Tile To Parent? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  DLL Settings
+.head 4 -  Message Actions
+.head 3 -  !
+.head 3 +  Pushbutton: pbEraseCreator
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clspbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: Erase Creator
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.767"
+.head 5 -  Top:    1.405"
+.head 5 -  Width:  1.483"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 0.25"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 +  Message Actions
+.head 5 +  On PAM_clsPB_CLICK
+.head 6 -  Call EraseCommands( dfCreator, '', 'CREATOR', SH_cls_Execute )
+.head 3 +  Data Field: dfCreator
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdfGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   4.35"
+.head 6 -  Top:    1.405"
+.head 6 -  Width:  2.683"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Uppercase
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Pushbutton: pbEraseName
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clspbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: Erase Name
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.767"
+.head 5 -  Top:    1.702"
+.head 5 -  Width:  1.483"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 0.25"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 +  Message Actions
+.head 5 +  On PAM_clsPB_CLICK
+.head 6 -  Call EraseCommands( dfName, '', 'NAME', SH_cls_Execute )
+.head 3 +  Data Field: dfName
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdfGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   4.35"
+.head 6 -  Top:    1.702"
+.head 6 -  Width:  2.683"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Uppercase
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Pushbutton: pbEraseAll
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clspbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: Erase All
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.767"
+.head 5 -  Top:    2.0"
+.head 5 -  Width:  1.483"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 0.25"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 +  Message Actions
+.head 5 +  On PAM_clsPB_CLICK
+.head 6 -  Call EraseCommands( '', '', 'ALL', SH_cls_Execute )
+.head 2 +  Functions
+.head 3 +  Function: EraseCommands
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  String: sCreator
+.head 5 -  String: sName
+.head 5 -  ! sType = 'CREATOR', 'NAME', 'ALL'
+.head 5 -  String: sType
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nInd
+.head 5 -  Boolean: bOk
+.head 5 -  !
+.head 5 -  String: sGotCreator
+.head 5 -  String: sGotName
+.head 5 -  : fcMeter
+.head 6 -  Class: clsMeterBar
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'EraseCommands' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 +  If sType = 'CREATOR'
+.head 8 -  Set sSql = ' SELECT
+  Creator,
+  Name
+FROM 
+  SysCommands 
+INTO 
+  :sGotCreator, 
+  :sGotName 
+WHERE
+   Creator = :sCreator '
+.head 7 +  Else If sType = 'NAME'
+.head 8 -  Set sSql = ' SELECT
+  Creator,
+  Name
+FROM
+  SysCommands 
+INTO 
+  :sGotCreator, 
+  :sGotName 
+WHERE
+   Name = :sName '
+.head 7 +  Else
+.head 8 -  Set sSql = " SELECT
+  Creator,
+  Name
+FROM
+  SysCommands 
+INTO 
+  :sGotCreator, 
+  :sGotName 
+WHERE 
+  NOT Creator = 'SYSADM' "
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sGotCreator = ''
+.head 7 -  Set sGotName = ''
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].PrepareAndExecute( )
+.head 8 -  Call haSqlHandles[ nOurHandleNo ].ResultSetCount( nInd )
+.head 8 -  Call fcMeter.Setup( 'Erasing Commands', nInd )
+.head 8 -  Set bOk = TRUE
+.head 8 +  While haSqlHandles[ nOurHandleNo ].FetchNext( nInd ) AND bOk
+.head 9 +  If __EraseCommand( sGotCreator, sGotName, SH_cls_Execute )
+.head 10 -  Call __EraseCommand( sGotCreator, sGotName, SH_cls_Commit )
+.head 9 +  Else
+.head 10 -  Set bOk = FALSE
+.head 9 -  Call fcMeter.Increment( 1 )
+.head 8 -  Call fcMeter.End( )
+.head 8 -  Return bOk
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Call __EraseCommand( '', '', SH_cls_Disconnect )
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: __EraseCommand
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  String: sCreator
+.head 5 -  String: sName
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( '__EraseCommand' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].Connect( )
+.head 7 -  Set sSql = sCreator || "." || sName
+.head 7 -  Return SqlDropStoredCmd( haSqlHandles[ nOurHandleNo ].hSqlHandle, sSql )
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 2 -  Window Parameters
+.head 2 -  Window Variables
+.head 2 +  Message Actions
+.head 3 +  On SAM_Destroy
+.head 4 -  Call EraseCommands( '', '', '', SH_cls_Disconnect )
+.head 4 -  Return SalSendClassMessage( SAM_Destroy, wParam, lParam )

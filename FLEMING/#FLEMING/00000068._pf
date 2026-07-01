@@ -1,0 +1,493 @@
+.head 0 +  Application Description: SQLWindows 5.01 Jans Pick Class
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF840000 0084000000140300 00BD010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left:   0.15"
+.head 3 -  Top:    0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left:   5.1"
+.head 3 -  Top:    2.896"
+.head 3 -  Width:  4.688"
+.head 3 -  Height: 2.99"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   Default
+.head 3 -  Top:    Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   6.6"
+.head 3 -  Top:    0.521"
+.head 2 -  Fully Qualified External References? No
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: Table.apl
+.head 2 -  File Include: Activate.apl
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Italic
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Black
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for PICK.APL
+.head 4 -  Number: PICKAplMsgOffSet = SAM_User + 1900
+.head 4 -  ! Message go up to AplOffSet + 99
+.head 4 -  Number: PAM_clsPICK_PUSHFIELDS = PICKAplMsgOffSet + 1
+.head 4 -  Number: PAM_clsPICK_POPFIELDS = PICKAplMsgOffSet + 2
+.head 4 -  Number: PAM_clsPICK_SENDROW = PICKAplMsgOffSet + 3
+.head 4 -  Number: PAM_clsPICK_RECEIVEROW = PICKAplMsgOffSet + 4
+.head 4 -  Number: PAM_clsPICK_LOOKUP = PICKAplMsgOffSet + 5
+.head 4 -  Number: PAM_clsPICK_READYFORFIRSTROW = PICKAplMsgOffSet + 6
+.head 4 -  !
+.head 4 -  Number: PICKAplConstOffSet = 950
+.head 4 -  Number: PICK_SelectManyToMany = PICKAplConstOffSet + 1
+.head 4 -  Number: PICK_SelectOneToMany = PICKAplConstOffSet + 2
+.head 4 -  !
+.head 4 -  !
+.head 4 -  !
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 1518025171
+0000: 7C0000002D000000 0000000000000000 020000050000005D 00010DF8000000FF
+0020: 8F6A0001FB00FF8F 770001FB00FF8F84 0001FB00FF0F9100 040DFA0000FF0F
+.enddata
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 3334888833
+0000: 9E0700009D030000 0000000000000000 0200001000FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F34003C00 001463006C737062
+0040: 53656C6500637446 726F6D546100626C 6564000000041800 0000010D00FC0000
+0060: FFC70D0001FC0000 FFC71A0001FD00FF C7270001FD00FF87 0180040000000100
+0080: 00000D636C595365 6349006E746F1C00 0000011B00030400 FD00FF0701802200
+00A0: 000000020000001D 636C0154626C4D61 6B653C5365656400 526F774B65794172
+00C0: 007261796C000000 041B00020400D100 0100003F8001F800 00009704010DFD00
+00E0: FFC7110001FD00FF C71E0002FC0000FF 070180B700000000 030000000F636C1B
+0100: 61654765006E6572 616C0C0200611500 000001F60D00FF1F 0D0001F30000FFDF
+0120: 1AF700FFDF27F700 FF1F340002F700FF 1F380002F700FF1F 3C0002F700FF1F40
+0140: 0002F700FF1F4400 02F700FF1F480002 F700FF1F4C0002F7 00FF1F5000024700
+0160: 010000FFE4800100 001F540001460D00 010000FFE4800100 001F580001F60D00
+0180: FF1F650001F700FF 1F720001F700FF1F 7F0001F700FF1F8C 0001F700FF1F9900
+01A0: 01F700FF1FA60001 F700FF1FB30003F6 0400FF1F01800D32 000004000C94636C
+01C0: 7047654F1C000034 010000010DFB00FF 8F01800D01000500 000009630E6C4578
+01E0: 6974441C00000100 00B3010D00FFFF18 0180040006003800 000C506900634578
+0200: 70616E641CA20000 010000DD0200FF7F 010C800400070000 F00012636C00546F
+0220: 67676C6542754074 746F6E1C0000B401 000002FB00FF8F01 800D810008000000
+0240: 0CE36362473F0001 9A0000010DFD00FF 0701802F00000000 090000000E636C81
+0260: 466F726D47650F7C 000000360500010D FB00FFAF0D02FB00 FF2F11040DF80000
+0280: 00FFAF1E03FB00FF 8F220001FB00FF8F 01800D01000A0000 0017633E6C507200
+02A0: 696E744261736963 805265706F72741C D100010000EC010D 00FF3F0180060D00
+02C0: 0B000000000B6863 53716C4861426E6C 651C000034010000 010DFB00FF8F0180
+02E0: 0401000C0000000C 63C364664765371C 0001DA000003FD00 FF0701802E00000C
+0300: 000D0011636C0570 5374617274005072 6F6772616DACB000 00000700DD0200FF
+0320: 7F04CC00020000FF 7F08DD0200FF7F0C D800010D00FF7F19 DC000300FF7F1DDC
+0340: 000200FF7F21DC00 0100FF7F010C802F 000E000010001063 6C446961E06C6F67
+0360: 4765996C7C0005CD 00010DFE00FFEB0D 02FE00FF5311000D 00FE00FFFB1EFE00
+0380: FFFB22FE00FF6301 800D00C00F000000 1163005370696E53 656173006F6E5965
+03A0: 61721C00D1000100 00EC010D00FF3F
+.enddata
+.head 3 +  Pushbutton Class: clspbSelectFromTable
+.head 4 -  Title: &Select
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\UPARR.ICO
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbGeneral
+.head 4 +  Class Variables
+.head 5 -  Boolean: bFound
+.head 5 -  Boolean: bFirst
+.head 5 -  Boolean: bContinue
+.head 5 -  Number: nRow
+.head 4 +  Instance Variables
+.head 5 -  ! PUBLIC
+.head 5 -  Window Handle: hWndTable
+.head 5 -  ! hWndSelectParent the handle of the button or form that will receive the PAM_clsPICK_SENDROW
+  Ussualy the clspbPickInto
+.head 5 -  Window Handle: hWndSelectParent
+.head 5 -  ! nSelectType = PICK_SelectOneToMany by default OR PICK_SelectManyToMany
+.head 5 -  Number: nSelectType
+.head 5 -  ! nSelectDirection = TBL_cls_LowToHi by default OR TBL_cls_HiToLow
+.head 5 -  Number: nSelectDirection
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set hWndTable = hWndNULL
+.head 6 -  Set hWndSelectParent = hWndNULL
+.head 6 -  Set nSelectType = PICK_SelectOneToMany
+.head 6 -  Set nSelectDirection = TBL_cls_LowToHi
+.head 6 -  Call SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 6 +  If NOT hWndSelectParent
+.head 7 -  Call SalSendMsg( hWndItem, PAM_clsPB_HIDE, 0, 0 )
+.head 5 +  On PAM_clsPB_CLICK
+.head 6 -  Set bFirst = TRUE
+.head 6 +  If nSelectType = PICK_SelectOneToMany
+.head 7 -  Set bContinue = TRUE
+.head 7 -  Set bFound = FALSE
+.head 7 -  !
+.head 7 +  While bContinue
+.head 8 -  Set nRow = TBL_MinRow
+.head 8 +  If SalTblFindNextRow( hWndTable, nRow, ROW_Selected, 0 )
+.head 9 -  Call SalTblFetchRow( hWndTable, nRow )
+.head 9 +  If NOT SalSendMsg( hWndItem, PAM_clsTBL_ROWACTION, nSelectType, nRow )
+.head 10 -  Set bContinue = FALSE
+.head 8 +  Else
+.head 9 -  Call SalMessageBox( 'Row Not Selected', 'Warning', MB_Ok )
+.head 9 -  Set bContinue = FALSE
+.head 7 -  !
+.head 7 -  ! Set bFound = FALSE
+.head 7 +  ! If NOT TableLoop( hWndTable, hWndItem, PAM_clsTBL_ROWACTION, nSelectType, ROW_Selected, 0, 'Selecting One to Many Rows', TBL_cls_LowToHi )
+.head 8 +  If NOT bFound
+.head 9 -  Call SalMessageBox( 'Row Not Selected', 'Warning', MB_Ok )
+.head 6 +  Else If nSelectType = PICK_SelectManyToMany
+.head 7 -  Set bFound = FALSE
+.head 7 +  If NOT TableLoop( hWndTable, hWndItem, PAM_clsTBL_ROWACTION, nSelectType, ROW_Selected, 0, 'Selecting Many to Many Rows', nSelectDirection )
+.head 8 +  If NOT bFound
+.head 9 -  Call SalMessageBox( 'Row Not Selected', 'Warning', MB_Ok )
+.head 6 +  If bFound
+.head 7 -  Call SalPostMsg( hWndForm, PAM_cls_CLOSE, TRUE, 0 )
+.head 5 +  On PAM_clsTBL_ROWACTION
+.head 6 -  Set bFound = TRUE
+.head 6 +  If bFirst
+.head 7 -  Call SalSendMsg( hWndSelectParent, PAM_clsPICK_READYFORFIRSTROW, 0, 0 )
+.head 7 -  Set bFirst = FALSE
+.head 6 -  Return SalSendMsg( hWndItem, PAM_clsPICK_SENDROW, wParam, lParam )
+.head 5 +  On PAM_clsPICK_SENDROW
+.head 6 +  If SalSendMsg( hWndItem, PAM_clsPICK_PUSHFIELDS, 0, 0 )
+.head 7 +  If SalSendMsg( hWndSelectParent, PAM_clsPICK_RECEIVEROW, nSelectType, nSelectDirection )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call SalSendMsg( hWndItem, PAM_clsPICK_POPFIELDS, 0, 0 )
+.head 8 -  Return FALSE
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  On PAM_clsPICK_PUSHFIELDS
+.head 6 -  Return FALSE
+.head 5 +  On PAM_clsPICK_POPFIELDS
+.head 6 -  Return FALSE
+.head 3 +  Pushbutton Class: clspbPickInto
+.head 4 -  Title: Pick
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name: C:\CENTURA\ICONS\PICK2.ICO
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbActivateWindow
+.head 5 -  Class: clsSelectInto
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Call SalSendClassMessageNamed( clsSelectInto, SAM_Create, wParam, lParam )
+.head 6 -  Return SalSendClassMessageNamed( clspbActivateWindow, SAM_Create, wParam, lParam )
+.head 3 +  General Window Class: clsSelectInto
+.head 4 -  Description:
+.head 4 -  Derived From
+.head 4 +  Class Variables
+.head 5 -  Window Handle: hWndCol
+.head 4 +  Instance Variables
+.head 5 -  ! PUBLIC
+.head 5 -  Window Handle: hWndTable
+.head 5 -  Window Handle: hWndFieldLookUp
+.head 5 -  ! PRIVATE
+.head 5 -  Boolean: bFirst
+.head 5 -  Number: nRow
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set hWndTable = hWndNULL
+.head 6 -  Set hWndFieldLookUp = hWndNULL
+.head 6 -  Set bFirst = TRUE
+.head 6 -  Call SalSendMsg( hWndItem, PAM_cls_SETINSTANCEVARS, 0, 0 )
+.head 6 +  If hWndFieldLookUp = hWndNULL
+.head 7 -  Set hWndFieldLookUp = hWndTable
+.head 6 -  Return TRUE
+.head 5 +  On PAM_clsPICK_RECEIVEROW
+.head 6 +  If wParam = PICK_SelectOneToMany
+.head 7 +  If hWndTable = hWndNULL
+.head 8 +  If bFirst
+.head 9 -  Set bFirst = FALSE
+.head 9 +  If SalSendMsg( hWndFieldLookUp, PAM_clsPICK_LOOKUP, wParam, lParam )
+.head 10 -  Return TRUE
+.head 9 +  Else
+.head 10 -  Return FALSE
+.head 8 +  Else
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 +  If bFirst
+.head 9 -  Set nRow = TBL_MinRow
+.head 9 -  Set bFirst = FALSE
+.head 7 +  If SalTblFindNextRow( hWndTable, nRow, ROW_Selected, 0 )
+.head 8 -  Call SalTblFetchRow( hWndTable, nRow )
+.head 8 +  If SalSendMsg( hWndFieldLookUp, PAM_clsPICK_LOOKUP, wParam, lParam )
+.head 9 -  Return TRUE
+.head 8 +  Else
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 7 -  !
+.head 7 -  !
+.head 7 -  ! Set nRow = TBL_MinRow
+.head 7 +  ! If SalTblFindNextRow( hWndTable, nRow, 0, 0 )
+.head 8 -  Set nRow = TBL_MinRow
+.head 8 -  Call SalTblQueryFocus( hWndTable, nRow, hWndCol )
+.head 7 +  ! If SalTblQueryRowFlags( hWndTable, nRow, ROW_New )
+.head 8 +  If SalSendMsg( hWndFieldLookUp, PAM_clsPICK_LOOKUP, wParam, lParam )
+.head 9 -  Return TRUE
+.head 8 +  Else 
+.head 9 -  Return FALSE
+.head 7 +  ! Else If SalTblQueryRowFlags( hWndTable, nRow, ROW_Selected )
+.head 8 +  If SalSendMsg( hWndFieldLookUp, PAM_clsPICK_LOOKUP, wParam, lParam )
+.head 9 -  Return TRUE
+.head 8 +  Else 
+.head 9 -  Return FALSE
+.head 7 +  ! Else
+.head 8 -  Call SalSendMsg( hWndTable, PAM_clsTBL_ADDROW, 0, 0 )
+.head 8 +  If SalSendMsg( hWndFieldLookUp, PAM_clsPICK_LOOKUP, wParam, lParam )
+.head 9 -  Return TRUE
+.head 8 +  Else 
+.head 9 -  Return FALSE
+.head 6 +  Else If wParam = PICK_SelectManyToMany
+.head 7 +  If bFirst
+.head 8 -  Set nRow = TBL_MinRow
+.head 8 +  If SalTblFindNextRow( hWndTable, nRow, 0, 0 )
+.head 9 -  Set nRow = TBL_MinRow
+.head 9 -  Call SalTblQueryFocus( hWndTable, nRow, hWndCol )
+.head 8 +  If SalTblQueryRowFlags( hWndTable, nRow, ROW_New )
+.head 9 +  If SalSendMsg( hWndFieldLookUp, PAM_clsPICK_LOOKUP, wParam, lParam )
+.head 10 -  Set bFirst = FALSE
+.head 10 -  Return TRUE
+.head 9 +  Else
+.head 10 -  Return FALSE
+.head 8 +  Else If SalTblQueryRowFlags( hWndTable, nRow, ROW_Selected )
+.head 9 +  If SalSendMsg( hWndFieldLookUp, PAM_clsPICK_LOOKUP, wParam, lParam )
+.head 10 -  Set bFirst = FALSE
+.head 10 -  Return TRUE
+.head 9 +  Else
+.head 10 -  Return FALSE
+.head 8 +  Else
+.head 9 -  Call SalSendMsg( hWndTable, PAM_clsTBL_ADDROW, 0, 0 )
+.head 9 +  If SalSendMsg( hWndFieldLookUp, PAM_clsPICK_LOOKUP, wParam, lParam )
+.head 10 -  Set bFirst = FALSE
+.head 10 -  Return TRUE
+.head 9 +  Else
+.head 10 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Call SalSendMsg( hWndTable, PAM_clsTBL_ADDROW, 0, 0 )
+.head 8 +  If SalSendMsg( hWndFieldLookUp, PAM_clsPICK_LOOKUP, wParam, lParam )
+.head 9 -  Return TRUE
+.head 8 +  Else
+.head 9 -  Return FALSE
+.head 5 +  On PAM_clsPICK_READYFORFIRSTROW
+.head 6 -  Set bFirst = TRUE
+.head 6 -  Return TRUE
+.head 3 -  !
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Check Box:
+.head 3 -  Option Button:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text:
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 -  Application Actions

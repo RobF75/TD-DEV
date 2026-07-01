@@ -1,0 +1,70 @@
+Get count of partners to process
+
+Check Activated and On-Hold status flags
+
+
+** FILE TRANSFER **
+
+FTP to partner
+
+Upload any OUTBOX files for partner
+
+Download files from partner into INBOX
+
+
+** FILE PROCESSING **
+
+Get file
+
+Decompress file if required
+
+Remove any CR/LF that may exist
+
+Check for UNA Service segment data, or use default chars if none exists
+
+Scan file for any combinations of the release character/segment termination character
+
+Tokenise data file into segments based on the segment termination character
+
+
+** INTERCHANGE VALIDATION **
+
+Scan for UNB segment (Interchange Header)
+
+Validate UNB fields for Partner details, Interchange age, etc
+
+Store UNB interchange details for Functional Acknowledgement generation (CONTRL)
+
+
+Scan for UNZ segment (Interchange Trailer)
+
+Get count of message in this interchange
+
+Compare Interchange reference to UNB data
+
+
+Scan for instances of UNH segments (Message Headers)
+
+Compare count of segment to UNZ message count
+
+
+** MESSAGE VALIDATION **
+
+Point to first UNH segment (Message Header)
+
+Scan for UNT segment (Message Trailer)
+
+Get count of segments in this message 
+
+Compare Message reference to UNH data
+
+
+Copy current message segments to new array
+
+
+
+
+
+
+
+

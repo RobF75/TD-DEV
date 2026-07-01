@@ -1,0 +1,40 @@
+HeldenPort(tm) Optimizing Compiler for CENTURA(R) Builder version 2.01  bld 332
+Copyright (C) 1991-96 by Heldenleben Corporation - All Rights Reserved
+Written by Francis Cianfrocca and Paula Hostetter
+
+Fri Oct 17 11:44:37 1997
+*0: Unsupported syntax used: structPointer
+*0: Unsupported syntax used: structPointer
+*SY: Semantic errors: 0
+*SY: Semantic errors: 0
+*OF: Syntax errors:   0
+*OF: Semantic errors: 0
+*** DisplayHelp
+*** ExtractHelpFileName
+*** OurGetIniFileParameter
+*** OurSetIniFileParameter
+*** ValidateUserRightsList
+*** IsUserAccounts
+*** IsUserAdmin
+*** IsUserStockController
+*** CheckProgramExistance
+*** OurWaitCursor
+*** OurWaitCursorOverride
+*** OurMapEnterToTab
+*** RoundTo2Decimals
+*** GetFullItemName
+*CO: Syntax errors:   0
+*CO: Semantic errors: 0
+
+***UNAVAILABLE-FUNCTION DEPENDENCIES:
+
+
+
+Elapsed time: 0:02
+Output code: 0
+nFuncsCompiled: 14
+nFuncsProcessed: 14
+Microsoft (R) 32-Bit Incremental Linker Version 2.50      
+Copyright (C) Microsoft Corp 1992-94. All rights reserved.
+
+   Creating library .\__.lib and object .\__.exp ...

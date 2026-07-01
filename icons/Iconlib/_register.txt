@@ -1,0 +1,85 @@
+                  Icolib Order Form             Version 4C
+                  =================             ----------
+
+
+       Name: __________________________________________________
+
+    Company: __________________________________________________
+
+    Address: __________________________________________________
+
+       City: ___________________________ State: _______________
+
+    Country: _______________________ Post/Zip Code: ___________
+
+
+Your Email Address: ___________________________________________
+
+Where did you find this program:  _____________________________
+
++----------------------==========oooooOOOooooo==========----------------------+
+|                                                                             |
+|                           CREDIT CARD ORDERS ONLY                           |
+|                                                                             |
+|You can order with MC, Visa, Amex, or Discover from DigiBuy by going to      |
+|       http://www.digibuy.com/cgi-bin/order.html?235364                      |
+|                                                                             |
+|Any questions about the status of the shipment of the order, refunds,        |
+|registration options, product details, technical support, volume discounts,  |
+|dealer pricing, site licenses, NON-CREDIT CARD ORDERS, etc, must be directed |
+|to Steve Balogh at                                                           |
+|        Email: steve@themeworld.com   or   Postal: See below                 |
+|                                                                             |
+|To insure that you get the latest version, DigiBuy will notify us the day of |
+|your order and we will ship the product directly to you.                     |
+|                                                                             |
++----------------------==========oooooOOOooooo==========----------------------+
+
+Other forms of Payment:
+======================
+
+   All amounts are in US DOLLARS but other currencies to an
+   equivalent amount are happily accepted. Cash or personal
+   checks are accepted. See information above for any order
+   being made by Credit Card.
+
+   Icolib program:                      ____ copies  = $_______
+     1       license   no discount. (US$25.00)
+     2 - 5   licenses 20% discount. (US$20.00 each copy)
+     6 - 20  licenses 40% discount. (US$15.00 each copy)
+     21 +    licenses 50% discount. (US$12.00 each copy)
+
+>>> Previously registered users US$5.00 (CASH ONLY) if you
+    require disks sent by mail or you can have the latest
+    registered version for free from my ftp site.
+
+
+                                                Total  $_______
+
+How would you like to receive your program?
+
+   Anonymous FTP: ____        Post: 3.5" disk ____
+
+Make your payment to Stephen Balogh, and send it to:
+
+     PO Box 414
+     Caulfield East
+     Melbourne
+     AUSTRALIA     3145
+
+I will send a copy of Icon Library with the full set of icons as
+soon as I receive your registration.
+
+Comments:
+========
+
+___________________________________________________________________
+
+___________________________________________________________________
+
+___________________________________________________________________
+
+___________________________________________________________________
+
+If you have access to the Internet then I can be contacted at:
+                   steve@cc.monash.edu.au

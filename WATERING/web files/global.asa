@@ -1,0 +1,87 @@
+<script language="VBScript" runat="server">
+
+sub Application_OnStart
+  Application("FlemSys")="LIVE"
+  Application("AltFlemSys")="PLAY"
+  Application("vistors")=0
+end sub
+
+sub Application_OnEnd
+
+end sub
+
+sub Session_OnStart
+  Session.Timeout=480
+  Session("Start")=Now
+  Application.Lock
+	Application("visitors")=Application("visitors")+1
+	Application.UnLock
+
+
+  'Database connection initialization
+  
+  'LIVE connection string
+  Session("FlemConnStr")="Provider=SQLBaseOLEDB; User ID=GRAHAM; Password=GRAHAM; Data Source=LIVE; IsoLevel=RL; ini=C:\Program Files (x86)\Unify\Team Developer 5.2\sql.ini;"
+  'Workshop Connection String
+  Session("WorkConnStr")="Provider=SQLBaseOLEDB; User ID=SYSADM; Password=GRAHAM; Data Source=workshop;"
+  Session("WaterConnStr")="Provider=SQLBaseOLEDB; User ID=graham; Password=graham; Data Source=watering"
+  Session("HostName")="localhost/handheldlive"
+  'Session("AltHostName")="localhost/handheldplay"
+  
+  Set Session("FlemConn")=Server.CreateObject("ADODB.Connection")
+  Set Session("WorkConn")=Server.CreateObject("ADODB.Connection")
+  Set Session("WaterConn")=Server.CreateObject("ADODB.Connection")
+
+  'Default values for loads programs
+  Session("LCShowPulled")="N" 'Show pulled load customers?
+  Session("PSShowPulled")="N" 'Show pulled pullsheet items?
+  Session("LCShowChecked")="N" 'Show pulled load customers?
+  Session("CSShowChecked")="N" 'Show pulled pullsheet items?
+  Session("PSItemsPerPage")=15
+  Session("PSCurrentPage")=1
+  Session("CSItemsPerPage")=15
+  Session("CSCurrentPage")=1
+  
+  'User data
+  Session("FlemUsersStr")=Session("FlemConnStr")
+  Set Session("FlemUsers")=Server.CreateObject("ADODB.Connection")
+   
+end sub
+
+sub Session_OnEnd
+  'Clean up the pullsheet flags
+  if Session("CurrentAction")="PullSheet" then
+    if Session("FlemConn").State = 0 then
+      Session("FlemConn").Open Session("FlemConnStr")
+    end if
+    Session("FlemConn").Execute "update load_customers set hh_pulling='N' where load_id='"&Session("PSLoadID")&"' and cust_no="&Session("PSCustNo")&" and load_cust_inst_no="&Session("PSLoadCustInst")
+    Session("FlemConn").Close
+  end if
+ 
+	Application.Lock
+	Application("visitors")=Application("visitors")-1
+	Application.UnLock
+	
+  'Close the database connection
+  if Session("FlemConn").State > 0 then
+    Session("FlemConn").close
+  end if
+  Set Session("FlemConn")=nothing
+
+  'User data
+  if Session("FlemUsers").State > 0 then
+    Session("FlemUsers").Close
+  end if
+  Set Session("FlemUsers")=nothing
+  
+    'Watering data
+  if Session("WaterConn").State > 0 then
+    Session("WaterConn").Close
+  end if
+  Set Session("WaterConn")=nothing
+
+  
+  
+end sub
+
+</script>

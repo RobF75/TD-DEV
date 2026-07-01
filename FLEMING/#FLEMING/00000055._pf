@@ -1,0 +1,1657 @@
+Application Description: SQLWindows 5.01 Jans Form Class
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000760000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF6E0000 006E000000FE0200 00A7010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 1018B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.1"
+			Top:    2.917"
+			Width:  4.688"
+			Height: 2.969"
+		Class Editor Location
+			Visible? No
+			Left:   0.1"
+			Top:    0.052"
+			Width:  5.063"
+			Height: 2.719"
+		Tool Palette Location
+			Visible? No
+			Left:   6.6"
+			Top:    0.521"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: vtspin.apl
+		File Include: vtwin.apl
+		File Include: Runprog.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Italic
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Black
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for FORM.APL
+				Number: FORMaplOffSet = SAM_User + 500
+				! Message go up to FORMaplOffSet + 99
+				Number: FORMAplConstOffSet = 250
+				! Messages
+				Number: PAM_clsFRM_SHOW = FORMaplOffSet + 1
+				Number: PAM_clsFRM_EXIT = FORMaplOffSet + 2
+				Number: PAM_clsFRM_RETURN = FORMaplOffSet + 3
+				Number: PAM_clsFRM_ACTIVATE = FORMaplOffSet + 4
+				Number: PAM_clsFRM_PUSHFIELDS = FORMaplOffSet + 5
+				Number: PAM_clsFRM_POPFIELDS = FORMaplOffSet + 6
+				Number: PAM_clsFRM_REPORTCLOSED = FORMaplOffSet + 7
+				!
+				Number: PAM_clsFRM_REPORT_PrevPage = FORMaplOffSet + 8
+				Number: PAM_clsFRM_REPORT_NextPage = FORMaplOffSet + 9
+				Number: PAM_clsFRM_REPORT_LastPage = FORMaplOffSet + 10
+				Number: PAM_clsFRM_REPORT_GotoPage = FORMaplOffSet + 11
+				Number: PAM_clsFRM_REPORT_Close = FORMaplOffSet + 12
+				Number: PAM_clsFRM_REPORT_SizeActual = FORMaplOffSet + 13
+				Number: PAM_clsFRM_REPORT_SizeFit = FORMaplOffSet + 14
+				Number: PAM_clsFRM_REPORT_Print = FORMaplOffSet + 15
+				Number: PAM_clsFRM_REPORT_PrinterSetup = FORMaplOffSet + 16
+				Number: PAM_clsFRM_REPORT_BEGIN = FORMaplOffSet + 17
+				Number: PAM_clsFRM_NOTTREESYS = FORMaplOffSet + 18
+				Number: PAM_clsFRM_REPORTSTART = FORMaplOffSet + 19
+				Number: PAM_clsFRM_REPORTFETCHINIT = FORMaplOffSet + 20
+				Number: PAM_clsFRM_REPORTFETCHNEXT = FORMaplOffSet + 21
+				Number: PAM_clsFRM_REPORTFETCHNEXTEND = FORMaplOffSet + 22
+				Number: PAM_clsFRM_REPORTFINISH = FORMaplOffSet + 23
+				Number: PAM_clsFRM_CHILDWINACTIVATED = FORMaplOffSet + 24
+				Number: PAM_cls_DESTROY = FORMaplOffSet + 25
+				Number: PAM_cls_CREATE = FORMaplOffSet + 26
+				Number: PAM_cls_CREATECOMPLETE = FORMaplOffSet + 27
+				Number: PAM_clsFRM_REPORT_FirstPage = FORMaplOffSet + 28
+				Number: PAM_clsFRM_ADDHIDE = FORMaplOffSet + 29
+				Number: PAM_clsFRM_SAVEHIDE = FORMaplOffSet + 30
+				Number: PAM_clsFRM_DELHIDE = FORMaplOffSet + 31
+				Number: PAM_clsFRM_CLEARHIDE = FORMaplOffSet + 32
+				Number: PAM_clsFRM_QRYHIDE = FORMaplOffSet + 33
+				Number: PAM_clsFRM_REPOPHIDE = FORMaplOffSet + 34
+				Number: PAM_clsFRM_PRINTHIDE = FORMaplOffSet + 35
+				! Constants
+				Number: FRM_EndOnExit = FORMAplConstOffSet + 1
+				Number: FRM_HideOnExit = FORMAplConstOffSet + 2
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1347615921
+0000: 8600000038000000 0000000000000000 020000050000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E8040D0000 FF3F
+.enddata
+		Named Menus
+			Menu: clsFormFileMenu
+				Resource Id: 30806
+				Title: &File
+				Description:
+				Enabled when:
+				Status Text:
+				Menu Item Name:
+				Menu Item: &Help
+					Resource Id: 30807
+					Keyboard Accelerator: F1
+					Status Text: Shows a summary of this screens actions, hints and tips.
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Call SalSendMsg( hWndForm, PAM_cls_HELP, 0, 0 )
+					Menu Item Name:
+				Menu Item: &Item Enquiry
+					Resource Id: 30808
+					Keyboard Accelerator: (none)
+					Status Text: Query a stock item for sale.
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Call SalSendMsg( hWndForm, PAM_cls_ITEMENQUIRY, 0, 0 )
+					Menu Item Name:
+				Menu Item: E&xit
+					Resource Id: 30809
+					Keyboard Accelerator: F12
+					Status Text: Return to Previsous screen ( If on the first screen, this exits the program )
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						! Call SalSendMsg( hWndForm, PAM_cls_EXIT, 0, 0 )
+						Call SalSendMsg( hWndForm, PAM_cls_CLOSE, 0, 0 )
+					Menu Item Name:
+			Menu: clsFormReportViewFileMenu
+				Resource Id: 1440
+				Title: &File
+				Description:
+				Enabled when:
+				Status Text: Moving within the report
+				Menu Item Name:
+				Menu Item: &First Page
+					Resource Id: 39878
+					Keyboard Accelerator: F5
+					Status Text: Jump to the start of the report
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Return SalSendMsg( hWndForm, PAM_clsFRM_REPORT_FirstPage, 0, 0 )
+					Menu Item Name:
+				Menu Item: &Prev Page
+					Resource Id: 39879
+					Keyboard Accelerator: F6
+					Status Text: Goto the Previous Page of the report
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Return SalSendMsg( hWndForm, PAM_clsFRM_REPORT_PrevPage, 0, 0 )
+					Menu Item Name:
+				Menu Item: &Next Page
+					Resource Id: 39880
+					Keyboard Accelerator: F7
+					Status Text: Goto the Next Page of the report
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Return SalSendMsg( hWndForm, PAM_clsFRM_REPORT_NextPage, 0, 0 )
+					Menu Item Name:
+				Menu Item: &Last Page
+					Resource Id: 39881
+					Keyboard Accelerator: F8
+					Status Text: Jump to th the end of the report
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Return SalSendMsg( hWndForm, PAM_clsFRM_REPORT_LastPage, 0, 0 )
+					Menu Item Name:
+				Menu Separator
+				Menu Item: &Goto Page
+					Resource Id: 39882
+					Keyboard Accelerator: (none)
+					Status Text: Jump to a given page number
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Return SalSendMsg( hWndForm, PAM_clsFRM_REPORT_GotoPage, 0, 0 )
+					Menu Item Name:
+				Menu Separator
+				Menu Item: &Close Report
+					Resource Id: 39874
+					Keyboard Accelerator: F12
+					Status Text: Exit Report
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Return SalSendMsg( hWndForm, PAM_clsFRM_REPORT_Close, 0, 0 )
+					Menu Item Name:
+			Menu: clsFormReportViewViewMenu
+				Resource Id: 1447
+				Title: &View
+				Description:
+				Enabled when:
+				Status Text: Zoom in and out of the report
+				Menu Item Name:
+				Menu Item: &Actual Size
+					Resource Id: 39877
+					Keyboard Accelerator: (none)
+					Status Text: Normal Size
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Return SalSendMsg( hWndForm, PAM_clsFRM_REPORT_SizeActual, 0, 0 )
+					Menu Item Name:
+				Menu Item: &Fit In Window
+					Resource Id: 39876
+					Keyboard Accelerator: (none)
+					Status Text: Zoom to show whole report
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Return SalSendMsg( hWndForm, PAM_clsFRM_REPORT_SizeFit, 0, 0 )
+					Menu Item Name:
+			Menu: clsFormReportViewPrintMenu
+				Resource Id: 1450
+				Title: &Print
+				Description:
+				Enabled when:
+				Status Text: Printer options
+				Menu Item Name:
+				Menu Item: &Print
+					Resource Id: 39875
+					Keyboard Accelerator: (none)
+					Status Text: Obtain a print out
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Return SalSendMsg( hWndForm, PAM_clsFRM_REPORT_Print, 0, 0 )
+					Menu Item Name:
+				Menu Item: Printer &Setup
+					Resource Id: 39873
+					Keyboard Accelerator: (none)
+					Status Text: Adjust the printer first
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Return SalSendMsg( hWndForm, PAM_clsFRM_REPORT_PrinterSetup, 0, 0 )
+					Menu Item Name:
+		Internal Functions
+			Function: ItemEnquiry
+				Description:
+				Returns
+					Boolean:
+				Parameters
+				Static Variables
+				Local variables
+				Actions
+					If SqlDatabase = 'STOCKDEV'
+						Return SalLoadApp( 'AVAILD.EXE', SqlDatabase||' '||SqlUser||' '||SqlPassword )
+					Else
+						Return SalLoadApp( 'AVAIL.EXE', SqlDatabase||' '||SqlUser||' '||SqlPassword )
+		Class Definitions
+.data RESOURCE 0 0 1 1892733212
+0000: DF0A000022050000 0000000000000000 0200001500FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 000B63006C73466F
+0040: 726D426100736586 00000005003C0000 010DF8000000FF4F 0D0000E002040000
+0060: 00FF3F1100A00000 040D0000FFFF801E 000000030400FE00 FF832200000001FB
+0080: 00FF0F01800D0001 000100000017633E 6C507220696E7442 616963005265706F
+00A0: 72741E00D9000100 B3010D00FFFF0001 802E000000020020 000011636C706200
+00C0: 537461727450726F 006772616DBA0000 00F007000000EC02 0400FF3F0400B900
+00E0: 0200FFFFE0080000 0002FE00FF030C00 0000010DFB00FF0F 19000000EE0300FF
+0100: 3F1D00B800000200 FFFFE02100000001 FE00FF0301803600 000080030000000F
+0120: 636CFC53740FEE00 0000F009000000EC 010D00FFBF0DB900 0100FFFFE01A0000
+0140: 0002FE00FF9B1E00 02FB00FF6F2200EE 0200FF3F2600B800 000200FFFFE02A00
+0160: 000002FE00FF932E 000002FB00FF0F32 000000EE0200FF3F 0180660D00040028
+0180: 0C636C704765806E 6572616C1E00E800 010000D9010D00FF 7F01C08038000000
+01A0: 05700009636C4820 656C70860000057B 0002F700FFDF04D8 00010D00FF7F1172
+01C0: 00000100FFFFCD1E 0001FD00FF072B00 000001F700FF1F01 800D030006000000
+01E0: 091F4578698C741E 0001009E00010DFD 00FF8701800400CC 0007000C01506963
+0200: 45787061106E641E 00000100BD0002FB 00FF8F0180041900 080012631E6C546F
+0220: 6700676C65427574 746F886E1E000001 00DE0002FD00FFC7 018004C800090000
+0240: 0CE1646647651F00 01003D000304FB00 FF0F01802F000100 0A0000001063026C
+0260: 4469616C6F677C47 6586B20000050067 010D00FFFFCD0D00 02FD00FF37110004
+0280: F60D00FFDF1EDC00 0300FF7F22730001 00FFFF3101800D00 0B60000000116353
+02A0: 0070696E53656173 6F806E596561721E 00E800010000D901 0D00FF7F01808034
+02C0: 0000000C00500014 636C705300656C65 637446726F006D54 61626C656C00D000
+02E0: 00040000B3010D00 FFFFE60D0001FE00 FF9B1A0001FB00FF 0F27000000EE0100
+0300: FF3F01806604000D 00480D636C536565 0263496E746F1E00 D100010000BB0300
+0320: FFFF000180B70000 000E002000001663 6C47659F5461F347 655136020015009E
+0340: 00010DFD00FF270D 000001F700FFDF1A DC000100FF7F2773 000100FFFFC93400
+0360: 0002FD00FF273800 0002F700FF1F3C00 00DC000200FF7F40 700000000200FFFF
+0380: C14400000002FD00 FF074800000002F7 00FF1F4C0000DC00 0200FF7F50700000
+03A0: 000200F40100000F 80010000FE008154 000000010DD10001 00003F8001F90000
+03C0: 075800000001F60D 00FF1F650000DC00 0100FF7F72700000 000100FFFFC17F00
+03E0: 000001FD00FF078C 00000001F700FF1F 990000DC000100FF 7FA6700000000100
+0400: FFFFC1B300000003 FD00FF8701802200 00000F0000001D63 6C0154626C4D616B
+0420: 652C536563656400 526F774B65794172 0072617974000000 047B000247000100
+0440: 00FFE480010000DF 04D800010D00FF7F 117200000100FFFF CD1E0002FD00FF87
+0460: 0180110080001000 0000106301436F6C 756D6E471E656C38 00D100020000B302
+0480: 0400FFFFC6040001 0DFE00FF63018011 00C611000C63F863 62478F0002009E00
+04A0: 010DFD00FF370D00 02F60400FF1F0180 0403001200000010 07546F6F6C540069
+04C0: 7057696E646F7744 1E0000010000EF03 FE00FF6301800400 20130000000C6654
+04E0: 0661654361636888 651E00000100DE00 03FD00FF87018015 000000140000000B
+0500: 63661C4361506F6F 815A00000003001E 0007190001000101 00BE07003D008001
+0520: F9000037040003F6 0400FFDF08D80001 0D00FF7F
+.enddata
+			Form Window Class: clsFormBase
+				Title:
+				Icon File:
+				Accesories Enabled? Class Default
+				Visible? Class Default
+				Display Settings
+					Display Style? Class Default
+					Visible at Design time? Yes
+					Automatically Created at Runtime? No
+					Initial State: Normal
+					Maximizable? Class Default
+					Minimizable? Class Default
+					System Menu? Class Default
+					Resizable? Class Default
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  9.988"
+						Width Editable? Class Default
+						Height: 5.948"
+						Height Editable? Class Default
+					Form Size
+						Width:  Class Default
+						Height: Class Default
+						Number of Pages: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+				Next Class Child Key: 0
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+				Menu
+				Tool Bar
+					Display Settings
+						Display Style? Class Default
+						Location? Class Default
+						Visible? Class Default
+						Size: Class Default
+						Size Editable? Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Contents
+				Contents
+				Class Variables
+					Number: nTmp
+					String: sTmp
+					Date/Time: dtTmp
+					Window Handle: hWndTmp
+					Number: nReturn
+				Instance Variables
+					String: sHelpFileName
+					Number: nActionOnExit
+					String: sFormHeading
+					Boolean: bMapEnterToTab
+					Boolean: bPrintFormAllowed
+					Boolean: bTreeSystem
+					!
+					String: sWinShowType
+				Functions
+				Message Actions
+					On SAM_Create
+						Call OurWaitCursor( TRUE )
+						Call SalGetWindowText( hWndForm, sFormHeading, 130 )
+						Set nActionOnExit = FRM_EndOnExit
+						Set sHelpFileName = ''
+						Set bMapEnterToTab = FALSE
+						Set bPrintFormAllowed = TRUE
+						Set bTreeSystem = TRUE
+						! Call SalSendMsg( hWndForm, PAM_cls_CREATE, 0, 0 )
+						Call SalSendMsg( hWndForm, PAM_clsFRM_POPFIELDS, 0, 0 )
+						Call SalSendMsg( hWndForm, PAM_cls_SETINSTANCEVARS, 0, 0 )
+						If NOT bPrintFormAllowed
+							Call SalSendMsg( hWndForm, PAM_clsFRM_PRINTHIDE, 0, 0 )
+						If NOT bTreeSystem
+							Call SalSendMsgToChildren( hWndForm, PAM_clsFRM_NOTTREESYS, 0, 0 )
+					On SAM_CreateComplete
+						If bMapEnterToTab
+							Call OurMapEnterToTab( TRUE )
+						! Call SalSendMsg( hWndForm, PAM_cls_CREATECOMPLETE, 0, 0 )
+						If sFormHeading = 'Form'
+							Call SalGetWindowText( hWndForm, sTmp, 132 )
+							If sTmp != 'Form'
+								Set sFormHeading = sTmp
+						Call OurWaitCursor( FALSE )
+						! Call VisWinShow( SalParentWindow( hWndForm ), SHOW_Minimized )
+						! Call SalDisableWindow( SalParentWindow( hWndForm ) )
+						Call SalSendMsg( SalParentWindow( hWndForm ), PAM_clsFRM_CHILDWINACTIVATED, 0, SalWindowHandleToNumber( SalParentWindow( hWndForm ) ) )
+						If VisWinIsMaximized( hWndForm )
+							Set sWinShowType = 'MAXIMIZED'
+						Else If VisWinIsMinimized( hWndForm )
+							Set sWinShowType = 'MINIMIZED'
+						Else
+							Set sWinShowType = 'RESTORED'
+						Call SalSendMsg( hWndForm, PAM_cls_PARENTACTIVATE, 0, SalWindowHandleToNumber( hWndForm ) )
+					On SAM_Destroy
+						If nActionOnExit = FRM_EndOnExit
+							Return SalSendMsg( hWndForm, PAM_cls_DESTROY, FRM_EndOnExit, 0 )
+					On PAM_cls_DESTROY
+						If bMapEnterToTab
+							Call OurMapEnterToTab( FALSE )
+						If SalParentWindow( hWndForm )
+							! If wParam = FRM_HideOnExit
+								                        Call SalSendMsg( SalParentWindow( hWndForm ), PAM_cls_PARENTACTIVATE, 0, 0 )
+							! Else
+								                        Call SalPostMsg( SalParentWindow( hWndForm ), PAM_cls_PARENTACTIVATE, 0, 0 )
+							Call SalPostMsg( SalParentWindow( hWndForm ), PAM_cls_PARENTACTIVATE, 0, SalWindowHandleToNumber( SalParentWindow( hWndForm ) ) )
+						Call SalPostMsg( SalParentWindow( hWndForm ), PAM_clsFRM_RETURN, 0, SalWindowHandleToNumber( hWndForm ) )
+						Return TRUE
+					On SAM_Close
+						Set nReturn = SalSendMsg( hWndForm, PAM_cls_CLOSE, 0, 0 )
+						If nReturn = PB_ExitHideWindow
+							! Call VisWinShow( hWndForm, SHOW_Hidden )
+							Return FALSE
+					On PAM_cls_CLOSE
+						Set nReturn =  SalSendMsg( hWndForm, PAM_cls_EXIT, wParam, lParam )
+						If nReturn = PB_ExitDestroyWindow
+							Return SalDestroyWindow( hWndForm )
+						Else If nReturn = PB_ExitEndDialog
+							Return SalEndDialog( hWndForm, wParam )
+						Else If nReturn = PB_ExitHideWindow
+							! Set nReturn = SalHideWindow( hWndForm )
+							Call VisWinShow( hWndForm, SHOW_Minimized )
+							! Call ShowWindow( hWndForm, SW_MINIMIZE )
+							Call SalSendMsg( hWndForm, PAM_cls_DESTROY, FRM_HideOnExit, 0 )
+							Return nReturn
+					On PAM_cls_PARENTACTIVATE
+						! Call SalEnableWindow( hWndForm )
+						! Call SalBringWindowToTop( hWndForm )
+						! If sWinShowType = 'MAXIMIZED'
+							                      Return VisWinShow( hWndForm, SHOW_Maximized )
+						! Else If sWinShowType = 'MINIMIZED'
+							                      Return VisWinShow( hWndForm, SHOW_Minimized )
+						! Else
+							                      Return VisWinShow( hWndForm, SHOW_Normal )
+						Call SalEnableWindow( SalNumberToWindowHandle( lParam ) )
+						! Call VisWinShow( SalNumberToWindowHandle( lParam ), SHOW_Normal )
+						Call ShowWindow( SalNumberToWindowHandle( lParam ), SW_SHOWNORMAL )
+						Call SalBringWindowToTop( SalNumberToWindowHandle( lParam ) )
+						Call SalInvalidateWindow( SalNumberToWindowHandle( lParam ) )
+						! If sWinShowType = 'MAXIMIZED'
+							! Return VisWinShow( SalNumberToWindowHandle( lParam ), SHOW_Maximized )
+							                Return ShowWindow( SalNumberToWindowHandle( lParam ), SW_SHOWMAXIMIZED )
+						! Else If sWinShowType = 'MINIMIZED'
+							! Return VisWinShow( SalNumberToWindowHandle( lParam ), SHOW_Minimized )
+							                Return ShowWindow( SalNumberToWindowHandle( lParam ), SW_SHOWMINIMIZED )
+						! Else
+							! Return VisWinShow( SalNumberToWindowHandle( lParam ), SHOW_Normal )
+							                Return ShowWindow( SalNumberToWindowHandle( lParam ), SW_NORMAL )
+					On PAM_clsFRM_CHILDWINACTIVATED
+						! Call VisWinShow( hWndForm, SHOW_Minimized )
+						Call SalDisableWindow( SalNumberToWindowHandle( lParam ) )
+						Call ShowWindow( SalNumberToWindowHandle( lParam ), SW_SHOWMINIMIZED )
+						Set sWinShowType = 'MINIMIZED'
+						! If VisWinIsMaximized( hWndForm )
+							                  Set sWinShowType = 'MAXIMIZED'
+						! Else If VisWinIsMinimized( hWndForm )
+							                  Set sWinShowType = 'MINIMIZED'
+						! Else
+							                  Set sWinShowType = 'RESTORED'
+						Return TRUE
+					On SAM_Activate
+						Call SalSendMsgToChildren( hWndForm, PAM_clsFRM_ACTIVATE, wParam, lParam )
+					On PAM_cls_EXIT
+						Call SalSendMsg( hWndForm, PAM_clsFRM_PUSHFIELDS, 0, 0 )
+						! Call SalSendMsg( SalParentWindow( hWndForm ), PAM_clsFRM_RETURN, 0, SalWindowHandleToNumber( hWndForm ) )
+						If nActionOnExit = FRM_HideOnExit
+							Return PB_ExitHideWindow
+						Else
+							Return PB_ExitDestroyWindow
+					On PAM_cls_HELP
+						Return DisplayHelp( hWndForm )
+					On PAM_clsFRM_SHOW
+						Call SalSendMsg( hWndForm, PAM_clsFRM_POPFIELDS, 0, 0 )
+						! Return SalShowWindow(  )
+						Call SalEnableWindow( hWndForm )
+						Call VisWinShow( hWndForm, SHOW_Normal )
+						Return SalSendMsg( hWndForm, PAM_cls_PARENTACTIVATE, 0, SalWindowHandleToNumber( hWndForm ) )
+			Form Window Class: clsFormGeneral
+				Title:
+				Icon File:
+				Accesories Enabled? Yes
+				Visible? No
+				Display Settings
+					Display Style? Etched
+					Visible at Design time? Yes
+					Automatically Created at Runtime? No
+					Initial State: Class Default
+					Maximizable? Class Default
+					Minimizable? Class Default
+					System Menu? Class Default
+					Resizable? Class Default
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  9.988"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Form Size
+						Width:  Class Default
+						Height: Class Default
+						Number of Pages: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+				Next Class Child Key: 8
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clsFormBase
+				Menu
+				Tool Bar
+					Display Settings
+						Display Style? Class Default
+						Location? Class Default
+						Visible? Class Default
+						Size: 0.594"
+						Size Editable? Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Contents
+						Pushbutton: pbHelp
+							Class Child Ref Key: 0
+							Class ChildKey: 1
+							Class: clspbHelp
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   0.0"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbItemEnq
+							Class Child Ref Key: 0
+							Class ChildKey: 5
+							Class: clspbItemEnq
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   0.6"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+								On PAM_clsFRM_NOTTREESYS
+									Call SalSendMsg( hWndItem, PAM_clsPB_HIDE, 0, 0 )
+									Call SalSendMsg( hWndItem, PAM_clsPB_DISABLE, 0, 0 )
+						Pushbutton: pbPrintForm
+							Class Child Ref Key: 0
+							Class ChildKey: 6
+							Class: clspbPrintForm
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   8.713"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbExit
+							Class Child Ref Key: 0
+							Class ChildKey: 2
+							Class: clspbExit
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   9.313"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+				Contents
+					Data Field: dfDatabase
+						Class Child Ref Key: 0
+						Class ChildKey: 3
+						Class: clsdfDatabase
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   0.013"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? No
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Gray
+							Input Mask: Class Default
+						Message Actions
+					Data Field: dfUser
+						Class Child Ref Key: 0
+						Class ChildKey: 4
+						Class: clsdfUser
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   0.913"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? No
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Gray
+							Input Mask: Class Default
+						Message Actions
+					Background Text: Season
+						Resource Id: 35179
+						Class Child Ref Key: 0
+						Class ChildKey: 8
+						Class: clsBackTextGeneral
+						Window Location and Size
+							Left:   8.188"
+							Top:    0.052"
+							Width:  0.663"
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Custom Control: ccSeasonYear
+						Class Child Ref Key: 0
+						Class ChildKey: 7
+						Class: clsSpinSeasonYear
+						Property Template:
+						Class DLL Name:
+						Display Settings
+							DLL Name:
+							MS Windows Class Name:
+							Style:  Class Default
+							ExStyle:  Class Default
+							Title:
+							Window Location and Size
+								Left:   8.888"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Etched Border? Class Default
+							Hollow? Class Default
+							Vertical Scroll? Class Default
+							Horizontal Scroll? Class Default
+							Tab Stop? Class Default
+							Tile To Parent? Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							DLL Settings
+						Message Actions
+							On PAM_clsFRM_NOTTREESYS
+								Call SalSendMsg( hWndItem, PAM_clsSPN_DISABLE, 0, 0 )
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On PAM_clsFRM_PRINTHIDE
+						Call SalSendMsg( pbPrintForm, PAM_clsPB_HIDE, 0, 0 )
+					On PAM_cls_ITEMENQUIRY
+						If bTreeSystem
+							Return SalSendMsg( pbItemEnq, SAM_Click, wParam, lParam )
+						Else
+							Return FALSE
+			Form Window Class: clsFormReportView
+				Title: Report View
+				Icon File:
+				Accesories Enabled? Yes
+				Visible? Class Default
+				Display Settings
+					Display Style? Class Default
+					Visible at Design time? Yes
+					Automatically Created at Runtime? No
+					Initial State: Class Default
+					Maximizable? Class Default
+					Minimizable? Class Default
+					System Menu? Class Default
+					Resizable? Class Default
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  9.988"
+						Width Editable? Class Default
+						Height: 5.552"
+						Height Editable? Class Default
+					Form Size
+						Width:  Class Default
+						Height: Class Default
+						Number of Pages: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+				Next Class Child Key: 0
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+				Menu
+					Named Menu: clsFormReportViewFileMenu
+						Resource Id: 1439
+					Named Menu: clsFormReportViewViewMenu
+						Resource Id: 1438
+					Named Menu: clsFormReportViewPrintMenu
+						Resource Id: 1437
+				Tool Bar
+					Display Settings
+						Display Style? Class Default
+						Location? Class Default
+						Visible? No
+						Size: Class Default
+						Size Editable? Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Contents
+				Contents
+				Class Variables
+				Instance Variables
+				Functions
+					Function: ActivateReportCommand
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Window Handle: hWndSource
+							Number: nCommand
+						Static Variables
+						Local variables
+							Boolean: bOk
+						Actions
+							Call OurWaitCursor( TRUE )
+							Set bOk = SalReportCmd( hWndSource, nCommand )
+							Call OurWaitCursor( FALSE )
+							Return bOk
+				Message Actions
+					On PAM_clsFRM_REPORT_FirstPage
+						Return ActivateReportCommand( hWndForm, RPT_CmdFirstPage )
+					On PAM_clsFRM_REPORT_PrevPage
+						Return ActivateReportCommand( hWndForm, RPT_CmdPrevPage )
+					On PAM_clsFRM_REPORT_NextPage
+						Return ActivateReportCommand( hWndForm, RPT_CmdNextPage )
+					On PAM_clsFRM_REPORT_LastPage
+						Return ActivateReportCommand( hWndForm, RPT_CmdLastPage )
+					On PAM_clsFRM_REPORT_GotoPage
+						Return ActivateReportCommand( hWndForm, RPT_CmdGoToPage )
+					On PAM_clsFRM_REPORT_Close
+						Return SalDestroyWindow( hWndForm )
+					On PAM_clsFRM_REPORT_SizeActual
+						Return ActivateReportCommand( hWndForm, RPT_CmdSizeActual )
+					On PAM_clsFRM_REPORT_SizeFit
+						Return ActivateReportCommand( hWndForm, RPT_CmdSizeFit )
+					On PAM_clsFRM_REPORT_Print
+						Return ActivateReportCommand( hWndForm, RPT_CmdPrint )
+					On PAM_clsFRM_REPORT_PrinterSetup
+						Return ActivateReportCommand( hWndForm, RPT_CmdPrinterSetup )
+			Form Window Class: clsFormPrintReport
+				Title:
+				Icon File:
+				Accesories Enabled? Class Default
+				Visible? Class Default
+				Display Settings
+					Display Style? Class Default
+					Visible at Design time? Yes
+					Automatically Created at Runtime? Class Default
+					Initial State: Normal
+					Maximizable? Class Default
+					Minimizable? Class Default
+					System Menu? Class Default
+					Resizable? Class Default
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: 5.156"
+						Height Editable? Class Default
+					Form Size
+						Width:  Class Default
+						Height: Class Default
+						Number of Pages: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+				Next Class Child Key: 0
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clsFormReportView
+				Menu
+				Tool Bar
+					Display Settings
+						Display Style? Class Default
+						Location? Class Default
+						Visible? Class Default
+						Size: Class Default
+						Size Editable? Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Contents
+				Contents
+				Class Variables
+				Instance Variables
+					! PUBLIC
+					String: sReportFileNameNoPath
+					String: sReportBind
+					String: sReportInto
+					! sReportType = 'PRINT' OR 'VIEW'
+					String: sReportType
+					Number: nReportCopies
+					Boolean: bReportBeginAutomatically
+					!
+					! nReportPrintFlags by default = RPT_PrintAll | RPT_PrintDraft
+					Number: nReportPrintFlags
+					! PRIVATE
+					String: sReportPath
+					String: sReportPathFileName
+					String: sDestinFileName
+					Number: nError
+					Window Handle: hWndReport
+				Functions
+				Message Actions
+					On SAM_Create
+						Set sReportType = 'PRINT'
+						Set sReportFileNameNoPath = ''
+						Set sDestinFileName = ''
+						Set sReportBind = ''
+						Set sReportInto = ''
+						Set nReportPrintFlags = RPT_PrintAll | RPT_PrintDraft
+						Set nReportCopies = 1
+						Set bReportBeginAutomatically = TRUE
+						Call SalSendMsg( hWndForm, PAM_cls_SETINSTANCEVARS, 0, 0 )
+						If sReportType = 'PRINT'
+							Call SalDisableWindow( hWndForm )
+							Call VisWinShow( hWndForm, SHOW_Minimized )
+						Else If sReportType = 'FILE'
+							Call SalDisableWindow( hWndForm )
+							Call VisWinShow( hWndForm, SHOW_Minimized )
+						Call VisWinShow( SalParentWindow( hWndForm ), SHOW_Minimized )
+						Call SalDisableWindow( SalParentWindow( hWndForm ) )
+					On SAM_CreateComplete
+						If bReportBeginAutomatically
+							Call SalSendMsg( hWndForm, PAM_clsFRM_REPORT_BEGIN, 0, 0 )
+					On PAM_clsFRM_REPORT_BEGIN
+						Set sReportPath = OurGetIniFileParameter( 'GENERAL', 'ReportsPath', '' )
+						If sReportPath = ''
+							Set sReportPathFileName = sReportFileNameNoPath
+						Else
+							Set sReportPathFileName = sReportPath || '\\' || sReportFileNameNoPath
+						If sReportType = 'FILE'
+							If sDestinFileName = ''
+								Set sDestinFileName = OurGetIniFileParameter( 'GENERAL', 'TempStoragePath', '' )||'temp.txt'
+						Set nError = 1
+						If sReportType = 'VIEW'
+							Set nError = nReportPrintFlags
+							Set hWndReport = SalReportView( hWndForm, hWndForm, sReportPathFileName, sReportBind, sReportInto, nError )
+						Else If sReportType = 'FILE'
+							Set hWndReport = SalReportPrintToFile( hWndForm, sReportPathFileName, sDestinFileName, sReportBind, sReportInto, nReportCopies, nReportPrintFlags, 0, 0, FALSE, nError )
+						Else
+							Set hWndReport = SalReportPrint( hWndForm, sReportPathFileName, sReportBind, sReportInto, nReportCopies, nReportPrintFlags, 0, 0, nError )
+					On SAM_ReportNotify
+						! This is necessary to set here as the hWndReport which is returned on SalReportPrint is not correct
+						If lParam = RPT_BeforeReportHeader
+							Set hWndReport = SalNumberToWindowHandle( wParam )
+						Return TRUE
+					On SAM_ReportFinish
+						Call SalSendMsg( hWndForm, PAM_clsFRM_REPORTFINISH, wParam, lParam )
+						Return SalDestroyWindow( hWndForm )
+					On SAM_Destroy
+						Call SalPostMsg( SalParentWindow( hWndForm ), PAM_clsFRM_REPORTCLOSED, 0, 0 )
+						Call SalPostMsg( SalParentWindow( hWndForm ), PAM_cls_PARENTACTIVATE, 0, SalWindowHandleToNumber( SalParentWindow( hWndForm ) ) )
+					On PAM_cls_PARENTACTIVATE
+						Call SalEnableWindow( SalNumberToWindowHandle( lParam ) )
+						Call SalShowWindow( SalNumberToWindowHandle( lParam ) )
+						Call SalBringWindowToTop( SalNumberToWindowHandle( lParam ) )
+						Call VisWinShow( SalNumberToWindowHandle( lParam ), SHOW_Maximized )
+			Form Window Class: clsFormPrintBasicReport
+				Title:
+				Icon File:
+				Accesories Enabled? Class Default
+				Visible? Class Default
+				Display Settings
+					Display Style? Class Default
+					Visible at Design time? Yes
+					Automatically Created at Runtime? Class Default
+					Initial State: Class Default
+					Maximizable? Class Default
+					Minimizable? Class Default
+					System Menu? Class Default
+					Resizable? Class Default
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: 4.76"
+						Height Editable? Class Default
+					Form Size
+						Width:  Class Default
+						Height: Class Default
+						Number of Pages: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+				Next Class Child Key: 0
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clsFormPrintReport
+				Menu
+				Tool Bar
+					Display Settings
+						Display Style? Class Default
+						Location? Class Default
+						Visible? Class Default
+						Size: Class Default
+						Size Editable? Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Contents
+				Contents
+				Class Variables
+					Boolean: bOk
+				Instance Variables
+					! PUBLIC
+					String: sReportSql
+					! PRIVATE
+					Number: nInd
+					: fcReportHdl
+						Class: hcSqlHandle
+					Boolean: bInitFetch
+				Functions
+				Message Actions
+					On SAM_Create
+						Set sReportSql = ''
+						Return SalSendClassMessage( SAM_Create, wParam, lParam )
+					On SAM_ReportStart
+						Set bOk = TRUE
+						If NOT  SalSendMsg( hWndForm, PAM_clsFRM_REPORTSTART, wParam, lParam )
+							Set bOk = FALSE
+						!
+						If bOk
+							Call fcReportHdl.PrepareSetup( sReportSql )
+							Call SqlVarSetup( fcReportHdl.hSqlHandle )
+							!
+							Set bOk = fcReportHdl.PrepareAndExecute( )
+						Return bOk
+					On PAM_clsFRM_REPORTSTART
+						Return TRUE
+					On SAM_ReportFetchInit
+						Set bOk = fcReportHdl.FetchRow( 0, nInd )
+						If bOk
+							Set bInitFetch = TRUE
+							If NOT SalSendMsg( hWndForm, PAM_clsFRM_REPORTFETCHINIT, wParam, lParam )
+								Set bOk = FALSE
+						Return bOk
+					On PAM_clsFRM_REPORTFETCHINIT
+						Return TRUE
+					On SAM_ReportFetchNext
+						If bInitFetch
+							Set bOk = fcReportHdl.FetchRow( 0, nInd )
+							Set bInitFetch = FALSE
+						Else
+							Set bOk = fcReportHdl.FetchNext( nInd )
+						If bOk
+							Return SalSendMsg( hWndForm, PAM_clsFRM_REPORTFETCHNEXT, wParam, lParam )
+						Else
+							Return SalSendMsg( hWndForm, PAM_clsFRM_REPORTFETCHNEXTEND, wParam, lParam )
+					On PAM_clsFRM_REPORTFETCHNEXT
+						Return TRUE
+					On PAM_clsFRM_REPORTFETCHNEXTEND
+						Return FALSE
+					On SAM_ReportFinish
+						Call fcReportHdl.Disconnect( )
+						Return SalSendClassMessage( SAM_ReportFinish, wParam, lParam )
+			! Form Window Class: clsFormPrintBasicReport
+.winattr
+				Title: Report View
+				Icon File:
+				Accesories Enabled? Yes
+				Visible? Yes
+				Display Settings
+					Display Style? Default
+					Visible at Design time? Yes
+					Automatically Created at Runtime? No
+					Initial State: Normal
+					Maximizable? Yes
+					Minimizable? Yes
+					System Menu? Yes
+					Resizable? Yes
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  9.988"
+						Width Editable? Yes
+						Height: 4.76"
+						Height Editable? Yes
+					Form Size
+						Width:  Default
+						Height: Default
+						Number of Pages: Dynamic
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+				Next Class Child Key: 0
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+.end
+				      Description: 
+				      Derived From 
+					      Class: clsFormPrintReport
+				      Menu 
+				      Tool Bar 
+					      Contents 
+				      Contents 
+				      Class Variables 
+					      Boolean: bOk
+				      Instance Variables 
+					! PUBLIC
+					      String: sReportSql
+					! PRIVATE
+					      Number: nInd
+					      : fcReportHdl
+				      Functions 
+				      Message Actions 
+					      On SAM_Create
+						      Set sReportSql = ''
+						      Return SalSendClassMessage( SAM_Create, wParam, lParam )
+					      On SAM_ReportStart
+						      Return SalSendMsg( hWndForm, PAM_clsFRM_REPORTSTART, wParam, lParam )
+					      On PAM_clsFRM_REPORTSTART
+						      Return TRUE
+					      On SAM_ReportFetchInit
+						      Call fcReportHdl.PrepareSetup( sReportSql )
+						      Call SqlVarSetup( fcReportHdl.hSqlHandle )
+						!
+						      Set bOk = fcReportHdl.PrepareAndExecute( )
+						      If bOk
+							      If NOT SalSendMsg( hWndForm, PAM_clsFRM_REPORTFETCHINIT, wParam, lParam )
+								      Set bOk = FALSE
+						      Return bOk
+					      On PAM_clsFRM_REPORTFETCHINIT
+						      Return TRUE
+					      On SAM_ReportFetchNext
+						      If fcReportHdl.FetchNext( nInd )
+							      Return SalSendMsg( hWndForm, PAM_clsFRM_REPORTFETCHNEXT, wParam, lParam )
+						      Else 
+							      Return FALSE
+					      On PAM_clsFRM_REPORTFETCHNEXT
+						      Return TRUE
+					      On SAM_ReportFinish
+						      Call fcReportHdl.Disconnect( )
+						      Call SalSendMsg( hWndForm, PAM_clsFRM_REPORTFINISH, wParam, lParam )
+						      Return SalSendClassMessage( SAM_ReportFinish, wParam, lParam )
+			Form Window Class: clsFormAppStartUp
+				Title: Loading
+				Icon File: C:\CENTURA\ICONS\LOADING.ICO
+.data RESOURCE 2 0 1 680073935
+0000: FE020000C8010000 0000000000000000 0200A20001000120 081000010400E802
+0020: 0000001600000028 0000000020000000 4000380000010000 A380020000FFFF8F
+0040: 8000000300808000 8000680000808080 0D008000C0C080C0 000000FF00000300
+0060: FFFF00FF00680000 FFFFFF4D00FF0000 FF3F08883C888880 8884888800000008
+0080: FD8897000008BD88 809588000008FD88 97000008BD888092 8088000008FD8896
+00A0: 80000008BD8880D0 8008880000FFE1F0 000000F2088888E8 80F00000F0080000
+00C0: 00EC80F00060080F FFFFFFF0EC80F000 6E08FFF0E9FF0000 2E08FF8FF0EE8000
+00E0: AE08FF8FEF000E08 FF8F8FF0D3F00000 4E08FF8F00D800FF F0000E08FF8000FF
+0100: D8FFFFF0009E080F FFA0FF0FFFF00000 7608FFFF40F0FFFF FFF00000A4080000
+0120: FFFF72000FFF008C 0888FFFF0F48F0FF F0FF0000970FFFFF 950F0FF000B6000F
+0140: FF9EFFF00096000F FFFFD70FF036000F FFF099FFFFF000AE 00FF0F520FF0FF00
+0160: 002FFFF00057FF00 002F0FFFFF660FFF F0005F0FF0A2FFFF F000007FFFE9FF00
+0180: 00FF3F800000003F 0000001F0000CC00 1F001FCC001F001F 0C001F001F800091
+01A0: 3FF000FFF0FFF17F F000DF3F1F1FF000 1107F00003F00031 01F000F800E00000
+01C0: FFC0007FE0700001 FFE0F00103FFF800 07FFFE00001FFFFF C0FF
+.enddata
+				Accesories Enabled? Class Default
+				Visible? Class Default
+				Display Settings
+					Display Style? Class Default
+					Visible at Design time? Yes
+					Automatically Created at Runtime? Yes
+					Initial State: Normal
+					Maximizable? Class Default
+					Minimizable? Class Default
+					System Menu? Class Default
+					Resizable? Class Default
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Form Size
+						Width:  Class Default
+						Height: Class Default
+						Number of Pages: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+				Next Class Child Key: 8
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clsFormGeneral
+				Menu
+				Tool Bar
+					Display Settings
+						Display Style? Class Default
+						Location? Class Default
+						Visible? Class Default
+						Size: Class Default
+						Size Editable? Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Contents
+						Pushbutton: pbHelp
+							Class Child Ref Key: 1
+							Class ChildKey: 5
+							Class: clsFormGeneral
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbItemEnq
+							Class Child Ref Key: 5
+							Class ChildKey: 6
+							Class: clsFormGeneral
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbPrintForm
+							Class Child Ref Key: 6
+							Class ChildKey: 7
+							Class: clsFormGeneral
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbExit
+							Class Child Ref Key: 2
+							Class ChildKey: 8
+							Class: clsFormGeneral
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+				Contents
+					Data Field: dfDatabase
+						Class Child Ref Key: 3
+						Class ChildKey: 1
+						Class: clsFormGeneral
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					Data Field: dfUser
+						Class Child Ref Key: 4
+						Class ChildKey: 2
+						Class: clsFormGeneral
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					Background Text:
+						Resource Id: 24401
+						Class Child Ref Key: 8
+						Class ChildKey: 3
+						Class: clsFormGeneral
+						Window Location and Size
+							Left:   Class Default
+							Top:    Class Default
+							Width:  Class Default
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Custom Control: ccSeasonYear
+						Class Child Ref Key: 7
+						Class ChildKey: 4
+						Class: clsFormGeneral
+						Property Template:
+						Class DLL Name:
+						Display Settings
+							DLL Name:
+							MS Windows Class Name:
+							Style:  Class Default
+							ExStyle:  Class Default
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Etched Border? Class Default
+							Hollow? Class Default
+							Vertical Scroll? Class Default
+							Horizontal Scroll? Class Default
+							Tab Stop? Class Default
+							Tile To Parent? Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							DLL Settings
+						Message Actions
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On PAM_clsFRM_RETURN
+						Call SalPostMsg( pbExit, SAM_Click, 0, 0 )
+						Return TRUE
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text: clsBackTextGeneral
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions

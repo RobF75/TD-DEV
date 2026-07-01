@@ -1,0 +1,21 @@
+1. Create an EDIFACT database and message tables on the desired SQLBase server (Run 'Create Edifact tables.sql')
+ 
+2. Create the partner table structure in the database (Run 'partner tables.sql')
+
+3. Create Edifact registry area on the server (Double click on Edifact.reg)
+
+4. Install Gzip.exe into a folder called C:\Program Files\GZip\
+
+5. Ensure that FTP (port 21) access to the internet is enabled for this PC or Server.
+
+6. Enable the desired partners and associated message types via the SQL console
+
+7. Copy the program Edifact.exe to the desired location (Suggest C:\Centura\Localexe\)
+
+8. Copy the taskbar.dll to the same folder location as the above program
+
+9. Set up a scheduled task to kick off the program at desired intervals (Minimum 1 hour gap suggested)
+
+10. Check the logs in the C:\Edifact\Logs\ folder for operational information
+
+11. Use the XRJ Viewer program to view and repair any messages rejected during syntax checks

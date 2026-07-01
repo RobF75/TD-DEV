@@ -1,0 +1,1085 @@
+Application Description: SQLWindows 5.01 Jans Yearly Order to Order History Rollover APP
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000C30000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF420000 0042000000D60200 007F010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 1018B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.113"
+			Top:    2.875"
+			Width:  4.675"
+			Height: 2.979"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   8.15"
+			Top:    0.469"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: GENERAL.APL
+		File Include: FORM.APL
+		File Include: Dates.apl
+		File Include: BUTTON.APL
+		File Include: DATFIELD.APL
+		File Include: DIALOG.APL
+		File Include: SPNFIELD.APL
+		File Include: VTSPIN.APL
+		File Include: DATES.APL
+		File Include: BGTEXT.APL
+		File Include: RUNPROG.APL
+		File Include: VTWIN.APL
+		File Include: SQLHANDL.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: None
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Blue
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for MAINTEXE.APP
+				! Number: MAINTEXEAppMsgOffSet = SAM_User + 0
+				! Message go up to AppOffSet + 99
+				! Number: MAINTEXEAppConstOffSet = 0
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1082202678
+0000: BA0000004E000000 0000000000000000 020000070000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF039100 0000040DFA0000FF
+0040: 0F9E000000EE0100 FF3FAB0080000002 04000000FFFFE0AF 00000002FE00FF03
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 1192576989
+0000: DF0A00001E050000 0000000000000000 0200001500FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 000B63006C73466F
+0040: 726D426100736586 00000005003C0000 010DF8000000FF4F 0D0000E002040000
+0060: 00FF3F1100A00000 040D0000FFFF801E 000000030400FE00 FF832200000001FB
+0080: 00FF0F01800D0001 000100000017633E 6C507220696E7442 616963005265706F
+00A0: 72741E00D9000100 B3010D00FFFF1801 800D000200200000 0C636C7062004765
+00C0: 6E6572616C1EA200 0001000067010D00 FFFF010180380000 0003C00000000963
+00E0: 6C8148656C708600 EC000500D9020400 FF7F04620000010D 00FFFFCD110001FD
+0100: 00FF371E0001F700 FF1F2B0000DC0001 00FF7F01CC800D00 047C000945307869
+0120: 741E00017A000001 F60D00FF1F018004 32000005000C0750 696345784070616E
+0140: 641E0000F4010000 EE0200FF3F018006 0400060000007812 636C54006F67676C
+0160: 6542757420746F6E 1E0000017A000002 F700FF1F01800403 00070000000C8764
+0180: 6647657F00F40100 00EC030400FF3F01 80042F0000080000 000810636C446961
+01A0: 6CF06F674765C986 0000059E00010DFD 00FF370D0002F700 FFDF11D800040D00
+01C0: FF7F1E73000300FF FFCD220001FD00FF C701800D00000900 000011636C015370
+01E0: 696E53656100736F 6E596561721EA200 0001000067010D00 FFFF0101802E0000
+0200: 000A700000001170 0153746172745072 006F6772616DBA00 00EC000700DD0200
+0220: FF7F047200000200 FFFFCD080002FD00 FF070C00000001F6 0D00FF1F190000DC
+0240: 000300FF7F1D7000 00000200FFFFC121 00000001FD00FF07 018036000000000B
+0260: 0000000F636CF953 741FEE0000EC0009 00D9010D00FF7F0D 73000100FFFFC11A
+0280: 00000002FD00FF37 1E0002F700FFDF22 DC000200FF7F2670 0000000200FFFFC1
+02A0: 2A00000002FD00FF 272E000002F700FF 1F320000DC000200 FF7F01CC8004000C
+02C0: 1C0010546F6F006C 54697057696E6410 6F771E00000100BD 0003FB00FF0F0180
+02E0: 34001800000D0014 631A6C70656C6500 637446726F6D5461 00626C656C000000
+0300: 047B0001F60D00FF DF0DDC000100FF7F 1A73000100FFFFC1 2700000001FD00FF
+0320: C701800400000E00 00000D636C495365 656349206E746F1E 0000017A000003F7
+0340: 00FF1F0180B70000 00000F00000016E4 636C4765716C5461 473E653602CA0015
+0360: 0000B3010D00FFFF E40D000001FE00FF 9B1A0001FB00FF6F 2700EE0100FF3F34
+0380: 00B9000200FFFFE4 38000002FE00FF83 3C00000002FB00FF 0F40000000EE0200
+03A0: FF3F4400B8000002 00FFFFE048000000 02FE00FF834C0000 0002FB00FF0F5000
+03C0: 00008E02000100FE 00C180010000003F 5400300000010D00 01FA000027800100
+03E0: 00FFC05800000001 0DFE00FF83650000 0001FB00FF0F7200 0000EE0100FF3F7F
+0400: 00B800000100FFFF E08C00000001FE00 FF839900000001FB 00FF0FA6000000EE
+0420: 0100FF3FB300B800 000300FFFF100180 2200001000200000 1D636C5462806C4D
+0440: 616B655365056365 64526F77004B6579 4172726179607400 00000400EF02E800
+0460: 0100009F8001FC00 001B0400010DFB00 FF4F110000EE0100 FFBF1EB9000200FF
+0480: FF90018011000011 31001063436FC06C 756D6E4765236C38 0000027A000002F6
+04A0: 0400FFDF04D80001 0D00FF7F010C8011 0012000018000C63 636247FFD1000200
+04C0: 00B3010D00FFFFC6 0D000204FE00FF63 0180040020130000 000C665406616543
+04E0: 61636888651E0000 0100DE0003FD00FF 8701801500000014 0000000B63661C43
+0500: 61506F6F815A0000 0003001E00071900 0100010100F40700 3D008001F9000037
+0520: 040003F60400FFDF 08D800010D00FF7F
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton: clspbGeneral
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text: clsBackTextGeneral
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				If strArgArray[0] = ''
+					Set SqlDatabase = 'STKLOCAL'
+					Set SqlUser = 'GRAHAM'
+					Set SqlPassword = 'GRAHAM'
+				Else
+					Set SqlDatabase = strArgArray[1]
+					Set SqlUser = strArgArray[2]
+					Set SqlPassword = strArgArray[3]
+				!
+				Call CheckProgramExistance( "Fleming's Nurseries End of Season Order ROLLOVER", TRUE )
+				!
+				Call SqlHandlesSetup(  )
+			On SAM_AppExit
+				Call SqlHandlesDisconnectClose(  )
+	Form Window: frmRollover
+		Class: clsFormGeneral
+		Property Template:
+		Class DLL Name:
+		Title: Fleming's Nurseries End of Season Order ROLLOVER
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Yes
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Automatically Created at Runtime? Yes
+			Initial State: Class Default
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   0.0"
+				Top:    0.0"
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+				Pushbutton: pbHelp
+					Class Child Ref Key: 1
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbItemEnq
+					Class Child Ref Key: 5
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 6
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbExit
+					Class Child Ref Key: 2
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			Data Field: dfDatabase
+				Class Child Ref Key: 3
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfUser
+				Class Child Ref Key: 4
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text:
+				Resource Id: 36717
+				Class Child Ref Key: 8
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 7
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+			Background Text: Step 1.
+				Resource Id: 36719
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.075"
+					Top:    0.385"
+					Width:  0.625"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Blue
+				Background Color: Class Default
+			Background Text: Step 2.
+				Resource Id: 36720
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.075"
+					Top:    0.677"
+					Width:  0.625"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Blue
+				Background Color: Class Default
+			Background Text: Step 3.
+				Resource Id: 36721
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.075"
+					Top:    0.979"
+					Width:  0.625"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Blue
+				Background Color: Class Default
+			Background Text: Step 4.
+				Resource Id: 36722
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.075"
+					Top:    1.281"
+					Width:  0.625"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Blue
+				Background Color: Class Default
+			Background Text: Step 5.
+				Resource Id: 36723
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.075"
+					Top:    1.573"
+					Width:  0.625"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Blue
+				Background Color: Class Default
+			Background Text: Step 6.
+				Resource Id: 36724
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.075"
+					Top:    1.854"
+					Width:  0.625"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Blue
+				Background Color: Class Default
+			Background Text: Step 7.
+				Resource Id: 36725
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.075"
+					Top:    2.177"
+					Width:  0.625"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Blue
+				Background Color: Class Default
+			Background Text: Select the season you wish roll, in the top right season box.
+				Resource Id: 36726
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.763"
+					Top:    0.385"
+					Width:  5.025"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text: Make sure that no one will invoice any orders for the rollover season year during this process.
+				Resource Id: 36727
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.763"
+					Top:    0.677"
+					Width:  7.725"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text: Make sure that recovery is set ON on the database.
+				Resource Id: 36728
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.763"
+					Top:    0.979"
+					Width:  4.288"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text: Make sure that there is HEAPS of free space on the database server for a lot of logs.
+				Resource Id: 36729
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.763"
+					Top:    1.281"
+					Width:  7.025"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text: It is highly advisable that no one else work with the order tables, as they will timeout the rollover.
+				Resource Id: 36730
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.763"
+					Top:    1.573"
+					Width:  7.988"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text: It is also recommended that all other users be warned about the systems slow response during rollover.
+				Resource Id: 36718
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.763"
+					Top:    1.854"
+					Width:  8.525"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Pushbutton: pbDoIt
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: DO IT NOW!
+				Window Location and Size
+					Left:   0.763"
+					Top:    2.125"
+					Width:  1.988"
+					Width Editable? Class Default
+					Height: 0.271"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_clsPB_CLICK
+						If ccSeasonYear.GetSeasonYear( ) = WhichSeasonYear( SalDateCurrent(  ) )
+							If IDCANCEL = SalMessageBox( 'YOU WANT TO ROLL THE CURRENT SEASON!', 'Huhhhh..', MB_OkCancel | MB_DefButton2 )
+								Return FALSE
+						If IDYES = SalMessageBox( 'The season showing is the rolling over season?', 'Warning', MB_YesNo | MB_DefButton2 )
+							If IDNO = SalMessageBox( 'Will anyone invoice any orders in the rolling season?', 'Warning', MB_YesNo | MB_DefButton1 )
+								If IDYES = SalMessageBox( 'The database server has heaps of room for log files?', 'Warning', MB_YesNo | MB_DefButton2 )
+									If IDYES = SalMessageBox( 'Final chance!  Continue?', 'Warning', MB_YesNo | MB_DefButton2 )
+										Call SalListAdd( lbStatus, 'Action 1 of 5, Connecting to database.' )
+										Call SalUpdateWindow( hWndForm )
+										!
+										Set nYear = ccSeasonYear.GetSeasonYear( )
+										Set nLineCount = 0
+										Call GetTableFields( 'CUSTOMER_ORDER', sCustOrderColumns, SH_cls_Execute )
+										!
+										Set sSql = " INSERT INTO CUST_ORDER_HISTORY 
+												  ( " || sCustOrderColumns || " ) 
+												 SELECT " || sCustOrderColumns || " FROM  
+												    CUSTOMER_ORDER  
+												  WHERE  
+												    	Cust_No = :nCustNo AND 
+												    	Order_Date_Time = :dtOrdDate and
+													Stock_Item_No = :nItemNo "
+										Call fcCopyHdl.PrepareSetup( sSql )
+										!
+										Set sSql = "  SELECT
+													distinct(Cust_no), 
+													order_date_time, 
+													stock_item_no
+												FROM  
+												    	CUSTOMER_ORDER  
+												INTO
+													:nCustNo,
+													:dtOrdDate,
+													:nItemNo
+												  WHERE  
+												    	Year_of_Sale =  :nYear AND 
+												    	(Invoiced_Flag = 'Y' or
+													Conf_Amt = 0)  "
+										Call fcSelectHdl.PrepareSetup( sSql )
+										!
+										Set sSql = " DELETE FROM Customer_Order 
+												WHERE 
+												  Cust_No = :nCustNo AND 
+												    	Order_Date_Time = :dtOrdDate and
+													Stock_Item_No = :nItemNo "
+										Call fcDeleteHdl.PrepareSetup( sSql )
+										!
+										Call SalListAdd( lbStatus, 'Action 2 of 5, Copying invoiced orders to order history.' )
+										Call SalUpdateWindow( hWndForm )
+										Set bOk = TRUE
+										If fcSelectHdl.PrepareAndExecute( )
+											Call SalListAdd( lbStatus, 'Action 3.1 of 5, Fetching Orders.....' )
+											Call SalUpdateWindow( hWndForm )
+											Call SalListAdd( lbStatus, 'Action 3.2 of 5, and Deleting Orders.....' )
+											Call SalUpdateWindow( hWndForm )
+											! While bOk
+											While fcSelectHdl.FetchNext(nInd)
+												If fcCopyHdl.PrepareAndExecute( )
+													If NOT fcCopyHdl.Commit( )
+														Call SalListAdd( lbStatus, 'Error, Insert failed.' )
+														Call SalUpdateWindow( hWndForm )
+														Call fcCopyHdl.Rollback( )
+														Call SalListAdd( lbStatus, 'Action 3.1 of 5, Rolling back copy of invoiced orders.' )
+														Call SalUpdateWindow( hWndForm )
+														Set bOk = FALSE
+													Else
+														If NOT fcDeleteHdl.PrepareAndExecute( )
+															Call SalListAdd( lbStatus, 'Error, Delete failed.' )
+															Call SalUpdateWindow( hWndForm )
+															Call fcCopyHdl.Rollback( )
+															Call SalListAdd( lbStatus, 'Action 3.1 of 5, Rolling back delete of invoiced orders.' )
+															Call SalUpdateWindow( hWndForm )
+															Set bOk = FALSE
+														Else
+															If NOT fcDeleteHdl.Commit( )
+																Call SalListAdd( lbStatus, 'Error, Delete failed.' )
+																Call SalUpdateWindow( hWndForm )
+																Call SalListAdd( lbStatus, 'Action 3.1 of 5, Rolling back copy of invoiced orders.' )
+																Call SalUpdateWindow( hWndForm )
+																Set bOk = FALSE
+															Else
+																Set nLineCount = nLineCount + 1
+												Else
+													Set bOk = FALSE
+										! If fcCopyHdl.PrepareAndExecute( )
+											  Call SalListAdd( lbStatus, 'Action 3 of 5, Deleting invoiced orders.' )
+											  Call SalUpdateWindow( hWndForm )
+											  If fcDeleteHdl.PrepareAndExecute( )
+												  Call SalListAdd( lbStatus, 'Action 4 of 5, Commiting transaction.' )
+												  Call SalUpdateWindow( hWndForm )
+												  If NOT fcCopyHdl.Commit( )
+													  Set bOk = FALSE
+												  If NOT fcDeleteHdl.Commit( )
+													  Set bOk = FALSE
+											  Else 
+												  Set bOk = FALSE
+												  Call SalListAdd( lbStatus, 'Action 3.1 of 5, Rolling back copy of invoiced orders.' )
+												  Call SalUpdateWindow( hWndForm )
+												  Call fcCopyHdl.Rollback( )
+										!
+										Set sLineCount =  'Message: ' || SalNumberToStrX( nLineCount, 0 ) || ' order lines transferred'
+										Call SalListAdd( lbStatus, sLineCount )
+										Call SalUpdateWindow( hWndForm )
+										Call SalListAdd( lbStatus, 'Action 4 of 5, Commiting transaction.' )
+										Call SalUpdateWindow( hWndForm )
+										Call SalListAdd( lbStatus, 'Action 5 of 5, Disconnecting from database.' )
+										Call SalUpdateWindow( hWndForm )
+										Call fcCopyHdl.Disconnect( )
+										Call fcSelectHdl.Disconnect( )
+										Call fcDeleteHdl.Disconnect( )
+										Call GetTableFields( '', sCustOrderColumns, SH_cls_Disconnect )
+										!
+										If bOk
+											Call SalListAdd( lbStatus, 'Rolling over was a success!' )
+											Call SalListAdd( lbStatus, 'Now a log backup is needed' )
+											Call SalListAdd( lbStatus, 'Check the total size of logs generated and make changes to log backup path as needed.' )
+										Else
+											Call SalListAdd( lbStatus, 'Rolling over has not completed!' )
+											Call SalListAdd( lbStatus, 'Call Programmer please.' )
+										Call SalUpdateWindow( hWndForm )
+										Call SqlHandlesDisconnectClose(  )
+										If cbExitOnFinish
+											Return SalSendMsg( pbExit, SAM_Click, 0, 0 )
+			List Box: lbStatus
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Window Location and Size
+					Left:   0.763"
+					Top:    2.573"
+					Width:  8.675"
+					Width Editable? Yes
+					Height: 2.021"
+					Height Editable? Yes
+				Visible? Yes
+				Multiple selection? No
+				Sorted? No
+				Vertical Scroll? No
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+				Horizontal Scroll? No
+				List Initialization
+				Message Actions
+			Check Box: cbExitOnFinish
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Exit on completion
+				Window Location and Size
+					Left:   3.988"
+					Top:    2.135"
+					Width:  1.85"
+					Width Editable? Yes
+					Height: 0.25"
+					Height Editable? Yes
+				Visible? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Blue
+				Background Color: Default
+				Message Actions
+		Functions
+			Function: GetTableFields
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sTableName
+					Receive String: sColumns
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					String: sOrgUser
+					String: sOrgPassword
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					Number: nInd
+					String: sGotColumn
+					Boolean: bFirst
+					Boolean: bOk
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETTBLCOLS' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sOrgUser = SqlUser
+							Set sOrgPassword = SqlPassword
+							!
+							Set SqlUser = 'SYSADM'
+							Set SqlPassword = 'DANI'
+							!
+							Set sSql = " SELECT NAME 
+									FROM SYSCOLUMNS 
+									WHERE 
+									  TBNAME = :1 
+									ORDER BY COLNO "
+							Set sName = 'GETTBLCOLS'
+							Set sBind = ':sTableName'
+							Set sInto = ':sGotColumn'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sTableName = SalStrUpperX( sTableName )
+							Set sGotColumn = ''
+							Set sColumns = ''
+							!
+							Set bOk = TRUE
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								Set bFirst = TRUE
+								While haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									If bFirst
+										Set bFirst = FALSE
+										Set sColumns = sGotColumn
+									Else
+										Set sColumns = sColumns || ', ' || sGotColumn
+							Else
+								Set bOk = FALSE
+								Return FALSE
+							!
+							Set SqlUser = sOrgUser
+							Set SqlPassword = sOrgPassword
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+		Window Parameters
+		Window Variables
+			String: sLineCount
+			Boolean: bOk
+			String: sSql
+			Number: nCustNo
+			Date/Time: dtOrdDate
+			Number: nItemNo
+			String: sCustOrderColumns
+			: fcCopyHdl
+				Class: hcSqlHandle
+			: fcSelectHdl
+				Class: hcSqlHandle
+			: fcDeleteHdl
+				Class: hcSqlHandle
+			Number: nInd
+			Number: nYear
+			Number: nConfAmt
+			Number: nOrdAmt
+			Number: nLineCount
+		Message Actions

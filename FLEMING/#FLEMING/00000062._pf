@@ -1,0 +1,1322 @@
+.head 0 +  Application Description: SQLWindows 5.01 Jans MDI Class
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF420000 0042000000D20200 007B010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left:   0.15"
+.head 3 -  Top:    0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 0418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left:   5.1"
+.head 3 -  Top:    2.917"
+.head 3 -  Width:  4.688"
+.head 3 -  Height: 2.969"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   0.163"
+.head 3 -  Top:    0.094"
+.head 3 -  Width:  5.063"
+.head 3 -  Height: 2.719"
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   6.6"
+.head 3 -  Top:    0.521"
+.head 2 -  Fully Qualified External References? No
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: GENERAL.APL
+.head 2 -  File Include: BUTTON.APL
+.head 2 -  File Include: DATFIELD.APL
+.head 2 -  File Include: DIALOG.APL
+.head 2 -  File Include: SPNFIELD.APL
+.head 2 -  File Include: VTSPIN.APL
+.head 2 -  File Include: DATES.APL
+.head 2 -  File Include: BGTEXT.APL
+.head 2 -  File Include: RUNPROG.APL
+.head 2 -  File Include: VTWIN.APL
+.head 2 -  File Include: FORM.APL
+.head 2 -  File Include: Frmctbl.apl
+.head 2 -  File Include: vtmenu.apl
+.head 2 -  File Include: vtstr.apl
+.head 2 -  File Include: Sqlhandl.apl
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Italic
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Black
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for MDI.APL
+.head 4 -  Number: MDIaplOffSet = SAM_User + 8500
+.head 4 -  ! Message go up to FORMaplOffSet + 99
+.head 4 -  Number: MDIAplConstOffSet = 4450
+.head 4 -  ! Messages
+.head 4 -  Number: PAM_clsMDI_SHOW = MDIaplOffSet + 1
+.head 4 -  Number: PAM_clsMDI_EXIT = MDIaplOffSet + 2
+.head 4 -  Number: PAM_clsMDI_RETURN = MDIaplOffSet + 3
+.head 4 -  Number: PAM_clsMDI_ACTIVATE = MDIaplOffSet + 4
+.head 4 -  Number: PAM_clsMDI_PUSHFIELDS = MDIaplOffSet + 5
+.head 4 -  Number: PAM_clsMDI_POPFIELDS = MDIaplOffSet + 6
+.head 4 -  Number: PAM_clsMDI_NOTTREESYS = MDIaplOffSet + 7
+.head 4 -  Number: PAM_clsMDI_RECALC = MDIaplOffSet + 8
+.head 4 -  Number: PAM_clsMDI_OKTOPOPCHILD = MDIaplOffSet + 9
+.head 4 -  Number: PAM_clsMDI_CHILDCHANG = MDIaplOffSet + 10
+.head 4 -  Number: PAM_clsMDI_ADD = MDIaplOffSet + 11
+.head 4 -  Number: PAM_clsMDI_SAVE = MDIaplOffSet + 12
+.head 4 -  Number: PAM_clsMDI_DELETE = MDIaplOffSet + 13
+.head 4 -  Number: PAM_clsMDI_UNDELETE = MDIaplOffSet + 14
+.head 4 -  Number: PAM_clsMDI_REPOPULATE = MDIaplOffSet + 15
+.head 4 -  Number: PAM_clsMDI_ACTIVATED = MDIaplOffSet + 16
+.head 4 -  Number: PAM_clsMDI_DEACTIVATED = MDIaplOffSet + 17
+.head 4 -  Number: PAM_clsMDI_PBSTATUS = MDIaplOffSet + 18
+.head 4 -  Number: PAM_clsMDI_PBHIDDEN = MDIaplOffSet + 19
+.head 4 -  Number: PAM_clsMDI_AMIACTIVE = MDIaplOffSet + 20
+.head 4 -  Number: PAM_clsMDI_PARENTCHANGE = MDIaplOffSet + 21
+.head 4 -  Number: PAM_clsMDI_PBSENDSTATUS = MDIaplOffSet + 22
+.head 4 -  Number: PAM_clsMDI_MENUCREATE = MDIaplOffSet + 23
+.head 4 -  Number: PAM_clsMDI_CHILDWINACTIVATED = MDIaplOffSet + 24
+.head 4 -  ! Constants
+.head 4 -  Number: MDI_EndOnExit = MDIAplConstOffSet + 1
+.head 4 -  Number: MDI_HideOnExit = MDIAplConstOffSet + 2
+.head 4 -  !
+.head 4 -  !
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 702285514
+0000: 8600000037000000 0000000000000000 020000050000008D 000000E4010D0000
+0020: FF3F9A00B8000001 00FFFFE0A7000000 01FE00FF03B40000 00040DFA0000FF0F
+0040: C1000000EE0100FF 3F
+.enddata
+.head 3 -  Number: nAddMenu
+.head 3 -  Number: nSaveMenu
+.head 3 -  Number: nDeleteMenu
+.head 3 -  Number: nUnDeleteMenu
+.head 3 -  Number: nRePopMenu
+.head 2 +  Named Menus
+.head 3 +  Menu: clsMDIFileMenu
+.head 4 -  Resource Id: 25603
+.head 4 -  Title: &File
+.head 4 -  Description:
+.head 4 -  Enabled when:
+.head 4 -  Status Text:
+.head 4 -  Menu Item Name:
+.head 4 +  Menu Item: &Help
+.head 5 -  Resource Id: 42423
+.head 5 -  Keyboard Accelerator: F1
+.head 5 -  Status Text: Shows a summary of this screens actions, hints and tips.
+.head 5 +  Menu Settings
+.head 6 -  Enabled when:
+.head 6 -  Checked when:
+.head 5 +  Menu Actions
+.head 6 -  Call SalSendValidateMsg(  )
+.head 6 -  Call SalSendMsg( hWndMDI, PAM_cls_HELP, 0, 0 )
+.head 5 -  Menu Item Name:
+.head 4 +  Menu Item: &Item Enquiry
+.head 5 -  Resource Id: 25605
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Status Text: Query a stock item for sale.
+.head 5 +  Menu Settings
+.head 6 -  Enabled when:
+.head 6 -  Checked when:
+.head 5 +  Menu Actions
+.head 6 -  Call SalSendValidateMsg(  )
+.head 6 -  Call SalSendMsg( hWndMDI, PAM_cls_ITEMENQUIRY, 0, 0 )
+.head 5 -  Menu Item Name:
+.head 4 +  Menu Item: E&xit
+.head 5 -  Resource Id: 42424
+.head 5 -  Keyboard Accelerator: F12
+.head 5 -  Status Text: Return to Previsous screen ( If on the first screen, this exits the program )
+.head 5 +  Menu Settings
+.head 6 -  Enabled when:
+.head 6 -  Checked when:
+.head 5 +  Menu Actions
+.head 6 -  Call SalSendValidateMsg(  )
+.head 6 -  Call SalSendMsg( hWndMDI, PAM_cls_CLOSE, 0, 0 )
+.head 5 -  Menu Item Name:
+.head 3 +  Windows Menu: clsMDIWindowsMenu
+.head 4 -  Resource Id: 20754
+.head 4 -  Menu Item Name:
+.head 4 -  Title: &Window
+.head 4 -  Description: Menu to manage MDI child windows.
+.head 4 -  Enabled when:
+.head 4 -  Status Text: Manage MDI child windows
+.head 4 +  Menu Item: &Tile Vertical
+.head 5 -  Resource Id: 20755
+.head 5 -  Menu Item Name:
+.head 5 -  Status Text: Arrange MDI child windows in a vertical tiled format
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 +  Menu Settings
+.head 6 -  Enabled when:
+.head 6 -  Checked when:
+.head 5 +  Menu Actions
+.head 6 -  Call SalMDITile( hWndMDI, TRUE )
+.head 4 +  Menu Item: Tile &Horizontal
+.head 5 -  Resource Id: 20752
+.head 5 -  Menu Item Name:
+.head 5 -  Status Text: Arrange MDI child windows in a horizontal tiled format
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 +  Menu Settings
+.head 6 -  Enabled when:
+.head 6 -  Checked when:
+.head 5 +  Menu Actions
+.head 6 -  Call SalMDITile( hWndMDI, FALSE )
+.head 4 +  Menu Item: &Cascade
+.head 5 -  Resource Id: 20753
+.head 5 -  Menu Item Name:
+.head 5 -  Status Text: Arrange MDI child windows in a cascaded format
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 +  Menu Settings
+.head 6 -  Enabled when:
+.head 6 -  Checked when:
+.head 5 +  Menu Actions
+.head 6 -  Call SalMDICascade( hWndMDI )
+.head 4 +  Menu Item: &Arrange Icons
+.head 5 -  Resource Id: 20750
+.head 5 -  Menu Item Name:
+.head 5 -  Status Text: Arrange minimized MDI child windows
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 +  Menu Settings
+.head 6 -  Enabled when:
+.head 6 -  Checked when:
+.head 5 +  Menu Actions
+.head 6 -  Call SalMDIArrangeIcons( hWndMDI )
+.head 3 +  Menu: clsmdiTableActions
+.head 4 -  Resource Id: 3644
+.head 4 -  Title: TableActions
+.head 4 -  Description:
+.head 4 -  Enabled when:
+.head 4 -  Status Text:
+.head 4 -  Menu Item Name:
+.head 4 +  Menu Item: &Add
+.head 5 -  Resource Id: 3643
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Status Text:
+.head 5 +  Menu Settings
+.head 6 -  Enabled when:
+.head 6 -  Checked when:
+.head 5 +  Menu Actions
+.head 6 -  Call SalSendMsg( hWndMDI, PAM_clsMDI_ADD, 0, 0 )
+.head 5 -  Menu Item Name:
+.head 4 +  Menu Item: &Save
+.head 5 -  Resource Id: 3646
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Status Text:
+.head 5 +  Menu Settings
+.head 6 -  Enabled when:
+.head 6 -  Checked when:
+.head 5 +  Menu Actions
+.head 6 -  Call SalSendMsg( hWndMDI, PAM_clsMDI_SAVE, 0, 0 )
+.head 5 -  Menu Item Name:
+.head 4 +  Menu Item: &Delete
+.head 5 -  Resource Id: 3647
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Status Text:
+.head 5 +  Menu Settings
+.head 6 -  Enabled when:
+.head 6 -  Checked when:
+.head 5 +  Menu Actions
+.head 6 -  Call SalSendMsg( hWndMDI, PAM_clsMDI_DELETE, 0, 0 )
+.head 5 -  Menu Item Name:
+.head 4 +  Menu Item: &Undelete
+.head 5 -  Resource Id: 3645
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Status Text:
+.head 5 +  Menu Settings
+.head 6 -  Enabled when:
+.head 6 -  Checked when:
+.head 5 +  Menu Actions
+.head 6 -  Call SalSendMsg( hWndMDI, PAM_clsMDI_UNDELETE, 0, 0 )
+.head 5 -  Menu Item Name:
+.head 4 +  Menu Item: &Repopulate
+.head 5 -  Resource Id: 3648
+.head 5 -  Keyboard Accelerator: (none)
+.head 5 -  Status Text:
+.head 5 +  Menu Settings
+.head 6 -  Enabled when:
+.head 6 -  Checked when:
+.head 5 +  Menu Actions
+.head 6 -  Call SalSendMsg( hWndMDI, PAM_clsMDI_REPOPULATE, 0, 0 )
+.head 5 -  Menu Item Name:
+.head 2 +  Internal Functions
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 2724855445
+0000: 290A0000E3040000 0000000000000000 0200001500FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 000D63006C736D64
+0040: 6947656E00657261 6C86000000F00500 0000E0010D000000 FF3F0D0081000204
+0060: 000000FFFF801100 0000040D00FE00FF 031E0000000304FA 0000FF0F22000000
+0080: EE0100FF3F018004 0D00000100000008 0C636C706247659F 1E00EC000100D901
+00A0: 0D00FF7F010C800D 0002000070000963 6C45207869741E00 00017A000001F60D
+00C0: 00FF1F0180040200 00030000000C0750 696345784070616E 641E0000F4010000
+00E0: EC020400FF3F0180 4604000400007812 636C54006F67676C 6542757420746F6E
+0100: 1E0000017A000002 F700FF1F01800433 0005000C87646647 657F00F4010000EC
+0120: 030400FF3F018004 2F00000600000008 10636C4469616CF0 6F674765CD860005
+0140: 9E00010DFD00FF37 0D0002F700FFDF11 D800040D00FF7F1E 73000300FFFFCD22
+0160: 0001FD00FFC70180 0D00000700000011 636C015370696E53 656100736F6E5965
+0180: 61721EA200000100 0067010D00FFFF01 01802E0000000870 0000001170015374
+01A0: 6172745072006F67 72616DBA0000EC00 0700DD0200FF7F04 7200000200FFFFCD
+01C0: 080002FD00FF070C 00000001F60D00FF 1F190000DC000300 FF7F1D7000000002
+01E0: 00FFFFC121000000 01FD00FFC701802F 0000090000000B63 6C01466F726D4261
+0200: 73C865860000059E 00010DFD00FF370D 0002F700FF9F1100 D800040D00FF7F1E
+0220: 73000300FFFFCD22 0001FD00FFC70180 0D00000A00000017 636C1F507269106E
+0240: 744261696352C065 706F72741EE80001 0000D9010D00FF7F 010C800D000B0000
+0260: 00000B686353716C 4884616E6C651E00 E800010000D9010D 00FF7F01C0802B00
+0280: 00000CFC00100C6D 4265546162006C65 6C00000004003D00 010DFB00FF6F0D00
+02A0: EE0100FF3F1A00B8 00000100FFFFE027 00000002FE00FF63 01800400E60D0010
+02C0: 00546F6F6C546970 5780696E646F771E 00E800010000DD03 00FF7F0100803400
+02E0: 00000E0000D00014 636C7000656C6563 7446726F386D5461 6C00D9000400B301
+0300: 0D00FFFFE60D0001 FE00FF9B1A0001FB 00FF6F2700EE0100 FF3F01800604000F
+0320: 0000004C0D635365 650263496E746F1E 00D100010000BB03 00FFFF000180B700
+0340: 0000100020000016 636C47658F6C5461 F347655136020015 009E00010DFD00FF
+0360: 270D000001F700FF DF1ADC000100FF7F 2773000100FFFFC9 34000002FD00FF07
+0380: 3800000002F700FF 1F3C0000DC000200 FF7F407000000002 00FFFFC144000000
+03A0: 02FD00FF07480000 0002F700FF1F4C00 00DC000200FF7F50 700000000200F401
+03C0: 00000F80010000FE 008154000000010D D1000100003F8001 F900000758000000
+03E0: 01F60D00FF1F6500 00DC000100FF7F72 700000000100FFFF C17F00000001FD00
+0400: FF078C00000001F7 00FF1F990000DC00 0100FF7FA6700000 000100FFFFC1B300
+0420: 000003FD00FF8701 8022000C0011001D 636C0154626C4D61 6B652C5365636564
+0440: 00526F774B657941 7200726179740000 00047B0002470001 0000FFE480010000
+0460: DF04D800010D00FF 7F1173000100FFFF CD1E0002FD00FFC7 01800D8000120000
+0480: 000C63F163624719 6C1E0001003D0001 0DFB00FF8F018004 8100130000000C18
+04A0: 6654616543613063 68651E00017A0000 03F700FF1F018015 020000140000000B
+04C0: 706366436150046F 6F5A000000037A00 0007041900000101 00DCF4070000E480
+04E0: 010000DF04D80003 0400FF7F08630001 0D00FFFF01
+.enddata
+.head 3 +  MDI Window Class: clsmdiGeneral
+.head 4 -  Title:
+.head 4 -  Display Settings
+.head 5 -  Visible at Design time? Yes
+.head 5 -  Automatically Created at Runtime? Class Default
+.head 5 -  Initial State: Normal
+.head 5 -  Maximizable? Class Default
+.head 5 -  Minimizable? Class Default
+.head 5 -  System Menu? Class Default
+.head 5 -  Resizable? Class Default
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  9.988"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 3.771"
+.head 6 -  Height Editable? Class Default
+.head 4 -  Icon File:
+.head 4 -  Accesories Enabled? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Next Class Child Key: 6
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 -  Derived From
+.head 4 +  Menu
+.head 5 -  Named Menu: clsMDIFileMenu
+.head 6 -  Resource Id: 25599
+.head 4 +  Tool Bar
+.head 5 -  Display Settings
+.head 6 -  Display Style? Class Default
+.head 6 -  Location? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Size: 0.604"
+.head 6 -  Size Editable? Class Default
+.head 6 -  Font Name: MS Sans Serif
+.head 6 -  Font Size: 8
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 5 +  Contents
+.head 6 +  Pushbutton: pbHelp
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 3
+.head 7 -  Class: clspbHelp
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   0.0"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbItemEnq
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 4
+.head 7 -  Class: clspbItemEnq
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   0.6"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 +  Message Actions
+.head 8 +  On PAM_clsMDI_NOTTREESYS
+.head 9 -  Call SalSendMsg( hWndItem, PAM_clsPB_HIDE, 0, 0 )
+.head 9 -  Call SalSendMsg( hWndItem, PAM_clsPB_DISABLE, 0, 0 )
+.head 6 +  Pushbutton: pbPrintForm
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 5
+.head 7 -  Class: clspbPrintForm
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   11.95"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbExit
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 6
+.head 7 -  Class: clspbExit
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   12.55"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 4 +  Class Variables
+.head 5 -  Number: nTmp
+.head 5 -  String: sTmp
+.head 5 -  Date/Time: dtTmp
+.head 5 -  Window Handle: hWndTmp
+.head 5 -  Number: nReturn
+.head 4 +  Instance Variables
+.head 5 -  String: sHelpFileName
+.head 5 -  Number: nActionOnExit
+.head 5 -  String: sMDIHeading
+.head 5 -  Boolean: bMapEnterToTab
+.head 5 -  Boolean: bPrintFormAllowed
+.head 5 -  Boolean: bTreeSystem
+.head 5 -  String: __sWinShowType
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Call OurWaitCursor( TRUE )
+.head 6 -  Call SalGetWindowText( hWndMDI, sMDIHeading, 130 )
+.head 6 -  Set nActionOnExit = MDI_EndOnExit
+.head 6 -  Set sHelpFileName = ''
+.head 6 -  Set bMapEnterToTab = FALSE
+.head 6 -  Set bPrintFormAllowed = TRUE
+.head 6 -  Set bTreeSystem = TRUE
+.head 6 -  Call SalSendMsg( hWndMDI, PAM_clsMDI_POPFIELDS, 0, 0 )
+.head 6 -  Call SalSendMsg( hWndMDI, PAM_cls_SETINSTANCEVARS, 0, 0 )
+.head 6 +  If NOT bPrintFormAllowed
+.head 7 -  Call SalSendMsg( pbPrintForm, PAM_clsPB_HIDE, 0, 0 )
+.head 6 +  If NOT bTreeSystem
+.head 7 -  Call SalSendMsgToChildren( hWndMDI, PAM_clsMDI_NOTTREESYS, 0, 0 )
+.head 5 +  On SAM_CreateComplete
+.head 6 +  If bMapEnterToTab
+.head 7 -  Call OurMapEnterToTab( TRUE )
+.head 6 -  Call OurWaitCursor( FALSE )
+.head 6 -  Call SalSendMsg( SalParentWindow( hWndMDI ), PAM_clsMDI_CHILDWINACTIVATED, 0, 0 )
+.head 6 +  If VisWinIsMaximized( hWndMDI )
+.head 7 -  Set __sWinShowType = 'MAXIMIZED'
+.head 6 +  Else If VisWinIsMinimized( hWndMDI )
+.head 7 -  Set __sWinShowType = 'MINIMIZED'
+.head 6 +  Else
+.head 7 -  Set __sWinShowType = 'RESTORED'
+.head 6 -  Call SalPostMsg( hWndMDI, PAM_cls_PARENTACTIVATE, 0, 0 )
+.head 5 +  On SAM_Destroy
+.head 6 -  Call SalPostMsg( SalParentWindow( hWndMDI ), PAM_cls_PARENTACTIVATE, 0, 0 )
+.head 6 +  If bMapEnterToTab
+.head 7 -  Call OurMapEnterToTab( FALSE )
+.head 5 +  On SAM_Close
+.head 6 -  Set nReturn = SalSendMsg( hWndMDI, PAM_cls_EXIT, 0, 0 )
+.head 6 +  If nReturn = PB_ExitHideWindow
+.head 7 -  Call SalHideWindow( hWndMDI )
+.head 7 -  Return FALSE
+.head 5 +  On PAM_cls_CLOSE
+.head 6 -  Set nReturn =  SalSendMsg( hWndMDI, PAM_cls_EXIT, wParam, lParam )
+.head 6 +  If nReturn = PB_ExitDestroyWindow
+.head 7 -  Return SalDestroyWindow( hWndMDI )
+.head 6 +  Else If nReturn = PB_ExitEndDialog
+.head 7 -  Return SalEndDialog( hWndMDI, wParam )
+.head 6 +  Else If nReturn = PB_ExitHideWindow
+.head 7 -  Return SalHideWindow( hWndMDI )
+.head 5 +  On PAM_cls_PARENTACTIVATE
+.head 6 -  Call SalEnableWindow( hWndMDI )
+.head 6 -  Call SalShowWindow( hWndMDI )
+.head 6 -  Call SalBringWindowToTop( hWndMDI )
+.head 6 +  If __sWinShowType = 'MAXIMIZED'
+.head 7 -  Call VisWinShow( hWndMDI, SHOW_Maximized )
+.head 6 +  Else If __sWinShowType = 'MINIMIZED'
+.head 7 -  Call VisWinShow( hWndMDI, SHOW_Minimized )
+.head 6 +  Else
+.head 7 -  Call VisWinShow( hWndMDI, SHOW_Normal )
+.head 5 +  On SAM_Activate
+.head 6 -  Call SalSendMsgToChildren( hWndMDI, PAM_clsMDI_ACTIVATE, wParam, lParam )
+.head 5 +  On PAM_cls_EXIT
+.head 6 -  Call SalSendMsg( hWndMDI, PAM_clsMDI_PUSHFIELDS, 0, 0 )
+.head 6 -  Call SalSendMsg( SalParentWindow( hWndMDI ), PAM_clsMDI_RETURN, 0, SalWindowHandleToNumber( hWndMDI ) )
+.head 6 +  If nActionOnExit = MDI_HideOnExit
+.head 7 -  Return PB_ExitHideWindow
+.head 6 +  Else
+.head 7 -  Return PB_ExitDestroyWindow
+.head 5 +  On PAM_cls_HELP
+.head 6 -  Return DisplayHelp( hWndMDI )
+.head 5 +  On PAM_cls_ITEMENQUIRY
+.head 6 +  If bTreeSystem
+.head 7 -  Return SalSendMsg( pbItemEnq, SAM_Click, wParam, lParam )
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  On PAM_clsMDI_SHOW
+.head 6 -  Call SalSendMsg( hWndMDI, PAM_clsMDI_POPFIELDS, 0, 0 )
+.head 6 -  Return SalShowWindow( hWndMDI )
+.head 5 +  On PAM_clsMDI_CHILDWINACTIVATED
+.head 6 -  Call VisWinShow( hWndMDI, SHOW_Minimized )
+.head 6 -  Call SalDisableWindow( hWndMDI )
+.head 6 +  If VisWinIsMaximized( hWndMDI )
+.head 7 -  Set __sWinShowType = 'MAXIMIZED'
+.head 6 +  Else If VisWinIsMinimized( hWndMDI )
+.head 7 -  Set __sWinShowType = 'MINIMIZED'
+.head 6 +  Else
+.head 7 -  Set __sWinShowType = 'RESTORED'
+.head 6 -  Return TRUE
+.head 3 +  MDI Window Class: clsmdiMain
+.head 4 -  Title:
+.head 4 -  Display Settings
+.head 5 -  Visible at Design time? Yes
+.head 5 -  Automatically Created at Runtime? Class Default
+.head 5 -  Initial State: Normal
+.head 5 -  Maximizable? Class Default
+.head 5 -  Minimizable? Class Default
+.head 5 -  System Menu? Class Default
+.head 5 -  Resizable? Class Default
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  10.013"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 5.479"
+.head 6 -  Height Editable? Class Default
+.head 4 -  Icon File:
+.head 4 -  Accesories Enabled? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Next Class Child Key: 6
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 -  Derived From
+.head 4 +  Menu
+.head 5 -  ! Named Menu: clsMDIFileMenu
+.head 5 -  ! Named Menu: clsmdiTableActions
+.head 5 -  ! Named Menu: clsMDIWindowsMenu
+.head 4 +  Tool Bar
+.head 5 -  Display Settings
+.head 6 -  Display Style? Class Default
+.head 6 -  Location? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Size: 0.615"
+.head 6 -  Size Editable? Class Default
+.head 6 -  Font Name: MS Sans Serif
+.head 6 -  Font Size: 8
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 5 +  Contents
+.head 6 +  Pushbutton: pbAddRows
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 1
+.head 7 -  Class: clspbTblAddRows
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   0.988"
+.head 8 -  Top:    0.021"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbSaveRows
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 2
+.head 7 -  Class: clspbTblSaveRows
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   1.588"
+.head 8 -  Top:    0.021"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbDeleteRows
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 3
+.head 7 -  Class: clspbTblDeleteRows
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   2.375"
+.head 8 -  Top:    0.021"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbRePopulate
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 4
+.head 7 -  Class: clspbTblRePopTable
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   3.825"
+.head 8 -  Top:    0.021"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbUnDeleteRows
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 5
+.head 7 -  Class: clspbTblUnDeleteRows
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   2.975"
+.head 8 -  Top:    0.01"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbExit
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 6
+.head 7 -  Class:
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title: Exit Esc
+.head 7 -  Window Location and Size
+.head 8 -  Left:   12.517"
+.head 8 -  Top:    0.01"
+.head 8 -  Width:  0.683"
+.head 8 -  Width Editable? Yes
+.head 8 -  Height: 0.58"
+.head 8 -  Height Editable? Yes
+.head 7 -  Visible? Yes
+.head 7 -  Keyboard Accelerator: Esc
+.head 7 -  Font Name: Arial
+.head 7 -  Font Size: 8
+.head 7 -  Font Enhancement: Bold
+.head 7 -  Picture File Name: C:\Centura\icons\Close.ico
+.head 7 -  Picture Transparent Color: None
+.head 7 -  Image Style: Single
+.head 7 -  Text Color: Default
+.head 7 -  Background Color: Default
+.head 7 +  Message Actions
+.head 8 +  On SAM_Click
+.head 9 +  If SalSendMsg( hWndMDI, SAM_Close, wParam, lParam )
+.head 10 -  Call SalDestroyWindow( hWndMDI )
+.head 4 -  Class Variables
+.head 4 +  Instance Variables
+.head 5 -  Window Handle: hWndChild
+.head 5 -  Window Handle: hWndPbs
+.head 5 -  Number: nhWndPbs
+.head 5 -  Window Handle: hWndChildForm
+.head 5 -  Window Handle: hWndActiveForm
+.head 5 -  Window Handle: hWndCurrForm
+.head 5 -  Window Handle: hWndPb
+.head 5 -  Window Handle: hWndCallingForm
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On PAM_clsMDI_ADD
+.head 6 -  Call SalSendMsg( pbAddRows, SAM_Click, 0, 0 )
+.head 5 +  On PAM_clsMDI_SAVE
+.head 6 -  Call SalSendMsg( pbSaveRows, SAM_Click, 0, 0 )
+.head 5 +  On PAM_clsMDI_DELETE
+.head 6 -  Call SalSendMsg( pbDeleteRows, SAM_Click, 0, 0 )
+.head 5 +  On PAM_clsMDI_UNDELETE
+.head 6 -  Call SalSendMsg( pbUnDeleteRows, SAM_Click, 0, 0 )
+.head 5 +  On PAM_clsMDI_REPOPULATE
+.head 6 -  Call SalSendMsg( pbRePopulate, SAM_Click, 0, 0 )
+.head 5 +  On PAM_clsMDI_OKTOPOPCHILD
+.head 6 -  Set hWndChild = SalGetFirstChild( hWndMDI, TYPE_FormWindow )
+.head 6 +  While hWndChild != hWndNULL
+.head 7 -  ! Want a return of true from the form windows if their children require changes to be saved
+.head 7 +  If SalSendMsg( hWndChild, PAM_clsTBL_CHECKCHANGES, 0, 0 )
+.head 8 -  Return FALSE
+.head 7 -  Set hWndChild = SalGetNextChild( hWndChild, TYPE_FormWindow )
+.head 6 -  Return TRUE
+.head 5 +  On SAM_Close
+.head 6 -  Set hWndChild = SalGetFirstChild( hWndMDI, TYPE_FormWindow )
+.head 6 +  While hWndChild != hWndNULL
+.head 7 +  If NOT SalSendMsg( hWndChild, PAM_cls_EXIT, 0, 0 )
+.head 8 -  Return FALSE
+.head 7 -  Set hWndChild = SalGetNextChild( hWndChild, TYPE_FormWindow )
+.head 6 -  Return TRUE
+.head 5 +  On PAM_clsMDI_ACTIVATED
+.head 6 -  ! the window handle of the form being activated or deactivated
+.head 6 -  Set hWndChildForm = SalNumberToWindowHandle( lParam )
+.head 6 -  ! Need to trap the active form to be able to process on a table level whether we allow the rowvalidate to
+occur 
+.head 6 +  If wParam
+.head 7 -  Set hWndActiveForm = hWndChildForm
+.head 5 +  On PAM_clsMDI_AMIACTIVE
+.head 6 -  Set hWndCurrForm = SalNumberToWindowHandle( lParam )
+.head 6 +  If hWndCurrForm = hWndActiveForm
+.head 7 -  Return TRUE
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  On VTM_MenuSelect
+.head 6 -  ! Set sMenuSelected = VisMenuGetText( hWndForm, lParam, -1 ) 
+.head 6 +  ! If sMenuSelected = 'Add'
+.head 7 -      Call SalSendMsg( hWndMDI, PAM_clsMDI_ADD, 0, 0 )
+.head 6 +  If lParam = nAddMenu
+.head 7 -  Call SalSendMsg( hWndMDI, PAM_clsMDI_ADD, 0, 0 )
+.head 6 +  Else If lParam = nSaveMenu
+.head 7 -  Call SalSendMsg( hWndMDI, PAM_clsMDI_SAVE, 0, 0 )
+.head 6 +  Else If lParam = nDeleteMenu
+.head 7 -  Call SalSendMsg( hWndMDI, PAM_clsMDI_DELETE, 0, 0 )
+.head 6 +  Else If lParam = nUnDeleteMenu
+.head 7 -  Call SalSendMsg( hWndMDI, PAM_clsMDI_UNDELETE, 0, 0 )
+.head 6 +  Else If lParam = nRePopMenu
+.head 7 -  Call SalSendMsg( hWndMDI, PAM_clsMDI_REPOPULATE, 0, 0 )
+.head 3 +  Child Table Class: clsmdifrmChldTbl
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  1.2"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 0.833"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  View: Class Default
+.head 5 -  Allow Row Sizing? Class Default
+.head 5 -  Lines Per Row: Class Default
+.head 4 -  Memory Settings
+.head 5 -  Maximum Rows in Memory: Class Default
+.head 5 -  Discardable? Class Default
+.head 4 -  Next Class Child Key: 0
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clsTableGeneral
+.head 4 -  Contents
+.head 4 -  Class Variables
+.head 4 +  Instance Variables
+.head 5 -  Boolean: bSeqNoKey
+.head 5 -  ! Private
+.head 5 -  Boolean: bRowNew
+.head 5 -  ! Window Handle: hWndCurrForm
+.head 5 -  Number: nReturn
+.head 5 -  Number: nhWndForm
+.head 5 -  Number: hMenu
+.head 5 -  Number: i
+.head 5 -  Number: nX
+.head 5 -  Number: nY
+.head 5 -  Number: hAcc[*]
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set bSeqNoKey = FALSE
+.head 6 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On PAM_clsTBL_REFRESHROW
+.head 6 -  ! If there are row news - we want to override the refresh row function as the seq no is generated
+via a trigger in the database and we want to do a populate instead
+.head 6 +  If bSeqNoKey
+.head 7 -  ! Means that the primary key on this table is an internally triggered before insert seq no so we dont
+want to do the refreshrow
+.head 7 +  If bRowNew
+.head 8 -  Set nReturn = TRUE
+.head 7 +  Else
+.head 8 -  Set nReturn = SalSendClassMessage( PAM_clsTBL_REFRESHROW, wParam, lParam )
+.head 6 +  Else
+.head 7 -  Set nReturn = SalSendClassMessage( PAM_clsTBL_REFRESHROW, wParam, lParam )
+.head 6 -  ! ! Seems to be that if only 1 row is in the table, especially after the one row is added, sam_rowValidate
+doesnt get processed on the click of the row
+.head 6 +  If clsmdifrmChldTbl.__nTableTotalRows = 1
+.head 7 -  Call SalSendMsg( hWndForm, SAM_RowValidate, wParam, lParam )
+.head 6 -  Return nReturn
+.head 5 +  On PAM_clsTBL_SAVECHANGES
+.head 6 -  Set bRowNew = SalTblAnyRows( hWndForm, ROW_New, 0 )
+.head 6 +  If SalSendClassMessage( PAM_clsTBL_SAVECHANGES, wParam, lParam )
+.head 7 +  If bRowNew
+.head 8 -  Call SalSendClassMessage( PAM_clsTBL_POPULATE, wParam, lParam )
+.head 5 +  On SAM_RowValidate
+.head 6 -  Set nhWndForm = SalWindowHandleToNumber( SalParentWindow( hWndForm ) )
+.head 6 +  If SalSendMsg( hWndMDI, PAM_clsMDI_AMIACTIVE, 0, nhWndForm )
+.head 7 -  Return VALIDATE_Ok
+.head 7 +  ! If NOT SalSendMsg( hWndForm, PAM_clsTBL_CHECKCHANGES, wParam, lParam )
+.head 8 -      Return VALIDATE_Ok
+.head 6 -  ! First off we need to check if any of the windows have data changed which needs to be saved
+.head 6 +  If SalSendMsg( hWndMDI, PAM_clsMDI_OKTOPOPCHILD, wParam, lParam )
+.head 7 -  Call SalSendMsg( SalParentWindow( hWndForm ), PAM_clsMDI_PARENTCHANGE, 0, 0 )
+.head 7 -  Return VALIDATE_Ok
+.head 6 +  Else
+.head 7 -  Return VALIDATE_Cancel
+.head 5 +  On PAM_clsTBL_NOROWS
+.head 6 -  Return FALSE
+.head 5 +  On WM_RBUTTONUP
+.head 6 -  Set hMenu = CreatePopupMenu(  )
+.head 6 -  Set i = 0
+.head 6 +  If clsmdifrmChldTbl.bAddAllowed
+.head 7 -  Set nAddMenu = VisMenuInsert( hWndMDI, hMenu, -1, '&Add', 0 )
+.head 7 -  Set hAcc[i] = VisWinLoadAccelerator( hWndMDI, VTM_MenuSelect, KDS_Alt, VK_A, nAddMenu )
+.head 7 -  Set i = i + 1
+.head 6 +  If clsmdifrmChldTbl.bSaveAllowed
+.head 7 -  Set nSaveMenu = VisMenuInsert( hWndMDI, hMenu, -1, '&Save', 0 )
+.head 7 -  Set hAcc[i] = VisWinLoadAccelerator( hWndMDI, VTM_MenuSelect, KDS_Alt, VK_S, nSaveMenu )
+.head 7 -  Set i = i + 1
+.head 6 +  If clsmdifrmChldTbl.bDeleteAllowed
+.head 7 -  Set nDeleteMenu = VisMenuInsert( hWndMDI, hMenu, -1, '&Delete', 0 )
+.head 7 -  Set hAcc[i] = VisWinLoadAccelerator( hWndMDI, VTM_MenuSelect, KDS_Alt, VK_D, nDeleteMenu )
+.head 7 -  Set i = i + 1
+.head 6 +  If clsmdifrmChldTbl.bUnDeleteAllowed
+.head 7 -  Set nUnDeleteMenu = VisMenuInsert( hWndMDI, hMenu, -1, '&Undelete', 0 )
+.head 7 -  Set hAcc[i] = VisWinLoadAccelerator( hWndMDI, VTM_MenuSelect, KDS_Alt, VK_U, nUnDeleteMenu )
+.head 7 -  Set i = i + 1
+.head 6 +  If clsmdifrmChldTbl.bRepopulateAllowed
+.head 7 -  Set nRePopMenu = VisMenuInsert( hWndMDI, hMenu, -1, '&Repopulate', 0 )
+.head 7 -  Set hAcc[i] = VisWinLoadAccelerator( hWndMDI, VTM_MenuSelect, KDS_Alt, VK_R, nRePopMenu )
+.head 7 -  Set i = i + 1
+.head 6 -  Set nX= SalNumberLow( lParam )
+.head 6 -  Set nY=SalNumberHigh( lParam )
+.head 6 -  Call ClientToScreen(hWndForm,nX,nY)
+.head 6 -  Call TrackPopupMenu( hMenu, MK_LBUTTON, nX, nY, 0, hWndMDI, '' )
+.head 3 +  Form Window Class: clsmdifrmChld
+.head 4 -  Title:
+.head 4 -  Icon File:
+.head 4 -  Accesories Enabled? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Display Settings
+.head 5 -  Display Style? Class Default
+.head 5 -  Visible at Design time? Yes
+.head 5 -  Automatically Created at Runtime? No
+.head 5 -  Initial State: Class Default
+.head 5 -  Maximizable? Class Default
+.head 5 -  Minimizable? Class Default
+.head 5 -  System Menu? Class Default
+.head 5 -  Resizable? Class Default
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  7.5"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 3.292"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Form Size
+.head 6 -  Width:  Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Number of Pages: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 4 -  Next Class Child Key: 8
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clsFormBaseTable
+.head 4 +  Menu
+.head 5 -  Named Menu: clsMDIFileMenu
+.head 6 -  Resource Id: 58260
+.head 5 -  ! Named Menu: clsmdiTableActions
+.head 5 -  Named Menu: clsMDIWindowsMenu
+.head 6 -  Resource Id: 58258
+.head 4 +  Tool Bar
+.head 5 -  Display Settings
+.head 6 -  Display Style? Class Default
+.head 6 -  Location? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Size: Class Default
+.head 6 -  Size Editable? Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 5 -  Contents
+.head 4 -  Contents
+.head 4 -  Class Variables
+.head 4 +  Instance Variables
+.head 5 -  String: spbToHide[*]
+.head 5 -  String: sParentForm
+.head 5 -  String: sChildForm[*]
+.head 5 -  ! bParentForm is set if the form is the controlling form in the mdi window - if it is destroyed then every other
+form needs to be destroyed
+.head 5 -  Boolean: bParentForm
+.head 5 -  ! Private
+.head 5 -  Window Handle: hWndChild
+.head 5 -  Number: nhWndForm
+.head 5 -  Window Handle: hWndPb
+.head 5 -  String: sPb
+.head 5 -  Number: i
+.head 5 -  Window Handle: hWndMDIChild
+.head 5 -  Window Handle: hWndParent
+.head 5 -  Window Handle: hWndChildPb
+.head 4 +  Functions
+.head 5 +  Function: GetHandleFromItemName
+.head 6 -  Description: Passing in a string variable to find the related instances window handle to be able to
+send messages to it
+.head 6 +  Returns
+.head 7 -  Boolean: bOk 
+.head 6 +  Parameters
+.head 7 -  Receive Window Handle: hWndHdl
+.head 7 -  String: sItemName
+.head 6 -  Static Variables
+.head 6 +  Local variables
+.head 7 -  Number: i
+.head 7 -  Window Handle: hWndChild
+.head 7 -  String: sGotItemName
+.head 6 +  Actions
+.head 7 -  Set hWndChild = SalGetFirstChild( hWndMDI, TYPE_FormWindow )
+.head 7 +  While hWndChild != hWndNULL
+.head 8 -  Call SalGetItemName( hWndChild, sGotItemName )
+.head 8 +  If sGotItemName = sItemName
+.head 9 -  ! Then we have the one we want 
+.head 9 -  Set hWndHdl = hWndChild
+.head 9 -  Return TRUE
+.head 8 -  Set hWndChild = SalGetNextChild( hWndChild, TYPE_FormWindow )
+.head 7 -  Return FALSE
+.head 5 +  Function: SetMenuItems
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 -  Parameters
+.head 6 -  Static Variables
+.head 6 +  Local variables
+.head 7 -  Number: hMenu
+.head 7 -  Number: i
+.head 7 -  Number: nMenuCount
+.head 7 -  String: sText
+.head 7 -  Number: hMenuPopup
+.head 7 -  Number: nChildPos
+.head 6 +  Actions
+.head 7 -  Set hMenu = VisMenuGetHandle( hWndMDI )
+.head 7 -  Set nMenuCount = VisMenuGetCount( hMenu )
+.head 7 -  Set i = 0
+.head 7 +  While i < nMenuCount
+.head 8 -  Set sText = VisMenuGetText( hWndMDI, hMenu, i )
+.head 8 +  If sText = 'TableActions'
+.head 9 -  Set hMenuPopup = VisMenuGetPopupHandle( hMenu, i )
+.head 9 -  ! To break out of the while loop
+.head 9 -  Set i = nMenuCount
+.head 8 -  Set i = i + 1
+.head 7 +  If NOT clsmdifrmChld.bAddAllowed
+.head 8 +  If GetMenuPos( hMenuPopup, 'Add', nChildPos )
+.head 9 -  Call VisMenuDelete( hWndMDI, hMenuPopup, nChildPos )
+.head 7 +  If NOT clsmdifrmChld.bSaveAllowed
+.head 8 +  If GetMenuPos( hMenuPopup, 'Save', nChildPos )
+.head 9 -  Call VisMenuDelete( hWndMDI, hMenuPopup, nChildPos )
+.head 7 +  If NOT clsmdifrmChld.bDeleteAllowed
+.head 8 +  If GetMenuPos( hMenuPopup, 'Delete', nChildPos )
+.head 9 -  Call VisMenuDelete( hWndMDI, hMenuPopup, nChildPos )
+.head 7 +  If NOT clsmdifrmChld.bUnDeleteAllowed
+.head 8 +  If GetMenuPos( hMenuPopup, 'UnDelete', nChildPos )
+.head 9 -  Call VisMenuDelete( hWndMDI, hMenuPopup, nChildPos )
+.head 7 +  If NOT clsmdifrmChld.bRepopulateAllowed
+.head 8 +  If GetMenuPos( hMenuPopup, 'Repopulate', nChildPos )
+.head 9 -  Call VisMenuDelete( hWndMDI, hMenuPopup, nChildPos )
+.head 5 +  Function: GetMenuPos
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 +  Parameters
+.head 7 -  Number: hMenuPopup
+.head 7 -  String: sText
+.head 7 -  Receive Number: nPos
+.head 6 -  Static Variables
+.head 6 +  Local variables
+.head 7 -  String: sChildText
+.head 7 -  Number: nChildCount
+.head 6 +  Actions
+.head 7 -  Set nChildCount = VisMenuGetCount( hMenuPopup )
+.head 7 -  Set nPos = 0
+.head 7 +  While nPos < nChildCount
+.head 8 -  Set sChildText = VisMenuGetText( hWndMDI, hMenuPopup, nPos )
+.head 8 -  Set sChildText = VisStrSubstitute( sChildText, '&', STRING_Null )
+.head 8 +  If sChildText = sText
+.head 9 -  Return TRUE
+.head 8 -  Set nPos = nPos + 1
+.head 7 -  ! Required text is not found
+.head 7 -  Return FALSE
+.head 4 +  Message Actions
+.head 5 +  On SAM_Destroy
+.head 6 +  If bParentForm
+.head 7 -  Set hWndChild = SalGetFirstChild( hWndMDI, TYPE_FormWindow )
+.head 7 +  While hWndChild != hWndNULL
+.head 8 -  Call SalPostMsg( hWndChild, SAM_Destroy, 0, 0 )
+.head 8 -  Set hWndChild = SalGetNextChild( hWndChild, TYPE_FormWindow )
+.head 6 -  Call SalSendClassMessage( SAM_Destroy, wParam, lParam )
+.head 5 +  On SAM_Create
+.head 6 -  Set bParentForm = FALSE
+.head 6 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On SAM_CreateComplete
+.head 6 +  If GetHandleFromItemName( hWndParent, sParentForm )
+.head 7 +  If SalSendMsg(  hWndParent, PAM_cls_SETFIELDS, 0, 0 )
+.head 8 -  Call SalSendMsg( hWndForm, PAM_cls_GETFIELDS, 0, 0 )
+.head 6 -  Call SalSendMsg( hWndForm, PAM_clsMDI_PBHIDDEN, wParam, lParam )
+.head 6 -  Call SetMenuItems( )
+.head 6 -  ! If the form is the parent form then we want the pb hiding code to be executed
+.head 6 +  If bParentForm
+.head 7 -  Call SalPostMsg( hWndForm, PAM_clsMDI_PBSENDSTATUS, 0, 0 )
+.head 6 -  Return SalSendClassMessage( SAM_CreateComplete, wParam, lParam )
+.head 5 +  On PAM_clsMDI_PBSENDSTATUS
+.head 6 -  Set nhWndForm = SalWindowHandleToNumber( hWndForm )
+.head 6 -  Call SalSendMsgToChildren( hWndMDI, PAM_clsPB_PBSTATUS, nhWndForm, lParam )
+.head 5 +  On PAM_clsMDI_PARENTCHANGE
+.head 6 -  Set i = 0
+.head 6 +  While sChildForm[i] != ''
+.head 7 +  If GetHandleFromItemName( hWndChild, sChildForm[i] )
+.head 8 -  Call SalPostMsg( hWndChild, PAM_cls_CHILDCHANGED, 0, 0 )
+.head 7 -  Set i = i + 1
+.head 5 +  On PAM_clsMDI_PBHIDDEN
+.head 6 -  Set spbToHide[0] = ''
+.head 5 +  On PAM_cls_GETFIELDS
+.head 6 -  Return TRUE
+.head 5 +  On PAM_cls_SETFIELDS
+.head 6 -  Return TRUE
+.head 5 +  On PAM_cls_CHILDCHANGED
+.head 6 +  If SalSendMsg(  hWndParent, PAM_cls_SETFIELDS, 0, 0 )
+.head 7 -  Call SalSendMsg( hWndForm, PAM_cls_GETFIELDS, 0, 0 )
+.head 6 -  Call SalSendMsgToChildren( hWndForm, PAM_clsTBL_POPULATE, 0, 0 )
+.head 6 -  Call SalBringWindowToTop( hWndForm )
+.head 6 -  Set i = 0
+.head 6 +  While sChildForm[i] != ''
+.head 7 +  If GetHandleFromItemName( hWndChild, sChildForm[i] )
+.head 8 -  Call SalPostMsg( hWndChild, PAM_cls_CHILDCHANGED, 0, 0 )
+.head 7 -  Set i = i + 1
+.head 5 +  On SAM_Activate
+.head 6 +  If wParam
+.head 7 -  Call SalPostMsg( hWndForm, PAM_clsMDI_PBSENDSTATUS, 0, 0 )
+.head 6 -  Set nhWndForm = SalWindowHandleToNumber( hWndForm )
+.head 6 -  Call SalPostMsg( SalParentWindow( hWndForm ), PAM_clsMDI_ACTIVATED, wParam, nhWndForm )
+.head 5 +  On PAM_cls_REFRESHAFTRCHILDCHANGE
+.head 6 -  Return FALSE
+.head 5 +  On PAM_clsTBL_CHECKCHANGES
+.head 6 -  Set hWndMDIChild = SalGetFirstChild( hWndForm, TYPE_ChildTable )
+.head 6 +  While hWndMDIChild != hWndNULL
+.head 7 +  If NOT SalSendMsg( hWndMDIChild, PAM_clsTBL_CHECKCHANGES, wParam, lParam )
+.head 8 -  Return TRUE
+.head 7 -  Set hWndMDIChild = SalGetNextChild( hWndMDIChild, TYPE_ChildTable )
+.head 6 -  Return FALSE
+.head 5 +  On PAM_clsPB_PBSTATUS
+.head 6 -  Set hWndPb = SalNumberToWindowHandle( lParam )
+.head 6 -  Call SalGetItemName( hWndPb, sPb )
+.head 6 -  Set i = 0
+.head 6 -  ! have to loop thru the array of pbtohide to see if this pb is in the array, if not return false to not hide it
+.head 6 +  While spbToHide[i] != ''
+.head 7 +  If spbToHide[i] = sPb
+.head 8 -  Return TRUE
+.head 7 -  Set i = i + 1
+.head 6 -  Return FALSE
+.head 5 +  ! On PAM_clsMDI_MENUCREATE
+.head 6 -      Set nMenu = VisMenuGetHandle( clsmdiMain )
+.head 6 -  ! Set nMenu = VisMenuGetPopupHandle( nMenu, 1 )
+.head 6 -      Set nMenuCount = VisMenuGetCount( nMenu )
+.head 6 -      Set i = 0
+.head 6 +      While i < nMenuCount
+.head 7 -      Set sText = VisMenuGetText( clsmdiMain, nMenu, i )
+.head 7 +      If sText = 'TableActions'
+.head 8 -      Set nMenuPopup = VisMenuGetPopupHandle( nMenu, i )
+.head 8 -      Break 
+.head 7 -      Set i = i + 1
+.head 6 +      If NOT clsmdifrmChld.bAddAllowed
+.head 7 -  ! Set nAddMenu = VisMenuInsert( hWndForm, nMenu, -1, 'Add', 0 )
+.head 7 -  ! Call VisWinLoadAccelerator(  hWndForm, VTM_MenuSelect, KDS_None, 0, nAddMenu )
+.head 7 -      Set nChildCount = VisMenuGetCount( nMenuPopup )
+.head 7 -      Set nChildPos = 0
+.head 7 +      While nChildPos < nChildCount
+.head 8 -      Set sChildText = VisMenuGetText( clsmdiMain, nMenuPopup, nChildPos )
+.head 8 +      If sChildText = 'Add'
+.head 9 -      Call VisMenuDelete( clsmdiMain, nMenuPopup, nChildPos )
+.head 8 -      Set nChildPos = nChildPos + 1
+.head 6 -      Call SalTrackPopupMenu( hWndForm, 'TableActions', TPM_CursorX|TPM_CursorY, 0, 0 )
+.head 5 +  ! On VTM_MenuSelect
+.head 6 -      Set sMenuSelected = VisMenuGetText( hWndForm, lParam, -1 ) 
+.head 6 +      If sMenuSelected = 'Add'
+.head 7 -      Call SalSendMsg( hWndMDI, PAM_clsMDI_ADD, 0, 0 )
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Check Box:
+.head 3 -  Option Button:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text: clsBackTextGeneral
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 -  Application Actions

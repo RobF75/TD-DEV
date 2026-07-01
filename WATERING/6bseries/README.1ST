@@ -1,0 +1,95 @@
+
+
+			          6B Series
+		   Configurable Digitizing Signal Conditioner
+		              Support Software
+
+                            Revision 2.11 (Release)
+               Copyright 1989,1990,1991,1993 Analog Devices, Inc.
+		              Norwood, Ma. 02062
+
+
+This disk contains Rev. 2.11 of the support software for the 6B series
+of configurable digitizing signal conditioners. This revision contains
+enhancements and corrections to the previous revision (version 2.11), and
+incorperates support for the 6B14 module. Files on this disk include:
+
+        1)  SIXBCCD.EXE -- The 6B Configuration/Calibration/Demonstration (CCD)
+        program. This version contains the following enhancements and
+        corrections:
+
+        -  The software will identify the video adapter and determine if the
+           display is monochrome.
+
+           Some systems identified as color actually use monochrome
+           displays (eg, Toshiba T1200 and T3200).  In this case, the display
+           may not be readable.  You can force the program to use monochrome
+           by adding the "-m" option at the end of the run string.  Type the
+           following command at the DOS prompt to force monochrome mode:
+
+                                C:\ sixbccd -m
+
+           Some systems that use a color adapter and monochrome display try to
+           emulate color by using monochrome shading (eg, Toshiba T3200).  This
+           usually results in a very poor presentation of the "CCD" program, in
+           both color and forced monochrome modes.  To correct this problem use
+           forced monochrome mode as suggested above and make sure the system's
+           display adapter is configured as a monochrome display.  For example,
+           if you are using a Toshiba T3200, set the DIP switches in the back
+           for "IBM monochrome display (MDA)" display mode.
+
+
+        2) ADP1.PAS -- A Turbo Pascal compatible unit containing a set of
+        low level driver procedures and functions for using the 6B
+        series. The unit name is "ADP1".
+
+        3) ADP2.PAS -- A Turbo Pascal compatible unit containing a set of
+        higher level "map" oriented functions and procedures; this unit is
+        dependent upon the "ADP1" unit. The unit name is "ADP2".
+
+        4) A0VER60.TPU -- This is UNIT_A0.TPU, from Turbo Asynch+, by
+        Blaise Computing, Inc., compiled under Turbo Pascal Version 6.0;
+	rename this file to UNIT_A0.TPU before attempting to compile the
+	driver.
+
+        5) A1VER60.TPU -- This is UNIT_A1.TPU, from Turbo Asynch+, by
+        Blaise Computing, Inc., compiled under Turbo Pascal Version 6.0;
+	rename this file to UNIT_A1.TPU before attempting to compile the
+	driver.
+
+        6) ASYNCH.OBJ -- An object library for the aforementioned Turbo
+        Asynch+ units. This file must be available to the Turbo Pascal
+	compiler when the driver is compiled.
+
+        7) A0VER70.TPU -- Like #4 above, but compiled with Turbo Pascal
+        version 7.0; rename to UNIT_A0.TPU before compiling.
+
+        8) A1VER70.TPU -- Like #5 above, but compiled with Turbo Pascal
+        version 7.0; rename to UNIT_A1.TPU before compiling.
+
+        9) SIXB_DEL.OBJ -- An object file containing machine code
+	procedures used by the driver units to determine CPU speed 
+        at run time.
+
+To compile the drivers, first be sure that the CORRECT versions of the
+UNIT_A0 and UNIT_A1 files are available to your compiler, renamed with
+their appropriate names as described above. Also be sure that SIXB_DEL.OBJ
+and ASYNCH.OBJ are also available to the compiler. For example, if you are
+using Turbo Pascal Version 7.0, follow these steps:
+
+        1. Copy ADP1.PAS, ADP2.PAS, A0VER70.TPU, A1VER70.TPU ,ASYNCH.OBJ and
+           SIXB_DEL.OBJ from the floppy to your Turbo directory.
+
+        2. Rename A0VER70.TPU to UNIT_A0.TPU.
+
+        3. Rename A1VER70.TPU to UNIT_A1.TPU.
+
+        4. First compile ADP1.PAS, then compile ADP2.PAS.
+
+NOTE: SIXBCCD and the associated Turbo Pascal drivers contain procedures that
+are designed to adapt to varying CPU speeds encountered in modern PCs.
+However, certain PCs, which automatically adjust CPU speed when making
+floppy disk accesses, may "fool" the program and drivers. When using
+machines with such a feature, we strongly recommend that this software 
+be first copied to a hard disk, and then operated from the hard disk
+exclusively.

@@ -1,0 +1,1326 @@
+Application Description: SQLWindows 5.01 Jans Transaction Ledger report
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D80000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF7F0000 003D000000130300 007A010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 0418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? No
+			Left:   5.1"
+			Top:    2.906"
+			Width:  4.688"
+			Height: 2.979"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   6.6"
+			Top:    0.521"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: GENERAL.APL
+		File Include: FORM.APL
+		File Include: BUTTON.APL
+		File Include: DATFIELD.APL
+		File Include: BGTEXT.APL
+		File Include: GROUPBOX.APL
+		File Include: CHECKBOX.APL
+		File Include: TABLE.APL
+		File Include: SQLHANDL.APL
+		File Include: STRINGS.APL
+		File Include: METER.APL
+		File Include: STACKS.APL
+		File Include: VTMETER.APL
+		File Include: FLAGS.APL
+		File Include: DIALOG.APL
+		File Include: FRMCTBL.APL
+		File Include: QUERY.APL
+		File Include: CMBFIELD.APL
+		File Include: RADIOBTN.APL
+		File Include: SPNFIELD.APL
+		File Include: VTSPIN.APL
+		File Include: DATES.APL
+		File Include: PICK.APL
+		File Include: ACTIVATE.APL
+		File Include: RUNPROG.APL
+		File Include: VTWIN.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: None
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Blue
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for TRLEDGRD.APL
+				Number: TRLEDGRDAplMsgOffSet = SAM_User + 7600
+				! Message go up to AplMsgOffSet + 99
+				Number: TRLEDGRDAplConstOffSet = 5300
+				! Messages
+				Number: PAM_TRLEDGRD_REPORT = TRLEDGRDAplMsgOffSet + 1
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1347615921
+0000: 8600000038000000 0000000000000000 020000050000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E8040D0000 FF3F
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 3263769533
+0000: F41000005D070000 0000000000000000 0200001C00FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 000B63006C73466F
+0040: 726D426100736586 00000005003C0000 010DF8000000FF4F 0D0000E002040000
+0060: 00FF3F1100A00000 040D0000FFFF801E 000000030400FE00 FF832200000001FB
+0080: 00FF0F01800D0001 000100000017633E 6C507220696E7442 616963005265706F
+00A0: 72741E00D9000100 B3010D00FFFF1801 800D000200200000 0C636C7062004765
+00C0: 6E6572616C1EA200 0001000067010D00 FFFF010180380000 0003C00000000963
+00E0: 6C8148656C708600 EC000500D9020400 FF7F04620000010D 00FFFFCD110001FD
+0100: 00FF371E0001F700 FF1F2B0000DC0001 00FF7F01CC800D00 047C000945307869
+0120: 741E00017A000001 F60D00FF1F018004 32000005000C0750 696345784070616E
+0140: 641E0000F4010000 EE0200FF3F018006 0400060000007812 636C54006F67676C
+0160: 6542757420746F6E 1E0000017A000002 F700FF1F01800403 00070000000C8764
+0180: 6647657F00F40100 00EC030400FF3F01 8004110000080000 008E0C6362479F38
+01A0: 00E800020000D901 0D00FF7F0D630002 0400FFFF010180B7 0000000940000000
+01C0: 16636C473E655461 E0626C6547652336 020015003C000001 0DFB00FF6F0D00EE
+01E0: 0100FF3F1A00B800 000100FFFFE02700 000001FE00FF8334 00000002FB00FF4F
+0200: 380000EE0200FF3F 3C00B800000200FF FFE04000000002FE 00FF834400000002
+0220: FB00FF0F48000000 EE0200FF3F4C00B8 00000200FFFFE050 00000002E8000100
+0240: 001F800100FC0000 0354000000010DA3 000100007F80F201 00000F58000000EC
+0260: 010D00FF3F6500B8 00000100FFFFE072 00000001FE00FF83 7F00000001FB00FF
+0280: 0F8C000000EE0100 FF3F9900B8000001 00FFFFE0A6000000 01FE00FF83B30000
+02A0: 0003FB00FF0F0180 220001000A000000 1D63026C54626C4D 616B006553656C65
+02C0: 6374650064526F77 4B65794100727261 7974000000F60400 8E02000100FE00C9
+02E0: 80010000BF04B100 010D00FFFFE61100 01FE00FF9B1E0002 FB00FF8F01801101
+0300: 000B000000106302 6C436F6C756D6E3C 47656C38A3000200 0067020400FFFF8D
+0320: 0400010DFD00FF87 01802F00C0000C00 000010014469616C 6F67473E658600D9
+0340: 000500B3010D00FF FFE60D0002FE00FF 1B1100040DFB00FF 6F1E00EE0300FFBF
+0360: 22B9000100FFFF90 01802B00000DB900 1046196D42655461 03656C000000047A
+0380: 000001F60D00FFDF 0DDC000100FF7F1A 73000100FFFFCD27 0002FD00FF070180
+03A0: 33000000000E0000 0011636C0D545175 6572587944696FA0 B000000006007703
+03C0: 00FFFFCD040002FD 00FF37080002F700 FFDF0CD800010D00 FF7F197000000001
+03E0: 00FFFFC126000000 01FD00FF0701805D 0000C0000F000000 1179517561007461
+0400: 4669656C6444B401 000C00770200FFFF CD040002FD00FF37 080002F700FFDF0C
+0420: DC000200FF7F1060 000000010D00FFFF C11D00000001FD00 FF072A0000000247
+0440: 00010000FFE48001 00001F2E0000D800 010D00FF7F3B7000 00000200FFFFC13F
+0460: 00000001FD00FF37 4C0002F700FFDF50 DC000100FF7F01CC 805D0010FC001203
+0480: 436F6D626F46FE69 F60C00EE0200FFBF 04B9000200FFFFE6 080002FE00FF9B0C
+04A0: 0002FB00FF6F1000 EC010D00FFBF1DB9 000100FFFFE62A00 02E8000100009F80
+04C0: 01FC00001B2E0001 0DFB00FF6F3B00EE 0200FFBF3FB90001 00FFFFE64C0002FE
+04E0: 00FF9B500001FB00 FF8F01805D910011 000012FF0F436163 68D86544010CDE00
+0500: 02FD00FF37040002 F700FFDF08DC0002 00FF7F0C73000200 FFFF8D1000010DFD
+0520: 00FF371D0001F700 FFDF2A1C00020001 00FD009380010000 7F2E6300010D00FF
+0540: FFCD3B0002FD00FF 373F0001F700FFDF 4CDC000200FF7F50 73000100FFFF2101
+0560: 801A000012C00000 0015636C0F4F7065 72C061746F724669 8938000002009E00
+0580: 010DFD00FF370D00 01F700FF1F018004 030013000000137C 636C790043425965
+05A0: 734E6F46206C6167 1E0000017A000002 F60400FF1F01800D 0300140000001106
+05C0: 635370696E530065 61736F6E59656188 721E000001009E00 010DFD00FF870180
+05E0: 3400080015000014 636C057053656C65 638146726F6D5461 91656C0000043D00
+0600: 010DFB00FF6F0D00 EE0100FFBF1AB900 0100FFFFE6270001 FE00FF6301800400
+0620: 80160000000D636C 2453656563496E10 746F1E00000100BD 0003FB00FF0F0180
+0640: 2E00810017000000 111B707461720074 50726F6772616D60 BA0000000700EF02
+0660: FE00FF9B040002FB 00FF6F0800EE0200 FFBF0CB100010D00 FFFFE6190003FE00
+0680: FF9B1D0002FB00FF 0F21000000EE0100 FF3F018000360000 0018000000C80F63
+06A0: 6C5374FF60EE0000 000900CF010DFE00 FF930D000001FB00 FF6F1A00EE0200FF
+06C0: BF1EB9000200FFFF E6220002FE00FF9B 260002FB00FF6F2A 00EE0200FFBF2EB9
+06E0: 000200FFFFE03200 000002FE00FF6301 800400C619001063 00546F6F6C546970
+0700: 5780696E646F771E 00E800010000DD03 00FF7F01CC800400 1AC0000C63665461
+0720: 3943611E00D10001 0000BB0300FFFF10 01801500001B0080 00000B6366436123
+0740: 506F6F5A00D00000 0300002307190000 01A00100C6080000 2780010000FFC604
+0760: 000304FE00FF1B08 00010DFB00FF0F
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				If strArgArray[0] = ''
+					Set SqlDatabase = 'STOCKDEV'
+					Set SqlUser = 'GRAHAM'
+					Set SqlPassword = 'GRAHAM'
+				Else
+					Set SqlDatabase = strArgArray[1]
+					Set SqlUser = strArgArray[2]
+					Set SqlPassword = strArgArray[3]
+				!
+				! Set strArgArray[4] = '333849'
+				! Set strArgArray[5] = '1998-06-01'
+				! Set strArgArray[6] = '1998-8-25'
+				! Set strArgArray[7] = 'F'
+				!
+				Call CheckProgramExistance( 'Debtors Transaction Ledger Report', TRUE )
+				!
+				Call SqlHandlesSetup(  )
+			On SAM_AppExit
+				Call SqlHandlesDisconnectClose(  )
+	Form Window: frmTransLedger
+		Class: clsFormPrintReport
+		Property Template:
+		Class DLL Name:
+		Title: Debtors Transaction Ledger Report
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Automatically Created at Runtime? Yes
+			Initial State: Class Default
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   Default
+				Top:    Default
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+		Contents
+		Functions
+		Window Parameters
+		Window Variables
+			Boolean: bProcessCustDetails
+			Boolean: bProcessInvoices
+			Boolean: bProcessCashReceipts
+			Boolean: bProcessCreditNotes
+			Boolean: bProcessCRJournals
+			Boolean: bProcessDRJournals
+			Boolean: bProcessBalance
+			Boolean: bProcessDepositsPaid
+			Boolean: bPrintedDeposit
+			Boolean: bFirstProcessOfSection
+			!
+			String: sSql
+			String: sName
+			String: sBind
+			String: sInto
+			Number: nSqlHandleNo
+			Number: nSqlHandleNoInv
+			Number: nSqlHandleNoChild
+			Number: nSqlHandleNoSumChild
+			Number: nSqlHandleNoCash
+			Number: nSqlHandleNoCredit
+			Number: nSqlHandleNoCRJnl
+			Number: nSqlHandleNoDRJnl
+			Number: nSqlHandleNoDep
+			Number: nInd
+			! hcSqlHandle: fcCustDetsHdl
+.winattr class :
+				Class: hcSqlHandle
+.end
+			! hcSqlHandle: fcInvoicesHdl
+.winattr class :
+				Class: hcSqlHandle
+.end
+			! hcSqlHandle: fcCashReceiptsHdl
+.winattr class :
+				Class: hcSqlHandle
+.end
+			! hcSqlHandle: fcCreditNotesHdl
+.winattr class :
+				Class: hcSqlHandle
+.end
+			! hcSqlHandle: fcCRJournalsHdl
+.winattr class :
+				Class: hcSqlHandle
+.end
+			! hcSqlHandle: fcDRJournalsHdl
+.winattr class :
+				Class: hcSqlHandle
+.end
+			! hcSqlHandle: fcDepositsPaidHdl
+.winattr class :
+				Class: hcSqlHandle
+.end
+			Number: nCountSectionResultSet
+			Number: nCountSectionPos
+			!
+			Number: nSectionSubTotal
+			Number: nReportTotal
+			!
+			! Report Columns
+			Number: nCustNo
+			String: sCustName
+			Date/Time: dtFromDate
+			Date/Time: dtToDate
+			Number: nCurrentARBalance
+			Number: nChildARSum
+			String: sSectionHeading
+			!
+			Date/Time: dtTransDate
+			String: sTransReferenceId
+			String: sTransType
+			Number: nTransAmount
+			Number: nTotalTransAmount
+			!
+			Number: nReportBalance
+			Number: nParentCustNo
+			!
+			String: sCompany
+		Message Actions
+			On PAM_cls_SETINSTANCEVARS
+				Set sReportFileNameNoPath = 'trledgr1.qrp'
+				Set sReportBind = ':frmTransLedger.nParentCustNo, 
+						:frmTransLedger.sCustName, 
+						:frmTransLedger.dtFromDate, 
+						:frmTransLedger.dtToDate, 
+						:frmTransLedger.nCurrentARBalance, 
+						:frmTransLedger.sSectionHeading, 
+						:frmTransLedger.dtTransDate, 
+						:frmTransLedger.sTransReferenceId, 
+						:frmTransLedger.sTransType, 
+						:frmTransLedger.nTransAmount, 
+						:frmTransLedger.nTotalTransAmount, 
+						:frmTransLedger.nReportBalance,
+						:frmTransLedger.sCompany'
+				Set sReportInto = 'nCustNo, 
+						sCustName, 
+						dtFromDate, 
+						dtToDate, 
+						nCurrentARBalance, 
+						sSectionHeading, 
+						dtTransDate, 
+						sTransReferenceId, 
+						sTransType, 
+						nTransAmount, 
+						nTotalTransAmount, 
+						nReportBalance,
+						sCompany'
+				Set sReportType = 'VIEW'
+			On SAM_ReportStart
+				Return TRUE
+			On SAM_ReportFetchInit
+				Set bProcessCustDetails = TRUE
+				Set bFirstProcessOfSection = TRUE
+				Set bProcessInvoices = FALSE
+				Set bProcessCashReceipts = FALSE
+				Set bProcessCreditNotes = FALSE
+				Set bProcessCRJournals = FALSE
+				Set bProcessDRJournals = FALSE
+				Set bProcessDepositsPaid = FALSE
+				Set bPrintedDeposit = FALSE
+				!
+				Set nCustNo = SalStrToNumber( strArgArray[4] )
+				Set sCustName = ''
+				Set dtFromDate = SalStrToDate( strArgArray[5] )
+				Set dtToDate = SalStrToDate( strArgArray[6] )
+				Set sCompany = strArgArray[7]
+				! TEmp
+				! Set nCustNo = 310178
+				! Set sCustName = ''
+				! Set dtFromDate = 1996-06-01-00.00.00.000000
+				! Set dtToDate = 1997-05-31-00.00.00.000000
+				! !
+				Set nCurrentARBalance = NUMBER_Null
+				Set sSectionHeading = ''
+				Set dtTransDate = DATETIME_Null
+				Set sTransReferenceId = ''
+				Set sTransType = ''
+				Set nTransAmount = NUMBER_Null
+				Set nTotalTransAmount = NUMBER_Null
+				!
+				Set nSectionSubTotal = NUMBER_Null
+				Set nReportTotal = NUMBER_Null
+				Set nParentCustNo = nCustNo
+				Return TRUE
+			On SAM_ReportFetchNext
+				Loop
+					If bProcessCustDetails
+						If bFirstProcessOfSection
+							Set nSqlHandleNo = SqlHandlesGetReferenceNo( 'TransactionLedger' )
+							Set bFirstProcessOfSection = FALSE
+							Set sSql = " SELECT 
+									  Customer_Master.Cust_Name, 
+									  Customer_Master.Cust_AR_Balance
+									FROM 
+									  Customer_Master 
+									WHERE 
+									  Customer_Master.Cust_No = :1 "
+							Set sName = 'TrLedger'
+							Set sBind = ':frmTransLedger.nCustNo'
+							Set sInto = ':frmTransLedger.sCustName, 
+									  :frmTransLedger.nCurrentARBalance '
+							! !
+							Call haSqlHandles[ nSqlHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nSqlHandleNo ].hSqlHandle )
+							! !
+							If NOT haSqlHandles[nSqlHandleNo].Execute( )
+								Return FALSE
+						If haSqlHandles[nSqlHandleNo].FetchNext( nInd )
+							Set bProcessCustDetails = FALSE
+							Set bProcessInvoices = TRUE
+							Set bFirstProcessOfSection = TRUE
+						Else
+							Return FALSE
+					If bProcessInvoices
+						If bFirstProcessOfSection
+							Set bFirstProcessOfSection = FALSE
+							! !
+							Set nSqlHandleNoChild = SqlHandlesGetReferenceNo( 'TransLedgerChildren' )
+							Set nSqlHandleNoSumChild = SqlHandlesGetReferenceNo( 'ARSumChildren' )
+							Set nSqlHandleNoInv = SqlHandlesGetReferenceNo( 'ChildInv' )
+							!
+							Set sSql = " SELECT 
+									     Customer_Master.Cust_No
+									   FROM 
+									  Customer_Master 
+									WHERE 
+									  Customer_Master.Ass_Cust_No = :1 
+									 ORDER BY CUST_NO"
+							Set sName = 'TrLedgerChild'
+							Set sBind = ':frmTransLedger.nParentCustNo'
+							Set sInto = ' :frmTransLedger.nCustNo '
+							! !
+							Call haSqlHandles[ nSqlHandleNoChild ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nSqlHandleNoChild ].hSqlHandle )
+							! !
+							Call haSqlHandles[nSqlHandleNoChild].Execute( )
+							!
+							Set sSql = " SELECT SUM( Customer_Master.Cust_AR_Balance)
+									   FROM 
+									  Customer_Master 
+									WHERE 
+									  Customer_Master.Ass_Cust_No = :1 
+									 ORDER BY CUST_NO"
+							Set sName = 'ARSumChild'
+							Set sBind = ':frmTransLedger.nParentCustNo'
+							Set sInto = ' :frmTransLedger.nChildARSum '
+							! !
+							Call haSqlHandles[ nSqlHandleNoSumChild ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nSqlHandleNoSumChild ].hSqlHandle )
+							! !
+							Call haSqlHandles[nSqlHandleNoSumChild].Execute( )
+							If haSqlHandles[nSqlHandleNoSumChild].FetchNext( nInd)
+								Set frmTransLedger.nCurrentARBalance = frmTransLedger.nCurrentARBalance + frmTransLedger.nChildARSum
+							!
+							Set sSql = "SELECT 
+									  Transaction.Transaction_Date, 
+									  Transaction.Reference_Id, 
+									  Transaction.Transaction_Amount
+									FROM 
+									  Transaction 
+									WHERE 
+									  Transaction.Cust_No = :1 AND 
+									  Transaction.Transaction_Type = 'INVOICE' AND 
+									  Transaction.Transaction_Date BETWEEN :2 AND :3 and
+									Transaction.Company = :4
+									UNION ALL 
+									SELECT 
+									  Trans_History.Hist_Trans_Date, 
+									  Trans_History.Hist_Reference_Id, 
+									  Trans_History.Hist_Trans_Amount
+									FROM 
+									  Trans_History 
+									WHERE 
+									  Trans_History.Cust_No = :1 AND 
+									  Trans_History.Hist_Trans_Type = 'INVOICE' AND 
+									  Trans_History.Hist_Trans_Date BETWEEN :2 AND :3 and
+									Trans_History.Hist_Company = :4
+									ORDER BY 1 "
+							Set sName = 'ChildInv1'
+							Set sBind = ':frmTransLedger.nCustNo, :frmTransLedger.dtFromDate, :frmTransLedger.dtToDate, :sCompany  '
+							Set sInto = ' :frmTransLedger.dtTransDate, 
+									  :frmTransLedger.sTransReferenceId, 
+									  :frmTransLedger.nTransAmount '
+							! !
+							Call haSqlHandles[ nSqlHandleNoInv ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nSqlHandleNoInv ].hSqlHandle )
+							! !
+							Call haSqlHandles[nSqlHandleNoInv].Execute( )
+							Call haSqlHandles[nSqlHandleNoInv].ResultSetCount( nCountSectionResultSet )
+							Set nCountSectionPos = 0
+							!
+							Set sSectionHeading = 'Invoices'
+							Set nSectionSubTotal = NUMBER_Null
+						If haSqlHandles[nSqlHandleNoInv].FetchNext( nInd )
+							! Set nSectionSubTotal = nSectionSubTotal + nTransAmount
+							! Set nCountSectionPos = nCountSectionPos + 1
+							! If nCountSectionPos = nCountSectionResultSet
+								  Set nTotalTransAmount = nSectionSubTotal
+								  Set nReportTotal = nReportTotal + nSectionSubTotal
+							Set nReportTotal = nReportTotal + nTransAmount
+							Return TRUE
+						Else
+							If haSqlHandles[nSqlHandleNoChild].FetchNext (nInd)
+								Call haSqlHandles[nSqlHandleNoInv].Execute( )
+							Else
+								Set bProcessInvoices = FALSE
+								Set bProcessCashReceipts = TRUE
+								Set bFirstProcessOfSection = TRUE
+								! DMF 21/5/96
+								Set nTotalTransAmount = NUMBER_Null
+					If bProcessCashReceipts
+						If bFirstProcessOfSection
+							Set bFirstProcessOfSection = FALSE
+							Set nSqlHandleNoCash = SqlHandlesGetReferenceNo( 'ChildCash' )
+							! Set the children back to the beginning of the result set
+							Call haSqlHandles[nSqlHandleNoChild].Execute ( )
+							Set nCustNo = nParentCustNo
+							!
+							Set sSql = "SELECT 
+									  Cash_Receipt.Receipt_Date, 
+									  Cash_Receipt.Receipt_Type, 
+									  Cash_Receipt.Receipt_Amount 
+									FROM 
+									  Cash_Receipt 
+									WHERE 
+									  Cash_Receipt.Cust_No = :1 AND 
+									  Cash_Receipt.Receipt_Date BETWEEN :2 AND :3 AND 
+									  NOT EXISTS 
+									  ( SELECT 
+									      Dep_Sysdatetime 
+									    FROM 
+									      Outstand_Deposit 
+									    WHERE 
+									      Outstand_Deposit.Receipt_User_Id = Cash_Receipt.Receipt_User_Id AND 
+									      Outstand_Deposit.Rcpt_Sysdatetime = Cash_Receipt.Rcpt_Sysdatetime  and
+										Outstand_Deposit.Company = :4
+									  ) "
+							Set sName = 'ChildCash1'
+							Set sBind = ':frmTransLedger.nCustNo, :frmTransLedger.dtFromDate, :frmTransLedger.dtToDate , ;sCompany '
+							Set sInto = ' :frmTransLedger.dtTransDate, 
+									  :frmTransLedger.sTransReferenceId, 
+									  :frmTransLedger.nTransAmount '
+							! !
+							Call haSqlHandles[ nSqlHandleNoCash ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nSqlHandleNoCash ].hSqlHandle )
+							! !
+							Call haSqlHandles[nSqlHandleNoCash].Execute( )
+							Call haSqlHandles[nSqlHandleNoCash].ResultSetCount( nCountSectionResultSet )
+							Set nCountSectionPos = 0
+							!
+							Set sSectionHeading = 'Less Cash Receipts'
+							Set nSectionSubTotal = NUMBER_Null
+						If haSqlHandles[nSqlHandleNoCash].FetchNext( nInd )
+							! Set nSectionSubTotal = nSectionSubTotal + nTransAmount
+							! Set nCountSectionPos = nCountSectionPos + 1
+							! If nCountSectionPos = nCountSectionResultSet
+								  Set nTotalTransAmount = nSectionSubTotal
+								  Set nReportTotal = nReportTotal - nSectionSubTotal
+							Set nReportTotal = nReportTotal - nTransAmount
+							Return TRUE
+						Else
+							If haSqlHandles[nSqlHandleNoChild].FetchNext (nInd)
+								Call haSqlHandles[nSqlHandleNoCash].Execute( )
+							Else
+								Set bProcessCashReceipts = FALSE
+								Set bProcessCreditNotes = TRUE
+								Set bFirstProcessOfSection = TRUE
+								! DMF 21/5/96
+								Set nTotalTransAmount = NUMBER_Null
+					If bProcessCreditNotes
+						If bFirstProcessOfSection
+							Set bFirstProcessOfSection = FALSE
+							Set nSqlHandleNoCredit = SqlHandlesGetReferenceNo( 'ChildCredit' )
+							! Set the children back to the beginning of the result set
+							Call haSqlHandles[nSqlHandleNoChild].Execute ( )
+							Set nCustNo = nParentCustNo
+							!
+							Set sSql = "SELECT 
+									  Transaction.Transaction_Date, 
+									  Transaction.Reference_Id, 
+									  Transaction.Transaction_Amount
+									FROM 
+									  Transaction 
+									WHERE 
+									  Transaction.Cust_No = :1 AND 
+									  Transaction.Transaction_Type = 'CREDNOTE' AND 
+									  Transaction.Transaction_Date BETWEEN :2 AND :3 and
+									Transaction.Company = :4
+									UNION ALL 
+									SELECT 
+									  Trans_History.Hist_Trans_Date, 
+									  Trans_History.Hist_Reference_Id, 
+									  Trans_History.Hist_Trans_Amount
+									FROM 
+									  Trans_History 
+									WHERE 
+									  Trans_History.Cust_No = :1 AND 
+									  Trans_History.Hist_Trans_Type = 'CREDNOTE' AND 
+									  Trans_History.Hist_Trans_Date BETWEEN :2 AND :3 and
+									Trans_History.Hist_Company = :4
+									ORDER BY 1 "
+							!
+							Set sName = 'ChildCredit1'
+							Set sBind = ':frmTransLedger.nCustNo, :frmTransLedger.dtFromDate, :frmTransLedger.dtToDate, :sCompany  '
+							Set sInto = ' :frmTransLedger.dtTransDate, 
+									  :frmTransLedger.sTransReferenceId, 
+									  :frmTransLedger.nTransAmount '
+							! !
+							Call haSqlHandles[ nSqlHandleNoCredit ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nSqlHandleNoCredit ].hSqlHandle )
+							! !
+							Call haSqlHandles[nSqlHandleNoCredit].Execute( )
+							Call haSqlHandles[nSqlHandleNoCredit].ResultSetCount( nCountSectionResultSet )
+							Set nCountSectionPos = 0
+							!
+							Set sSectionHeading = 'Less Credit Notes'
+							Set nSectionSubTotal = NUMBER_Null
+						If haSqlHandles[nSqlHandleNoCredit].FetchNext( nInd )
+							! Set nSectionSubTotal = nSectionSubTotal + nTransAmount
+							! Set nCountSectionPos = nCountSectionPos + 1
+							! If nCountSectionPos = nCountSectionResultSet
+								  Set nTotalTransAmount = nSectionSubTotal
+								  Set nReportTotal = nReportTotal - nSectionSubTotal
+							Set nReportTotal = nReportTotal - nTransAmount
+							Return TRUE
+						Else
+							If haSqlHandles[nSqlHandleNoChild].FetchNext (nInd)
+								Call haSqlHandles[nSqlHandleNoCredit].Execute( )
+							Else
+								Set bProcessCreditNotes = FALSE
+								Set bProcessCRJournals = TRUE
+								Set bFirstProcessOfSection = TRUE
+								! DMF 21/5/96
+								Set nTotalTransAmount = NUMBER_Null
+					If bProcessCRJournals
+						If bFirstProcessOfSection
+							Set bFirstProcessOfSection = FALSE
+							Set nSqlHandleNoCRJnl = SqlHandlesGetReferenceNo( 'ChildCRJnl' )
+							! Set the children back to the beginning of the result set
+							Call haSqlHandles[nSqlHandleNoChild].Execute ( )
+							Set nCustNo = nParentCustNo
+							!
+							Set sSql = "SELECT 
+									    Transaction.Transaction_Date, 
+									    Transaction.Reference_Id, 
+									    Transaction.Transaction_Amount
+									  FROM 
+									    Transaction 
+									  WHERE 
+									    Transaction.Cust_No = :1 AND 
+									    NOT Transaction.Transaction_Type IN ('INVOICE','CREDNOTE') AND
+									    Transaction.Transaction_Code = 'CR' AND 
+									    Transaction.Transaction_Date BETWEEN :2 AND :3 and
+									Transaction.Company = :4
+									  UNION ALL 
+									  SELECT 
+									    Trans_History.Hist_Trans_Date, 
+									    Trans_History.Hist_Reference_Id, 
+									    Trans_History.Hist_Trans_Amount
+									  FROM 
+									    Trans_History 
+									  WHERE 
+									    Trans_History.Cust_No = :1 AND 
+									    NOT Trans_History.Hist_Trans_Type IN ('INVOICE','CREDNOTE') AND
+									    Trans_History.Hist_Trans_Code = 'CR' AND  
+									    Trans_History.Hist_Trans_Date BETWEEN :2 AND :3 and
+									Trans_History.Hist_Company = :4
+									  ORDER BY 1 "
+							!
+							Set sName = 'ChildCRJnl1'
+							Set sBind = ':frmTransLedger.nCustNo, :frmTransLedger.dtFromDate, :frmTransLedger.dtToDate, :sCompany  '
+							Set sInto = ' :frmTransLedger.dtTransDate, 
+									  :frmTransLedger.sTransReferenceId, 
+									  :frmTransLedger.nTransAmount '
+							! !
+							Call haSqlHandles[ nSqlHandleNoCRJnl ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nSqlHandleNoCRJnl ].hSqlHandle )
+							! !
+							Call haSqlHandles[nSqlHandleNoCRJnl].Execute( )
+							Call haSqlHandles[nSqlHandleNoCRJnl].ResultSetCount( nCountSectionResultSet )
+							Set nCountSectionPos = 0
+							!
+							Set sSectionHeading = 'CR Journals'
+							Set nSectionSubTotal = NUMBER_Null
+						If haSqlHandles[nSqlHandleNoCRJnl].FetchNext( nInd )
+							! Set nSectionSubTotal = nSectionSubTotal + nTransAmount
+							! Set nCountSectionPos = nCountSectionPos + 1
+							! If nCountSectionPos = nCountSectionResultSet
+								  Set nTotalTransAmount = nSectionSubTotal
+								  Set nReportTotal = nReportTotal - nSectionSubTotal
+							Set nReportTotal = nReportTotal - nTransAmount
+							Return TRUE
+						Else
+							If haSqlHandles[nSqlHandleNoChild].FetchNext (nInd)
+								Call haSqlHandles[nSqlHandleNoCRJnl].Execute( )
+							Else
+								Set bProcessCRJournals = FALSE
+								Set bProcessDRJournals = TRUE
+								Set bFirstProcessOfSection = TRUE
+								! DMF 21/5/96
+								Set nTotalTransAmount = NUMBER_Null
+					If bProcessDRJournals
+						If bFirstProcessOfSection
+							Set bFirstProcessOfSection = FALSE
+							Set nSqlHandleNoDRJnl = SqlHandlesGetReferenceNo( 'ChildDRJnl' )
+							! Set the children back to the beginning of the result set
+							Call haSqlHandles[nSqlHandleNoChild].Execute ( )
+							Set nCustNo = nParentCustNo
+							!
+							Set sSql = "SELECT 
+									    Transaction.Transaction_Date, 
+									    Transaction.Reference_Id, 
+									    Transaction.Transaction_Amount
+									  FROM 
+									    Transaction 
+									  WHERE 
+									    Transaction.Cust_No = :1 AND 
+									    NOT Transaction.Transaction_Type = 'INVOICE' AND
+									    Transaction.Transaction_Code = 'DR' AND 
+									    Transaction.Transaction_Date BETWEEN :2 AND :3 and
+									Transaction.Company = :4
+									  UNION ALL 
+									  SELECT 
+									    Trans_History.Hist_Trans_Date, 
+									    Trans_History.Hist_Reference_Id, 
+									    Trans_History.Hist_Trans_Amount
+									  FROM 
+									    Trans_History 
+									  WHERE 
+									    Trans_History.Cust_No = :1 AND 
+									    NOT Trans_History.Hist_Trans_Type = 'INVOICE' AND
+									    Trans_History.Hist_Trans_Code = 'DR' AND  
+									    Trans_History.Hist_Trans_Date BETWEEN :2 AND :3 and
+									Trans_History.Hist_Company = :4
+									    ORDER BY 1 "
+							!
+							Set sName = 'ChildDRJnl1'
+							Set sBind = ':frmTransLedger.nCustNo, :frmTransLedger.dtFromDate, :frmTransLedger.dtToDate :sCompany '
+							Set sInto = ' :frmTransLedger.dtTransDate, 
+									  :frmTransLedger.sTransReferenceId, 
+									  :frmTransLedger.nTransAmount '
+							! !
+							Call haSqlHandles[ nSqlHandleNoDRJnl ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nSqlHandleNoDRJnl ].hSqlHandle )
+							! !
+							Call haSqlHandles[nSqlHandleNoDRJnl].Execute( )
+							Call haSqlHandles[nSqlHandleNoDRJnl].ResultSetCount( nCountSectionResultSet )
+							Set nCountSectionPos = 0
+							!
+							Set sSectionHeading = 'DR Journals'
+							Set nSectionSubTotal = NUMBER_Null
+						If haSqlHandles[nSqlHandleNoDRJnl].FetchNext( nInd )
+							! Set nSectionSubTotal = nSectionSubTotal + nTransAmount
+							! Set nCountSectionPos = nCountSectionPos + 1
+							! If nCountSectionPos = nCountSectionResultSet
+								  Set nTotalTransAmount = nSectionSubTotal
+								  Set nReportTotal = nReportTotal + nSectionSubTotal
+							Set nReportTotal = nReportTotal + nTransAmount
+							Return TRUE
+						Else
+							If haSqlHandles[nSqlHandleNoChild].FetchNext (nInd)
+								Call haSqlHandles[nSqlHandleNoDRJnl].Execute( )
+							Else
+								Set bProcessDRJournals = FALSE
+								Set bProcessBalance = TRUE
+								Set bFirstProcessOfSection = TRUE
+								! DMF 21/5/96
+								Set nTotalTransAmount = NUMBER_Null
+					If bProcessBalance
+						Set dtTransDate = DATETIME_Null
+						Set sTransReferenceId = ''
+						Set nTransAmount = NUMBER_Null
+						Set nCountSectionPos = 0
+						Set sSectionHeading = ''
+						Set nSectionSubTotal = NUMBER_Null
+						!
+						Set nTotalTransAmount = NUMBER_Null
+						!
+						Set nReportBalance = nReportTotal
+						!
+						Set bProcessBalance = FALSE
+						Set bProcessDepositsPaid = TRUE
+						Set bFirstProcessOfSection = TRUE
+						!
+						! Return TRUE
+					If bProcessDepositsPaid
+						If bFirstProcessOfSection
+							Set bFirstProcessOfSection = FALSE
+							Set nSqlHandleNoDep = SqlHandlesGetReferenceNo( 'ChildDep' )
+							! Set the children back to the beginning of the result set
+							Call haSqlHandles[nSqlHandleNoChild].Execute ( )
+							Set nCustNo = nParentCustNo
+							!
+							Set sSql = "SELECT 
+									  Outstand_Deposit.Deposit_Paid_Date, 
+									  'DEPOSIT', 
+									  Outstand_Deposit.Dep_Amount_Paid
+									FROM 
+									  Outstand_Deposit 
+									WHERE 
+									  Outstand_Deposit.Cust_No = :1 AND 
+									  Outstand_Deposit.Dep_Amount_Paid > 0 AND 
+									  Outstand_Deposit.Deposit_Paid_Date BETWEEN :2 AND :3 and
+									Outstand_Deposit.Company = :4 "
+							!
+							Set sName = 'ChildDep1'
+							Set sBind = ':frmTransLedger.nCustNo, :frmTransLedger.dtFromDate, :frmTransLedger.dtToDate, :sCompany  '
+							Set sInto = ' :frmTransLedger.dtTransDate, 
+									  :frmTransLedger.sTransReferenceId, 
+									  :frmTransLedger.nTransAmount '
+							! !
+							Call haSqlHandles[ nSqlHandleNoDep ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nSqlHandleNoDep ].hSqlHandle )
+							! !
+							Call haSqlHandles[nSqlHandleNoDep].Execute( )
+							Call haSqlHandles[nSqlHandleNoDep].ResultSetCount( nCountSectionResultSet )
+							Set nCountSectionPos = 0
+							!
+							Set sSectionHeading = 'Deposits Paid'
+							Set nSectionSubTotal = NUMBER_Null
+						If haSqlHandles[nSqlHandleNoDep].FetchNext( nInd )
+							! Set nSectionSubTotal = nSectionSubTotal + nTransAmount
+							! Set nCountSectionPos = nCountSectionPos + 1
+							! If nCountSectionPos = nCountSectionResultSet
+								  Set nTotalTransAmount = nSectionSubTotal
+							Set bPrintedDeposit = TRUE
+							Set nTotalTransAmount = nTotalTransAmount + nTransAmount
+							Return TRUE
+						Else
+							If haSqlHandles[nSqlHandleNoChild].FetchNext (nInd)
+								Call haSqlHandles[nSqlHandleNoDep].Execute( )
+							Else
+								Set bProcessDepositsPaid = FALSE
+								Set bFirstProcessOfSection = FALSE
+								! If we havent printed a deposit we want it to return TRUE to print totals and then return FALSE from
+										customer - otherwise just return FALSE here 
+								If bPrintedDeposit = TRUE
+									Return FALSE
+								Set bProcessCustDetails = TRUE
+								Return TRUE
+				! Return TRUE
+			! On SAM_ReportFetchNext
+				  If bProcessCustDetails
+					  If bFirstProcessOfSection
+						  Set bFirstProcessOfSection = FALSE
+						  Set sSql = " SELECT 
+								  Customer_Master.Cust_Name, 
+								  Customer_Master.Cust_AR_Balance 
+								FROM 
+								  Customer_Master 
+								INTO 
+								  :frmTransLedger.sCustName, 
+								  :frmTransLedger.nCurrentARBalance 
+								WHERE 
+								  Customer_Master.Cust_No = :frmTransLedger.nCustNo "
+						  Call fcCustDetsHdl.PrepareSetup( sSql )
+						  Call SqlVarSetup( fcCustDetsHdl.hSqlHandle )
+						!
+						  Call fcCustDetsHdl.PrepareAndExecute( )
+					  If fcCustDetsHdl.FetchNext( nInd )
+						  Set bProcessCustDetails = FALSE
+						  Set bProcessInvoices = TRUE
+						  Set bFirstProcessOfSection = TRUE
+					  Else 
+						  Return FALSE
+				  If bProcessInvoices
+					  If bFirstProcessOfSection
+						  Set bFirstProcessOfSection = FALSE
+						  Set sSql = "SELECT 
+								  Transaction.Transaction_Date, 
+								  Transaction.Reference_Id, 
+								  Transaction.Transaction_Amount
+								FROM 
+								  Transaction 
+								WHERE 
+								  Transaction.Cust_No = :frmTransLedger.nCustNo AND 
+								  Transaction.Transaction_Type = 'INVOICE' AND 
+								  Transaction.Transaction_Date BETWEEN :frmTransLedger.dtFromDate AND :frmTransLedger.dtToDate 
+								UNION ALL 
+								SELECT 
+								  Trans_History.Hist_Trans_Date, 
+								  Trans_History.Hist_Reference_Id, 
+								  Trans_History.Hist_Trans_Amount
+								FROM 
+								  Trans_History 
+								WHERE 
+								  Trans_History.Cust_No = :frmTransLedger.nCustNo AND 
+								  Trans_History.Hist_Trans_Type = 'INVOICE' AND 
+								  Trans_History.Hist_Trans_Date BETWEEN :frmTransLedger.dtFromDate AND :frmTransLedger.dtToDate 
+								INTO 
+								  :frmTransLedger.dtTransDate, 
+								  :frmTransLedger.sTransReferenceId, 
+								  :frmTransLedger.nTransAmount
+								ORDER BY 1 "
+						  Call fcInvoicesHdl.PrepareSetup( sSql )
+						  Call SqlVarSetup( fcInvoicesHdl.hSqlHandle )
+						!
+						  Call fcInvoicesHdl.PrepareAndExecute( )
+						  Call fcInvoicesHdl.ResultSetCount( nCountSectionResultSet )
+						  Set nCountSectionPos = 0
+						!
+						  Set sSectionHeading = 'Invoices'
+						  Set nSectionSubTotal = NUMBER_Null
+					  If fcInvoicesHdl.FetchNext( nInd )
+						  Set nSectionSubTotal = nSectionSubTotal + nTransAmount
+						  Set nCountSectionPos = nCountSectionPos + 1
+						  If nCountSectionPos = nCountSectionResultSet
+							  Set nTotalTransAmount = nSectionSubTotal
+							  Set nReportTotal = nReportTotal + nSectionSubTotal
+						  Return TRUE
+					  Else 
+						  Set bProcessInvoices = FALSE
+						  Set bProcessCashReceipts = TRUE
+						  Set bFirstProcessOfSection = TRUE
+						! DMF 21/5/96
+						  Set nTotalTransAmount = NUMBER_Null
+				  If bProcessCashReceipts
+					  If bFirstProcessOfSection
+						  Set bFirstProcessOfSection = FALSE
+						  Set sSql = "SELECT 
+								  Cash_Receipt.Receipt_Date, 
+								  Cash_Receipt.Receipt_Type, 
+								  Cash_Receipt.Receipt_Amount 
+								FROM 
+								  Cash_Receipt 
+								INTO 
+								  :frmTransLedger.dtTransDate, 
+								  :frmTransLedger.sTransReferenceId, 
+								  :frmTransLedger.nTransAmount
+								WHERE 
+								  Cash_Receipt.Cust_No = :frmTransLedger.nCustNo AND 
+								  Cash_Receipt.Receipt_Date BETWEEN :frmTransLedger.dtFromDate AND :frmTransLedger.dtToDate AND 
+								  NOT EXISTS 
+								  ( SELECT 
+								      Dep_Sysdatetime 
+								    FROM 
+								      Outstand_Deposit 
+								    WHERE 
+								      Outstand_Deposit.Receipt_User_Id = Cash_Receipt.Receipt_User_Id AND 
+								      Outstand_Deposit.Rcpt_Sysdatetime = Cash_Receipt.Rcpt_Sysdatetime  
+								  ) "
+						  Call fcCashReceiptsHdl.PrepareSetup( sSql )
+						  Call SqlVarSetup( fcCashReceiptsHdl.hSqlHandle )
+						!
+						  Call fcCashReceiptsHdl.PrepareAndExecute( )
+						  Call fcCashReceiptsHdl.ResultSetCount( nCountSectionResultSet )
+						  Set nCountSectionPos = 0
+						!
+						  Set sSectionHeading = 'Less Cash Receipts'
+						  Set nSectionSubTotal = NUMBER_Null
+					  If fcCashReceiptsHdl.FetchNext( nInd )
+						  Set nSectionSubTotal = nSectionSubTotal + nTransAmount
+						  Set nCountSectionPos = nCountSectionPos + 1
+						  If nCountSectionPos = nCountSectionResultSet
+							  Set nTotalTransAmount = nSectionSubTotal
+							  Set nReportTotal = nReportTotal - nSectionSubTotal
+						  Return TRUE
+					  Else 
+						  Set bProcessCashReceipts = FALSE
+						  Set bProcessCreditNotes = TRUE
+						  Set bFirstProcessOfSection = TRUE
+						! DMF 21/5/96
+						  Set nTotalTransAmount = NUMBER_Null
+				  If bProcessCreditNotes
+					  If bFirstProcessOfSection
+						  Set bFirstProcessOfSection = FALSE
+						  Set sSql = "SELECT 
+								  Transaction.Transaction_Date, 
+								  Transaction.Reference_Id, 
+								  Transaction.Transaction_Amount
+								FROM 
+								  Transaction 
+								WHERE 
+								  Transaction.Cust_No = :frmTransLedger.nCustNo AND 
+								  Transaction.Transaction_Type = 'CREDNOTE' AND 
+								  Transaction.Transaction_Date BETWEEN :frmTransLedger.dtFromDate AND :frmTransLedger.dtToDate 
+								UNION ALL 
+								SELECT 
+								  Trans_History.Hist_Trans_Date, 
+								  Trans_History.Hist_Reference_Id, 
+								  Trans_History.Hist_Trans_Amount
+								FROM 
+								  Trans_History 
+								WHERE 
+								  Trans_History.Cust_No = :frmTransLedger.nCustNo AND 
+								  Trans_History.Hist_Trans_Type = 'CREDNOTE' AND 
+								  Trans_History.Hist_Trans_Date BETWEEN :frmTransLedger.dtFromDate AND :frmTransLedger.dtToDate 
+								INTO 
+								  :frmTransLedger.dtTransDate, 
+								  :frmTransLedger.sTransReferenceId, 
+								  :frmTransLedger.nTransAmount
+								ORDER BY 1 "
+						  Call fcCreditNotesHdl.PrepareSetup( sSql )
+						  Call SqlVarSetup( fcCreditNotesHdl.hSqlHandle )
+						!
+						  Call fcCreditNotesHdl.PrepareAndExecute( )
+						  Call fcCreditNotesHdl.ResultSetCount( nCountSectionResultSet )
+						  Set nCountSectionPos = 0
+						!
+						  Set sSectionHeading = 'Less Credit Notes'
+						  Set nSectionSubTotal = NUMBER_Null
+					  If fcCreditNotesHdl.FetchNext( nInd )
+						  Set nSectionSubTotal = nSectionSubTotal + nTransAmount
+						  Set nCountSectionPos = nCountSectionPos + 1
+						  If nCountSectionPos = nCountSectionResultSet
+							  Set nTotalTransAmount = nSectionSubTotal
+							  Set nReportTotal = nReportTotal - nSectionSubTotal
+						  Return TRUE
+					  Else 
+						  Set bProcessCreditNotes = FALSE
+						  Set bProcessCRJournals = TRUE
+						  Set bFirstProcessOfSection = TRUE
+						! DMF 21/5/96
+						  Set nTotalTransAmount = NUMBER_Null
+				  If bProcessCRJournals
+					  If bFirstProcessOfSection
+						  Set bFirstProcessOfSection = FALSE
+						  Set sSql = "SELECT 
+								    Transaction.Transaction_Date, 
+								    Transaction.Reference_Id, 
+								    Transaction.Transaction_Amount
+								  FROM 
+								    Transaction 
+								  WHERE 
+								    Transaction.Cust_No = :frmTransLedger.nCustNo AND 
+								    NOT Transaction.Transaction_Type IN ('INVOICE','CREDNOTE') AND
+								    Transaction.Transaction_Code = 'CR' AND 
+								    Transaction.Transaction_Date BETWEEN :frmTransLedger.dtFromDate AND :frmTransLedger.dtToDate 
+								  UNION ALL 
+								  SELECT 
+								    Trans_History.Hist_Trans_Date, 
+								    Trans_History.Hist_Reference_Id, 
+								    Trans_History.Hist_Trans_Amount
+								  FROM 
+								    Trans_History 
+								  WHERE 
+								    Trans_History.Cust_No = :frmTransLedger.nCustNo AND 
+								    NOT Trans_History.Hist_Trans_Type IN ('INVOICE','CREDNOTE') AND
+								    Trans_History.Hist_Trans_Code = 'CR' AND  
+								    Trans_History.Hist_Trans_Date BETWEEN :frmTransLedger.dtFromDate AND :frmTransLedger.dtToDate 
+								  INTO 
+								    :frmTransLedger.dtTransDate, 
+								    :frmTransLedger.sTransReferenceId, 
+								    :frmTransLedger.nTransAmount
+								  ORDER BY 1 "
+						  Call fcCRJournalsHdl.PrepareSetup( sSql )
+						  Call SqlVarSetup( fcCRJournalsHdl.hSqlHandle )
+						!
+						  Call fcCRJournalsHdl.PrepareAndExecute( )
+						  Call fcCRJournalsHdl.ResultSetCount( nCountSectionResultSet )
+						  Set nCountSectionPos = 0
+						!
+						  Set sSectionHeading = 'CR Journals'
+						  Set nSectionSubTotal = NUMBER_Null
+					  If fcCRJournalsHdl.FetchNext( nInd )
+						  Set nSectionSubTotal = nSectionSubTotal + nTransAmount
+						  Set nCountSectionPos = nCountSectionPos + 1
+						  If nCountSectionPos = nCountSectionResultSet
+							  Set nTotalTransAmount = nSectionSubTotal
+							  Set nReportTotal = nReportTotal - nSectionSubTotal
+						  Return TRUE
+					  Else 
+						  Set bProcessCRJournals = FALSE
+						  Set bProcessDRJournals = TRUE
+						  Set bFirstProcessOfSection = TRUE
+						! DMF 21/5/96
+						  Set nTotalTransAmount = NUMBER_Null
+				  If bProcessDRJournals
+					  If bFirstProcessOfSection
+						  Set bFirstProcessOfSection = FALSE
+						  Set sSql = "SELECT 
+								    Transaction.Transaction_Date, 
+								    Transaction.Reference_Id, 
+								    Transaction.Transaction_Amount
+								  FROM 
+								    Transaction 
+								  WHERE 
+								    Transaction.Cust_No = :frmTransLedger.nCustNo AND 
+								    NOT Transaction.Transaction_Type = 'INVOICE' AND
+								    Transaction.Transaction_Code = 'DR' AND 
+								    Transaction.Transaction_Date BETWEEN :frmTransLedger.dtFromDate AND :frmTransLedger.dtToDate 
+								  UNION ALL 
+								  SELECT 
+								    Trans_History.Hist_Trans_Date, 
+								    Trans_History.Hist_Reference_Id, 
+								    Trans_History.Hist_Trans_Amount
+								  FROM 
+								    Trans_History 
+								  WHERE 
+								    Trans_History.Cust_No = :frmTransLedger.nCustNo AND 
+								    NOT Trans_History.Hist_Trans_Type = 'INVOICE' AND
+								    Trans_History.Hist_Trans_Code = 'DR' AND  
+								    Trans_History.Hist_Trans_Date BETWEEN :frmTransLedger.dtFromDate AND :frmTransLedger.dtToDate 
+								  INTO 
+								    :frmTransLedger.dtTransDate, 
+								    :frmTransLedger.sTransReferenceId, 
+								    :frmTransLedger.nTransAmount
+								  ORDER BY 1 "
+						  Call fcDRJournalsHdl.PrepareSetup( sSql )
+						  Call SqlVarSetup( fcDRJournalsHdl.hSqlHandle )
+						!
+						  Call fcDRJournalsHdl.PrepareAndExecute( )
+						  Call fcDRJournalsHdl.ResultSetCount( nCountSectionResultSet )
+						  Set nCountSectionPos = 0
+						!
+						  Set sSectionHeading = 'DR Journals'
+						  Set nSectionSubTotal = NUMBER_Null
+					  If fcDRJournalsHdl.FetchNext( nInd )
+						  Set nSectionSubTotal = nSectionSubTotal + nTransAmount
+						  Set nCountSectionPos = nCountSectionPos + 1
+						  If nCountSectionPos = nCountSectionResultSet
+							  Set nTotalTransAmount = nSectionSubTotal
+							  Set nReportTotal = nReportTotal + nSectionSubTotal
+						  Return TRUE
+					  Else 
+						  Set bProcessDRJournals = FALSE
+						  Set bProcessBalance = TRUE
+						  Set bFirstProcessOfSection = TRUE
+						! DMF 21/5/96
+						  Set nTotalTransAmount = NUMBER_Null
+				  If bProcessBalance
+					  Set dtTransDate = DATETIME_Null
+					  Set sTransReferenceId = ''
+					  Set nTransAmount = NUMBER_Null
+					  Set nCountSectionPos = 0
+					  Set sSectionHeading = ''
+					  Set nSectionSubTotal = NUMBER_Null
+					!
+					  Set nTotalTransAmount = NUMBER_Null
+					!
+					  Set nReportBalance = nReportTotal
+					!
+					  Set bProcessBalance = FALSE
+					  Set bProcessDepositsPaid = TRUE
+					  Set bFirstProcessOfSection = TRUE
+					!
+					  Return TRUE
+				  If bProcessDepositsPaid
+					  If bFirstProcessOfSection
+						  Set bFirstProcessOfSection = FALSE
+						  Set sSql = "SELECT 
+								  Outstand_Deposit.Deposit_Paid_Date, 
+								  'DEPOSIT', 
+								  Outstand_Deposit.Dep_Amount_Paid
+								FROM 
+								  Outstand_Deposit 
+								INTO 
+								  :frmTransLedger.dtTransDate, 
+								  :frmTransLedger.sTransReferenceId, 
+								   :frmTransLedger.nTransAmount
+								WHERE 
+								  Outstand_Deposit.Cust_No = :frmTransLedger.nCustNo AND 
+								  Outstand_Deposit.Dep_Amount_Paid > 0 AND 
+								  Outstand_Deposit.Deposit_Paid_Date BETWEEN :frmTransLedger.dtFromDate AND :frmTransLedger.dtToDate "
+						  Call fcDepositsPaidHdl.PrepareSetup( sSql )
+						  Call SqlVarSetup( fcDepositsPaidHdl.hSqlHandle )
+						!
+						  Call fcDepositsPaidHdl.PrepareAndExecute( )
+						  Call fcDepositsPaidHdl.ResultSetCount( nCountSectionResultSet )
+						  Set nCountSectionPos = 0
+						!
+						  Set sSectionHeading = 'Deposits Paid'
+						  Set nSectionSubTotal = NUMBER_Null
+					  If fcDepositsPaidHdl.FetchNext( nInd )
+						  Set nSectionSubTotal = nSectionSubTotal + nTransAmount
+						  Set nCountSectionPos = nCountSectionPos + 1
+						  If nCountSectionPos = nCountSectionResultSet
+							  Set nTotalTransAmount = nSectionSubTotal
+						  Return TRUE
+					  Else 
+						  Set bProcessDepositsPaid = FALSE
+						  Set bFirstProcessOfSection = TRUE
+						  Return FALSE
+				  Return TRUE
+			On SAM_ReportFinish
+				Call haSqlHandles[nSqlHandleNo].Disconnect( )
+				Call haSqlHandles[nSqlHandleNoInv].Disconnect( )
+				Call haSqlHandles[nSqlHandleNoChild].Disconnect( )
+				Call haSqlHandles[nSqlHandleNoSumChild].Disconnect( )
+				Call haSqlHandles[nSqlHandleNoCash].Disconnect( )
+				Call haSqlHandles[nSqlHandleNoCredit].Disconnect( )
+				Call haSqlHandles[nSqlHandleNoCRJnl].Disconnect( )
+				Call haSqlHandles[nSqlHandleNoDRJnl].Disconnect( )
+				Call haSqlHandles[nSqlHandleNoDep].Disconnect( )
+				Return SalSendClassMessage( SAM_ReportFinish, wParam, lParam )

@@ -1,0 +1,587 @@
+.head 0 +  Application Description: Centura 1.1 Jans Load Customers Notification report
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF580000 0058000000E80200 0091010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left:   0.15"
+.head 3 -  Top:    0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 0418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left:   5.1"
+.head 3 -  Top:    2.906"
+.head 3 -  Width:  4.688"
+.head 3 -  Height: 2.979"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   Default
+.head 3 -  Top:    Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   7.413"
+.head 3 -  Top:    0.708"
+.head 2 -  Fully Qualified External References? No
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: GENERAL.APL
+.head 2 -  File Include: FORM.APL
+.head 2 -  File Include: BUTTON.APL
+.head 2 -  File Include: DATFIELD.APL
+.head 2 -  File Include: BGTEXT.APL
+.head 2 -  File Include: GROUPBOX.APL
+.head 2 -  File Include: CHECKBOX.APL
+.head 2 -  File Include: TABLE.APL
+.head 2 -  File Include: SQLHANDL.APL
+.head 2 -  File Include: STRINGS.APL
+.head 2 -  File Include: METER.APL
+.head 2 -  File Include: STACKS.APL
+.head 2 -  File Include: VTMETER.APL
+.head 2 -  File Include: FLAGS.APL
+.head 2 -  File Include: DIALOG.APL
+.head 2 -  File Include: FRMCTBL.APL
+.head 2 -  File Include: QUERY.APL
+.head 2 -  File Include: CMBFIELD.APL
+.head 2 -  File Include: RADIOBTN.APL
+.head 2 -  File Include: SPNFIELD.APL
+.head 2 -  File Include: VTSPIN.APL
+.head 2 -  File Include: DATES.APL
+.head 2 -  File Include: PICK.APL
+.head 2 -  File Include: ACTIVATE.APL
+.head 2 -  File Include: RUNPROG.APL
+.head 2 -  File Include: VTWIN.APL
+.head 2 -  File Include: Address.apl
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: None
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for POTPLAND.APL
+.head 4 -  ! Number: POTPLANDAplMsgOffSet = SAM_User + ?
+.head 4 -  ! Message go up to AplMsgOffSet + 99
+.head 4 -  ! Number: POTPLANDAplConstOffSet = ?
+.head 4 -  ! Messages
+.head 4 -  !
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 3119024766
+0000: A000000041000000 0000000000000000 0200000600000054 000000E0010D0000
+0020: 00FF3F6100B80000 0100FFFFE06E0000 0001FE00FF837B00 000001FB00FF0F88
+0040: 000000E8040D0000 FF3F9500B8000001 00FFFF
+.enddata
+.head 3 -  String: sLoadIdCommaList
+.head 3 -  String: saLoadIds[*]
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 4087592831
+0000: 0A0F0000B0060000 0000000000000000 0200001A00FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 000B63006C73466F
+0040: 726D426100736586 00000005003C0000 010DF8000000FF4F 0D0000E002040000
+0060: 00FF3F1100A00000 040D0000FFFF801E 000000030400FE00 FF832200000001FB
+0080: 00FF0F01800D0001 000100000017633E 6C507220696E7442 616963005265706F
+00A0: 72741E00D9000100 B3010D00FFFF1801 800D000200200000 0C636C7062004765
+00C0: 6E6572616C1EA200 0001000067010D00 FFFF3101800D0003 C000000009636CC1
+00E0: 457869741EE80001 0000D9010D00FF7F 0188800400000400 1C000C5069630045
+0100: 7870616E641E00D1 00010000B3020400 FFFF980180040005 E10012636C01546F
+0120: 67676C6542807574 746F6E1E00E80001 0000DD0200FF7F01 0C8004000600001C
+0140: 000C646647FE65D1 00010000B3030400 FFFF1801800D0007 003800000C6362FE
+0160: 47A3000100006701 0D00FFFF21018022 000008400000001D 636C5400626C4D61
+0180: 6B655365006C6563 746564526F00774B 657941727261C079 7400000004DE0002
+01A0: D1000100003F8001 F800000037040001 F60D00FFDF11DC00 0100FF7F1E730002
+01C0: 00FFFF010180B700 000009C00000000F 636CC061626C6547 65436C3602001578
+01E0: 00000001F60D00FF DF0DDC000100FF7F 1A7100000100FFFF C12700000001FD00
+0200: FF073400000002F7 00FF1F380000DC00 0200FF7F3C700000 000200FFFFC14000
+0220: 000002FD00FF0744 00000002F700FF1F 480000DC000200FF 7F4C700000000200
+0240: FFFFC15000000002 D1000100003F8001 F900000754000000 01460D00010000FF
+0260: E4800100001F5800 00D800010D00FF7F 65700000000100FF FFC17200000001FD
+0280: 00FF077F00000001 F700FF1F8C0000DC 000100FF7F997000 00000100FFFFC1A6
+02A0: 00000001FD00FF07 B300000003F700FF 1F01800D03000A00 00000B0068635371
+02C0: 6C48616E216C651E 0000017A000001F6 0D00FF1F01802F02 00000B0000001004
+02E0: 636C4469616C6FF8 6747656486000005 00CF010DFE00FF9B 0D0002FB00FF6F11
+0300: 00EC040D00FFBF1E B9000300FFFFE622 0001FE00FF030180 2B000000E00C0000
+0320: 001066466D42651C 54616C0000E80004 0000D9010D00FF7F 0D73000100FFFFCD
+0340: 1A0001FD00FF3727 0002F700FF1F0180 33300000000D0011 24636C5462517560
+0360: 65727944696FC1A0 00000006DE0003FD 00FF37040002F700 FFDF08DC000200FF
+0380: 7F0C6300010D00FF FFC11900000001FD 00FF072600000001 F700FF1F01805D00
+03A0: 0000000E00000011 E751750161746146 69656CD064440100 0CDE0002FD00FF37
+03C0: 040002F700FFDF08 DC000200FF7F0C73 000200FFFF811000 0000010DFD00FF07
+03E0: 1D00000001F700FF 1F2A00001C000200 0100FD0093800100 007F2E6000000001
+0400: 0D00FFFFC13B0000 0002FD00FF073F00 000001F700FFDF4C DC000200FF7F5073
+0420: 000100FFFF310180 5D000FF000000012 0F436F6D62F86F46 69DB0C00BB0200FF
+0440: FFE6040002FE00FF 9B080002FB00FF6F 0C00EE0200FFBF10 B100010D00FFFFE6
+0460: 1D0001FE00FF9B2A 0002A3000100007F 80F20100006F2E00 EC010D00FFBF3BB9
+0480: 000200FFFFE63F00 01FE00FF9B4C0002 FB00FF6F5000EE01 00FF3F0180665D00
+04A0: 1000FE123F436160 63686544010C7B00 02F700FFDF04DC00 0200FF7F08730002
+04C0: 00FFFFCD0C0002FD 00FF37100001F60D 00FFDF1DDC000100 FF7F2A73000200F4
+04E0: 0100004F800100FE 008D2E00010DFD00 FF373B0002F700FF DF3FDC000100FF7F
+0500: 4C73000200FFFFCD 500001FD00FF8701 801A000800110000 15636C3F4F700065
+0520: 7261746F72466927 380000027A000001 F60D00FFDF0DDC00 0100FF7F010C8004
+0540: 00120000F0001363 6C01794342596573 4E806F466C61671E 00E800010000D902
+0560: 0400FF7F010C800D 0013000018001163 537069006E536561 736F6E5920656172
+0580: 1E0000017A000001 F60D00FF1F018034 0200001400000014 14636C7053656C04
+05A0: 656346726F6D5446 61656C0000F60400 EC010D00FFBF0DB9 000100FFFFE61A00
+05C0: 01FE00FF9B270001 FB00FF8F01800411 001500000D63926C 5365656340496E74
+05E0: 6F1E0000F4010000 EE0300FF3F018024 2E00001600006E11 7074006172745072
+0600: 6F677280616DBA00 000007BD0002FB00 FF6F0400EE0200FF BF08B9000200FFFF
+0620: C60C00010DFE00FF 9B190003FB00FF6F 1D00EE0200FF3F21 00B800000100FFFF
+0640: 1801800400170030 00001063546F006F 6C54697057696E20 646F771E0000017A
+0660: 000003F700FF1F01 8004030018000000 0C7063665461436E 611E00F4010000EE
+0680: 0300FF3F01806415 00001900E00B6366 436108506F6F5A00 0000F40300000807
+06A0: 190000010100E8AC 070000C980010000 BF04B100030400FF FFC60800010DFE00
+06C0: FF03
+.enddata
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Check Box:
+.head 3 -  Option Button:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text:
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 +  Application Actions
+.head 3 +  On SAM_AppStartup
+.head 4 +  If strArgArray[0] = ''
+.head 5 -  Set SqlDatabase = 'STOCKDEV'
+.head 5 -  Set SqlUser = 'JAN'
+.head 5 -  Set SqlPassword = 'JAN'
+.head 4 +  Else
+.head 5 -  Set SqlDatabase = strArgArray[1]
+.head 5 -  Set SqlUser = strArgArray[2]
+.head 5 -  Set SqlPassword = strArgArray[3]
+.head 4 -  !
+.head 4 -  ! strArgArray[4] = 'Selected load Ids file name ie: c:\\temp\\delivnoti.tmp'
+.head 4 -  ! Set strArgArray[4] = 'C:\\TEMP\\DELNOTI.TMP'
+.head 4 -  !
+.head 4 -  Call CheckProgramExistance( 'Load customers delivery notification', TRUE )
+.head 4 -  !
+.head 4 -  Call SqlHandlesSetup(  )
+.head 4 -  !
+.head 4 -  Set sLoadIdCommaList = ''
+.head 4 -  Call ReadStrArrayListFromFile( strArgArray[4], saLoadIds )
+.head 4 -  Call MakeStringList( saLoadIds, ',', "'", sLoadIdCommaList )
+.head 3 +  On SAM_AppExit
+.head 4 -  Call SqlHandlesDisconnectClose(  )
+.head 1 +  Form Window: frmNotification
+.head 2 -  Class: clsFormPrintBasicReport
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title: Load customers delivery notification
+.head 2 -  Icon File:
+.head 2 -  Accesories Enabled? Class Default
+.head 2 -  Visible? Class Default
+.head 2 -  Display Settings
+.head 3 -  Display Style? Class Default
+.head 3 -  Visible at Design time? No
+.head 3 -  Automatically Created at Runtime? Yes
+.head 3 -  Initial State: Class Default
+.head 3 -  Maximizable? Class Default
+.head 3 -  Minimizable? Class Default
+.head 3 -  System Menu? Class Default
+.head 3 -  Resizable? Class Default
+.head 3 -  Window Location and Size
+.head 4 -  Left:   0.0"
+.head 4 -  Top:    0.0"
+.head 4 -  Width:  Class Default
+.head 4 -  Width Editable? Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Height Editable? Class Default
+.head 3 -  Form Size
+.head 4 -  Width:  Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Number of Pages: Class Default
+.head 3 -  Font Name: Class Default
+.head 3 -  Font Size: Class Default
+.head 3 -  Font Enhancement: Class Default
+.head 3 -  Text Color: Class Default
+.head 3 -  Background Color: Class Default
+.head 2 -  Description:
+.head 2 -  Named Menus
+.head 2 -  Menu
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Class Default
+.head 4 -  Location? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Size: Class Default
+.head 4 -  Size Editable? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 -  Contents
+.head 2 -  Contents
+.head 2 +  Functions
+.head 3 +  Function: GetMainContactName
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nCustNo
+.head 5 -  Receive String: sGivenName
+.head 5 -  Receive String: sSurname
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurHandleNo
+.head 5 -  !
+.head 5 -  String: sGotGivenName
+.head 5 -  String: sGotSurname
+.head 5 -  Number: nInd
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetMainContactName' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT
+Contact_Given_Name, 
+Contact_Surname 
+FROM Customer_Contacts 
+WHERE Cust_No = :1 AND Main_Contact_Flag = 'Y' "
+.head 7 -  Set sName = 'GTMCNTCTNME'
+.head 7 -  Set sBind = ':nCustNo'
+.head 7 -  Set sInto = ':sGotGivenName, :sGotSurname'
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sGivenName = ''
+.head 7 -  Set sGotGivenName = ''
+.head 7 -  Set sSurname = ''
+.head 7 -  Set sGotSurname = ''
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 9 -  Set sGivenName = sGotGivenName
+.head 9 -  Set sSurname = sGotSurname
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: UpdtDelivNotiLetterFlag
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  String: sLoadId
+.head 5 -  Number: nCustNo
+.head 5 -  String: sFlag
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurHandleNo
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'UpdtDelivNotiLetterFlag' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " UPDATE Load_Customers 
+SET 
+  Deliv_Noti_Letter = :3 
+WHERE 
+  Load_Id = :1 AND 
+  Cust_No = :2  "
+.head 7 -  Set sName = 'ULDCSTDLNOTI'
+.head 7 -  Set sBind = ':sLoadId, :nCustNo, :sFlag'
+.head 7 -  Set sInto = ''
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Execute( )
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 2 -  Window Parameters
+.head 2 +  Window Variables
+.head 3 -  String: sTmp
+.head 3 -  Date/Time: dtTmp
+.head 3 -  String: sLoadId
+.head 3 -  Date/Time: dtShippingDate
+.head 3 -  Number: nYearOfSale
+.head 3 -  Number: nCustNo
+.head 3 -  String: sCustName
+.head 3 -  String: sBusName
+.head 3 -  String: sBusAddLine1
+.head 3 -  String: sBusAddLine2
+.head 3 -  String: sBusSuburb
+.head 3 -  String: sBusState
+.head 3 -  String: sBusPostcode
+.head 3 -  String: sMainContactFirstName
+.head 3 -  String: sMainContactSurname
+.head 3 -  ! REPORT COLUMNS
+.head 3 -  String: sAddressLine1
+.head 3 -  String: sAddressLine2
+.head 3 -  String: sAddressLine3
+.head 3 -  String: sAddressLine4
+.head 3 -  String: sAddressLine5
+.head 2 +  Message Actions
+.head 3 +  On PAM_cls_SETINSTANCEVARS
+.head 4 -  Set sReportType = 'PRINT'
+.head 4 -  !
+.head 4 -  Set sReportFileNameNoPath = 'delivnoti.qrp'
+.head 4 -  Set sReportBind = ':frmNotification.sAddressLine1, 
+  :frmNotification.sAddressLine2, 
+  :frmNotification.sAddressLine3, 
+  :frmNotification.sAddressLine4, 
+  :frmNotification.sAddressLine5, 
+  :frmNotification.dtShippingDate, 
+  :frmNotification.sMainContactFirstName, 
+  :frmNotification.sMainContactSurname'
+.head 4 -  Set sReportInto = 'sAddressLine1, 
+  sAddressLine2, 
+  sAddressLine3, 
+  sAddressLine4, 
+  sAddressLine5, 
+  dtShippingDate, 
+  sMainContactFirstName, 
+  sMainContactSurname'
+.head 4 -  !
+.head 4 -  Set sReportSql = " SELECT 
+  Load.Load_Id, 
+  Load.Shipping_Date, 
+  Load_Customers.Cust_No,  
+  Customer_Master.Cust_Name, 
+  Customer_Master.Bus_Name 
+FROM 
+  Load, 
+  Load_Customers,  
+  Customer_Master 
+INTO 
+  :frmNotification.sLoadId, 
+  :frmNotification.dtShippingDate, 
+  :frmNotification.nCustNo, 
+  :frmNotification.sCustName, 
+  :frmNotification.sBusName 
+WHERE 
+  Load.Load_Id IN ( " || sLoadIdCommaList || " ) AND 
+  Load.Load_Id = Load_Customers.Load_Id AND 
+  ( NOT Load_Customers.Deliv_Noti_Letter = 'Y' OR 
+    Load_Customers.Deliv_Noti_Letter IS NULL ) AND 
+  Load_Customers.Cust_No = Customer_Master.Cust_No AND 
+  EXISTS 
+  ( 
+    SELECT 
+      Customer_Order.Cust_No 
+    FROM 
+      Customer_Order 
+    WHERE 
+      Customer_Order.Cust_No = Load_Customers.Cust_No AND 
+      Customer_Order.Load_Id = Load.Load_Id AND 
+      Customer_Order.Year_Of_Sale = :frmNotification.nYearOfSale 
+  ) 
+ORDER BY 
+  Load.Load_Id, Load_Customers.Sequence_No "
+.head 3 +  On SAM_ReportStart
+.head 4 -  Set nYearOfSale = OurDateYear( SalDateCurrent(  ) )
+.head 4 -  Call SalReportCmd( SalNumberToWindowHandle( wParam ), RPT_CmdPrinterSetup )
+.head 4 -  Return SalSendClassMessage( SAM_ReportStart, wParam, lParam )
+.head 3 +  On PAM_clsFRM_REPORTFETCHINIT
+.head 4 -  Set sLoadId = ''
+.head 4 -  Set dtShippingDate = DATETIME_Null
+.head 4 -  Set nCustNo = NUMBER_Null
+.head 4 -  Set sCustName = ''
+.head 4 -  Set sBusName = ''
+.head 4 -  Set sBusAddLine1 = ''
+.head 4 -  Set sBusAddLine2 = ''
+.head 4 -  Set sBusSuburb = ''
+.head 4 -  Set sBusState = ''
+.head 4 -  Set sBusPostcode = ''
+.head 4 -  Set sMainContactFirstName = ''
+.head 4 -  Set sMainContactSurname = ''
+.head 4 -  Set sAddressLine1 = ''
+.head 4 -  Set sAddressLine2 = ''
+.head 4 -  Set sAddressLine3 = ''
+.head 4 -  Set sAddressLine4 = ''
+.head 4 -  Set sAddressLine5 = ''
+.head 4 -  !
+.head 4 -  Return TRUE
+.head 3 +  On PAM_clsFRM_REPORTFETCHNEXT
+.head 4 -  Call SwapSurnameWithFirstname( sCustName )
+.head 4 +  ! If bForceChildAddress
+.head 5 -  Call GetBusAddressPrivateFunction( nCustNo, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+.head 4 -  Call GetBusAddress( nCustNo, dtTmp, sTmp, sBusAddLine1, sBusAddLine2, sBusSuburb, sBusPostcode, sBusState, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+.head 4 -  Call FixLineSpaceAddress( sCustName, sBusName, sBusAddLine1, sBusAddLine2, sBusSuburb, sBusState, sBusPostcode, sAddressLine1, sAddressLine2, sAddressLine3, sAddressLine4, sAddressLine5 )
+.head 4 -  !
+.head 4 -  Call GetMainContactName( nCustNo, sMainContactFirstName, sMainContactSurname, SH_cls_Execute )
+.head 4 +  If UpdtDelivNotiLetterFlag( sLoadId, nCustNo, 'Y', SH_cls_Execute )
+.head 5 -  Call UpdtDelivNotiLetterFlag( '', 0, '', SH_cls_Commit )
+.head 4 -  Return TRUE
+.head 3 +  On PAM_clsFRM_REPORTFINISH
+.head 4 -  Call GetBusAddress( 0, dtTmp, sTmp, sBusAddLine1, sBusAddLine2, sBusSuburb, sBusPostcode, sBusState, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Disconnect )
+.head 4 -  Call GetMainContactName( 0, sMainContactFirstName, sMainContactSurname, SH_cls_Disconnect )
+.head 4 -  Call UpdtDelivNotiLetterFlag( '', 0, '', SH_cls_Disconnect )
+.head 4 -  Return TRUE

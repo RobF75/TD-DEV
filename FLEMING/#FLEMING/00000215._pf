@@ -1,0 +1,1906 @@
+.head 0 +  Application Description: SQLWindows 5.01 Jans class Item Inventory Listing report application
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D80000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF000000 0000000000140300 009F010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 00001027F5140500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left:   0.15"
+.head 3 -  Top:    0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: D4180909B80B1500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? No
+.head 3 -  Left:   5.113"
+.head 3 -  Top:    2.885"
+.head 3 -  Width:  4.675"
+.head 3 -  Height: 2.969"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   Default
+.head 3 -  Top:    Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   8.15"
+.head 3 -  Top:    0.469"
+.head 2 -  Fully Qualified External References? Yes
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: GENERAL.APL
+.head 2 -  File Include: FORM.APL
+.head 2 -  File Include: BUTTON.APL
+.head 2 -  File Include: DATFIELD.APL
+.head 2 -  File Include: SPNFIELD.APL
+.head 2 -  File Include: BGTEXT.APL
+.head 2 -  File Include: RADIOBTN.APL
+.head 2 -  File Include: CHECKBOX.APL
+.head 2 -  File Include: GROUPBOX.APL
+.head 2 -  File Include: TABLE.APL
+.head 2 -  File Include: PICK.APL
+.head 2 -  File Include: VTSPIN.APL
+.head 2 -  File Include: SQLHANDL.APL
+.head 2 -  File Include: STRINGS.APL
+.head 2 -  File Include: METER.APL
+.head 2 -  File Include: STACKS.APL
+.head 2 -  File Include: VTMETER.APL
+.head 2 -  File Include: FLAGS.APL
+.head 2 -  File Include: DIALOG.APL
+.head 2 -  File Include: ACTIVATE.APL
+.head 2 -  File Include: DATES.APL
+.head 2 -  File Include: FRMCTBL.APL
+.head 2 -  File Include: QUERY.APL
+.head 2 -  File Include: CMBFIELD.APL
+.head 2 -  File Include: STCKITMQ.APL
+.head 2 -  File Include: DLGCTBL.APL
+.head 2 -  File Include: ITEMFUNC.APL
+.head 2 -  File Include: RUNPROG.APL
+.head 2 -  File Include: VTWIN.APL
+.head 2 -  File Include: LISTBOX.APL
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: None
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for PRITMINV.APP
+.head 4 -  Number: PRITMINVAppMsgOffSet = SAM_User + 8200
+.head 4 -  Number: PAM_clsPRITMINV_GETSELECTEDITEMS = PRITMINVAppMsgOffSet + 1
+.head 4 -  Number: PAM_clsPRITMINV_GETSELECTED = PRITMINVAppMsgOffSet + 2
+.head 4 -  ! Message go up to AppOffSet + 99
+.head 4 -  Number: PRITMINVAppConstOffSet = 5550
+.head 4 -  !
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 718822652
+0000: 80050000DB010000 0000000000000000 020000360000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E8040D0000 FF3FAB00B8000001 00FFFFE0B8000000 01FE00FF83C50000
+0060: 0001FB00FF0FD200 0000EE0100FF3FDF 0080000002040000 00FFFFE0E3000000
+0080: 02FE00FF83E70000 0001FB00FF0FF400 0000EE0100FF3F01 01B400000D00FFFF
+00A0: E80E010001FE00FF 231B01000304FA00 00FF8F1F0100EE02 00FF3F2301BA0001
+00C0: 00FFFFE830010001 FE00FFA33D010001 FB00FF8F4A0100EE 0200FF3F4E01BA00
+00E0: 0200FFFFE8520100 02FE00FFA3560100 01FB00FF8F630100 EE0200FF3F6701BA
+0100: 000200FFFFE86B01 0001FE00FFA37801 0001FB00FF8F8501 00EE0100FF3F9201
+0120: BA000100FFFFE89F 010003FE00FFA3A3 010002FB00FF8FA7 0100EE0100FF3FB4
+0140: 01BA000100FFFFE8 C1010001FE00FFA3 CE010002FB00FF8F D20100EE0200FF3F
+0160: D601BA000200FFFF E8DA010001FE00FF A3E7010002FB00FF 8FEB0100EE0200FF
+0180: 3FEF01BA000100FF FFE8FC010001FE00 FF830902000001FB 00FF8F160200EE01
+01A0: 00FF3F2302BA0003 00FFFFE827020002 FE00FFA32B020001 FB00FF8F380200EE
+01C0: 0100FF3F4502BA00 0100FFFFE8520200 02FE00FFA3560200 02FB00FF8F5A0200
+01E0: EE0200FF3F5E02BA 000100FFFF
+.enddata
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 992816273
+0000: 931200001F080000 0000000000000000 0200002100FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 000B63006C73466F
+0040: 726D426100736586 00000005003C0000 010DF8000000FF4F 0D0000E002040000
+0060: 00FF3F1100A00000 040D0000FFFF801E 000000030400FE00 FF832200000001FB
+0080: 00FF0F01800D0001 000100000017633E 6C507220696E7442 616963005265706F
+00A0: 72741E00D9000100 B3010D00FFFF1801 800D000200200000 0C636C7062004765
+00C0: 6E6572616C1EA200 0001000067010D00 FFFF010180380000 0003C00000000963
+00E0: 6C8148656C708600 EC000500D9020400 FF7F04620000010D 00FFFFCD110001FD
+0100: 00FF371E0001F700 FF1F2B0000DC0001 00FF7F01CC800D00 047C000945307869
+0120: 741E00017A000001 F60D00FF1F018004 32000005000C0750 696345784070616E
+0140: 641E0000F4010000 EE0200FF3F018006 0400060000007812 636C54006F67676C
+0160: 6542757420746F6E 1E0000017A000002 F700FF1F01800403 00070000000C8764
+0180: 6647657F00F40100 00EC030400FF3F01 80060D0008000000 0811636C5370696E
+01A0: 00536561736F6E59 651061721E000001 003D00010DFB00FF 8F01800D81000900
+01C0: 00000CE36362473F 00017A000001F60D 00FF1F0180B70000 00000A00000016E4
+01E0: 636C476503546162 6C65473E653602C2 0015000000B3010D 00FFFFE60D0001FE
+0200: 00FF831A00000001 FB00FF0F27000000 EE0100FF3F3400B8 00000200FFFFE438
+0220: 000002FE00FF833C 00000002FB00FF0F 40000000EE0200FF 3F4400B800000200
+0240: FFFFE04800000002 FE00FF834C000000 02FB00FF0F500000 008E02000100FE00
+0260: C180010000003F54 00300000010D0001 FA00002780010000 FFC058000000010D
+0280: FE00FF8365000000 01FB00FF0F720000 00EE0100FF3F7F00 B800000100FFFFE0
+02A0: 8C00000001FE00FF 839900000001FB00 FF0FA6000000EE01 00FF3FB300B80000
+02C0: 0300FFFF10018022 00000B002000001D 636C5462006C4D61 6B6553656C006563
+02E0: 746564526F77004B 6579417272617960 740000000400EF02 E8000100009F8001
+0300: FC00001B0400010D FB00FF4F110000EE 0100FFBF1EB90002 00FFFF1001803400
+0320: 000C00A000001463 6C703C5365467230 6F6D5461656CB000 0000040067010D00
+0340: FFFFCD0D0001FD00 FF371A0001F700FF DF27DC000100FF7F 01CC8004000D9000
+0360: 0D636C5365046563 496E746F1EA20000 010000770300FFFF 3101800D000E0000
+0380: 00000B6863537110 6C48616E6C651EA2 000001000067010D 00FFFF2101802F00
+03A0: 000F400000001063 6C448069616C6F67 4765476C860000F6 0500EC010D00FF3F
+03C0: 0D00B9000200FFFF C61100040DFE00FF 9B1E0003FB00FF6F 2200EE0100FF3F01
+03E0: 80042B0000100000 006C1063466DC642 655461896C000004 009E00010DFD00FF
+0400: 370D0001F700FFDF 1ADC000100FF7F27 73000200FFFF0101 8033000000116300
+0420: 1163540351756572 794416696FA00000 EC000600DD0300FF 7F0473000200FFFF
+0440: CD080002FD00FF37 0C0001F60D00FF1F 190000DC000100FF 7F26700000000100
+0460: FFFF0101805D0000 0012700000001151 1E75617461004669 656C64440100ED0C
+0480: 00DD0200FF7F0473 000200FFFFCD0800 02FD00FF370C0002 F700FF9F1000D800
+04A0: 010D00FF7F1D7000 00000100FFFFC12A 00000002D1000100 003F8001F9000007
+04C0: 2E00000001F60D00 FF1F3B0000DC0002 00FF7F3F70000000 0100FFFFCD4C0002
+04E0: FD00FF37500001F7 00FF1F01805D0300 1300000012FE6380 436F6D626F4669BF
+0500: 0CBD0002FB00FF6F 0400EE0200FFBF08 B9000200FFFFE60C 0002FE00FF1B1000
+0520: 010DFB00FF6F1D00 EE0100FFBF2A3900 020001FA00002780 010000FFC62E0001
+0540: 0DFE00FF9B3B0002 FB00FF6F3F00EE01 00FFBF4CB9000200 FFFFE6500001FE00
+0560: FF6301805D00E014 00000012FF034361 63686544B6010C00 770200FFFFCD0400
+0580: 02FD00FF37080002 F700FFDF0CDC0002 00FF7F106300010D 00FFFFCD1D0001FD
+05A0: 00FF372A00024700 010000FFE4800100 00DF2ED800010D00 FF7F3B73000200FF
+05C0: FFCD3F0001FD00FF 374C0002F700FFDF 50DC000100FF7F01 C8801A000015F000
+05E0: 15636C034F706572 6174706F72466938 A200000200006701 0D00FFFFCD0D0001
+0600: FD00FFC701800400 001600000013636C 1F79434200596573 4E6F466C6188671E
+0620: 000001009E000204 FD00FF8701801500 0000170000000F63 6C0D70746F636B00
+0640: 4974656D73520000 E800030000DD0200 FF7F046300010D00 FFFF891100000304
+0660: FD00FFC7018015C0 0018000000120757 68656E4140766169 6C61626544520000
+0680: 030000EF02FE00FF 1B0400010DFB00FF 6F1100EC030400FF 3F0180660D001900
+06A0: 0E12646C6751F851 5374271E0000017A 000001F60D00FF1F 01800433001A0015
+06C0: 0766726D5175E753 74FFE800010000DD 0200FF7F0108801E 00001B0000DC0013
+06E0: 44074368696C64FC 5461E800030000D9 010D00FF7F0D7300 0100FFFFCD1A0002
+0700: FD00FF8701802E00 80001C0000001163 1570536172740050 726F6772616DBAB0
+0720: 0000000700770200 FFFFCD040002FD00 FF37080002F700FF DF0CD800010D00FF
+0740: 7F196300030400FF FFCD1D0002FD00FF 1721000001F700FF 1F01803630000000
+0760: 1D000FE753747FEE B000000009006701 0D00FFFFCD0D0001 FD00FF371A0002F7
+0780: 00FFDF1EDC000200 FF7F2273000200FF FFCD260002FD00FF 372A0002F700FFDF
+07A0: 2EDC000200FF7F32 700000000200FFFF 31018004001E6300 106354006F6F6C54
+07C0: 69705769406E646F 771E0000F4010000 EE0300FF3F018006 04001F000000E00C
+07E0: 63665461DC43611E E800010000DD0300 FF7F010C80150020 0000C0000B636643
+0800: 6111506F6F5A0000 E800030000110719 00000101D000A20B 000093800100007F
+0820: 046300030400FFFF 8D0800010DFD00FF 07
+.enddata
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton: clspbPickInto
+.head 3 -  Radio Button:
+.head 3 -  Check Box: clscbGeneral
+.head 3 -  Option Button:
+.head 3 -  Child Table: clsTableGeneral
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text: clsBackTextGeneral
+.head 3 -  Group Box: clsgbGeneral
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 +  Application Actions
+.head 3 +  On SAM_AppStartup
+.head 4 +  If strArgArray[0] = ''
+.head 5 -  Set SqlDatabase = 'STOCKDEV'
+.head 5 -  Set SqlUser = 'JAN'
+.head 5 -  Set SqlPassword = 'JAN'
+.head 4 +  Else
+.head 5 -  Set SqlDatabase = strArgArray[1]
+.head 5 -  Set SqlUser = strArgArray[2]
+.head 5 -  Set SqlPassword = strArgArray[3]
+.head 4 -  !
+.head 4 -  Call CheckProgramExistance( 'Print Assigned Inventory Listing', TRUE )
+.head 4 -  !
+.head 4 -  Call SqlHandlesSetup(  )
+.head 3 +  On SAM_AppExit
+.head 4 -  Call SqlHandlesDisconnectClose(  )
+.head 1 +  Form Window: frmItemAssignedInventory
+.head 2 -  Class: clsFormGeneral
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title: Print Assigned Inventory Listing
+.head 2 -  Icon File:
+.head 2 -  Accesories Enabled? Class Default
+.head 2 -  Visible? Class Default
+.head 2 -  Display Settings
+.head 3 -  Display Style? Class Default
+.head 3 -  Visible at Design time? No
+.head 3 -  Automatically Created at Runtime? Yes
+.head 3 -  Initial State: Class Default
+.head 3 -  Maximizable? Class Default
+.head 3 -  Minimizable? Class Default
+.head 3 -  System Menu? Class Default
+.head 3 -  Resizable? Class Default
+.head 3 -  Window Location and Size
+.head 4 -  Left:   0.0"
+.head 4 -  Top:    0.0"
+.head 4 -  Width:  Class Default
+.head 4 -  Width Editable? Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Height Editable? Class Default
+.head 3 -  Form Size
+.head 4 -  Width:  Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Number of Pages: Class Default
+.head 3 -  Font Name: Class Default
+.head 3 -  Font Size: Class Default
+.head 3 -  Font Enhancement: Class Default
+.head 3 -  Text Color: Class Default
+.head 3 -  Background Color: Class Default
+.head 2 -  Description:
+.head 2 -  Named Menus
+.head 2 -  Menu
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Class Default
+.head 4 -  Location? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Size: Class Default
+.head 4 -  Size Editable? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Contents
+.head 4 +  Pushbutton: pbReport
+.head 5 -  Class Child Ref Key: 0
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clspbGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Report
+.head 5 -  Window Location and Size
+.head 6 -  Left:   4.45"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name: C:\CENTURA\ICONS\LETTERS.BMP
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 +  Message Actions
+.head 6 +  On PAM_clsPB_CLICK
+.head 7 +  If rbSelectedItems
+.head 8 -  Set sItemType = 'SELECTED'
+.head 8 +  If SalSendMsg( tblSelectedItems, PAM_clsPRITMINV_GETSELECTEDITEMS, 0, 0 )
+.head 9 -  Call PopString( sSelectedItemNoList, TRUE )
+.head 8 +  Else
+.head 9 -  Call SalMessageBox( 'Please select some items first, or choose All Items.', 'Warning', MB_Ok )
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Set sItemType = 'ALL'
+.head 7 -  !
+.head 7 +  If rbView
+.head 8 -  Set sReportType = 'VIEW'
+.head 7 +  Else
+.head 8 -  Set sReportType = 'PRINT'
+.head 7 -  !
+.head 7 +  If rbSimple
+.head 8 -  Set sInventoryType = 'SIMPLE'
+.head 7 +  Else If rbComplex
+.head 8 -  Set sInventoryType = 'COMPLEX'
+.head 7 +  Else
+.head 8 -  Set sInventoryType = 'BASIC'
+.head 7 +  If hWndReport = hWndNULL
+.head 8 -  Set hWndReport = SalCreateWindow( frmPrintAssignedInventory, hWndForm, sSelectedItemNoList, 
+ccSeasonYear.GetSeasonYear( ), sItemType, sReportType, sInventoryType )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call SalMessageBox( 'Please close down your first report!', 'Warning', MB_Ok )
+.head 8 -  Return FALSE
+.head 4 +  Pushbutton: pbHelp
+.head 5 -  Class Child Ref Key: 1
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbItemEnq
+.head 5 -  Class Child Ref Key: 5
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbExit
+.head 5 -  Class Child Ref Key: 2
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbPrintForm
+.head 5 -  Class Child Ref Key: 6
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 2 +  Contents
+.head 3 -  Group Box: Item Type
+.head 4 -  Resource Id: 9336
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsgbGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   4.363"
+.head 5 -  Top:    0.365"
+.head 5 -  Width:  1.55"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 1.146"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Radio Button: rbAllItems
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: All
+.head 4 -  Window Location and Size
+.head 5 -  Left:   4.575"
+.head 5 -  Top:    0.74"
+.head 5 -  Width:  0.563"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbSelectedItems
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: Selected
+.head 4 -  Window Location and Size
+.head 5 -  Left:   4.575"
+.head 5 -  Top:    0.99"
+.head 5 -  Width:  1.088"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 -  !
+.head 3 -  Group Box: Selected Items
+.head 4 -  Resource Id: 9337
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsgbGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.213"
+.head 5 -  Top:    1.667"
+.head 5 -  Width:  5.425"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 3.063"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Pushbutton: pbClearSelectedItems
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clspbTblClearRows
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.313"
+.head 5 -  Top:    1.906"
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set pbClearSelectedItems.hWndTable = tblSelectedItems
+.head 3 +  Pushbutton: pbPickItems
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clspbStockItems
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.913"
+.head 5 -  Top:    1.906"
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set pbPickItems.hWndPickIntoTable = tblSelectedItems
+.head 5 +  On PAM_cls_SETFIELDS
+.head 6 -  Call pbPickItems.SetStockItemsFields( ccSeasonYear.GetSeasonYear( ), '', '', '' )
+.head 6 -  Return TRUE
+.head 5 +  On PAM_cls_GETFIELDS
+.head 6 -  Call pbPickItems.GetStockItemsFields( tblSelectedItems.colItemNo, 
+tblSelectedItems.colYear, 
+tblSelectedItems.colTreeType, 
+tblSelectedItems.colTreeTypeDesc, 
+sTmp, 
+tblSelectedItems.colCultDesc, 
+sTmp, 
+tblSelectedItems.colRootDesc, 
+nTmp, nTmp  )
+.head 6 -  !
+.head 6 -  Set nTmp = SalTblQueryContext( tblSelectedItems )
+.head 6 -  Call SalTblSetRowFlags( tblSelectedItems, nTmp, ROW_Selected, TRUE )
+.head 6 -  Call SalTblSetRowFlags( tblSelectedItems, nTmp, ROW_HideMarks, TRUE )
+.head 6 -  Set rbSelectedItems = TRUE
+.head 6 -  Return TRUE
+.head 3 +  Child Table: tblSelectedItems
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsTableGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   2.313"
+.head 6 -  Top:    2.552"
+.head 6 -  Width:  5.188"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 2.104"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  View: Class Default
+.head 5 -  Allow Row Sizing? Class Default
+.head 5 -  Lines Per Row: Class Default
+.head 4 -  Memory Settings
+.head 5 -  Maximum Rows in Memory: 6000
+.head 5 -  Discardable? No
+.head 4 +  Contents
+.head 5 +  Column: colItemNo
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? No
+.head 6 -  Editable? Class Default
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colYear
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Year
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? Class Default
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  0.5"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colTreeType
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Type
+.head 6 -  Visible? No
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  1.017"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colTreeTypeDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Type Desc.
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  1.417"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colCultDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Cultivar
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  2.833"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colRootDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Rootstock
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  1.483"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 4 -  Functions
+.head 4 +  Window Variables
+.head 5 -  String: sTmp
+.head 5 -  Number: nTmp
+.head 5 -  String: sItemNoList
+.head 5 -  Number: nSelectedItemYear
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set bAddAllowed = TRUE
+.head 5 +  On PAM_clsPRITMINV_GETSELECTEDITEMS
+.head 6 -  Set sItemNoList = ''
+.head 6 -  Set nSelectedItemYear = NUMBER_Null
+.head 6 +  If TableLoop( hWndForm, hWndForm, PAM_clsPRITMINV_GETSELECTED, 0, 0, 0, 'Extracting Selected Items', TBL_cls_LowToHi )
+.head 7 +  If hWndParent.ccSeasonYear.GetSeasonYear( ) != nSelectedItemYear
+.head 8 -  Call SalMessageBox( 'Selected Items Year does not match report Year. Please match up first!', 'Warning', MB_Ok )
+.head 8 -  Set sItemNoList = 'YEARMISMATCH'
+.head 7 -  Call PushString( sItemNoList )
+.head 7 -  Return TRUE
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  On PAM_clsPRITMINV_GETSELECTED
+.head 6 +  If sItemNoList = ''
+.head 7 -  Set sItemNoList = SalNumberToStrX( colItemNo, 0 ) 
+.head 6 +  Else
+.head 7 -  Set sItemNoList = sItemNoList || ', ' || SalNumberToStrX( colItemNo, 0 ) 
+.head 6 +  If nSelectedItemYear = NUMBER_Null
+.head 7 -  Set nSelectedItemYear = colYear
+.head 6 -  Return TRUE
+.head 3 -  !
+.head 3 -  Group Box: Report Types
+.head 4 -  Resource Id: 9338
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsgbGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.213"
+.head 5 -  Top:    0.365"
+.head 5 -  Width:  2.038"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 1.146"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Radio Button: rbView
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: View then Print
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.413"
+.head 5 -  Top:    0.74"
+.head 5 -  Width:  1.538"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbPrint
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: Print Only
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.413"
+.head 5 -  Top:    0.99"
+.head 5 -  Width:  1.138"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 -  !
+.head 3 -  Group Box: Inventory Types
+.head 4 -  Resource Id: 26135
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsgbGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   6.013"
+.head 5 -  Top:    0.354"
+.head 5 -  Width:  1.625"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 1.156"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Radio Button: rbSimple
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: Simple
+.head 4 -  Window Location and Size
+.head 5 -  Left:   6.25"
+.head 5 -  Top:    0.635"
+.head 5 -  Width:  0.85"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbComplex
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: Complex
+.head 4 -  Window Location and Size
+.head 5 -  Left:   6.25"
+.head 5 -  Top:    0.885"
+.head 5 -  Width:  1.0"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbBasic
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: Basic
+.head 4 -  Window Location and Size
+.head 5 -  Left:   6.25"
+.head 5 -  Top:    1.135"
+.head 5 -  Width:  0.763"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 -  !
+.head 3 +  Data Field: dfDatabase
+.head 4 -  Class Child Ref Key: 3
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfUser
+.head 4 -  Class Child Ref Key: 4
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 -  Background Text:
+.head 4 -  Resource Id: 15618
+.head 4 -  Class Child Ref Key: 8
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Custom Control: ccSeasonYear
+.head 4 -  Class Child Ref Key: 7
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  DLL Name:
+.head 5 -  MS Windows Class Name:
+.head 5 -  Style:  Class Default
+.head 5 -  ExStyle:  Class Default
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Etched Border? Class Default
+.head 5 -  Hollow? Class Default
+.head 5 -  Vertical Scroll? Class Default
+.head 5 -  Horizontal Scroll? Class Default
+.head 5 -  Tab Stop? Class Default
+.head 5 -  Tile To Parent? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  DLL Settings
+.head 4 -  Message Actions
+.head 2 -  Functions
+.head 2 -  Window Parameters
+.head 2 +  Window Variables
+.head 3 -  String: sSelectedItemNoList
+.head 3 -  String: sItemType
+.head 3 -  String: sReportType
+.head 3 -  String: sInventoryType
+.head 3 -  Window Handle: hWndReport
+.head 2 +  Message Actions
+.head 3 +  On SAM_Create
+.head 4 -  Set rbPrint = FALSE
+.head 4 -  Set rbAllItems = TRUE
+.head 4 -  Set hWndReport = hWndNULL
+.head 4 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 3 +  On PAM_clsFRM_REPORTCLOSED
+.head 4 -  Set hWndReport = hWndNULL
+.head 4 -  Return TRUE
+.head 1 +  Form Window: frmPrintAssignedInventory
+.head 2 -  Class: clsFormPrintReport
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title:
+.head 2 -  Icon File:
+.head 2 -  Accesories Enabled? Class Default
+.head 2 -  Visible? Class Default
+.head 2 -  Display Settings
+.head 3 -  Display Style? Class Default
+.head 3 -  Visible at Design time? No
+.head 3 -  Automatically Created at Runtime? Class Default
+.head 3 -  Initial State: Class Default
+.head 3 -  Maximizable? Class Default
+.head 3 -  Minimizable? Class Default
+.head 3 -  System Menu? Class Default
+.head 3 -  Resizable? Class Default
+.head 3 -  Window Location and Size
+.head 4 -  Left:   Default
+.head 4 -  Top:    Default
+.head 4 -  Width:  Class Default
+.head 4 -  Width Editable? Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Height Editable? Class Default
+.head 3 -  Form Size
+.head 4 -  Width:  Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Number of Pages: Class Default
+.head 3 -  Font Name: Class Default
+.head 3 -  Font Size: Class Default
+.head 3 -  Font Enhancement: Class Default
+.head 3 -  Text Color: Class Default
+.head 3 -  Background Color: Class Default
+.head 2 -  Description:
+.head 2 -  Named Menus
+.head 2 -  Menu
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Class Default
+.head 4 -  Location? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Size: Class Default
+.head 4 -  Size Editable? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 -  Contents
+.head 2 -  Contents
+.head 2 +  Functions
+.head 3 +  ! Function: GetItemTotalBudCount
+.head 4 -  Description: 
+.head 4 +  Returns 
+.head 5 -  Boolean: 
+.head 4 +  Parameters 
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Receive Number: nBudCount
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables 
+.head 5 -  ! hcSqlHandle: fcOurHandle
+.head 4 +  Local variables 
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurHandleNo
+.head 5 -  !
+.head 5 -  Number: nGotBudCount
+.head 5 -  Number: nInd
+.head 4 +  Actions 
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETITMBDCNT2' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  SUM( Beg_Count )
+FROM 
+  Growing_Sale
+WHERE 
+   Stock_Item_No = :1 AND  
+   Year_Of_Sale = :2 "
+.head 7 -  Set sName = 'GETITMBDCNT2'
+.head 7 -  Set sBind = ':nItemNo, :nYear'
+.head 7 -  Set sInto = ':nGotBudCount'
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set nBudCount = NUMBER_Null
+.head 7 -  Set nGotBudCount = NUMBER_Null
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 9 -  Set nBudCount = nGotBudCount
+.head 8 -  Return TRUE
+.head 7 +  Else 
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: GetItemTotalBFSCounts
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Receive Number: nBudTotal
+.head 5 -  Receive Number: nFirstTotal
+.head 5 -  Receive Number: nSecondTotal
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nInd
+.head 5 -  !
+.head 5 -  Number: nGotBudTotal
+.head 5 -  Number: nGotFirstTotal
+.head 5 -  Number: nGotSecondTotal
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetItemTotalBFSCounts' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT
+  SUM( Beg_Count ),
+  SUM( First_Count ),
+  SUM( Second_Count )
+FROM
+  Growing_Sale
+WHERE
+  Stock_Item_No = :1 AND
+  Year_Of_Sale = :2 "
+.head 7 -  Set sName = 'GTITMBFSCNTT'
+.head 7 -  Set sBind = ':nItemNo, :nYear'
+.head 7 -  Set sInto = ':nGotBudTotal, :nGotFirstTotal, :nGotSecondTotal'
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set nBudTotal = NUMBER_Null
+.head 7 -  Set nGotBudTotal = NUMBER_Null
+.head 7 -  Set nFirstTotal = NUMBER_Null
+.head 7 -  Set nGotFirstTotal = NUMBER_Null
+.head 7 -  Set nSecondTotal = NUMBER_Null
+.head 7 -  Set nGotSecondTotal = NUMBER_Null
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 9 -  Set nBudTotal = nGotBudTotal
+.head 9 -  Set nFirstTotal = nGotFirstTotal
+.head 9 -  Set nSecondTotal = nGotSecondTotal
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: CalcItemsGCAvailORAvail
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Receive Number: nGCAvail
+.head 5 -  Receive Number: nORAvail
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! hcSqlHandle: fcOurHandle
+.winattr class :
+.head 6 -  Class: hcSqlHandle
+.end
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nInd
+.head 5 -  !
+.head 5 -  Number: nGenItemNo
+.head 5 -  Number: nGenGCReserve
+.head 5 -  !
+.head 5 -  Number: nGotSubItemNo
+.head 5 -  Number: nGotSubUpToMax
+.head 5 -  Number: nGotSubTotAvail
+.head 5 -  !
+.head 5 -  Boolean: bOk
+.head 5 -  Boolean: bFound
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETGENSBITMS2' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  Substitutes.Substitute_Item_No, 
+  Substitutes.Sub_Up_To_Max, 
+  Stock_Item_Sale.Tot_Avail 
+FROM 
+  Substitutes,  
+  Stock_Item_Sale 
+WHERE 
+   Substitutes.Stock_Item_No = :1 AND 
+   Substitutes.Substitute_Item_No = Stock_Item_Sale.Stock_Item_No AND 
+   Stock_Item_Sale.Year_Of_Sale = :2 
+ORDER BY 
+  Substitutes.Subs_Priority "
+.head 7 -  Set sName = 'GETGENSBITMS2'
+.head 7 -  Set sBind = ':nGenItemNo, :nYear'
+.head 7 -  Set sInto = ':nGotSubItemNo, :nGotSubUpToMax, :nGotSubTotAvail'
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set nGCAvail = NUMBER_Null
+.head 7 -  Set nORAvail = NUMBER_Null
+.head 7 -  !
+.head 7 -  Set nGotSubItemNo = NUMBER_Null
+.head 7 -  Set nGotSubUpToMax = NUMBER_Null
+.head 7 -  Set nGotSubTotAvail = NUMBER_Null
+.head 7 -  !
+.head 7 +  If CalcItemsGenGCReserve( nItemNo, nYear, nGenItemNo, nGenGCReserve, SH_cls_Execute )
+.head 8 +  If nGenItemNo > 0
+.head 9 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 10 -  Set bFound = FALSE
+.head 10 +  While haSqlHandles[ nOurHandleNo ].FetchNext( nInd ) AND NOT bFound
+.head 11 +  If nGotSubUpToMax > 0
+.head 12 +  If nGotSubTotAvail > nGotSubUpToMax
+.head 13 +  If nGenGCReserve > nGotSubUpToMax
+.head 14 -  Set nGCAvail = nGotSubUpToMax
+.head 13 +  Else
+.head 14 -  Set nGCAvail = nGenGCReserve
+.head 13 -  Set nORAvail = nGotSubTotAvail - nGCAvail
+.head 12 +  Else
+.head 13 -  Set nGCAvail = nGotSubTotAvail
+.head 13 -  Set nORAvail = 0
+.head 11 +  Else
+.head 12 +  If nGenGCReserve > nGotSubTotAvail
+.head 13 -  Set nGCAvail = nGotSubTotAvail
+.head 13 -  Set nORAvail = 0
+.head 12 +  Else
+.head 13 -  Set nGCAvail = nGenGCReserve
+.head 13 -  Set nORAvail = nGotSubTotAvail - nGenGCReserve
+.head 11 -  !
+.head 11 -  Set nGenGCReserve = nGenGCReserve - nGCAvail
+.head 11 -  !
+.head 11 +  If nGotSubItemNo = nItemNo
+.head 12 +  If nGenGCReserve+nGCAvail <= 0
+.head 13 -  Set nGCAvail = NUMBER_Null
+.head 13 -  Set nORAvail = NUMBER_Null
+.head 12 -  Set bFound = TRUE
+.head 11 -  !
+.head 10 -  Return TRUE
+.head 9 +  Else
+.head 10 -  Return FALSE
+.head 8 +  Else
+.head 9 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT CalcItemsGenGCReserve( 0, 0, nGenItemNo, nGenGCReserve, SH_cls_Disconnect )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: CalcItemsGenGCReserve
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Receive Number: nGenItemNo
+.head 5 -  Receive Number: nGenGCReserve
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! hcSqlHandle: fcOurHandle
+.winattr class :
+.head 6 -  Class: hcSqlHandle
+.end
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nInd
+.head 5 -  !
+.head 5 -  Number: nGotGenItemNo
+.head 5 -  Number: nGotGenGCReserve
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETITMGNITM2' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  T2.Item_No, 
+  T2.GC_Reserve - 
+  ( Stock_Item_Sale.Amt_On_Order + 
+    Stock_Item_Sale.On_Ord_As_Subs + 
+    Stock_Item_Sale.Amt_Shipped + Amt_Subs_Shipped )
+FROM 
+  Stock_Item T1, 
+  Substitutes,  
+  Stock_Item T2, 
+  Stock_Item_Sale  
+WHERE 
+   T1.Item_No = :1 AND  
+   ( T1.Generic_Stock_Item = 'N' OR 
+   T1.Generic_Stock_Item IS NULL ) AND 
+   T1.Item_No = Substitutes.Substitute_Item_No AND 
+   Substitutes.Stock_Item_No = T2.Item_No  AND 
+   Substitutes.Stock_Item_No = Stock_Item_Sale.Stock_Item_No AND 
+   Stock_Item_Sale.Year_Of_Sale = :2 "
+.head 7 -  Set sName = 'GETITMGNITM2'
+.head 7 -  Set sBind = ':nItemNo, :nYear'
+.head 7 -  Set sInto = ':nGotGenItemNo, :nGotGenGCReserve'
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set nGenItemNo = NUMBER_Null
+.head 7 -  Set nGenGCReserve = NUMBER_Null
+.head 7 -  Set nGotGenItemNo = NUMBER_Null
+.head 7 -  Set nGotGenGCReserve = NUMBER_Null
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 9 -  Set nGenItemNo = nGotGenItemNo
+.head 9 -  Set nGenGCReserve = nGotGenGCReserve
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 2 +  Window Parameters
+.head 3 -  ! sSelectedItemNoList is a comma separated list of item numbers
+.head 3 -  String: sSelectedItemNoList
+.head 3 -  Number: nYear
+.head 3 -  ! sItemType = 'SELECTED' OR 'ALL'
+.head 3 -  String: sItemType
+.head 3 -  ! sReportPrintOrView = 'VIEW' OR 'PRINT'
+.head 3 -  String: sReportPrintOrView
+.head 3 -  ! sInventoryType = 'SIMPLE' OR 'COMPLEX' OR 'BASIC'
+.head 3 -  String: sInventoryType
+.head 2 +  Window Variables
+.head 3 -  Number: nItemNo
+.head 3 -  String: sUpperVarietyType
+.head 3 -  String: sUpperCultDesc
+.head 3 -  String: sUpperRootDesc
+.head 3 -  String: sCVNotSaleFlag
+.head 3 -  String: sRTNotSaleFlag
+.head 3 -  String: sCurrentCultVariety
+.head 3 -  !
+.head 3 -  ! REPORT FIELDS
+.head 3 -  ! User_Id
+.head 3 -  String: sTreeType
+.head 3 -  String: sCultDesc
+.head 3 -  String: sUpperVariety
+.head 3 -  String: sRootDesc
+.head 3 -  String: sGeneric
+.head 3 -  String: sCVNPAFlag
+.head 3 -  String: sRTNPAFlag
+.head 3 -  Number: nAvail
+.head 3 -  Number: nOnHand
+.head 3 -  Number: nSubs
+.head 3 -  Number: nGraded
+.head 3 -  Number: nGrowing
+.head 3 -  Number: nEstGrowing
+.head 3 -  Number: nShipped
+.head 3 -  Number: nShippedAsSubs
+.head 3 -  Number: nOnOrder
+.head 3 -  Number: nOnOrdAsSubs
+.head 3 -  ! AssInvYr
+.head 3 -  String: sSoldOutFlag
+.head 3 -  String: sNotSale
+.head 3 -  String: sComments
+.head 3 -  ! sMR1RD1Combined always set to 'N' cause this is not supported now.
+.head 3 -  String: sMR1RD1Combined
+.head 3 -  Number: nBreakTotGrowing
+.head 3 -  Number: nBreakTotEstGrow
+.head 3 -  Number: nBreakTotOnOrder
+.head 3 -  Number: nBreakTotShip
+.head 3 -  Number: nTotalGrowing
+.head 3 -  Number: nTotalEstGrow
+.head 3 -  Number: nTotalOnOrder
+.head 3 -  Number: nTotalShip
+.head 3 -  Number: nGCReserve
+.head 3 -  Number: nTotalGraded
+.head 3 -  Number: nItemTotalBudCount
+.head 3 -  Number: nItemTotalFirstCount
+.head 3 -  Number: nItemTotalSecondCount
+.head 3 -  Number: nGCAvail
+.head 3 -  Number: nORAvail
+.head 3 -  !
+.head 3 -  : fcSqlHandle
+.head 4 -  Class: hcSqlHandle
+.head 3 -  String: sSql
+.head 3 -  Number: nInd
+.head 2 +  Message Actions
+.head 3 +  On PAM_cls_SETINSTANCEVARS
+.head 4 +  If sInventoryType = 'SIMPLE'
+.head 5 -  Set sReportFileNameNoPath = 'assinvs3.qrp'
+.head 4 +  Else If sInventoryType = 'COMPLEX'
+.head 5 -  Set sReportFileNameNoPath = 'assinvc3.qrp'
+.head 4 +  Else
+.head 5 -  Set sReportFileNameNoPath = 'assinvb3.qrp'
+.head 4 -  !
+.head 4 -  Set sReportBind = ':SqlUser,
+:frmPrintAssignedInventory.sTreeType,
+:frmPrintAssignedInventory.sCultDesc,
+:frmPrintAssignedInventory.sUpperVariety,
+:frmPrintAssignedInventory.sRootDesc,
+:frmPrintAssignedInventory.sGeneric,
+:frmPrintAssignedInventory.sCVNPAFlag,
+:frmPrintAssignedInventory.sRTNPAFlag,
+:frmPrintAssignedInventory.nAvail,
+:frmPrintAssignedInventory.nOnHand,
+:frmPrintAssignedInventory.nSubs,
+:frmPrintAssignedInventory.nGraded,
+:frmPrintAssignedInventory.nGrowing,
+:frmPrintAssignedInventory.nEstGrowing,
+:frmPrintAssignedInventory.nShipped,
+:frmPrintAssignedInventory.nShippedAsSubs,
+:frmPrintAssignedInventory.nOnOrder,
+:frmPrintAssignedInventory.nOnOrdAsSubs,
+:frmPrintAssignedInventory.nYear,
+:frmPrintAssignedInventory.sSoldOutFlag,
+:frmPrintAssignedInventory.sNotSale,
+:frmPrintAssignedInventory.sComments,
+:frmPrintAssignedInventory.sMR1RD1Combined,
+:frmPrintAssignedInventory.nBreakTotGrowing,
+:frmPrintAssignedInventory.nBreakTotEstGrow,
+:frmPrintAssignedInventory.nBreakTotOnOrder,
+:frmPrintAssignedInventory.nBreakTotShip,
+:frmPrintAssignedInventory.nTotalGrowing,
+:frmPrintAssignedInventory.nTotalEstGrow,
+:frmPrintAssignedInventory.nTotalOnOrder,
+:frmPrintAssignedInventory.nTotalShip,
+:frmPrintAssignedInventory.nGCReserve,
+:frmPrintAssignedInventory.nTotalGraded,
+:frmPrintAssignedInventory.nItemTotalBudCount, 
+:frmPrintAssignedInventory.nItemTotalFirstCount, 
+:frmPrintAssignedInventory.nItemTotalSecondCount, 
+:frmPrintAssignedInventory.nGCAvail,
+:frmPrintAssignedInventory.nORAvail'
+.head 4 -  Set sReportInto = 'User_id,
+TreeType,
+Cultivar,
+Variety,
+Rootstock,
+Generic,
+CVNPA,
+RTNPA,
+Avail,
+OnHand,
+Subs,
+Graded,
+Growing,
+EstGrowing,
+Shipped,
+ShippedAsSubs,
+OnOrder,
+OnOrdAsSubs,
+AssInvYr,
+SoldOutFlag,
+NotSale,
+Comments,
+MR1RD1Combined,
+BreakTotGrowing,
+BreakTotEstGrow,
+BreakTotOnOrder,
+BreakTotShip,
+TotalGrowing,
+TotalEstGrow,
+TotalOnOrder,
+TotalShip,
+GC_Reserve,
+TotalGraded,
+ItemTotalBudCount,
+ItemTotalFirstCount,
+ItemTotalSecondCount,
+GCAvail,
+ORAvail'
+.head 4 -  Set sReportType = sReportPrintOrView
+.head 3 +  On SAM_ReportStart
+.head 4 +  If sItemType = 'ALL'
+.head 5 -  Set sSql = "SELECT 
+  Stock_Item.Item_No, 
+  @UPPER( Stock_Item.Variety_Type ), 
+  @UPPER( Stock_Item.Variety ), 
+  @UPPER( Stock_Item.Cult_Desc ), 
+  @UPPER( Stock_Item.Root_Desc ), 
+  Stock_Item.Tree_Type_Desc, 
+  Stock_Item.Cult_Desc, 
+  Stock_Item.Root_Desc, 
+  Stock_Item.Generic_Stock_Item, 
+  Stock_Item.CV_Non_Prop_Flag, 
+  Stock_Item.RT_Non_Prop_Flag, 
+  Stock_Item.CV_Not_Sale_Flag, 
+  Stock_Item.RT_Not_Sale_Flag, 
+  Stock_Item_Sale.Tot_Avail, 
+  Stock_Item_Sale.Amt_Graded, 
+  Stock_Item_Sale.Amt_Growing, 
+  Stock_Item_Sale.Est_Avail_Count, 
+  Stock_Item_Sale.Amt_Shipped, 
+  Stock_Item_Sale.Amt_Subs_Shipped, 
+  Stock_Item_Sale.Amt_On_Order, 
+  Stock_Item_Sale.On_Ord_As_Subs, 
+  Stock_Item_Sale.Sold_Out_Flag, 
+  Stock_Item_Sale.Stock_Item_Comment, 
+  Stock_Item.GC_Reserve, 
+  Stock_Item_Sale.Total_Graded
+FROM 
+  Stock_Item,
+  Stock_Item_Sale 
+INTO 
+  :frmPrintAssignedInventory.nItemNo, 
+  :frmPrintAssignedInventory.sUpperVarietyType,
+  :frmPrintAssignedInventory.sUpperVariety,
+  :frmPrintAssignedInventory.sUpperCultDesc,
+  :frmPrintAssignedInventory.sUpperRootDesc, 
+  :frmPrintAssignedInventory.sTreeType,
+  :frmPrintAssignedInventory.sCultDesc,
+  :frmPrintAssignedInventory.sRootDesc,
+  :frmPrintAssignedInventory.sGeneric,
+  :frmPrintAssignedInventory.sCVNPAFlag,
+  :frmPrintAssignedInventory.sRTNPAFlag,
+  :frmPrintAssignedInventory.sCVNotSaleFlag, 
+  :frmPrintAssignedInventory.sRTNotSaleFlag, 
+  :frmPrintAssignedInventory.nOnHand,
+  :frmPrintAssignedInventory.nGraded,
+  :frmPrintAssignedInventory.nGrowing,
+  :frmPrintAssignedInventory.nEstGrowing,
+  :frmPrintAssignedInventory.nShipped,
+  :frmPrintAssignedInventory.nShippedAsSubs,
+  :frmPrintAssignedInventory.nOnOrder,
+  :frmPrintAssignedInventory.nOnOrdAsSubs,
+  :frmPrintAssignedInventory.sSoldOutFlag,
+  :frmPrintAssignedInventory.sComments,
+  :frmPrintAssignedInventory.nGCReserve,
+  :frmPrintAssignedInventory.nTotalGraded 
+ WHERE 
+   NOT Stock_Item.Stock_Type = 'C' AND 
+   Stock_Item.Item_No = Stock_Item_Sale.Stock_Item_No AND 
+   Stock_Item_Sale.Year_Of_Sale = :frmPrintAssignedInventory.nYear AND 
+   NOT ( Amt_Growing = 0 AND Amt_Graded = 0 AND 
+             Amt_Shipped = 0 AND Amt_Subs_Shipped = 0 AND 
+             Amt_On_Order = 0 AND On_Ord_As_Subs = 0 ) 
+ORDER BY 2,3,9,4,5,6,1"
+.head 4 +  Else
+.head 5 -  Set sSql = 'SELECT 
+  Stock_Item.Item_No, 
+  @UPPER( Stock_Item.Variety_Type ), 
+  @UPPER( Stock_Item.Variety ), 
+  @UPPER( Stock_Item.Cult_Desc ), 
+  @UPPER( Stock_Item.Root_Desc ), 
+  Stock_Item.Tree_Type_Desc, 
+  Stock_Item.Cult_Desc, 
+  Stock_Item.Root_Desc, 
+  Stock_Item.Generic_Stock_Item, 
+  Stock_Item.CV_Non_Prop_Flag, 
+  Stock_Item.RT_Non_Prop_Flag, 
+  Stock_Item.CV_Not_Sale_Flag, 
+  Stock_Item.RT_Not_Sale_Flag, 
+  Stock_Item_Sale.Tot_Avail, 
+  Stock_Item_Sale.Amt_Graded, 
+  Stock_Item_Sale.Amt_Growing, 
+  Stock_Item_Sale.Est_Avail_Count, 
+  Stock_Item_Sale.Amt_Shipped, 
+  Stock_Item_Sale.Amt_Subs_Shipped, 
+  Stock_Item_Sale.Amt_On_Order, 
+  Stock_Item_Sale.On_Ord_As_Subs, 
+  Stock_Item_Sale.Sold_Out_Flag, 
+  Stock_Item_Sale.Stock_Item_Comment, 
+  Stock_Item.GC_Reserve, 
+  Stock_Item_Sale.Total_Graded
+FROM 
+  Stock_Item,
+  Stock_Item_Sale 
+INTO 
+  :frmPrintAssignedInventory.nItemNo, 
+  :frmPrintAssignedInventory.sUpperVarietyType,
+  :frmPrintAssignedInventory.sUpperVariety,
+  :frmPrintAssignedInventory.sUpperCultDesc,
+  :frmPrintAssignedInventory.sUpperRootDesc, 
+  :frmPrintAssignedInventory.sTreeType,
+  :frmPrintAssignedInventory.sCultDesc,
+  :frmPrintAssignedInventory.sRootDesc,
+  :frmPrintAssignedInventory.sGeneric,
+  :frmPrintAssignedInventory.sCVNPAFlag,
+  :frmPrintAssignedInventory.sRTNPAFlag,
+  :frmPrintAssignedInventory.sCVNotSaleFlag, 
+  :frmPrintAssignedInventory.sRTNotSaleFlag, 
+  :frmPrintAssignedInventory.nOnHand,
+  :frmPrintAssignedInventory.nGraded,
+  :frmPrintAssignedInventory.nGrowing,
+  :frmPrintAssignedInventory.nEstGrowing,
+  :frmPrintAssignedInventory.nShipped,
+  :frmPrintAssignedInventory.nShippedAsSubs,
+  :frmPrintAssignedInventory.nOnOrder,
+  :frmPrintAssignedInventory.nOnOrdAsSubs,
+  :frmPrintAssignedInventory.sSoldOutFlag,
+  :frmPrintAssignedInventory.sComments,
+  :frmPrintAssignedInventory.nGCReserve,
+  :frmPrintAssignedInventory.nTotalGraded 
+ WHERE 
+   Stock_Item.Item_No IN ( ' || sSelectedItemNoList || ' ) AND 
+   Stock_Item.Item_No = Stock_Item_Sale.Stock_Item_No AND 
+   Stock_Item_Sale.Year_Of_Sale = :frmPrintAssignedInventory.nYear  AND 
+   NOT ( Amt_Growing = 0 AND Amt_Graded = 0 AND 
+             Amt_Shipped = 0 AND Amt_Subs_Shipped = 0 AND 
+             Amt_On_Order = 0 AND On_Ord_As_Subs = 0 ) 
+ORDER BY 2,3,9,4,5,6,1'
+.head 4 -  Call fcSqlHandle.PrepareSetup( sSql )
+.head 4 -  Call SqlVarSetup( fcSqlHandle.hSqlHandle )
+.head 4 -  Return TRUE
+.head 3 +  On SAM_ReportFetchInit
+.head 4 -  Call fcSqlHandle.PrepareAndExecute( )
+.head 4 -  Set sCurrentCultVariety = ''
+.head 4 -  Set nBreakTotGrowing = 0
+.head 4 -  Set nBreakTotEstGrow = 0
+.head 4 -  Set nBreakTotOnOrder = 0
+.head 4 -  Set nBreakTotShip = 0
+.head 4 -  Set nTotalGrowing = 0
+.head 4 -  Set nTotalEstGrow = 0
+.head 4 -  Set nTotalOnOrder = 0
+.head 4 -  Set nTotalShip = 0
+.head 4 -  Return TRUE
+.head 3 +  On SAM_ReportFetchNext
+.head 4 +  If fcSqlHandle.FetchNext( nInd )
+.head 5 -  !
+.head 5 -  Call CalculateSubstitutes( nItemNo, nYear, nSubs, SH_cls_Execute )
+.head 5 -  Set nAvail = nSubs + nOnHand
+.head 5 -  !
+.head 5 +  If sGeneric = 'Y' OR sGeneric = 'y'
+.head 6 -  Set sGeneric = 'Gen'
+.head 5 +  Else
+.head 6 -  Set sGeneric = ' '
+.head 5 -  !
+.head 5 +  If sCVNPAFlag = 'Y' OR sCVNPAFlag = 'y'
+.head 6 -  Set sCVNPAFlag = '*'
+.head 5 +  Else
+.head 6 -  Set sCVNPAFlag = ' '
+.head 5 -  !
+.head 5 +  If sRTNPAFlag = 'Y' OR sRTNPAFlag = 'y'
+.head 6 -  Set sRTNPAFlag = '*'
+.head 5 +  Else
+.head 6 -  Set sRTNPAFlag = ' '
+.head 5 -  !
+.head 5 +  If sSoldOutFlag = 'N' OR sRTNPAFlag = 'n'
+.head 6 -  Set sSoldOutFlag = ' '
+.head 5 -  !
+.head 5 +  If sCVNotSaleFlag = 'Y' OR sCVNotSaleFlag = 'y'
+.head 6 -  Set sNotSale = 'Y'
+.head 5 +  Else If sRTNotSaleFlag = 'Y' OR sRTNotSaleFlag = 'y'
+.head 6 -  Set sNotSale = 'Y'
+.head 5 +  Else
+.head 6 -  Set sNotSale = ' '
+.head 5 -  !
+.head 5 +  If sUpperVariety = sCurrentCultVariety
+.head 6 -  Set nBreakTotGrowing = nBreakTotGrowing + nGrowing
+.head 6 -  Set nBreakTotEstGrow = nBreakTotEstGrow + nEstGrowing
+.head 6 -  Set nBreakTotOnOrder = nBreakTotOnOrder + nOnOrder
+.head 6 -  Set nBreakTotShip = nBreakTotShip + nShipped
+.head 5 +  Else
+.head 6 -  Set sCurrentCultVariety = sUpperVariety
+.head 6 -  Set nBreakTotGrowing = nGrowing
+.head 6 -  Set nBreakTotEstGrow = nEstGrowing
+.head 6 -  Set nBreakTotOnOrder = nOnOrder
+.head 6 -  Set nBreakTotShip = nShipped
+.head 5 -  Set nTotalGrowing = nTotalGrowing + nGrowing
+.head 5 -  Set nTotalEstGrow = nTotalEstGrow + nEstGrowing
+.head 5 -  Set nTotalOnOrder = nTotalOnOrder + nOnOrder
+.head 5 -  Set nTotalShip = nTotalShip + nShipped
+.head 5 -  !
+.head 5 -  ! Call GetItemTotalBudCount( nItemNo, nYear, nItemTotalBudCount, SH_cls_Execute )
+.head 5 -  Call GetItemTotalBFSCounts( nItemNo, nYear, nItemTotalBudCount, nItemTotalFirstCount, nItemTotalSecondCount, SH_cls_Execute )
+.head 5 +  If NOT sGeneric = 'Y'
+.head 6 -  Call CalcItemsGCAvailORAvail(  nItemNo, nYear, nGCAvail, nORAvail, SH_cls_Execute )
+.head 5 -  !
+.head 5 -  Return TRUE
+.head 4 +  Else
+.head 5 -  Return FALSE
+.head 3 +  On SAM_ReportFinish
+.head 4 -  Call fcSqlHandle.Disconnect( )
+.head 4 -  Call CalculateSubstitutes( 0, 0, nSubs, SH_cls_Disconnect )
+.head 4 -  ! Call GetItemTotalBudCount( 0, 0, nItemTotalBudCount, SH_cls_Disconnect )
+.head 4 -  Call GetItemTotalBFSCounts( 0, 0, nItemTotalBudCount, nItemTotalFirstCount, nItemTotalSecondCount, SH_cls_Disconnect )
+.head 4 -  Call CalcItemsGCAvailORAvail(  0, 0, nGCAvail, nORAvail, SH_cls_Disconnect )
+.head 4 -  Return SalSendClassMessage( SAM_ReportFinish, wParam, lParam )

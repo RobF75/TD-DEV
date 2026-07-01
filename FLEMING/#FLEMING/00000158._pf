@@ -1,0 +1,1377 @@
+Application Description: SQLWindows 5.01 Deposits Used for moth report
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF580000 0058000000E80200 0091010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D02000000075769 6E646F77730F6672
+0080: 6D4465706F736974 7355736564
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000003000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.1"
+			Top:    2.906"
+			Width:  4.688"
+			Height: 2.979"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   6.6"
+			Top:    0.521"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: GENERAL.APL
+		File Include: FORM.APL
+		File Include: BUTTON.APL
+		File Include: DATFIELD.APL
+		File Include: BGTEXT.APL
+		File Include: GROUPBOX.APL
+		File Include: CHECKBOX.APL
+		File Include: TABLE.APL
+		File Include: SQLHANDL.APL
+		File Include: STRINGS.APL
+		File Include: METER.APL
+		File Include: STACKS.APL
+		File Include: VTMETER.APL
+		File Include: FLAGS.APL
+		File Include: DIALOG.APL
+		File Include: FRMCTBL.APL
+		File Include: QUERY.APL
+		File Include: CMBFIELD.APL
+		File Include: RADIOBTN.APL
+		File Include: SPNFIELD.APL
+		File Include: VTSPIN.APL
+		File Include: DATES.APL
+		File Include: PICK.APL
+		File Include: ACTIVATE.APL
+		File Include: RUNPROG.APL
+		File Include: VTWIN.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: None
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Blue
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for DEPSUSED.APL
+				Number: DEPSAplMsgOffSet = SAM_User + 6200
+				! Message go up to AplMsgOffSet + 99
+				Number: DEPSAplConstOffSet = 4600
+				! Messages
+				Number: PAM_DEPSUSED_REPORT = DEPSAplMsgOffSet + 1
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1347615921
+0000: 8600000038000000 0000000000000000 020000050000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E8040D0000 FF3F
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 1585403490
+0000: F41000005D070000 0000000000000000 0200001C00FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 000B63006C73466F
+0040: 726D426100736586 00000005003C0000 010DF8000000FF4F 0D0000E002040000
+0060: 00FF3F1100A00000 040D0000FFFF801E 000000030400FE00 FF832200000001FB
+0080: 00FF0F01800D0001 000100000017633E 6C507220696E7442 616963005265706F
+00A0: 72741E00D9000100 B3010D00FFFF1801 800D000200200000 0C636C7062004765
+00C0: 6E6572616C1EA200 0001000067010D00 FFFF010180380000 0003C00000000963
+00E0: 6C8148656C708600 EC000500D9020400 FF7F04620000010D 00FFFFCD110001FD
+0100: 00FF371E0001F700 FF1F2B0000DC0001 00FF7F01CC800D00 047C000945307869
+0120: 741E00017A000001 F60D00FF1F018004 32000005000C0750 696345784070616E
+0140: 641E0000F4010000 EE0200FF3F018006 0400060000007812 636C54006F67676C
+0160: 6542757420746F6E 1E0000017A000002 F700FF1F01800403 00070000000C8764
+0180: 6647657F00F40100 00EC030400FF3F01 8004110000080000 008E0C6362479F38
+01A0: 00E800020000D901 0D00FF7F0D630002 0400FFFF010180B7 0000000940000000
+01C0: 16636C473E655461 E0626C6547652336 020015003C000001 0DFB00FF6F0D00EE
+01E0: 0100FF3F1A00B800 000100FFFFE02700 000001FE00FF8334 00000002FB00FF4F
+0200: 380000EE0200FF3F 3C00B800000200FF FFE04000000002FE 00FF834400000002
+0220: FB00FF0F48000000 EE0200FF3F4C00B8 00000200FFFFE050 00000002E8000100
+0240: 001F800100FC0000 0354000000010DA3 000100007F80F201 00000F58000000EC
+0260: 010D00FF3F6500B8 00000100FFFFE072 00000001FE00FF83 7F00000001FB00FF
+0280: 0F8C000000EE0100 FF3F9900B8000001 00FFFFE0A6000000 01FE00FF83B30000
+02A0: 0003FB00FF0F0180 220001000A000000 1D63026C54626C4D 616B006553656C65
+02C0: 6374650064526F77 4B65794100727261 7974000000F60400 8E02000100FE00C9
+02E0: 80010000BF04B100 010D00FFFFE61100 01FE00FF9B1E0002 FB00FF8F01801101
+0300: 000B000000106302 6C436F6C756D6E3C 47656C38A3000200 0067020400FFFF8D
+0320: 0400010DFD00FF87 01802F00C0000C00 000010014469616C 6F67473E658600D9
+0340: 000500B3010D00FF FFE60D0002FE00FF 1B1100040DFB00FF 6F1E00EE0300FFBF
+0360: 22B9000100FFFF90 01802B00000DB900 1046196D42655461 03656C000000047A
+0380: 000001F60D00FFDF 0DDC000100FF7F1A 73000100FFFFCD27 0002FD00FF070180
+03A0: 33000000000E0000 0011636C0D545175 6572587944696FA0 B000000006007703
+03C0: 00FFFFCD040002FD 00FF37080002F700 FFDF0CD800010D00 FF7F197000000001
+03E0: 00FFFFC126000000 01FD00FF0701805D 0000C0000F000000 1179517561007461
+0400: 4669656C6444B401 000C00770200FFFF CD040002FD00FF37 080002F700FFDF0C
+0420: DC000200FF7F1060 000000010D00FFFF C11D00000001FD00 FF072A0000000247
+0440: 00010000FFE48001 00001F2E0000D800 010D00FF7F3B7000 00000200FFFFC13F
+0460: 00000001FD00FF37 4C0002F700FFDF50 DC000100FF7F01CC 805D0010FC001203
+0480: 436F6D626F46FE69 F60C00EE0200FFBF 04B9000200FFFFE6 080002FE00FF9B0C
+04A0: 0002FB00FF6F1000 EC010D00FFBF1DB9 000100FFFFE62A00 02E8000100009F80
+04C0: 01FC00001B2E0001 0DFB00FF6F3B00EE 0200FFBF3FB90001 00FFFFE64C0002FE
+04E0: 00FF9B500001FB00 FF8F01805D910011 000012FF0F436163 68D86544010CDE00
+0500: 02FD00FF37040002 F700FFDF08DC0002 00FF7F0C73000200 FFFF8D1000010DFD
+0520: 00FF371D0001F700 FFDF2A1C00020001 00FD009380010000 7F2E6300010D00FF
+0540: FFCD3B0002FD00FF 373F0001F700FFDF 4CDC000200FF7F50 73000100FFFF2101
+0560: 801A000012C00000 0015636C0F4F7065 72C061746F724669 8938000002009E00
+0580: 010DFD00FF370D00 01F700FF1F018004 030013000000137C 636C790043425965
+05A0: 734E6F46206C6167 1E0000017A000002 F60400FF1F01800D 0300140000001106
+05C0: 635370696E530065 61736F6E59656188 721E000001009E00 010DFD00FF870180
+05E0: 3400080015000014 636C057053656C65 638146726F6D5461 91656C0000043D00
+0600: 010DFB00FF6F0D00 EE0100FFBF1AB900 0100FFFFE6270001 FE00FF6301800400
+0620: 80160000000D636C 2453656563496E10 746F1E00000100BD 0003FB00FF0F0180
+0640: 2E00810017000000 111B707461720074 50726F6772616D60 BA0000000700EF02
+0660: FE00FF9B040002FB 00FF6F0800EE0200 FFBF0CB100010D00 FFFFE6190003FE00
+0680: FF9B1D0002FB00FF 0F21000000EE0100 FF3F018000360000 0018000000C80F63
+06A0: 6C5374FF60EE0000 000900CF010DFE00 FF930D000001FB00 FF6F1A00EE0200FF
+06C0: BF1EB9000200FFFF E6220002FE00FF9B 260002FB00FF6F2A 00EE0200FFBF2EB9
+06E0: 000200FFFFE03200 000002FE00FF6301 800400C619001063 00546F6F6C546970
+0700: 5780696E646F771E 00E800010000DD03 00FF7F01CC800400 1AC0000C63665461
+0720: 3943611E00D10001 0000BB0300FFFF10 01801500001B0080 00000B6366436123
+0740: 506F6F5A00D00000 0300002307190000 01A00100DE080000 2780010000FFC604
+0760: 000304FE00FF1B08 00010DFB00FF0F
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				If strArgArray[0] = ''
+					Set SqlDatabase = 'STOCKDEV'
+					Set SqlUser = 'GRAHAM'
+					Set SqlPassword = 'GRAHAM'
+				Else
+					Set SqlDatabase = strArgArray[1]
+					Set SqlUser = strArgArray[2]
+					Set SqlPassword = strArgArray[3]
+					Set sCompany = strArgArray[4]
+				!
+				Call CheckProgramExistance( 'Deposits Used for period', TRUE )
+				!
+				Call SqlHandlesSetup(  )
+			On SAM_AppExit
+				Call SqlHandlesDisconnectClose(  )
+	Form Window: frmDepositsUsed
+		Class: clsFormChildTable
+		Property Template:
+		Class DLL Name:
+		Title: Deposits Used for period
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Automatically Created at Runtime? Yes
+			Initial State: Maximized
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   0.0"
+				Top:    0.0"
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+				Pushbutton: pbClearRows
+					Class Child Ref Key: 5
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbAddRows
+					Class Child Ref Key: 6
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbSaveRows
+					Class Child Ref Key: 7
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbQuery
+					Class Child Ref Key: 8
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbDeleteRows
+					Class Child Ref Key: 9
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbRePopulate
+					Class Child Ref Key: 11
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbTools
+					Class Child Ref Key: 23
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbHelp
+					Class Child Ref Key: 42
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbItemEnq
+					Class Child Ref Key: 43
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 44
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbExit
+					Class Child Ref Key: 45
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			!
+			Background Text: From
+				Resource Id: 56647
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   2.55"
+					Top:    0.323"
+					Width:  0.488"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text: To
+				Resource Id: 56648
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   4.988"
+					Top:    0.323"
+					Width:  0.3"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Data Field: dfStartDate
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Date/Time
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   3.113"
+						Top:    0.271"
+						Width:  1.738"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Center
+					Format: dd-MMM-yyyy
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfEndDate
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Date/Time
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   5.363"
+						Top:    0.271"
+						Width:  1.738"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Center
+					Format: dd-MMM-yyyy
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			!
+			Child Table: tblDeposits
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsTableGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left:   0.038"
+						Top:    0.781"
+						Width:  9.8"
+						Width Editable? Class Default
+						Height: 3.688"
+						Height Editable? Class Default
+					Visible? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					View: Class Default
+					Allow Row Sizing? Class Default
+					Lines Per Row: Class Default
+				Memory Settings
+					Maximum Rows in Memory: 10000
+					Discardable? Class Default
+				Contents
+					Column: colCustNo
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Cust.No.
+						Visible? Class Default
+						Editable? No
+						Maximum Data Length: Class Default
+						Data Type: Number
+						Justify: Class Default
+						Width:  0.813"
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colCustName
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Customer Name
+						Visible? Class Default
+						Editable? No
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  3.088"
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colDepAmtReqd
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Amt.Reqd
+						Visible? Class Default
+						Editable? No
+						Maximum Data Length: Class Default
+						Data Type: Number
+						Justify: Right
+						Width:  1.013"
+						Width Editable? Class Default
+						Format: Currency
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colDepAmtPaid
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Amt.Paid
+						Visible? Class Default
+						Editable? No
+						Maximum Data Length: Class Default
+						Data Type: Number
+						Justify: Right
+						Width:  1.063"
+						Width Editable? Class Default
+						Format: Currency
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colDepYearOfSale
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Year
+						Visible? Class Default
+						Editable? No
+						Maximum Data Length: Class Default
+						Data Type: Number
+						Justify: Center
+						Width:  0.5"
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colReferenceId
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Invoice.No.
+						Visible? Class Default
+						Editable? No
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Center
+						Width:  1.375"
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colDateApplied
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Applied Date
+						Visible? Class Default
+						Editable? No
+						Maximum Data Length: Class Default
+						Data Type: Date/Time
+						Justify: Center
+						Width:  1.363"
+						Width Editable? Class Default
+						Format: dd-MMM-yyyy
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+				Functions
+				Window Variables
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						! Set sSQLPopHandle = "SELECT 
+								  Deposit_History.Cust_No,
+								  Customer_Master.Cust_Name, 
+								  Deposit_History.DepHist_Amt_Reqd, 
+								  Deposit_History.DepHist_Amt_Paid, 
+								  Deposit_History.DepHist_Yr_Of_Sale, 
+								  Transaction.Reference_Id, 
+								  Cash_Application.Date_Applied
+								FROM 
+								  Deposit_History,
+								  Customer_Master, 
+								  Transaction, 
+								  Cash_Application
+								WHERE 
+								  Deposit_History.Cust_No = Customer_Master.Cust_No AND 
+								  Deposit_History.Trans_User_Id = Transaction.Trans_User_Id AND 
+								  Deposit_History.Trans_SysDateTime = Transaction.Trans_SysDateTime AND 
+								  Deposit_History.Trans_User_Id = Cash_Application.Trans_User_Id AND 
+								  Deposit_History.Trans_SysDateTime = Cash_Application.Trans_SysDateTime AND 
+								  Deposit_History.Receipt_User_Id = Cash_Application.Receipt_User_Id AND 
+								  Deposit_History.Rcpt_Sysdatetime = Cash_Application.Receipt_Sysdatetim AND
+								  Cash_Application.Date_Applied BETWEEN :1 AND :2 
+								UNION ALL 
+								SELECT 
+								  Deposit_History.Cust_No,
+								  Customer_Master.Cust_Name, 
+								  Deposit_History.DepHist_Amt_Reqd, 
+								  Deposit_History.DepHist_Amt_Paid, 
+								  Deposit_History.DepHist_Yr_Of_Sale, 
+								  Trans_History.Hist_Reference_Id, 
+								  Cash_Application.Date_Applied
+								FROM 
+								  Deposit_History,
+								  Customer_Master, 
+								  Trans_History, 
+								  Cash_Application
+								WHERE 
+								  Deposit_History.Cust_No = Customer_Master.Cust_No AND 
+								  Deposit_History.Trans_Hist_User_Id = Trans_History.Trans_Hist_User_Id AND 
+								  Deposit_History.Trans_Hist_SysDT = Trans_History.TrHist_Sysdatetime AND 
+								  Deposit_History.Trans_Hist_User_Id = Cash_Application.Trans_Hist_User_Id AND 
+								  Deposit_History.Trans_Hist_SysDT = Cash_Application.Trans_Hist_SysDate AND 
+								  Deposit_History.Receipt_User_Id = Cash_Application.Receipt_User_Id AND 
+								  Deposit_History.Rcpt_Sysdatetime = Cash_Application.Receipt_Sysdatetim AND
+								  Cash_Application.Date_Applied BETWEEN :1 AND :2
+								ORDER BY 2,1"
+						! Change to report on case of invoices having deposits used against them and making the invoice a CR
+						! Set sSQLPopHandle = "SELECT 
+										  Deposit_History.Cust_No,
+										  Customer_Master.Cust_Name, 
+										  Deposit_History.DepHist_Amt_Reqd, 
+										  Deposit_History.DepHist_Amt_Paid, 
+										  Deposit_History.DepHist_Yr_Of_Sale, 
+										  Transaction.Reference_Id, 
+										  Cash_Application.Date_Applied
+										FROM 
+										  Deposit_History,
+										  Customer_Master, 
+										  Transaction, 
+										  Cash_Application
+										WHERE 
+										  Deposit_History.Cust_No = Customer_Master.Cust_No AND 
+										  Deposit_History.Trans_User_Id = Transaction.Trans_User_Id AND 
+										  Deposit_History.Trans_SysDateTime = Transaction.Trans_SysDateTime AND 
+								                (
+										  Deposit_History.Trans_User_Id = Cash_Application.Trans_User_Id OR 
+								                  Deposit_History.Trans_User_Id = Cash_Application.Trans_User_Id_Cred 
+								                ) AND
+								                ( 
+										  Deposit_History.Trans_SysDateTime = Cash_Application.Trans_SysDateTime OR
+								                  Deposit_History.Trans_SysDateTime = Cash_Application.Trans_sysdate_Cred 
+								                ) AND 
+										  Deposit_History.Receipt_User_Id = Cash_Application.Receipt_User_Id AND 
+										  Deposit_History.Rcpt_Sysdatetime = Cash_Application.Receipt_Sysdatetim AND
+										  Cash_Application.Date_Applied BETWEEN :1 AND :2 
+										UNION ALL 
+										SELECT 
+										  Deposit_History.Cust_No,
+										  Customer_Master.Cust_Name, 
+										  Deposit_History.DepHist_Amt_Reqd, 
+										  Deposit_History.DepHist_Amt_Paid, 
+										  Deposit_History.DepHist_Yr_Of_Sale, 
+										  Trans_History.Hist_Reference_Id, 
+										  Cash_Application.Date_Applied
+										FROM 
+										  Deposit_History,
+										  Customer_Master, 
+										  Trans_History, 
+										  Cash_Application
+										WHERE 
+										  Deposit_History.Cust_No = Customer_Master.Cust_No AND 
+										  Deposit_History.Trans_Hist_User_Id = Trans_History.Trans_Hist_User_Id AND 
+										  Deposit_History.Trans_Hist_SysDT = Trans_History.TrHist_Sysdatetime AND 
+								                (
+										  Deposit_History.Trans_Hist_User_Id = Cash_Application.Trans_Hist_User_Id OR 
+								                  Deposit_History.Trans_Hist_User_Id = Cash_Application.Trans_H_UserCred 
+								                ) AND 
+										(
+								                  Deposit_History.Trans_Hist_SysDT = Cash_Application.Trans_Hist_SysDate OR 
+								                  Deposit_History.Trans_Hist_SysDT = Cash_Application.Trans_H_DateCred 
+								                ) AND 
+										  Deposit_History.Receipt_User_Id = Cash_Application.Receipt_User_Id AND 
+										  Deposit_History.Rcpt_Sysdatetime = Cash_Application.Receipt_Sysdatetim AND
+										  Cash_Application.Date_Applied BETWEEN :1 AND :2
+										ORDER BY 2,1"
+						! new command taken out the cash_application table.
+						Set sSQLPopHandle = "   SELECT 
+								      Deposit_History.Cust_No,
+								      Customer_Master.Cust_Name, 
+								      Deposit_History.DepHist_Amt_Reqd, 
+								      Deposit_History.DepHist_Amt_Paid, 
+								      Deposit_History.DepHist_Yr_Of_Sale, 
+								      Transaction.Reference_Id, 
+								      Transaction.Transaction_Date
+								    FROM 
+								      Deposit_History,
+								      Customer_Master, 
+								      Transaction
+								    WHERE 
+								      Deposit_History.Cust_No = Customer_Master.Cust_No AND 
+								      Deposit_History.Trans_User_Id = Transaction.Trans_User_Id AND 
+								      Deposit_History.Trans_SysDateTime = Transaction.Trans_SysDateTime AND 
+								      Transaction.Transaction_Date BETWEEN :1 AND :2 and
+								Transaction.Company = :3
+								    UNION ALL 
+								    SELECT 
+								      Deposit_History.Cust_No,
+								      Customer_Master.Cust_Name, 
+								      Deposit_History.DepHist_Amt_Reqd, 
+								      Deposit_History.DepHist_Amt_Paid, 
+								      Deposit_History.DepHist_Yr_Of_Sale, 
+								      Trans_History.Hist_Reference_Id, 
+								      Trans_History.Hist_Trans_Date
+								    FROM 
+								      Deposit_History,
+								      Customer_Master, 
+								      Trans_History
+								    WHERE 
+								      Deposit_History.Cust_No = Customer_Master.Cust_No AND 
+								      Deposit_History.Trans_Hist_User_Id = Trans_History.Trans_Hist_User_Id AND 
+								      Deposit_History.Trans_Hist_SysDT = Trans_History.TrHist_Sysdatetime AND 
+								      Trans_History.Hist_Trans_Date BETWEEN :1 AND :2  and
+								Trans_History.Hist_Company = :3
+								    ORDER BY 2,1 "
+						Set sNAMEPopHandle = 'DEPUSEDPERIOD'
+						Set sBINDPopHandle = ':frmDepositsUsed.dfStartDate, :frmDepositsUsed.dfEndDate, :sCompany'
+						Set sINTOPopHandle = ':frmDepositsUsed.tblDeposits.colCustNo, 
+								:frmDepositsUsed.tblDeposits.colCustName, 
+								:frmDepositsUsed.tblDeposits.colDepAmtReqd, 
+								:frmDepositsUsed.tblDeposits.colDepAmtPaid, 
+								:frmDepositsUsed.tblDeposits.colDepYearOfSale, 
+								:frmDepositsUsed.tblDeposits.colReferenceId,
+								:frmDepositsUsed.tblDeposits.colDateApplied'
+						!
+						Set bAddAllowed = FALSE
+						Set bSaveAllowed = FALSE
+						Set bDeleteAllowed = FALSE
+						Set bUnDeleteAllowed = FALSE
+						Set bRepopulateAllowed = TRUE
+						Set bClearSelectAllowed = TRUE
+						Set bQueryAllowed = FALSE
+						Set bReportAllowed = TRUE
+						Set bOrderAllowed = TRUE
+						!
+						Set bSelectFirstRow = FALSE
+						!
+						Set sReportFileName = OurGetIniFileParameter( 'ACCOUNTS', 'ReportsPath', '' )||'\\depsused1.qrp'
+						Set sRepBind = ':frmDepositsUsed.dfStartDate, 
+								:frmDepositsUsed.dfEndDate, 
+								:frmDepositsUsed.tblDeposits.colCustNo, 
+								:frmDepositsUsed.tblDeposits.colCustName, 
+								:frmDepositsUsed.tblDeposits.colDepAmtReqd, 
+								:frmDepositsUsed.tblDeposits.colDepAmtPaid, 
+								:frmDepositsUsed.tblDeposits.colDepYearOfSale, 
+								:frmDepositsUsed.tblDeposits.colReferenceId,
+								:frmDepositsUsed.tblDeposits.colDateApplied,
+								:sCompany'
+						Set sRepInto = 'DateFrom, DateTo, CustNo, CustName, AmtReqd, AmtPaid, YearOfSale, InvoiceNo, DateApplied, Company'
+						!
+						Set sTableHeading = 'Deposits Used For a Period'
+						!
+						Set nTableFillType = TBL_FillAll
+					On PAM_clsTBL_POPULATE
+						Set frmDepositsUsed.dfPaidTotal = 0
+						Return SalSendClassMessage( PAM_clsTBL_POPULATE, wParam, lParam )
+					On PAM_clsTBL_REPOPULATE
+						Return SalSendMsg( hWndForm, PAM_clsTBL_POPULATE, wParam, lParam )
+					On SAM_FetchRowDone
+						Set frmDepositsUsed.dfPaidTotal = frmDepositsUsed.dfPaidTotal + colDepAmtPaid
+						Return SalSendClassMessage( SAM_FetchRowDone, wParam, lParam )
+			!
+			Background Text: Paid Total
+				Resource Id: 61857
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   4.038"
+					Top:    4.583"
+					Width:  0.9"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Data Field: dfPaidTotal
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Number
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   4.988"
+						Top:    4.531"
+						Width:  1.3"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Right
+					Format: ###000;###000
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfDatabase
+				Class Child Ref Key: 46
+				Class ChildKey: 0
+				Class: clsFormChildTable
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfUser
+				Class Child Ref Key: 47
+				Class ChildKey: 0
+				Class: clsFormChildTable
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text:
+				Resource Id: 36133
+				Class Child Ref Key: 48
+				Class ChildKey: 0
+				Class: clsFormChildTable
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 49
+				Class ChildKey: 0
+				Class: clsFormChildTable
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+		Functions
+		Window Parameters
+		Window Variables
+			String: sCompany
+		Message Actions
+			On PAM_cls_SETINSTANCEVARS
+				Set hWndChildTable = tblDeposits
+				Set bAddAllowed = FALSE
+				Set bSaveAllowed = FALSE
+				Set bDeleteAllowed = FALSE
+				Set bUnDeleteAllowed = FALSE
+				Set bClearSelectAllowed = TRUE
+				Set bQueryAllowed = FALSE
+				Set bRepopulateAllowed = TRUE
+				Set bReportAllowed = TRUE
+				Set bOrderAllowed = FALSE
+				Set nPopOrQueryOnStartUp = TBL_cls_PopulateOnStartUp
+				!
+				Set dfStartDate = SalDateMonthBegin( SalDateCurrent(  ) )
+				Set dfEndDate = SalDateCurrent(  )
+				Call SalWaitCursor( FALSE )
+			On SAM_CreateComplete
+				If strArgArray[0] = ''
+					Set sCompany = 'F'
+				Else
+					Set sCompany = strArgArray[4]

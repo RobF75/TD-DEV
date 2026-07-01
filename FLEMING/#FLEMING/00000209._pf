@@ -1,0 +1,484 @@
+Application Description: SQLWindows 5.01 Jans Pots alphabetical by cultivar plan report
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF580000 0058000000E80200 0091010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.1"
+			Top:    2.906"
+			Width:  4.688"
+			Height: 2.979"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   7.413"
+			Top:    0.708"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: GENERAL.APL
+		File Include: FORM.APL
+		File Include: BUTTON.APL
+		File Include: DATFIELD.APL
+		File Include: BGTEXT.APL
+		File Include: GROUPBOX.APL
+		File Include: CHECKBOX.APL
+		File Include: TABLE.APL
+		File Include: SQLHANDL.APL
+		File Include: STRINGS.APL
+		File Include: METER.APL
+		File Include: STACKS.APL
+		File Include: VTMETER.APL
+		File Include: FLAGS.APL
+		File Include: DIALOG.APL
+		File Include: FRMCTBL.APL
+		File Include: QUERY.APL
+		File Include: CMBFIELD.APL
+		File Include: RADIOBTN.APL
+		File Include: SPNFIELD.APL
+		File Include: VTSPIN.APL
+		File Include: DATES.APL
+		File Include: PICK.APL
+		File Include: ACTIVATE.APL
+		File Include: RUNPROG.APL
+		File Include: VTWIN.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: None
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Blue
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for POTPLAND.APL
+				! Number: POTPLANDAplMsgOffSet = SAM_User + ?
+				! Message go up to AplMsgOffSet + 99
+				! Number: POTPLANDAplConstOffSet = ?
+				! Messages
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1600180317
+0000: 8600000038000000 0000000000000000 020000050000006A 000000E0040D0000
+0020: 00FF3F7700A00000 010D0000FFFFE084 00000001FE00FF83 9100000001FB00FF
+0040: 0F9E000000EE0100 FF3F
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 4118752950
+0000: BB10000051070000 0000000000000000 0200001C00FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F0D003C00 000C63006C736362
+0040: 47656E650072616C 1E00000001780000 0001F40D0000FF1F 0180332000000001
+0060: 00001104636C5462 6C51750065727944 69616C6F0067A000 00000600001E0003
+0080: 0400FC0000FF2704 000002F4040000FF 1F080000DC000200 FF7F0C6000000001
+00A0: 0D00FFFFC1190000 0001FD00FF072600 000001F700FF1F01 805D000000000200
+00C0: 000011E751750161 74614669656CD064 4401000C9E000204 FD00FF37040002F7
+00E0: 00FFDF08DC000200 FF7F0C73000200FF FF8110000000010D FD00FF071D000000
+0100: 01F700FF1F2A0000 1C0002000100FD00 8380010000007F2E 60000000010D00FF
+0120: FFC13B00000002FD 00FF073F00000001 F700FF1F4C0000DC 000200FF7F507000
+0140: 00000100FFFF3101 805D0003C0000000 12636C0F436F6D62 F86F4669DB0C00BB
+0160: 0200FFFFE6040002 FE00FF9B080002FB 00FF6F0C00EE0200 FFBF10B100010D00
+0180: FFFFE61D0001FE00 FF9B2A0002A30001 00007F80F2010000 6F2E00EC010D00FF
+01A0: BF3BB9000200FFFF E63F0001FE00FF9B 4C0002FB00FF6F50 00EE0100FF3F0180
+01C0: 665D000400FE123F 4361606368654401 0C7B0002F700FFDF 04DC000200FF7F08
+01E0: 73000200FFFFCD0C 0002FD00FF371000 01F60D00FFDF1DDC 000100FF7F2A7300
+0200: 0200F40100004F80 0100FE008D2E0001 0DFD00FF373B0002 F700FFDF3FDC0001
+0220: 00FF7F4C73000200 FFFFCD500001FD00 FF0701801A000000 000500000015636C
+0240: 3F4F700065726174 6F72466907380000 00027A000001F60D 00FF9F0D00DC0001
+0260: 00FF7F01C8800400 0006F00013636C01 7943425965734E80 6F466C61671E00E8
+0280: 00010000D9020400 FF7F0108800D0000 07000018000C6370 62478F616C1ED100
+02A0: 010000B3010D00FF FF90018038000008 E10009636C004865 6C7086000000F605
+02C0: 00EE0200FFBF04B1 00010D00FFFFE011 00000001FE00FF93 1E000001FB00FF0F
+02E0: 2B000000EE0100FF 3F0180060D000900 00003C0963457810 69741E000001003D
+0300: 00010DFB00FF8F01 800481000A000000 0C03506963457870 20616E641E000001
+0320: 7A000002F700FF1F 01800403000B0000 00123F546F006767 6C6542757474106F
+0340: 6E1E00000100BD00 02FB00FF0F0180B7 001000000C000016 63F26C4765015461
+0360: 626C6547651F3602 00E115000000D901 0D00FF7F0D730001 00FFFFC91A000001
+0380: FD00FF0727000000 01F700FF1F340000 DC000200FF7F3872 00000200FFFFC13C
+03A0: 00000002FD00FF07 4000000002F700FF 1F440000DC000200 FF7F487000000002
+03C0: 00FFFFCD4C0002FD 00FF375000024700 010000FFE4800100 001F540000180001
+03E0: 0D000100FD009380 0100007F58600000 00010D00FFFFC165 00000001FD00FF07
+0400: 7200000001F700FF 1F7F0000DC000100 FF7F8C7000000001 00FFFFC199000000
+0420: 01FD00FF07A60000 0001F700FF1FB300 00D800030400FF7F 01C080220000000D
+0440: D0001D636C54004D 616B6553656C6500 63746564526F774B 0065794172726179
+0460: 74B0000000040077 0200F40100004F80 0100FE008D040001 0DFD00FF37110001
+0480: F700FFDF1EDC0002 00FF7F010C800D00 0E00001800116353 7069006E53656173
+04A0: 6F6E59206561721E 0000017A000001F6 0D00FF1F01802B02 00000F0000001004
+04C0: 636C466F726D4260 617365546165606C 0000000400CF010D FE00FF9B0D0001FB
+04E0: 00FF6F1A00EE0100 FFBF27B9000200FF FF1801800D001000 01000B686353716C
+0500: 0848616E6C651E00 D100010000B3010D 00FFFF0001802F00 00001100E1000B63
+0520: 6C3F8600D9000500 B3010D00FFFFE60D 0002FE00FF1B1100 040DFA0000FF6F1E
+0540: 00EE0300FF3F2200 B9000100FFFF1801 800D001200E00000 17636C035072696E
+0560: 7442026169635265 706F1872741E0001 003D00010DFB00FF 0F01802E00010013
+0580: 00000011630B7053 746172007450726F 6772616D60BA0000 000700EF02FE00FF
+05A0: 9304000002FB00FF 6F0800EE0200FFBF 0CB100010D00FFFF E6190003FE00FF93
+05C0: 1D000002FB00FF0F 21000000EE0100FF 3F01800036000000 14000000C80F636C
+05E0: 5374FF40EE000000 090000CF010DFE00 FF9B0D0001FB00FF 6F1A00EE0200FFBF
+0600: 1EB9000200FFFFE6 220002FE00FF9B26 0002FB00FF6F2A00 EE0200FFBF2EB900
+0620: 0200FFFFE0320000 0002FE00FF630180 0400C615000C63F0 646647658C6C1E00
+0640: 0100DE0003FD00FF C701802F80001600 000010635944696F 473E658600D90005
+0660: 00B3010D00FFFFE6 0D0002FE00FF1311 0000040DFB00FF6F 1E00EE0300FFBF22
+0680: B9000100FFFF1001 803400001700A000 0014636C7021656C 65634672706F6D54
+06A0: 616CA20000040000 67010D00FFFFCD0D 0001FD00FF371A00 01F700FFDF27DC00
+06C0: 0100FF7F010C8004 0018000090000D63 6C5365046563496E 746F1EA200000100
+06E0: 00770300FFFF3101 8004001913000C66 5461E74361461E00 010000EF03FE00FF
+0700: 430180150000261A 000B66430E61506F 6F6C405A00000003 00008F0719008000
+0720: 0101006C08009E00 8001FC00001B0400 0304FB00FF6F0800 EC010D00FF3F0180
+0740: 0604001B0000008E 10546F6F00546970 57696E646F88771E 00000100DE0003FD
+0760: 00FF07
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				If strArgArray[0] = ''
+					Set SqlDatabase = 'STKLOCAL'
+					Set SqlUser = 'JAN'
+					Set SqlPassword = 'JAN'
+				Else
+					Set SqlDatabase = strArgArray[1]
+					Set SqlUser = strArgArray[2]
+					Set SqlPassword = strArgArray[3]
+				!
+				Call CheckProgramExistance( 'Pots Alpha Report', TRUE )
+				!
+				Call SqlHandlesSetup(  )
+			On SAM_AppExit
+				Call SqlHandlesDisconnectClose(  )
+	Form Window: frmPotsAlpha
+		Class: clsFormPrintBasicReport
+		Property Template:
+		Class DLL Name:
+		Title: Pots Alpha Report
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Automatically Created at Runtime? Yes
+			Initial State: Class Default
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   0.0"
+				Top:    0.0"
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+		Contents
+		Functions
+		Window Parameters
+		Window Variables
+			Number: nYear
+			! REPORT COLUMNS
+			String: sVarietyType
+			String: sUpperVariety
+			String: sUpperCultDesc
+			String: sUpperRootDesc
+			String: sVariety
+			String: sTreeTypeDesc
+			String: sCultDesc
+			String: sRootDesc
+			String: sFarmName
+			Number: nRowNo
+			Number: nSeqNo
+			Number: nBudCount
+			Number: nFirstCount
+			Number: nSecondCount
+			Number: nForwardOrders
+			Date/Time: dtEstSaleDate
+			String: sNotForSale
+		Message Actions
+			On PAM_cls_SETINSTANCEVARS
+				Set sReportFileNameNoPath = 'PotsAlpha3.qrp'
+				Set sReportBind = ':frmPotsAlpha.sVarietyType, 
+						  :frmPotsAlpha.sUpperVariety, 
+						  :frmPotsAlpha.sUpperCultDesc, 
+						  :frmPotsAlpha.sUpperRootDesc, 
+						  :frmPotsAlpha.sVariety, 
+						  :frmPotsAlpha.sTreeTypeDesc, 
+						  :frmPotsAlpha.sCultDesc, 
+						  :frmPotsAlpha.sRootDesc, 
+						  :frmPotsAlpha.sFarmName, 
+						  :frmPotsAlpha.nRowNo, 
+						  :frmPotsAlpha.nSeqNo, 
+						  :frmPotsAlpha.nBudCount, 
+						  :frmPotsAlpha.nFirstCount, 
+						  :frmPotsAlpha.nSecondCount, 
+						  :frmPotsAlpha.nForwardOrders, 
+						  :frmPotsAlpha.dtEstSaleDate, 
+						  :frmPotsAlpha.sNotForSale'
+				Set sReportInto = 'sVarietyType, 
+						  sUpperVariety, 
+						  sUpperCultDesc, 
+						  sUpperRootDesc, 
+						  sVariety, 
+						  sTreeTypeDesc, 
+						  sCultDesc, 
+						  sRootDesc
+						  sFarmName, 
+						  nRowNo, 
+						  nSeqNo, 
+						  nBudCount, 
+						  nFirstCount, 
+						  nSecondCount, 
+						  nForwardOrders, 
+						  dtEstSaleDate, 
+						  sNotForSale'
+				Set sReportType = 'VIEW'
+				!
+				Set sReportSql = "SELECT 
+						  Stock_Item.Variety_Type, 
+						  @UPPER( Stock_Item.Variety ), 
+						  @UPPER( Stock_Item.Cult_Desc ), 
+						  @UPPER( Stock_Item.Root_Desc ), 
+						  Stock_Item.Variety, 
+						  Stock_Item.Tree_Type_Desc, 
+						  Stock_Item.Cult_Desc, 
+						  Stock_Item.Root_Desc, 
+						  Location.Farm_Name, 
+						  Location.Row#, 
+						  Location.Seq#, 
+						  Growing_Sale.Beg_Count, 
+						  Growing_Sale.First_Count, 
+						  Growing_Sale.Second_Count, 
+						  Growing_Sale.Forward_Orders, 
+						  Growing_Sale.Est_Sale_Date, 
+						  Growing_Sale.Not_For_Sale 
+						FROM 
+						  Stock_Item, 
+						  Growing_Sale, 
+						  Location 
+						INTO 
+						  :frmPotsAlpha.sVarietyType, 
+						  :frmPotsAlpha.sUpperVariety, 
+						  :frmPotsAlpha.sUpperCultDesc, 
+						  :frmPotsAlpha.sUpperRootDesc, 
+						  :frmPotsAlpha.sVariety, 
+						  :frmPotsAlpha.sTreeTypeDesc, 
+						  :frmPotsAlpha.sCultDesc, 
+						  :frmPotsAlpha.sRootDesc, 
+						  :frmPotsAlpha.sFarmName, 
+						  :frmPotsAlpha.nRowNo, 
+						  :frmPotsAlpha.nSeqNo, 
+						  :frmPotsAlpha.nBudCount, 
+						  :frmPotsAlpha.nFirstCount, 
+						  :frmPotsAlpha.nSecondCount, 
+						  :frmPotsAlpha.nForwardOrders, 
+						  :frmPotsAlpha.dtEstSaleDate, 
+						  :frmPotsAlpha.sNotForSale 
+						WHERE 
+						  Stock_Item.Item_No = Growing_Sale.Stock_Item_No AND 
+						  Stock_Item.Stock_Type = 'C' AND  
+						  Growing_Sale.Year_Of_Sale >= :frmPotsAlpha.nYear AND 
+						  Growing_Sale.Location_Id = Location.Location_Id AND 
+						  Location.Farm_Name LIKE 'C%' 
+						ORDER BY 
+						  1,2,3,4,6,9,10,11 "
+			On PAM_clsFRM_REPORTSTART
+				Set nYear = WhichSeasonYear( SalDateCurrent(  ) )
+				Return TRUE

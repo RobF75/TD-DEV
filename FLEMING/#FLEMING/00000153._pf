@@ -1,0 +1,706 @@
+.head 0 +  Application Description: SQLWindows 5.01 Jans Cultivar Royalties Load App
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF420000 0042000000D20200 007B010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.data DT_MAKERUNDLG
+0000: 00000000001D4B3A 5C43454E54555241 5C464C454D444556 5C4376726F79642E
+0020: 6578651D4B3A5C43 454E545552415C46 4C454D4445565C43 76726F79642E646C
+0040: 6C1D4B3A5C43454E 545552415C464C45 4D4445565C437672 6F79642E61706300
+0060: 000101011D4B3A5C 43454E545552415C 464C454D4445565C 4376726F79642E72
+0080: 756E1D4B3A5C4345 4E545552415C464C 454D4445565C4376 726F79642E646C6C
+00A0: 1D4B3A5C43454E54 5552415C464C454D 4445565C4376726F 79642E6170630000
+00C0: 0101011D4B3A5C43 454E545552415C46 4C454D4445565C43 76726F79642E6170
+00E0: 641D4B3A5C43454E 545552415C464C45 4D4445565C437672 6F79642E646C6C1D
+0100: 4B3A5C43454E5455 52415C464C454D44 45565C4376726F79 642E617063000001
+0120: 01011D4B3A5C4345 4E545552415C464C 454D4445565C4376 726F79642E61706C
+0140: 1D4B3A5C43454E54 5552415C464C454D 4445565C4376726F 79642E646C6C1D4B
+0160: 3A5C43454E545552 415C464C454D4445 565C4376726F7964 2E61706300000101
+0180: 01
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left:   0.15"
+.head 3 -  Top:    0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? No
+.head 3 -  Left:   5.1"
+.head 3 -  Top:    3.365"
+.head 3 -  Width:  4.688"
+.head 3 -  Height: 2.521"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   Default
+.head 3 -  Top:    Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   6.6"
+.head 3 -  Top:    0.521"
+.head 2 -  Fully Qualified External References? No
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: GENERAL.APL
+.head 2 -  File Include: FRMCTBL.APL
+.head 2 -  File Include: FORM.APL
+.head 2 -  File Include: BUTTON.APL
+.head 2 -  File Include: DATFIELD.APL
+.head 2 -  File Include: TABLE.APL
+.head 2 -  File Include: SQLHANDL.APL
+.head 2 -  File Include: STRINGS.APL
+.head 2 -  File Include: METER.APL
+.head 2 -  File Include: STACKS.APL
+.head 2 -  File Include: VTMETER.APL
+.head 2 -  File Include: FLAGS.APL
+.head 2 -  File Include: DIALOG.APL
+.head 2 -  File Include: CHECKBOX.APL
+.head 2 -  File Include: RADIOBTN.APL
+.head 2 -  File Include: BGTEXT.APL
+.head 2 -  File Include: GROUPBOX.APL
+.head 2 -  File Include: QUERY.APL
+.head 2 -  File Include: CMBFIELD.APL
+.head 2 -  File Include: ROYOWNRD.APL
+.head 2 -  File Include: PICK.APL
+.head 2 -  File Include: ACTIVATE.APL
+.head 2 -  File Include: OPATENTS.APL
+.head 2 -  File Include: ITEMFUNC.APL
+.head 2 -  File Include: SPNFIELD.APL
+.head 2 -  File Include: VTSPIN.APL
+.head 2 -  File Include: DATES.APL
+.head 2 -  File Include: RUNPROG.APL
+.head 2 -  File Include: CULTROY.APL
+.head 2 -  File Include: VTWIN.APL
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: None
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for CVROYD.APP
+.head 4 -  ! No messages allocated
+.head 4 -  ! Number: CVROYDAplMsgOffSet = SAM_User + 0
+.head 4 -  ! Message go up to AplMsgOffSet + 99
+.head 4 -  ! Number: CVROYDAplConstOffSet = 1
+.head 4 -  ! Messages
+.head 4 -  !
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 3514287849
+0000: 80050000DD010000 0000000000000000 020000360000004C 000000E0010D0000
+0020: 00FF3F5900B80000 0100FFFFE0660000 0001FE00FF837300 000001FB00FF0F80
+0040: 000000EE0100FFBF 8DB800000100FFFF E09A00000001FE00 FF83A700000001FB
+0060: 00FF0FB4000000E0 0204000000FF3FB8 00B800000200FFFF E0BC00000001FE00
+0080: FF83C900000001FB 00FF0FD6000000EE 0100FF3FE300B800 000100FFFF80F000
+00A0: 0000030400FE00FF 83F400000002FB00 FF0FF8000000EE01 00FF3F0501BA0001
+00C0: 00FFFFE812010001 FE00FFA31F010002 FB00FF8F230100EE 0200FF3F2701BA00
+00E0: 0200FFFFE82B0100 01FE00FFA3380100 02FB00FF8F3C0100 EE0200FF3F4001BA
+0100: 000100FFFFE84D01 0001FE00FFA35A01 0001FB00FF8F6701 00EE0100FF3F7401
+0120: BA000300FFFFE878 010002FE00FFA37C 010001FB00FF8F89 0100EE0100FF3F96
+0140: 01BA000100FFFFE8 A3010002FE00FFA3 A7010002FB00FF8F AB0100EE0200FF3F
+0160: AF01BA000100FFFF E8BC010002FE00FF A3C0010002FB00FF 8FC40100EE0100FF
+0180: 3FD101BA000100FF FFE8DE010001FE00 FFA3EB010001FB00 FF8FF80100EE0300
+01A0: FF3FFC01BA000200 FFFFE102000001FE 00FFA30D020001FB 00FF8F1A0200EE01
+01C0: 00FF3F2702B20002 0400FFFFE82B0200 02FE00FFA32F0200 02FB00FF8F330200
+01E0: EE0100FF3F4002A2 00040D0000FFFF
+.enddata
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 3209070527
+0000: 6B1000005B070000 0000000000000000 0200001E00FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2B003C00 001063006C73466F
+0040: 726D426100736554 61626C656C800000 000400000007010D 000000FFFFC90D00
+0060: 0001FD00FF071A00 000001F700FF1F27 0000D00002040000 FF7F0100802F0000
+0080: 00010000F0000B63 6C1F860000E00005 000000D9010D00FF 7F0D73000200FFFF
+00A0: 0111000000040D00 FD00FF171E000003 F4040000FF1F2200 00DC000100FF7F01
+00C0: 08800D0000020000 F00017636C015072 696E744261016963 5265706F7288741E
+00E0: 000001009E00010D FD00FFC701800D00 00030000000C636C 01706247656E6572
+0100: 10616C1E00000100 3D00010DFB00FF8F 01800D1100040000 09630E6C45786974
+0120: 461E00010000CF01 0DFE00FF43018004 0000E605000C0050 6963457870616E88
+0140: 641E000001009E00 0204FD00FFC70180 0400000600000012 636C0F546F676700
+0160: 6C65427574746F6E 441E0000010000EF 02FE00FF63018004 00E0070000000CF0
+0180: 646647658F000100 9E000304FD00FF87 0180220000000800 00001D636C015462
+01A0: 6C4D616B65005365 6C65637465640052 6F774B6579417200 7261797400000004
+01C0: 7B00024700010000 FFE08001000000DF 04D800010D00FF7F 1173000100FFFFCD
+01E0: 1E0002FD00FF0701 80B7000000000900 00000F636C1B6165 47650F6C360200E1
+0200: 15000000D9010D00 FF7F0D73000100FF FFCD1A0001FD00FF 37270001F700FF1F
+0220: 340000DC000200FF 7F38700000000200 FFFFC13C00000002 FD00FF0740000000
+0240: 02F700FF1F440000 DC000200FF7F4870 0000000200FFFFC1 4C00000002FD00FF
+0260: 0750000000024700 010000FFE4800100 001F540000180001 0D000100FD009380
+0280: 0100007F58600000 00010D00FFFFC165 00000001FD00FF07 7200000001F700FF
+02A0: 1F7F0000DC000100 FF7F8C7000000001 00FFFFC199000000 01FD00FF07A60000
+02C0: 0001F700FF1FB300 00DC000300FF7F01 0C800D000A000000 000B686353716C48
+02E0: 84616E6C651E00E8 00010000D9010D00 FF7F010C802F000B 00001C0010446961
+0300: E06C6F6747659386 0000053D00010DFB 00FF6F0D00EE0200 FFBF11B100040D00
+0320: FFFFE61E0003FE00 FF9B220001FB00FF 8F01800D01000C00 00000C63E3636247
+0340: 371E00017A000001 F60D00FF1F018033 300000000D001124 636C546251756065
+0360: 727944696FC1A000 000006DE0003FD00 FF2704000002F700 FFDF08DC000200FF
+0380: 7F0C620000010D00 FFFFC11900000001 FD00FF0726000000 01F700FF1F01805D
+03A0: 000000000E000000 11E7517501617461 4669656CD0644401 000CDE0002FD00FF
+03C0: 37040002F700FFDF 08DC000200FF7F0C 73000200FFFF8110 000000010DFD00FF
+03E0: 071D00000001F700 FF1F2A00001C0002 000100FD00938001 00007F2E60000000
+0400: 010D00FFFFC13B00 000002FD00FF073F 00000001F700FFDF 4CDC000200FF7F50
+0420: 73000100FFFF3101 805D000FF0000000 120F436F6D62F86F 4669DB0C00BB0200
+0440: FFFFE6040002FE00 FF9B080002FB00FF 6F0C00EE0200FFBF 10B100010D00FFFF
+0460: E61D0001FE00FF9B 2A0002A300010000 7F80F20100006F2E 00EC010D00FFBF3B
+0480: B9000200FFFFE63F 0001FE00FF9B4C00 02FB00FF6F5000EE 0100FF3F0180665D
+04A0: 001000FE123F4361 6063686544010C7B 0002F700FFDF04DC 000200FF7F087300
+04C0: 0200FFFFCD0C0002 FD00FF37100001F6 0D00FFDF1DDC0001 00FF7F2A73000200
+04E0: F40100004F800100 FE008D2E00010DFD 00FF373B0002F700 FFDF3FDC000100FF
+0500: 7F4C73000200FFFF CD500001FD00FF87 01801A0008001100 0015636C3F4F7000
+0520: 657261746F724669 27380000027A0000 01F60D00FFDF0DDC 000100FF7F010C80
+0540: 0400120000F00013 636C017943425965 734E806F466C6167 1E00E800010000D9
+0560: 020400FF7F010880 0800001300005000 0E636C7052406F79 4F776E6573443800
+0580: 00020000CF0204FE 00FF9B040003FB00 FF2F013400010014 00000014634E6C53
+05A0: 6565026346726F6D 546123656C000004 7B0001F60D00FFDF 0DDC000100FF7F1A
+05C0: 73000100FFFFCD27 0001FD00FFC70180 0408001500000D63 6C49536565634920
+05E0: 6E746F1E0000017A 000003F700FF1F01 8008130016000012 9663704F77075061
+0600: 74656E1874733800 02003D000204FB00 FF6F0400EE0300FF BF01060D00170000
+0620: 000C11635370696E 00536561736F6E59 651061721E000001 003D00010DFB00FF
+0640: 0F01802E00810018 000000110B705374 6172007450726F67 72616D60BA000000
+0660: 0700EF02FE00FF9B 040002FB00FF6F08 00EE0200FFBF0CB1 00010D00FFFFE619
+0680: 0003FE00FF9B1D00 02FB00FF0F210000 00EE0100FF3F0180 66040019000C1063
+06A0: 546F6F6C00546970 57696E646F88771E 00000100DE0003FD 00FFC70180040C00
+06C0: 1A000C63669C5461 43611B1E000100BD 0003FB00FF0F0180 150001001B000000
+06E0: 0B6338664361506F 026F5A0000000300 3D00071902000001 0100240B7A000080
+0700: F20100006F0400EC 030400FFBF08B100 010D00FFFF100180 1100001C00980000
+0720: 0B41723179506F40 00D1000200002307 15000001A2013C0B 00002780010000FF
+0740: C60400010DFE00FF 6301800800E61D00 12027043756C7452 6F7F38B300020067
+0760: 020400FFFFCD0400 03FD00FF07
+.enddata
+.head 3 +  Pushbutton Class: clspbStartCultRoyOwners
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:  
+.head 5 -  Top:   
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? No
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clspbCultRoyOwners
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Call SalPostMsg( hWndItem, SAM_Click, 0, 0 )
+.head 6 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 5 +  On PAM_cls_SETFIELDS
+.head 6 -  Call SetCultRoyOwnerFields( strArgArray[4], strArgArray[5], strArgArray[6] )
+.head 6 -  Return TRUE
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Check Box:
+.head 3 -  Option Button:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text:
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 +  Application Actions
+.head 3 +  On SAM_AppStartup
+.head 4 +  If strArgArray[0] = ''
+.head 5 -  Set SqlDatabase = 'STOCKDEV'
+.head 5 -  Set SqlUser = 'JAN'
+.head 5 -  Set SqlPassword = 'JAN'
+.head 4 +  Else
+.head 5 -  Set SqlDatabase = strArgArray[1]
+.head 5 -  Set SqlUser = strArgArray[2]
+.head 5 -  Set SqlPassword = strArgArray[3]
+.head 4 -  !
+.head 4 -  ! strArgArray[4] = CULT_ID
+.head 4 -  ! strArgArray[5] = CULT_DESC
+.head 4 -  ! strArgArray[6] = CULT_IDS FILE
+.head 4 -  ! Set strArgArray[4] = ''
+.head 4 -  ! Set strArgArray[5] = ''
+.head 4 -  ! Set strArgArray[6] = 'C:\\TEMP\\CULTIDS.TMP'
+.head 4 -  !
+.head 4 -  Call CheckProgramExistance( 'Cultivar Royalty Owners', TRUE )
+.head 4 -  !
+.head 4 -  Call SqlHandlesSetup(  )
+.head 3 +  On SAM_AppExit
+.head 4 -  Call SqlHandlesDisconnectClose(  )
+.head 1 +  Form Window: frmAppStartUp
+.head 2 -  Class: clsFormAppStartUp
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title:
+.head 2 -  Icon File:
+.data RESOURCE 2 0 1 680073935
+0000: FE020000C8010000 0000000000000000 0200A20001000120 081000010400E802
+0020: 0000001600000028 0000000020000000 4000380000010000 A380020000FFFF8F
+0040: 8000000300808000 8000680000808080 0D008000C0C080C0 000000FF00000300
+0060: FFFF00FF00680000 FFFFFF4D00FF0000 FF3F08883C888880 8884888800000008
+0080: FD8897000008BD88 809588000008FD88 97000008BD888092 8088000008FD8896
+00A0: 80000008BD8880D0 8008880000FFE1F0 000000F2088888E8 80F00000F0080000
+00C0: 00EC80F00060080F FFFFFFF0EC80F000 6E08FFF0E9FF0000 2E08FF8FF0EE8000
+00E0: AE08FF8FEF000E08 FF8F8FF0D3F00000 4E08FF8F00D800FF F0000E08FF8000FF
+0100: D8FFFFF0009E080F FFA0FF0FFFF00000 7608FFFF40F0FFFF FFF00000A4080000
+0120: FFFF72000FFF008C 0888FFFF0F48F0FF F0FF0000970FFFFF 950F0FF000B6000F
+0140: FF9EFFF00096000F FFFFD70FF036000F FFF099FFFFF000AE 00FF0F520FF0FF00
+0160: 002FFFF00057FF00 002F0FFFFF660FFF F0005F0FF0A2FFFF F000007FFFE9FF00
+0180: 00FF3F800000003F 0000001F0000CC00 1F001FCC001F001F 0C001F001F800091
+01A0: 3FF000FFF0FFF17F F000DF3F1F1FF000 1107F00003F00031 01F000F800E00000
+01C0: FFC0007FE0700001 FFE0F00103FFF800 07FFFE00001FFFFF C0FF
+.enddata
+.head 2 -  Accesories Enabled? Class Default
+.head 2 -  Visible? Class Default
+.head 2 -  Display Settings
+.head 3 -  Display Style? Class Default
+.head 3 -  Visible at Design time? No
+.head 3 -  Automatically Created at Runtime? Class Default
+.head 3 -  Initial State: Class Default
+.head 3 -  Maximizable? Class Default
+.head 3 -  Minimizable? Class Default
+.head 3 -  System Menu? Class Default
+.head 3 -  Resizable? Class Default
+.head 3 -  Window Location and Size
+.head 4 -  Left:   Default
+.head 4 -  Top:    Default
+.head 4 -  Width:  Class Default
+.head 4 -  Width Editable? Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Height Editable? Class Default
+.head 3 -  Form Size
+.head 4 -  Width:  Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Number of Pages: Class Default
+.head 3 -  Font Name: Class Default
+.head 3 -  Font Size: Class Default
+.head 3 -  Font Enhancement: Class Default
+.head 3 -  Text Color: Class Default
+.head 3 -  Background Color: Class Default
+.head 2 -  Description:
+.head 2 -  Named Menus
+.head 2 -  Menu
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Class Default
+.head 4 -  Location? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Size: Class Default
+.head 4 -  Size Editable? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Contents
+.head 4 +  Pushbutton: pbHelp
+.head 5 -  Class Child Ref Key: 5
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormAppStartUp
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbItemEnq
+.head 5 -  Class Child Ref Key: 6
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormAppStartUp
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbPrintForm
+.head 5 -  Class Child Ref Key: 7
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormAppStartUp
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbExit
+.head 5 -  Class Child Ref Key: 8
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormAppStartUp
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 2 +  Contents
+.head 3 +  Pushbutton: pbCultRoyOwners
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clspbStartCultRoyOwners
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Default
+.head 5 -  Top:    Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfDatabase
+.head 4 -  Class Child Ref Key: 1
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormAppStartUp
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfUser
+.head 4 -  Class Child Ref Key: 2
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormAppStartUp
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 -  Background Text:
+.head 4 -  Resource Id: 53179
+.head 4 -  Class Child Ref Key: 3
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormAppStartUp
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Custom Control: ccSeasonYear
+.head 4 -  Class Child Ref Key: 4
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormAppStartUp
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  DLL Name:
+.head 5 -  MS Windows Class Name:
+.head 5 -  Style:  Class Default
+.head 5 -  ExStyle:  Class Default
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Etched Border? Class Default
+.head 5 -  Hollow? Class Default
+.head 5 -  Vertical Scroll? Class Default
+.head 5 -  Horizontal Scroll? Class Default
+.head 5 -  Tab Stop? Class Default
+.head 5 -  Tile To Parent? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  DLL Settings
+.head 4 -  Message Actions
+.head 2 -  Functions
+.head 2 -  Window Parameters
+.head 2 -  Window Variables
+.head 2 -  Message Actions

@@ -1,0 +1,647 @@
+Application Description: Jans Centura  Builder Barcode Label Printer Queue application
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000050100 002C000000000000 0001000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF000000 0000000000140300 009F010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Normal
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600040003002D00 0000000000000000 0000B71E5D0E0500 1D00FFFF4D61696E
+0020: 0000000000000000 0000000000000000 0000003B00010000 00000000000000E9
+0040: 1E800A00008600FF FF496E7465726E61 6C2046756E637469 6F6E730000000000
+0060: 0000000000000000 0000000000003200 0100000000000000 0000E91E800A0000
+0080: DF00FFFF56617269 61626C6573000000 0000000000000000 0000000000000000
+00A0: 3000010000000000 00000000F51E100D 0000F400FFFF436C 6173736573000000
+00C0: 0000000000000000 0000000000000000
+.enddata
+.data VIEWSIZE
+0000: D000
+.enddata
+			Left:   -0.013"
+			Top:    0.0"
+			Width:  8.013"
+			Height: 4.969"
+		Options Box Location
+.data VIEWINFO
+0000: 0418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   4.15"
+			Top:    1.885"
+			Width:  3.8"
+			Height: 2.073"
+		Class Editor Location
+			Visible? No
+			Left:   0.575"
+			Top:    0.094"
+			Width:  5.063"
+			Height: 2.719"
+		Tool Palette Location
+			Visible? No
+			Left:   6.388"
+			Top:    0.729"
+		Fully Qualified External References? Yes
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? Yes
+		Use Release 4.0 Scope Rules? No
+	Libraries
+		File Include: vtdos.apl
+		File Include: vtfile.apl
+		File Include: Table.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Line
+				Line Color: Use Parent
+			Frame
+				Border Color: Use Parent
+				Background Color: 3D Face Color
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0'%'
+			Number: #0
+			Number: ###000
+			Number: ###000;'($'###000')'
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+			Number: ###0
+			Date/Time: hh:mm d/M/yy
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1347615921
+0000: 8600000038000000 0000000000000000 020000050000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E8040D0000 FF3F
+.enddata
+		Internal Functions
+		Named Menus
+		Class Definitions
+.data RESOURCE 0 0 1 3142753399
+0000: A60A00000D050000 0000000000000000 0200001500FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666FB7003C00 001663006C734765
+0040: 6E657261006C5461 626C6547651F3602 00E400150000C101 0D000000FF7F0D72
+0060: 00000100FFFFC11A 00000001FD00FF07 2700000001F700FF 1F340000C0000204
+0080: 000000FF7F387000 00000200FFFFC13C 00000002FD00FF07 4000000002F700FF
+00A0: 1F440000DC000200 FF7F487000000002 00FFFFC14C000000 02FD00FF07500000
+00C0: 0002070001000000 FFE080010000001F 5400001800010D00 0100FD0093800100
+00E0: 007F586000000001 0D00FFFFC1650000 0001FD00FF077200 000001F700FF1F7F
+0100: 0000DC000100FF7F 8C700000000100FF FFC19900000001FD 00FF07A600000001
+0120: F700FF1FB30000D0 0003040000FF7F01 8080220000000100 10001D636C54626C
+0140: 004D616B6553656C 650063746564526F 774B006579417272 617974A000000004
+0160: 0000770200F60100 4F800100FE008D04 00010DFD00FF0711 00000001F700FF1F
+0180: 1E0000DC000200FF 7F0188800D000002 0010000C636C7062 471E656C1E00D100
+01A0: 010000B3010D00FF FF10018038000003 00E0000009636C00 48656C7086000000
+01C0: F005000000EC0204 00FFBF04B100010D 00FFFFE6110001FE 00FF9B1E0001FB00
+01E0: FF0F2B000000EE01 00FF3F0180660D00 04003E0945781069 741E000001003D00
+0200: 010DFB00FF0F0180 0400990005000C03 5069634578702061 6E641E0000017A00
+0220: 0002F700FF1F0180 0403000600000012 3C636C546F006767 6C6542757474106F
+0240: 6E1E00000100BD00 02FB00FF8F018004 8100070000000C18 6654616543612063
+0260: 68651E0000017A00 0003F60400FF1F01 8015020000080000 000B706366436150
+0280: 006F6F6C5A000000 037A000007001900 00000101001CF404 0000E480010000DF
+02A0: 04D800030400FF7F 086300010D00FFFF 3101800400095000 00000C6C64F86647
+02C0: 654700010000EF03 FE00FF0301802F00 0000A00A0000000B 6C00466F726D4261
+02E0: 7365648600000500 CF010DFE00FF9B0D 0002FB00FF6F1100 E8040D0000FFBF1E
+0300: B9000300FFFFE422 000001FE00FF6301 800D00800B000000 17636C0F5072696E
+0320: 0874426169635265 60706F72741E00F4 010000EC010D00FF 3F0180060D000C00
+0340: 0000000B68635371 6C4861626E6C651E 00F4010000EC010D 00FF3F0180662F00
+0360: 0D000810636C4469 616CF06F674765C9 860000059E00010D FD00FF370D0002F7
+0380: 00FFDF11DC000400 FF7F1E73000300FF FFCD220001FD00FF 0701802E00000000
+03A0: 0E00000011636C05 7053746172740050 726F6772616DBAA0 0000000700007702
+03C0: 00FFFFC904000002 FD00FF37080002F7 00FFDF0CD800010D 00FF7F1972000003
+03E0: 00FFFFC11D000000 02FD00FF07210000 0001F700FF1F0180 36000000000F0000
+0400: 000FE4636C53747F EEB0000000090067 010D00FFFFCD0D00 01FD00FF371A0002
+0420: F700FFDF1EDC0002 00FF7F2273000200 FFFFC12600000002 FD00FF072A000000
+0440: 02F700FF9F2E00DC 000200FF7F327000 00000200FFFF3101 800D0010F0000000
+0460: 110070696E536561 736F806E59656172 1E00E800010000D9 010D00FF7F018C80
+0480: 0400110018001063 546F6F0154697057 696E64106F771E00 000100BD0003FB00
+04A0: FF0F018034000100 1200000014631A6C 70656C6502634672 6F6D5461076C0000
+04C0: 00047B0001F60D00 FFDF0DDC000100FF 7F1A73000100FFFF CD270001FD00FFC7
+04E0: 0180040000130000 000D636C49536565 6349206E746F1E00 00017A000003F700
+0500: FF1F01800D030014 0000000CC6636362 47676C1E00F40100 00EC010D00FF3F
+.enddata
+		Default Classes
+			MDI Window: cBaseMDI
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Option Button:
+			Check Box:
+			Child Table:
+			Quest Child Window: cQuickDatabase
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				Call CheckProgramExistance( 'Barcode Label Printer Queue', FALSE )
+	Table Window: tblBCLabelQueue
+		Class:
+		Property Template:
+		Class DLL Name:
+		Title: Barcode Label Printer Queue
+		Icon File:
+		Accesories Enabled? Yes
+		Visible? Yes
+		Display Settings
+			Visible at Design time? Yes
+			Automatically Created at Runtime? Yes
+			Initial State: Normal
+			Maximizable? Yes
+			Minimizable? Yes
+			System Menu? Yes
+			Resizable? Yes
+			Window Location and Size
+				Left:   0.825"
+				Top:    0.688"
+				Width:  9.383"
+				Width Editable? Yes
+				Height: 2.214"
+				Height Editable? Yes
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Default
+			View: Table
+			Allow Row Sizing? No
+			Lines Per Row: Default
+		Memory Settings
+			Maximum Rows in Memory: Default
+			Discardable? No
+		Description:
+		Named Menus
+		Menu
+			Popup Menu: &Printer
+				Resource Id: 59631
+				Enabled when:
+				Status Text:
+				Menu Item Name:
+			Popup Menu: &Document
+				Resource Id: 59632
+				Enabled when:
+				Status Text:
+				Menu Item Name:
+				Menu Item: &Resume Printing
+					Resource Id: 59633
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Call TableLoop( hWndForm, hWndForm, PAM_clsTBL_ROWACTION, 1, ROW_Selected, 0, 'Resuming Printing', TBL_cls_LowToHi )
+						Call SalSendMsg( hWndForm, PAM_clsTBL_POPULATE, 0, 0 )
+					Menu Item Name:
+				Menu Item: &Cancel Printing
+					Resource Id: 59634
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Call TableLoop( hWndForm, hWndForm, PAM_clsTBL_ROWACTION, 2, ROW_Selected, 0, 'Resuming Printing', TBL_cls_LowToHi )
+						Call SalSendMsg( hWndForm, PAM_clsTBL_POPULATE, 0, 0 )
+					Menu Item Name:
+			Popup Menu: &View
+				Resource Id: 59635
+				Enabled when:
+				Status Text:
+				Menu Item Name:
+				Menu Item: Refresh
+					Resource Id: 45041
+					Keyboard Accelerator: F5
+					Status Text:
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendValidateMsg(  )
+						Call SalSendMsg( hWndForm, PAM_clsTBL_POPULATE, 0, 0 )
+					Menu Item Name:
+			Popup Menu: &Help
+				Resource Id: 59636
+				Enabled when:
+				Status Text:
+				Menu Item Name:
+		Tool Bar
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? No
+				Size: Default
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Contents
+		Contents
+			Column: colExtractedNumber
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Extracted No.
+				Visible? No
+				Editable? No
+				Maximum Data Length: Default
+				Data Type: Number
+				Justify: Left
+				Width:  Default
+				Width Editable? Yes
+				Format: Unformatted
+				Country: Default
+				Input Mask: Unformatted
+				Cell Options
+					Cell Type? Standard
+					Multiline Cell? No
+					Cell DropDownList
+						Sorted? Yes
+						Vertical Scroll? Yes
+						Auto Drop Down? No
+						Allow Text Editing? Yes
+					Cell CheckBox
+						Check Value:
+						Uncheck Value:
+						Ignore Case? Yes
+				List Values
+				Message Actions
+			Column: colNoPathFileName
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title:
+				Visible? No
+				Editable? No
+				Maximum Data Length: Default
+				Data Type: String
+				Justify: Left
+				Width:  5.9"
+				Width Editable? Yes
+				Format: Unformatted
+				Country: Default
+				Input Mask: Unformatted
+				Cell Options
+					Cell Type? Standard
+					Multiline Cell? No
+					Cell DropDownList
+						Sorted? Yes
+						Vertical Scroll? Yes
+						Auto Drop Down? No
+						Allow Text Editing? Yes
+					Cell CheckBox
+						Check Value:
+						Uncheck Value:
+						Ignore Case? Yes
+				List Values
+				Message Actions
+			Column: colFullPathFileName
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Document Name
+				Visible? Yes
+				Editable? No
+				Maximum Data Length: Default
+				Data Type: String
+				Justify: Left
+				Width:  5.333"
+				Width Editable? Yes
+				Format: Unformatted
+				Country: Default
+				Input Mask: Unformatted
+				Cell Options
+					Cell Type? Standard
+					Multiline Cell? No
+					Cell DropDownList
+						Sorted? Yes
+						Vertical Scroll? Yes
+						Auto Drop Down? No
+						Allow Text Editing? Yes
+					Cell CheckBox
+						Check Value:
+						Uncheck Value:
+						Ignore Case? Yes
+				List Values
+				Message Actions
+			Column: colStatus
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Status
+				Visible? Yes
+				Editable? No
+				Maximum Data Length: Default
+				Data Type: String
+				Justify: Left
+				Width:  0.8"
+				Width Editable? Yes
+				Format: Unformatted
+				Country: Default
+				Input Mask: Unformatted
+				Cell Options
+					Cell Type? Standard
+					Multiline Cell? No
+					Cell DropDownList
+						Sorted? Yes
+						Vertical Scroll? Yes
+						Auto Drop Down? No
+						Allow Text Editing? Yes
+					Cell CheckBox
+						Check Value:
+						Uncheck Value:
+						Ignore Case? Yes
+				List Values
+				Message Actions
+			Column: colSize
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Size
+				Visible? Yes
+				Editable? No
+				Maximum Data Length: Default
+				Data Type: Number
+				Justify: Right
+				Width:  Default
+				Width Editable? Yes
+				Format: ###0
+				Country: Default
+				Input Mask: Unformatted
+				Cell Options
+					Cell Type? Standard
+					Multiline Cell? No
+					Cell DropDownList
+						Sorted? Yes
+						Vertical Scroll? Yes
+						Auto Drop Down? No
+						Allow Text Editing? Yes
+					Cell CheckBox
+						Check Value:
+						Uncheck Value:
+						Ignore Case? Yes
+				List Values
+				Message Actions
+			Column: colGeneratedAt
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Generated At
+				Visible? Yes
+				Editable? No
+				Maximum Data Length: Default
+				Data Type: Date/Time
+				Justify: Left
+				Width:  1.333"
+				Width Editable? Yes
+				Format: hh:mm d/M/yy
+				Country: Default
+				Input Mask: Unformatted
+				Cell Options
+					Cell Type? Standard
+					Multiline Cell? No
+					Cell DropDownList
+						Sorted? Yes
+						Vertical Scroll? Yes
+						Auto Drop Down? No
+						Allow Text Editing? Yes
+					Cell CheckBox
+						Check Value:
+						Uncheck Value:
+						Ignore Case? Yes
+				List Values
+				Message Actions
+		Functions
+			Function: ExtractFileNumber
+				Description:
+				Returns
+					Number:
+				Parameters
+					String: sBCFileName
+				Static Variables
+				Local variables
+					String: sNum
+					String: sChar
+					Number: nPos
+				Actions
+					Set sNum = ''
+					Set nPos = SalStrLength( sBCFileName ) - 1
+					While nPos >= 0
+						Set sChar = SalStrMidX( sBCFileName, nPos, 1 )
+						If sChar = '0' OR 
+								sChar = '1' OR 
+								sChar = '2' OR 
+								sChar = '3' OR 
+								sChar = '4' OR 
+								sChar = '5' OR 
+								sChar = '6' OR 
+								sChar = '7' OR 
+								sChar = '8' OR 
+								sChar = '9'
+							Set sNum = sChar || sNum
+						Set nPos = nPos - 1
+					If sNum = ''
+						Return 0
+					Else
+						Return SalStrToNumber( sNum )
+		Window Parameters
+		Window Variables
+			Boolean: bStarted
+			Number: nNumQueueFiles
+			String: sQueuePath
+			String: saQueuelFiles[*]
+			Number: naQueueSizes[*]
+			Date/Time: dtaQueueTimeStamps[*]
+			Number: naQueueAttributes[*]
+			!
+			Number: nPos
+			Number: nRow
+			!
+			String: sTmp
+		Message Actions
+			On SAM_CreateComplete
+				Call SalTblSetTableFlags( hWndForm, TBL_Flag_SuppressRowLines, TRUE )
+				Call SalTblSetTableFlags( hWndForm, TBL_Flag_SuppressLastColLine, TRUE )
+				Call SalSendMsg( hWndForm, PAM_clsTBL_POPULATE, 0, 0 )
+			On PAM_clsTBL_POPULATE
+				Call SalTblReset( hWndForm )
+				Set sQueuePath = OurGetIniFileParameter( 'GENERAL', 'BCLabelsPath', 'C:\TEMP' )
+				Set nNumQueueFiles = VisDosEnumFileInfo( sQueuePath || '\\*.bcl', FA_Standard, saQueuelFiles, naQueueSizes, dtaQueueTimeStamps, naQueueAttributes )
+				Set nPos = 0
+				While nPos < nNumQueueFiles
+					Set nRow = SalTblInsertRow( hWndForm, TBL_MaxRow )
+					Call SalTblSetContext( hWndForm, nRow )
+					Call SalTblSetRowFlags( hWndForm, nRow, ROW_HideMarks, TRUE )
+					!
+					Set colFullPathFileName = SalStrLowerX( sQueuePath || '\\' || saQueuelFiles[ nPos ] )
+					Set colNoPathFileName = saQueuelFiles[ nPos ]
+					Set colStatus = 'Paused'
+					Set colSize = naQueueSizes[ nPos ]
+					Set colGeneratedAt = dtaQueueTimeStamps[ nPos ]
+					!
+					Set colExtractedNumber = ExtractFileNumber( colNoPathFileName )
+					!
+					Set nPos = nPos + 1
+				!
+				Call SalTblSortRows( hWndForm, 1, TBL_SortIncreasing )
+				!
+				If nNumQueueFiles < 0
+					Set nNumQueueFiles = 0
+				Call SalStatusSetText( hWndForm, SalNumberToStrX( nNumQueueFiles, 0 )||' jobs in queue' )
+				Set bStarted = TRUE
+			On PAM_clsTBL_ROWACTION
+				If wParam = 1
+					Set sTmp = OurGetIniFileParameter( 'GENERAL', 'NPrint', 'C:\\TEMP' )||' '||colFullPathFileName||' q=barcode nb nt nff'
+					Call WinExec( sTmp, 0 )
+					Call SalPause( 1200 )
+				Set sTmp = OurGetIniFileParameter( 'GENERAL', 'TempStoragePath', 'C:\\TEMP' )||'\\'||colNoPathFileName
+				If VisFileCopy( colFullPathFileName, sTmp )
+					Call VisFileDelete( colFullPathFileName )
+				Return TRUE

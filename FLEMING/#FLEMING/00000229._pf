@@ -1,0 +1,1431 @@
+Application Description: SQLWindows 5.01 Jans class Regions Customers report application
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 00000000007B0000 002C000000020000 0003000000000000 008B010000FCFFFF
+0040: FFE9FFFFFF000000 0000000000140300 009F010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 00001027F5140500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 0418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.113"
+			Top:    2.885"
+			Width:  4.675"
+			Height: 2.969"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   8.15"
+			Top:    0.469"
+		Fully Qualified External References? Yes
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: GENERAL.APL
+		File Include: FORM.APL
+		File Include: BUTTON.APL
+		File Include: DATFIELD.APL
+		File Include: SPNFIELD.APL
+		File Include: BGTEXT.APL
+		File Include: RADIOBTN.APL
+		File Include: CHECKBOX.APL
+		File Include: GROUPBOX.APL
+		File Include: TABLE.APL
+		File Include: PICK.APL
+		File Include: VTSPIN.APL
+		File Include: SQLHANDL.APL
+		File Include: STRINGS.APL
+		File Include: METER.APL
+		File Include: STACKS.APL
+		File Include: VTMETER.APL
+		File Include: FLAGS.APL
+		File Include: DIALOG.APL
+		File Include: ACTIVATE.APL
+		File Include: DATES.APL
+		File Include: FRMCTBL.APL
+		File Include: QUERY.APL
+		File Include: CMBFIELD.APL
+		File Include: STCKITMQ.APL
+		File Include: DLGCTBL.APL
+		File Include: ITEMFUNC.APL
+		File Include: RUNPROG.APL
+		File Include: VTWIN.APL
+		File Include: LISTBOX.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: None
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Blue
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for PRTREGIONCUST.APP
+				Number: PRTREGIONCUSTAppMsgOffSet = SAM_User + 8700
+				Number: PAM_clsREGCUST_GETSELREGIDS = PRTREGIONCUSTAppMsgOffSet + 1
+				Number: PAM_clsPRTREGIONCUST_GETSELECTED = PRTREGIONCUSTAppMsgOffSet + 2
+				! Message go up to AppOffSet + 99
+				Number: PRTREGIONCUSTAppConstOffSet = 5800
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 2113721276
+0000: CE050000F5010000 0000000000000000 020000390000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E8040D0000 FF3FAB00B8000001 00FFFFE0B8000000 01FE00FF83C50000
+0060: 0001FB00FF0FD200 0000EE0100FF3FDF 0080000002040000 00FFFFE0E3000000
+0080: 02FE00FF83E70000 0001FB00FF0FF400 0000EE0100FF3F01 01B400000D00FFFF
+00A0: E80E010001FE00FF 231B01000304FA00 00FF8F1F0100EE02 00FF3F2301BA0001
+00C0: 00FFFFE830010001 FE00FFA33D010001 FB00FF8F4A0100EE 0200FF3F4E01BA00
+00E0: 0200FFFFE8520100 02FE00FFA3560100 01FB00FF8F630100 EE0100FF3F7001BA
+0100: 000200FFFFE87401 0002FE00FFA37801 0001FB00FF8F8501 00EE0100FF3F9201
+0120: BA000100FFFFE89F 010001FE00FFA3AC 010003FB00FF8FB0 0100EE0200FF3FB4
+0140: 01BA000100FFFFE8 C1010001FE00FFA3 CE010001FB00FF8F DB0100EE0200FF3F
+0160: DF01BA000200FFFF E8E3010002FE00FF A3E7010001FB00FF 8FF40100EE0100FF
+0180: 3F0102B800000200 FFFFE805020002FE 00FF23090200010D FB00FF8F160200EE
+01A0: 0100FF3F2302BA00 0100FFFFE8300200 01FE00FFA33D0200 03FB00FF8F410200
+01C0: EE0200FF3F4502BA 000100FFFFE85202 0001FE00FFA35F02 0001FB00FF8F6C02
+01E0: 00EE0200FF3F7002 BA000200FFFFE874 020002FE00FFA378 020001FB00FF8F85
+0200: 0200EE0100FF3F
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 2935609365
+0000: CC12000031080000 0000000000000000 0200002100FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F0D003C00 000C63006C737062
+0040: 47656E650072616C 1E00000001780000 0001F40D0000FF1F 0180382000000001
+0060: 0000091C636C4865 6C00708600000005 00001E00020400FC 0000FF2704000001
+0080: F60D00FF1F110000 DC000100FF7F1E72 00000100FFFFC12B 00000001FD00FF87
+00A0: 01800D00C0000200 0000090745786974 1EA2000001000067 010D00FFFF210180
+00C0: 0400000370000000 0C50006963457870 616E64441E000001 0000CF0204FE00FF
+00E0: 6301800400860400 12636C07546F6767 6C0065427574746F 6E1EA20000010000
+0100: 770200FFFF310180 04000573000C64F8 6647654700010000 8F030400FE00FF63
+0120: 01800D0080060000 0011636C00537069 6E53656173006F6E 596561721E00D100
+0140: 010000B3010D00FF FF10018011000007 003800000C63627E 4738A20000020000
+0160: 67010D00FFFF890D 00000204FD00FF07 0180B70000000008 00000016636CF947
+0180: 65805461626C6547 658F360200F01500 0000EC010D00FFBF 0DB9000100FFFFE0
+01A0: 1A00000001FE00FF 832700000001FB00 FF0F34000000EE02 00FF3F3800B90002
+01C0: 00FFFFE03C000000 02FE00FF83400000 0002FB00FF0F4400 0000EE0200FF3F48
+01E0: 00B800000200FFFF E04C00000002FE00 FF835000000002A3 000100007F80F001
+0200: 0000000F54000000 8C010D000100FE00 C9800100003F5800 B00000010D00FFFF
+0220: E06500000001FE00 FF837200000001FB 00FF0F7F000000EE 0100FF3F8C00B800
+0240: 000100FFFFE09900 000001FE00FF83A6 00000001FB00FF0F B3000000EE0300FF
+0260: 3F01800022000000 09000000081D636C 54626C4D00616B65 53656C6563007465
+0280: 64526F774B650079 41727261797400D8 000004003B020001 FA00002780010000
+02A0: FFC60400010DFE00 FF9311000001FB00 FF6F1E00EE0200FF 3F01800611000A00
+02C0: 00000810636C436F 6C75F06D6E47658C 6C380002009E0002 04FD00FF37040001
+02E0: F60D00FF1F018034 0200000B00000014 94636C7053650746 726F6D540661656C
+0300: 000000F60400EC01 0D00FFBF0DB90001 00FFFFE61A0001FE 00FF9B270001FB00
+0320: FF8F01800401000C 0000000D63926C53 65656340496E746F 1E0000F4010000EE
+0340: 0300FF3F0180402F 0000000D00000E10 4469616CF06F6747 65C9860000059E00
+0360: 010DFD00FF370D00 02F700FFDF11D000 040D0000FF7F1E73 000300FFFFC92200
+0380: 0001FD00FF870180 2B00C0000E000000 1001466F726D4261 73386554616C00D1
+03A0: 00040000B3010D00 FFFFE60D0001FE00 FF9B1A0001FB00FF 6F2700EE0200FF3F
+03C0: 018000330000000F 0000006C11635451 C075657279446982 6FA000000006BD00
+03E0: 03FB00FF6F0400EE 0200FFBF08B90002 00FFFFC60C00010D FE00FF8319000000
+0400: 01FB00FF0F260000 00EE0100FF3F0180 005D000000100000 00CE115175036174
+0420: 61466965A06C6444 01000CBD0002FB00 FF6F0400EE0200FF BF08B9000200FFFF
+0440: E60C0002FE00FF1B 1000010DFB00FF0F 1D000000EE0100FF 3F2A003800000200
+0460: 01FA000027800100 00FFC02E00000001 0DFE00FF833B0000 0002FB00FF0F3F00
+0480: 0000EE0100FFBF4C B9000200FFFFE650 0001FE00FF630180 5D00E4110000121F
+04A0: 436F6DF0626F4669 B70C00770200FFFF CD040002FD00FF37 080002F700FFDF0C
+04C0: DC000200FF7F1063 00010D00FFFFCD1D 0001FD00FF372A00 024700010000FFE4
+04E0: 80010000DF2ED800 010D00FF7F3B7300 0200FFFFCD3F0001 FD00FF374C0002F7
+0500: 00FFDF50DC000100 FF7F010C805D0012 0000F80012637F43 C0616368654401F6
+0520: 0C00EE0200FFBF04 B9000200FFFFE608 0002FE00FF9B0C00 02FB00FF6F1000EC
+0540: 010D00FFBF1DB900 0100FFFFE62A0002 E8000100009F8001 FC00001B2E00010D
+0560: FB00FF6F3B00EE02 00FFBF3FB9000100 FFFFE64C0002FE00 FF9B500001FB00FF
+0580: 0F01801A00010013 00000015637E6C4F 0070657261746F72 464E69380000F402
+05A0: 0000EC010D00FFBF 0DB9000100FFFF18 018004001400E000 0013636C03794342
+05C0: 596573004E6F466C 61671E00D1000100 00B3020400FFFF10 01801500001500A1
+05E0: 000F636C7001746F 636B497465006D73 520000000300BD00 02FB00FF6F0400EC
+0600: 010D00FFBF11B100 030400FFFF180180 15001600F8000012 005768656E417661
+0620: 69886C6162655200 E800030000DD0200 FF7F046300010D00 FFFF8D11000304FD
+0640: 00FFC701800DC000 170000001201646C 6751515374FF441E 0000010000CF010D
+0660: FE00FF6301800400 C0180000001563E0 66726D5175FC5374 1F000100BD0002FB
+0680: 00FF0F01801E0099 00190013FB448043 68696C6454611F00 03003D00010DFB00
+06A0: FF6F0D00EE0100FF BF1AB9000200FFFF 9001802E00001AB1 0011637002536172
+06C0: 7450726F00677261 6DBA000000F60700 EE0200FFBF04B900 0200FFFFE6080002
+06E0: FE00FF1B0C00010D FB00FF6F1900EC03 0400FFBF1DB90002 00FFFFE221000001
+0700: FE00FF0301803600 0000E01B0000000F FC53740FEE000000 F60900EC010D00FF
+0720: BF0DB9000100FFFF E61A0002FE00FF9B 1E0002FB00FF6F22 00EE0200FFBF26B9
+0740: 000200FFFFE62A00 02FE00FF9B2E0002 FB00FF0F32000000 EE0200FF3F018006
+0760: 04001C0000000C10 63546F6F6C005469 7057696E646F8877 1E00000100DE0003
+0780: FD00FFC70180040C 001D000C63669C54 614361131E000001 00BD0003FB00FF8F
+07A0: 01801519001E000B 6338664361506F02 6F5A00000003003D 0007190200000101
+07C0: 00080C7A000080F2 0100006F0400EC03 0400FF3F0800B100 010D00FFFF180180
+07E0: 2F001F00A800000B 6C46396D428600D9 000500B3010D00FF FFE60D0002FE00FF
+0800: 13110000040DFB00 FF6F1E00EE0300FF BF22B9000100FFFF 1801800D002000E0
+0820: 000017636C035072 696E744202616963 5265706F1872741E 0001003D00010DFB
+0840: 00FF0F
+.enddata
+			! Child Table Class: clsTableGenWithSelCol
+.winattr
+				Display Settings
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  1.2"
+						Width Editable? Yes
+						Height: 0.833"
+						Height Editable? Yes
+					Visible? Yes
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Dark Blue
+					Background Color: Default
+					View: Table
+					Allow Row Sizing? No
+					Lines Per Row: Default
+				Memory Settings
+					Maximum Rows in Memory: Default
+					Discardable? Yes
+				Next Class Child Key: 1
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+.end
+				   Description: 
+				   Derived From 
+					   Class: clsTableGeneral
+				   Contents 
+					   Column: colSelected
+						   List Values 
+						   Message Actions 
+							   On SAM_Validate
+								   If MyValue = 'Y'
+									   Call SalTblSetRowFlags( hWndForm, lParam, nSelectedRowFlag, TRUE )
+								   Else 
+									   Call SalTblSetRowFlags( hWndForm, lParam, nSelectedRowFlag, FALSE )
+								   Return VALIDATE_Ok
+							   On PAM_clsTBL_ROWACTION
+								   If wParam
+									   Set MyValue = 'Y'
+									   Call SalTblSetRowFlags( hWndForm, lParam, nSelectedRowFlag, TRUE )
+								   Else 
+									   Set MyValue = 'N'
+									   Call SalTblSetRowFlags( hWndForm, lParam, nSelectedRowFlag, FALSE )
+								   Call SalSetFieldEdit( hWndItem, TRUE )
+								   Return TRUE
+				   Class Variables 
+				   Instance Variables 
+					   Number: nSelectedRowFlag
+					   Boolean: bHideMarks
+				   Functions 
+					   Function: SetSelectedForTable
+						   Description: 
+						   Returns 
+							   Boolean: 
+						   Parameters 
+							   Number: nFlagsOn
+							   Number: nFlagsOff
+							   Boolean: bSelected
+						   Static Variables 
+						   Local variables 
+						   Actions 
+							   Return TableLoop( hWndForm, colSelected, PAM_clsTBL_ROWACTION, bSelected, nFlagsOn, nFlagsOff, 'Setting Selected', TBL_cls_LowToHi )
+				   Message Actions 
+					   On SAM_Create
+						   Set nSelectedRowFlag = ROW_UnusedFlag1
+						   Set bHideMarks = TRUE
+						   Return SalSendClassMessage( SAM_Create, wParam, lParam )
+					   On SAM_FetchRowDone
+						   Call SalTblSetRowFlags( hWndForm, lParam, ROW_HideMarks, bHideMarks )
+						   Return SalSendClassMessage( SAM_FetchRowDone, wParam, lParam )
+			!
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton: clspbGeneral
+			Radio Button: clsrbGeneral
+			Check Box: clscbGeneral
+			Option Button:
+			Child Table: clsTableGeneral
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text: clsBackTextGeneral
+			Group Box: clsgbGeneral
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				If strArgArray[0] = ''
+					Set SqlDatabase = 'STKLOCAL'
+					Set SqlUser = 'JAN'
+					Set SqlPassword = 'JAN'
+				Else
+					Set SqlDatabase = strArgArray[1]
+					Set SqlUser = strArgArray[2]
+					Set SqlPassword = strArgArray[3]
+				!
+				Call CheckProgramExistance( 'Print Customers in Regions Report', TRUE )
+				!
+				Call SqlHandlesSetup(  )
+			On SAM_AppExit
+				Call SqlHandlesDisconnectClose(  )
+	Form Window: frmRegionsCustomers
+		Class: clsFormGeneral
+		Property Template:
+		Class DLL Name:
+		Title: Print Customers in Regions Report
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Automatically Created at Runtime? Yes
+			Initial State: Class Default
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   0.0"
+				Top:    0.0"
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+				Pushbutton: pbReport
+					Class Child Ref Key: 0
+					Class ChildKey: 0
+					Class: clspbGeneral
+					Property Template:
+					Class DLL Name:
+					Title: Report
+					Window Location and Size
+						Left:   4.45"
+						Top:    0.0"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name: C:\CENTURA\ICONS\LETTERS.BMP
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+						On PAM_clsPB_CLICK
+							If rbGardenCentres
+								Set sCustType = 'GARDENCENTRES'
+							Else If rbOrchardists
+								Set sCustType = 'ORCHARDISTS'
+							Else
+								Set sCustType = 'ANY'
+							!
+							If rbSelectedRegions
+								Set sRegionType = 'SELECTED'
+								If SalSendMsg( tblSelectedRegions, PAM_clsREGCUST_GETSELREGIDS, 0, 0 )
+									Call PopString( sSelectedRegionIdList, TRUE )
+								Else
+									Call SalMessageBox( 'Please select some Regions by placing a tick in the Selected column first, or choose All.', 'Warning', MB_Ok )
+									Return FALSE
+							Else
+								Set sRegionType = 'ALL'
+							!
+							If rbView
+								Set sReportType = 'VIEW'
+							Else
+								Set sReportType = 'PRINT'
+							!
+							If hWndReport = hWndNULL
+								Set hWndReport = SalCreateWindow( frmPrintRegionsCust, hWndForm, sSelectedRegionIdList, 
+										ccSeasonYear.GetSeasonYear( ), sRegionType, sCustType, sReportType )
+								Return TRUE
+							Else
+								Call SalMessageBox( 'Please close down your first report!', 'Warning', MB_Ok )
+								Return FALSE
+				Pushbutton: pbHelp
+					Class Child Ref Key: 1
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbItemEnq
+					Class Child Ref Key: 5
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbExit
+					Class Child Ref Key: 2
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 6
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			Group Box: Regions Type
+				Resource Id: 9336
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsgbGeneral
+				Window Location and Size
+					Left:   6.113"
+					Top:    0.365"
+					Width:  1.513"
+					Width Editable? Class Default
+					Height: 1.156"
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Radio Button: rbAllRegions
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: All
+				Window Location and Size
+					Left:   6.388"
+					Top:    0.74"
+					Width:  0.575"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+			Radio Button: rbSelectedRegions
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Selected
+				Window Location and Size
+					Left:   6.388"
+					Top:    0.99"
+					Width:  1.05"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_clsRB_CLICK
+						If tblSelectedRegions.bPopulated
+							Return TRUE
+						Else
+							Return SalSendMsg( tblSelectedRegions, PAM_clsTBL_POPULATE, 0, 0 )
+			!
+			Group Box: Selected Regions
+				Resource Id: 9337
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsgbGeneral
+				Window Location and Size
+					Left:   2.213"
+					Top:    1.667"
+					Width:  5.425"
+					Width Editable? Class Default
+					Height: 3.063"
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Pushbutton: pbClearSelectedItems
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbTblClearRows
+				Property Template:
+				Class DLL Name:
+				Title:
+				Window Location and Size
+					Left:   2.313"
+					Top:    1.906"
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbClearSelectedItems.hWndTable = tblSelectedRegions
+			Pushbutton: pbSelectAll
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Select      All
+				Window Location and Size
+					Left:   6.013"
+					Top:    1.906"
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbSelectAll.bDoubleLineTitle = TRUE
+					On PAM_clsPB_CLICK
+						Return tblSelectedRegions.SetSelectedForTable( 0, 0, TRUE )
+			Pushbutton: pbUnSelectAll
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Unsel.      All
+				Window Location and Size
+					Left:   6.625"
+					Top:    1.906"
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbUnSelectAll.bDoubleLineTitle = TRUE
+					On PAM_clsPB_CLICK
+						Return tblSelectedRegions.SetSelectedForTable( 0, 0, FALSE )
+			Child Table: tblSelectedRegions
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsTableGenWithSelCol
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left:   2.313"
+						Top:    2.552"
+						Width:  5.188"
+						Width Editable? Class Default
+						Height: 2.104"
+						Height Editable? Class Default
+					Visible? Class Default
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					View: Class Default
+					Allow Row Sizing? Class Default
+					Lines Per Row: Class Default
+				Memory Settings
+					Maximum Rows in Memory: Class Default
+					Discardable? Class Default
+				Contents
+					Column: colRegionId
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: RegionId
+						Visible? No
+						Editable? No
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  1.017"
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colRegionDesc
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Region Description
+						Visible? Class Default
+						Editable? No
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  5.4"
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colSelected
+						Class Child Ref Key: 1
+						Class ChildKey: 0
+						Class: clsTableGenWithSelCol
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+				Functions
+				Window Variables
+					String: sTmp
+					Number: nTmp
+					String: sRegionIdList
+					Boolean: bPopulated
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set sSQLPopHandle = " SELECT 
+								  Region.Region_Id, 
+								  Region.Region_Desc 
+								FROM 
+								  Region 
+								ORDER BY 
+								  Region.Region_Desc "
+						Set sNAMEPopHandle = 'POPSELREGS'
+						Set sBINDPopHandle = ''
+						Set sINTOPopHandle = ':frmRegionsCustomers.tblSelectedRegions.colRegionId,
+								  :frmRegionsCustomers.tblSelectedRegions.colRegionDesc'
+						!
+						Set bAddAllowed = TRUE
+						Set bPopulated = FALSE
+					On PAM_clsTBL_POPULATE
+						Set bPopulated = TRUE
+						Return SalSendClassMessage( PAM_clsTBL_POPULATE, wParam, lParam )
+					On PAM_clsREGCUST_GETSELREGIDS
+						Set sRegionIdList = ''
+						If TableLoop( hWndForm, hWndForm, PAM_clsPRTREGIONCUST_GETSELECTED, 0, ROW_UnusedFlag1, 0, 'Extracting Selected Regions', TBL_cls_LowToHi )
+							If sRegionIdList = ''
+								Return FALSE
+							Else
+								Call PushString( sRegionIdList )
+								Return TRUE
+						Else
+							Return FALSE
+					On PAM_clsPRTREGIONCUST_GETSELECTED
+						If sRegionIdList = ''
+							Set sRegionIdList = "'" || sRegionIdList || "'"
+						Else
+							Set sRegionIdList = sRegionIdList || ', ' || "'" || colRegionId || "'"
+						Return TRUE
+			!
+			Group Box: Report Types
+				Resource Id: 9338
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsgbGeneral
+				Window Location and Size
+					Left:   2.213"
+					Top:    0.365"
+					Width:  1.775"
+					Width Editable? Class Default
+					Height: 1.146"
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Radio Button: rbView
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: View then Print
+				Window Location and Size
+					Left:   2.325"
+					Top:    0.74"
+					Width:  1.538"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+			Radio Button: rbPrint
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Print Only
+				Window Location and Size
+					Left:   2.325"
+					Top:    0.99"
+					Width:  1.138"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+			!
+			Group Box: Customer Type
+				Resource Id: 8227
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsgbGeneral
+				Window Location and Size
+					Left:   4.138"
+					Top:    0.365"
+					Width:  1.838"
+					Width Editable? Class Default
+					Height: 1.156"
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Radio Button: rbGardenCentres
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Garden Centres
+				Window Location and Size
+					Left:   4.288"
+					Top:    0.625"
+					Width:  1.538"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+			Radio Button: rbOrchardists
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Orchardists
+				Window Location and Size
+					Left:   4.288"
+					Top:    0.875"
+					Width:  1.25"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+			Radio Button: rbAnyCustTye
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Any
+				Window Location and Size
+					Left:   4.288"
+					Top:    1.125"
+					Width:  0.613"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+			!
+			Data Field: dfDatabase
+				Class Child Ref Key: 3
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfUser
+				Class Child Ref Key: 4
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text:
+				Resource Id: 15618
+				Class Child Ref Key: 8
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 7
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+		Functions
+		Window Parameters
+		Window Variables
+			String: sSelectedRegionIdList
+			String: sRegionType
+			String: sCustType
+			String: sReportType
+			Window Handle: hWndReport
+		Message Actions
+			On SAM_Create
+				Set rbPrint = FALSE
+				Set rbAllRegions = TRUE
+				Set hWndReport = hWndNULL
+				Return SalSendClassMessage( SAM_Create, wParam, lParam )
+			On PAM_clsFRM_REPORTCLOSED
+				Set hWndReport = hWndNULL
+				Return TRUE
+	Form Window: frmPrintRegionsCust
+		Class: clsFormPrintBasicReport
+		Property Template:
+		Class DLL Name:
+		Title:
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? Yes
+			Automatically Created at Runtime? Class Default
+			Initial State: Class Default
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   Default
+				Top:    Default
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+		Contents
+		Functions
+		Window Parameters
+			! sSelectedRegionIdList is a comma separated list of item numbers
+			String: sSelectedRegionIdList
+			Number: nYear
+			! sRegionType = 'SELECTED' OR 'ALL'
+			String: sRegionType
+			! sCustType = 'GARDENCENTRES' OR 'ORCHARDISTS' OR 'ANY'
+			String: sCustType
+			! sReportPrintOrView = 'VIEW' OR 'PRINT'
+			String: sReportPrintOrView
+		Window Variables
+			! REPORT FIELDS
+			Number: nCustNo
+			String: sCustName
+			String: sRegionId
+			String: sRegionDesc
+		Message Actions
+			On PAM_cls_SETINSTANCEVARS
+				Set sReportFileNameNoPath = 'PrtRegCust.qrp'
+				!
+				Set sReportBind = ':frmPrintRegionsCust.nCustNo, 
+						  :frmPrintRegionsCust.sCustName, 
+						  :frmPrintRegionsCust.sRegionId, 
+						  :frmPrintRegionsCust.sRegionDesc'
+				Set sReportInto = 'nCustNo, 
+						  sCustName, 
+						  sRegionId, 
+						  sRegionDesc'
+				Set sReportType = sReportPrintOrView
+			On PAM_clsFRM_REPORTSTART
+				If sRegionType = 'ALL'
+					If sCustType = 'ANY'
+						Set sReportSql = "SELECT 
+								  Customer_Master.Cust_No, 
+								  Customer_Master.Cust_Name, 
+								  Customer_Master.Region_Id, 
+								  Region.Region_Desc 
+								FROM 
+								  Customer_Master, 
+								  Region 
+								INTO 
+								  :frmPrintRegionsCust.nCustNo, 
+								  :frmPrintRegionsCust.sCustName, 
+								  :frmPrintRegionsCust.sRegionId, 
+								  :frmPrintRegionsCust.sRegionDesc 
+								WHERE 
+								  Customer_Master.Region_Id = Region.Region_Id 
+								ORDER BY 
+								  Region.Region_Desc, Customer_Master.Cust_Name "
+					Else If sCustType = 'GARDENCENTRES'
+						Set sReportSql = "SELECT 
+								  Customer_Master.Cust_No, 
+								  Customer_Master.Cust_Name, 
+								  Customer_Master.Region_Id, 
+								  Region.Region_Desc 
+								FROM 
+								  Customer_Master, 
+								  Region 
+								INTO 
+								  :frmPrintRegionsCust.nCustNo, 
+								  :frmPrintRegionsCust.sCustName, 
+								  :frmPrintRegionsCust.sRegionId, 
+								  :frmPrintRegionsCust.sRegionDesc 
+								WHERE 
+								  Customer_Master.Region_Id = Region.Region_Id AND 
+								  Customer_Master.Customer_Type LIKE '%GC%' 
+								ORDER BY 
+								  Region.Region_Desc, Customer_Master.Cust_Name "
+					Else
+						Set sReportSql = "SELECT 
+								  Customer_Master.Cust_No, 
+								  Customer_Master.Cust_Name, 
+								  Customer_Master.Region_Id, 
+								  Region.Region_Desc 
+								FROM 
+								  Customer_Master, 
+								  Region 
+								INTO 
+								  :frmPrintRegionsCust.nCustNo, 
+								  :frmPrintRegionsCust.sCustName, 
+								  :frmPrintRegionsCust.sRegionId, 
+								  :frmPrintRegionsCust.sRegionDesc 
+								WHERE 
+								  Customer_Master.Region_Id = Region.Region_Id AND 
+								  Customer_Master.Customer_Type LIKE '%OR%' 
+								ORDER BY 
+								  Region.Region_Desc, Customer_Master.Cust_Name "
+				Else
+					If sCustType = 'ANY'
+						Set sReportSql = "SELECT 
+								  Customer_Master.Cust_No, 
+								  Customer_Master.Cust_Name, 
+								  Customer_Master.Region_Id, 
+								  Region.Region_Desc 
+								FROM 
+								  Customer_Master, 
+								  Region 
+								INTO 
+								  :frmPrintRegionsCust.nCustNo, 
+								  :frmPrintRegionsCust.sCustName, 
+								  :frmPrintRegionsCust.sRegionId, 
+								  :frmPrintRegionsCust.sRegionDesc 
+								WHERE 
+								  Customer_Master.Region_Id = Region.Region_Id AND 
+								  Customer_Master.Region_Id IN ( " || sSelectedRegionIdList || " ) 
+								ORDER BY 
+								  Region.Region_Desc, Customer_Master.Cust_Name "
+					Else If sCustType = 'GARDENCENTRES'
+						Set sReportSql = "SELECT 
+								  Customer_Master.Cust_No, 
+								  Customer_Master.Cust_Name, 
+								  Customer_Master.Region_Id, 
+								  Region.Region_Desc 
+								FROM 
+								  Customer_Master, 
+								  Region 
+								INTO 
+								  :frmPrintRegionsCust.nCustNo, 
+								  :frmPrintRegionsCust.sCustName, 
+								  :frmPrintRegionsCust.sRegionId, 
+								  :frmPrintRegionsCust.sRegionDesc 
+								WHERE 
+								  Customer_Master.Region_Id = Region.Region_Id AND 
+								  Customer_Master.Customer_Type LIKE '%GC%' AND 
+								  Customer_Master.Region_Id IN ( " || sSelectedRegionIdList || " ) 
+								ORDER BY 
+								  Region.Region_Desc, Customer_Master.Cust_Name "
+					Else
+						Set sReportSql = "SELECT 
+								  Customer_Master.Cust_No, 
+								  Customer_Master.Cust_Name, 
+								  Customer_Master.Region_Id, 
+								  Region.Region_Desc 
+								FROM 
+								  Customer_Master, 
+								  Region 
+								INTO 
+								  :frmPrintRegionsCust.nCustNo, 
+								  :frmPrintRegionsCust.sCustName, 
+								  :frmPrintRegionsCust.sRegionId, 
+								  :frmPrintRegionsCust.sRegionDesc 
+								WHERE 
+								  Customer_Master.Region_Id = Region.Region_Id AND 
+								  Customer_Master.Customer_Type LIKE '%OR%' AND 
+								  Customer_Master.Region_Id IN ( " || sSelectedRegionIdList || " ) 
+								ORDER BY 
+								  Region.Region_Desc, Customer_Master.Cust_Name "
+				Return TRUE

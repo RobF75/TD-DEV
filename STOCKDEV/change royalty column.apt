@@ -1,0 +1,587 @@
+.head 0 +  Application Description: Centura  Builder starter application
+.data CLASSPROPSSIZE
+0000: 4200
+.enddata
+.data CLASSPROPS
+0000: 557365476C6F6261 6C50617468000400 0100000000417070 506174684C656E00
+0020: 04000A0000000041 707050617468000A 006B3A5C63656E74 7572610000000000
+0040: 0000
+.enddata
+.head 1 -  Outline Version - 4.0.32
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000E30000 002C000000020000 0003000000A00000 008F010000FCFFFF
+0040: FFE8FFFFFFFFFFFF FF000000007C0200 004D010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.data DT_MAKERUNDLG
+0000: 00000000002D4B3A 5C43454E54555241 5C53544F434B4445 565C6368616E6765
+0020: 20726F79616C7479 20636F6C756D6E2E 6578652D4B3A5C43 454E545552415C53
+0040: 544F434B4445565C 6368616E67652072 6F79616C74792063 6F6C756D6E2E646C
+0060: 6C2D4B3A5C43454E 545552415C53544F 434B4445565C6368 616E676520726F79
+0080: 616C747920636F6C 756D6E2E61706300 000101012D4B3A5C 43454E545552415C
+00A0: 53544F434B444556 5C6368616E676520 726F79616C747920 636F6C756D6E2E72
+00C0: 756E2D4B3A5C4345 4E545552415C5354 4F434B4445565C63 68616E676520726F
+00E0: 79616C747920636F 6C756D6E2E646C6C 2D4B3A5C43454E54 5552415C53544F43
+0100: 4B4445565C636861 6E676520726F7961 6C747920636F6C75 6D6E2E6170630000
+0120: 0101012D4B3A5C43 454E545552415C53 544F434B4445565C 6368616E67652072
+0140: 6F79616C74792063 6F6C756D6E2E6170 642D4B3A5C43454E 545552415C53544F
+0160: 434B4445565C6368 616E676520726F79 616C747920636F6C 756D6E2E646C6C2D
+0180: 4B3A5C43454E5455 52415C53544F434B 4445565C6368616E 676520726F79616C
+01A0: 747920636F6C756D 6E2E617063000001 01012D4B3A5C4345 4E545552415C5354
+01C0: 4F434B4445565C63 68616E676520726F 79616C747920636F 6C756D6E2E61706C
+01E0: 2D4B3A5C43454E54 5552415C53544F43 4B4445565C636861 6E676520726F7961
+0200: 6C747920636F6C75 6D6E2E646C6C2D4B 3A5C43454E545552 415C53544F434B44
+0220: 45565C6368616E67 6520726F79616C74 7920636F6C756D6E 2E61706300000101
+0240: 01
+.enddata
+.head 2 -  Outline Window State: Normal
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600040003002D00 0000000000000000 0000B71E5D0E0500 1D00FFFF4D61696E
+0020: 0000000000000000 0000000000000000 0000003B00010000 00000000000000E9
+0040: 1E800A00008600FF FF496E7465726E61 6C2046756E637469 6F6E730000000000
+0060: 0000000000000000 0000000000003200 0100000000000000 0000E91E800A0000
+0080: DF00FFFF56617269 61626C6573000000 0000000000000000 0000000000000000
+00A0: 3000010000000000 00000000F51E100D 0000F400FFFF436C 6173736573000000
+00C0: 0000000000000000 0000000000000000
+.enddata
+.data VIEWSIZE
+0000: D000
+.enddata
+.head 3 -  Left: -0.013"
+.head 3 -  Top: 0.0"
+.head 3 -  Width:  8.013"
+.head 3 -  Height: 4.969"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 0418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left: 4.15"
+.head 3 -  Top: 1.885"
+.head 3 -  Width:  3.8"
+.head 3 -  Height: 2.073"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left: 0.575"
+.head 3 -  Top: 0.094"
+.head 3 -  Width:  5.063"
+.head 3 -  Height: 2.719"
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left: 6.388"
+.head 3 -  Top: 0.729"
+.head 2 -  Fully Qualified External References? Yes
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? Yes
+.head 2 -  Use Release 4.0 Scope Rules? No
+.head 1 +  Libraries
+.head 2 -  File Include: myfunc.apl
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Line
+.head 4 -  Line Color: Use Parent
+.head 3 +  Frame
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: 3D Face Color
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0'%'
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;'($'###000')'
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 3 -  Enumerations
+.head 2 +  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 761053045
+0000: 8C1E0000D6090000 0000000000000000 0200002C01000053 020000E003040000
+0020: 00FF3F5702820001 0D000000FFFFE864 020001FE00FFA371 020003FB00FF8F75
+0040: 0200EE0100FF3F82 02BA000100FFFFE8 8F020003FE00FFA3 93020001FB00FF8F
+0060: A00200EE0100FF3F AD02BA000300FFFF E8B1020001FE00FF A3BE020001FB00FF
+0080: 8FCB0200EE0300FF 3FCF02BA000100FF FFE8DC020001FE00 FFA3E9020003FB00
+00A0: FF8FED0200EE0100 FF3FFA02BA000100 FFFFE00703000003 FE00FFA30B030001
+00C0: FB00FF8F180300EE 0100FF3F2503A200 02040000FFFFE829 030003FE00FFA32D
+00E0: 030001FB00FF8F3A 0300EE0100FF3F47 03BA000200FFFFE8 4B030002FE00FFA3
+0100: 4F030002FB00FF8F 530300EE0200FF3F 57033A00020001FA 0000078001000000
+0120: FFE85B030002EC00 01009F8001FC0000 A35F030003FB00FF 8F630300EC010D00
+0140: FF3F7003BA000100 FFFFE87D030003FE 00FFA381030001FB 00FF8F8E0300EE01
+0160: 00FF3F9B03BA0003 00FFFFE89F030001 FE00FFA3AC030001 FB00FF8FB90300EE
+0180: 0300FF3FBD03BA00 0100FFFFE8CA0300 01FE00FFA3D70300 03FB00FF8FDB0300
+01A0: EE0100FF3FE803BA 000100FFFFE8F503 0003FE00FFA3F903 0001FB00FF8F0604
+01C0: 00EE0100FF3F1304 BA000300FFFFE817 040001FE00FFA324 040001FB00FF8F31
+01E0: 0400EE0300FF3F35 04BA000100FFFFE8 42040001FE00FFA3 4F040003FB00FF8F
+0200: 530400EE0100FF3F 6004BA000100FFFF E86D040003FE00FF A371040001FB00FF
+0220: 8F7E0400EE0100FF 3F8B04BA000300FF FFE88F040001FE00 FFA39C040001FB00
+0240: FF8FA90400EE0300 FF3FAD04BA000100 FFFFE8BA040001FE 00FFA3C7040003FB
+0260: 00FF8FCB0400EE01 00FF3FD804BA0001 00FFFFE8E5040003 FE00FFA3E9040001
+0280: FB00FF8FF60400EE 0100FF3F0305B400 000400FFFFE80705 0001FE00FFA31405
+02A0: 0001FB00FF8F2105 00EE0300FF3F2505 BA000100FFFFE832 050001FE00FFA33F
+02C0: 050003FB00FF8F43 0500EE0100FF3F50 05BA000100FFFFE8 5D050003FE00FFA3
+02E0: 61050001FB00FF8F 6E0500EE0100FF3F 7B05BA000300FFFF E87F050001FE00FF
+0300: A38C050001FB00FF 8F990500EE0300FF 3F9D05BA000100FF FFE8AA050001FE00
+0320: FFA3B7050003FB00 FF8FBB0500EE0100 FF3FC805BA000100 FFFFE8D5050003FE
+0340: 00FFA3D9050001FB 00FF8FE60500EE01 00FF3FF305BA0003 00FFFFE8F7050001
+0360: FE00FF8304060000 01FB00FF8F110600 EE0300FF3F1506BA 000100FFFFE82206
+0380: 0001FE00FFA32F06 0003FB00FF8F3306 00EE0100FF3F4006 BA000100FFFFE84D
+03A0: 060003FE00FFA351 060001FB00FF8F5E 0600EE0100FF3F6B 06BA000300FFFFE8
+03C0: 6F060001FE00FFA3 7C060001FB00FF8F 890600EE0300FF3F 8D06AA00010000FF
+03E0: FFE89A060001FE00 FFA3A7060003FB00 FF8FAB0600EE0100 FF3FB806BA000100
+0400: FFFFE8C5060003FE 00FFA3C9060001FB 00FF8FD60600EE01 00FF3FE306BA0003
+0420: 00FFFFE8E7060001 FE00FFA3F4060001 FB00FF0F01070000 EE0300FF3F0507B2
+0440: 00010D00FFFFE812 070001FE00FFA31F 070003FB00FF8F23 0700EE0100FF3F30
+0460: 07BA000100FFFFE8 3D070003FE00FFA3 41070001FB00FF8F 4E0700EE0100FF3F
+0480: 5B07BA000300FFFF E85F070001FE00FF A36C070001FB00FF 8F790700EE0300FF
+04A0: 3F7D07BA000100FF FFE88A070001FE00 FFA397070003FB00 FF8F9B0700EE0100
+04C0: FF3FA807BA000100 FFFFE8B5070003FE 00FFA3B9070001FB 00FF8FC60700EE02
+04E0: 00FF3FCA07BA0002 00FFFFE8CE070003 FE00FFA3D2070001 FB00FF8FDF0700EE
+0500: 0100FF3FEC07BA00 0300FFFFE8F00700 01FE00FFA3FD0700 01FB00FF0F0A0800
+0520: 00EE0300FF3F0E08 BA000100FFFFE81B 080001FE00FFA328 080003FB00FF8F2C
+0540: 0800EE0100FF3F39 08BA000200FFFFE8 3D080002FE00FFA3 41080003FB00FF8F
+0560: 450800EE0100FF3F 5208BA000100FFFF E85F080003FE00FF A363080001FB00FF
+0580: 8F700800EE0100FF 3F7D08BA000300FF FFE881080001FE00 FFA38E080001FB00
+05A0: FF8F9B0800EE0300 FF3F9F08BA000100 FFFFE8AC080002FE 00FFA3B0080002FB
+05C0: 00FF8FB40800EE03 00FF3FB808BA0001 00FFFFE8C5080001 FE00FFA3D2080003
+05E0: FB00FF8FD60800EE 0100FF3FE308BA00 0100FFFFE8F00800 03FE00FFA3F40800
+0600: 01FB00FF0F010900 00ED0D00FF3F0E09 BA000300FFFFE812 090001FE00FFA31F
+0620: 090001FB00FF8F2C 0900EE0300FF3F30 09BA000100FFFFE8 3D090001FE00FFA3
+0640: 4A090003FB00FF8F 4E0900EE0100FF3F 5B09BA000100FFFF E868090003FE00FF
+0660: A36C090001FB00FF 8F790900EE0100FF 3F8609BA000300FF FFE88A090001FE00
+0680: FFA397090001FB00 FF8FA40900EE0300 FF3FA809BA000100 FFFFE8B5090001FE
+06A0: 00FFA3C2090003FB 00FF8FC60900EE01 00FF3FD309BA0001 00FFFFE8E0090003
+06C0: FE00FFA3E4090001 FB00FF8FF10900EE 0100FF3FFE09BA00 0300FFFFE0020A00
+06E0: 0001FE00FFA30F0A 0001FB00FF8F1C0A 00EE0300FF3F200A BA000100FFFFE82D
+0700: 0A0001FE00FFA33A 0A0003FB00FF8F3E 0A00EE0100FF3F4B 0ABA000100FFFFE8
+0720: 580A0003FE00FFA3 5C0A0001FB00FF8F 690A00EE0100FF3F 760ABA000300FFFF
+0740: E87A0A0001FE00FF A3870A0001FB00FF 8F940A00EE0300FF 3F980ABA000100FF
+0760: FFE8A50A0001FE00 FFA3B20A0003FB00 FF8FB60A00EE0100 FF3FC30ABA000100
+0780: FFFFE8D00A0003FE 00FFA3D40A0001FB 00FF8FE10A00EE01 00FF3FEE0ABA0003
+07A0: 00FFFFE8F20A0001 FE00FFA3FF0A0001 FB00FF0F0C0B0000 EE0300FF3F100BBA
+07C0: 000100FFFFE81D0B 0001FE00FFA32A0B 0003FB00FF8F2E0B 00EE0100FF3F3B0B
+07E0: BA000100FFFFE848 0B0003FE00FFA34C 0B0001FB00FF8F59 0B00EE0100FF3F66
+0800: 0BBA000300FFFFE8 6A0B0001FE00FFA3 770B0001FB00FF8F 840B00EE0300FF3F
+0820: 880BBA000100FFFF E8950B0001FE00FF A3A20B0003FB00FF 8FA60B00EE0100FF
+0840: 3FB30BBA000100FF FFE8C00B0003FE00 FFA3C40B0001FB00 FF8FD10B00EE0100
+0860: FF3FDE0BBA000300 FFFFE8E20B0001FE 00FFA3EF0B0001FB 00FF8FFC0B00EE03
+0880: 00FF7F0CB8000001 00FFFFE80D0C0001 FE00FFA31A0C0003 FB00FF8F1E0C00EE
+08A0: 0100FF3F2B0CBA00 0100FFFFE8380C00 03FE00FFA33C0C00 01FB00FF8F490C00
+08C0: EE0100FF3F560CBA 000300FFFFE85A0C 0001FE00FFA3670C 0001FB00FF8F740C
+08E0: 00EE0300FF3F780C BA000100FFFFE885 0C0001FE00FF2392 0C00040DFA0000FF
+0900: 8F9F0C00EE0300FF 3FA30CBA000100FF FFE8B00C0001FE00 FFA3BD0C0003FB00
+0920: FF8FC10C00EE0100 FF3FCE0CBA000100 FFFFE8DB0C0003FE 00FFA3DF0C0001FB
+0940: 00FF8FEC0C00EE01 00FF3FF90CBA0003 00FFFFE8FD0C0001 FE00FFA30A0D0001
+0960: FB00FF8F170D00EE 0300FF3F1B0DBA00 0100FFFFE8280D00 01FE00FFA3350D00
+0980: 03FB00FF8F390D00 EE0100FF3F460DBA 000100FFFFE8530D 0003FE00FFA3570D
+09A0: 0001FB00FF8F640D 00EE0100FF3F710D BA000100FFFFE87E 0D0001FE00FFA38B
+09C0: 0D0001FB00FF8F98 0D00EE0100FF3FA5 0DBA000300FFFFE8 A90D0001FE00FFA3
+09E0: B60D0001FB00FF0F
+.enddata
+.head 3 -  Sql Handle: g_hConnect
+.head 3 -  Boolean: g_bConnected
+.head 2 +  Internal Functions
+.head 2 +  Named Menus
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 3672808367
+0000: 9107000029030000 0000000000000000 0200000900FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F3C003C00 00154F0075724672
+0040: 6D576E6400576974 684368696C006454 626CA0000000F006 000000E0010D0000
+0060: 00FF3F0D00B90001 00FFFF001A000000 03040000FE00FF83 1E00000001FB00FF
+0080: 0F2B000000EE0100 FF3F3800B8000003 00FFFF1001803C00 000100200000124F
+00A0: 75446CF8675769FF EC000600D9010D00 FF7F0D73000100FF FFCD1A0003FD00FF
+00C0: 371E0001F700FFDF 2BDC000100FF7F38 73000300FFFF0101 8011000000020000
+00E0: 0000145069636B00 496E746F5461626C E0655062436C6438 00000200EF03FE00
+0100: FF13040000010DFB 00FF0F01807F0000 0000030000000F4F E2755F4368385F54
+0120: 61A401C200100000 00A302040000FFFF E6040002FE00FF83 0800000002FB00FF
+0140: 0F0C000000EE0200 FFBF10B9000200FF FFC014000000010D FE00FF8321000000
+0160: 01FB00FF0F2E0000 00EE0100FF3F3B00 A00000040D0000FF FFE04800000001FE
+0180: 00FF835500000002 FB00FF0F59000000 EE0200FF3F5D00B8 00000100FFFFE06A
+01A0: 00000001FE00FF83 7700000002FB00FF 0F7B000000EE0200 FF3F018040760000
+01C0: 0004000040104E65 774F7543CE685461 BF00DE0002FD00FF 37040002F700FFDF
+01E0: 08DC000200FF7F0C 73000200FFFFCD10 0002FD00FF371400 03F60400FF1F1800
+0200: 00DC000300FF7F1C 60000000010D00FF FFC12900000001FD 00FF073600000001
+0220: F700FF1F430000DC 000100FF7F507000 00000200FFFFC154 00000001FD00FF07
+0240: 6100000001F700FF 1F6E0000DC000200 FF7F727000000002 00FFFF2101802100
+0260: 0005C00000000E4F 75806F6C756D6E43 6C93A0000006BD00 02FB00FF6F0400EE
+0280: 0200FFBF08B90002 00FFFFE60C0002FE 00FF9B100002FB00 FF6F1400EC010D00
+02A0: FF3F018066210006 0008114F75446174 61804669656C6443 6C9F0006BD0002FB
+02C0: 00FF6F0400EE0200 FFBF08B9000200FF FFE60C0002FE00FF 9B100002FB00FF6F
+02E0: 1400EC010D00FF3F 0180040400000700 00004E1154625140 75657279446C4210
+0300: 6F781E00000100BD 0003FB00FF8F0180 11190008000E6304 4F75536561736F80
+0320: 6E596561723800E8 00020000D9010D00 FF7F0D6300020400 FFFF01
+.enddata
+.head 3 +  Functional Class: fcCustomerOrders
+.head 4 -  Description:
+.head 4 -  Derived From
+.head 4 -  Class Variables
+.head 4 +  Instance Variables
+.head 5 -  Number: fnCustNo
+.head 5 -  String: fsCustName
+.head 5 -  Number: fnItemNo
+.head 5 -  Number: fnConfAmt
+.head 5 -  String: fsCultDesc
+.head 5 -  String: fsCustBitmap
+.head 4 -  Functions
+.head 2 +  Default Classes
+.head 3 -  MDI Window: cBaseMDI
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Option Button:
+.head 3 -  ActiveX:
+.head 3 -  Check Box:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window: cQuickDatabase
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text:
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 +  Application Actions
+.head 3 +  On SAM_AppStartup
+.head 4 -  Set SqlDatabase = 'STOCK'
+.head 4 -  Set SqlUser = 'GRAHAM'
+.head 4 -  Set SqlPassword = 'GRAHAM'
+.head 4 -  Set g_bConnected = SqlConnect( g_hConnect )
+.head 3 +  On SAM_AppExit
+.head 4 -  Call SqlDisconnect( g_hConnect )
+.head 1 +  Form Window: frmChangeInvoiceNum
+.head 2 -  Class:
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title:
+.head 2 -  Icon File:
+.head 2 -  Accessories Enabled? No
+.head 2 -  Visible? Yes
+.head 2 -  Display Settings
+.head 3 -  Display Style? Default
+.head 3 -  Visible at Design time? Yes
+.head 3 -  Automatically Created at Runtime? Yes
+.head 3 -  Initial State: Normal
+.head 3 -  Maximizable? Yes
+.head 3 -  Minimizable? Yes
+.head 3 -  Allow Child Docking? No
+.head 3 -  Docking Orientation: All
+.head 3 -  System Menu? Yes
+.head 3 -  Resizable? Yes
+.head 3 -  Window Location and Size
+.head 4 -  Left: Default
+.head 4 -  Top: Default
+.head 4 -  Width:  Default
+.head 4 -  Width Editable? Yes
+.head 4 -  Height: Default
+.head 4 -  Height Editable? Yes
+.head 3 -  Form Size
+.head 4 -  Width:  Default
+.head 4 -  Height: Default
+.head 4 -  Number of Pages: Dynamic
+.head 3 -  Font Name: Default
+.head 3 -  Font Size: Default
+.head 3 -  Font Enhancement: Default
+.head 3 -  Text Color: Default
+.head 3 -  Background Color: Default
+.head 2 -  Description:
+.head 2 -  Named Menus
+.head 2 -  Menu
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Default
+.head 4 -  Location? Top
+.head 4 -  Visible? Yes
+.head 4 -  Size: Default
+.head 4 -  Size Editable? Yes
+.head 4 -  Docking Toolbar? No
+.head 4 -  Toolbar Docking Orientation: Top | Bottom
+.head 4 -  Font Name: Default
+.head 4 -  Font Size: Default
+.head 4 -  Font Enhancement: Default
+.head 4 -  Text Color: Default
+.head 4 -  Background Color: Default
+.head 4 -  Resizable? No
+.head 3 -  Contents
+.head 2 -  Contents
+.head 2 +  Functions
+.head 3 +  Function: SetValues
+.head 4 -  Description:
+.head 4 -  Returns
+.head 4 -  Parameters
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  Sql Handle: hSqlGet
+.head 5 -  Sql Handle: hSqlSet
+.head 5 -  String: sSqlGet
+.head 5 -  String: sSqlSet
+.head 5 -  String: sInvNum
+.head 5 -  Number: nInvNo
+.head 5 -  Date/Time: dtInvDate
+.head 5 -  Number: nCustNo
+.head 5 -  Date/Time: dtOrderDate
+.head 5 -  Number: nItemNo
+.head 5 -  String: sCultRootId
+.head 5 -  String: sRoyOwner
+.head 5 -  Number: nInd
+.head 5 -  Number: nCount
+.head 4 +  Actions
+.head 5 -  Set sSqlGet = "Select 
+		inv_no, inv_date, cust_no, order_date_time, stock_item_no, cult_root_id , royalty_owner_id
+	into
+		:nInvNo,
+		:dtInvDate,
+		:nCustNo,
+		:dtOrderDate,
+		:nItemNo,
+		:sCultRootId,
+		:sRoyOwner
+	from
+		royalties_paid"
+	
+.head 5 -  Set sSqlSet = "Update 
+		royalties_paid
+	Set
+		inv_num = :sInvNum
+	Where
+		inv_no = :nInvNo and
+		inv_date = :dtInvDate and
+		cust_no = :nCustNo and
+		order_date_time = :dtOrderDate and
+		stock_item_no = :nItemNo and
+		cult_root_id = :sCultRootId and
+		royalty_owner_id = :sRoyOwner
+	"	
+.head 5 -  Call SqlConnect( hSqlGet )
+.head 5 -  Call SqlConnect( hSqlSet )
+.head 5 -  Set nCount = 0
+.head 5 +  If SqlPrepareAndExecute( hSqlGet, sSqlGet  )
+.head 6 +  While SqlFetchNext( hSqlGet, nInd )
+.head 7 -  Set sInvNum = SalNumberToStrX( nInvNo, 0 )
+.head 7 -  Call SqlPrepareAndExecute( hSqlSet, sSqlSet )
+.head 6 +  If nInd = FETCH_EOF
+.head 7 -  Call SalMessageBox('Finished','Msg', MB_Ok)
+.head 7 -  Call SqlCommit( hSqlSet )
+.head 6 +  Else
+.head 7 -  Call SalMessageBox('Error2','Msg', MB_Ok)
+.head 5 +  Else
+.head 6 -  Call SalMessageBox('Error1','Msg', MB_Ok)
+.head 3 +  Function: CheckValues
+.head 4 -  Description:
+.head 4 -  Returns
+.head 4 -  Parameters
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  Sql Handle: hSqlGet
+.head 5 -  Sql Handle: hSqlSet
+.head 5 -  String: sSqlGet
+.head 5 -  String: sSqlSet
+.head 5 -  String: sInvNum
+.head 5 -  Number: nInvNo
+.head 5 -  Date/Time: dtInvDate
+.head 5 -  Number: nCustNo
+.head 5 -  Date/Time: dtOrderDate
+.head 5 -  Number: nItemNo
+.head 5 -  String: sCultRootId
+.head 5 -  String: sRoyOwner
+.head 5 -  Number: nInd
+.head 5 -  Number: nCount
+.head 4 +  Actions
+.head 5 -  Set sSqlGet = "Select 
+		inv_no, inv_num, inv_date, cust_no, order_date_time, stock_item_no, cult_root_id , royalty_owner_id
+	into
+		:nInvNo,
+		:sInvNum,
+		:dtInvDate,
+		:nCustNo,
+		:dtOrderDate,
+		:nItemNo,
+		:sCultRootId,
+		:sRoyOwner
+	from
+		royalties_paid"
+	
+.head 5 -  Call SqlConnect( hSqlGet )
+.head 5 -  Set nCount = 0
+.head 5 +  If SqlPrepareAndExecute( hSqlGet, sSqlGet  )
+.head 6 +  While SqlFetchNext( hSqlGet, nInd )
+.head 7 +  If sInvNum != SalNumberToStrX( nInvNo, 0 )
+.head 8 -  Call SalMessageBox('Missmatch in Values  ' || sInvNum || '  ' || SalNumberToStrX( nInvNo, 0 ),'Msg', MB_Ok)
+.head 6 +  If nInd = FETCH_EOF
+.head 7 -  Call SalMessageBox('Finished and checked OK','Msg', MB_Ok)
+.head 6 +  Else
+.head 7 -  Call SalMessageBox('Error2','Msg', MB_Ok)
+.head 5 +  Else
+.head 6 -  Call SalMessageBox('Error1','Msg', MB_Ok)
+.head 2 -  Window Parameters
+.head 2 -  Window Variables
+.head 2 +  Message Actions
+.head 3 +  On SAM_Create
+.head 4 -  Call SetValues()
+.head 4 -  Call CheckValues()
+.head 4 -  ! Set sSqlGet = "Select 
+		inv_no, inv_date, cust_no, order_date_time, stock_item_no, cult_root_id , royalty_owner_id
+	into
+		:nInvNo,
+		:dtInvDate,
+		:nCustNo,
+		:dtOrderDate,
+		:nItemNo,
+		:sCultRootId,
+		:sRoyOwner
+	from
+		royalties_paid"
+	
+.head 4 -  ! Set sSqlSet = "Update 
+		royalties_paid
+	Set
+		inv_num = :sInvNum
+	Where
+		inv_no = :nInvNo and
+		inv_date = :dtInvDate and
+		cust_no = :nCustNo and
+		order_date_time = :dtOrderDate and
+		stock_item_no = :nItemNo and
+		cult_root_id = :sCultRootId and
+		royalty_owner_id = :sRoyOwner
+	"	
+.head 4 -  ! Call SqlConnect( hSqlGet )
+.head 4 -  ! Call SqlConnect( hSqlSet )
+.head 4 -  ! Set nCount = 0
+.head 4 +  ! If SqlPrepareAndExecute( hSqlGet, sSqlGet  )
+.head 5 +  While SqlFetchNext( hSqlGet, nInd )
+.head 6 -  Set sInvNum = SalNumberToStrX( nInvNo, 0 )
+.head 6 -  Call SqlPrepareAndExecute( hSqlSet, sSqlSet )
+.head 5 +  If nInd = FETCH_EOF
+.head 6 -  Call SalMessageBox('Finished','Msg', MB_Ok)
+.head 6 -  Call SqlCommit( hSqlSet )
+.head 5 +  Else 
+.head 6 -  Call SalMessageBox('Error2','Msg', MB_Ok)
+.head 4 +  ! Else
+.head 5 -  Call SalMessageBox('Error1','Msg', MB_Ok)
+.head 4 -  Call SalDestroyWindow( hWndForm )

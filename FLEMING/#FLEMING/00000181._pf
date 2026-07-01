@@ -1,0 +1,1085 @@
+Application Description: SQLWindows 5.01 Jans Startup of Maintenance APP
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000AC0000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF000000 0000000000140300 009F010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.data DT_MAKERUNDLG
+0000: 00000000001F4B3A 5C43454E54555241 5C464C454D444556 5C4D61696E746578
+0020: 652E6578651F4B3A 5C43454E54555241 5C464C454D444556 5C4D61696E746578
+0040: 652E646C6C1F4B3A 5C43454E54555241 5C464C454D444556 5C4D61696E746578
+0060: 652E617063000001 01011F4B3A5C4345 4E545552415C464C 454D4445565C4D61
+0080: 696E746578652E72 756E1F4B3A5C4345 4E545552415C464C 454D4445565C4D61
+00A0: 696E746578652E64 6C6C1F4B3A5C4345 4E545552415C464C 454D4445565C4D61
+00C0: 696E746578652E61 706300000101011F 4B3A5C43454E5455 52415C464C454D44
+00E0: 45565C4D61696E74 6578652E6170641F 4B3A5C43454E5455 52415C464C454D44
+0100: 45565C4D61696E74 6578652E646C6C1F 4B3A5C43454E5455 52415C464C454D44
+0120: 45565C4D61696E74 6578652E61706300 000101011F4B3A5C 43454E545552415C
+0140: 464C454D4445565C 4D61696E74657865 2E61706C1F4B3A5C 43454E545552415C
+0160: 464C454D4445565C 4D61696E74657865 2E646C6C1F4B3A5C 43454E545552415C
+0180: 464C454D4445565C 4D61696E74657865 2E61706300000101 01
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000003000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 0418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.113"
+			Top:    2.604"
+			Width:  4.675"
+			Height: 2.979"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   0.788"
+			Top:    1.5"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: GENERAL.APL
+		File Include: DIALOG.APL
+		File Include: VTDOS.APL
+		File Include: VTFILE.APL
+		File Include: STRINGS.APL
+		File Include: DATES.APL
+		File Include: STACKS.APL
+		File Include: BUTTON.APL
+		File Include: DATFIELD.APL
+		File Include: SPNFIELD.APL
+		File Include: VTSPIN.APL
+		File Include: BGTEXT.APL
+		File Include: FORM.APL
+		File Include: RUNPROG.APL
+		File Include: VTWIN.APL
+		File Include: SQLHANDL.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: None
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Blue
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for MAINTEXE.APP
+				! Number: MAINTEXEAppMsgOffSet = SAM_User + 0
+				! Message go up to AppOffSet + 99
+				! Number: MAINTEXEAppConstOffSet = 0
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1347615921
+0000: 8600000038000000 0000000000000000 020000050000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E8040D0000 FF3F
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 3215559687
+0000: DF0A000020050000 0000000000000000 0200001500FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 001063006C734469
+0040: 616C6F670047656E 6572616C86800000 000500000007010D 000000FFFF090D00
+0060: 00020400FC0000FF 071100000004F40D 0000FF1F1E0000D0 0003040000FF7F22
+0080: 700000000100FFFF 2101800D00000140 0000000C636C70F8 624765641E000001
+00A0: 00CF010DFE00FF03 0180380000008002 00000009636C0348 656C708600D90005
+00C0: 00B3020400FFFFC4 040000010DFE00FF 9B110001FB00FF6F 1E00EE0100FF3F2B
+00E0: 00B800000100FFFF 1801800D000300F8 0000094045786974 1E0000F4010000EC
+0100: 010D00FF3F018064 04000004000E0C50 696345807870616E 641E00E800010000
+0120: DD0200FF7F01CC80 040005F00012636C 00546F67676C6542 754074746F6E1E00
+0140: 00F4010000EE0200 FF3F018006040006 0000000E0C646647 65FFE800010000D9
+0160: 030400FF7F010C80 0D00070000100011 636C537069006E53 6561736F6E592065
+0180: 61721E0000017A00 0001F60D00FF1F01 802F020000080000 000B04636C466F72
+01A0: 6D42206173658600 00057B0001F60D00 FFDF0DDC000200FF 7F11620000040D00
+01C0: FFFFCD1E0003FD00 FF37220001F700FF 1F01800D03000900 0000177C636C5040
+01E0: 72696E7442616900 635265706F72741E A30001000067010D 00FFFF0101802E00
+0200: 00000A6000000011 6370015374617274 5072006F6772616D BA0000EC000700DD
+0220: 0200FF7F04720000 0200FFFFCD080002 FD00FF070C000000 01F60D00FF1F1900
+0240: 00DC000300FF7F1D 700000000200FFFF C12100000001FD00 FF07018036000000
+0260: 000B0000000F636C F953741FEE0000EC 000900D9010D00FF 7F0D73000100FFFF
+0280: C11A00000002FD00 FF371E0002F700FF DF22DC000200FF7F 26700000000200FF
+02A0: FFC12A00000002FD 00FF272E000002F7 00FF1F320000DC00 0200FF7F01CC8004
+02C0: 000C1C0010546F6F 006C54697057696E 64106F771E000001 00BD0003FB00FF0F
+02E0: 018034001800000D 0014631A6C70656C 6500637446726F6D 546100626C656C00
+0300: 0000047B0001F60D 00FFDF0DDC000100 FF7F1A73000100FF FFC12700000001FD
+0320: 00FFC70180040000 0E0000000D636C49 5365656349206E74 6F1E0000017A0000
+0340: 03F700FF1F0180B7 000000000F000000 16E4636C4765716C 5461473E653602CA
+0360: 00150000B3010D00 FFFFE40D000001FE 00FF9B1A0001FB00 FF6F2700EE0100FF
+0380: 3F3400B9000200FF FFE438000002FE00 FF833C00000002FB 00FF0F40000000EE
+03A0: 0200FF3F4400B800 000200FFFFE04800 000002FE00FF834C 00000002FB00FF0F
+03C0: 500000008E020001 00FE00C180010000 003F540030000001 0D0001FA00002780
+03E0: 010000FFC0580000 00010DFE00FF8365 00000001FB00FF0F 72000000EE0100FF
+0400: 3F7F00B800000100 FFFFE08C00000001 FE00FF8399000000 01FB00FF0FA60000
+0420: 00EE0100FF3FB300 B800000300FFFF10 0180220000100020 00001D636C546280
+0440: 6C4D616B65536505 636564526F77004B 6579417272617960 740000000400EF02
+0460: E8000100009F8001 FC00001B0400010D FB00FF4F110000EE 0100FFBF1EB90002
+0480: 00FFFF9001801100 001131001063436F C06C756D6E476523 6C380000027A0000
+04A0: 02F60400FFDF04D8 00010D00FF7F010C 8011001200001800 0C63636247FFD100
+04C0: 020000B3010D00FF FFC60D000204FE00 FF63018004002013 0000000C66540661
+04E0: 654361636888651E 00000100DE0003FD 00FF870180150000 00140000000B6366
+0500: 1C4361506F6F815A 00000003001E0007 19000100010100F4 07003D008001F900
+0520: 0037040003F60400 FFDF08D800010D00 FF7F
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton: clspbCreditExceptionReportPrg
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				If SalStrUpperX( SalStrRightX( strArgArray[0],3 ) ) = 'EXE'
+					Set SqlDatabase = strArgArray[1]
+					Set SqlUser = strArgArray[2]
+					Set SqlPassword = strArgArray[3]
+				Else
+					Set SqlDatabase = 'STOCK'
+					Set SqlUser = 'GRAHAM'
+					Set SqlPassword = 'GRAHAM'
+				!
+				Call SqlHandlesSetup(  )
+				!
+				Call CheckProgramExistance( "Fleming's Nurseries System Version Control Module", TRUE )
+				!
+				Call SalModalDialog( dlgVersionControl, hWndNULL )
+			On SAM_AppExit
+				Call SqlHandlesDisconnectClose(  )
+	Dialog Box: dlgVersionControl
+		Class: clsDialogGeneral
+		Property Template:
+		Class DLL Name:
+		Title: Fleming's Nurseries System Version Control Module
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Type of Dialog: Modal
+			Window Location and Size
+				Left:   1.938"
+				Top:    1.448"
+				Width:  6.625"
+				Width Editable? Class Default
+				Height: 3.438"
+				Height Editable? Class Default
+			Absolute Screen Location? Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+				Pushbutton: pbHelp
+					Class Child Ref Key: 6
+					Class ChildKey: 0
+					Class: clsDialogGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 10
+					Class ChildKey: 0
+					Class: clsDialogGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   5.238"
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbExit
+					Class Child Ref Key: 7
+					Class ChildKey: 0
+					Class: clsDialogGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   5.838"
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			Data Field: dfDatabase
+				Class Child Ref Key: 8
+				Class ChildKey: 0
+				Class: clsDialogGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfUser
+				Class Child Ref Key: 9
+				Class ChildKey: 0
+				Class: clsDialogGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 13
+				Class ChildKey: 0
+				Class: clsDialogGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   5.463"
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+			Background Text:
+				Resource Id: 5233
+				Class Child Ref Key: 14
+				Class ChildKey: 0
+				Class: clsDialogGeneral
+				Window Location and Size
+					Left:   4.713"
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			!
+			Background Text: Total number of Files requiring a version upgrade.
+				Resource Id: 5234
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   1.163"
+					Top:    0.583"
+					Width:  4.263"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Data Field: dfTotalFiles
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Number
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   5.475"
+						Top:    0.542"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Right
+					Format: #0
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text: Number of files upgraded.
+				Resource Id: 5235
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   3.25"
+					Top:    0.865"
+					Width:  2.175"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Data Field: dfDoneFiles
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Number
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   5.475"
+						Top:    0.823"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Right
+					Format: #0
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text: Currently Copying
+				Resource Id: 5236
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.188"
+					Top:    1.083"
+					Width:  1.538"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Blue
+				Background Color: Class Default
+			Data Field: dfCopyFileFrom
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   0.188"
+						Top:    1.302"
+						Width:  6.125"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text: To
+				Resource Id: 5237
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.188"
+					Top:    1.615"
+					Width:  0.288"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Blue
+				Background Color: Class Default
+			Data Field: dfCopyFileTo
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   0.188"
+						Top:    1.833"
+						Width:  6.125"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			!
+			Background Text: Please note that it is NOT recomended to task switch this application, as errors may occur in the upgrade.
+				Resource Id: 11460
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.075"
+					Top:    2.229"
+					Width:  6.35"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Arial
+				Font Size: 8
+				Font Enhancement: Class Default
+				Text Color: Black
+				Background Color: Class Default
+		Functions
+			Function: ProgramVersionControl
+				Description:
+				Returns
+				Parameters
+					Window Handle: hWndUpdate
+				Static Variables
+				Local variables
+					!
+					Number: nTotalFiles
+					Number: nDoneFiles
+					String: sCopyFileFrom
+					String: sCopyFileTo
+					!
+					String: sLocalDeployPath
+					String: sServerDeployOriginPath
+					String: sAdditionalLocalEXEsAllowed
+					!
+					Number: nNumLocalFiles
+					String: saLocalFiles[*]
+					Number: naLocalSizes[*]
+					Date/Time: dtaLocalTimeStamps[*]
+					Number: naLocalAttributes[*]
+					!
+					Number: nNumServerFiles
+					String: saServerFiles[*]
+					Number: naServerSizes[*]
+					Date/Time: dtaServerTimeStamps[*]
+					Number: naServerAttributes[*]
+					!
+					Number: nCount
+					Number: nFoundPos
+					!
+					Number: nFileCopyCount
+					String: saCopyFileFrom[*]
+					Date/Time: dtaCopyFileFromDT[*]
+					String: saCopyFileTo[*]
+				Actions
+					!
+					Set sLocalDeployPath = OurGetIniFileParameter( 'GENERAL', 'ClientDeployEXEPath', 'c:\\Centura\\localexe' )
+					Set sServerDeployOriginPath = OurGetIniFileParameter( 'GENERAL', 'ServerDeployEXEPath', 'k:\\Centura\\remotupd' )
+					Set sAdditionalLocalEXEsAllowed = OurGetIniFileParameter( 'GENERAL', 'AdditionalLocalEXEsAllowed', '1' )
+					!
+					Set sLocalDeployPath = SalStrTrimX( sLocalDeployPath )
+					Set sServerDeployOriginPath = SalStrTrimX( sServerDeployOriginPath )
+					!
+					Set nNumServerFiles = VisDosEnumFileInfo( sServerDeployOriginPath || '\\*.*' , FA_Standard, saServerFiles, naServerSizes, dtaServerTimeStamps, naServerAttributes )
+					Call ConvertStrArrayToUpper( saServerFiles, nNumServerFiles )
+					!
+					Set nNumLocalFiles = VisDosEnumFileInfo( sLocalDeployPath || '\\*.*', FA_Standard, saLocalFiles, naLocalSizes, dtaLocalTimeStamps, naLocalAttributes )
+					Call ConvertStrArrayToUpper( saLocalFiles, nNumLocalFiles )
+					!
+					!
+					Set nFileCopyCount = 0
+					Set saCopyFileFrom[ nFileCopyCount ] = ''
+					Set dtaCopyFileFromDT[ nFileCopyCount ] = DATETIME_Null
+					Set saCopyFileTo[ nFileCopyCount ] = ''
+					!
+					Set nCount = 0
+					While nCount < nNumLocalFiles
+						!
+						If StrArrayFind( saServerFiles, nNumServerFiles, saLocalFiles[ nCount ], nFoundPos )
+							If dtaServerTimeStamps[ nFoundPos ] != dtaLocalTimeStamps[ nCount ] OR naServerSizes[ nFoundPos ] != naLocalSizes[ nCount ]
+								Set saCopyFileFrom[ nFileCopyCount ] = sServerDeployOriginPath || '\\' || saServerFiles[ nFoundPos ]
+								Set saCopyFileTo[ nFileCopyCount ] = sLocalDeployPath || '\\' || saLocalFiles[ nCount ]
+								Set dtaCopyFileFromDT[ nFileCopyCount ] = dtaServerTimeStamps[ nFoundPos ]
+								Set nFileCopyCount = nFileCopyCount + 1
+								Set saCopyFileFrom[ nFileCopyCount ] = ''
+								Set saCopyFileTo[ nFileCopyCount ] = ''
+								Set dtaCopyFileFromDT[ nFileCopyCount ] = DATETIME_Null
+						!
+						Set nCount = nCount + 1
+					!
+					If sAdditionalLocalEXEsAllowed = '1'
+						Set nCount = 0
+						While nCount < nNumServerFiles
+							!
+							If NOT StrArrayFind( saLocalFiles, nNumLocalFiles, saServerFiles[ nCount ], nFoundPos )
+								Set saCopyFileFrom[ nFileCopyCount ] = sServerDeployOriginPath || '\\' || saServerFiles[ nCount ]
+								Set saCopyFileTo[ nFileCopyCount ] = sLocalDeployPath || '\\' || saServerFiles[ nCount ]
+								Set dtaCopyFileFromDT[ nFileCopyCount ] = dtaServerTimeStamps[ nCount ]
+								Set nFileCopyCount = nFileCopyCount + 1
+								Set saCopyFileFrom[ nFileCopyCount ] = ''
+								Set saCopyFileTo[ nFileCopyCount ] = ''
+								Set dtaCopyFileFromDT[ nFileCopyCount ] = DATETIME_Null
+							!
+							Set nCount = nCount + 1
+					!
+					Set nTotalFiles = nFileCopyCount
+					Set nDoneFiles = 0
+					!
+					Set nCount = 0
+					While saCopyFileFrom[ nCount ] != ''
+						!
+						Set sCopyFileFrom = saCopyFileFrom[ nCount ]
+						Set sCopyFileTo = saCopyFileTo[ nCount ]
+						!
+						Call PushNumber( nTotalFiles )
+						Call PushNumber( nDoneFiles )
+						Call PushString( sCopyFileFrom )
+						Call PushString( sCopyFileTo )
+						If NOT SalSendMsg( hWndUpdate, PAM_cls_SETFIELDS, 0, 0 )
+							Call PopString( sCopyFileTo, TRUE )
+							Call PopString( sCopyFileFrom, TRUE )
+							Call PopNumber( nDoneFiles, TRUE )
+							Call PopNumber( nTotalFiles, TRUE )
+						Call VisFileCopy( sCopyFileFrom, sCopyFileTo )
+						! If VisFileCopy( sCopyFileFrom, sCopyFileTo )
+							          Call VisFileSetDateTime( sCopyFileTo, dtaCopyFileFromDT[ nCount ] )
+						!
+						Set nCount = nCount + 1
+						Set nDoneFiles = nDoneFiles + 1
+					!
+			!
+			Function: CSVFilingControl
+				Description:
+				Returns
+				Parameters
+					Window Handle: hWndUpdate
+				Static Variables
+				Local variables
+					: fcMeter
+						Class: clsMeterBar
+					!
+					Number: nTotalFiles
+					Number: nDoneFiles
+					String: sCopyFileFrom
+					String: sCopyFileTo
+					!
+					Number: nProcessingNo
+					!
+					String: sFromPath
+					Number: nNumLocalFiles
+					String: saLocalFiles[*]
+					Number: naLocalSizes[*]
+					Date/Time: dtaLocalTimeStamps[*]
+					Number: naLocalAttributes[*]
+					!
+					Number: nCount
+					Number: nTmp
+					!
+					Number: nFileCopyCount
+					String: saCopyFileFrom[*]
+					String: saCopyFileTo[*]
+				Actions
+					Set nFileCopyCount = 0
+					Set saCopyFileFrom[ nFileCopyCount ] = ''
+					Set saCopyFileTo[ nFileCopyCount ] = ''
+					!
+					Set nProcessingNo = 0
+					While nProcessingNo < 8
+						!
+						Select Case nProcessingNo
+							Case 0
+								Set sFromPath = SalStrTrimX( OurGetIniFileParameter( 'ACCOUNTS', 'InvoicesCSVPath', 'c:\\temp' ) )
+								Break
+							Case 1
+								Set sFromPath = SalStrTrimX( OurGetIniFileParameter( 'ACCOUNTS', 'CRNotesCSVPath', 'c:\\temp' ) )
+								Break
+							Case 2
+								Set sFromPath = SalStrTrimX( OurGetIniFileParameter( 'ACCOUNTS', 'StatementsCSVPath', 'c:\\temp' ) )
+								Break
+							Case 3
+								Set sFromPath = SalStrTrimX( OurGetIniFileParameter( 'ACCOUNTS', 'ConfsCSVPath', 'c:\\temp' ) )
+								Break
+							Case 4
+								Set sFromPath = SalStrTrimX( OurGetIniFileParameter( 'ACCOUNTS', 'NPAsCSVPath', 'c:\\temp' ) )
+								Break
+							Case 5
+								Set sFromPath = SalStrTrimX( OurGetIniFileParameter( 'ACCOUNTS', 'AcksCSVPath', 'c:\\temp' ) )
+								Break
+							Case 6
+								Set sFromPath = SalStrTrimX( OurGetIniFileParameter( 'ACCOUNTS', 'RcptsCSVPath', 'c:\\temp' ) )
+								Break
+							Case 7
+								Set sFromPath = SalStrTrimX( OurGetIniFileParameter( 'ACCOUNTS', 'PRCsCSVPath', 'c:\\temp' ) )
+								Break
+						!
+						Set nNumLocalFiles = VisDosEnumFileInfo( sFromPath || '\\c*.*', FA_Standard, saLocalFiles, naLocalSizes, dtaLocalTimeStamps, naLocalAttributes )
+						Select Case nProcessingNo
+							Case 0
+								Call fcMeter.Setup( 'Extracting Invoice CSV files.', nNumLocalFiles )
+								Break
+							Case 1
+								Call fcMeter.Reset( 'Extracting Credit Note CSV files.', nNumLocalFiles )
+								Break
+							Case 2
+								Call fcMeter.Reset( 'Extracting Statement CSV files.', nNumLocalFiles )
+								Break
+							Case 3
+								Call fcMeter.Reset( 'Extracting Confirmation CSV files.', nNumLocalFiles )
+								Break
+							Case 4
+								Call fcMeter.Reset( 'Extracting NPA CSV files.', nNumLocalFiles )
+								Break
+							Case 5
+								Call fcMeter.Reset( 'Extracting Acknowledgment CSV files.', nNumLocalFiles )
+								Break
+							Case 6
+								Call fcMeter.Reset( 'Extracting Receipts CSV files.', nNumLocalFiles )
+								Break
+							Case 7
+								Call fcMeter.Reset( 'Extracting PRC CSV files.', nNumLocalFiles )
+								Break
+						Call ConvertStrArrayToUpper( saLocalFiles, nNumLocalFiles )
+						!
+						Set nCount = 0
+						While nCount < nNumLocalFiles
+							!
+							Set saCopyFileFrom[ nFileCopyCount ] = sFromPath || '\\' || saLocalFiles[ nCount ]
+							Set saCopyFileTo[ nFileCopyCount ] = ExtractToPath( nProcessingNo, saLocalFiles[ nCount ] ) || '\\' || saLocalFiles[ nCount ]
+							Set nFileCopyCount = nFileCopyCount + 1
+							Set saCopyFileFrom[ nFileCopyCount ] = ''
+							Set saCopyFileTo[ nFileCopyCount ] = ''
+							Call fcMeter.Increment( 1 )
+							!
+							Set nCount = nCount + 1
+						!
+						Set nProcessingNo = nProcessingNo + 1
+					Call fcMeter.End( )
+					!
+					Set nTotalFiles = nFileCopyCount
+					Set nDoneFiles = 0
+					!
+					Set nCount = 0
+					While saCopyFileFrom[ nCount ] != ''
+						!
+						Set sCopyFileFrom = saCopyFileFrom[ nCount ]
+						Set sCopyFileTo = saCopyFileTo[ nCount ]
+						!
+						Call PushNumber( nTotalFiles )
+						Call PushNumber( nDoneFiles )
+						Call PushString( sCopyFileFrom )
+						Call PushString( sCopyFileTo )
+						If NOT SalSendMsg( hWndUpdate, PAM_cls_SETFIELDS, 0, 0 )
+							Call PopString( sCopyFileTo, TRUE )
+							Call PopString( sCopyFileFrom, TRUE )
+							Call PopNumber( nDoneFiles, TRUE )
+							Call PopNumber( nTotalFiles, TRUE )
+						If VisFileCopy( sCopyFileFrom, sCopyFileTo )
+							Call VisFileDelete( sCopyFileFrom )
+							! Call VisFileSetAttribute( sCopyFileFrom, FA_Archive, FALSE )
+						!
+						Set nCount = nCount + 1
+						Set nDoneFiles = nDoneFiles + 1
+			Function: ExtractToPath
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nProcessingNo
+					String: sFileName
+				Static Variables
+				Local variables
+					String: sToPath
+					Number: nCustNo
+					Number: nYear
+					String: sInvCredNo
+					String: sQrpFileName
+					String: sFileType
+				Actions
+					Set sToPath = ''
+					!
+					Select Case nProcessingNo
+						Case 0
+							Call TokenCustInvoiceCSVFileName( sFileName, nCustNo, nYear, sInvCredNo, sQrpFileName, sFileType )
+							Break
+						Case 1
+							Call TokenCustCreditNoteCSVFileName( sFileName, nCustNo, nYear, sInvCredNo, sQrpFileName, sFileType )
+							Break
+						Case 2
+							Call TokenCustStatementCSVFileName( sFileName, nCustNo, nYear, sQrpFileName, sFileType )
+							Break
+						Case 3
+							Call TokenCustConfCSVFileName( sFileName, nCustNo, nYear, sQrpFileName, sFileType )
+							Break
+						Case 4
+							Call TokenCustNPACSVFileName( sFileName, nCustNo, nYear, sQrpFileName, sFileType )
+							Break
+						Case 5
+							Call TokenCustAckCSVFileName( sFileName, nCustNo, nYear, sQrpFileName, sFileType )
+							Break
+						Case 6
+							Call TokenCustRcpCSVFileName( sFileName, nCustNo, nYear, sQrpFileName, sFileType )
+							Break
+						Case 7
+							Call TokenCustPRCCSVFileName( sFileName, nCustNo, nYear, sQrpFileName, sFileType )
+							Break
+					!
+					Call CreateCustStructure( nCustNo )
+					Set sToPath =  GetCustCSVFileStructurePath( nCustNo, sFileType )
+					Return sToPath
+			!
+			Function: ConvertStrArrayToUpper
+				Description:
+				Returns
+				Parameters
+					Receive String: saLocalFiles[*]
+					Number: nTotalCount
+				Static Variables
+				Local variables
+					Number: nCount
+				Actions
+					Set nCount = 0
+					While nCount < nTotalCount
+						Set saLocalFiles[ nCount ] = SalStrUpperX( saLocalFiles[ nCount ] )
+						Set nCount = nCount + 1
+		Window Parameters
+		Window Variables
+		Message Actions
+			On SAM_Create
+				Call SalSendMsg( pbExit, PAM_clsPB_DISABLE, 0, 0 )
+				Return SalSendClassMessage( SAM_Create, wParam, lParam )
+			On SAM_Close
+				Return FALSE
+			On SAM_CreateComplete
+				Call OurWaitCursor( TRUE )
+				Call SalSendClassMessage( SAM_CreateComplete, wParam, lParam )
+				!
+				Call ProgramVersionControl( hWndForm )
+				Call CSVFilingControl( hWndForm )
+				!
+				Call OurWaitCursor( FALSE )
+				Call SalSendMsg( pbExit, SAM_Click, 0, 0 )
+			On PAM_cls_SETFIELDS
+				Call PopString( dfCopyFileTo, TRUE )
+				Call PopString( dfCopyFileFrom, TRUE )
+				Call PopNumber( dfDoneFiles, TRUE )
+				Call PopNumber( dfTotalFiles, TRUE )
+				Call SalUpdateWindow( hWndForm )
+				Return TRUE

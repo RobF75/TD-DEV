@@ -1,0 +1,4459 @@
+Application Description: SQLWindows 5.01 Jans Paint Master Table APL
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D80000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF2C0000 002C000000C00200 0069010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.113"
+			Top:    2.896"
+			Width:  4.688"
+			Height: 2.99"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   8.263"
+			Top:    0.688"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: VTMETER.APL
+		File Include: VTSPIN.APL
+		File Include: VTWIN.APL
+		File Include: Query.apl
+		File Include: Frmctbl.apl
+		File Include: Itemfunc.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Italic
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Black
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for PAINTMD.APL
+				Number: PAINTTBLAplMsgOffSet = SAM_User + 3600
+				! Message go up to AplOffSet + 99
+				Number: PAINTTBLAplConstOffSet = 1750
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 895195755
+0000: 5404000054010000 0000000000000000 0200002E0000005D 00010DF8000000FF
+0020: 8F6A0001FB00FF8F 770001FB00FF8F84 0001FB00FF8F9100 01FB00FF8F9E0001
+0040: FB00FF8FAB0001FB 00FF0FB8000204F8 000000FF8FBC0002 FB00FF8FC00001FB
+0060: 00FF8FCD0001FB00 FF8FDA0001FB00FF 8FE70001FB00FF0F F4000304FA0000FF
+0080: 8FF80001FB00FF0F 0501010DFB00FF0F 12010204FB00FF8F 160102FB00FF8F1A
+00A0: 0102FB00FF8F1E01 01FB00FF8F2B0102 FB00FF8F2F0102FB 00FF8F330101FB00
+00C0: FF8F400101FB00FF 8F4D0101FB00FF8F 5A0101FB00FF0F67 010304FB00FF8F6B
+00E0: 0101FB00FF8F7801 01FB00FF8F850102 FB00FF8F890102FB 00FF8F8D0102FB00
+0100: FF8F910101FA0000 FF8F9E0102FB00FF 8FA20102FB00FF8F A60101FB00FF8FB3
+0120: 0101FB00FF8FC001 01FB00FF8FCD0101 FB00FF8FDA0103FB 00FF8FDE0101FB00
+0140: FF8FEB0101FB00FF 8FF80102FB00FF8F FC0102FB00FF1F02 0204FB00FF0F0402
+0160: 010DFB00FF0F
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 2505817678
+0000: 580C000070050000 0000000000000000 0200001700FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F08003C00 001063006C737062
+0040: 5061696E00744D61 7374657234800000 0002000000C10204 000000FF7F04C000
+0060: 0304000000FF7F01 00802E0000000100 00700011636C5300 7461727450726F67
+0080: 0072616DAC000000 07D800000002FD00 FFD70402FC0000FF C7080002FD00FF07
+00A0: 0C00010D00FC0000 FFC7190003FD00FF C71D0002FD00FFC7 210001FD00FF8701
+00C0: 800D000800020000 0B68630053716C48 616E646C80651C00 000001006600010D
+00E0: 00FFFF0101802F00 0000037000000010 440069616C6F6747 656E006572616C7C
+0100: 0000003005000000 010DFB00FF0F0D00 0204FB00FF0F1100 040DF8000000FF0F
+0120: 1E000304FB00FF8F 220001FB00FF8F01 800D11000400000C 63C26C6362476527
+0140: 1C0000019A000001 0DFD00FF87018034 000C00050014636C 0D70656C65630074
+0160: 46726F6D54616280 6C656400000004CD 00010DFE00FF6B0D 0100FE00FFE31A00
+0180: 01FE00FFE3270001 FE00FF4301800400 0080060000000D63 6C2C536563496E10
+01A0: 746F1C00000100ED 0003FE00FF030180 33000000C6070011 630054626C517565
+01C0: 72792C44696F9400 D800000600EE0300 FFBF04E6020000FF BF08EF00FF3F0C00
+01E0: ED0D00FFBF19EE01 00FF3F2600EE0100 FF3F0180205D0000 00080000CE115175
+0200: 03617461466965A0 6C642C01000CEC00 0002FE00FF6B0402 00FE00FFEB0802FE
+0220: 00FFEB0C02FE00FF C31000010DFE00FF EB1D01FE00FFE32A 0002E8000100001F
+0240: 800100FC0000C32E 00010DFE00FFE33B 0002FE00FFE33F00 01FE00FFE34C0002
+0260: FE00FFE3500001FE 00FF6301805D0080 0900000012636C1F 436F6DF0626F4669
+0280: 970C0000DD0200FF 7F04CD020000FF7F 08DF00FF7F0CDD02 00FF7F10DB0D00FF
+02A0: 7F1DDF00FF7F2A1F 000100FD00938001 00007F2EDB0D00FF 7F3BDF00FF7F3FDF
+02C0: 00FF7F4CDF00FF7F 50DF00FF7F010080 1A0000000A0000F0 0015636C034F7065
+02E0: 726174706F724669 34A20000020000D9 010D00FF7F0DCC00 010000FF7F010C80
+0300: 04000B0000F00013 636C017943425965 734E806F466C6167 1C00680001000002
+0320: F60400FF1F01802F 13000C00000E0463 6C466F726D478E65 616C7CD9000500EC
+0340: 010D00FFBF0DEE02 00FF3F1100E50D00 00FFBF1EEF00FFBF 22EF00FF3F018066
+0360: 0D000D00F817636C 105072696E426173 0069635265706F72 74441C0000010000
+0380: B3010D00FFFF1801 800D000E00B00000 0C63707E471CA300 010000D9010D00FF
+03A0: 7F010C800D000F00 00700009636C4530 7869741C00019A00 00010DFD00FFC701
+03C0: 8004C4001000000C 0150696345787061 126E1C00000100ED 0002FE00FF630180
+03E0: 0400E21100001207 546F67676C006542 7574746F6E1CA200 00010000DD0200FF
+0400: 7F010C8004001200 001C000C646647FE 65D100010000EE03 00FF3F0180002200
+0420: 000013000000681D 636C544D20616B65 5365656301656452 6F774B6500794172
+0440: 7261796C00D00000 0400008E02000100 FE00C980010000BF 04EC010D00FFBF11
+0460: EE0100FFBF1EE602 0000FF3F018000B7 00000014000000D8 0F636C6178654765
+0480: 6C080C0200150000 00B3010D00FFFF9A 0D010000FFFFBA1A 0100FFFFBE2700FF
+04A0: FFB834000200FFFF B838000200FFFFB8 3C000200FFFFB840 000200FFFFB84400
+04C0: 0200FFFFB8480002 00FFFFBE4C00FFFF 3A50020001FA0000 2780010000FF3054
+04E0: 00010D0001FA0000 2780010000FFB058 00010D00FFFFB865 000100FFFFB87200
+0500: 0100FFFFB87F0001 00FFFFB88C000100 FFFFB899000100FF FFB8A6000100FFFF
+0520: B8B3000300FFFF98 01800D0015310011 63537000696E5365 61736F6E40596561
+0540: 721C000034010000 010DFB00FF0F0180 2B00880000160000 111B466D4368E069
+0560: 6C64546164640000 0400B3010D00FFFF 9A0D010000FFFFBE 1A00FFFFBA270200
+0580: FFFF
+.enddata
+			Pushbutton Class: clspbPaintMaster
+				Title: Paints
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name: C:\CENTURA\ICONS\PAINTS.BMP
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clspbPickInto
+				Class Variables
+					String: sTmp
+					Window Handle: hWndTmp
+				Instance Variables
+					! PUBLIC
+					Window Handle: hWndPickIntoTable
+					! PRIVATE
+					String: sPaintId
+					String: sPaintDesc
+				Functions
+					Function: SetPaintMasterFields
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: sNewPaintId
+							String: sNewPaintDesc
+						Static Variables
+						Local variables
+						Actions
+							Set sPaintId = sNewPaintId
+							Set sPaintDesc = sNewPaintDesc
+							Return TRUE
+					Function: GetPaintMasterFields
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: sNewPaintId
+							Receive String: sNewPaintDesc
+						Static Variables
+						Local variables
+						Actions
+							Set sNewPaintId = sPaintId
+							Set sNewPaintDesc = sPaintDesc
+							Return TRUE
+				Message Actions
+					On SAM_Create
+						Set hWndPickIntoTable = hWndItem
+						Call SalSendClassMessage( SAM_Create, wParam, lParam )
+						Set clspbPaintMaster.nActivateWindowType = ACTIVATE_FormWindow
+						Set clspbPaintMaster.sActivateDialogName = 'frmPaintMaster'
+						Set clspbPaintMaster.hWndTable = hWndPickIntoTable
+						Set clspbPaintMaster.hWndFieldLookUp = hWndItem
+					On PAM_clsACTIVATE_PUSHFIELDS
+						Call SalSendMsg( hWndItem, PAM_cls_SETFIELDS, 0, 0 )
+						Call PushString( sPaintId )
+						Call PushString( sPaintDesc )
+						Call PushWndHdl( hWndItem )
+						Return TRUE
+					On PAM_clsPICK_LOOKUP
+						Call PopString( sPaintDesc, TRUE )
+						Call PopString( sPaintId, TRUE )
+						Call SalSendMsg( hWndItem, PAM_cls_GETFIELDS, 0, 0 )
+						Return TRUE
+					On PAM_clsACTIVATE_POPFIELDS
+						Call PopWndHdl( hWndTmp, TRUE )
+						Call PopString( sTmp, TRUE )
+						Call PopString( sTmp, TRUE )
+						Return TRUE
+			Form Window Class: clsfrmPaintMaster
+				Title: Fleming's Nurseries Paint Master
+				Icon File:
+				Accesories Enabled? Class Default
+				Visible? Class Default
+				Display Settings
+					Display Style? Class Default
+					Visible at Design time? Yes
+					Automatically Created at Runtime? Class Default
+					Initial State: Class Default
+					Maximizable? Class Default
+					Minimizable? Class Default
+					System Menu? Class Default
+					Resizable? Class Default
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: 3.375"
+						Height Editable? Class Default
+					Form Size
+						Width:  Class Default
+						Height: Class Default
+						Number of Pages: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+				Next Class Child Key: 28
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clsFormChildTable
+				Menu
+				Tool Bar
+					Display Settings
+						Display Style? Class Default
+						Location? Class Default
+						Visible? Class Default
+						Size: Class Default
+						Size Editable? Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Contents
+						Pushbutton: pbSelect
+							Class Child Ref Key: 0
+							Class ChildKey: 19
+							Class: clspbSelectFromTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   1.2"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+								On PAM_cls_SETINSTANCEVARS
+									Set pbSelect.hWndTable = tblPaintMaster
+									Set pbSelect.hWndSelectParent = hWndForm.clsFormChildTable.hWndActivateButton
+									Set pbSelect.nSelectType = PICK_SelectManyToMany
+								On PAM_clsPICK_PUSHFIELDS
+									Call PushString( tblPaintMaster.colPaintId )
+									Call PushString( tblPaintMaster.colPaintDesc )
+									Return TRUE
+								On PAM_clsPICK_POPFIELDS
+									Call PopString( sTmp, TRUE )
+									Call PopString( sTmp, TRUE )
+									Return TRUE
+						Pushbutton: pbClearRows
+							Class Child Ref Key: 5
+							Class ChildKey: 7
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbAddRows
+							Class Child Ref Key: 6
+							Class ChildKey: 8
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbSaveRows
+							Class Child Ref Key: 7
+							Class ChildKey: 9
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbQuery
+							Class Child Ref Key: 8
+							Class ChildKey: 10
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbDeleteRows
+							Class Child Ref Key: 9
+							Class ChildKey: 11
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbRePopulate
+							Class Child Ref Key: 11
+							Class ChildKey: 12
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbTools
+							Class Child Ref Key: 23
+							Class ChildKey: 13
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbHelp
+							Class Child Ref Key: 42
+							Class ChildKey: 24
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbItemEnq
+							Class Child Ref Key: 43
+							Class ChildKey: 25
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbPrintForm
+							Class Child Ref Key: 44
+							Class ChildKey: 26
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbExit
+							Class Child Ref Key: 45
+							Class ChildKey: 27
+							Class: clsFormChildTable
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+				Contents
+					Child Table: tblPaintMaster
+						Class Child Ref Key: 0
+						Class ChildKey: 16
+						Class: clsTableGeneral
+						Property Template:
+						Class DLL Name:
+						Display Settings
+							Window Location and Size
+								Left:   0.05"
+								Top:    0.354"
+								Width:  9.713"
+								Width Editable? Class Default
+								Height: 4.188"
+								Height Editable? Class Default
+							Visible? Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							View: Class Default
+							Allow Row Sizing? Class Default
+							Lines Per Row: Class Default
+						Memory Settings
+							Maximum Rows in Memory: Class Default
+							Discardable? Class Default
+						Contents
+							Column: colPaintId
+								Class Child Ref Key: 0
+								Class ChildKey: 17
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: Paint Id.
+								Visible? Class Default
+								Editable? No
+								Maximum Data Length: Class Default
+								Data Type: Class Default
+								Justify: Class Default
+								Width:  0.95"
+								Width Editable? Class Default
+								Format: Uppercase
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+									On PAM_cls_SETINSTANCEVARS
+										Set colPaintId.bOrderBy = TRUE
+									On PAM_clsTBL_EDITCHECK
+										If SalTblQueryRowFlags( hWndForm, lParam, ROW_New )
+											Return TRUE
+										Else
+											Return FALSE
+									On PAM_clsTBL_CHECKROWNEW
+										Call ExistsPaintId( colPaintId, bExists, SH_cls_Execute )
+										If bExists
+											Call ErrorMessage( 'This Paint ID already exists! Please change it first!', hWndForm, lParam )
+											Return FALSE
+										Else
+											Return TRUE
+							Column: colPaintDesc
+								Class Child Ref Key: 0
+								Class ChildKey: 18
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: Paint Description
+								Visible? Class Default
+								Editable? No
+								Maximum Data Length: Class Default
+								Data Type: Class Default
+								Justify: Class Default
+								Width:  6.338"
+								Width Editable? Class Default
+								Format: Class Default
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+									On PAM_cls_SETINSTANCEVARS
+										Set colPaintDesc.bOrderBy = TRUE
+							Column: colPaintColour
+								Class Child Ref Key: 0
+								Class ChildKey: 28
+								Class: clsColumnGeneral
+								Property Template:
+								Class DLL Name:
+								Title: Paint Colour
+								Visible? Class Default
+								Editable? Class Default
+								Maximum Data Length: 10
+								Data Type: Class Default
+								Justify: Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Format: Class Default
+								Country: Class Default
+								Input Mask: Class Default
+								Cell Options
+									Cell Type? Class Default
+									Multiline Cell? Class Default
+									Cell DropDownList
+										Sorted? Class Default
+										Vertical Scroll? Class Default
+										Auto Drop Down? Class Default
+										Allow Text Editing? Class Default
+									Cell CheckBox
+										Check Value:
+										Uncheck Value:
+										Ignore Case? Class Default
+								List Values
+								Message Actions
+						Functions
+						Window Variables
+							Boolean: bExists
+						Message Actions
+							On PAM_cls_SETINSTANCEVARS
+								Set sSQLPopHandle = ' SELECT 
+										  Paint_Id, 
+										  Paint_Desc, 
+										  Paint_Colour 
+										FROM 
+										  Paint_Master '
+								Set sNAMEPopHandle = 'POPPAINTMIV'
+								Set sBINDPopHandle = ''
+								Set sINTOPopHandle = ':clsfrmPaintMaster.tblPaintMaster.colPaintId, 
+										:clsfrmPaintMaster.tblPaintMaster.colPaintDesc, 
+										:clsfrmPaintMaster.tblPaintMaster.colPaintColour'
+								!
+								Set sSQLRefreshHandle = ' SELECT 
+										  Paint_Desc, 
+										  Paint_Colour 
+										FROM 
+										  Paint_Master 
+										WHERE Paint_Id = :1 '
+								Set sNAMERefreshHandle = 'REFPAINTMIV'
+								Set sBINDRefreshHandle = ':clsfrmPaintMaster.tblPaintMaster.colPaintId'
+								Set sINTORefreshHandle = ':clsfrmPaintMaster.tblPaintMaster.colPaintDesc, 
+										:clsfrmPaintMaster.tblPaintMaster.colPaintColour'
+								!
+								Set sSQLInsertHandle = ' INSERT INTO Paint_Master 
+										( Paint_Id, Paint_Desc, Paint_Colour ) VALUES ( :1, :2, :3 ) '
+								Set sNAMEInsertHandle = 'INSPAINTMIV'
+								Set sBINDInsertHandle = ':clsfrmPaintMaster.tblPaintMaster.colPaintId, 
+										:clsfrmPaintMaster.tblPaintMaster.colPaintDesc, 
+										:clsfrmPaintMaster.tblPaintMaster.colPaintColour'
+								Set sINTOInsertHandle = ''
+								!
+								Set sSQLUpdateHandle = ' UPDATE Paint_Master 
+										SET 
+										  Paint_Desc = :2, 
+										  Paint_Colour = :3 
+										WHERE 
+										  Paint_Id = :1'
+								Set sNAMEUpdateHandle = 'UPDTPAINTMIV'
+								Set sBINDUpdateHandle = ':clsfrmPaintMaster.tblPaintMaster.colPaintId, 
+										:clsfrmPaintMaster.tblPaintMaster.colPaintDesc, 
+										:clsfrmPaintMaster.tblPaintMaster.colPaintColour'
+								Set sINTOUpdateHandle = ''
+								!
+								Set sSQLDeleteHandle = ' DELETE FROM Paint_Master WHERE Paint_Id = :1 '
+								Set sNAMEDeleteHandle = 'DELPAINTM'
+								Set sBINDDeleteHandle = ':clsfrmPaintMaster.tblPaintMaster.colPaintId'
+								Set sINTODeleteHandle = ''
+								!
+								Set bAddAllowed = TRUE
+								Set bSaveAllowed = TRUE
+								Set bDeleteAllowed = TRUE
+								Set bUnDeleteAllowed = TRUE
+								Set bRepopulateAllowed = TRUE
+								Set bClearSelectAllowed = TRUE
+								Set bQueryAllowed = TRUE
+								Set bReportAllowed = FALSE
+								Set bOrderAllowed = TRUE
+								!
+								Set sQueryDialogName = 'dlgQueryPaintMaster'
+							On SAM_Destroy
+								Call ExistsPaintId( '', bExists, SH_cls_Disconnect )
+								Return SalSendClassMessage( SAM_Destroy, wParam, lParam )
+							On PAM_clsTBL_PUSHFIELDS
+								Call PushString( hWndParent.clsfrmPaintMaster.sPaintId )
+								Call PushString( hWndParent.clsfrmPaintMaster.sPaintDesc )
+								Return TRUE
+					Data Field: dfDatabase
+						Class Child Ref Key: 46
+						Class ChildKey: 20
+						Class: clsFormChildTable
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					Data Field: dfUser
+						Class Child Ref Key: 47
+						Class ChildKey: 21
+						Class: clsFormChildTable
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					Background Text:
+						Resource Id: 58677
+						Class Child Ref Key: 48
+						Class ChildKey: 22
+						Class: clsFormChildTable
+						Window Location and Size
+							Left:   Class Default
+							Top:    Class Default
+							Width:  Class Default
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Custom Control: ccSeasonYear
+						Class Child Ref Key: 49
+						Class ChildKey: 23
+						Class: clsFormChildTable
+						Property Template:
+						Class DLL Name:
+						Display Settings
+							DLL Name:
+							MS Windows Class Name:
+							Style:  Class Default
+							ExStyle:  Class Default
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Etched Border? Class Default
+							Hollow? Class Default
+							Vertical Scroll? Class Default
+							Horizontal Scroll? Class Default
+							Tab Stop? Class Default
+							Tile To Parent? Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							DLL Settings
+						Message Actions
+				Class Variables
+				Instance Variables
+					String: sPaintId
+					String: sPaintDesc
+				Functions
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set bQueryAllowed = TRUE
+						Set bAddAllowed = TRUE
+						Set bSaveAllowed = TRUE
+						Set bDeleteAllowed = TRUE
+						Set bUnDeleteAllowed = TRUE
+						Set bReportAllowed = FALSE
+						Set bOrderAllowed = TRUE
+						Set hWndChildTable = tblPaintMaster
+						Set nPopOrQueryOnStartUp = TBL_cls_QueryOnStartUp
+					On PAM_clsFRM_POPFIELDS
+						Call PopWndHdl( hWndActivateButton, TRUE )
+						Call PopString( sPaintDesc, TRUE )
+						Call PopString( sPaintId, TRUE )
+						Return TRUE
+			Dialog Box Class: clsdlgQueryPaintMaster
+				Title: Query Paint Master
+				Accesories Enabled? Class Default
+				Visible? Class Default
+				Display Settings
+					Display Style? Class Default
+					Visible at Design time? Yes
+					Type of Dialog: Modal
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  7.975"
+						Width Editable? Class Default
+						Height: 2.375"
+						Height Editable? Class Default
+					Absolute Screen Location? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+				Next Class Child Key: 17
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Tool Bar
+					Display Settings
+						Display Style? Class Default
+						Location? Class Default
+						Visible? Class Default
+						Size: Class Default
+						Size Editable? Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Contents
+						Pushbutton: pbHelp
+							Class Child Ref Key: 16
+							Class ChildKey: 5
+							Class: clsTblQueryDialog
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbQuery
+							Class Child Ref Key: 7
+							Class ChildKey: 6
+							Class: clsTblQueryDialog
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   3.738"
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbPrintForm
+							Class Child Ref Key: 17
+							Class ChildKey: 7
+							Class: clsTblQueryDialog
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   6.65"
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbExit
+							Class Child Ref Key: 18
+							Class ChildKey: 8
+							Class: clsTblQueryDialog
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   7.25"
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbClear
+							Class Child Ref Key: 19
+							Class ChildKey: 17
+							Class: clsTblQueryDialog
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+				Contents
+					Data Field: dfDatabase
+						Class Child Ref Key: 12
+						Class ChildKey: 1
+						Class: clsTblQueryDialog
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					Data Field: dfUser
+						Class Child Ref Key: 13
+						Class ChildKey: 2
+						Class: clsTblQueryDialog
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					Custom Control: ccSeasonYear
+						Class Child Ref Key: 14
+						Class ChildKey: 3
+						Class: clsTblQueryDialog
+						Property Template:
+						Class DLL Name:
+						Display Settings
+							DLL Name:
+							MS Windows Class Name:
+							Style:  Class Default
+							ExStyle:  Class Default
+							Title:
+							Window Location and Size
+								Left:   6.863"
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Etched Border? Class Default
+							Hollow? Class Default
+							Vertical Scroll? Class Default
+							Horizontal Scroll? Class Default
+							Tab Stop? Class Default
+							Tile To Parent? Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							DLL Settings
+						Message Actions
+					Background Text:
+						Resource Id: 19833
+						Class Child Ref Key: 15
+						Class ChildKey: 4
+						Class: clsTblQueryDialog
+						Window Location and Size
+							Left:   6.113"
+							Top:    Class Default
+							Width:  Class Default
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					!
+					Background Text: Paint ID
+						Resource Id: 19835
+						Class Child Ref Key: 0
+						Class ChildKey: 9
+						Class: clsBackTextGeneral
+						Window Location and Size
+							Left:   2.488"
+							Top:    0.531"
+							Width:  0.713"
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Background Text: Paint Description
+						Resource Id: 19834
+						Class Child Ref Key: 0
+						Class ChildKey: 10
+						Class: clsBackTextGeneral
+						Window Location and Size
+							Left:   1.738"
+							Top:    0.813"
+							Width:  1.463"
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					!
+					Data Field: dfPaintId
+						Class Child Ref Key: 0
+						Class ChildKey: 11
+						Class: clsQueryDataField
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: String
+							Editable? Yes
+						Display Settings
+							Window Location and Size
+								Left:   4.163"
+								Top:    0.49"
+								Width:  0.963"
+								Width Editable? Yes
+								Height: 0.25"
+								Height Editable? Yes
+							Visible? Yes
+							Border? Yes
+							Justify: Left
+							Format: Uppercase
+							Country: Default
+							Font Name: Default
+							Font Size: Default
+							Font Enhancement: Default
+							Text Color: Default
+							Background Color: Default
+							Input Mask: Unformatted
+						Message Actions
+							On PAM_cls_SETINSTANCEVARS
+								Set dfPaintId.sSQLCOLNAME = 'PAINT_MASTER.PAINT_ID'
+								Set dfPaintId.hWndOperatorField = cmbPaintIdOp
+								Set dfPaintId.hWndNotField = cbNOTPaintId
+					Data Field: dfPaintDesc
+						Class Child Ref Key: 0
+						Class ChildKey: 12
+						Class: clsQueryDataField
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: String
+							Editable? Yes
+						Display Settings
+							Window Location and Size
+								Left:   4.163"
+								Top:    0.771"
+								Width:  3.4"
+								Width Editable? Yes
+								Height: 0.25"
+								Height Editable? Yes
+							Visible? Yes
+							Border? Yes
+							Justify: Left
+							Format: Unformatted
+							Country: Default
+							Font Name: Default
+							Font Size: Default
+							Font Enhancement: Default
+							Text Color: Default
+							Background Color: Default
+							Input Mask: Unformatted
+						Message Actions
+							On PAM_cls_SETINSTANCEVARS
+								Set dfPaintDesc.sSQLCOLNAME = 'PAINT_MASTER.PAINT_DESC'
+								Set dfPaintDesc.hWndOperatorField = cmbPaintDescOp
+								Set dfPaintDesc.hWndNotField = cbNOTPaintDesc
+								Set dfPaintDesc.sOperator = ' LIKE '
+								Set dfPaintDesc.bCompareUpCase = TRUE
+					!
+					Check Box: cbNOTPaintId
+						Class Child Ref Key: 0
+						Class ChildKey: 13
+						Class: clsQueryNOTField
+						Property Template:
+						Class DLL Name:
+						Title: NOT
+						Window Location and Size
+							Left:   1.138"
+							Top:    0.49"
+							Width:  0.538"
+							Width Editable? Yes
+							Height: 0.25"
+							Height Editable? Yes
+						Visible? Yes
+						Font Name: Arial
+						Font Size: 8
+						Font Enhancement: Default
+						Text Color: Dark Blue
+						Background Color: Gray
+						Message Actions
+							On PAM_cls_SETINSTANCEVARS
+								Set cbNOTPaintId.hWndQueryField = dfPaintId
+					Check Box: cbNOTPaintDesc
+						Class Child Ref Key: 0
+						Class ChildKey: 14
+						Class: clsQueryNOTField
+						Property Template:
+						Class DLL Name:
+						Title: NOT
+						Window Location and Size
+							Left:   1.138"
+							Top:    0.771"
+							Width:  0.538"
+							Width Editable? Yes
+							Height: 0.25"
+							Height Editable? Yes
+						Visible? Yes
+						Font Name: Arial
+						Font Size: 8
+						Font Enhancement: Default
+						Text Color: Dark Blue
+						Background Color: Gray
+						Message Actions
+							On PAM_cls_SETINSTANCEVARS
+								Set cbNOTPaintDesc.hWndQueryField = dfPaintDesc
+					!
+					Combo Box: cmbPaintIdOp
+						Class Child Ref Key: 0
+						Class ChildKey: 15
+						Class: clsQueryOperatorField
+						Property Template:
+						Class DLL Name:
+						Window Location and Size
+							Left:   3.25"
+							Top:    0.49"
+							Width:  0.863"
+							Width Editable? Yes
+							Height: 1.26"
+							Height Editable? Yes
+						Visible? Yes
+						Editable? No
+						String Type: String
+						Maximum Data Length: Default
+						Sorted? No
+						Always Show List? No
+						Vertical Scroll? Yes
+						Font Name: Default
+						Font Size: Default
+						Font Enhancement: Default
+						Text Color: Default
+						Background Color: Default
+						Input Mask: Unformatted
+						List Initialization
+						Message Actions
+							On PAM_cls_SETINSTANCEVARS
+								Set cmbPaintIdOp.hWndQueryField = dfPaintId
+								Set cmbPaintIdOp.sOperator = ' = '
+					Combo Box: cmbPaintDescOp
+						Class Child Ref Key: 0
+						Class ChildKey: 16
+						Class: clsQueryOperatorField
+						Property Template:
+						Class DLL Name:
+						Window Location and Size
+							Left:   3.25"
+							Top:    0.771"
+							Width:  0.863"
+							Width Editable? Yes
+							Height: 1.26"
+							Height Editable? Yes
+						Visible? Yes
+						Editable? No
+						String Type: String
+						Maximum Data Length: Default
+						Sorted? No
+						Always Show List? No
+						Vertical Scroll? Yes
+						Font Name: Default
+						Font Size: Default
+						Font Enhancement: Default
+						Text Color: Default
+						Background Color: Default
+						Input Mask: Unformatted
+						List Initialization
+						Message Actions
+							On PAM_cls_SETINSTANCEVARS
+								Set cmbPaintDescOp.hWndQueryField = dfPaintDesc
+								Set cmbPaintDescOp.sOperator = ' LIKE '
+					!
+				Derived From
+					Class: clsTblQueryDialog
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set bMapEnterToTab = TRUE
+						Set hWndFirstFocus = dfPaintDesc
+					On PAM_clsDLG_POPFIELDS
+						Call PopString( dfPaintDesc, TRUE )
+						Call PopString( dfPaintId, TRUE )
+						Return TRUE
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+	! clsFormChildTable: frmPaintMaster
+.winattr class Form Window:
+		Class: clsFormChildTable
+		Property Template:
+		Class DLL Name:
+		Title: Fleming's Nurseries Paint Master
+		Icon File:
+		Accesories Enabled? Yes
+		Visible? Yes
+		Display Settings
+			Display Style? Etched
+			Visible at Design time? No
+			Automatically Created at Runtime? No
+			Initial State: Maximized
+			Maximizable? Yes
+			Minimizable? Yes
+			System Menu? Yes
+			Resizable? Yes
+			Window Location and Size
+				Left:  
+				Top:   
+				Width:  8.025"
+				Width Editable? Yes
+				Height: 3.896"
+				Height Editable? Yes
+			Form Size
+				Width:  Default
+				Height: Default
+				Number of Pages: Dynamic
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Default
+.end
+		 Description: 
+		 Named Menus 
+		 Menu 
+		 Tool Bar 
+.winattr
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: 0.594"
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+.end
+			 Contents 
+				 Pushbutton: pbHelp
+.winattr
+					Class Child Ref Key: 3
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title: Help F1
+					Window Location and Size
+						Left:   0.0"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: F1
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: G:\APPS\GUPTA\ICONS\HELP2.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbItemEnq
+.winattr
+					Class Child Ref Key: 14
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title: Enq
+					Window Location and Size
+						Left:   0.6"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: (none)
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: G:\APPS\GUPTA\ICONS\ENQUIRE.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbSelect
+.winattr class
+					Class Child Ref Key: 0
+					Class ChildKey: 0
+					Class: clspbSelectFromTable
+					Property Template:
+					Class DLL Name:
+					Title: &Select
+					Window Location and Size
+						Left:   1.2"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: (none)
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: G:\APPS\GUPTA\ICONS\UPARR.ICO
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+						 On PAM_cls_SETINSTANCEVARS
+							 Set pbSelect.hWndTable = tblPaintMaster
+							 Set pbSelect.hWndSelectParent = hWndForm.clsFormChildTable.hWndActivateButton
+							 Set pbSelect.nSelectType = PICK_SelectManyToMany
+						 On PAM_clsPICK_PUSHFIELDS
+							 Call PushString( tblPaintMaster.colPaintId )
+							 Call PushString( tblPaintMaster.colPaintDesc )
+							 Return TRUE
+						 On PAM_clsPICK_POPFIELDS
+							 Call PopString( sTmp, TRUE )
+							 Call PopString( sTmp, TRUE )
+							 Return TRUE
+				 Pushbutton: pbClearRows
+.winattr
+					Class Child Ref Key: 5
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title: Clear F3
+					Window Location and Size
+						Left:   1.8"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: F3
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: G:\APPS\GUPTA\ICONS\MAINT.ICO
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbAddRows
+.winattr
+					Class Child Ref Key: 6
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title: Add F6
+					Window Location and Size
+						Left:   2.4"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: F6
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: G:\APPS\GUPTA\ICONS\FMTSTR.ICO
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbSaveRows
+.winattr
+					Class Child Ref Key: 7
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title: Save F5
+					Window Location and Size
+						Left:   3.113"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: F5
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: G:\APPS\GUPTA\ICONS\DISK.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbQuery
+.winattr
+					Class Child Ref Key: 8
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title: Query F7
+					Window Location and Size
+						Left:   4.525"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: F7
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: G:\APPS\GUPTA\ICONS\QUERY.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbDeleteRows
+.winattr
+					Class Child Ref Key: 9
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title: Del F4
+					Window Location and Size
+						Left:   3.825"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: F4
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: G:\APPS\GUPTA\ICONS\DELREC.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbRePopulate
+.winattr
+					Class Child Ref Key: 11
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title: Repop
+					Window Location and Size
+						Left:   5.2"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: (none)
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: G:\APPS\GUPTA\ICONS\STYLE.ICO
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbExit
+.winattr
+					Class Child Ref Key: 4
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title: Exit Esc
+					Window Location and Size
+						Left:   9.4"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: Esc
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: CLOSE.ICO
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbPrintForm
+.winattr
+					Class Child Ref Key: 22
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title: Print
+					Window Location and Size
+						Left:   8.8"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: (none)
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: G:\APPS\GUPTA\ICONS\PRINT.ICO
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbTools
+.winattr
+					Class Child Ref Key: 23
+					Class ChildKey: 0
+					Class: clsFormChildTable
+					Property Template:
+					Class DLL Name:
+					Title: Tools
+					Window Location and Size
+						Left:   5.8"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: (none)
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: G:\APPS\GUPTA\ICONS\TOOLS.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+		 Contents 
+			 Data Field: dfDatabase
+.winattr
+				Class Child Ref Key: 1
+				Class ChildKey: 0
+				Class: clsFormChildTable
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   0.0"
+						Top:    0.0"
+						Width:  0.875"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? No
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Default
+					Text Color: Magenta
+					Background Color: Gray
+					Input Mask: Unformatted
+.end
+				 Message Actions 
+			 Data Field: dfUser
+.winattr
+				Class Child Ref Key: 2
+				Class ChildKey: 0
+				Class: clsFormChildTable
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   0.9"
+						Top:    0.0"
+						Width:  0.875"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? No
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Default
+					Text Color: Magenta
+					Background Color: Gray
+					Input Mask: Unformatted
+.end
+				 Message Actions 
+			!
+			 Child Table: tblPaintMaster
+.winattr class
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsTableGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left:   0.05"
+						Top:    0.469"
+						Width:  9.913"
+						Width Editable? Yes
+						Height: 4.594"
+						Height Editable? Yes
+					Visible? Yes
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Dark Blue
+					Background Color: Default
+					View: Table
+					Allow Row Sizing? No
+					Lines Per Row: Default
+				Memory Settings
+					Maximum Rows in Memory: Default
+					Discardable? Yes
+.end
+				 Contents 
+					 Column: colPaintId
+.winattr class
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Paint Id.
+						Visible? Yes
+						Editable? No
+						Maximum Data Length: Default
+						Data Type: String
+						Justify: Left
+						Width:  0.95"
+						Width Editable? Yes
+						Format: Uppercase
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+.end
+						 List Values 
+						 Message Actions 
+							 On PAM_cls_SETINSTANCEVARS
+								 Set colPaintId.bOrderBy = TRUE
+							 On PAM_clsTBL_EDITCHECK
+								 If SalTblQueryRowFlags( hWndForm, lParam, ROW_New )
+									 Return TRUE
+								 Else 
+									 Return FALSE
+							 On PAM_clsTBL_CHECKROWNEW
+								 Call ExistsPaintId( colPaintId, bExists, SH_cls_Execute )
+								 If bExists
+									 Call ErrorMessage( 'This Paint ID already exists! Please change it first!', hWndForm, lParam )
+									 Return FALSE
+								 Else 
+									 Return TRUE
+					 Column: colPaintDesc
+.winattr class
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Paint Description
+						Visible? Yes
+						Editable? No
+						Maximum Data Length: Default
+						Data Type: String
+						Justify: Left
+						Width:  6.338"
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+.end
+						 List Values 
+						 Message Actions 
+							 On PAM_cls_SETINSTANCEVARS
+								 Set colPaintDesc.bOrderBy = TRUE
+				 Functions 
+				 Window Variables 
+					 Boolean: bExists
+				 Message Actions 
+					 On PAM_cls_SETINSTANCEVARS
+						 Set sSQLPopHandle = ' SELECT 
+								  Paint_Id, 
+								  Paint_Desc
+								FROM 
+								  Paint_Master '
+						 Set sNAMEPopHandle = 'POPPAINTM'
+						 Set sBINDPopHandle = ''
+						 Set sINTOPopHandle = ':hWndForm.colPaintId, 
+								:hWndForm.colPaintDesc'
+						!
+						 Set sSQLRefreshHandle = ' SELECT 
+								  Paint_Desc
+								FROM 
+								  Paint_Master 
+								WHERE Paint_Id = :1 '
+						 Set sNAMERefreshHandle = 'REFPAINTM'
+						 Set sBINDRefreshHandle = ':hWndForm.colPaintId'
+						 Set sINTORefreshHandle = ':hWndForm.colPaintDesc'
+						!
+						 Set sSQLInsertHandle = ' INSERT INTO Paint_Master 
+								( Paint_Id, Paint_Desc ) VALUES ( :1, :2 ) '
+						 Set sNAMEInsertHandle = 'INSPAINTM'
+						 Set sBINDInsertHandle = ':hWndForm.colPaintId, :hWndForm.colPaintDesc'
+						 Set sINTOInsertHandle = ''
+						!
+						 Set sSQLUpdateHandle = ' UPDATE Paint_Master 
+								SET 
+								  Paint_Desc = :2
+								WHERE 
+								  Paint_Id = :1'
+						 Set sNAMEUpdateHandle = 'UPDTPAINTM'
+						 Set sBINDUpdateHandle = ':hWndForm.colPaintId, :hWndForm.colPaintDesc'
+						 Set sINTOUpdateHandle = ''
+						!
+						 Set sSQLDeleteHandle = ' DELETE FROM Paint_Master WHERE Paint_Id = :1 '
+						 Set sNAMEDeleteHandle = 'DELPAINTM'
+						 Set sBINDDeleteHandle = ':hWndForm.colPaintId'
+						 Set sINTODeleteHandle = ''
+						!
+						 Set bAddAllowed = TRUE
+						 Set bSaveAllowed = TRUE
+						 Set bDeleteAllowed = TRUE
+						 Set bUnDeleteAllowed = TRUE
+						 Set bRepopulateAllowed = TRUE
+						 Set bClearSelectAllowed = TRUE
+						 Set bQueryAllowed = TRUE
+						 Set bReportAllowed = FALSE
+						 Set bOrderAllowed = TRUE
+						!
+						 Set sQueryDialogName = 'dlgQueryPaintMaster'
+					 On SAM_Destroy
+						 Call ExistsPaintId( '', bExists, SH_cls_Disconnect )
+						 Return SalSendClassMessage( SAM_Destroy, wParam, lParam )
+			 Background Text: Season
+.winattr
+				Class Child Ref Key: 24
+				Class ChildKey: 0
+				Class: clsFormChildTable
+				Window Location and Size
+					Left:   8.3"
+					Top:    0.052"
+					Width:  0.663"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Right
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+.end
+			 Custom Control: ccSeasonYear
+.winattr
+				Class Child Ref Key: 25
+				Class ChildKey: 0
+				Class: clsFormChildTable
+				Property Template:
+				Class DLL Name: vt50.dll
+				Display Settings
+					DLL Name: vt50.dll
+					MS Windows Class Name: VT:cSpinField
+					Style:  0x00000000
+					ExStyle:  0x00000000
+					Title:
+					Window Location and Size
+						Left:   9.0"
+						Top:    0.0"
+						Width:  0.975"
+						Width Editable? Yes
+						Height: 0.271"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Etched Border? Yes
+					Hollow? No
+					Vertical Scroll? No
+					Horizontal Scroll? No
+					Tab Stop? Tab
+					Tile To Parent? No
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: White
+					DLL Settings
+.end
+				 Message Actions 
+		 Functions 
+		 Window Parameters 
+		 Window Variables 
+		 Message Actions 
+			 On PAM_cls_SETINSTANCEVARS
+				 Set bQueryAllowed = TRUE
+				 Set bAddAllowed = TRUE
+				 Set bSaveAllowed = TRUE
+				 Set bDeleteAllowed = TRUE
+				 Set bUnDeleteAllowed = TRUE
+				 Set bReportAllowed = FALSE
+				 Set bOrderAllowed = TRUE
+				 Set hWndChildTable = tblPaintMaster
+				 Set nPopOrQueryOnStartUp = TBL_cls_QueryOnStartUp
+			 On PAM_clsFRM_POPFIELDS
+				 Call PopWndHdl( hWndActivateButton, TRUE )
+				 Return TRUE
+	! clsTblQueryDialog: dlgQueryPaintMaster
+.winattr class Dialog Box:
+		Class: clsTblQueryDialog
+		Property Template:
+		Class DLL Name:
+		Title: Query Paint Master
+		Accesories Enabled? Yes
+		Visible? Yes
+		Display Settings
+			Display Style? Default
+			Visible at Design time? No
+			Type of Dialog: Modal
+			Window Location and Size
+				Left:   1.238"
+				Top:    1.51"
+				Width:  7.975"
+				Width Editable? Yes
+				Height: 2.25"
+				Height Editable? Yes
+			Absolute Screen Location? Yes
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Default
+.end
+		 Description: 
+		 Tool Bar 
+.winattr
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: 0.594"
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+.end
+			 Contents 
+				 Pushbutton: pbQuery
+.winattr
+					Class Child Ref Key: 7
+					Class ChildKey: 0
+					Class: clsTblQueryDialog
+					Property Template:
+					Class DLL Name:
+					Title: Query F7
+					Window Location and Size
+						Left:   3.638"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: F7
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: G:\APPS\GUPTA\ICONS\QUERY.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbHelp
+.winattr
+					Class Child Ref Key: 16
+					Class ChildKey: 0
+					Class: clsTblQueryDialog
+					Property Template:
+					Class DLL Name:
+					Title: Help F1
+					Window Location and Size
+						Left:   0.0"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: F1
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: G:\APPS\GUPTA\ICONS\HELP2.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbPrintForm
+.winattr
+					Class Child Ref Key: 17
+					Class ChildKey: 0
+					Class: clsTblQueryDialog
+					Property Template:
+					Class DLL Name:
+					Title: Print
+					Window Location and Size
+						Left:   6.65"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: (none)
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: G:\APPS\GUPTA\ICONS\PRINT.ICO
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbExit
+.winattr
+					Class Child Ref Key: 18
+					Class ChildKey: 0
+					Class: clsTblQueryDialog
+					Property Template:
+					Class DLL Name:
+					Title: Exit Esc
+					Window Location and Size
+						Left:   7.25"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: Esc
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: CLOSE.ICO
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+		 Contents 
+			!
+			 Background Text: Paint ID
+.winattr class
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   2.288"
+					Top:    0.479"
+					Width:  0.713"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Right
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+.end
+			 Background Text: Paint Description
+.winattr class
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   1.538"
+					Top:    0.76"
+					Width:  1.463"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Right
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+.end
+			!
+			 Data Field: dfPaintId
+.winattr class
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsQueryDataField
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: 8
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left:   3.963"
+						Top:    0.438"
+						Width:  0.963"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Uppercase
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+.end
+				 Message Actions 
+					 On PAM_cls_SETINSTANCEVARS
+						 Set dfPaintId.sSQLCOLNAME = 'PAINT_MASTER.PAINT_ID'
+						 Set dfPaintId.hWndOperatorField = cmbPaintIdOp
+						 Set dfPaintId.hWndNotField = cbNOTPaintId
+			 Data Field: dfPaintDesc
+.winattr class
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsQueryDataField
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: 60
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left:   3.963"
+						Top:    0.719"
+						Width:  3.4"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+.end
+				 Message Actions 
+					 On PAM_cls_SETINSTANCEVARS
+						 Set dfPaintDesc.sSQLCOLNAME = 'PAINT_MASTER.PAINT_DESC'
+						 Set dfPaintDesc.hWndOperatorField = cmbPaintDescOp
+						 Set dfPaintDesc.hWndNotField = cbNOTPaintDesc
+						 Set dfPaintDesc.sOperator = ' LIKE '
+						 Set dfPaintDesc.bCompareUpCase = TRUE
+			!
+			 Check Box: cbNOTPaintId
+.winattr class
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsQueryNOTField
+				Property Template:
+				Class DLL Name:
+				Title: NOT
+				Window Location and Size
+					Left:   0.938"
+					Top:    0.438"
+					Width:  0.538"
+					Width Editable? Yes
+					Height: 0.25"
+					Height Editable? Yes
+				Visible? Yes
+				Font Name: Arial
+				Font Size: 8
+				Font Enhancement: Default
+				Text Color: Dark Blue
+				Background Color: Gray
+.end
+				 Message Actions 
+					 On PAM_cls_SETINSTANCEVARS
+						 Set cbNOTPaintId.hWndQueryField = dfPaintId
+			 Check Box: cbNOTPaintDesc
+.winattr class
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsQueryNOTField
+				Property Template:
+				Class DLL Name:
+				Title: NOT
+				Window Location and Size
+					Left:   0.938"
+					Top:    0.719"
+					Width:  0.538"
+					Width Editable? Yes
+					Height: 0.25"
+					Height Editable? Yes
+				Visible? Yes
+				Font Name: Arial
+				Font Size: 8
+				Font Enhancement: Default
+				Text Color: Dark Blue
+				Background Color: Gray
+.end
+				 Message Actions 
+					 On PAM_cls_SETINSTANCEVARS
+						 Set cbNOTPaintDesc.hWndQueryField = dfPaintDesc
+			!
+			 Combo Box: cmbPaintIdOp
+.winattr class
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsQueryOperatorField
+				Property Template:
+				Class DLL Name:
+				Window Location and Size
+					Left:   3.05"
+					Top:    0.438"
+					Width:  0.863"
+					Width Editable? Yes
+					Height: 1.26"
+					Height Editable? Yes
+				Visible? Yes
+				Editable? No
+				String Type: String
+				Maximum Data Length: Default
+				Sorted? No
+				Always Show List? No
+				Vertical Scroll? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+				Input Mask: Unformatted
+.end
+				 List Initialization 
+				 Message Actions 
+					 On PAM_cls_SETINSTANCEVARS
+						 Set cmbPaintIdOp.hWndQueryField = dfPaintId
+						 Set cmbPaintIdOp.sOperator = ' = '
+			 Combo Box: cmbPaintDescOp
+.winattr class
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsQueryOperatorField
+				Property Template:
+				Class DLL Name:
+				Window Location and Size
+					Left:   3.05"
+					Top:    0.719"
+					Width:  0.863"
+					Width Editable? Yes
+					Height: 1.26"
+					Height Editable? Yes
+				Visible? Yes
+				Editable? No
+				String Type: String
+				Maximum Data Length: Default
+				Sorted? No
+				Always Show List? No
+				Vertical Scroll? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+				Input Mask: Unformatted
+.end
+				 List Initialization 
+				 Message Actions 
+					 On PAM_cls_SETINSTANCEVARS
+						 Set cmbPaintDescOp.hWndQueryField = dfPaintDesc
+						 Set cmbPaintDescOp.sOperator = ' LIKE '
+			!
+			 Data Field: dfUser
+.winattr
+				Class Child Ref Key: 13
+				Class ChildKey: 0
+				Class: clsTblQueryDialog
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   0.9"
+						Top:    0.0"
+						Width:  0.875"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? No
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Default
+					Text Color: Magenta
+					Background Color: Gray
+					Input Mask: Unformatted
+.end
+				 Message Actions 
+			 Custom Control: ccSeasonYear
+.winattr
+				Class Child Ref Key: 14
+				Class ChildKey: 0
+				Class: clsTblQueryDialog
+				Property Template:
+				Class DLL Name: vt50.dll
+				Display Settings
+					DLL Name: vt50.dll
+					MS Windows Class Name: VT:cSpinField
+					Style:  0x00000000
+					ExStyle:  0x00000000
+					Title:
+					Window Location and Size
+						Left:   6.875"
+						Top:    0.0"
+						Width:  0.975"
+						Width Editable? Yes
+						Height: 0.271"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Etched Border? Yes
+					Hollow? No
+					Vertical Scroll? No
+					Horizontal Scroll? No
+					Tab Stop? Tab
+					Tile To Parent? No
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: White
+					DLL Settings
+.end
+				 Message Actions 
+			 Background Text: Season
+.winattr
+				Class Child Ref Key: 15
+				Class ChildKey: 0
+				Class: clsTblQueryDialog
+				Window Location and Size
+					Left:   6.125"
+					Top:    0.052"
+					Width:  0.713"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Right
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+.end
+			 Data Field: dfDatabase
+.winattr
+				Class Child Ref Key: 12
+				Class ChildKey: 0
+				Class: clsTblQueryDialog
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   0.0"
+						Top:    0.0"
+						Width:  0.875"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? No
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Default
+					Text Color: Magenta
+					Background Color: Gray
+					Input Mask: Unformatted
+.end
+				 Message Actions 
+		 Functions 
+		 Window Parameters 
+		 Window Variables 
+		 Message Actions 
+			 On PAM_cls_SETINSTANCEVARS
+				 Set bMapEnterToTab = TRUE
+				 Set hWndFirstFocus = dfPaintDesc
+	! clsfrmPaintMaster: frmPaintMaster
+.winattr class Form Window:
+		Class: clsfrmPaintMaster
+		Property Template:
+		Class DLL Name:
+		Title: Fleming's Nurseries Paint Master
+		Icon File:
+		Accesories Enabled? Yes
+		Visible? Yes
+		Display Settings
+			Display Style? Default
+			Visible at Design time? No
+			Automatically Created at Runtime? No
+			Initial State: Normal
+			Maximizable? Yes
+			Minimizable? Yes
+			System Menu? Yes
+			Resizable? Yes
+			Window Location and Size
+				Left:   0.0"
+				Top:    0.0"
+				Width:  9.988"
+				Width Editable? Yes
+				Height: 5.948"
+				Height Editable? Yes
+			Form Size
+				Width:  Default
+				Height: Default
+				Number of Pages: Dynamic
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Default
+.end
+		 Description: 
+		 Named Menus 
+		 Menu 
+		 Tool Bar 
+.winattr
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: Default
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+.end
+			 Contents 
+				 Pushbutton: pbSelect
+.winattr
+					Class Child Ref Key: 19
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title: &Select
+					Window Location and Size
+						Left:   1.2"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: (none)
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: C:\CENTURA\ICONS\UPARR.ICO
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbClearRows
+.winattr
+					Class Child Ref Key: 7
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title: Clear F3
+					Window Location and Size
+						Left:   1.8"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: F3
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: C:\CENTURA\ICONS\MAINT.ICO
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbAddRows
+.winattr
+					Class Child Ref Key: 8
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title: Add F6
+					Window Location and Size
+						Left:   2.4"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: F6
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: C:\CENTURA\ICONS\FMTSTR.ICO
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbSaveRows
+.winattr
+					Class Child Ref Key: 9
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title: Save F5
+					Window Location and Size
+						Left:   3.113"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: F5
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: C:\CENTURA\ICONS\DISK.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbQuery
+.winattr
+					Class Child Ref Key: 10
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title: Query F7
+					Window Location and Size
+						Left:   4.525"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: F7
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: C:\CENTURA\ICONS\QUERY.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbDeleteRows
+.winattr
+					Class Child Ref Key: 11
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title: Del F4
+					Window Location and Size
+						Left:   3.825"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: F4
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: C:\CENTURA\ICONS\DELREC.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbRePopulate
+.winattr
+					Class Child Ref Key: 12
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title: Repop
+					Window Location and Size
+						Left:   5.2"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: (none)
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: C:\CENTURA\ICONS\STYLE.ICO
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbTools
+.winattr
+					Class Child Ref Key: 13
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title: Tools
+					Window Location and Size
+						Left:   5.8"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: (none)
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: C:\CENTURA\ICONS\TOOLS.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbHelp
+.winattr
+					Class Child Ref Key: 24
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title: Help F1
+					Window Location and Size
+						Left:   0.0"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: F1
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: C:\CENTURA\ICONS\HELP2.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbItemEnq
+.winattr
+					Class Child Ref Key: 25
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title: Enq
+					Window Location and Size
+						Left:   0.6"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: (none)
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: C:\CENTURA\ICONS\ENQUIRE.BMP
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbPrintForm
+.winattr
+					Class Child Ref Key: 26
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title: Print
+					Window Location and Size
+						Left:   8.713"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: (none)
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: C:\CENTURA\ICONS\PRINT.ICO
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+				 Pushbutton: pbExit
+.winattr
+					Class Child Ref Key: 27
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title: Exit Esc
+					Window Location and Size
+						Left:   9.313"
+						Top:    0.0"
+						Width:  0.6"
+						Width Editable? Yes
+						Height: 0.58"
+						Height Editable? Yes
+					Visible? Yes
+					Keyboard Accelerator: Esc
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Bold
+					Picture File Name: C:\CENTURA\ICONS\CLOSE.ICO
+					Picture Transparent Color: None
+					Image Style: Single
+					Text Color: Default
+					Background Color: Default
+.end
+					 Message Actions 
+		 Contents 
+			 Child Table: tblPaintMaster
+.winattr
+				Class Child Ref Key: 16
+				Class ChildKey: 0
+				Class: clsfrmPaintMaster
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left:   0.05"
+						Top:    0.354"
+						Width:  9.713"
+						Width Editable? Yes
+						Height: 4.188"
+						Height Editable? Yes
+					Visible? Yes
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Dark Blue
+					Background Color: Default
+					View: Table
+					Allow Row Sizing? No
+					Lines Per Row: Default
+				Memory Settings
+					Maximum Rows in Memory: Default
+					Discardable? Yes
+.end
+				 Contents 
+					 Column: colPaintId
+.winattr
+						Class Child Ref Key: 17
+						Class ChildKey: 0
+						Class: clsfrmPaintMaster
+						Property Template:
+						Class DLL Name:
+						Title: Paint Id.
+						Visible? Yes
+						Editable? No
+						Maximum Data Length: Default
+						Data Type: String
+						Justify: Left
+						Width:  0.95"
+						Width Editable? Yes
+						Format: Uppercase
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+.end
+						 List Values 
+						 Message Actions 
+					 Column: colPaintDesc
+.winattr
+						Class Child Ref Key: 18
+						Class ChildKey: 0
+						Class: clsfrmPaintMaster
+						Property Template:
+						Class DLL Name:
+						Title: Paint Description
+						Visible? Yes
+						Editable? No
+						Maximum Data Length: Default
+						Data Type: String
+						Justify: Left
+						Width:  6.338"
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+.end
+						 List Values 
+						 Message Actions 
+				 Functions 
+				 Window Variables 
+				 Message Actions 
+			 Data Field: dfDatabase
+.winattr
+				Class Child Ref Key: 20
+				Class ChildKey: 0
+				Class: clsfrmPaintMaster
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   0.025"
+						Top:    0.0"
+						Width:  0.875"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? No
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Default
+					Text Color: Magenta
+					Background Color: Gray
+					Input Mask: Unformatted
+.end
+				 Message Actions 
+			 Data Field: dfUser
+.winattr
+				Class Child Ref Key: 21
+				Class ChildKey: 0
+				Class: clsfrmPaintMaster
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   0.925"
+						Top:    0.0"
+						Width:  0.875"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? No
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Default
+					Text Color: Magenta
+					Background Color: Gray
+					Input Mask: Unformatted
+.end
+				 Message Actions 
+			 Background Text: Season
+.winattr
+				Class Child Ref Key: 22
+				Class ChildKey: 0
+				Class: clsfrmPaintMaster
+				Window Location and Size
+					Left:   8.2"
+					Top:    0.052"
+					Width:  0.663"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Right
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+.end
+			 Custom Control: ccSeasonYear
+.winattr
+				Class Child Ref Key: 23
+				Class ChildKey: 0
+				Class: clsfrmPaintMaster
+				Property Template:
+				Class DLL Name: vti11.dll
+				Display Settings
+					DLL Name: vti11.dll
+					MS Windows Class Name: VT:cSpinField
+					Style:  0x00000000
+					ExStyle:  0x00000000
+					Title:
+					Window Location and Size
+						Left:   8.9"
+						Top:    0.0"
+						Width:  0.975"
+						Width Editable? Yes
+						Height: 0.271"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Etched Border? Yes
+					Hollow? No
+					Vertical Scroll? No
+					Horizontal Scroll? No
+					Tab Stop? Tab
+					Tile To Parent? No
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					DLL Settings
+.end
+				 Message Actions 
+		 Functions 
+		 Window Parameters 
+		 Window Variables 
+		 Message Actions 
+	Form Window: frmPaintMaster
+		Class: clsfrmPaintMaster
+		Property Template:
+		Class DLL Name:
+		Title:
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? Yes
+			Automatically Created at Runtime? Class Default
+			Initial State: Class Default
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   0.0"
+				Top:    0.0"
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: 5.948"
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+				Pushbutton: pbSelect
+					Class Child Ref Key: 19
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbClearRows
+					Class Child Ref Key: 7
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbAddRows
+					Class Child Ref Key: 8
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbSaveRows
+					Class Child Ref Key: 9
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbQuery
+					Class Child Ref Key: 10
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbDeleteRows
+					Class Child Ref Key: 11
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbRePopulate
+					Class Child Ref Key: 12
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbTools
+					Class Child Ref Key: 13
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbHelp
+					Class Child Ref Key: 24
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbItemEnq
+					Class Child Ref Key: 25
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 26
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbExit
+					Class Child Ref Key: 27
+					Class ChildKey: 0
+					Class: clsfrmPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			Child Table: tblPaintMaster
+				Class Child Ref Key: 16
+				Class ChildKey: 0
+				Class: clsfrmPaintMaster
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					View: Class Default
+					Allow Row Sizing? Class Default
+					Lines Per Row: Class Default
+				Memory Settings
+					Maximum Rows in Memory: Class Default
+					Discardable? Class Default
+				Contents
+					Column: colPaintId
+						Class Child Ref Key: 17
+						Class ChildKey: 0
+						Class: clsfrmPaintMaster
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colPaintDesc
+						Class Child Ref Key: 18
+						Class ChildKey: 0
+						Class: clsfrmPaintMaster
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colPaintColour
+						Class Child Ref Key: 28
+						Class ChildKey: 0
+						Class: clsfrmPaintMaster
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+				Functions
+				Window Variables
+				Message Actions
+			Data Field: dfDatabase
+				Class Child Ref Key: 20
+				Class ChildKey: 0
+				Class: clsfrmPaintMaster
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfUser
+				Class Child Ref Key: 21
+				Class ChildKey: 0
+				Class: clsfrmPaintMaster
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text:
+				Resource Id: 39069
+				Class Child Ref Key: 22
+				Class ChildKey: 0
+				Class: clsfrmPaintMaster
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 23
+				Class ChildKey: 0
+				Class: clsfrmPaintMaster
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+		Functions
+		Window Parameters
+		Window Variables
+		Message Actions
+	Dialog Box: dlgQueryPaintMaster
+		Class: clsdlgQueryPaintMaster
+		Property Template:
+		Class DLL Name:
+		Title:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Type of Dialog: Modal
+			Window Location and Size
+				Left:   1.238"
+				Top:    1.51"
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Absolute Screen Location? Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+				Pushbutton: pbHelp
+					Class Child Ref Key: 5
+					Class ChildKey: 0
+					Class: clsdlgQueryPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbQuery
+					Class Child Ref Key: 6
+					Class ChildKey: 0
+					Class: clsdlgQueryPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 7
+					Class ChildKey: 0
+					Class: clsdlgQueryPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbExit
+					Class Child Ref Key: 8
+					Class ChildKey: 0
+					Class: clsdlgQueryPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbClear
+					Class Child Ref Key: 17
+					Class ChildKey: 0
+					Class: clsdlgQueryPaintMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			Data Field: dfDatabase
+				Class Child Ref Key: 1
+				Class ChildKey: 0
+				Class: clsdlgQueryPaintMaster
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfUser
+				Class Child Ref Key: 2
+				Class ChildKey: 0
+				Class: clsdlgQueryPaintMaster
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 3
+				Class ChildKey: 0
+				Class: clsdlgQueryPaintMaster
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+			Background Text:
+				Resource Id: 19837
+				Class Child Ref Key: 4
+				Class ChildKey: 0
+				Class: clsdlgQueryPaintMaster
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text:
+				Resource Id: 19838
+				Class Child Ref Key: 9
+				Class ChildKey: 0
+				Class: clsdlgQueryPaintMaster
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text:
+				Resource Id: 19839
+				Class Child Ref Key: 10
+				Class ChildKey: 0
+				Class: clsdlgQueryPaintMaster
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Data Field: dfPaintId
+				Class Child Ref Key: 11
+				Class ChildKey: 0
+				Class: clsdlgQueryPaintMaster
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfPaintDesc
+				Class Child Ref Key: 12
+				Class ChildKey: 0
+				Class: clsdlgQueryPaintMaster
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Check Box: cbNOTPaintId
+				Class Child Ref Key: 13
+				Class ChildKey: 0
+				Class: clsdlgQueryPaintMaster
+				Property Template:
+				Class DLL Name:
+				Title:
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+			Check Box: cbNOTPaintDesc
+				Class Child Ref Key: 14
+				Class ChildKey: 0
+				Class: clsdlgQueryPaintMaster
+				Property Template:
+				Class DLL Name:
+				Title:
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+			Combo Box: cmbPaintIdOp
+				Class Child Ref Key: 15
+				Class ChildKey: 0
+				Class: clsdlgQueryPaintMaster
+				Property Template:
+				Class DLL Name:
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Editable? Class Default
+				String Type: Class Default
+				Maximum Data Length: Class Default
+				Sorted? Class Default
+				Always Show List? Class Default
+				Vertical Scroll? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Input Mask: Class Default
+				List Initialization
+				Message Actions
+			Combo Box: cmbPaintDescOp
+				Class Child Ref Key: 16
+				Class ChildKey: 0
+				Class: clsdlgQueryPaintMaster
+				Property Template:
+				Class DLL Name:
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Editable? Class Default
+				String Type: Class Default
+				Maximum Data Length: Class Default
+				Sorted? Class Default
+				Always Show List? Class Default
+				Vertical Scroll? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Input Mask: Class Default
+				List Initialization
+				Message Actions
+		Functions
+		Window Parameters
+		Window Variables
+		Message Actions

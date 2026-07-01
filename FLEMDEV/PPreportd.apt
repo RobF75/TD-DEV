@@ -1,0 +1,2555 @@
+.head 0 +  Application Description: SQLWindows 5.01 Jans class Sales application
+.data CLASSPROPSSIZE
+0000: 5C00
+.enddata
+.data CLASSPROPS
+0000: 557365476C6F6261 6C50617468000400 0100000000417070 506174684C656E00
+0020: 0400240000000041 7070506174680024 004B3A5C43656E74 7572615C436C6173
+0040: 733B4B3A5C43656E 747572615C466C65 6D61706C73000000 00000000
+.enddata
+.head 1 -  Outline Version - 4.0.32
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000030100 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE8FFFFFF840000 0084000000180300 00C1010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D02000000075769 6E646F7773146672
+0080: 6D506C616E747350 6C75735265706F72 7473
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left: 0.15"
+.head 3 -  Top: 0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: D4180909B80B1500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left: 5.113"
+.head 3 -  Top: 2.885"
+.head 3 -  Width:  4.675"
+.head 3 -  Height: 2.969"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left: Default
+.head 3 -  Top: Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left: 8.15"
+.head 3 -  Top: 0.469"
+.head 2 -  Fully Qualified External References? No
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: GENERAL.APL
+.head 2 -  File Include: DIALOG.APL
+.head 2 -  File Include: SPNFIELD.APL
+.head 2 -  File Include: VTSPIN.APL
+.head 2 -  File Include: BGTEXT.APL
+.head 2 -  File Include: BUTTON.APL
+.head 2 -  File Include: DATFIELD.APL
+.head 2 -  File Include: RADIOBTN.APL
+.head 2 -  File Include: CHECKBOX.APL
+.head 2 -  File Include: GROUPBOX.APL
+.head 2 -  File Include: DATES.APL
+.head 2 -  File Include: SQLHANDL.APL
+.head 2 -  File Include: STACKS.APL
+.head 2 -  File Include: TABLE.APL
+.head 2 -  File Include: STRINGS.APL
+.head 2 -  File Include: METER.APL
+.head 2 -  File Include: VTMETER.APL
+.head 2 -  File Include: FLAGS.APL
+.head 2 -  File Include: PICK.APL
+.head 2 -  File Include: ACTIVATE.APL
+.head 2 -  File Include: FORM.APL
+.head 2 -  File Include: STCKITMQ.APL
+.head 2 -  File Include: DLGCTBL.APL
+.head 2 -  File Include: QUERY.APL
+.head 2 -  File Include: CMBFIELD.APL
+.head 2 -  File Include: ITEMFUNC.APL
+.head 2 -  File Include: TREETYPE.APL
+.head 2 -  File Include: RUNPROG.APL
+.head 2 -  File Include: VTWIN.APL
+.head 2 -  File Include: FRMCTBL.APL
+.head 2 -  File Include: LISTBOX.APL
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: None
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for SALES.APP
+.head 4 -  Number: SALESAppMsgOffSet = SAM_User + 6000
+.head 4 -  ! Message go up to AppOffSet + 99
+.head 4 -  Number: SALESAppConstOffSet = 4500
+.head 4 -  Number: PAM_SALES_REPORT = SALESAppMsgOffSet + 1
+.head 4 -  Number: PAM_SALES_POPULATE = SALESAppMsgOffSet + 2
+.head 4 -  Number: PAM_SALES_INSERTINDEX = SALESAppMsgOffSet + 3
+.head 4 -  Number: PAM_SALES_GETSELECTEDITEMS = SALESAppMsgOffSet + 4
+.head 4 -  Number: PAM_SALES_GETSELECTED = SALESAppMsgOffSet + 5
+.head 4 -  Number: PAM_SALES_PUSHFIELDS = SALESAppMsgOffSet + 6
+.head 4 -  Number: PAM_SALES_POPFIELDS = SALESAppMsgOffSet + 7
+.head 4 -  Number: PAM_SALES_MATCHTREETYPES = SALESAppMsgOffSet + 8
+.head 4 -  Number: PAM_SALES_MATCHITEM = SALESAppMsgOffSet + 9
+.head 4 -  !
+.head 4 -  Number: nVARIETYSALES = SALESAppConstOffSet + 1
+.head 4 -  Number: nVARIETYBESTSALES = SALESAppConstOffSet + 1
+.head 4 -  !
+.head 3 -  Enumerations
+.head 2 +  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 222100942
+0000: CE050000F8010000 0000000000000000 020000390000006A 000000E0040D0000
+0020: 00FF3F7700A00000 010D0000FFFFE084 00000001FE00FF83 9100000001FB00FF
+0040: 0F9E000000EE0100 FF3FAB0080000002 04000000FFFFE0AF 00000002FE00FF83
+0060: B300000001FB00FF 0FC0000000EE0100 FF3FCD00B8000001 00FFFFE0DA000000
+0080: 01FE00FF03E70000 000304FA0000FF0F EB000000EE0200FF 3FEF00B800000100
+00A0: FFFFE0FC00000001 FE00FF8309010000 01FB00FF8F160100 EE0200FF3F1A01BA
+00C0: 000200FFFFE81E01 0002FE00FFA32201 0001FB00FF8F2F01 00EE0100FF3F3C01
+00E0: BA000200FFFFE840 010002FE00FFA344 010001FB00FF8F51 0100EE0100FF3F5E
+0100: 01BA000100FFFFE8 6B010001FE00FFA3 78010003FB00FF8F 7C0100EE0200FF3F
+0120: 8001B800000100FF FFA88D01000100FE 00FFA39A010001FB 00FF8FA70100EE02
+0140: 00FF3FAB01BA0002 00FFFFE8AF010002 FE00FFA3B3010001 FB00FF8FC00100EE
+0160: 0100FF3FCD01BA00 0200FFFFE8D10100 02FE00FFA3D50100 01FB00FF8FE20100
+0180: EE0100FF3FEF01BA 000100FFFFE8FC01 0001FE00FF830902 000003FB00FF8F0D
+01A0: 0200EE0200FF3F11 02BA000100FFFFE8 1E020001FE00FFA3 2B020001FB00FF8F
+01C0: 380200EE0200FF3F 3C02BA000200FFFF E840020002FE00FF A344020001FB00FF
+01E0: 8F510200EE0100FF 3F5E02BA000100FF FFE86B020001FE00 FFA378020001FB00
+0200: FF8F850200EE0100 FF3F
+.enddata
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 1076507577
+0000: 3B13000067080000 0000000000000000 0200002200FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F33003C00 001163006C735462
+0040: 6C51756500727944 69616C6F6700A000 0000060000000F03 040000FE00FF1304
+0060: 00000204FA0000FF 0F08000000EE0200 FF3F0C0080000001 0D000000FFFFE019
+0080: 00000001FE00FF83 2600000001FB00FF 0F01805D00800000 0100000011F35175
+00A0: 006174614669656C 64684401000C00EF 02FE00FF9B040002 FB00FF6F0800EE02
+00C0: 00FFBF0CB9000200 FFFFC01000000001 0DFE00FF831D0000 0001FB00FF0F2A00
+00E0: 00008E02000100FE 00C180010000003F 2E00B00000010D00 FFFFE03B00000002
+0100: FE00FF833F000000 01FB00FF0F4C0000 00EE0200FF3F5000 B800000100FFFF18
+0120: 01805D000200E000 0012636C07436F6D 626FFC4669ED0C00 D9020400FF7F0473
+0140: 000200FFFFCD0800 02FD00FF370C0002 F700FFDF10D80001 0D00FF7F1D730001
+0160: 00FFFFCD2A0002D1 000100003F8001F9 0000372E0001F60D 00FFDF3BDC000200
+0180: FF7F3F73000100FF FFCD4C0002FD00FF 37500001F700FF1F 01805D0300030000
+01A0: 0012FF1F436163B0 686544010CBD0002 FB00FF6F0400EE02 00FFBF08B9000200
+01C0: FFFFE60C0002FE00 FF1B1000010DFB00 FF6F1D00EE0100FF BF2A3900020001FA
+01E0: 00002780010000FF C62E00010DFE00FF 9B3B0002FB00FF6F 3F00EE0100FFBF4C
+0200: B9000200FFFFE650 0001FE00FF030180 1A00000086040015 636C1F4F70658072
+0220: 61746F7246690338 00000002003D0001 0DFB00FF4F0D0000 EE0100FF3F018004
+0240: 04000005000000F8 13636C0079434259 65734E6F00466C61 671E000000F40100
+0260: 00EC020400FF3F01 8060110000000600 080C636C63624765 806E6572616C3800
+0280: E800020000D9010D 00FF7F0D63000204 00FFFF0101801500 000007400000000E
+02A0: 636C700062547265 6554797080657352 00000003BD0002FB 00FF6F0400EC010D
+02C0: 00FF3F1100B10003 0400FFFF98018015 0008E1000F636C00 53746F636B497465
+02E0: 186D7352000300BD 0002FB00FF6F0400 EC010D00FFBF11B1 00030400FFFF1801
+0300: 8015000900F80000 12005768656E4176 6169806C61626C65 5200E800030000DD
+0320: 0200FF7F04630001 0D00FFFF8D110003 04FD00FF8701800D 00C0000A00000012
+0340: 01646C6751515374 FF441E0000010000 CF010DFE00FF6301 800400E00B000000
+0360: 156066726D517579 FC53741F000100BD 0002FB00FF0F0180 B7001000000C0000
+0380: 1663526C47656561 3154616247651F36 0200E9150000D901 0D00FF7F0D730001
+03A0: 00FFFFC91A000001 FD00FF0727000000 01F700FF1F340000 DC000200FF7F3872
+03C0: 00000200FFFFC13C 00000002FD00FF07 4000000002F700FF 1F440000DC000200
+03E0: FF7F487000000002 00FFFFCD4C0002FD 00FF375000024700 010000FFE4800100
+0400: 001F540000180001 0D000100FD009380 0100007F58600000 00010D00FFFFC165
+0420: 00000001FD00FF07 7200000001F700FF 1F7F0000DC000100 FF7F8C7000000001
+0440: 00FFFFC199000000 01FD00FF07A60000 0001F700FF1FB300 00DC000300FF7F01
+0460: C080220000000DD0 001D636C54004D61 6B6553656C650063 746564526F774B00
+0480: 6579417272617974 B000000004007702 00F40100004F8001 00FE008D0400010D
+04A0: FD00FF37110001F7 00FF9F1E00DC0002 00FF7F010C801100 0E0000100010636C
+04C0: 436F6CE0756D6E47 65196C380002003D 000204FB00FF6F04 00EC010D00FF3F01
+04E0: 80060D000F000000 AC0C6370479F1E00 E800010000D9010D 00FF7F0188803800
+0500: 001000700009636C 4800656C70860000 00057B0002F700FF DF04D800010D00FF
+0520: 7F1173000100FFFF CD1E0001FD00FF07 2B00000001F700FF 1F01800D33001100
+0540: 091F45786988741E 000001009E00010D FD00FFC7018004C0 00120000000C0150
+0560: 696345787061106E 641E00000100BD00 02FB00FF8F018004 0100130000001263
+0580: 1F546F6700676C65 427574746F886E1E 00000100DE0002FD 00FFC701800D8000
+05A0: 1400000011630153 70696E5365610073 6F6E596561721EA2 000001000067010D
+05C0: 00FFFF2101802B00 0015630010634600 6F726D4261736554 0661656C000000F6
+05E0: 0400EC010D00FFBF 0DB9000100FFFFE6 1A0001FE00FF9B27 0002FB00FF0F0180
+0600: 1E00010016000000 1363B344696F8043 68696C6454611B52 0003003D00010DFB
+0620: 00FF6F0D00EE0100 FFBF1AB9000200FF FF1001802E000017 00B8000011700253
+0640: 61727450726F0067 72616DBA000000F6 0700EE0200FFBF04 B9000200FFFFE608
+0660: 0002FE00FF130C00 00010DFB00FF6F19 00EC030400FF3F1D 00B9000200FFFFE0
+0680: 2100000001FE00FF 03018036000000C0 180000000F63FC53 740FEE000000F409
+06A0: 0000EC010D00FFBF 0DB9000100FFFFE6 1A0002FE00FF9B1E 0002FB00FF6F2200
+06C0: EE0200FFBF26B900 0200FFFFE62A0002 FE00FF9B2E0002FB 00FF0F32000000EE
+06E0: 0200FF3F0180602F 0000001900E80B63 6C464F860000F605 00EC010D00FFBF0D
+0700: B9000200FFFF8411 0000040D00FE00FF 9B1E0003FB00FF6F 2200EE0100FF3F01
+0720: 80660D001A00F817 636C805072696E74 4261006963526570 6F7274461E000100
+0740: 00CF010DFE00FF63 01800400C01B0000 000C63F064664765 8C6C1E000100DE00
+0760: 03FD00FFC701802F C0001C000000105D 446F473E658600D9 000500B3010D00FF
+0780: FFE60D0002FE00FF 9B110004FB00FF6F 1E00EE0300FFBF22 B9000100FFFF9001
+07A0: 803400001DA10014 636C7021656C6563 4672706F6D54616C A200000400006701
+07C0: 0D00FFFFCD0D0001 FD00FF371A0001F7 00FFDF27DC000100 FF7F01CC8004001E
+07E0: 90000D636C536504 6563496E746F1EA2 0000010000770300 FFFF31018004001F
+0800: 100000000C665461 E74361441E000001 0000EF03FE00FF63 0180150020200000
+0820: 000B66430E61506F 6F6C405A00000003 00008F0719008000 010100A60D009E00
+0840: 8001FC00001B0400 0304FB00FF6F0800 EC010D00FF3F0180 66040021008E1054
+0860: 6F6F005469705769 6E646F88771E0000 0100DE0003FD00FF 07
+.enddata
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton: clspbPickInto
+.head 3 -  Radio Button:
+.head 3 -  Check Box:
+.head 3 -  Option Button:
+.head 3 -  Child Table: clsTableGeneral
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text: clsBackTextGeneral
+.head 3 -  Group Box: clsgbGeneral
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 3 -  ActiveX:
+.head 2 +  Application Actions
+.head 3 +  On SAM_AppStartup
+.head 4 +  If strArgArray[0] = ''
+.head 5 -  Set SqlDatabase = 'STOCKDEV'
+.head 5 -  Set SqlUser = 'JAN'
+.head 5 -  Set SqlPassword = 'JAN'
+.head 4 +  Else
+.head 5 -  Set SqlDatabase = strArgArray[1]
+.head 5 -  Set SqlUser = strArgArray[2]
+.head 5 -  Set SqlPassword = strArgArray[3]
+.head 4 -  !
+.head 4 -  Call CheckProgramExistance( 'Sales Reports', TRUE )
+.head 4 -  !
+.head 4 -  Call SqlHandlesSetup(  )
+.head 3 +  On SAM_AppExit
+.head 4 -  Call SqlHandlesDisconnectClose(  )
+.head 1 +  Form Window: frmPlantsPlusReports
+.head 2 -  Class: clsFormGeneral
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title: Sales Reports
+.head 2 -  Icon File:
+.head 2 -  Accessories Enabled? Class Default
+.head 2 -  Visible? Class Default
+.head 2 -  Display Settings
+.head 3 -  Display Style? Class Default
+.head 3 -  Visible at Design time? No
+.head 3 -  Automatically Created at Runtime? Yes
+.head 3 -  Initial State: Class Default
+.head 3 -  Maximizable? Class Default
+.head 3 -  Minimizable? Class Default
+.head 3 -  Allow Child Docking? No
+.head 3 -  Docking Orientation: All
+.head 3 -  System Menu? Class Default
+.head 3 -  Resizable? Class Default
+.head 3 -  Window Location and Size
+.head 4 -  Left: 0.0"
+.head 4 -  Top: 0.0"
+.head 4 -  Width:  Class Default
+.head 4 -  Width Editable? Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Height Editable? Class Default
+.head 3 -  Form Size
+.head 4 -  Width:  Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Number of Pages: Class Default
+.head 3 -  Font Name: Class Default
+.head 3 -  Font Size: Class Default
+.head 3 -  Font Enhancement: Class Default
+.head 3 -  Text Color: Class Default
+.head 3 -  Background Color: Class Default
+.head 2 -  Description:
+.head 2 -  Named Menus
+.head 2 -  Menu
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Class Default
+.head 4 -  Location? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Size: Class Default
+.head 4 -  Size Editable? Class Default
+.head 4 -  Docking Toolbar? Class Default
+.head 4 -  Toolbar Docking Orientation: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Resizable? Class Default
+.head 3 +  Contents
+.head 4 +  Pushbutton: pbHelp
+.head 5 -  Class Child Ref Key: 1
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left: Class Default
+.head 6 -  Top: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Button Appearance: Standard
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbItemEnq
+.head 5 -  Class Child Ref Key: 5
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left: Class Default
+.head 6 -  Top: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Button Appearance: Standard
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbReport
+.head 5 -  Class Child Ref Key: 0
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clspbGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Report
+.head 5 -  Window Location and Size
+.head 6 -  Left: 4.45"
+.head 6 -  Top: 0.0"
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name: C:\CENTURA\ICONS\LETTERS.ICO
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Button Appearance: Standard
+.head 5 +  Message Actions
+.head 6 +  On PAM_clsPB_CLICK
+.head 7 -  Call SalSendMsg( hWndForm, PAM_SALES_REPORT, 0, 0 )
+.head 4 +  Pushbutton: pbExit
+.head 5 -  Class Child Ref Key: 10
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left: Class Default
+.head 6 -  Top: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Button Appearance: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbPrintForm
+.head 5 -  Class Child Ref Key: 9
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left: Class Default
+.head 6 -  Top: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Button Appearance: Class Default
+.head 5 -  Message Actions
+.head 2 +  Contents
+.head 3 +  Data Field: dfDatabase
+.head 4 -  Class Child Ref Key: 3
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left: Class Default
+.head 6 -  Top: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfUser
+.head 4 -  Class Child Ref Key: 4
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left: Class Default
+.head 6 -  Top: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 -  !
+.head 3 -  !
+.head 3 -  Group Box: Order Dates
+.head 4 -  Resource Id: 56325
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsgbGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left: 0.488"
+.head 5 -  Top: 0.333"
+.head 5 -  Width:  8.6"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 1.656"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Radio Button: rbJanuary
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: January
+.head 4 -  Window Location and Size
+.head 5 -  Left: 0.95"
+.head 5 -  Top: 0.823"
+.head 5 -  Width:  1.238"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Arial
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbFebuary
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: Febuary
+.head 4 -  Window Location and Size
+.head 5 -  Left: 0.95"
+.head 5 -  Top: 1.156"
+.head 5 -  Width:  0.938"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Arial
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbMarch
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: March
+.head 4 -  Window Location and Size
+.head 5 -  Left: 0.95"
+.head 5 -  Top: 1.49"
+.head 5 -  Width:  1.238"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Arial
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbApril
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: April
+.head 4 -  Window Location and Size
+.head 5 -  Left: 2.65"
+.head 5 -  Top: 0.823"
+.head 5 -  Width:  0.938"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Arial
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbMay
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: May
+.head 4 -  Window Location and Size
+.head 5 -  Left: 2.65"
+.head 5 -  Top: 1.156"
+.head 5 -  Width:  1.238"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Arial
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbJune
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: June
+.head 4 -  Window Location and Size
+.head 5 -  Left: 2.65"
+.head 5 -  Top: 1.49"
+.head 5 -  Width:  0.938"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Arial
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbJuly
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: July
+.head 4 -  Window Location and Size
+.head 5 -  Left: 4.15"
+.head 5 -  Top: 0.823"
+.head 5 -  Width:  1.238"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Arial
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbAugust
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: August
+.head 4 -  Window Location and Size
+.head 5 -  Left: 4.15"
+.head 5 -  Top: 1.156"
+.head 5 -  Width:  0.938"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Arial
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbSeptember
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: September
+.head 4 -  Window Location and Size
+.head 5 -  Left: 4.15"
+.head 5 -  Top: 1.49"
+.head 5 -  Width:  1.238"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Arial
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbOctober
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: October
+.head 4 -  Window Location and Size
+.head 5 -  Left: 5.85"
+.head 5 -  Top: 0.823"
+.head 5 -  Width:  0.938"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Arial
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbNovember
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: November
+.head 4 -  Window Location and Size
+.head 5 -  Left: 5.85"
+.head 5 -  Top: 1.156"
+.head 5 -  Width:  1.238"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Arial
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbDecember
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: December
+.head 4 -  Window Location and Size
+.head 5 -  Left: 5.85"
+.head 5 -  Top: 1.49"
+.head 5 -  Width:  0.938"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Arial
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 -  !
+.head 3 -  Group Box: Report Types
+.head 4 -  Resource Id: 41314
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsgbGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left: 0.488"
+.head 5 -  Top: 4.188"
+.head 5 -  Width:  8.6"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 0.646"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Radio Button: rbView
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: View then Print
+.head 4 -  Window Location and Size
+.head 5 -  Left: 2.213"
+.head 5 -  Top: 4.448"
+.head 5 -  Width:  1.538"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbPrint
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: Print Only
+.head 4 -  Window Location and Size
+.head 5 -  Left: 4.763"
+.head 5 -  Top: 4.448"
+.head 5 -  Width:  1.138"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 -  !
+.head 3 -  Group Box: Selected Items
+.head 4 -  Resource Id: 41315
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsgbGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left: 0.488"
+.head 5 -  Top: 2.073"
+.head 5 -  Width:  8.6"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 2.083"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Pushbutton: pbClearSelectedItems
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clspbTblClearRows
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left: 1.85"
+.head 5 -  Top: 2.177"
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Button Appearance: Standard
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set pbClearSelectedItems.hWndTable = tblSelectedItems
+.head 3 +  Pushbutton: pbPickItems
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clspbStockItems
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left: 2.45"
+.head 5 -  Top: 2.177"
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Button Appearance: Standard
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set pbPickItems.hWndPickIntoTable = tblSelectedItems
+.head 5 +  On PAM_cls_SETFIELDS
+.head 6 -  ! Call pbPickItems.SetStockItemsFields( SalStrToNumber( cYear.GetNumber( ) ), '', '', '' )
+.head 6 -  Call pbPickItems.SetStockItemsFields( ccSeasonYear.GetSeasonYear( ), '', '', '' )
+.head 6 -  Return TRUE
+.head 5 +  On PAM_cls_GETFIELDS
+.head 6 -  Call pbPickItems.GetStockItemsFields( tblSelectedItems.colItemNo, 
+tblSelectedItems.colYear, 
+tblSelectedItems.colTreeType, 
+tblSelectedItems.colTreeTypeDesc, 
+sTmp, 
+tblSelectedItems.colCultDesc, 
+sTmp, 
+tblSelectedItems.colRootDesc, 
+nTmp, nTmp  )
+.head 6 -  !
+.head 6 -  Set nTmp = SalTblQueryContext( tblSelectedItems )
+.head 6 -  Call SalTblSetRowFlags( tblSelectedItems, nTmp, ROW_Selected, TRUE )
+.head 6 -  Call SalTblSetRowFlags( tblSelectedItems, nTmp, ROW_HideMarks, TRUE )
+.head 6 -  Return TRUE
+.head 3 +  Child Table: tblSelectedItems
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsTableGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left: 0.888"
+.head 6 -  Top: 2.823"
+.head 6 -  Width:  8.0"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 1.188"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  View: Class Default
+.head 5 -  Allow Row Sizing? Class Default
+.head 5 -  Lines Per Row: Class Default
+.head 4 -  Memory Settings
+.head 5 -  Maximum Rows in Memory: 6000
+.head 5 -  Discardable? No
+.head 4 +  Contents
+.head 5 +  Column: colItemNo
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? No
+.head 6 -  Editable? Class Default
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colYear
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Year
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? Class Default
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  0.5"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colTreeType
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Type
+.head 6 -  Visible? No
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  1.017"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colTreeTypeDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Type Desc.
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  1.017"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colCultDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Cultivar
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  2.55"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colRootDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Rootstock
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  1.517"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 4 -  Functions
+.head 4 +  Window Variables
+.head 5 -  String: sTmp
+.head 5 -  Number: nTmp
+.head 5 -  String: sItemNoList
+.head 5 -  Number: nSelectedItemYear
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set bAddAllowed = TRUE
+.head 5 +  On PAM_SALES_GETSELECTEDITEMS
+.head 6 -  Set sItemNoList = ''
+.head 6 -  Set nSelectedItemYear = NUMBER_Null
+.head 6 +  If TableLoop( hWndForm, hWndForm, PAM_SALES_GETSELECTED, 0, 0, 0, 'Extracting Selected Items', TBL_cls_LowToHi )
+.head 7 +  ! If SalStrToNumber( cYear.GetNumber( ) ) != nSelectedItemYear
+.head 8 -     Call SalMessageBox( 'Selected Items Year does not match report Year. Please match up first!', 'Warning', MB_Ok )
+.head 8 -     Set sItemNoList = 'YEARMISMATCH'
+.head 7 +  If hWndParent.ccSeasonYear.GetSeasonYear( ) != nSelectedItemYear
+.head 8 -  Call SalMessageBox( 'Selected Items Year does not match report Year. Please match up first!', 'Warning', MB_Ok )
+.head 8 -  Set sItemNoList = 'YEARMISMATCH'
+.head 7 -  Call PushString( sItemNoList )
+.head 7 -  Return TRUE
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  On PAM_SALES_GETSELECTED
+.head 6 +  If sItemNoList = ''
+.head 7 -  Set sItemNoList = SalNumberToStrX( colItemNo, 0 ) 
+.head 6 +  Else
+.head 7 -  Set sItemNoList = sItemNoList || ', ' || SalNumberToStrX( colItemNo, 0 ) 
+.head 6 +  If nSelectedItemYear = NUMBER_Null
+.head 7 -  Set nSelectedItemYear = colYear
+.head 6 -  Return TRUE
+.head 3 -  !
+.head 3 -  Background Text:
+.head 4 -  Resource Id: 15641
+.head 4 -  Class Child Ref Key: 8
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left: 7.788"
+.head 5 -  Top: 0.135"
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Custom Control: ccSeasonYear
+.head 4 -  Class Child Ref Key: 7
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  DLL Name:
+.head 5 -  MS Windows Class Name:
+.head 5 -  Style:  Class Default
+.head 5 -  ExStyle:  Class Default
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left: 8.488"
+.head 6 -  Top: 0.083"
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Etched Border? Class Default
+.head 5 -  Hollow? Class Default
+.head 5 -  Vertical Scroll? Class Default
+.head 5 -  Horizontal Scroll? Class Default
+.head 5 -  Tab Stop? Class Default
+.head 5 -  Tile To Parent? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  DLL Settings
+.head 4 +  Message Actions
+.head 5 +  On PAM_clsSPN_VALIDATE
+.head 6 -  Set nTmp = ccSeasonYear.GetSeasonYear( )
+.head 6 -  Call AdjustYearOfSaleToYear( nTmp )
+.head 6 -  Set dfEstSalesOrdDate = SalDateConstruct( nTmp, SalDateMonth( dfEstSalesOrdDate ), SalDateDay( dfEstSalesOrdDate ), 23, 59, 59 )
+.head 6 -  Return TRUE
+.head 2 -  Functions
+.head 2 -  Window Parameters
+.head 2 +  Window Variables
+.head 3 -  Number: nYear
+.head 3 -  String: sViewPrint
+.head 3 -  String: sContainers
+.head 3 -  Date/Time: dtCurrentDate
+.head 3 -  Window Handle: hWndMonthReport
+.head 2 +  Message Actions
+.head 3 +  On SAM_CreateComplete
+.head 4 -  Set rbEstSalesAllOrdDates = TRUE
+.head 4 +  If dtCurrentDate = SalDateCurrent( )
+.head 5 +  Select Case (SalDateMonth( dtCurrentDate )
+.head 6 +  Case 1
+.head 7 -  Set rbJanuary = TRUE
+.head 6 +  Case 2
+.head 7 -  Set rbFebuary = TRUE
+.head 6 +  Case 3
+.head 7 -  Set rbMarch = TRUE
+.head 6 +  Case 4
+.head 7 -  Set rbApril = TRUE
+.head 6 +  Case 5
+.head 7 -  Set rbMay = TRUE
+.head 6 +  Case 6
+.head 7 -  Set rbJune = TRUE
+.head 6 +  Case 7
+.head 7 -  Set rbJuly = TRUE
+.head 6 +  Case 8
+.head 7 -  Set rbAugust = TRUE
+.head 6 +  Case 9
+.head 7 -  Set rbSeptember = TRUE
+.head 6 +  Case 10
+.head 7 -  Set rbOctober = TRUE
+.head 6 +  Case 11
+.head 7 -  Set rbNovember = TRUE
+.head 6 +  Case 4
+.head 7 -  Set rbDecember = TRUE
+.head 4 -  !
+.head 4 -  Set rbPrint = FALSE
+.head 4 -  Set hWndMonthReport = hWndNULL
+.head 4 -  !
+.head 4 -  ! Call SalSendMsg( tblSelectedTreeTypes, PAM_clsTBL_POPULATE, 0, 0 )
+.head 4 -  Return SalSendClassMessage( SAM_CreateComplete, wParam, lParam )
+.head 3 +  On PAM_cls_SETINSTANCEVARS
+.head 4 -  Set bPrintFormAllowed = FALSE
+.head 3 +  On PAM_SALES_REPORT
+.head 4 -  Call OurWaitCursor( TRUE )
+.head 4 -  !
+.head 4 +  If NOT hWndMonthReport = hWndNULL
+.head 5 +  If SalDestroyWindow( hWndMonthReport )
+.head 6 -  Set hWndMonthReport = hWndNULL
+.head 4 -  !
+.head 4 -  !
+.head 4 -  ! Set nYear = SalStrToNumber( cYear.GetNumber( ) )
+.head 4 -  Set nYear = ccSeasonYear.GetSeasonYear( )
+.head 4 +  If rbView
+.head 5 -  Set sViewPrint = 'VIEW'
+.head 4 +  Else
+.head 5 -  Set sViewPrint = 'PRINT'
+.head 4 -  !
+.head 4 +  If rbIncludeContainers
+.head 5 -  Set sContainers = 'INCLUDE'
+.head 4 +  Else If rbExcludeContainers
+.head 5 -  Set sContainers = 'EXCLUDE'
+.head 4 +  Else
+.head 5 -  Set sContainers = 'ONLY'
+.head 4 -  !
+.head 4 +  If SalSendMsg( tblSelectedItems, PAM_SALES_GETSELECTEDITEMS, 0, 0 )
+.head 5 -  Call PopString( sSelectedItems, TRUE )
+.head 5 +  If sSelectedItems = 'YEARMISMATCH'
+.head 6 -  Call OurWaitCursor( FALSE )
+.head 6 -  Return FALSE
+.head 4 +  Else
+.head 5 -  Set sSelectedItems = ''
+.head 4 -  !
+.head 4 -  ! Create Reports windows
+.head 4 +  If cbSizeSalesItems
+.head 5 -  Set hWndSizeSalesItems = SalCreateWindow( frmItemsSizeSalesReport, hWndForm, nYear, sViewPrint, sContainers, sSelectedItems, sTreeTypes, sOrderDateType, dfEstSalesOrdDate )
+.head 5 +  If hWndSizeSalesItems = hWndNULL
+.head 6 -  Call SalMessageBox( 'Could not create the report! Possibly to many programs open!', 'Sales Report', MB_Ok )
+.head 4 +  If cbEstSalesBestVarietySummary
+.head 5 -  Set hWndEstSaleBestVarietySummary = SalCreateWindow( frmBestVarietySummaryReport, hWndForm, nYear, sViewPrint, sContainers, sSelectedItems, sOrderDateType, dfEstSalesOrdDate )
+.head 5 +  If hWndEstSaleBestVarietySummary = hWndNULL
+.head 6 -  Call SalMessageBox( 'Could not create the report! Possibly to many programs open!', 'Sales Report', MB_Ok )
+.head 4 +  If cbSalesSequencePOS
+.head 5 -  Set hWndSalesSeqPOS = SalCreateWindow( frmSalesSeqPOSReport, hWndForm, nYear, sViewPrint, sOrderDateType, dfEstSalesOrdDate )
+.head 5 +  If hWndSalesSeqPOS = hWndNULL
+.head 6 -  Call SalMessageBox( 'Could not create the report! Possibly to many programs open!', 'Sales Report', MB_Ok )
+.head 4 +  If cbEstSaleVarieties
+.head 5 -  Set hWndEstSaleVarieties = SalCreateWindow( frmVarietiesSalesSeqReport, hWndForm, nYear, sViewPrint, sContainers, sSelectedItems, sOrderDateType, dfEstSalesOrdDate )
+.head 5 +  If hWndEstSaleVarieties = hWndNULL
+.head 6 -  Call SalMessageBox( 'Could not create the report! Possibly to many programs open!', 'Sales Report', MB_Ok )
+.head 4 +  If cbEstSalesVarietySummary
+.head 5 -  Set hWndEstSalesVarietySummary = SalCreateWindow( frmVarietySummaryReport, hWndForm, nYear, sViewPrint, sContainers, sSelectedItems, sOrderDateType, dfEstSalesOrdDate )
+.head 5 +  If hWndEstSalesVarietySummary = hWndNULL
+.head 6 -  Call SalMessageBox( 'Could not create the report! Possibly to many programs open!', 'Sales Report', MB_Ok )
+.head 4 +  If cbSalesSequenceItems
+.head 5 -  Set hWndSalesSeqItems = SalCreateWindow( frmItemsSalesSeqReport, hWndForm, nYear, sViewPrint, sContainers, sSelectedItems, sOrderDateType, dfEstSalesOrdDate )
+.head 5 +  If hWndSalesSeqItems = hWndNULL
+.head 6 -  Call SalMessageBox( 'Could not create the report! Possibly to many programs open!', 'Sales Report', MB_Ok )
+.head 4 +  If cbEstSalesPOS
+.head 5 -  Set hWndEstSalesPOS = SalCreateWindow( frmEstSalesPOSReport, hWndForm, nYear, sViewPrint, hWndSalesSeqPOS, sOrderDateType, dfEstSalesOrdDate )
+.head 5 +  If hWndEstSalesPOS = hWndNULL
+.head 6 -  Call SalMessageBox( 'Could not create the report! Possibly to many programs open!', 'Sales Report', MB_Ok )
+.head 4 +  If cbEstSalesItems
+.head 5 +  If SalSendMsg( tblSelectedTreeTypes, PAM_SALES_GETSELECTEDITEMS, 0, 0 )
+.head 6 -  Set hWndEstSalesItems = SalCreateWindow( frmEstSalesItemsReport, hWndForm, hWndSalesSeqItems, hWndEstSalesVarietySummary, hWndEstSaleVarieties, hWndEstSaleBestVarietySummary, hWndSizeSalesItems, nYear, sViewPrint, sContainers, 
+sSelectedItems, sOrderDateType, dfEstSalesOrdDate )
+.head 6 +  If hWndEstSalesItems = hWndNULL 
+.head 7 -  Call SalMessageBox( 'Could not create the report! Possibly to many programs open!', 'Sales Report', MB_Ok )
+.head 4 -  !
+.head 4 -  ! Populate Reports
+.head 4 +  If cbEstSalesItems
+.head 5 -  Call SalSendMsg( hWndEstSalesItems, PAM_SALES_POPULATE, 0, 0 )
+.head 4 +  If cbEstSalesVarietySummary
+.head 5 -  Call SalSendMsg( hWndEstSalesVarietySummary, PAM_SALES_POPULATE, 0, 0 )
+.head 4 +  If cbEstSalesPOS
+.head 5 -  Call SalSendMsg( hWndEstSalesPOS, PAM_SALES_POPULATE, 0, 0 )
+.head 4 +  If cbSalesSequenceItems
+.head 5 -  Call SalSendMsg( hWndSalesSeqItems, PAM_SALES_POPULATE, 0, 0 )
+.head 4 +  If cbEstSaleVarieties
+.head 5 -  Call SalSendMsg( hWndEstSaleVarieties, PAM_SALES_POPULATE, 0, 0 )
+.head 4 +  If cbEstSalesBestVarietySummary
+.head 5 -  Call SalSendMsg( hWndEstSaleBestVarietySummary, PAM_SALES_POPULATE, 0, 0 )
+.head 4 +  If cbSalesSequencePOS
+.head 5 -  Call SalSendMsg( hWndSalesSeqPOS, PAM_SALES_POPULATE, 0, 0 )
+.head 4 +  If cbSizeSalesItems
+.head 5 -  Call SalSendMsg( hWndSizeSalesItems, PAM_SALES_POPULATE, 0, 0 )
+.head 4 -  !
+.head 4 -  Call OurWaitCursor( FALSE )
+.head 4 -  ! Start Reports Print or View
+.head 4 +  If cbEstSalesItems
+.head 5 -  Call SalSendMsg( hWndEstSalesItems, PAM_SALES_REPORT, 0, 0 )
+.head 4 +  If cbEstSalesVarietySummary
+.head 5 -  Call SalSendMsg( hWndEstSalesVarietySummary, PAM_SALES_REPORT, 0, 0 )
+.head 4 +  If cbEstSalesPOS
+.head 5 -  Call SalSendMsg( hWndEstSalesPOS, PAM_SALES_REPORT, 0, 0 )
+.head 4 +  If cbSalesSequenceItems
+.head 5 -  Call SalSendMsg( hWndSalesSeqItems, PAM_SALES_REPORT, 0, 0 )
+.head 4 +  If cbEstSaleVarieties
+.head 5 -  Call SalSendMsg( hWndEstSaleVarieties, PAM_SALES_REPORT, 0, 0 )
+.head 4 +  If cbEstSalesBestVarietySummary
+.head 5 -  Call SalSendMsg( hWndEstSaleBestVarietySummary, PAM_SALES_REPORT, 0, 0 )
+.head 4 +  If cbSalesSequencePOS
+.head 5 -  Call SalSendMsg( hWndSalesSeqPOS, PAM_SALES_REPORT, 0, 0 )
+.head 4 +  If cbSizeSalesItems
+.head 5 -  Call SalSendMsg( hWndSizeSalesItems, PAM_SALES_REPORT, 0, 0 )
+.head 1 +  Form Window: frmMonthlyReport
+.head 2 -  Class:
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title: Items Sales Seq.
+.head 2 -  Icon File:
+.head 2 -  Accessories Enabled? No
+.head 2 -  Visible? Yes
+.head 2 -  Display Settings
+.head 3 -  Display Style? Default
+.head 3 -  Visible at Design time? No
+.head 3 -  Automatically Created at Runtime? No
+.head 3 -  Initial State: Normal
+.head 3 -  Maximizable? Yes
+.head 3 -  Minimizable? Yes
+.head 3 -  Allow Child Docking? No
+.head 3 -  Docking Orientation: All
+.head 3 -  System Menu? Yes
+.head 3 -  Resizable? Yes
+.head 3 -  Window Location and Size
+.head 4 -  Left: 4.838"
+.head 4 -  Top: 0.229"
+.head 4 -  Width:  4.538"
+.head 4 -  Width Editable? Yes
+.head 4 -  Height: 1.187"
+.head 4 -  Height Editable? Yes
+.head 3 -  Form Size
+.head 4 -  Width:  Default
+.head 4 -  Height: Default
+.head 4 -  Number of Pages: Dynamic
+.head 3 -  Font Name: Default
+.head 3 -  Font Size: Default
+.head 3 -  Font Enhancement: Default
+.head 3 -  Text Color: Default
+.head 3 -  Background Color: Default
+.head 2 -  Description:
+.head 2 -  Named Menus
+.head 2 -  Menu
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Default
+.head 4 -  Location? Top
+.head 4 -  Visible? Yes
+.head 4 -  Size: Default
+.head 4 -  Size Editable? Yes
+.head 4 -  Docking Toolbar? No
+.head 4 -  Toolbar Docking Orientation: Top | Bottom
+.head 4 -  Font Name: Default
+.head 4 -  Font Size: Default
+.head 4 -  Font Enhancement: Default
+.head 4 -  Text Color: Default
+.head 4 -  Background Color: Default
+.head 4 -  Resizable? No
+.head 3 -  Contents
+.head 2 +  Contents
+.head 3 +  Child Table: tblItems
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class:
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left: Default
+.head 6 -  Top: Default
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: Default
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? No
+.head 5 -  Font Name: Default
+.head 5 -  Font Size: Default
+.head 5 -  Font Enhancement: Default
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: Default
+.head 5 -  View: Table
+.head 5 -  Allow Row Sizing? No
+.head 5 -  Lines Per Row: Default
+.head 4 -  Memory Settings
+.head 5 -  Maximum Rows in Memory: Default
+.head 5 -  Discardable? Yes
+.head 4 +  Contents
+.head 5 +  Column: colVarietyType
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colUpperVariety
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colUpperCultDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colUpperRootDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colTreeTypeDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colVariety
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colCultId
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colCultDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colRootId
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colRootDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: String
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colItemNo
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colGCTotalTrees
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colORTotalTrees
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colFCRPTotalTrees
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colOtherTotalTrees
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colTotalTrees
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colGCTotalSales
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colORTotalSales
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colOtherTotalSales
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colTotalSales
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colOwnerRoyalties
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colFNARoyalties
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colFMNRoyalties
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class:
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title:
+.head 6 -  Visible? Yes
+.head 6 -  Editable? Yes
+.head 6 -  Maximum Data Length: Default
+.head 6 -  Data Type: Number
+.head 6 -  Justify: Left
+.head 6 -  Width:  Default
+.head 6 -  Width Editable? Yes
+.head 6 -  Format: Unformatted
+.head 6 -  Country: Default
+.head 6 -  Input Mask: Unformatted
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Standard
+.head 7 -  Multiline Cell? No
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Yes
+.head 8 -  Vertical Scroll? Yes
+.head 8 -  Auto Drop Down? No
+.head 8 -  Allow Text Editing? Yes
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Yes
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 4 -  Functions
+.head 4 +  Window Variables
+.head 5 -  Number: nRow
+.head 5 -  Number: nNewRow
+.head 5 -  Boolean: bInserted
+.head 5 -  !
+.head 5 -  String: sNewVarietyType
+.head 5 -  String: sNewUpperVariety
+.head 5 -  String: sNewUpperCultDesc
+.head 5 -  String: sNewUpperRootDesc
+.head 5 -  String: sNewTreeTypeDesc
+.head 5 -  String: sNewVariety
+.head 5 -  String: sNewCultId
+.head 5 -  String: sNewCultDesc
+.head 5 -  String: sNewRootId
+.head 5 -  String: sNewRootDesc
+.head 5 -  Number: nNewItemNo
+.head 5 -  Number: nNewGCTotalTrees
+.head 5 -  Number: nNewORTotalTrees
+.head 5 -  Number: nNewFCRPTotalTrees
+.head 5 -  Number: nNewOtherTotalTrees
+.head 5 -  Number: nNewTotalTrees
+.head 5 -  Number: nNewGCTotalSales
+.head 5 -  Number: nNewORTotalSales
+.head 5 -  Number: nNewOtherTotalSales
+.head 5 -  Number: nNewTotalSales
+.head 5 -  Number: nNewOwnerRoyalties
+.head 5 -  Number: nNewFNARoyalties
+.head 5 -  Number: nNewFMNRoyalties
+.head 4 +  Message Actions
+.head 5 +  On PAM_SALES_INSERTINDEX
+.head 6 +  If SalSendMsg( hWndForm, PAM_SALES_POPFIELDS, 0, 0 )
+.head 7 -  Set bInserted = FALSE
+.head 7 -  Set nRow = TBL_MinRow
+.head 7 +  While SalTblFindNextRow( hWndForm, nRow, 0, 0 ) AND NOT bInserted
+.head 8 -  Call SalTblSetContext( hWndForm, nRow )
+.head 8 +  If colTotalSales < nNewTotalSales
+.head 9 -  Set nNewRow = SalTblInsertRow( hWndForm, nRow )
+.head 9 -  Call SalTblSetContext( hWndForm, nNewRow )
+.head 9 -  !
+.head 9 -  ! Set colVarietyType = sNewVarietyType
+.head 9 -  ! Set colUpperVariety = sNewUpperVariety
+.head 9 -  ! Set colUpperCultDesc = sNewUpperCultDesc
+.head 9 -  ! Set colUpperRootDesc = sNewUpperRootDesc
+.head 9 -  ! Set colTreeTypeDesc = sNewTreeTypeDesc
+.head 9 -  ! Set colVariety = sNewVariety
+.head 9 -  ! Set colCultId = sNewCultId
+.head 9 -  ! Set colCultDesc = sNewCultDesc
+.head 9 -  ! Set colRootId = sNewRootId
+.head 9 -  ! Set colRootDesc = sNewRootDesc
+.head 9 -  ! Set colItemNo = nNewItemNo
+.head 9 -  ! Set colGCTotalTrees = nNewGCTotalTrees
+.head 9 -  ! Set colORTotalTrees = nNewORTotalTrees
+.head 9 -  ! Set colFCRPTotalTrees = nNewFCRPTotalTrees
+.head 9 -  ! Set colOtherTotalTrees = nNewOtherTotalTrees
+.head 9 -  ! Set colTotalTrees = nNewTotalTrees
+.head 9 -  ! Set colGCTotalSales = nNewGCTotalSales
+.head 9 -  ! Set colORTotalSales = nNewORTotalSales
+.head 9 -  ! Set colOtherTotalSales = nNewOtherTotalSales
+.head 9 -  ! Set colTotalSales = nNewTotalSales
+.head 9 -  ! Set colOwnerRoyalties = nNewOwnerRoyalties
+.head 9 -  ! Set colFNARoyalties = nNewFNARoyalties
+.head 9 -  ! Set colFMNRoyalties = nNewFMNRoyalties
+.head 9 -  !
+.head 9 -  !
+.head 9 -  Set colVarietyType = sNewVarietyType
+.head 9 -  Set colUpperVariety = sNewUpperVariety
+.head 9 -  Set colUpperCultDesc = sNewUpperCultDesc
+.head 9 -  Set colUpperRootDesc = ''
+.head 9 -  Set colTreeTypeDesc = ''
+.head 9 -  Set colVariety = sNewVariety
+.head 9 -  Set colCultId = sNewCultId
+.head 9 -  Set colCultDesc = sNewCultDesc
+.head 9 -  Set colRootId = ''
+.head 9 -  Set colRootDesc = ''
+.head 9 -  Set colItemNo = NUMBER_Null
+.head 9 -  Set colGCTotalTrees = nNewGCTotalTrees
+.head 9 -  Set colORTotalTrees = nNewORTotalTrees
+.head 9 -  Set colFCRPTotalTrees = nNewFCRPTotalTrees
+.head 9 -  Set colOtherTotalTrees = nNewOtherTotalTrees
+.head 9 -  Set colTotalTrees = nNewTotalTrees
+.head 9 -  Set colGCTotalSales = nNewGCTotalSales
+.head 9 -  Set colORTotalSales = nNewORTotalSales
+.head 9 -  Set colOtherTotalSales = nNewOtherTotalSales
+.head 9 -  Set colTotalSales = nNewTotalSales
+.head 9 -  Set colOwnerRoyalties = nNewOwnerRoyalties
+.head 9 -  Set colFNARoyalties = nNewFNARoyalties
+.head 9 -  Set colFMNRoyalties = nNewFMNRoyalties
+.head 9 -  !
+.head 9 -  Set bInserted = TRUE
+.head 7 +  If NOT bInserted
+.head 8 -  Set nNewRow = SalTblInsertRow( hWndForm, TBL_MaxRow )
+.head 8 -  Call SalTblSetContext( hWndForm, nNewRow )
+.head 8 -  !
+.head 8 -  ! Set colVarietyType = sNewVarietyType
+.head 8 -  ! Set colUpperVariety = sNewUpperVariety
+.head 8 -  ! Set colUpperCultDesc = sNewUpperCultDesc
+.head 8 -  ! Set colUpperRootDesc = sNewUpperRootDesc
+.head 8 -  ! Set colTreeTypeDesc = sNewTreeTypeDesc
+.head 8 -  ! Set colVariety = sNewVariety
+.head 8 -  ! Set colCultId = sNewCultId
+.head 8 -  ! Set colCultDesc = sNewCultDesc
+.head 8 -  ! Set colRootId = sNewRootId
+.head 8 -  ! Set colRootDesc = sNewRootDesc
+.head 8 -  ! Set colItemNo = nNewItemNo
+.head 8 -  ! Set colGCTotalTrees = nNewGCTotalTrees
+.head 8 -  ! Set colORTotalTrees = nNewORTotalTrees
+.head 8 -  ! Set colFCRPTotalTrees = nNewFCRPTotalTrees
+.head 8 -  ! Set colOtherTotalTrees = nNewOtherTotalTrees
+.head 8 -  ! Set colTotalTrees = nNewTotalTrees
+.head 8 -  ! Set colGCTotalSales = nNewGCTotalSales
+.head 8 -  ! Set colORTotalSales = nNewORTotalSales
+.head 8 -  ! Set colOtherTotalSales = nNewOtherTotalSales
+.head 8 -  ! Set colTotalSales = nNewTotalSales
+.head 8 -  ! Set colOwnerRoyalties = nNewOwnerRoyalties
+.head 8 -  ! Set colFNARoyalties = nNewFNARoyalties
+.head 8 -  ! Set colFMNRoyalties = nNewFMNRoyalties
+.head 8 -  !
+.head 8 -  !
+.head 8 -  Set colVarietyType = sNewVarietyType
+.head 8 -  Set colUpperVariety = sNewUpperVariety
+.head 8 -  Set colUpperCultDesc = sNewUpperCultDesc
+.head 8 -  Set colUpperRootDesc = ''
+.head 8 -  Set colTreeTypeDesc = ''
+.head 8 -  Set colVariety = sNewVariety
+.head 8 -  Set colCultId = sNewCultId
+.head 8 -  Set colCultDesc = sNewCultDesc
+.head 8 -  Set colRootId = ''
+.head 8 -  Set colRootDesc = ''
+.head 8 -  Set colItemNo = NUMBER_Null
+.head 8 -  Set colGCTotalTrees = nNewGCTotalTrees
+.head 8 -  Set colORTotalTrees = nNewORTotalTrees
+.head 8 -  Set colFCRPTotalTrees = nNewFCRPTotalTrees
+.head 8 -  Set colOtherTotalTrees = nNewOtherTotalTrees
+.head 8 -  Set colTotalTrees = nNewTotalTrees
+.head 8 -  Set colGCTotalSales = nNewGCTotalSales
+.head 8 -  Set colORTotalSales = nNewORTotalSales
+.head 8 -  Set colOtherTotalSales = nNewOtherTotalSales
+.head 8 -  Set colTotalSales = nNewTotalSales
+.head 8 -  Set colOwnerRoyalties = nNewOwnerRoyalties
+.head 8 -  Set colFNARoyalties = nNewFNARoyalties
+.head 8 -  Set colFMNRoyalties = nNewFMNRoyalties
+.head 8 -  !
+.head 8 -  Set bInserted = TRUE
+.head 7 -  Return TRUE
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  On PAM_SALES_POPFIELDS
+.head 6 -  Call PopNumber( nNewFMNRoyalties, TRUE )
+.head 6 -  Call PopNumber( nNewFNARoyalties, TRUE )
+.head 6 -  Call PopNumber( nNewOwnerRoyalties, TRUE )
+.head 6 -  Call PopNumber( nNewTotalSales, TRUE )
+.head 6 -  Call PopNumber( nNewOtherTotalSales, TRUE )
+.head 6 -  Call PopNumber( nNewORTotalSales, TRUE )
+.head 6 -  Call PopNumber( nNewGCTotalSales, TRUE )
+.head 6 -  Call PopNumber( nNewTotalTrees, TRUE )
+.head 6 -  Call PopNumber( nNewOtherTotalTrees, TRUE )
+.head 6 -  Call PopNumber( nNewFCRPTotalTrees, TRUE )
+.head 6 -  Call PopNumber( nNewORTotalTrees, TRUE )
+.head 6 -  Call PopNumber( nNewGCTotalTrees, TRUE )
+.head 6 -  Call PopNumber( nNewItemNo, TRUE )
+.head 6 -  Call PopString( sNewRootDesc, TRUE )
+.head 6 -  Call PopString( sNewRootId, TRUE )
+.head 6 -  Call PopString( sNewCultDesc, TRUE )
+.head 6 -  Call PopString( sNewCultId, TRUE )
+.head 6 -  Call PopString( sNewVariety, TRUE )
+.head 6 -  Call PopString( sNewTreeTypeDesc, TRUE )
+.head 6 -  Call PopString( sNewUpperRootDesc, TRUE )
+.head 6 -  Call PopString( sNewUpperCultDesc, TRUE )
+.head 6 -  Call PopString( sNewUpperVariety, TRUE )
+.head 6 -  Call PopString( sNewVarietyType, TRUE )
+.head 6 -  Return TRUE
+.head 2 -  Functions
+.head 2 +  Window Parameters
+.head 3 -  Number: nYear
+.head 3 -  ! sViewPrint = 'VIEW' OR 'PRINT'
+.head 3 -  String: sViewPrint
+.head 3 -  ! sContainers = 'INCLUDE' OR 'EXCLUDE' OR 'ONLY'
+.head 3 -  String: sContainers
+.head 3 -  ! sSelectedItems if '' means all else Comma separated list of item numbers
+.head 3 -  String: sSelectedItems
+.head 3 -  ! sOrderDateType = 'ALL', 'BEFORE' OR 'AFTER'
+.head 3 -  String: sOrderDateType
+.head 3 -  Date/Time: dtOrderDate
+.head 2 +  Window Variables
+.head 3 -  String: sReportName
+.head 3 -  String: sReportBinds
+.head 3 -  String: sReportInputs
+.head 3 -  Number: nError
+.head 3 -  Window Handle: hWndReport
+.head 3 -  !
+.head 3 -  String: sReportHeading
+.head 3 -  Number: nItemsRow
+.head 2 +  Message Actions
+.head 3 +  On SAM_CreateComplete
+.head 4 -  Set sReportHeading = 'Best $ Sequence'
+.head 3 +  On PAM_SALES_REPORT
+.head 4 -  Set sReportName = OurGetIniFileParameter( 'ACCOUNTS', 'ReportsPath', '' )||'\\estsale2.qrp'
+.head 4 -  Set sReportBinds = ':frmItemsSalesSeqReport.sReportHeading, 
+:frmItemsSalesSeqReport.nYear, 
+:frmItemsSalesSeqReport.sOrderDateType, 
+:frmItemsSalesSeqReport.dtOrderDate, 
+:frmItemsSalesSeqReport.tblItems.colItemNo, 
+:frmItemsSalesSeqReport.tblItems.colVarietyType, 
+:frmItemsSalesSeqReport.tblItems.colUpperVariety, 
+:frmItemsSalesSeqReport.tblItems.colTreeTypeDesc, 
+:frmItemsSalesSeqReport.tblItems.colCultDesc, 
+:frmItemsSalesSeqReport.tblItems.colRootDesc, 
+:frmItemsSalesSeqReport.tblItems.colGCTotalTrees, 
+:frmItemsSalesSeqReport.tblItems.colORTotalTrees, 
+:frmItemsSalesSeqReport.tblItems.colFCRPTotalTrees, 
+:frmItemsSalesSeqReport.tblItems.colOtherTotalTrees, 
+:frmItemsSalesSeqReport.tblItems.colTotalTrees, 
+:frmItemsSalesSeqReport.tblItems.colGCTotalSales, 
+:frmItemsSalesSeqReport.tblItems.colORTotalSales,
+:frmItemsSalesSeqReport.tblItems.colOtherTotalSales,  
+:frmItemsSalesSeqReport.tblItems.colTotalSales, 
+:frmItemsSalesSeqReport.tblItems.colOwnerRoyalties, 
+:frmItemsSalesSeqReport.tblItems.colFNARoyalties, 
+:frmItemsSalesSeqReport.tblItems.colFMNRoyalties'
+.head 4 -  Set sReportInputs = 'ReportHeading, 
+YearOfSale, 
+OrderDateType, 
+OrderDate, 
+ItemNo, 
+VarietyType, 
+Variety, 
+TreeTypeDesc, 
+CultDesc, 
+RootDesc, 
+GCTrees, 
+ORTrees, 
+FCRPTrees, 
+OtherTrees, 
+TotalTrees, 
+GCSales, 
+ORSales, 
+OtherSales, 
+TotalSales, 
+OwnerRoyalties, 
+FNARoyalties, 
+FMNRoyalties'
+.head 4 -  Set nError = 1
+.head 4 +  If sViewPrint = 'PRINT'
+.head 5 -  Set hWndReport = SalReportPrint( hWndForm, sReportName, sReportBinds, sReportInputs, 1, RPT_PrintAll | RPT_PrintNoWarn, 0, 0, nError )
+.head 4 +  Else
+.head 5 -  Set hWndReport = SalReportView( hWndForm, hWndForm, sReportName, sReportBinds, sReportInputs, nError )
+.head 5 +  If hWndReport = hWndNULL
+.head 6 -  Call SalMessageBox( 'Could not create the report! Possibly to many programs open!', 'Sales Report', MB_Ok )
+.head 3 +  On PAM_SALES_INSERTINDEX
+.head 4 -  Return SalSendMsg( tblItems, PAM_SALES_INSERTINDEX, wParam, lParam )
+.head 3 +  On SAM_ReportStart
+.head 4 -  Return TRUE
+.head 3 +  On SAM_ReportFetchInit
+.head 4 -  Set nItemsRow = TBL_MinRow
+.head 4 -  Return TRUE
+.head 3 +  On SAM_ReportFetchNext
+.head 4 +  If SalTblFindNextRow( tblItems, nItemsRow, 0, 0 )
+.head 5 -  Call SalTblFetchRow( tblItems, nItemsRow )
+.head 5 -  Return TRUE
+.head 4 +  Else
+.head 5 -  Return FALSE
+.head 3 +  On SAM_ReportFinish
+.head 4 -  Call SalDestroyWindow( hWndForm )
+.head 4 -  Return TRUE

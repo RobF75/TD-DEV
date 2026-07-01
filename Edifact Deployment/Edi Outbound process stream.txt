@@ -1,0 +1,38 @@
+Assume array of message data exists...
+
+Count number of segments in array
+
+Get message sequence for this interchange
+
+Build UNH using Msg Seq and msg type
+
+Append to any existing output file or create new file
+
+Append message array data to outbound file
+
+Build UNT based on Msg Seq and segment count 
+
+Append to end of outbound file
+
+
+Increment message sequence number
+
+Check for further messages to process
+
+
+Get new Interchange reference for partner
+
+Create UNB using partner details, Date/Time and Int Ref
+
+Insert UNB at start of outbound file
+
+
+Create UNZ based on Int Ref and Msg Seq
+
+Append to end of outbound file
+
+
+Compress file if required
+
+Move file to partner OUTBOX
+

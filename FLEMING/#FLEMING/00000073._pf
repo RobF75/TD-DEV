@@ -1,0 +1,709 @@
+.head 0 +  Application Description: SQLWindows 5.01 Jans Spin Field Class
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF420000 00420000000D0300 007B010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left:   0.15"
+.head 3 -  Top:    0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left:   5.1"
+.head 3 -  Top:    2.896"
+.head 3 -  Width:  4.688"
+.head 3 -  Height: 2.99"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   Default
+.head 3 -  Top:    Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   6.6"
+.head 3 -  Top:    0.521"
+.head 2 -  Fully Qualified External References? No
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: Pick.apl
+.head 2 -  File Include: vtwin.apl
+.head 2 -  File Include: vtspin.apl
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Italic
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Black
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for SPNFIELD.APL
+.head 4 -  Number: SPNAplMsgOffSet = SAM_User + 2000
+.head 4 -  Number: PAM_clsSPN_VALIDATE = SPNAplMsgOffSet + 1
+.head 4 -  Number: PAM_clsSPN_ENABLE = SPNAplMsgOffSet + 2
+.head 4 -  Number: PAM_clsSPN_DISABLE = SPNAplMsgOffSet + 3
+.head 4 -  Number: PAM_clsSPN_SHOW = SPNAplMsgOffSet + 4
+.head 4 -  Number: PAM_clsSPN_HIDE = SPNAplMsgOffSet + 5
+.head 4 -  ! Message go up to AplOffSet + 99
+.head 4 -  Number: SPNAplConstOffSet = 1000
+.head 4 -  !
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 3137192942
+0000: 7C0000002D000000 0000000000000000 0200000500000048 00010DF8000000FF
+0020: 8F550001FB00FF8F 620001FB00FF0F6F 00040DFA0000FF8F 7C0001FB00FF0F
+.enddata
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 3 +  Function: WhichSeasonYear
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Number:
+.head 4 +  Parameters
+.head 5 -  Date/Time: dtCurrentDate
+.head 4 -  Static Variables
+.head 4 -  Local variables
+.head 4 +  Actions
+.head 5 +  If dtCurrentDate >= SalDateConstruct( SalDateYear( dtCurrentDate ), 9, 1, 0, 0, 0 )
+.head 6 -  Return OurDateYear( SalDateConstruct( SalDateYear( dtCurrentDate )+1, SalDateMonth( dtCurrentDate ), SalDateDay( dtCurrentDate ), 0, 0, 0 ) )
+.head 5 +  Else
+.head 6 -  Return OurDateYear( dtCurrentDate )
+.head 3 +  Function: WhichDateRangeSeasonYear
+.head 4 -  Description:
+.head 4 -  Returns
+.head 4 +  Parameters
+.head 5 -  Number: nYear
+.head 5 -  Receive Date/Time: dtFromDate
+.head 5 -  Receive Date/Time: dtToDate
+.head 4 -  Static Variables
+.head 4 -  Local variables
+.head 4 +  Actions
+.head 5 +  If nYear <= 96
+.head 6 -  Set nYear = nYear + 1900
+.head 5 -  Set dtFromDate = SalDateConstruct( nYear-1, 9, 1, 0, 0, 0 )
+.head 5 -  Set dtToDate = SalDateConstruct( nYear, 8, 31, 23, 59, 59 )
+.head 3 +  Function: WhichTypeOfSeason
+.head 4 -  Description: Returns 'WINTER', 'OTHER'
+.head 4 +  Returns
+.head 5 -  String:
+.head 4 +  Parameters
+.head 5 -  Date/Time: dtDate
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  Date/Time: dtStartWinter
+.head 5 -  Date/Time: dtEndWinter
+.head 4 +  Actions
+.head 5 -  Set dtStartWinter = SalDateConstruct( SalDateYear( dtDate ), 6, 1, 0, 0, 0 )
+.head 5 -  Set dtEndWinter = SalDateConstruct( SalDateYear( dtDate ), 8, 31, 23, 59, 059 )
+.head 5 +  If dtDate >= dtStartWinter AND dtDate <= dtEndWinter
+.head 6 -  Return 'WINTER'
+.head 5 +  Else
+.head 6 -  Return 'OTHER'
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 3334888833
+0000: 9E0700009D030000 0000000000000000 0200001000FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F34003C00 001463006C737062
+0040: 53656C6500637446 726F6D546100626C 6564000000041800 0000010D00FC0000
+0060: FFC70D0001FC0000 FFC71A0001FD00FF C7270001FD00FF87 0180040000000100
+0080: 00000D636C595365 6349006E746F1C00 0000011B00030400 FD00FF0701802200
+00A0: 000000020000001D 636C0154626C4D61 6B653C5365656400 526F774B65794172
+00C0: 007261796C000000 041B00020400D100 0100003F8001F800 00009704010DFD00
+00E0: FFC7110001FD00FF C71E0002FC0000FF 070180B700000000 030000000F636C1B
+0100: 61654765006E6572 616C0C0200611500 000001F60D00FF1F 0D0001F30000FFDF
+0120: 1AF700FFDF27F700 FF1F340002F700FF 1F380002F700FF1F 3C0002F700FF1F40
+0140: 0002F700FF1F4400 02F700FF1F480002 F700FF1F4C0002F7 00FF1F5000024700
+0160: 010000FFE4800100 001F540001460D00 010000FFE4800100 001F580001F60D00
+0180: FF1F650001F700FF 1F720001F700FF1F 7F0001F700FF1F8C 0001F700FF1F9900
+01A0: 01F700FF1FA60001 F700FF1FB30003F6 0400FF1F01800D32 000004000C94636C
+01C0: 7047654F1C000034 010000010DFB00FF 8F01800D01000500 000009630E6C4578
+01E0: 6974441C00000100 00B3010D00FFFF18 0180040006003800 000C506900634578
+0200: 70616E641CA20000 010000DD0200FF7F 010C800400070000 F00012636C00546F
+0220: 67676C6542754074 746F6E1C0000B401 000002FB00FF8F01 800D810008000000
+0240: 0CE36362473F0001 9A0000010DFD00FF 0701802F00000000 090000000E636C81
+0260: 466F726D47650F7C 000000360500010D FB00FFAF0D02FB00 FF2F11040DF80000
+0280: 00FFAF1E03FB00FF 8F220001FB00FF8F 01800D01000A0000 0017633E6C507200
+02A0: 696E744261736963 805265706F72741C D100010000EC010D 00FF3F0180060D00
+02C0: 0B000000000B6863 53716C4861426E6C 651C000034010000 010DFB00FF8F0180
+02E0: 0401000C0000000C 63C364664765371C 0001DA000003FD00 FF0701802E00000C
+0300: 000D0011636C0570 5374617274005072 6F6772616DACB000 00000700DD0200FF
+0320: 7F04CC00020000FF 7F08DD0200FF7F0C D800010D00FF7F19 DC000300FF7F1DDC
+0340: 000200FF7F21DC00 0100FF7F010C802F 000E000010001063 6C446961E06C6F67
+0360: 4765996C7C0005CD 00010DFE00FFEB0D 02FE00FF5311000D 00FE00FFFB1EFE00
+0380: FFFB22FE00FF6301 800D00C00F000000 1163005370696E53 656173006F6E5965
+03A0: 61721C00D1000100 00EC010D00FF3F
+.enddata
+.head 3 +  ! Custom Control Class: clsSpinGeneral
+.winattr
+.head 4 -  DLL Name: vt50.dll
+.head 4 -  Display Settings
+.head 5 -  DLL Name: vt50.dll
+.head 5 -  MS Windows Class Name: VT:cSpinField
+.head 5 -  Style:  0x00000000
+.head 5 -  ExStyle:  0x00000000
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  0.838"
+.head 6 -  Width Editable? Yes
+.head 6 -  Height: 0.323"
+.head 6 -  Height Editable? Yes
+.head 5 -  Visible? Yes
+.head 5 -  Border? Yes
+.head 5 -  Etched Border? Yes
+.head 5 -  Hollow? No
+.head 5 -  Vertical Scroll? No
+.head 5 -  Horizontal Scroll? No
+.head 5 -  Tab Stop? Tab
+.head 5 -  Tile To Parent? No
+.head 5 -  Font Name: Default
+.head 5 -  Font Size: Default
+.head 5 -  Font Enhancement: Default
+.head 5 -  Text Color: Default
+.head 5 -  Background Color: White
+.head 5 -  DLL Settings
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name: vti60.dll
+.end
+.head 4 -  Description: Changes the IsValidNumber( ) so that any user input between min
+max ranges is valid and doesnt need to be a multiple of nIncrement
+.head 4 +  Derived From 
+.head 5 -  Class: cSpinField
+.head 4 -  Class Variables 
+.head 4 +  Instance Variables 
+.head 5 -  Number: nMinValue
+.head 5 -  Number: nMaxValue
+.head 5 -  Number: nIncrement
+.head 5 -  Number: nAdjust
+.head 5 -  Number: nInitialValue
+.head 5 -  Boolean: bEditable
+.head 4 +  Functions 
+.head 5 +  Function: IsValidNumber
+.head 6 -  Description: Same as IsValidNumber except doesnt return false if the
+number is not a multiple of nIncrement.
+.head 6 +  Returns 
+.head 7 -  Boolean: 
+.head 6 -  Parameters 
+.head 6 -  Static Variables 
+.head 6 +  Local variables 
+.head 7 -  String: sValue
+.head 7 -  Number: nValue
+.head 6 +  Actions 
+.head 7 -  Set sValue = GetNumber()
+.head 7 -  !
+.head 7 -  ! ***** Validate for valid number
+.head 7 +  If Not SalStrIsValidNumber( sValue )
+.head 8 -  Return FALSE
+.head 7 -  !
+.head 7 -  ! ***** Test if value is on an increment
+.head 7 +  If nAdjust
+.head 8 -  Set nValue = SalStrToNumber( sValue ) / SalNumberPower( 10, nAdjust )
+.head 7 +  Else 
+.head 8 -  Set nValue = SalStrToNumber( sValue )
+.head 7 -  !
+.head 7 -  ! ***** Test if value out of range
+.head 7 +  If nValue < nMinValue or nValue > nMaxValue
+.head 8 -  Return FALSE
+.head 7 -  !
+.head 7 -  Return TRUE
+.head 4 +  Message Actions 
+.head 5 +  On SAM_Create
+.head 6 -  Set nMinValue = 0
+.head 6 -  Set nMaxValue = 10
+.head 6 -  Set nIncrement = 1
+.head 6 -  Set nAdjust = 0
+.head 6 -  Set nInitialValue = 0
+.head 6 -  Set bEditable = TRUE
+.head 6 -  Call SalSendMsg( hWndItem, PAM_cls_SETINSTANCEVARS, 0, 0 )
+.head 6 -  Call SetNumberProperties( nMinValue, nMaxValue, nIncrement, nAdjust )
+.head 6 -  Call SetNumber( nInitialValue )
+.head 6 +  If bEditable
+.head 7 -  Call SalSendMsg( hWndItem, PAM_clsSPN_ENABLE, 0, 0 )
+.head 6 +  Else 
+.head 7 -  Call SalSendMsg( hWndItem, PAM_clsSPN_DISABLE, 0, 0 )
+.head 5 +  On PAM_clsSPN_DISABLE
+.head 6 -  Call SalDisableWindow( hWndItem )
+.head 6 -  Return TRUE
+.head 5 +  On PAM_clsSPN_ENABLE
+.head 6 -  Call SalEnableWindow( hWndItem )
+.head 6 -  Return TRUE
+.head 5 +  On PAM_clsSPN_SHOW
+.head 6 -  Call SalShowWindow( hWndItem )
+.head 6 -  Return TRUE
+.head 5 +  On PAM_clsSPN_HIDE
+.head 6 -  Call SalHideWindow( hWndItem )
+.head 6 -  Return TRUE
+.head 3 +  Custom Control Class: clsSpinGeneral
+.head 4 -  DLL Name:
+.head 4 -  Display Settings
+.head 5 -  DLL Name:
+.head 5 -  MS Windows Class Name:
+.head 5 -  Style:  Class Default
+.head 5 -  ExStyle:  Class Default
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  0.975"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 0.271"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Etched Border? Class Default
+.head 5 -  Hollow? Class Default
+.head 5 -  Vertical Scroll? Class Default
+.head 5 -  Horizontal Scroll? Class Default
+.head 5 -  Tab Stop? Class Default
+.head 5 -  Tile To Parent? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  DLL Settings
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: cSpinField
+.head 4 -  Class Variables
+.head 4 +  Instance Variables
+.head 5 -  Number: nMinValue
+.head 5 -  Number: nMaxValue
+.head 5 -  Number: nIncrement
+.head 5 -  Number: nAdjust
+.head 5 -  Number: nInitialValue
+.head 5 -  Boolean: bEditable
+.head 4 +  Functions
+.head 5 +  Function: IsValidNumber
+.head 6 -  Description: Same as IsValidNumber except doesnt return false if the
+number is not a multiple of nIncrement.
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 -  Parameters
+.head 6 -  Static Variables
+.head 6 +  Local variables
+.head 7 -  String: sValue
+.head 7 -  Number: nValue
+.head 6 +  Actions
+.head 7 -  Set sValue = GetNumber()
+.head 7 -  !
+.head 7 -  ! ***** Validate for valid number
+.head 7 +  If Not SalStrIsValidNumber( sValue )
+.head 8 -  Return FALSE
+.head 7 -  !
+.head 7 -  ! ***** Test if value is on an increment
+.head 7 +  If nAdjust
+.head 8 -  Set nValue = SalStrToNumber( sValue ) / SalNumberPower( 10, nAdjust )
+.head 7 +  Else
+.head 8 -  Set nValue = SalStrToNumber( sValue )
+.head 7 -  !
+.head 7 -  ! ***** Test if value out of range
+.head 7 +  If nValue < nMinValue or nValue > nMaxValue
+.head 8 -  Return FALSE
+.head 7 -  !
+.head 7 -  Return TRUE
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set nMinValue = 0
+.head 6 -  Set nMaxValue = 10
+.head 6 -  Set nIncrement = 1
+.head 6 -  Set nAdjust = 0
+.head 6 -  Set nInitialValue = 0
+.head 6 -  Set bEditable = TRUE
+.head 6 -  Call SalSendMsg( hWndItem, PAM_cls_SETINSTANCEVARS, 0, 0 )
+.head 6 -  Call SetNumberProperties( nMinValue, nMaxValue, nIncrement, nAdjust )
+.head 6 -  Call SetNumber( nInitialValue )
+.head 6 +  If bEditable
+.head 7 -  Call SalSendMsg( hWndItem, PAM_clsSPN_ENABLE, 0, 0 )
+.head 6 +  Else
+.head 7 -  Call SalSendMsg( hWndItem, PAM_clsSPN_DISABLE, 0, 0 )
+.head 5 +  On PAM_clsSPN_DISABLE
+.head 6 -  Call SalDisableWindow( hWndItem )
+.head 6 -  Return TRUE
+.head 5 +  On PAM_clsSPN_ENABLE
+.head 6 -  Call SalEnableWindow( hWndItem )
+.head 6 -  Return TRUE
+.head 5 +  On PAM_clsSPN_SHOW
+.head 6 -  Call SalShowWindow( hWndItem )
+.head 6 -  Return TRUE
+.head 5 +  On PAM_clsSPN_HIDE
+.head 6 -  Call SalHideWindow( hWndItem )
+.head 6 -  Return TRUE
+.head 3 +  Custom Control Class: clsSpinSeasonYear
+.head 4 -  DLL Name:
+.head 4 -  Display Settings
+.head 5 -  DLL Name:
+.head 5 -  MS Windows Class Name:
+.head 5 -  Style:  Class Default
+.head 5 -  ExStyle:  Class Default
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Etched Border? Class Default
+.head 5 -  Hollow? Class Default
+.head 5 -  Vertical Scroll? Class Default
+.head 5 -  Horizontal Scroll? Class Default
+.head 5 -  Tab Stop? Class Default
+.head 5 -  Tile To Parent? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  DLL Settings
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clsSpinGeneral
+.head 4 +  Class Variables
+.head 5 -  Number: nSeasonYear
+.head 4 -  Instance Variables
+.head 4 +  Functions
+.head 5 +  Function: GetSeasonYear
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Number:
+.head 6 -  Parameters
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 -  Return nSeasonYear
+.head 5 +  Function: SetSeasonYear
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Number:
+.head 6 +  Parameters
+.head 7 -  Date/Time: dtCurrentDate
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 -  Return WhichSeasonYear( dtCurrentDate )
+.head 5 -  !
+.head 5 +  Function: IncSeasonYear
+.head 6 -  Description:
+.head 6 -  Returns
+.head 6 +  Parameters
+.head 7 -  Number: nIncAmt
+.head 6 -  Static Variables
+.head 6 +  Local variables
+.head 7 -  Number: nYear
+.head 6 +  Actions
+.head 7 -  Set nSeasonYear = nSeasonYear + nIncAmt
+.head 7 +  If nSeasonYear >=97 AND nSeasonYear <=99
+.head 8 -  Set nSeasonYear = nSeasonYear + 1900
+.head 7 +  Else If nSeasonYear >=0 AND nSeasonYear <=50
+.head 8 -  Set nSeasonYear = nSeasonYear + 2000
+.head 5 +  Function: DecSeasonYear
+.head 6 -  Description:
+.head 6 -  Returns
+.head 6 +  Parameters
+.head 7 -  Number: nDecAmt
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 -  Set nSeasonYear = nSeasonYear - nDecAmt
+.head 7 +  If nSeasonYear <1997 AND nSeasonYear >1950
+.head 8 -  Set nSeasonYear = nSeasonYear - 1900
+.head 5 -  !
+.head 5 +  Function: MatchSeasonYearToSpinField
+.head 6 -  Description:
+.head 6 -  Returns
+.head 6 -  Parameters
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 +  If nSeasonYear != SalStrToNumber( GetNumber(  ) )
+.head 8 -  Call SetNumber( nSeasonYear )
+.head 8 -  Call SalSendMsg( hWndItem, PAM_clsSPN_VALIDATE, 0, 0 )
+.head 5 -  !
+.head 5 +  Function: IsValidNumber
+.head 6 -  Description: Same as IsValidNumber except doesnt return false if the
+number is not a multiple of nIncrement.
+.head 6 +  Returns
+.head 7 -  Boolean:
+.head 6 -  Parameters
+.head 6 -  Static Variables
+.head 6 +  Local variables
+.head 7 -  String: sValue
+.head 7 -  Number: nValue
+.head 6 +  Actions
+.head 7 -  Set sValue = clsSpinSeasonYear.GetNumber()
+.head 7 -  !
+.head 7 -  ! ***** Validate for valid number
+.head 7 +  If Not SalStrIsValidNumber( sValue )
+.head 8 -  Return FALSE
+.head 7 -  !
+.head 7 -  Set nValue = SalStrToNumber( sValue )
+.head 7 -  !
+.head 7 +  If nValue >=97 AND nValue <=99
+.head 8 -  Set nValue = nValue + 1900
+.head 8 -  Call clsSpinSeasonYear.SetNumber( nValue )
+.head 7 +  Else If nValue >=0 AND nValue <=50
+.head 8 -  Set nValue = nValue + 2000
+.head 8 -  Call clsSpinSeasonYear.SetNumber( nValue )
+.head 7 -  Set nSeasonYear = nValue
+.head 7 -  !
+.head 7 -  Return TRUE
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 +  If NOT nSeasonYear > 0
+.head 7 -  Set nSeasonYear = SetSeasonYear( SalDateCurrent(  ) )
+.head 6 -  Call SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 6 -  Return SetNumber( nSeasonYear )
+.head 5 +  On SAM_Validate
+.head 6 +  If IsValidNumber(  )
+.head 7 -  Call SalSendMsg( hWndItem, PAM_clsSPN_VALIDATE, 0, 0 )
+.head 7 -  Return VALIDATE_Ok
+.head 6 +  Else
+.head 7 -  Return VALIDATE_Cancel
+.head 5 +  On VTM_SpinSetValue
+.head 6 -  Call SalSendMsg( hWndItem, PAM_clsSPN_VALIDATE, 0, 0 )
+.head 5 +  On VTM_SpinScrollUp
+.head 6 -  Call IncSeasonYear( nIncrement )
+.head 6 -  Call SetNumber( nSeasonYear )
+.head 6 -  Call SalSendMsg( hWndItem, PAM_clsSPN_VALIDATE, 0, 0 )
+.head 6 -  Return TRUE
+.head 5 +  On VTM_SpinScrollDown
+.head 6 -  Call DecSeasonYear( nIncrement )
+.head 6 -  Call SetNumber( nSeasonYear )
+.head 6 -  Call SalSendMsg( hWndItem, PAM_clsSPN_VALIDATE, 0, 0 )
+.head 6 -  Return TRUE
+.head 5 +  On PAM_clsFRM_ACTIVATE
+.head 6 +  If wParam
+.head 7 -  Call MatchSeasonYearToSpinField(  )
+.head 5 +  On PAM_clsDLG_ACTIVATE
+.head 6 +  If wParam
+.head 7 -  Call MatchSeasonYearToSpinField(  )
+.head 3 +  Custom Control Class: clsSpinYear
+.head 4 -  DLL Name:
+.head 4 -  Display Settings
+.head 5 -  DLL Name:
+.head 5 -  MS Windows Class Name:
+.head 5 -  Style:  Class Default
+.head 5 -  ExStyle:  Class Default
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Etched Border? Class Default
+.head 5 -  Hollow? Class Default
+.head 5 -  Vertical Scroll? Class Default
+.head 5 -  Horizontal Scroll? Class Default
+.head 5 -  Tab Stop? Class Default
+.head 5 -  Tile To Parent? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  DLL Settings
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clsSpinGeneral
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 +  Functions
+.head 5 +  Function: GetYear
+.head 6 -  Description:
+.head 6 +  Returns
+.head 7 -  Number:
+.head 6 -  Parameters
+.head 6 -  Static Variables
+.head 6 -  Local variables
+.head 6 +  Actions
+.head 7 -  Return SalStrToNumber( clsSpinYear.GetNumber( ) )
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set clsSpinYear.nMinValue = 0
+.head 6 -  Set clsSpinYear.nMaxValue = 9999
+.head 6 -  Set clsSpinYear.nIncrement =1
+.head 6 -  Set clsSpinYear.nInitialValue = SalDateYear( SalDateCurrent ( ) )
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Check Box:
+.head 3 -  Option Button:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text:
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 -  Application Actions

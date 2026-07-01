@@ -1,0 +1,893 @@
+.head 0 +  Application Description: SQLWindows 5.01 Jans Dialog with child table Class
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF2C0000 002C000000BC0200 0065010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left:   0.15"
+.head 3 -  Top:    0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left:   5.1"
+.head 3 -  Top:    2.906"
+.head 3 -  Width:  4.688"
+.head 3 -  Height: 2.979"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   Default
+.head 3 -  Top:    Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   6.6"
+.head 3 -  Top:    0.521"
+.head 2 -  Fully Qualified External References? No
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: VTMETER.APL
+.head 2 -  File Include: VTSPIN.APL
+.head 2 -  File Include: PICK.APL
+.head 2 -  File Include: VTWIN.APL
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Italic
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Black
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for DLGCTBL.APL
+.head 4 -  Number: DLGCTBLaplOffSet = SAM_User + 400
+.head 4 -  ! Message go up to DLGCTBLaplOffSet + 99
+.head 4 -  Number: DLGCTBLAplConstOffSet = 200
+.head 4 -  ! Messages
+.head 4 -  ! Constants
+.head 4 -  !
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 1064003461
+0000: 8600000038000000 0000000000000000 020000050000004C 000000E0010D0000
+0020: 00FF3F5900A00000 040D0000FFFFE066 00000001FE00FF83 7300000001FB00FF
+0040: 0F80000000EE0100 FF3F
+.enddata
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 3553824119
+0000: 69090000A5040000 0000000000000000 0200001400FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F1E003C00 001363006C734469
+0040: 616C6F6700436869 6C64546162006C65 5200000003003C00 00010DF8000000FF
+0060: 4F0D0000EE0100FF 3F1A008000000204 000000FFFF000180 3400000001002000
+0080: 0014636C70620053 656C656374467270 6F6D54616CA00000 0004000067010D00
+00A0: FFFFCD0D0001FD00 FF371A0001F700FF 1F270000DC000100 FF7F010880040000
+00C0: 02000090000D636C 5365046563496E74 6F1EA30001000047 03040000FFFF0101
+00E0: 8022000000034200 001D636C5400626C 4D616B6553650F65 64526F00774B6579
+0100: 41727261C0797400 0000049E000204D1 000100003F8001F8 00000037040001F6
+0120: 0D00FF1F110000DC 000100FF7F1E7200 000200FFFF010180 B700000004C3000F
+0140: 636C06616547656E 654072616C360200 157800000001F60D 00FF9F0D00DC0001
+0160: 00FF7F1A73000100 FFFFCD270001FD00 FF2734000002F700 FF1F380000DC0002
+0180: 00FF7F3C70000000 0200FFFFC1400000 0002FD00FF074400 000002F700FF1F48
+01A0: 0000DC000200FF7F 4C700000000200FF FFC15000000002D1 000100003F8001F9
+01C0: 0000075400000001 460D00010000FFE4 800100001F580000 D800010D00FF7F65
+01E0: 700000000100FFFF C17200000001FD00 FF077F00000001F7 00FF1F8C0000DC00
+0200: 0100FF7F99700000 000100FFFFC1A600 000001FD00FF07B3 00000003F60400FF
+0220: 1F01800D02000005 0000000C84636C63 6247654F1E0000F4 010000EC010D00FF
+0240: 3F0180002F000000 06000000080B636C 466F726D00426173 6586000000F60500
+0260: EC010D00FFBF0DB9 000200FFFF861100 040D00FE00FF9B1E 0003FB00FF4F2200
+0280: 00EE0100FF3F0180 060D0007000000F8 17636C805072696E 7442610069635265
+02A0: 706F7274441E0000 010000CF010DFE00 FF6301800D000008 0000000B68635300
+02C0: 716C48616E646C65 441E0000010000CF 010DFE00FF630180 0400E0090000000C
+02E0: F0646647658F0001 00DE0003FD00FF07 01802E000000000A 00000011636C0D70
+0300: 746172740050726F 6772616DBAB00000 000700770200FFFF C904000002FD00FF
+0320: 37080002F700FF1F 0C0000D800010D00 FF7F197000000003 00FFFFC11D000000
+0340: 02FD00FF07210000 0001F700FF1F0180 2F03000B00000010 74636C446F794765
+0360: 6C648600000500CF 010DFE00FF9B0D00 02FB00FF4F110000 EC040D00FFBF1EB9
+0380: 000300FFFFE62200 01FE00FF6301800D 00C60C0011630053 70696E5365617300
+03A0: 6F6E596561721E00 D100010000B3010D 00FFFF9801800D00 0DB1000C63707E47
+03C0: 1EA3000100006701 0D00FFFF3101800D 000EC00000000963 6CC1457869741EE8
+03E0: 00010000D9010D00 FF7F010C8004000F 00001C000C506963 20457870616E1E00
+0400: D100010000BB0200 FFFF180180040010 00E0000012636C01 546F67676C654280
+0420: 7574746F6E1E00E8 00010000DD0200FF 7F018C8004001100 C4000C6654618143
+0440: 616368651ED10001 0000BB0300FFFF10 0180150000120080 00000B6366436103
+0460: 506F6F6C5A00D000 0003000023071900 0001A00100920600 002780010000FFC4
+0480: 0400000304FE00FF 1B0800010DFB00FF 8F01800401001300 0000106323546F6F
+04A0: 5469007057696E64 6F771EA200000100 00770300FFFF01
+.enddata
+.head 3 +  Dialog Box Class: clsDialogChildTable
+.head 4 -  Title:
+.head 4 -  Accesories Enabled? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Display Settings
+.head 5 -  Display Style? Class Default
+.head 5 -  Visible at Design time? Yes
+.head 5 -  Type of Dialog: Modal
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  9.938"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 3.417"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Absolute Screen Location? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 4 -  Next Class Child Key: 26
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Tool Bar
+.head 5 -  Display Settings
+.head 6 -  Display Style? Class Default
+.head 6 -  Location? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Size: Class Default
+.head 6 -  Size Editable? Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 5 +  Contents
+.head 6 +  Pushbutton: pbHelp
+.head 7 -  Class Child Ref Key: 6
+.head 7 -  Class ChildKey: 24
+.head 7 -  Class: clsDialogGeneral
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 -  !
+.head 6 +  Pushbutton: pbClearRows
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 5
+.head 7 -  Class: clspbTblClearRows
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   1.2"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbAddRows
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 6
+.head 7 -  Class: clspbTblAddRows
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   1.8"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbSaveRows
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 7
+.head 7 -  Class: clspbTblSaveRows
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   2.5"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbQuery
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 8
+.head 7 -  Class: clspbTblQuery
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   4.5"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbDeleteRows
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 9
+.head 7 -  Class: clspbTblDeleteRows
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   3.2"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbRePopulate
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 11
+.head 7 -  Class: clspbTblRePopTable
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   5.2"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbTools
+.head 7 -  Class Child Ref Key: 0
+.head 7 -  Class ChildKey: 17
+.head 7 -  Class: clspbTblTools
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   5.8"
+.head 8 -  Top:    0.0"
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 -  !
+.head 6 +  Pushbutton: pbPrintForm
+.head 7 -  Class Child Ref Key: 10
+.head 7 -  Class ChildKey: 25
+.head 7 -  Class: clsDialogGeneral
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   8.613"
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 6 +  Pushbutton: pbExit
+.head 7 -  Class Child Ref Key: 7
+.head 7 -  Class ChildKey: 26
+.head 7 -  Class: clsDialogGeneral
+.head 7 -  Property Template:
+.head 7 -  Class DLL Name:
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   9.213"
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Keyboard Accelerator: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Picture File Name:
+.head 7 -  Picture Transparent Color: Class Default
+.head 7 -  Image Style: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Message Actions
+.head 4 +  Contents
+.head 5 +  Data Field: dfDatabase
+.head 6 -  Class Child Ref Key: 8
+.head 6 -  Class ChildKey: 20
+.head 6 -  Class: clsDialogGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Data
+.head 7 -  Maximum Data Length: Class Default
+.head 7 -  Data Type: Class Default
+.head 7 -  Editable? Class Default
+.head 6 -  Display Settings
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Border? Class Default
+.head 7 -  Justify: Class Default
+.head 7 -  Format: Class Default
+.head 7 -  Country: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Input Mask: Class Default
+.head 6 -  Message Actions
+.head 5 +  Data Field: dfUser
+.head 6 -  Class Child Ref Key: 9
+.head 6 -  Class ChildKey: 21
+.head 6 -  Class: clsDialogGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Data
+.head 7 -  Maximum Data Length: Class Default
+.head 7 -  Data Type: Class Default
+.head 7 -  Editable? Class Default
+.head 6 -  Display Settings
+.head 7 -  Window Location and Size
+.head 8 -  Left:   Class Default
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Border? Class Default
+.head 7 -  Justify: Class Default
+.head 7 -  Format: Class Default
+.head 7 -  Country: Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  Input Mask: Class Default
+.head 6 -  Message Actions
+.head 5 +  Custom Control: ccSeasonYear
+.head 6 -  Class Child Ref Key: 13
+.head 6 -  Class ChildKey: 22
+.head 6 -  Class: clsDialogGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Display Settings
+.head 7 -  DLL Name:
+.head 7 -  MS Windows Class Name:
+.head 7 -  Style:  Class Default
+.head 7 -  ExStyle:  Class Default
+.head 7 -  Title:
+.head 7 -  Window Location and Size
+.head 8 -  Left:   8.838"
+.head 8 -  Top:    Class Default
+.head 8 -  Width:  Class Default
+.head 8 -  Width Editable? Class Default
+.head 8 -  Height: Class Default
+.head 8 -  Height Editable? Class Default
+.head 7 -  Visible? Class Default
+.head 7 -  Border? Class Default
+.head 7 -  Etched Border? Class Default
+.head 7 -  Hollow? Class Default
+.head 7 -  Vertical Scroll? Class Default
+.head 7 -  Horizontal Scroll? Class Default
+.head 7 -  Tab Stop? Class Default
+.head 7 -  Tile To Parent? Class Default
+.head 7 -  Font Name: Class Default
+.head 7 -  Font Size: Class Default
+.head 7 -  Font Enhancement: Class Default
+.head 7 -  Text Color: Class Default
+.head 7 -  Background Color: Class Default
+.head 7 -  DLL Settings
+.head 6 -  Message Actions
+.head 5 -  Background Text: Season
+.head 6 -  Resource Id: 35241
+.head 6 -  Class Child Ref Key: 14
+.head 6 -  Class ChildKey: 23
+.head 6 -  Class: clsDialogGeneral
+.head 6 -  Window Location and Size
+.head 7 -  Left:   8.1"
+.head 7 -  Top:    Class Default
+.head 7 -  Width:  Class Default
+.head 7 -  Width Editable? Class Default
+.head 7 -  Height: Class Default
+.head 7 -  Height Editable? Class Default
+.head 6 -  Visible? Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Font Name: Class Default
+.head 6 -  Font Size: Class Default
+.head 6 -  Font Enhancement: Class Default
+.head 6 -  Text Color: Class Default
+.head 6 -  Background Color: Class Default
+.head 4 +  Derived From
+.head 5 -  Class: clsDialogGeneral
+.head 4 +  Class Variables
+.head 5 -  Number: nChoice
+.head 5 -  Number: nChoice2
+.head 5 -  String: sTmp
+.head 4 +  Instance Variables
+.head 5 -  Window Handle: hWndChildTable
+.head 5 -  Boolean: bAddAllowed
+.head 5 -  Boolean: bSaveAllowed
+.head 5 -  Boolean: bDeleteAllowed
+.head 5 -  Boolean: bUnDeleteAllowed
+.head 5 -  Boolean: bRepopulateAllowed
+.head 5 -  Boolean: bClearSelectAllowed
+.head 5 -  Boolean: bQueryAllowed
+.head 5 -  Boolean: bReportAllowed
+.head 5 -  Boolean: bOrderAllowed
+.head 5 -  Boolean: bMoveRowUpOneAllowed
+.head 5 -  Boolean: bMoveRowDownOneAllowed
+.head 5 -  Boolean: bZoomTableAllowed
+.head 5 -  ! nPopOrQueryOnStartUp = TBL_cls_PopulateOnStartUp as default OR TBL_cls_QueryOnStartUp
+.head 5 -  Number: nPopOrQueryOnStartUp
+.head 5 -  Window Handle: hWndActivateButton
+.head 5 -  ! ! Dynamic Menu handling
+.head 5 -  Number: hMenu
+.head 5 -  Number: i
+.head 5 -  Number: hAcc[*]
+.head 5 -  Number: nSelectedMenu
+.head 5 -  Number: nX
+.head 5 -  Number: nY
+.head 5 -  Window Handle: hWndChild
+.head 5 -  Number: nMenu
+.head 5 -  Window Handle: hWndFocus
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  ! Call OurWaitCursor( TRUE )
+.head 6 -  Set hWndChildTable = hWndNULL
+.head 6 -  Set bAddAllowed = FALSE
+.head 6 -  Set bSaveAllowed = FALSE
+.head 6 -  Set bDeleteAllowed = FALSE
+.head 6 -  Set bUnDeleteAllowed = FALSE
+.head 6 -  Set bClearSelectAllowed = TRUE
+.head 6 -  Set bQueryAllowed = FALSE
+.head 6 -  Set bRepopulateAllowed = TRUE
+.head 6 -  Set bReportAllowed = FALSE
+.head 6 -  Set bOrderAllowed = FALSE
+.head 6 -  Set bMoveRowUpOneAllowed = FALSE
+.head 6 -  Set bMoveRowDownOneAllowed = FALSE
+.head 6 -  Set bZoomTableAllowed = FALSE
+.head 6 -  Set nPopOrQueryOnStartUp = TBL_cls_PopulateOnStartUp
+.head 6 -  Set hWndActivateButton = hWndNULL
+.head 6 -  Call SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 6 +  If NOT bAddAllowed
+.head 7 -  Call SalSendMsg( pbAddRows, PAM_clsPB_HIDE, 0, 0 )
+.head 6 +  If NOT bSaveAllowed
+.head 7 -  Call SalSendMsg( pbSaveRows, PAM_clsPB_HIDE, 0, 0 )
+.head 6 +  If NOT bDeleteAllowed
+.head 7 -  Call SalSendMsg( pbDeleteRows, PAM_clsPB_HIDE, 0, 0 )
+.head 6 +  If NOT bClearSelectAllowed
+.head 7 -  Call SalSendMsg( pbClearRows, PAM_clsPB_HIDE, 0, 0 )
+.head 6 +  If NOT bQueryAllowed
+.head 7 -  Call SalSendMsg( pbQuery, PAM_clsPB_HIDE, 0, 0 )
+.head 6 +  If NOT bRepopulateAllowed
+.head 7 -  Call SalSendMsg( pbRePopulate, PAM_clsPB_HIDE, 0, 0 )
+.head 5 +  On SAM_CreateComplete
+.head 6 -  ! Set pbClearRows.hWndChildTable = hWndChildTable
+.head 6 -  ! Set pbAddRows.hWndChildTable = hWndChildTable
+.head 6 -  ! Set pbSaveRows.hWndChildTable = hWndChildTable
+.head 6 -  ! Set pbQuery.hWndChildTable = hWndChildTable
+.head 6 -  ! Set pbDeleteRows.hWndChildTable = hWndChildTable
+.head 6 -  ! Set pbUnDeleteRows.hWndChildTable = hWndChildTable
+.head 6 -  ! Set pbRePopulate.hWndChildTable = hWndChildTable
+.head 6 -  ! Set pbTableReport.hWndChildTable = hWndChildTable
+.head 6 -  ! Set pbOrderTable.hWndChildTable = hWndChildTable
+.head 6 +  If nPopOrQueryOnStartUp = TBL_cls_PopulateOnStartUp
+.head 7 -  Call SalSendMsg( hWndChildTable, PAM_clsTBL_POPULATE, 0, 0 )
+.head 6 +  Else If nPopOrQueryOnStartUp = TBL_cls_QueryOnStartUp
+.head 7 -  Call SalSendMsg( hWndChildTable, PAM_clsTBL_QUERY, 0, 0 )
+.head 6 -  Call SalSendClassMessage( SAM_CreateComplete, wParam, lParam )
+.head 6 -  Call SalSetFocus( hWndChildTable )
+.head 6 -  ! Call OurWaitCursor( FALSE )
+.head 5 +  On WM_RBUTTONUP
+.head 6 -  Set hMenu = CreatePopupMenu(  )
+.head 6 +  If bClearSelectAllowed
+.head 7 -  Call InsertMenuA( hMenu, 0xFFFFFFFF, MF_BYPOSITION, TBL_cls_ClearMenuId, 'Clear' )
+.head 6 +  If bAddAllowed
+.head 7 -  Call InsertMenuA( hMenu, 0xFFFFFFFF, MF_BYPOSITION, TBL_cls_AddMenuId, 'Add' )
+.head 6 +  If bSaveAllowed
+.head 7 -  Call InsertMenuA( hMenu, 0xFFFFFFFF, MF_BYPOSITION, TBL_cls_SaveMenuId, 'Save' )
+.head 6 +  If bDeleteAllowed
+.head 7 -  Call InsertMenuA( hMenu, 0xFFFFFFFF, MF_BYPOSITION, TBL_cls_DeleteMenuId, 'Delete' )
+.head 6 +  If bUnDeleteAllowed
+.head 7 -  Call InsertMenuA( hMenu, 0xFFFFFFFF, MF_BYPOSITION, TBL_cls_UnDeleteMenuId, 'UnDelete' )
+.head 6 +  If bRepopulateAllowed
+.head 7 -  Call InsertMenuA( hMenu, 0xFFFFFFFF, MF_BYPOSITION, TBL_cls_RepopMenuId, 'Repop Table' )
+.head 6 +  If bQueryAllowed
+.head 7 -  Call InsertMenuA( hMenu, 0xFFFFFFFF, MF_BYPOSITION, TBL_cls_QueryMenuId, 'Query' )
+.head 6 +  If bOrderAllowed
+.head 7 -  Call InsertMenuA( hMenu, 0xFFFFFFFF, MF_BYPOSITION, TBL_cls_OrderMenuId, 'Sort Table' )
+.head 6 +  If bReportAllowed
+.head 7 -  Call InsertMenuA( hMenu, 0xFFFFFFFF, MF_BYPOSITION, TBL_cls_ReportMenuId, 'Table Report' )
+.head 6 +  If bMoveRowUpOneAllowed
+.head 7 -  Call InsertMenuA( hMenu, 0xFFFFFFFF, MF_BYPOSITION, TBL_cls_UpMenuId, 'Move Row Up One' )
+.head 6 +  If bMoveRowDownOneAllowed
+.head 7 -  Call InsertMenuA( hMenu, 0xFFFFFFFF, MF_BYPOSITION, TBL_cls_DownMenuId, 'Move Row Down One' )
+.head 6 +  If bZoomTableAllowed
+.head 7 -  Call InsertMenuA( hMenu, 0xFFFFFFFF, MF_BYPOSITION, TBL_cls_ZoomMenuId, 'Zoom Table' )
+.head 6 -  ! wParam is normally 0, unless the wm_rbuttonup key is trapped in clsTableGeneral then we are setting
+it to TRUE
+.head 6 -  Set nX= SalNumberLow( lParam )
+.head 6 -  Set nY=SalNumberHigh( lParam )
+.head 6 -  Set hWndFocus = SalNumberToWindowHandle( wParam )
+.head 6 -  ! Then the user pressed the wm_rbuttonup key in a table and we want to get its cursor pos
+.head 6 +  If SalGetType( hWndFocus ) = TYPE_ChildTable
+.head 7 -  Call MapWindowPoints( hWndFocus, hWndForm, nX, nY, 1 )
+.head 6 -  Call ClientToScreen(hWndForm,nX,nY)
+.head 6 -  Call TrackPopupMenu( hMenu, 0x0002, nX, nY, 0, hWndForm, '' )
+.head 5 +  On WM_COMMAND
+.head 6 -  Set nMenu = SalNumberHigh( wParam )
+.head 6 +  If nMenu = 0
+.head 7 +  If lParam = TPM_LeftButton
+.head 8 -  Set nSelectedMenu = SalNumberLow( wParam )
+.head 8 +  If nSelectedMenu = TBL_cls_ClearMenuId
+.head 9 -  Call SalSendMsg( hWndForm, PAM_clsTBL_USERACTIONS, TBL_cls_ClearRow, GEN_CommingFromPopUp )
+.head 8 +  Else If nSelectedMenu = TBL_cls_AddMenuId
+.head 9 -  Call SalSendMsg( hWndForm, PAM_clsTBL_USERACTIONS, TBL_cls_AddRow, GEN_CommingFromPopUp )
+.head 8 +  Else If nSelectedMenu = TBL_cls_SaveMenuId
+.head 9 -  Call SalSendMsg( hWndForm, PAM_clsTBL_USERACTIONS, TBL_cls_SaveRow, GEN_CommingFromPopUp )
+.head 8 +  Else If nSelectedMenu = TBL_cls_DeleteMenuId
+.head 9 -  Call SalSendMsg( hWndForm, PAM_clsTBL_USERACTIONS, TBL_cls_DeleteRow, GEN_CommingFromPopUp )
+.head 8 +  Else If nSelectedMenu = TBL_cls_UnDeleteMenuId
+.head 9 -  Call SalSendMsg( hWndForm, PAM_clsTBL_USERACTIONS, TBL_cls_UnDeleteRow, GEN_CommingFromPopUp )
+.head 8 +  Else If nSelectedMenu = TBL_cls_RepopMenuId
+.head 9 -  Call SalSendMsg( hWndForm, PAM_clsTBL_USERACTIONS, TBL_cls_RePopTable, GEN_CommingFromPopUp )
+.head 8 +  Else If nSelectedMenu = TBL_cls_QueryMenuId
+.head 9 -  Call SalSendMsg( hWndForm, PAM_clsTBL_USERACTIONS, TBL_cls_Query, GEN_CommingFromPopUp )
+.head 8 +  Else If nSelectedMenu = TBL_cls_OrderMenuId
+.head 9 -  Call SalSendMsg( hWndForm, PAM_clsTBL_USERACTIONS, TBL_cls_OrderTable, GEN_CommingFromPopUp )
+.head 8 +  Else If nSelectedMenu = TBL_cls_ReportMenuId
+.head 9 -  Call SalSendMsg( hWndForm, PAM_clsTBL_USERACTIONS, TBL_cls_TableReport, GEN_CommingFromPopUp )
+.head 8 +  Else If nSelectedMenu = TBL_cls_UpMenuId
+.head 9 -  Call SalSendMsg( hWndForm, PAM_clsTBL_USERACTIONS, TBL_cls_MoveUpOne, GEN_CommingFromPopUp )
+.head 8 +  Else If nSelectedMenu = TBL_cls_DownMenuId
+.head 9 -  Call SalSendMsg( hWndForm, PAM_clsTBL_USERACTIONS, TBL_cls_MoveDownOne, GEN_CommingFromPopUp )
+.head 8 +  Else If nSelectedMenu = TBL_cls_ZoomMenuId
+.head 9 -  Call SalSendMsg( hWndForm, PAM_clsTBL_USERACTIONS, TBL_cls_ZoomTable, GEN_CommingFromPopUp )
+.head 5 +  On PAM_cls_EXIT
+.head 6 +  If SalSendMsg( hWndChildTable, PAM_clsTBL_CHECKCHANGES, 0, 0 )
+.head 7 +  If SalSendMsg( hWndChildTable, PAM_clsTBL_ISTABLECHANGED, 0, 0 )
+.head 8 -  Call SalGetItemName( hWndActivateButton, sTmp )
+.head 8 -  Call SalPostMsg( SalParentWindow( hWndForm ), PAM_cls_CHILDCHANGED, 0, SalHStringToNumber( sTmp ) )
+.head 7 -  Return SalSendClassMessage( PAM_cls_EXIT, wParam, lParam )
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  On PAM_cls_REFRESHAFTRCHILDCHANGE
+.head 6 -  Return TRUE
+.head 5 +  On PAM_cls_CHILDCHANGED
+.head 6 -  Call SalShowWindow( hWndForm )
+.head 6 -  Call SalBringWindowToTop( hWndForm )
+.head 6 +  If SalSendMsg( hWndForm, PAM_cls_REFRESHAFTRCHILDCHANGE, wParam, lParam )
+.head 7 -  Call SalSendMsg( hWndForm, PAM_clsTBL_USERACTIONS, TBL_cls_RePopTable, TBL_cls_ChildChanged )
+.head 6 -  Return TRUE
+.head 5 +  On PAM_clsTBL_USERACTIONS
+.head 6 -  Return UserTableActions( hWndChildTable, wParam, lParam )
+.head 5 +  On PAM_clsTBL_ALLOWEDACTIONS
+.head 6 -  Set nChoice = 0
+.head 6 +  If bAddAllowed
+.head 7 -  Set nChoice = nChoice | TBL_cls_AddRow
+.head 6 +  If bSaveAllowed
+.head 7 -  Set nChoice = nChoice | TBL_cls_SaveRow
+.head 6 +  If bDeleteAllowed
+.head 7 -  Set nChoice = nChoice | TBL_cls_DeleteRow
+.head 6 +  If bUnDeleteAllowed
+.head 7 -  Set nChoice = nChoice | TBL_cls_UnDeleteRow
+.head 6 +  If bRepopulateAllowed
+.head 7 -  Set nChoice = nChoice | TBL_cls_RePopTable
+.head 6 +  If bClearSelectAllowed
+.head 7 -  Set nChoice = nChoice | TBL_cls_ClearRow
+.head 6 +  If bQueryAllowed
+.head 7 -  Set nChoice = nChoice | TBL_cls_Query
+.head 6 +  If bReportAllowed
+.head 7 -  Set nChoice = nChoice | TBL_cls_TableReport
+.head 6 +  If bOrderAllowed
+.head 7 -  Set nChoice = nChoice | TBL_cls_OrderTable
+.head 6 +  If bMoveRowDownOneAllowed
+.head 7 -  Set nChoice = nChoice | TBL_cls_MoveDownOne
+.head 6 +  If bMoveRowUpOneAllowed
+.head 7 -  Set nChoice = nChoice | TBL_cls_MoveUpOne
+.head 6 +  If bZoomTableAllowed
+.head 7 -  Set nChoice = nChoice | TBL_cls_ZoomTable
+.head 6 -  Set nChoice2 = SalSendMsg( hWndChildTable, PAM_clsTBL_ALLOWEDACTIONS, wParam, lParam )
+.head 6 +  If nChoice2 > 0
+.head 7 -  Set nChoice = nChoice | nChoice2
+.head 6 -  Return nChoice
+.head 5 -  !
+.head 5 +  On PAM_clsPB_GETFIRSTREC
+.head 6 +  If NOT SalSendMsg( hWndChildTable, PAM_clsTBL_CHECKCHANGES, 0, 0 )
+.head 7 -  Return FALSE
+.head 6 +  If SalSendMsg( hWndActivateButton, PAM_clsACTIVATE_FIRSTREC, 0, 0 )
+.head 7 -  Return SalSendMsg( hWndForm, SAM_CreateComplete, 0, 0 )
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  On PAM_clsPB_GETPREVREC
+.head 6 +  If NOT SalSendMsg( hWndChildTable, PAM_clsTBL_CHECKCHANGES, 0, 0 )
+.head 7 -  Return FALSE
+.head 6 +  If SalSendMsg( hWndActivateButton, PAM_clsACTIVATE_PREVREC, 0, 0 )
+.head 7 -  Return SalSendMsg( hWndForm, SAM_CreateComplete, 0, 0 )
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  On PAM_clsPB_GETNEXTREC
+.head 6 +  If NOT SalSendMsg( hWndChildTable, PAM_clsTBL_CHECKCHANGES, 0, 0 )
+.head 7 -  Return FALSE
+.head 6 +  If SalSendMsg( hWndActivateButton, PAM_clsACTIVATE_NEXTREC, 0, 0 )
+.head 7 -  Return SalSendMsg( hWndForm, SAM_CreateComplete, 0, 0 )
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  On PAM_clsPB_GETLASTREC
+.head 6 +  If NOT SalSendMsg( hWndChildTable, PAM_clsTBL_CHECKCHANGES, 0, 0 )
+.head 7 -  Return FALSE
+.head 6 +  If SalSendMsg( hWndActivateButton, PAM_clsACTIVATE_LASTREC, 0, 0 )
+.head 7 -  Return SalSendMsg( hWndForm, SAM_CreateComplete, 0, 0 )
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Check Box:
+.head 3 -  Option Button:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text:
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 -  Application Actions

@@ -1,0 +1,25 @@
+CONNECT live SYSADM/DANI;
+
+ALTER TABLE CUSTOMER_ORDER 
+ADD ORIGINAL_LOAD_ID VARCHAR(8);
+
+STORE StoreLoadId
+PROCEDURE: StoreLoadId STATIC
+Parameters
+	String: spCurrentLoadId
+	String: spNewLoadId
+	Receive String: spOriginalLoadId
+Actions
+	If spCurrentLoadId != 'GONE'
+		Set spOriginalLoadId = spCurrentLoadId
+/
+commit;
+
+
+CREATE TRIGGER LOAD_ID_UPDATE BEFORE UPDATE OF LOAD_ID ON CUSTOMER_ORDER
+REFERENCING NEW AS NEW OLD AS OLD
+( EXECUTE StoreLoadId ( OLD.LOAD_ID, NEW.LOAD_ID, NEW.ORIGINAL_LOAD_ID ) )
+FOR EACH ROW;
+
+COMMIT;
+

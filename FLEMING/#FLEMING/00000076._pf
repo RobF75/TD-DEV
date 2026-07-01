@@ -1,0 +1,1868 @@
+Application Description: Jans string handling routines. Ver 5.01
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000730000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF6E0000 006E000000FE0200 00A7010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+			Visible? Yes
+			Left:   6.05"
+			Top:    3.104"
+			Width:  3.738"
+			Height: 2.781"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   6.6"
+			Top:    0.521"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: Dates.apl
+		File Include: General.apl
+		File Include: number.apc
+		File Include: vtdos.apl
+		File Include: vtarray.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Line
+				Line Color: Use Parent
+			Frame
+				Border Color: Use Parent
+				Background Color: Use Parent
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! Reinserted from cstrings.apl to get migration happening
+				Number: ARRAY_Null_Terminated = -999
+				! For PAM_User messages for STRINGS.APL
+				Number: STRAplMsgOffSet = SAM_User + 1000
+				! Message go up to AplMsgOffSet + 99
+				Number: STRAplConstOffSet = 500
+				!
+				Number: ARRAY_Reset = STRAplConstOffSet + 1
+				Number: ARRAY_FetchNext = STRAplConstOffSet + 2
+				Number: ARRAY_FetchPrevious = STRAplConstOffSet + 3
+				Number: ARRAY_FetchLast = STRAplConstOffSet + 4
+				Number: ARRAY_FetchFirst = STRAplConstOffSet + 5
+				!
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 4029964506
+0000: 8600000038000000 0000000000000000 020000050000001E 000000E0010D0000
+0020: 00FF3F2B00A00000 040D0000FFFFE038 00000001FE00FF83 4500000001FB00FF
+0040: 0F52000000EE0100 FF3F
+.enddata
+		Named Menus
+		Internal Functions
+			Function: StringReplace  
+				Description: Given the source string, the search string and the replacing string.
+						This function finds every occurance of Search String in source string
+						and replaces it with Replace String.  The source string will contain
+						the replaced characters on return.
+				Returns
+				Parameters
+					Receive String: sSourceStr  
+					String: sSearchStr  
+					String: sReplaceStr  
+				Static Variables
+				Local variables
+					Number: nOffSet  
+					String: sNewSourceStr  
+					String: sTmpStr  
+				Actions
+					Set sNewSourceStr = ''
+					Loop
+						Set nOffSet = SalStrScan( sSourceStr, sSearchStr )
+						If nOffSet >= 0
+							Call SalStrLeft( sSourceStr, nOffSet, sTmpStr )
+							Set sNewSourceStr = sNewSourceStr || sTmpStr || sReplaceStr
+							Call SalStrMid( sSourceStr, nOffSet + SalStrLength( sSearchStr ), SalStrLength( sSourceStr ) - ( nOffSet + SalStrLength( sSearchStr ) ), sSourceStr )
+						Else
+							Set sNewSourceStr = sNewSourceStr || sSourceStr
+							Break
+					Set sSourceStr = sNewSourceStr
+			Function: StringScan  
+				Description: Works just like SalStrScan except if case sensitivity is required set bCaseSensitive = TRUE
+				Returns
+					Number:
+				Parameters
+					String: sString1  
+					String: sString2  
+					Boolean: bCaseSensitive  
+				Static Variables
+				Local variables
+					Boolean: bFound  
+					Number: nOffSet  
+				Actions
+					If bCaseSensitive
+						Set bFound = FALSE
+						Set nOffSet = 0
+						While NOT bFound AND nOffSet >= 0
+							Set nOffSet = SalStrScan( sString1, sString2 )
+							If nOffSet >= 0
+								If SalStrMidX( sString1, nOffSet, SalStrLength( sString2 ) ) = sString2
+									Set bFound = TRUE
+								Else
+									Set sString1 = SalStrReplaceX( sString1, nOffSet, SalStrLength( sString2 ), SalStrRepeatX( ' ', SalStrLength( sString2 ) ) )
+						Return nOffSet
+					Else
+						Return SalStrScan( sString1, sString2 )
+			Function: StringStartPad
+				Description:
+				Returns
+				Parameters
+					Receive String: sSource  
+					String: sPad  
+					Number: nLength  
+				Static Variables
+				Local variables
+					Number: nActualLength  
+				Actions
+					Set nActualLength = SalStrLength( sSource )
+					While nActualLength < nLength
+						Set sSource = sPad || sSource
+						Set nActualLength = SalStrLength( sSource )
+			Function: StringEndPad
+				Description:
+				Returns
+				Parameters
+					Receive String: sSource  
+					String: sPad  
+					Number: nLength  
+				Static Variables
+				Local variables
+					Number: nActualLength  
+				Actions
+					Set nActualLength = SalStrLength( sSource )
+					While nActualLength < nLength
+						Set sSource = sSource || sPad
+						Set nActualLength = SalStrLength( sSource )
+			Function: StringStartPadX
+				Description:
+				Returns
+					String:
+				Parameters
+					String: sSource  
+					String: sPad  
+					Number: nLength  
+				Static Variables
+				Local variables
+					String: sTmp
+				Actions
+					Set sTmp = sSource
+					Call StringStartPad( sTmp, sPad, nLength )
+					Return sTmp
+			Function: StringEndPadX
+				Description:
+				Returns
+					String:
+				Parameters
+					String: sSource  
+					String: sPad  
+					Number: nLength  
+				Static Variables
+				Local variables
+					String: sTmp
+				Actions
+					Set sTmp = sSource
+					Call StringEndPad( sTmp, sPad, nLength )
+					Return sTmp
+			Function: GetStringBetweenCharMarks
+				Description: Returns a string encapsulated withing another string by starting and ending characters
+				Returns
+					String:
+				Parameters
+					String: sInputStr  
+					String: sStartCharacter  
+					String: sEndCharacter  
+				Static Variables
+				Local variables
+					Number: nStartCharPos  
+					Number: nEndCharPos  
+					String: sTmpInputStr  
+					String: sOutputStr  
+				Actions
+					Set nStartCharPos = SalStrScan( sInputStr, sStartCharacter )
+					If nStartCharPos >= 0
+						Set sTmpInputStr = SalStrRightX( sInputStr, SalStrLength( sInputStr ) - nStartCharPos - SalStrLength( sStartCharacter ) )
+						Set nEndCharPos = SalStrScan( sTmpInputStr, sEndCharacter )
+						If nEndCharPos < 0
+							Set nEndCharPos = SalStrLength( sTmpInputStr )
+						Set sOutputStr = SalStrMidX( sInputStr, nStartCharPos + SalStrLength( sStartCharacter ), nEndCharPos )
+					Else
+						Set nEndCharPos = SalStrScan( sInputStr, sEndCharacter )
+						If nEndCharPos >= 0
+							Set sOutputStr = SalStrLeftX( sInputStr, nEndCharPos )
+						Else
+							Set sOutputStr = sInputStr
+					Return sOutputStr
+			Function: RemoveStringBetweenCharMarks  
+				Description: Returns a string with the substring encapsulated by starting and ending characters removed.
+				Returns
+					String:
+				Parameters
+					String: sInputStr  
+					String: sStartCharacter  
+					String: sEndCharacter  
+				Static Variables
+				Local variables
+					Number: nStartCharPos  
+					Number: nEndCharPos  
+					String: sFirstInputStr  
+					String: sLastInputStr  
+					String: sTmpInputStr  
+					String: sOutputStr  
+				Actions
+					Set nStartCharPos = SalStrScan( sInputStr, sStartCharacter )
+					If nStartCharPos >= 0
+						Set sFirstInputStr = SalStrLeftX( sInputStr, nStartCharPos )
+						Set sTmpInputStr = SalStrRightX( sInputStr, SalStrLength( sInputStr ) - nStartCharPos - SalStrLength( sStartCharacter ) )
+						Set nEndCharPos = SalStrScan( sTmpInputStr, sEndCharacter )
+						If nEndCharPos >= 0
+							Set sLastInputStr = SalStrRightX( sTmpInputStr, SalStrLength( sTmpInputStr ) - nEndCharPos - SalStrLength( sEndCharacter ))
+						Else
+							Set sLastInputStr = ''
+						Set sOutputStr = sFirstInputStr || sLastInputStr
+					Else
+						Set sOutputStr = sInputStr
+					Return sOutputStr
+			!
+			Function: StrArrayFind  
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: saStringArray[*]  
+					! nArrayCount = number of elements or ARRAY_Null_Terminated constant
+					Number: nArrayCount  
+					String: sStrToFind  
+					Receive Number: nFoundPos  
+				Static Variables
+				Local variables
+					Number: nPos  
+					Boolean: bFound  
+				Actions
+					Set nFoundPos = NUMBER_Null
+					Set nPos = 0
+					Set bFound = FALSE
+					If nArrayCount = ARRAY_Null_Terminated
+						While saStringArray[ nPos ] != '' AND NOT bFound
+							If saStringArray[ nPos ] = sStrToFind
+								Set bFound = TRUE
+								Set nFoundPos = nPos
+							Set nPos = nPos + 1
+					Else
+						While nPos <= nArrayCount AND NOT bFound
+							If saStringArray[ nPos ] = sStrToFind
+								Set bFound = TRUE
+								Set nFoundPos = nPos
+							Set nPos = nPos + 1
+					Return bFound
+			Function: NumArrayFind  
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: naNumberArray[*]  
+					! nArrayCount = number of elements or ARRAY_Null_Terminated constant
+					Number: nArrayCount  
+					Number: nNumToFind  
+					Receive Number: nFoundPos  
+				Static Variables
+				Local variables
+					Number: nPos  
+					Boolean: bFound  
+				Actions
+					Set nFoundPos = NUMBER_Null
+					Set nPos = 0
+					Set bFound = FALSE
+					If nArrayCount = ARRAY_Null_Terminated
+						While naNumberArray[ nPos ] != NUMBER_Null AND NOT bFound
+							If naNumberArray[ nPos ] = nNumToFind
+								Set bFound = TRUE
+								Set nFoundPos = nPos
+							Set nPos = nPos + 1
+					Else
+						While nPos <= nArrayCount AND NOT bFound
+							If naNumberArray[ nPos ] = nNumToFind
+								Set bFound = TRUE
+								Set nFoundPos = nPos
+							Set nPos = nPos + 1
+					Return bFound
+			Function: DTArrayFind  
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Date/Time: dtaDateTimeArray[*]  
+					! nArrayCount = number of elements or ARRAY_Null_Terminated constant
+					Number: nArrayCount  
+					Date/Time: dtDateTimeToFind  
+					Receive Number: nFoundPos  
+				Static Variables
+				Local variables
+					Number: nPos  
+					Boolean: bFound  
+				Actions
+					Set nFoundPos = NUMBER_Null
+					Set nPos = 0
+					Set bFound = FALSE
+					If nArrayCount = ARRAY_Null_Terminated
+						While dtaDateTimeArray[ nPos ] != DATETIME_Null AND NOT bFound
+							If dtaDateTimeArray[ nPos ] = dtDateTimeToFind
+								Set bFound = TRUE
+								Set nFoundPos = nPos
+							Set nPos = nPos + 1
+					Else
+						While nPos <= nArrayCount AND NOT bFound
+							If dtaDateTimeArray[ nPos ] = dtDateTimeToFind
+								Set bFound = TRUE
+								Set nFoundPos = nPos
+							Set nPos = nPos + 1
+					Return bFound
+			!
+			Function: MakeStringList  
+				Description: This functions make a any character separated list into sStringList from the array saStrings[*].
+						VERY IMPORTANT ASSUMPTION : saStrings[*] is assumed to be terminated by a NULL value.
+						PARAMETERS :
+						  saStirng[*] : array of strings terminated by a NULL value
+						  sSeparator : string used as the list string separator
+						                       eg: jan, michelle, dani the comma is the separator
+						  sQuoteType : string used as the type of character for the quotes around the strings.
+						                         eg: "jan", "michelle", "dani" the double quote is the quote type character
+						                         note use sQueryType of blank to obtain a non quoted string list.
+				Returns
+				Parameters
+					String: saStrings[*]  
+					String: sSeparator  
+					String: sQuoteType  
+					Receive String: sStringList  
+				Static Variables
+				Local variables
+					Number: naStringPos  
+					Boolean: bFirst  
+				Actions
+					Call OurWaitCursor( TRUE )
+					Set bFirst = TRUE
+					Set sStringList = ''
+					Set naStringPos = 0
+					While saStrings[ naStringPos ] != ''
+						If bFirst
+							Set sStringList = sQuoteType || saStrings[ naStringPos ] || sQuoteType
+							Set bFirst = FALSE
+						Else
+							Set sStringList = sStringList || sSeparator || sQuoteType || saStrings[ naStringPos ] || sQuoteType
+						Set naStringPos = naStringPos + 1
+					Call OurWaitCursor( FALSE )
+			Function: MakeDateTimeList  
+				Description: This functions make a any character separated list into sStringList from the array dtaDT[*].
+						VERY IMPORTANT ASSUMPTION : dtaDT[*] is assumed to be terminated by a DATETIME_NULL value.
+						PARAMETERS :
+						  dtaDT[*] : array of DateTime stamps terminated by a DATETIME_NULL value
+						  sSeparator : string used as the list string separator
+						                       eg: jan, michelle, dani the comma is the separator
+						  sQuoteType : string used as the type of character for the quotes around the strings.
+						                         eg: "jan", "michelle", "dani" the double quote is the quote type character
+						                         note use sQueryType of blank to obtain a non quoted string list.
+				Returns
+				Parameters
+					Date/Time: dtaDT[*]  
+					String: sSeparator  
+					String: sQuoteType  
+					Receive String: sStringList  
+				Static Variables
+				Local variables
+					Number: naStringPos  
+					Boolean: bFirst  
+					String: sDate  
+				Actions
+					Call OurWaitCursor( TRUE )
+					Set bFirst = TRUE
+					Set sStringList = ''
+					Set naStringPos = 0
+					While dtaDT[ naStringPos ] != DATETIME_Null
+						Call SalDateToStr( dtaDT[ naStringPos ], sDate )
+						If bFirst
+							Set sStringList = sQuoteType || sDate || sQuoteType
+							Set bFirst = FALSE
+						Else
+							Set sStringList = sStringList || sSeparator || sQuoteType || sDate || sQuoteType
+						Set naStringPos = naStringPos + 1
+					Call OurWaitCursor( FALSE )
+			Function: MakeNumberList  
+				Description: This functions make a any character separated list into sStringList from the array naNumber[*].
+						VERY IMPORTANT ASSUMPTION : naDT[*] is assumed to be terminated by a NUMBER_NULL value.
+						PARAMETERS :
+						  naNumber[*] : array of DateTime stamps terminated by a NUMBER_NULL value
+						  nPrecision : number of precision decimal places applied through out naNumber[*]
+						  sSeparator : string used as the list string separator
+						                       eg: jan, michelle, dani the comma is the separator
+						  sQuoteType : string used as the type of character for the quotes around the strings.
+						                         eg: "jan", "michelle", "dani" the double quote is the quote type character
+						                         note use sQueryType of blank to obtain a non quoted string list.
+				Returns
+				Parameters
+					Number: naNumber[*]  
+					Number: nPrecision  
+					String: sSeparator  
+					String: sQuoteType  
+					Receive String: sStringList  
+				Static Variables
+				Local variables
+					Number: naStringPos  
+					Boolean: bFirst  
+					String: sNumber  
+				Actions
+					Set bFirst = TRUE
+					Set sStringList = ''
+					Set naStringPos = 0
+					While naNumber[ naStringPos ] != NUMBER_Null
+						Set sNumber = SalNumberToStrX( naNumber[ naStringPos ], nPrecision )
+						If bFirst
+							Set sStringList = sQuoteType || sNumber || sQuoteType
+							Set bFirst = FALSE
+						Else
+							Set sStringList = sStringList || sSeparator || sQuoteType || sNumber || sQuoteType
+						Set naStringPos = naStringPos + 1
+			!
+			Function: StringField
+				Description:
+				Returns
+					String:
+				Parameters
+					String: sField
+				Static Variables
+				Local variables
+				Actions
+					Return '"' || sField || '", '
+			Function: NumberField
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nValue
+					Number: nNumericPlaces
+				Static Variables
+				Local variables
+				Actions
+					Return SalNumberToStrX( nValue, nNumericPlaces ) || ', '
+			Function: DateField
+				Description:
+				Returns
+					String:
+				Parameters
+					Date/Time: dtDate
+				Static Variables
+				Local variables
+					String: sDate
+				Actions
+					Set sDate = ''
+					Call SalDateToStr( dtDate, sDate )
+					Return sDate || ', '
+			!
+			Function: StrCSVTokenize  
+				Description:
+				Returns
+					Number:
+				Parameters
+					String: sCSVLine  
+					Receive String: sCSVFields[*]  
+				Static Variables
+				Local variables
+					Number: nFieldPos  
+					Number: nCharPos  
+					Number: nNumChars  
+					String: sField  
+					String: sPosChar  
+					Boolean: bQuoteOpen  
+				Actions
+					Set nNumChars = SalStrLength( sCSVLine )
+					Set nFieldPos = 0
+					Set sCSVFields[ nFieldPos ] = ''
+					Set nCharPos = 0
+					Set sField = ''
+					While nCharPos < nNumChars
+						Set sPosChar = SalStrMidX( sCSVLine, nCharPos, 1 )
+						!
+						If sPosChar = '"'
+							If bQuoteOpen
+								Set bQuoteOpen = FALSE
+							Else
+								Set bQuoteOpen = TRUE
+						Else If sPosChar = ',' AND NOT bQuoteOpen
+							Set bQuoteOpen = FALSE
+							Set sCSVFields[ nFieldPos ] = sField
+							Set nFieldPos = nFieldPos + 1
+							Set sCSVFields[ nFieldPos ] = ''
+							Set sField = ''
+						Else
+							Set sField = sField || sPosChar
+						Set nCharPos = nCharPos + 1
+					Set sCSVFields[ nFieldPos ] = sField
+					Set nFieldPos = nFieldPos + 1
+					Set sCSVFields[ nFieldPos ] = ''
+					Return nFieldPos
+			!
+			Function: WriteStrArrayListToFile  
+				Description: Assumption is that the saString[ * ] is termintated by a NULL string
+				Returns
+					Boolean:
+				Parameters
+					String: saStrings[*]  
+					String: sFileName  
+				Static Variables
+				Local variables
+					File Handle: hOutFile  
+					Number: naStringPos  
+					Boolean: bOk  
+				Actions
+					Call OurWaitCursor( TRUE )
+					Set bOk = TRUE
+					If SalFileOpen( hOutFile, sFileName, OF_Create | OF_ReadWrite | OF_Text )
+						Set naStringPos = 0
+						While saStrings[ naStringPos ] != ''
+							If NOT SalFilePutStr( hOutFile, saStrings[ naStringPos ] )
+								Set bOk = FALSE
+							Set naStringPos = naStringPos + 1
+						If NOT SalFileClose( hOutFile )
+							Set bOk = FALSE
+					Else
+						Set bOk = FALSE
+					Call OurWaitCursor( FALSE )
+					Return bOk
+			Function: WriteNumArrayListToFile  
+				Description: Assumption is that the naNumber[ * ] is termintated by a NUMBER_Null
+				Returns
+					Boolean:
+				Parameters
+					String: sFileName  
+					Number: naNumber[*]  
+				Static Variables
+				Local variables
+					File Handle: hOutFile  
+					Number: naPos  
+					Boolean: bOk  
+				Actions
+					Call OurWaitCursor( TRUE )
+					Set bOk = TRUE
+					If SalFileOpen( hOutFile, sFileName, OF_Create | OF_ReadWrite | OF_Text )
+						Set naPos = 0
+						While naNumber[ naPos ] != NUMBER_Null
+							If NOT SalFilePutStr( hOutFile, SalNumberToStrX( naNumber[ naPos ], 0 ))
+								Set bOk = FALSE
+							Set naPos = naPos + 1
+						If NOT SalFileClose( hOutFile )
+							Set bOk = FALSE
+					Else
+						Set bOk = FALSE
+					Call OurWaitCursor( FALSE )
+					Return bOk
+			Function: WriteDateTimeArrayListToFile  
+				Description: Assumption is that the dtaDateTime[ * ] is termintated by a NUMBER_Null
+				Returns
+					Boolean:
+				Parameters
+					String: sFileName  
+					Date/Time: dtaDateTime[*]  
+				Static Variables
+				Local variables
+					File Handle: hOutFile  
+					Number: naPos  
+					Boolean: bOk  
+				Actions
+					Call OurWaitCursor( TRUE )
+					Set bOk = TRUE
+					If SalFileOpen( hOutFile, sFileName, OF_Create | OF_ReadWrite | OF_Text )
+						Set naPos = 0
+						While dtaDateTime[ naPos ] != DATETIME_Null
+							If NOT SalFilePutStr( hOutFile, DateToStrX( dtaDateTime[ naPos ] ) )
+								Set bOk = FALSE
+							Set naPos = naPos + 1
+						If NOT SalFileClose( hOutFile )
+							Set bOk = FALSE
+					Else
+						Set bOk = FALSE
+					Call OurWaitCursor( FALSE )
+					Return bOk
+			Function: ReadStrArrayListFromFile  
+				Description: The saString[ * ] will be returned and is termintated by a NULL string
+				Returns
+					Boolean:
+				Parameters
+					String: sFileName  
+					Receive String: saStrings[*]  
+				Static Variables
+				Local variables
+					File Handle: hOutFile  
+					Number: naStringPos  
+					Boolean: bOk  
+				Actions
+					Call OurWaitCursor( TRUE )
+					Set bOk = TRUE
+					If SalFileOpen( hOutFile, sFileName, OF_ReadWrite | OF_Text )
+						Set naStringPos = 0
+						While SalFileGetStr( hOutFile, saStrings[ naStringPos ], 255 )
+							Set naStringPos = naStringPos + 1
+						Set saStrings[ naStringPos ] = ''
+						If NOT SalFileClose( hOutFile )
+							Set bOk = FALSE
+					Else
+						Set bOk = FALSE
+					Call OurWaitCursor( FALSE )
+					Return bOk
+			Function: ReadNumArrayListFromFile  
+				Description: The naNumber[ * ] will be returned and is termintated by a NUMBER_Null
+				Returns
+					Boolean:
+				Parameters
+					String: sFileName  
+					Receive Number: naNumber[*]  
+				Static Variables
+				Local variables
+					File Handle: hOutFile  
+					Number: naPos  
+					Boolean: bOk  
+					String: sString  
+				Actions
+					Call OurWaitCursor( TRUE )
+					Set bOk = TRUE
+					If SalFileOpen( hOutFile, sFileName, OF_ReadWrite | OF_Text )
+						Set naPos = 0
+						While SalFileGetStr( hOutFile, sString, 255 )
+							Set naNumber[ naPos ] = SalStrToNumber( sString )
+							Set naPos = naPos + 1
+						Set naNumber[ naPos ] = NUMBER_Null
+						If NOT SalFileClose( hOutFile )
+							Set bOk = FALSE
+					Else
+						Set bOk = FALSE
+					Call OurWaitCursor( FALSE )
+					Return bOk
+			Function: ReadDateTimeArrayListFromFile  
+				Description: The dtaDateTime[ * ] will be returned and is termintated by a NUMBER_Null
+				Returns
+					Boolean:
+				Parameters
+					String: sFileName  
+					Receive Date/Time: dtaDateTime[*]  
+				Static Variables
+				Local variables
+					File Handle: hOutFile  
+					Number: naPos  
+					Boolean: bOk  
+					String: sString  
+				Actions
+					Call OurWaitCursor( TRUE )
+					Set bOk = TRUE
+					If SalFileOpen( hOutFile, sFileName, OF_ReadWrite | OF_Text )
+						Set naPos = 0
+						While SalFileGetStr( hOutFile, sString, 255 )
+							Set dtaDateTime[ naPos ] = SalStrToDate( sString )
+							Set naPos = naPos + 1
+						Set dtaDateTime[ naPos ] = DATETIME_Null
+						If NOT SalFileClose( hOutFile )
+							Set bOk = FALSE
+					Else
+						Set bOk = FALSE
+					Call OurWaitCursor( FALSE )
+					Return bOk
+			! The previous to this point
+			Function: StrArrayAppend
+				Description:
+				Returns
+				Parameters
+					Receive String: saStringArray[*]
+					! nArrayCount = number of elements or ARRAY_Null_Terminated constant
+					Receive Number: nArrayCount
+					String: sStrToAdd
+				Static Variables
+				Local variables
+					Number: nLastPos
+				Actions
+					If nArrayCount = ARRAY_Null_Terminated
+						Set nLastPos = StrArrayNullEndFindLastPos( saStringArray )
+						Set saStringArray[ nLastPos ] = sStrToAdd
+						Set saStringArray[ nLastPos + 1 ] = ''
+					Else
+						Set saStringArray[ nArrayCount ] = sStrToAdd
+						Set nArrayCount = nArrayCount + 1
+						Set saStringArray[ nArrayCount ] = ''
+			Function: StrArrayNullEndFindLastPos
+				Description:
+				Returns
+					Number:
+				Parameters
+					String: saStringArray[*]
+				Static Variables
+				Local variables
+					Number: nPos
+				Actions
+					Set nPos = 0
+					While saStringArray[ nPos ] != ''
+						Set nPos = nPos + 1
+					Return nPos
+			Function: StrArrayClearOut
+				Description:
+				Returns
+				Parameters
+					Receive String: saStringArray[*]
+					! nArrayCount = number of elements or ARRAY_Null_Terminated constant
+					Receive Number: nArrayCount
+				Static Variables
+				Local variables
+				Actions
+					Set saStringArray[ 0 ] = ''
+					If NOT nArrayCount = ARRAY_Null_Terminated
+						Set nArrayCount = 0
+			Function: StrArrayFetchStr
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: saStringArray[*]
+					! nArrayCount = number of elements or ARRAY_Null_Terminated constant
+					Number: nArrayCount
+					Receive String: sGotString
+					Number: nActionType
+				Static Variables
+					Number: nPos
+				Local variables
+				Actions
+					Select Case nActionType
+						Case ARRAY_Reset
+							Set nPos = -1
+							Return TRUE
+						Case ARRAY_FetchNext
+							Set nPos = nPos + 1
+							If nArrayCount = ARRAY_Null_Terminated
+								If saStringArray[ nPos ] = ''
+									Set sGotString = ''
+									Set nPos = nPos - 1
+									Return FALSE
+								Else
+									Set sGotString = saStringArray[ nPos ]
+									Return TRUE
+							Else
+								If nPos < nArrayCount
+									Set sGotString = saStringArray[ nPos ]
+									Return TRUE
+								Else
+									Set sGotString = ''
+									Set nPos = nPos - 1
+									Return FALSE
+						Case ARRAY_FetchPrevious
+							Set nPos = nPos - 1
+							If nPos < 0
+								Set sGotString = ''
+								Set nPos = nPos + 1
+								Return FALSE
+							Else
+								Set sGotString = saStringArray[ nPos ]
+								Return TRUE
+						Case ARRAY_FetchLast
+							If nArrayCount = ARRAY_Null_Terminated
+								Set nPos = StrArrayNullEndFindLastPos( saStringArray )
+								Set sGotString = saStringArray[ nPos ]
+								Return TRUE
+							Else
+								Set nPos = nArrayCount -1
+								Set sGotString = saStringArray[ nPos ]
+								Return TRUE
+						Case ARRAY_FetchFirst
+							Set nPos = 0
+							Set sGotString = saStringArray[ nPos ]
+							Return TRUE
+			!
+			Function: CreateCustStructure0
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+				Static Variables
+				Local variables
+					Boolean: bOk
+					String: sPath
+					String: saFolders[*]
+					String: sCustState
+				Actions
+					Call OurWaitCursor( TRUE )
+					Set bOk = TRUE
+					Set sPath = OurGetIniFileParameter( 'GENERAL', 'FilingCabinet', 'C:\\TEMP' )
+					Set saFolders[ 0 ] = 'Filing Cabinet'
+					Set saFolders[ 1 ] = ''
+					If CreateFolders( sPath, saFolders )
+						Set saFolders[ 0 ] = 'Customers'
+						Set saFolders[ 1 ] = 'Suppliers'
+						Set saFolders[ 2 ] = 'Templates'
+						Set saFolders[ 3 ] = ''
+						If CreateFolders( sPath || '\\Filing Cabinet', saFolders )
+							! Parent 'Customers'
+							Set saFolders[ 0 ] = 'NSW'
+							Set saFolders[ 1 ] = 'NT'
+							Set saFolders[ 2 ] = 'QLD'
+							Set saFolders[ 3 ] = 'SA'
+							Set saFolders[ 4 ] = 'TAS'
+							Set saFolders[ 5 ] = 'VIC'
+							Set saFolders[ 6 ] = 'WA'
+							Set saFolders[ 7 ] = ''
+							If CreateFolders( sPath || '\\Filing Cabinet' || '\\Customers', saFolders )
+								Set saFolders[ 0 ] = SalNumberToStrX( nCustNo, 0 )
+								Set saFolders[ 1 ] = ''
+								Set sCustState = GetCustNoState( nCustNo )
+								If CreateFolders( sPath || '\\Filing Cabinet' || '\\Customers' || '\\' || sCustState, saFolders )
+									Set saFolders[ 0 ] = 'Acknowledgments'
+									Set saFolders[ 1 ] = 'Confirmations'
+									Set saFolders[ 2 ] = 'Correspondence'
+									Set saFolders[ 3 ] = 'Credit Notes'
+									Set saFolders[ 4 ] = 'Invoices'
+									Set saFolders[ 5 ] = 'NPAs'
+									Set saFolders[ 6 ] = 'Quotes'
+									Set saFolders[ 7 ] = 'Receipts'
+									Set saFolders[ 8 ] = 'Statements'
+									Set saFolders[ 9 ] = ''
+									If NOT CreateFolders( sPath || '\\Filing Cabinet' || '\\Customers' || '\\' || sCustState || '\\' || SalNumberToStrX( nCustNo, 0 ), saFolders )
+										Set bOk = FALSE
+								Else
+									Set bOk = FALSE
+							Else
+								Set bOk = FALSE
+							! Parent Templates
+							Set saFolders[ 0 ] = 'Quote'
+							Set saFolders[ 1 ] = ''
+							If NOT CreateFolders( sPath || '\\Filing Cabinet' || '\\Templates', saFolders )
+								Set bOk = FALSE
+						Else
+							Set bOk = FALSE
+					Else
+						Set bOk = FALSE
+					Call OurWaitCursor( FALSE )
+					Return bOk
+			Function: CreateCustStructure
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+				Static Variables
+				Local variables
+					Boolean: bOk
+					String: sPath
+					String: saFolders[*]
+					String: sCustState
+				Actions
+					Call OurWaitCursor( TRUE )
+					Set bOk = TRUE
+					Set sPath = OurGetIniFileParameter( 'GENERAL', 'FilingCabinet', 'C:\\TEMP' )
+					Set saFolders[ 0 ] = 'Filing'
+					Set saFolders[ 1 ] = ''
+					If CreateFolders( sPath, saFolders )
+						Set saFolders[ 0 ] = 'Customer'
+						Set saFolders[ 1 ] = 'Supplier'
+						Set saFolders[ 2 ] = 'Template'
+						Set saFolders[ 3 ] = ''
+						If CreateFolders( sPath || '\\Filing', saFolders )
+							! Parent 'Customer'
+							Set saFolders[ 0 ] = 'NSW'
+							Set saFolders[ 1 ] = 'NT'
+							Set saFolders[ 2 ] = 'QLD'
+							Set saFolders[ 3 ] = 'SA'
+							Set saFolders[ 4 ] = 'TAS'
+							Set saFolders[ 5 ] = 'VIC'
+							Set saFolders[ 6 ] = 'WA'
+							Set saFolders[ 7 ] = ''
+							If CreateFolders( sPath || '\\Filing' || '\\Customer', saFolders )
+								Set saFolders[ 0 ] = SalNumberToStrX( nCustNo, 0 )
+								Set saFolders[ 1 ] = ''
+								Set sCustState = GetCustNoState( nCustNo )
+								If CreateFolders( sPath || '\\Filing' || '\\Customer' || '\\' || sCustState, saFolders )
+									Set saFolders[ 0 ] = 'Acknow'
+									Set saFolders[ 1 ] = 'Confirm'
+									Set saFolders[ 2 ] = 'Corresp'
+									Set saFolders[ 3 ] = 'CRNotes'
+									Set saFolders[ 4 ] = 'Invoices'
+									Set saFolders[ 5 ] = 'NPAs'
+									Set saFolders[ 6 ] = 'Quotes'
+									Set saFolders[ 7 ] = 'Receipts'
+									Set saFolders[ 8 ] = 'Statemnt'
+									Set saFolders[ 9 ] = 'PRCs'
+									Set saFolders[ 10 ] = 'Other'
+									Set saFolders[ 11 ] = ''
+									If NOT CreateFolders( sPath || '\\Filing' || '\\Customer' || '\\' || sCustState || '\\' || SalNumberToStrX( nCustNo, 0 ), saFolders )
+										Set bOk = FALSE
+								Else
+									Set bOk = FALSE
+							Else
+								Set bOk = FALSE
+							! Parent Template
+							Set saFolders[ 0 ] = 'Quote'
+							Set saFolders[ 1 ] = ''
+							If NOT CreateFolders( sPath || '\\Filing' || '\\Template', saFolders )
+								Set bOk = FALSE
+						Else
+							Set bOk = FALSE
+					Else
+						Set bOk = FALSE
+					Call OurWaitCursor( FALSE )
+					Return bOk
+			Function: GetCustCSVFileStructurePath
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nCustNo
+					! sFileType = 'INV', 'CR', 'STAT', 'CONF', 'NPA', 'ACK', 'RCP'
+					String: sFileType
+				Static Variables
+				Local variables
+					String: sPath
+				Actions
+					Set sPath = OurGetIniFileParameter( 'GENERAL', 'FilingCabinet', 'C:\\TEMP' )
+					If sFileType = 'INV'
+						Set sFileType = 'Invoices'
+					Else If sFileType = 'CR'
+						Set sFileType = 'CRNotes'
+					Else If sFileType = 'STAT'
+						Set sFileType = 'Statemnt'
+					Else If sFileType = 'CONF'
+						Set sFileType = 'Confirm'
+					Else If sFileType = 'NPA'
+						Set sFileType = 'NPAs'
+					Else If sFileType = 'PRC'
+						Set sFileType = 'PRCs'
+					Else If sFileType = 'ACK'
+						Set sFileType = 'Acknow'
+					Else If sFileType = 'RCP'
+						Set sFileType = 'Receipts'
+					Else
+						Set sFileType = 'Other'
+					Set sPath = sPath || '\\' || 'Filing' || '\\' || 'Customer' || '\\' || GetCustNoState( nCustNo ) || '\\' || SalNumberToStrX( nCustNo, 0 ) || '\\' || sFileType
+					Return sPath
+			Function: MakeCustInvoiceCSVFileName
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nCustNo
+					Number: nYear
+					String: sInvoiceNo
+					String: sQrpFileName
+				Static Variables
+				Local variables
+				Actions
+					Return 'c' || StringStartPadX( SalNumberToStrX( nCustNo, 0 ), '0', 6 ) || 'y' || LastStrTwoDigitsFromYear( nYear ) || 'INV' || StringStartPadX( sInvoiceNo, '0', 8 ) || 'q' || StripOutFileName( sQrpFileName ) || '.CSV'
+			Function: MakeCustCreditNoteCSVFileName
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nCustNo
+					Number: nYear
+					String: sCreditNoteNo
+					String: sQrpFileName
+				Static Variables
+				Local variables
+				Actions
+					Return 'c' || StringStartPadX( SalNumberToStrX( nCustNo, 0 ), '0', 6 ) || 'y' || LastStrTwoDigitsFromYear( nYear ) || 'CR' || StringStartPadX( sCreditNoteNo, '0', 8 ) || 'q' || StripOutFileName( sQrpFileName ) || '.CSV'
+			Function: MakeCustStatementCSVFileName
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nCustNo
+					Number: nYear
+					String: sQrpFileName
+				Static Variables
+				Local variables
+				Actions
+					Return 'c' || StringStartPadX( SalNumberToStrX( nCustNo, 0 ), '0', 6 ) || 'y' || LastStrTwoDigitsFromYear( nYear ) || 'STAT' || StringStartPadX( GetStrJulianDate( SalDateCurrent(  ) ), '0', 4 ) || '-' || DateTimeToStrHHMMSS( SalDateCurrent(  ) ) || 'q' || StripOutFileName( 
+							sQrpFileName ) || '.CSV'
+			Function: MakeCustConfCSVFileName
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nCustNo
+					Number: nYear
+					String: sQrpFileName
+				Static Variables
+				Local variables
+				Actions
+					Return 'c' || StringStartPadX( SalNumberToStrX( nCustNo, 0 ), '0', 6 ) || 'y' || LastStrTwoDigitsFromYear( nYear ) || 'CONF' || StringStartPadX( GetStrJulianDate( SalDateCurrent(  ) ), '0', 4 ) || '-' || DateTimeToStrHHMMSS( SalDateCurrent(  ) ) || 'q' || StripOutFileName( 
+							sQrpFileName ) || '.CSV'
+			Function: MakeCustNPACSVFileName
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nCustNo
+					Number: nYear
+					String: sQrpFileName
+				Static Variables
+				Local variables
+				Actions
+					Return 'c' || StringStartPadX( SalNumberToStrX( nCustNo, 0 ), '0', 6 ) || 'y' || LastStrTwoDigitsFromYear( nYear ) || 'NPA' || StringStartPadX( GetStrJulianDate( SalDateCurrent(  ) ), '0', 4 ) || '-' || DateTimeToStrHHMMSS( SalDateCurrent(  ) ) || 'q' || StripOutFileName( 
+							sQrpFileName ) || '.CSV'
+			Function: MakeCustPRCCSVFileName
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nCustNo
+					Number: nYear
+					String: sQrpFileName
+				Static Variables
+				Local variables
+				Actions
+					Return 'c' || StringStartPadX( SalNumberToStrX( nCustNo, 0 ), '0', 6 ) || 'y' || LastStrTwoDigitsFromYear( nYear ) || 'PRC' || StringStartPadX( GetStrJulianDate( SalDateCurrent(  ) ), '0', 4 ) || '-' || DateTimeToStrHHMMSS( SalDateCurrent(  ) ) || 'q' || StripOutFileName( 
+							sQrpFileName ) || '.CSV'
+			Function: MakeCustAckCSVFileName
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nCustNo
+					Number: nYear
+					String: sQrpFileName
+				Static Variables
+				Local variables
+				Actions
+					Return 'c' || StringStartPadX( SalNumberToStrX( nCustNo, 0 ), '0', 6 ) || 'y' || LastStrTwoDigitsFromYear( nYear ) || 'ACK' || StringStartPadX( GetStrJulianDate( SalDateCurrent(  ) ), '0', 4 ) || '-' || DateTimeToStrHHMMSS( SalDateCurrent(  ) ) || 'q' || StripOutFileName( 
+							sQrpFileName ) || '.CSV'
+			Function: MakeCustRcpCSVFileName
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nCustNo
+					Number: nYear
+					String: sQrpFileName
+				Static Variables
+				Local variables
+				Actions
+					Return 'c' || StringStartPadX( SalNumberToStrX( nCustNo, 0 ), '0', 6 ) || 'y' || LastStrTwoDigitsFromYear( nYear ) || 'RCP' || StringStartPadX( GetStrJulianDate( SalDateCurrent(  ) ), '0', 4 ) || '-' || DateTimeToStrHHMMSS( SalDateCurrent(  ) ) || 'q' || StripOutFileName( 
+							sQrpFileName ) || '.CSV'
+			!
+			Function: TokenCustInvoiceCSVFileName
+				Description:
+				Returns
+				Parameters
+					String: sFileName
+					Receive Number: nCustNo
+					Receive Number: nYear
+					Receive String: sInvoiceNo
+					Receive String: sQrpFileName
+					Receive String: sFileType
+				Static Variables
+				Local variables
+				Actions
+					Set nCustNo = SalStrToNumber( SalStrMidX( sFileName, 1, 6 ) )
+					Set nYear = SalStrToNumber( SalStrMidX( sFileName, 8, 2 ) )
+					Call AdjustYearToYearOfSale( nYear )
+					Set sInvoiceNo = SalStrMidX( sFileName, 13, 8 )
+					Set sQrpFileName = ExctractQrpNameFromCSVName( sFileName )
+					Set sFileType = 'INV'
+			Function: TokenCustCreditNoteCSVFileName
+				Description:
+				Returns
+				Parameters
+					String: sFileName
+					Receive Number: nCustNo
+					Receive Number: nYear
+					Receive String: sCreditNoteNo
+					Receive String: sQrpFileName
+					Receive String: sFileType
+				Static Variables
+				Local variables
+				Actions
+					Set nCustNo = SalStrToNumber( SalStrMidX( sFileName, 1, 6 ) )
+					Set nYear = SalStrToNumber( SalStrMidX( sFileName, 8, 2 ) )
+					Call AdjustYearToYearOfSale( nYear )
+					Set sCreditNoteNo = SalStrMidX( sFileName, 12, 8 )
+					Set sQrpFileName = ExctractQrpNameFromCSVName( sFileName )
+					Set sFileType = 'CR'
+			Function: TokenCustStatementCSVFileName
+				Description:
+				Returns
+				Parameters
+					String: sFileName
+					Receive Number: nCustNo
+					Receive Number: nYear
+					Receive String: sQrpFileName
+					Receive String: sFileType
+				Static Variables
+				Local variables
+				Actions
+					Set nCustNo = SalStrToNumber( SalStrMidX( sFileName, 1, 6 ) )
+					Set nYear = SalStrToNumber( SalStrMidX( sFileName, 8, 2 ) )
+					Call AdjustYearToYearOfSale( nYear )
+					Set sQrpFileName = ExctractQrpNameFromCSVName( sFileName )
+					Set sFileType = 'STAT'
+			Function: TokenCustConfCSVFileName
+				Description:
+				Returns
+				Parameters
+					String: sFileName
+					Receive Number: nCustNo
+					Receive Number: nYear
+					Receive String: sQrpFileName
+					Receive String: sFileType
+				Static Variables
+				Local variables
+				Actions
+					Set nCustNo = SalStrToNumber( SalStrMidX( sFileName, 1, 6 ) )
+					Set nYear = SalStrToNumber( SalStrMidX( sFileName, 8, 2 ) )
+					Call AdjustYearToYearOfSale( nYear )
+					Set sQrpFileName = ExctractQrpNameFromCSVName( sFileName )
+					Set sFileType = 'CONF'
+			Function: TokenCustNPACSVFileName
+				Description:
+				Returns
+				Parameters
+					String: sFileName
+					Receive Number: nCustNo
+					Receive Number: nYear
+					Receive String: sQrpFileName
+					Receive String: sFileType
+				Static Variables
+				Local variables
+				Actions
+					Set nCustNo = SalStrToNumber( SalStrMidX( sFileName, 1, 6 ) )
+					Set nYear = SalStrToNumber( SalStrMidX( sFileName, 8, 2 ) )
+					Call AdjustYearToYearOfSale( nYear )
+					Set sQrpFileName = ExctractQrpNameFromCSVName( sFileName )
+					Set sFileType = 'NPA'
+			Function: TokenCustPRCCSVFileName
+				Description:
+				Returns
+				Parameters
+					String: sFileName
+					Receive Number: nCustNo
+					Receive Number: nYear
+					Receive String: sQrpFileName
+					Receive String: sFileType
+				Static Variables
+				Local variables
+				Actions
+					Set nCustNo = SalStrToNumber( SalStrMidX( sFileName, 1, 6 ) )
+					Set nYear = SalStrToNumber( SalStrMidX( sFileName, 8, 2 ) )
+					Call AdjustYearToYearOfSale( nYear )
+					Set sQrpFileName = ExctractQrpNameFromCSVName( sFileName )
+					Set sFileType = 'PRC'
+			Function: TokenCustAckCSVFileName
+				Description:
+				Returns
+				Parameters
+					String: sFileName
+					Receive Number: nCustNo
+					Receive Number: nYear
+					Receive String: sQrpFileName
+					Receive String: sFileType
+				Static Variables
+				Local variables
+				Actions
+					Set nCustNo = SalStrToNumber( SalStrMidX( sFileName, 1, 6 ) )
+					Set nYear = SalStrToNumber( SalStrMidX( sFileName, 8, 2 ) )
+					Call AdjustYearToYearOfSale( nYear )
+					Set sQrpFileName = ExctractQrpNameFromCSVName( sFileName )
+					Set sFileType = 'ACK'
+			Function: TokenCustRcpCSVFileName
+				Description:
+				Returns
+				Parameters
+					String: sFileName
+					Receive Number: nCustNo
+					Receive Number: nYear
+					Receive String: sQrpFileName
+					Receive String: sFileType
+				Static Variables
+				Local variables
+				Actions
+					Set nCustNo = SalStrToNumber( SalStrMidX( sFileName, 1, 6 ) )
+					Set nYear = SalStrToNumber( SalStrMidX( sFileName, 8, 2 ) )
+					Call AdjustYearToYearOfSale( nYear )
+					Set sQrpFileName = ExctractQrpNameFromCSVName( sFileName )
+					Set sFileType = 'RCP'
+			Function: ExctractQrpNameFromCSVName
+				Description:
+				Returns
+					String:
+				Parameters
+					String: sFileName
+				Static Variables
+				Local variables
+					Number: nPos
+					String: sQrpFileName
+					String: sChar
+					Boolean: bFound
+				Actions
+					Set sQrpFileName = ''
+					Set bFound = FALSE
+					Set nPos = SalStrScan( sFileName, '.CSV' ) - 1
+					While nPos > 0 AND NOT bFound
+						Set sChar = SalStrMidX( sFileName, nPos, 1 )
+						If SalStrUpperX( sChar ) = 'Q'
+							Set bFound = TRUE
+						Else
+							Set sQrpFileName = sChar || sQrpFileName
+						!
+						Set nPos = nPos - 1
+					Return sQrpFileName
+			Function: NumberToStrXNullNull
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nNumber
+					Number: nPrecision
+				Static Variables
+				Local variables
+				Actions
+					If nNumber = NUMBER_Null
+						Return ''
+					Else
+						Return SalNumberToStrX( nNumber, nPrecision )
+			Function: StrToNumberXNullNull
+				Description:
+				Returns
+					Number:
+				Parameters
+					String: sString
+				Static Variables
+				Local variables
+				Actions
+					If sString = ''
+						Return NUMBER_Null
+					Else
+						Return SalStrToNumber( sString )
+			!
+			Function: CreateFolders
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sPath
+					String: saFolders[*]
+					! null terminated array
+				Static Variables
+				Local variables
+					Boolean: bOk
+					Boolean: bCreate
+					String: saDirs[*]
+					Number: nCount
+				Actions
+					Set bOk = TRUE
+					Set nCount = VisDosEnumDirs( sPath||'\\*.*', saDirs )
+					If nCount > 0
+						Set nCount = 0
+						While saFolders[ nCount ] != '' AND bOk
+							If VisArrayFindString( saDirs, saFolders[ nCount ] ) < 0
+								Set bOk = SalFileCreateDirectory( sPath || '\\' || saFolders[ nCount ] )
+							Set nCount = nCount + 1
+					Else
+						Set nCount = 0
+						While saFolders[ nCount ] != '' AND bOk
+							Set bOk = SalFileCreateDirectory( sPath || '\\' || saFolders[ nCount ] )
+							Set nCount = nCount + 1
+					Return bOk
+			Function: ConvertStrHexToStrBinX
+				Description:
+				Returns
+					String:
+				Parameters
+					String: sHex
+				Static Variables
+				Local variables
+					Number: nStrHexLength
+					String: sHexChar
+					String: sBinChar
+					Number: nPos
+					Number: nDecChar
+					String: sBin
+				Actions
+					Set nStrHexLength = SalStrLength( sHex )
+					Set sBin = ''
+					Set nPos = 0
+					While nPos < nStrHexLength
+						!
+						Set sHexChar = SalStrUpperX( SalStrMidX( sHex, nPos, 1 ) )
+						If sHexChar = 'A'
+							Set nDecChar = 10
+						Else If sHexChar = 'B'
+							Set nDecChar = 11
+						Else If sHexChar = 'C'
+							Set nDecChar = 12
+						Else If sHexChar = 'D'
+							Set nDecChar = 13
+						Else If sHexChar = 'E'
+							Set nDecChar = 14
+						Else If sHexChar = 'F'
+							Set nDecChar = 15
+						Else
+							Set nDecChar = SalStrToNumber( sHexChar )
+						!
+						Set sBinChar = ''
+						While nDecChar > 0
+							If SalNumberMod( nDecChar, 2 ) = 0
+								Set sBinChar = '0' || sBinChar
+							Else
+								Set sBinChar = '1' || sBinChar
+							Set nDecChar = SalNumberTruncate( nDecChar / 2, 4, 0 )
+						!
+						Call StringStartPad( sBinChar, '0', 4 )
+						Set sBin = sBin || sBinChar
+						Set nPos = nPos + 1
+					Return sBin
+			Function: LastStrTwoDigitsFromYear
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nYear
+				Static Variables
+				Local variables
+				Actions
+					Return SalStrRightX( SalNumberToStrX( nYear, 0 ), 2 )
+			Function: GetCustNoState
+				Description:
+				Returns
+					String:
+				Parameters
+					Number: nCustNo
+				Static Variables
+				Local variables
+					String: sState
+				Actions
+					If nCustNo >= 080000 AND nCustNo <= 099999
+						Set sState = 'NT'
+					Else If nCustNo >= 200000 AND nCustNo <= 299999
+						Set sState = 'NSW'
+					Else If nCustNo >= 300000 AND nCustNo <= 399999
+						Set sState = 'VIC'
+					Else If nCustNo >= 400000 AND nCustNo <= 499999
+						Set sState = 'QLD'
+					Else If nCustNo >= 500000 AND nCustNo <= 599999
+						Set sState = 'SA'
+					Else If nCustNo >= 600000 AND nCustNo <= 699999
+						Set sState = 'WA'
+					Else If nCustNo >= 700000 AND nCustNo <= 799999
+						Set sState = 'TAS'
+					Else
+						Set sState = 'OS'
+					Return sState
+			Function: StripOutFileName
+				Description:
+				Returns
+					String:
+				Parameters
+					String: sFullPathFileName
+				Static Variables
+				Local variables
+					String: sLast
+					String: sCurrent
+					Number: nPos
+					String: sChar
+				Actions
+					Set sCurrent = ''
+					! replace the " \ " with " ~ " because SalStrScan has problems.
+					Set nPos = 0
+					While nPos < SalStrLength( sFullPathFileName )
+						Set sChar = SalStrMidX( sFullPathFileName, nPos, 1 )
+						If sChar = '\\'
+							Set sChar = '~'
+						Set sCurrent = sCurrent || sChar
+						Set nPos = nPos + 1
+					!
+					Set sLast = sCurrent
+					Set sCurrent = GetStringBetweenCharMarks( sCurrent, '~', '.' )
+					While sLast != sCurrent
+						Set sLast = sCurrent
+						Set sCurrent = GetStringBetweenCharMarks( sCurrent, '~', '.' )
+					Return sCurrent
+		Class Definitions
+.data RESOURCE 0 0 1 3600663767
+0000: 590000004A000000 0000000000000000 0200000100FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F04003C00 001063006C73546F
+0040: 6F6C546900705769 6E646F771E900000 0001000047030400 00FFFF01
+.enddata
+			Functional Class: strStack
+				Description:
+				Derived From
+				Class Variables
+				Instance Variables
+					String: Strings[*]
+					Number: nLast
+				Functions
+					Function: StackInit
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Set Strings[0] = ''
+							Set Strings[1] = ''
+							Set nLast = -1
+							Return TRUE
+					Function: StackFind
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: sStrToFind
+						Static Variables
+						Local variables
+							Number: nPos
+							Boolean: bFound
+						Actions
+							If sStrToFind = ''
+								Return FALSE
+							Else
+								! Set nPos = 0
+								! Set bFound = FALSE
+								! While nPos <= nLast AND NOT bFound
+									                If Strings[ nPos ] = sStrToFind
+										                Set bFound = TRUE
+									                Set nPos = nPos + 1
+								! Return bFound
+								Return StrArrayFind( Strings, nLast, sStrToFind, nPos )
+					Function: StackPush
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: sStr
+						Static Variables
+						Local variables
+						Actions
+							If sStr != ''
+								Set nLast = nLast + 1
+								Set Strings[ nLast ] = sStr
+								Set Strings[ nLast + 1 ] = ''
+								Return TRUE
+							Else
+								Return FALSE
+					Function: StackPushUnique
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: sStr
+						Static Variables
+						Local variables
+						Actions
+							If StackFind( sStr )
+								Return FALSE
+							Else
+								Call StackPush( sStr )
+								Return TRUE
+					Function: StackPop
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: sStr
+						Static Variables
+						Local variables
+						Actions
+							If nLast >= 0
+								Set sStr = Strings[ nLast ]
+								Set Strings[ nLast ] = ''
+								Set nLast = nLast - 1
+								Return TRUE
+							Else
+								Return FALSE
+					Function: StackMakeList
+						Description: sSeparator : string used as the list string separator
+								                       eg: jan, michelle, dani the comma is the separator
+								  sQuoteType : string used as the type of character for the quotes around the strings.
+								                         eg: "jan", "michelle", "dani" the double quote is the quote type character
+								                         note use sQueryType of blank to obtain a non quoted string list.
+						Returns
+						Parameters
+							String: sSeparator
+							String: sQuoteType
+							Receive String: sStringList
+						Static Variables
+						Local variables
+						Actions
+							Call MakeStringList( Strings, sSeparator, sQuoteType, sStringList )
+					Function: StackCount
+						Description:
+						Returns
+							Number:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Return nLast
+			Functional Class: numStack
+				Description:
+				Derived From
+				Class Variables
+				Instance Variables
+					Number: Numbers[*]
+					Number: nLast
+				Functions
+					Function: StackInit
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Set Numbers[0] = NUMBER_Null
+							Set Numbers[1] = NUMBER_Null
+							Set nLast = -1
+							Return TRUE
+					Function: StackFind
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: nNumToFind
+						Static Variables
+						Local variables
+							Number: nPos
+							Boolean: bFound
+						Actions
+							If nNumToFind = NUMBER_Null
+								Return FALSE
+							Else
+								! Set nPos = 0
+								! Set bFound = FALSE
+								! While nPos <= nLast AND NOT bFound
+									                If Numbers[ nPos ] = nNumToFind
+										                Set bFound = TRUE
+									                Set nPos = nPos + 1
+								! Return bFound
+								Return NumArrayFind( Numbers, nLast, nNumToFind, nPos )
+					Function: StackPush
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: nNum
+						Static Variables
+						Local variables
+						Actions
+							If nNum != NUMBER_Null
+								Set nLast = nLast + 1
+								Set Numbers[ nLast ] = nNum
+								Set Numbers[ nLast + 1 ] = NUMBER_Null
+								Return TRUE
+							Else
+								Return FALSE
+					Function: StackPushUnique
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: nNum
+						Static Variables
+						Local variables
+						Actions
+							If StackFind( nNum )
+								Return FALSE
+							Else
+								Call StackPush( nNum )
+								Return TRUE
+					Function: StackPop
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: nNum
+						Static Variables
+						Local variables
+						Actions
+							If nLast >= 0
+								Set nNum = Numbers[ nLast ]
+								Set Numbers[ nLast ] = NUMBER_Null
+								Set nLast = nLast - 1
+								Return TRUE
+							Else
+								Return FALSE
+					Function: StackMakeList
+						Description: sSeparator : string used as the list string separator
+								                       eg: jan, michelle, dani the comma is the separator
+								  sQuoteType : string used as the type of character for the quotes around the strings.
+								                         eg: "jan", "michelle", "dani" the double quote is the quote type character
+								                         note use sQueryType of blank to obtain a non quoted string list.
+						Returns
+						Parameters
+							Number: nPrecision
+							String: sSeparator
+							String: sQuoteType
+							Receive String: sStringList
+						Static Variables
+						Local variables
+						Actions
+							Call MakeNumberList( Numbers, nPrecision, sSeparator, sQuoteType, sStringList )
+					Function: StackCount
+						Description:
+						Returns
+							Number:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Return nLast
+			Functional Class: clsStrFileHandle
+				Description:
+				Derived From
+				Class Variables
+				Instance Variables
+					File Handle: hFileHandle
+					String: sFileName
+					! If nFileType = NUMBER_Null then Default OF_Create | OF_ReadWrite | OF_Text is assumed
+					Number: nFileType
+					! if nLineSize = NUMBER_Null then Default nLineSize = 1024
+					Number: nLineSize
+				Functions
+					Function: Setup
+						Description:
+						Returns
+						Parameters
+							String: sNewFileName
+							Number: nNewFileType
+							Number: nNewLineSize
+						Static Variables
+						Local variables
+						Actions
+							Set sFileName = sNewFileName
+							If nNewFileType = NUMBER_Null
+								Set nNewFileType = OF_Create | OF_ReadWrite | OF_Text
+							If nNewLineSize = NUMBER_Null
+								Set nNewLineSize = 1024
+							Set nFileType = nNewFileType
+							Set nLineSize = nNewLineSize
+					Function: Open
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Return SalFileOpen( hFileHandle, sFileName, nFileType )
+					Function: Close
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Return SalFileClose( hFileHandle )
+					Function: Write
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: sString
+						Static Variables
+						Local variables
+						Actions
+							Return SalFilePutStr( hFileHandle, sString )
+					Function: Read
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: sString
+						Static Variables
+						Local variables
+						Actions
+							Return SalFileGetStr( hFileHandle, sString, nLineSize )
+					Function: Seek
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: nBytes
+							Number: nPosition
+						Static Variables
+						Local variables
+						Actions
+							Return SalFileSeek( hFileHandle, nBytes, nPosition )
+					Function: Tell
+						Description:
+						Returns
+							Number:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Return SalFileTell( hFileHandle )
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions

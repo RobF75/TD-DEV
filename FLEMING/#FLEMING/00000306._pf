@@ -1,0 +1,3719 @@
+Application Description: SQLWindows version 5.0.1
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000820000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF840000 0084000000180300 00A3010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D02000000075769 6E646F77730E6672
+0080: 6D52656365697665 50524373
+.enddata
+.data DT_MAKERUNDLG
+0000: 0000000000204B3A 5C43454E54555241 5C53544F434B4445 565C526563767072
+0020: 63642E657865204B 3A5C43454E545552 415C53544F434B44 45565C5265637670
+0040: 7263642E646C6C20 4B3A5C43454E5455 52415C53544F434B 4445565C52656376
+0060: 707263642E617063 0000010101204B3A 5C43454E54555241 5C53544F434B4445
+0080: 565C526563767072 63642E72756E204B 3A5C43454E545552 415C53544F434B44
+00A0: 45565C5265637670 7263642E646C6C20 4B3A5C43454E5455 52415C53544F434B
+00C0: 4445565C52656376 707263642E617063 0000010101204B3A 5C43454E54555241
+00E0: 5C53544F434B4445 565C526563767072 63642E617064204B 3A5C43454E545552
+0100: 415C53544F434B44 45565C5265637670 7263642E646C6C20 4B3A5C43454E5455
+0120: 52415C53544F434B 4445565C52656376 707263642E617063 0000010101204B3A
+0140: 5C43454E54555241 5C53544F434B4445 565C526563767072 63642E61706C204B
+0160: 3A5C43454E545552 415C53544F434B44 45565C5265637670 7263642E646C6C20
+0180: 4B3A5C43454E5455 52415C53544F434B 4445565C52656376 707263642E617063
+01A0: 0000010101
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000002004C04 95032D1E2D0F0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.55"
+			Top:    0.458"
+			Width:  6.075"
+			Height: 3.396"
+		Options Box Location
+			Visible? Yes
+			Left:   6.063"
+			Top:    2.927"
+			Width:  3.738"
+			Height: 2.969"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   6.3"
+			Top:    1.573"
+		Fully Qualified External References? Yes
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: intfunc.apl
+		File Include: myfunc.apl
+		File Include: vtspin.apl
+		File Include: vtmeter.apl
+		File Include: vtmisc.apl
+		File Include: vttblwin.apl
+		File Include: STDWIND.APL
+		File Include: JANFLAGS.APL
+		File Include: SQLHANDL.APL
+		File Include: ADDRESS.APL
+		File Include: ITEM.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: Light Green
+			Dialog Box
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: Gray
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Light Gray
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Line
+				Line Color: Use Parent
+			Frame
+				Border Color: Use Parent
+				Background Color: Dark Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Number: 0000000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+			Date/Time: dd-MMM-yyyy hh:mm:ss AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! PAM_Messages in here can only go in range SAM_User + 6200 -> 6299
+				!
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1723126640
+0000: F01D0000A2090000 0000000000000000 020000260100002C 020000E0040D0000
+0020: 00FF3F3902820003 04000000FFFF883D 0200010D00FE00FF A34A020001FB00FF
+0040: 8F570200EE0300FF 3F5B02BA000100FF FFE868020001FE00 FFA375020003FB00
+0060: FF8F790200EE0100 FF3F8602BA000100 FFFFE893020003FE 00FFA397020001FB
+0080: 00FF8FA40200EE01 00FF3FB102BA0003 00FFFFE8B5020001 FE00FFA3C2020001
+00A0: FB00FF8FCF0200EE 0300FF3FD302BA00 0100FFFFE8E00200 01FE00FFA3ED0200
+00C0: 03FB00FF8FF10200 EE0100FF3FFE02BA 000100FFFF800B03 0000020400FE00FF
+00E0: A30F030003FB00FF 8F130300EE0100FF 3F2003BA000100FF FFE82D030002FE00
+0100: FFA331030002FB00 FF8F350300EE0200 FF3F3903BA000200 FFFFE83D030002E8
+0120: 000100001F800100 FC0000A341030002 B30001007F80F201 00008F450300EE03
+0140: 00FF3F4903B20001 0D00FFFFE8560300 01FE00FFA3630300 03FB00FF8F670300
+0160: EE0100FF3F7403BA 000100FFFFE88103 0003FE00FFA38503 0001FB00FF8F9203
+0180: 00EE0100FF3F9F03 BA000300FFFFE8A3 030001FE00FFA3B0 030001FB00FF8FBD
+01A0: 0300EE0300FF3FC1 03BA000100FFFFE8 CE030001FE00FFA3 DB030003FB00FF8F
+01C0: DF0300EE0100FF3F EC03BA000100FFFF E8F9030003FE00FF A3FD030001FB00FF
+01E0: 8F0A0400EE0100FF 3F1704BA000300FF FFE81B040001FE00 FFA328040001FB00
+0200: FF8F350400EE0300 FF3F3904BA000100 FFFFE846040001FE 00FFA353040003FB
+0220: 00FF8F570400EE01 00FF3F6404BA0001 00FFFFE871040003 FE00FFA375040001
+0240: FB00FF8F820400EE 0100FF3F8F04BA00 0300FFFFE8930400 01FE00FFA3A00400
+0260: 01FB00FF8FAD0400 EE0300FF3FB104BA 000100FFFFE8BE04 0001FE00FFA3CB04
+0280: 0003FB00FF8FCF04 00EE0100FF3FDC04 BA000100FFFFE8E9 040003FE00FFA3ED
+02A0: 040001FB00FF8FFA 0400EE0100FF3F07 05B800000300FFFF E80B050001FE00FF
+02C0: A318050001FB00FF 8F250500EE0300FF 3F2905BA000100FF FFE836050001FE00
+02E0: FFA343050003FB00 FF8F470500EE0100 FF3F5405BA000100 FFFFE861050003FE
+0300: 00FFA365050001FB 00FF8F720500EE01 00FF3F7F05BA0003 00FFFFE883050001
+0320: FE00FFA390050001 FB00FF8F9D0500EE 0300FF3FA105BA00 0100FFFFE8AE0500
+0340: 01FE00FFA3BB0500 03FB00FF8FBF0500 EE0100FF3FCC05BA 000100FFFFE8D905
+0360: 0003FE00FFA3DD05 0001FB00FF8FEA05 00EE0100FF3FF705 BA000300FFFFE8FB
+0380: 050001FE00FF8308 06000001FB00FF8F 150600EE0300FF3F 1906BA000100FFFF
+03A0: E826060001FE00FF A333060003FB00FF 8F370600EE0100FF 3F4406BA000100FF
+03C0: FFE851060003FE00 FFA355060001FB00 FF8F620600EE0100 FF3F6F06BA000300
+03E0: FFFFE873060001FE 00FFA380060001FB 00FF8F8D0600EE03 00FF3F9106AA0001
+0400: 0000FFFFE89E0600 01FE00FFA3AB0600 03FB00FF8FAF0600 EE0100FF3FBC06BA
+0420: 000100FFFFE8C906 0003FE00FFA3CD06 0001FB00FF8FDA06 00EE0100FF3FE706
+0440: BA000300FFFFE8EB 060001FE00FFA3F8 060001FB00FF0F05 070000EE0300FF3F
+0460: 0907BA000100FFFF E816070001FE00FF A323070003FB00FF 8F270700EE0100FF
+0480: 3F3407BA000100FF FFE841070003FE00 FFA345070001FB00 FF8F520700EE0100
+04A0: FF3F5F07BA000300 FFFFE863070001FE 00FFA370070002FB 00FF8F740700EE02
+04C0: 00FF3F7807BA0003 00FFFFE87C070001 FE00FFA389070001 FB00FF8F960700EE
+04E0: 0300FF3F9A07BA00 0100FFFFE8A70700 01FE00FFA3B40700 03FB00FF8FB80700
+0500: EE0100FF3FC507BA 000100FFFFE8D207 0003FE00FFA3D607 0001FB00FF8FE307
+0520: 00EE0200FF3FE707 BA000200FFFFE8EB 070003FE00FFA3EF 070001FB00FF8FFC
+0540: 0700EE0100FF3F09 08B800000300FFFF E80D080001FE00FF A31A080001FB00FF
+0560: 8F270800EE0300FF 3F2B08BA000100FF FFE838080001FE00 FFA345080003FB00
+0580: FF8F490800EE0100 FF3F5608BA000200 FFFFE85A080002FE 00FFA35E080003FB
+05A0: 00FF8F620800EE01 00FF3F6F08BA0001 00FFFFE87C080003 FE00FFA380080001
+05C0: FB00FF8F8D0800EA 010000FF3F9A08BA 000300FFFFE89E08 0001FE00FFA3AB08
+05E0: 0001FB00FF8FB808 00EE0300FF3FBC08 BA000100FFFFE8C9 080001FE00FFA3D6
+0600: 080003FB00FF8FDA 0800EE0100FF3FE7 08BA000100FFFFE8 F4080003FE00FFA3
+0620: F8080001FB00FF0F 05090000EE0100FF 3F1209BA000300FF FFE816090001FE00
+0640: FFA323090001FB00 FF8F300900EE0300 FF3F3409BA000100 FFFFE841090001FE
+0660: 00FFA34E090003FB 00FF8F520900EE01 00FF3F5F09BA0001 00FFFFE86C090003
+0680: FE00FFA370090001 FB00FF8F7D0900EE 0100FF3F8A09BA00 0300FFFFE88E0900
+06A0: 01FE00FFA39B0900 01FB00FF8FA80900 EE0300FF3FAC09BA 000100FFFFE8B909
+06C0: 0001FE00FFA3C609 0003FB00FF8FCA09 00EE0100FF3FD709 BA000100FFFFE8E4
+06E0: 090003FE00FFA3E8 090001FB00FF8FF5 0900EE0100FF3F02 0AB800000300FFFF
+0700: E8060A0001FE00FF A3130A0001FB00FF 8F200A00EE0300FF 3F240ABA000100FF
+0720: FFE8310A0001FE00 FFA33E0A0003FB00 FF8F420A00EE0100 FF3F4F0ABA000100
+0740: FFFFE85C0A0003FE 00FFA3600A0001FB 00FF8F6D0A00EE01 00FF3F7A0ABA0003
+0760: 00FFFFE87E0A0001 FE00FFA38B0A0001 FB00FF8F980A00EE 0300FF3F9C0ABA00
+0780: 0100FFFFE8A90A00 01FE00FFA3B60A00 03FB00FF8FBA0A00 EE0100FF3FC70ABA
+07A0: 000100FFFFE8D40A 0003FE00FFA3D80A 0001FB00FF8FE50A 00EE0100FF3FF20A
+07C0: BA000300FFFFE8F6 0A0001FE00FF8303 0B000001FB00FF8F 100B00EC030400FF
+07E0: 3F140BBA000100FF FFE8210B0001FE00 FFA32E0B0003FB00 FF8F320B00EE0100
+0800: FF3F3F0BBA000100 FFFFE84C0B0003FE 00FFA3500B0001FB 00FF8F5D0B00EE01
+0820: 00FF3F6A0BBA0003 00FFFFE86E0B0001 FE00FFA37B0B0001 FB00FF8F880B00EE
+0840: 0300FF3F8C0BBA00 0100FFFFE8990B00 01FE00FFA3A60B00 03FB00FF8FAA0B00
+0860: EE0100FF3FB70BBA 000100FFFFE8C40B 0003FE00FFA3C80B 0001FB00FF8FD50B
+0880: 00EE0100FF3FE20B BA000300FFFFE8E6 0B0001FE00FFA3F3 0B0001FB00FF1F0C
+08A0: 0000EE0300FF3F04 0CBA000100FFFFE8 110C0001FE00FFA3 1E0C0003FB00FF8F
+08C0: 220C00EE0100FF3F 2F0CBA000100FFFF E83C0C0003FE00FF A3400C0001FB00FF
+08E0: 8F4D0C00EE0100FF 3F5A0CBA000300FF FFE85E0C0001FE00 FFA36B0C0001FB00
+0900: FF8F780C00EE0300 FF3F7C0CBA000100 FFFFE8890C0001FE 00FFA3960C0003FB
+0920: 00FF8F9A0C00EE01 00FF3FA70CBA0001 00FFFFE8B40C0003 FE00FFA3B80C0001
+0940: FB00FF8FC50C00EE 0100FF3FD20CBA00 0300FFFFE8D60C00 01FE00FFA3E30C00
+0960: 01FB00FF8FF00C00 EE0300FF3FF40CBA 000100FFFFFE01FE 00FFA30E0D0001FB
+0980: 00FF8F1B0D00EE01 00FF3F280DBA0001 00FFFFE8350D0001 FE00FFA3420D0003
+09A0: FB00FF8F460D00EE 0100FF3F530DBA00 0100FFFF
+.enddata
+			String: sErrmsg
+			String: sNum
+			Date/Time: dtgRecvDate
+			Boolean: bForceCurrentOrderFile
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 3672808367
+0000: 9107000029030000 0000000000000000 0200000900FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F3C003C00 00154F0075724672
+0040: 6D576E6400576974 684368696C006454 626CA0000000F006 000000E0010D0000
+0060: 00FF3F0D00B90001 00FFFF001A000000 03040000FE00FF83 1E00000001FB00FF
+0080: 0F2B000000EE0100 FF3F3800B8000003 00FFFF1001803C00 000100200000124F
+00A0: 75446CF8675769FF EC000600D9010D00 FF7F0D73000100FF FFCD1A0003FD00FF
+00C0: 371E0001F700FFDF 2BDC000100FF7F38 73000300FFFF0101 8011000000020000
+00E0: 0000145069636B00 496E746F5461626C E0655062436C6438 00000200EF03FE00
+0100: FF13040000010DFB 00FF0F01807F0000 0000030000000F4F E2755F4368385F54
+0120: 61A401C200100000 00A302040000FFFF E6040002FE00FF83 0800000002FB00FF
+0140: 0F0C000000EE0200 FFBF10B9000200FF FFC014000000010D FE00FF8321000000
+0160: 01FB00FF0F2E0000 00EE0100FF3F3B00 A00000040D0000FF FFE04800000001FE
+0180: 00FF835500000002 FB00FF0F59000000 EE0200FF3F5D00B8 00000100FFFFE06A
+01A0: 00000001FE00FF83 7700000002FB00FF 0F7B000000EE0200 FF3F018040760000
+01C0: 0004000040104E65 774F7543CE685461 BF00DE0002FD00FF 37040002F700FFDF
+01E0: 08DC000200FF7F0C 73000200FFFFCD10 0002FD00FF371400 03F60400FF1F1800
+0200: 00DC000300FF7F1C 60000000010D00FF FFC12900000001FD 00FF073600000001
+0220: F700FF1F430000DC 000100FF7F507000 00000200FFFFC154 00000001FD00FF07
+0240: 6100000001F700FF 1F6E0000DC000200 FF7F727000000002 00FFFF2101802100
+0260: 0005C00000000E4F 75806F6C756D6E43 6C93A0000006BD00 02FB00FF6F0400EE
+0280: 0200FFBF08B90002 00FFFFE60C0002FE 00FF9B100002FB00 FF6F1400EC010D00
+02A0: FF3F018066210006 0008114F75446174 61804669656C6443 6C9F0006BD0002FB
+02C0: 00FF6F0400EE0200 FFBF08B9000200FF FFE60C0002FE00FF 9B100002FB00FF6F
+02E0: 1400EC010D00FF3F 0180040400000700 00004E1154625140 75657279446C4210
+0300: 6F781E00000100BD 0003FB00FF8F0180 11190008000E6304 4F75536561736F80
+0320: 6E596561723800E8 00020000D9010D00 FF7F0D6300020400 FFFF01
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				! DO NOT PUT INTO LIVE UNTIL DATA DENORMALISED
+				! WHEN MAKING THEN EXECUTABLE INTO STOCK CHANGE THE NAME TO RECVNPA.EXE
+				!
+				If strArgArray[0] = ''
+					Set SqlDatabase = 'STOCKDEV'
+					Set SqlUser = 'GRAHAM'
+					Set SqlPassword = 'GRAHAM'
+				Else
+					Set SqlDatabase = strArgArray[1]
+					Set SqlUser = strArgArray[2]
+					Set SqlPassword = strArgArray[3]
+				!
+				Set bShowSql = FALSE
+				Set bghSqlDetail = SqlConnect( hSqlDetail )
+				If bghSqlDetail
+					Call SqlSetIsolationLevel( hSqlDetail,'RL')
+					Call SqlSetLockTimeout( hSqlDetail,10 )
+				Set dtgRecvDate = SalDateCurrent(  )
+			On SAM_SqlError
+				Call SqlExtractArgs( wParam, lParam, hSqlError, nSqlError, nErrorPos )
+				! Going to comments the return false line and put in others to do error processing
+				! Return FALSE
+				Call SqlGetErrorText( nSqlError, sErrmsg )
+				Call SalNumberToStr( nSqlError, 0, sNum )
+				Call SalMessageBox( sNum || '-' || sErrmsg || '.
+						Choose OK to quit.', 'Receive Customer NPA', MB_Ok | MB_IconStop )
+				! Call SalQuit(  )
+				Return FALSE
+			On SAM_AppExit
+				If bghSqlDetail
+					Call SqlDisconnect( hSqlDetail )
+	Dialog Box: dlgInitialCustomer
+		Class:
+		Property Template:
+		Class DLL Name:
+		Title: Customer module
+		Accesories Enabled? No
+		Visible? Yes
+		Display Settings
+			Display Style? Default
+			Visible at Design time? No
+			Type of Dialog: Modal
+			Window Location and Size
+				Left:   1.875"
+				Top:    1.615"
+				Width:  5.463"
+				Width Editable? Yes
+				Height: 2.448"
+				Height Editable? Yes
+			Absolute Screen Location? Yes
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Dark Blue
+			Background Color: Gray
+		Description:
+		Tool Bar
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: Default
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Contents
+		Contents
+			Data Field: dfDatabase
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   2.775"
+						Top:    0.76"
+						Width:  1.625"
+						Width Editable? Yes
+						Height: 0.167"
+						Height Editable? Yes
+					Visible? Yes
+					Border? No
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Tms Rmn
+					Font Size: 8
+					Font Enhancement: Default
+					Text Color: Magenta
+					Background Color: Gray
+					Input Mask: Unformatted
+				Message Actions
+					On SAM_Create
+						If SqlDatabase = 'STOCKDEV'
+							Set dfDatabase = 'FLEMINGS PLAY SYSTEM'
+						Else
+							Set dfDatabase = ''
+					On PAM_DATAVAL
+						Return TRUE
+			Background Text: Please pretype any know details for a customer.
+				Resource Id: 33036
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   1.288"
+					Top:    0.115"
+					Width:  3.125"
+					Width Editable? Yes
+					Height: 0.469"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Center
+				Font Name: Utopia Black
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Blue
+				Background Color: Gray
+			Background Text: Cust No.
+				Resource Id: 33037
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   0.688"
+					Top:    0.781"
+					Width:  0.825"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Center
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Background Text: Customer Name
+				Resource Id: 33038
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   0.088"
+					Top:    1.031"
+					Width:  1.425"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Center
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Background Text: Bus. Name
+				Resource Id: 33039
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   0.288"
+					Top:    1.281"
+					Width:  1.225"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Center
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Data Field: dfCustNo
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: Number
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left:   1.588"
+						Top:    0.74"
+						Width:  1.025"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: #0
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Dark Blue
+					Background Color: White
+					Input Mask: Unformatted
+				Message Actions
+					On PAM_QBE
+						If NOT SalIsNull( hWndItem )
+							Call PushNumber( dfCustNo )
+							Call PushString( EQOPERAND )
+							Call PushString( NUMERICFOLLOWING )
+							Call PushString( 'CUSTOMER_MASTER.CUST_NO' )
+							Return TRUE
+			Data Field: dfCustName
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: 60
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left:   1.588"
+						Top:    0.99"
+						Width:  3.625"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Dark Blue
+					Background Color: White
+					Input Mask: Unformatted
+				Message Actions
+					On PAM_QBE
+						If NOT SalIsNull( hWndItem )
+							Set sQueryTmpStr = dfCustName
+							Call SalStrUpper( sQueryTmpStr, sQueryTmpStr )
+							Call MyStrReplace( sQueryTmpStr, '\'', '_' )
+							Set sQueryTmpStr = '%'||sQueryTmpStr||'%'
+							Call PushString( sQueryTmpStr )
+							Call PushString( LIKEOPERAND )
+							Call PushString( STRINGFOLLOWING )
+							Call PushString( '@UPPER(CUSTOMER_MASTER.CUST_NAME)' )
+							Return TRUE
+			Data Field: dfBusName
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: 60
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left:   1.588"
+						Top:    1.24"
+						Width:  3.625"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Dark Blue
+					Background Color: White
+					Input Mask: Unformatted
+				Message Actions
+					On PAM_QBE
+						If NOT SalIsNull( hWndItem )
+							Set sQueryTmpStr = dfBusName
+							Call SalStrUpper( sQueryTmpStr, sQueryTmpStr )
+							Call MyStrReplace( sQueryTmpStr, '\'', '_' )
+							Set sQueryTmpStr = '%'||sQueryTmpStr||'%'
+							Call PushString( sQueryTmpStr )
+							Call PushString( LIKEOPERAND )
+							Call PushString( STRINGFOLLOWING )
+							Call PushString( '@UPPER(CUSTOMER_MASTER.BUS_NAME)' )
+							Return TRUE
+			Pushbutton: pbOk
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: &OK - Enter
+				Window Location and Size
+					Left:   0.088"
+					Top:    1.74"
+					Width:  3.3"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: Enter
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call PushWndHdl( hWndForm )
+						Call PushNumber( PAM_QBE )
+						Call BuildWhereQBE(  )
+						If sBuildWhere = ' WHERE '
+							Set sBuildWhere = ''
+						Call SalEndDialog( hWndForm, TRUE )
+			Pushbutton: pbCancel
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: &Cancel - F12
+				Window Location and Size
+					Left:   3.888"
+					Top:    1.74"
+					Width:  1.3"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F12
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call SalEndDialog( hWndForm, FALSE )
+		Functions
+		Window Parameters
+		Window Variables
+			String: sQueryTmpStr
+		Message Actions
+	Form Window: frmQCust
+		Class:
+		Property Template:
+		Class DLL Name:
+		Title: Customer receipt of PRCs
+		Icon File:
+		Accesories Enabled? No
+		Visible? Yes
+		Display Settings
+			Display Style? Default
+			Visible at Design time? No
+			Automatically Created at Runtime? Yes
+			Initial State: Maximized
+			Maximizable? Yes
+			Minimizable? Yes
+			System Menu? Yes
+			Resizable? Yes
+			Window Location and Size
+				Left:   0.0"
+				Top:    0.0"
+				Width:  10.013"
+				Width Editable? Yes
+				Height: 5.958"
+				Height Editable? Yes
+			Form Size
+				Width:  Default
+				Height: Default
+				Number of Pages: Dynamic
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Gray
+		Description:
+		Named Menus
+		Menu
+			Popup Menu: &File
+				Resource Id: 33040
+				Enabled when:
+				Status Text:
+				Menu Item Name:
+				Menu Item: E&xit
+					Resource Id: 33041
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: bShowQueryOk = FALSE
+						Checked when:
+					Menu Actions
+						Call SalSendMsg( pbExit, SAM_Click, 0, 0 )
+					Menu Item Name:
+				Menu Item: &Help
+					Resource Id: 33042
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendMsg( pbHelp, SAM_Click, 0, 0 )
+					Menu Item Name:
+				Menu Item: A&bout...
+					Resource Id: 33043
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalModalDialog( dlgAbout, hWndForm )
+					Menu Item Name:
+			Popup Menu: &Information
+				Resource Id: 33044
+				Enabled when:
+				Status Text:
+				Menu Item Name:
+				Menu Item: &Query 
+					Resource Id: 33045
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: bShowQueryOk = FALSE
+						Checked when:
+					Menu Actions
+						Call SalSendMsg( pbQuery, SAM_Click, 0, 0 )
+					Menu Item Name:
+				Menu Item: &Ok Query 
+					Resource Id: 33046
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: bShowQueryOk = TRUE
+						Checked when:
+					Menu Actions
+						Call SalSendMsg( pbQueryOk, SAM_Click, 0, 0 )
+					Menu Item Name:
+				Menu Separator
+				Menu Item: Force Lookin Current Orders File
+					Resource Id: 58844
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when:
+						Checked when: bForceCurrentOrderFile
+					Menu Actions
+						If bForceCurrentOrderFile
+							Set bForceCurrentOrderFile = FALSE
+						Else
+							Set bForceCurrentOrderFile = TRUE
+					Menu Item Name:
+			Popup Menu: F&urther
+				Resource Id: 33047
+				Enabled when:
+				Status Text:
+				Menu Item Name:
+				Menu Item: &Receive PRCs
+					Resource Id: 33048
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: bShowQueryOk = FALSE
+						Checked when:
+					Menu Actions
+						Call SalSendMsg( pbReceivePRC, SAM_Click, 0, 0 )
+					Menu Item Name:
+		Tool Bar
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: Default
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Contents
+		Contents
+			Background Text: Season
+				Resource Id: 45294
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   7.813"
+					Top:    0.094"
+					Width:  0.663"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Right
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Blue
+				Background Color: Gray
+			Custom Control: cSeasonYear
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: cOurSeasonYear
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   8.525"
+						Top:    0.042"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+					On PAM_SETINSTANCEVARS
+						Set cSeasonYear.bEditable = TRUE
+			Data Field: dfDatabase
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   2.6"
+						Top:    0.073"
+						Width:  1.625"
+						Width Editable? Yes
+						Height: 0.167"
+						Height Editable? Yes
+					Visible? Yes
+					Border? No
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Tms Rmn
+					Font Size: 8
+					Font Enhancement: Default
+					Text Color: Magenta
+					Background Color: Gray
+					Input Mask: Unformatted
+				Message Actions
+					On SAM_Create
+						If SqlDatabase = 'STOCKDEV'
+							Set dfDatabase = 'FLEMINGS PLAY SYSTEM'
+						Else
+							Set dfDatabase = ''
+					On PAM_DATAVAL
+						Return TRUE
+			Data Field: dfCurrDate
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: Date/Time
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   0.075"
+						Top:    0.052"
+						Width:  2.325"
+						Width Editable? Yes
+						Height: 0.167"
+						Height Editable? Yes
+					Visible? Yes
+					Border? No
+					Justify: Left
+					Format: dd-MMM-yyyy hh:mm:ss AMPM
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Italic
+					Text Color: Dark Blue
+					Background Color: Gray
+					Input Mask: Unformatted
+				Message Actions
+			Frame
+				Resource Id: 33049
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   0.113"
+					Top:    4.646"
+					Width:  9.4"
+					Width Editable? Yes
+					Height: 0.719"
+					Height Editable? Yes
+				Visible? Yes
+				Corners: Square
+				Border Style: Solid
+				Border Thickness: 1
+				Border Color: Default
+				Background Color: Dark Gray
+			Child Table: tblQCust
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left:   0.113"
+						Top:    0.323"
+						Width:  9.388"
+						Width Editable? Yes
+						Height: 4.323"
+						Height Editable? Yes
+					Visible? Yes
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Dark Blue
+					Background Color: Sky
+					View: Table
+					Allow Row Sizing? No
+					Lines Per Row: Default
+				Memory Settings
+					Maximum Rows in Memory: Default
+					Discardable? Yes
+				Contents
+					Column: colWhere
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? No
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: String
+						Justify: Left
+						Width:  1.2"
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_WHEREPOPULATE
+								Set sBuildWhere = sInitialWhere
+					Column: colCustNo
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title: Cust No
+						Visible? Yes
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: Number
+						Justify: Center
+						Width:  0.85"
+						Width Editable? Yes
+						Format: #0
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_SQL
+								Call BuildSQL( wParam, hWndItem, 'CUSTOMER_MASTER.CUST_NO' )
+							On PAM_QBE
+								If NOT SalIsNull( hWndItem )
+									Call PushNumber( colCustNo )
+									Call PushString( EQOPERAND )
+									Call PushString( NUMERICFOLLOWING )
+									Call PushString( 'CUSTOMER_MASTER.CUST_NO' )
+									Return TRUE
+							On SAM_Click
+								Call SalPostMsg( hWndItem, PAM_EDITCHECK, 0, 0 )
+							On PAM_EDITCHECK
+								If NOT SalTblQueryRowFlags( hWndForm, SalTblQueryContext( hWndForm ), ROW_New )
+									Call SalTblKillEdit( hWndForm )
+					Column: colCustName
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title: Customer Name
+						Visible? Yes
+						Editable? Yes
+						Maximum Data Length: 60
+						Data Type: String
+						Justify: Left
+						Width:  4.188"
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_SQL
+								Call BuildSQL( wParam, hWndItem, 'CUSTOMER_MASTER.CUST_NAME' )
+							On PAM_QBE
+								If NOT SalIsNull( hWndItem )
+									Set sQueryTmpStr = colCustName
+									Call SalStrUpper( sQueryTmpStr, sQueryTmpStr )
+									Call MyStrReplace( sQueryTmpStr, '\'', '_' )
+									Set sQueryTmpStr = '%'||sQueryTmpStr||'%'
+									Call PushString( sQueryTmpStr )
+									Call PushString( LIKEOPERAND )
+									Call PushString( STRINGFOLLOWING )
+									Call PushString( '@UPPER(CUSTOMER_MASTER.CUST_NAME)' )
+									Return TRUE
+							On SAM_Click
+								Call SalPostMsg( hWndItem, PAM_EDITCHECK, 0, 0 )
+							On PAM_EDITCHECK
+								If NOT SalTblQueryRowFlags( hWndForm, SalTblQueryContext( hWndForm ), ROW_New )
+									Call SalTblKillEdit( hWndForm )
+					Column: colBusName
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title: Business Name
+						Visible? Yes
+						Editable? Yes
+						Maximum Data Length: 60
+						Data Type: String
+						Justify: Left
+						Width:  3.925"
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_SQL
+								Call BuildSQL( wParam, hWndItem, 'CUSTOMER_MASTER.BUS_NAME' )
+							On PAM_QBE
+								If NOT SalIsNull( hWndItem )
+									Set sQueryTmpStr = colBusName
+									Call SalStrUpper( sQueryTmpStr, sQueryTmpStr )
+									Call MyStrReplace( sQueryTmpStr, '\'', '_' )
+									Set sQueryTmpStr = '%'||sQueryTmpStr||'%'
+									Call PushString( sQueryTmpStr )
+									Call PushString( LIKEOPERAND )
+									Call PushString( STRINGFOLLOWING )
+									Call PushString( '@UPPER(CUSTOMER_MASTER.BUS_NAME)' )
+									Return TRUE
+							On SAM_Click
+								Call SalPostMsg( hWndItem, PAM_EDITCHECK, 0, 0 )
+							On PAM_EDITCHECK
+								If NOT SalTblQueryRowFlags( hWndForm, SalTblQueryContext( hWndForm ), ROW_New )
+									Call SalTblKillEdit( hWndForm )
+				Functions
+				Window Variables
+					Sql Handle: hLocalSqlPopTbl
+					Boolean: bLocalSqlPopTbl
+					String: sSQLTABLEPOPNAME
+					String: sORDERBY
+					String: sInitialWhere
+					String: sQueryTmpStr
+					String: sCurrentBuildWhere
+				Message Actions
+					On PAM_POPULATE
+						Set sInitialWhere = sBuildWhere
+						Call TablePopulate( hWndForm, hLocalSqlPopTbl, colWhere, nSELECT, sSQLTABLEPOPNAME, sORDERBY, sCurrentBuildWhere, TRUE, TBL_FillNormal, PAM_SQL )
+					On PAM_REPOPULATE
+						Call TableRePopulate( hWndForm, hLocalSqlPopTbl, nSELECT, sSQLTABLEPOPNAME, sCurrentBuildWhere, TRUE, TBL_FillNormal, PAM_SQL )
+					On PAM_SEARCH
+						Call TableSearch( hWndForm, hLocalSqlPopTbl, nSELECT, sSQLTABLEPOPNAME, sORDERBY, sCurrentBuildWhere, TRUE, TBL_FillNormal, PAM_SQL )
+					On PAM_RESET
+						Call TableReset( hWndForm, colCustNo )
+					On PAM_NOROWS
+						Call SalMessageBox( 'No rows were found', 'Customer & Address Query', MB_Ok )
+					On SAM_Create
+						Set bLocalSqlPopTbl = SqlConnect( hLocalSqlPopTbl ) 
+						If bLocalSqlPopTbl
+							Call SqlSetLockTimeout( hLocalSqlPopTbl, 10 )
+							Call SqlSetParameter( hLocalSqlPopTbl, DBP_PRESERVE, TRUE, ''  )
+						Else
+							Call SalMessageBox( 'Connection in Database Error, could not obtain handle!', 'Error', MB_Ok )
+							Return FALSE
+						Set sInitialWhere = ''
+						Set sSQLTABLEPOPNAME = ' CUSTOMER_MASTER '
+						Set sORDERBY = ' ORDER BY CUST_NAME, BUS_NAME '
+					On SAM_Destroy
+						If bLocalSqlPopTbl
+							Call SqlDisconnect( hLocalSqlPopTbl )
+			Pushbutton: pbItemEnq
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Item Enquiry
+				Window Location and Size
+					Left:   0.225"
+					Top:    4.698"
+					Width:  1.5"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F11
+				Font Name: MS Serif
+				Font Size: 14
+				Font Enhancement: Bold-Underline
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call ItemEnquiry(  )
+					On PAM_QUERYDISABLE
+						If wParam
+							Call SalDisableWindow( hWndItem )
+						Else
+							Call SalEnableWindow( hWndItem )
+			Pushbutton: pbReceivePRC
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: &Received PRCs from -  F10
+				Window Location and Size
+					Left:   1.913"
+					Top:    4.708"
+					Width:  3.25"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F10
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						If NOT SalTblAnyRows( tblQCust, ROW_Selected, 0 )
+							Call SalMessageBox( 'No Customer selected', 'Query Customer', MB_Ok )
+							Return FALSE
+						Call SalWaitCursor( TRUE )
+						! Set bNoPRCRequired = TRUE
+						Set nRow = TBL_MinRow
+						! While SalTblFindNextRow( tblQCust, nRow, ROW_Selected, 0 )
+							     Call SalTblFetchRow( tblQCust, nRow )
+							     Set sSqlExists = 'SELECT Customer_Type.NPA_Required 
+									FROM Customer_Master, Customer_Type 
+									WHERE Customer_Master.Cust_No = :frmQCust.tblQCust.colCustNo AND 
+									  Customer_Master.Customer_Type = Customer_Type.Cust_Type AND
+									  Customer_Type.NPA_Required = \'Y\''
+							     If SqlExists( sSqlExists, bExists )
+								     If NOT bExists
+									     Call SalTblSetRowFlags( tblQCust, nRow, ROW_Selected, FALSE )
+									     Set bNoNPARequired = TRUE
+						If NOT SalTblAnyRows( tblQCust, ROW_Selected, 0 )
+							Call SalMessageBox( 'You are required to select a Customer!', 'Query Customer', MB_Ok )
+							Call SalWaitCursor( FALSE )
+							Return FALSE
+						! If bNoNPARequired
+							     Call SalMessageBox( ' One or More of your selected customers were flagged as NOT Requiring NPAs.  These will not appear in the Receive NPAs table when your moving between selected customers with PREVIOUS / NEXT buttons.', 'Warning', MB_Ok )
+						!
+						Set nRow = TBL_MinRow
+						Call SalTblFindNextRow( tblQCust, nRow, ROW_Selected, 0 )
+						Call SalTblFetchRow( tblQCust, nRow )
+						!
+						Call PushWndHdl ( tblQCust )
+						Call PushWndHdl ( hWndItem )
+						Call SalSendMsg( hWndItem, PAM_SENDDATATOCHILD, 0, 0 )
+						Call SalDisableWindow ( hWndItem ) 
+						Set hWndCalled = SalCreateWindow( frmReceivePRCs, hWndForm )
+					On PAM_SENDDATATOCHILD
+						Call PushNumber( frmQCust.tblQCust.colCustNo )
+						Call PushString( frmQCust.tblQCust.colCustName )
+						Return TRUE
+					On PAM_ENABLE
+						Call SalEnableWindow( hWndItem )
+						Call SalWaitCursor( FALSE )
+					On PAM_QUERYDISABLE
+						If wParam
+							Call SalDisableWindow( hWndItem )
+						Else
+							Call SalEnableWindow( hWndItem )
+			Pushbutton: pbClear
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: &Clear Selection
+				Window Location and Size
+					Left:   5.313"
+					Top:    4.708"
+					Width:  1.4"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F3
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call ClearSelections( tblQCust )
+					On PAM_QUERYDISABLE
+						If wParam
+							Call SalDisableWindow( hWndItem )
+						Else
+							Call SalEnableWindow( hWndItem )
+			Pushbutton: pbQueryOk
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: O&K Query
+				Window Location and Size
+					Left:   0.225"
+					Top:    5.021"
+					Width:  1.1"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: (none)
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call SalWaitCursor( TRUE )
+						Call SalSendMsg( tblQCust, PAM_SEARCH, 0, 0 )
+						Call SalHideWindow( hWndItem )
+						Call SalSendMsg( pbQuery, PAM_ENABLE, 0, 0 )
+						Call SalWaitCursor( FALSE )
+					On PAM_ENABLE
+						Call SalShowWindow( hWndItem )
+					On SAM_Create
+						Call SalHideWindow( hWndItem )
+			Pushbutton: pbQuery
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: &Query - F7
+				Window Location and Size
+					Left:   0.225"
+					Top:    5.021"
+					Width:  1.1"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F7
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call SalWaitCursor( TRUE )
+						Call SalHideWindow( hWndItem )
+						Call SalSendMsgToChildren( hWndForm, PAM_QUERYDISABLE, TRUE, 0 )
+						Call SalSendMsg( pbQueryOk, PAM_ENABLE, 0, 0 )
+						Call SalSendMsg( tblQCust, PAM_RESET, 0, 0 )
+						Set bShowQueryOk = TRUE
+						Call SalWaitCursor( FALSE )
+					On PAM_ENABLE
+						Call SalWaitCursor( TRUE )
+						Call SalShowWindow( hWndItem )
+						Set bShowQueryOk = FALSE
+						Call SalSendMsgToChildren( hWndForm, PAM_QUERYDISABLE, FALSE, 0 )
+						Call SalWaitCursor( FALSE )
+			Pushbutton: pbExit
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: E&xit - F12
+				Window Location and Size
+					Left:   8.275"
+					Top:    5.01"
+					Width:  1.0"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F12
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click 
+						Call SalDestroyWindow( hWndForm )
+					On PAM_QUERYDISABLE
+						If wParam
+							Call SalDisableWindow( hWndItem )
+						Else
+							Call SalEnableWindow( hWndItem )
+			Pushbutton: pbHelp
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title:
+				Window Location and Size
+					Left:   0.188"
+					Top:    3.156"
+					Width:  1.2"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? No
+				Keyboard Accelerator: F1
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call ActivateHelp ( sHelpFileName )
+		Functions
+		Window Parameters
+		Window Variables
+			Window Handle: hWndCalled
+			Boolean: bShowQueryOk
+			Boolean: bNoPRCRequired
+			String: sHelpFileName
+			Boolean: bExists
+			String: sSqlExists
+			Number: nRow
+		Message Actions
+			On SAM_Create
+				Set sHelpFileName = 'f:\\apps\\gupta\\stock\\qcustnpa.hlp'
+				Call SalPostMsg( hWndForm,PAM_CREATECOMPLETE,0,0 )
+			On SAM_Destroy
+				Call SalSendMsg( hWndCallProg, PAM_ENABLE,0,0 )
+			On SAM_Activate
+				Return SalSendMsgToChildren( hWndForm, PAM_ACTIVATE, wParam, lParam )
+			On PAM_CREATECOMPLETE
+				Set dfCurrDate = SalDateCurrent(  )
+				If SalModalDialog( dlgInitialCustomer, hWndForm )
+					Call SalSendMsg( tblQCust, PAM_POPULATE, 0, 0 )
+				Else
+					Call SalDestroyWindow( hWndForm )
+	Form Window: frmReceivePRCs
+		Class:
+		Property Template:
+		Class DLL Name:
+		Title: Receive PRCs
+		Icon File:
+		Accesories Enabled? No
+		Visible? Yes
+		Display Settings
+			Display Style? Default
+			Visible at Design time? No
+			Automatically Created at Runtime? No
+			Initial State: Maximized
+			Maximizable? Yes
+			Minimizable? Yes
+			System Menu? Yes
+			Resizable? Yes
+			Window Location and Size
+				Left:   0.0"
+				Top:    0.0"
+				Width:  10.013"
+				Width Editable? Yes
+				Height: 5.958"
+				Height Editable? Yes
+			Form Size
+				Width:  Default
+				Height: Default
+				Number of Pages: Dynamic
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Gray
+		Description:
+		Named Menus
+		Menu
+			Popup Menu: &File
+				Resource Id: 33050
+				Enabled when:
+				Status Text:
+				Menu Item Name:
+				Menu Item: E&xit
+					Resource Id: 33051
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: bShowQueryOk = FALSE
+						Checked when:
+					Menu Actions
+						Call SalSendMsg( hWndForm.pbExit, SAM_Click, 0, 0 )
+					Menu Item Name:
+				Menu Item: &Help
+					Resource Id: 33052
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalSendMsg( hWndForm.pbHelp, SAM_Click, 0, 0 )
+					Menu Item Name:
+				Menu Item: A&bout...
+					Resource Id: 33053
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalModalDialog( dlgAbout, hWndForm )
+					Menu Item Name:
+			Popup Menu: &Information
+				Resource Id: 33054
+				Enabled when:
+				Status Text:
+				Menu Item Name:
+				Menu Item: &Query 
+					Resource Id: 33055
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: bShowQueryOk = FALSE
+						Checked when:
+					Menu Actions
+						Call SalSendMsg( hWndForm.pbQuery, SAM_Click, 0, 0 )
+					Menu Item Name:
+				Menu Item: &Ok Query 
+					Resource Id: 33056
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: bShowQueryOk = TRUE
+						Checked when:
+					Menu Actions
+						Call SalSendMsg( hWndForm.pbQueryOk, SAM_Click, 0, 0 )
+					Menu Item Name:
+				Menu Separator
+				Menu Item: Force Lookin Current Orders File
+					Resource Id: 58843
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when:
+						Checked when: bForceCurrentOrderFile
+					Menu Actions
+						If bForceCurrentOrderFile
+							Set bForceCurrentOrderFile = FALSE
+						Else
+							Set bForceCurrentOrderFile = TRUE
+					Menu Item Name:
+			Popup Menu: F&urther
+				Resource Id: 33057
+				Enabled when:
+				Status Text:
+				Menu Item Name:
+				Menu Item: &Next
+					Resource Id: 33058
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: bNextPbEnabled AND bShowQueryOk = FALSE
+						Checked when:
+					Menu Actions
+						Call SalSendMsg( hWndForm.pbNext, SAM_Click, 0, 0 )
+					Menu Item Name:
+				Menu Item: &Prev
+					Resource Id: 33059
+					Keyboard Accelerator: (none)
+					Status Text:
+					Menu Settings
+						Enabled when: bPrevPbEnabled AND bShowQueryOk = FALSE
+						Checked when:
+					Menu Actions
+						Call SalSendMsg( hWndForm.pbPrev, SAM_Click, 0, 0 )
+					Menu Item Name:
+		Tool Bar
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: Default
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Contents
+		Contents
+			Background Text: Season
+				Resource Id: 45295
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   7.888"
+					Top:    0.365"
+					Width:  0.663"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Right
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Blue
+				Background Color: Gray
+			Custom Control: cSeasonYear
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: cOurSeasonYear
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   8.6"
+						Top:    0.313"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+					On PAM_SETINSTANCEVARS
+						Set cSeasonYear.bEditable = TRUE
+					On PAM_VALIDATE
+						Set dfCurrYr = cSeasonYear.GetSeasonYear( )
+			Data Field: dfDatabase
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   0.088"
+						Top:    0.115"
+						Width:  1.625"
+						Width Editable? Yes
+						Height: 0.167"
+						Height Editable? Yes
+					Visible? Yes
+					Border? No
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Tms Rmn
+					Font Size: 8
+					Font Enhancement: Default
+					Text Color: Magenta
+					Background Color: Gray
+					Input Mask: Unformatted
+				Message Actions
+					On SAM_Create
+						If SqlDatabase = 'STOCKDEV'
+							Set dfDatabase = 'FLEMINGS PLAY SYSTEM'
+						Else
+							Set dfDatabase = ''
+					On PAM_DATAVAL
+						Return TRUE
+			Background Text: Customer Orders that require PRCs only.
+				Resource Id: 33060
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   3.5"
+					Top:    0.031"
+					Width:  3.025"
+					Width Editable? Yes
+					Height: 0.5"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Center
+				Font Name: Arial
+				Font Size: 16
+				Font Enhancement: Italic-Underline
+				Text Color: Blue
+				Background Color: Gray
+			Data Field: dfCurrDate
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: Date/Time
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   7.25"
+						Top:    0.042"
+						Width:  2.325"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? No
+					Justify: Left
+					Format: dd-MMM-yyyy hh:mm:ss AMPM
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Italic
+					Text Color: Dark Blue
+					Background Color: Gray
+					Input Mask: Unformatted
+				Message Actions
+			Data Field: dfCurrYr
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: Number
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   Default
+						Top:    Default
+						Width:  Default
+						Width Editable? Yes
+						Height: Default
+						Height Editable? Yes
+					Visible? No
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+				Message Actions
+			Data Field: dfCustNo
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: Number
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   Default
+						Top:    Default
+						Width:  Default
+						Width Editable? Yes
+						Height: Default
+						Height Editable? Yes
+					Visible? No
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+				Message Actions
+			Background Text: Customer Name
+				Resource Id: 33061
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   1.538"
+					Top:    0.656"
+					Width:  1.525"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Center
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Data Field: dfCustName
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: 40
+					Data Type: String
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   3.138"
+						Top:    0.615"
+						Width:  4.025"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Uppercase
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Dark Blue
+					Background Color: White
+					Input Mask: Unformatted
+				Message Actions
+			Data Field: dfContract
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   3.138"
+						Top:    0.615"
+						Width:  4.025"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? No
+					Border? Yes
+					Justify: Left
+					Format: Uppercase
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Dark Blue
+					Background Color: White
+					Input Mask: Unformatted
+				Message Actions
+			Child Table: tblOrders
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left:   0.038"
+						Top:    0.927"
+						Width:  9.563"
+						Width Editable? Yes
+						Height: 3.625"
+						Height Editable? Yes
+					Visible? Yes
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Dark Blue
+					Background Color: Sky
+					View: Table
+					Allow Row Sizing? No
+					Lines Per Row: Default
+				Memory Settings
+					Maximum Rows in Memory: Default
+					Discardable? Yes
+				Contents
+					Column: colWhere
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? No
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: String
+						Justify: Left
+						Width:  1.2"
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_WHEREPOPULATE
+								If frmReceivePRCs.dfCurrYr < WhichSeasonYear( SalDateCurrent(  ) ) AND frmReceivePRCs.dfCurrYr != 77 AND NOT bForceCurrentOrderFile
+									Set sBuildWhere = 
+											" WHERE CUST_ORDER_HISTORY.CUST_NO = :frmReceivePRCs.dfCustNo AND
+											 CUST_ORDER_HISTORY.YEAR_OF_SALE = :frmReceivePRCs.dfCurrYr AND 
+											 CUST_ORDER_HISTORY.STOCK_ITEM_NO = STOCK_ITEM.ITEM_NO AND 
+											stock_item.Prod_Royalty = 'Y' and
+											sale_cat not in ('FR', 'RP', 'FC', 'TT') "
+								Else
+									Set sBuildWhere = " WHERE CUSTOMER_ORDER.CUST_NO = :frmReceivePRCs.dfCustNo AND
+											 CUSTOMER_ORDER.YEAR_OF_SALE = :frmReceivePRCs.dfCurrYr AND 
+											 CUSTOMER_ORDER.STOCK_ITEM_NO = STOCK_ITEM.ITEM_NO 
+											AND Stock_item.Prod_Royalty = 'Y' and
+											sale_cat not in ('FR', 'RP', 'FC', 'TT')"
+							On PAM_QBE
+								If frmReceivePRCs.dfCurrYr < WhichSeasonYear( SalDateCurrent(  ) ) AND frmReceivePRCs.dfCurrYr != 77 AND NOT bForceCurrentOrderFile
+									Call PushString( NOTHINGFOLLOWING )
+									Call PushString( ' CUST_ORDER_HISTORY.CUST_NO = :frmReceivePRCs.dfCustNo AND
+											 CUST_ORDER_HISTORY.YEAR_OF_SALE = :frmReceivePRCs.dfCurrYr AND 
+											 CUST_ORDER_HISTORY.STOCK_ITEM_NO = STOCK_ITEM.ITEM_NO' )
+								Else
+									Call PushString( NOTHINGFOLLOWING )
+									Call PushString( ' CUSTOMER_ORDER.CUST_NO = :frmReceivePRCs.dfCustNo AND
+											 CUSTOMER_ORDER.YEAR_OF_SALE = :frmReceivePRCs.dfCurrYr AND 
+											 CUSTOMER_ORDER.STOCK_ITEM_NO = STOCK_ITEM.ITEM_NO' )
+								Return TRUE
+							On PAM_DATAVAL
+								Return TRUE
+							On PAM_CHECKROWNEW
+								Return TRUE
+							On PAM_CHECKROWEDITED
+								Return TRUE
+							On PAM_CHECKROWDELETED
+								Return TRUE
+					Column: colCustNo
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? No
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: Number
+						Justify: Left
+						Width:  1.2"
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_SQL
+								Call BuildSQL( wParam, hWndItem, 'CUST_NO' )
+							On PAM_RENEWROWID
+								Call PushNumber( colCustNo )
+								Call PushString( EQOPERAND )
+								Call PushString( NUMERICFOLLOWING )
+								Call PushString( 'CUST_NO' )
+								Return TRUE
+							On PAM_DATAVAL
+								Return TRUE
+							On PAM_CHECKROWNEW
+								Return TRUE
+							On PAM_CHECKROWEDITED
+								Return TRUE
+							On PAM_CHECKROWDELETED
+								Return TRUE
+					Column: colOrderDateTime
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? No
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: Date/Time
+						Justify: Left
+						Width:  1.2"
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_SQL
+								Call BuildSQL( wParam, hWndItem, 'ORDER_DATE_TIME' )
+							On PAM_RENEWROWID
+								Call PushDateTime( colOrderDateTime )
+								Call PushString( EQOPERAND )
+								Call PushString( DATETIMEFOLLOWING )
+								Call PushString( 'ORDER_DATE_TIME' )
+								Return TRUE
+							On PAM_DATAVAL
+								Return TRUE
+							On PAM_CHECKROWNEW
+								Return TRUE
+							On PAM_CHECKROWEDITED
+								Return TRUE
+							On PAM_CHECKROWDELETED
+								Return TRUE
+					Column: colYr
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title: Yr
+						Visible? Yes
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: Number
+						Justify: Center
+						Width:  0.538"
+						Width Editable? Yes
+						Format: #0
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_SQL
+								Call BuildSQL( wParam, hWndItem, 'YEAR_OF_SALE' )
+							On PAM_QBE
+								If NOT SalIsNull( hWndItem )
+									Call PushNumber( colYr )
+									Call PushString( EQOPERAND )
+									Call PushString( NUMERICFOLLOWING )
+									Call PushString( 'YEAR_OF_SALE' )
+									Return TRUE
+							On PAM_DATAVAL
+								Return TRUE
+							On PAM_CHECKROWNEW
+								Return TRUE
+							On PAM_CHECKROWEDITED
+								Return TRUE
+							On PAM_CHECKROWDELETED
+								Return TRUE
+							On SAM_Click
+								Call SalPostMsg( hWndItem, PAM_EDITCHECK, 0, 0 )
+							On PAM_EDITCHECK
+								If NOT SalTblQueryRowFlags( hWndForm, SalTblQueryContext( hWndForm ), ROW_New )
+									Call SalTblKillEdit( hWndForm )
+					Column: colTreeTypeDesc
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title: Type Desc.
+						Visible? Yes
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: String
+						Justify: Left
+						Width:  1.063"
+						Width Editable? Yes
+						Format: Uppercase
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_SQL
+								Call BuildSQL( wParam, hWndItem, 'STOCK_ITEM.TREE_TYPE_DESC' )
+							On PAM_QBE
+								If NOT SalIsNull( hWndItem )
+									Set sQueryTmpStr = colTreeTypeDesc||'%'
+									Call PushString( sQueryTmpStr )
+									Call PushString( LIKEOPERAND )
+									Call PushString( STRINGFOLLOWING )
+									Call PushString( 'STOCK_ITEM.TREE_TYPE_DESC' )
+									Return TRUE
+							On PAM_DATAVAL
+								Return TRUE
+							On PAM_CHECKROWNEW
+								Return TRUE
+							On PAM_CHECKROWEDITED
+								Return TRUE
+							On PAM_CHECKROWDELETED
+								Return TRUE
+							On SAM_Click
+								Call SalPostMsg( hWndItem, PAM_EDITCHECK, 0, 0 )
+							On PAM_EDITCHECK
+								If NOT SalTblQueryRowFlags( hWndForm, SalTblQueryContext( hWndForm ), ROW_New )
+									Call SalTblKillEdit( hWndForm )
+					Column: colCultId
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? No
+						Editable? No
+						Maximum Data Length: 8
+						Data Type: String
+						Justify: Left
+						Width:  1.2"
+						Width Editable? Yes
+						Format: Uppercase
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_SQL
+								Call BuildSQL( wParam, hWndItem, 'STOCK_ITEM.CULTIVAR_ID' )
+							On PAM_DATAVAL
+								Return TRUE
+							On PAM_CHECKROWNEW
+								Return TRUE
+							On PAM_CHECKROWEDITED
+								Return TRUE
+							On PAM_CHECKROWDELETED
+								Return TRUE
+					Column: colCultDesc
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title: Cultivar Description
+						Visible? Yes
+						Editable? No
+						Maximum Data Length: 60
+						Data Type: String
+						Justify: Left
+						Width:  3.0"
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_DATAVAL
+								Return TRUE
+							On PAM_SQL
+								Call BuildSQL( wParam, hWndItem, 'STOCK_ITEM.CULT_DESC' )
+							On PAM_CHECKROWNEW
+								Return TRUE
+							On PAM_CHECKROWEDITED
+								Return TRUE
+							On PAM_CHECKROWDELETED
+								Return TRUE
+					! Column: colVarietyType
+.winattr
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Yes
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: String
+						Justify: Left
+						Width:  1.2"
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+.end
+						      List Values 
+						      Message Actions 
+					Column: colRootDesc
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title: Rootstock
+						Visible? Yes
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: String
+						Justify: Left
+						Width:  1.363"
+						Width Editable? Yes
+						Format: Uppercase
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_SQL
+								Call BuildSQL( wParam, hWndItem, 'STOCK_ITEM.ROOT_DESC' )
+							On PAM_QBE
+								If NOT SalIsNull( hWndItem )
+									Set sQueryTmpStr =colRootDesc||'%'
+									Call PushString( sQueryTmpStr )
+									Call PushString( LIKEOPERAND )
+									Call PushString( STRINGFOLLOWING )
+									Call PushString( 'STOCK_ITEM.ROOT_DESC' )
+									Return TRUE
+							On PAM_DATAVAL
+								Return TRUE
+							On PAM_CHECKROWNEW
+								Return TRUE
+							On PAM_CHECKROWEDITED
+								Return TRUE
+							On PAM_CHECKROWDELETED
+								Return TRUE
+							On SAM_Click
+								Call SalPostMsg( hWndItem, PAM_EDITCHECK, 0, 0 )
+							On PAM_EDITCHECK
+								If NOT SalTblQueryRowFlags( hWndForm, SalTblQueryContext( hWndForm ), ROW_New )
+									Call SalTblKillEdit( hWndForm )
+					Column: colConfAmt
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title: Amt
+						Visible? Yes
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: Number
+						Justify: Center
+						Width:  0.65"
+						Width Editable? Yes
+						Format: #0
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_SQL
+								Call BuildSQL( wParam, hWndItem, 'CONF_AMT' )
+							On PAM_QBE
+								If NOT SalIsNull( hWndItem )
+									Call PushNumber( colConfAmt )
+									Call PushString( EQOPERAND )
+									Call PushString( NUMERICFOLLOWING )
+									Call PushString( 'CONF_AMT' )
+									Return TRUE
+							On PAM_DATAVAL
+								Return TRUE
+							On PAM_CHECKROWNEW
+								Return TRUE
+							On PAM_CHECKROWEDITED
+								Return TRUE
+							On PAM_CHECKROWDELETED
+								Return TRUE
+							On SAM_Click
+								Call SalPostMsg( hWndItem, PAM_EDITCHECK, 0, 0 )
+							On PAM_EDITCHECK
+								If NOT SalTblQueryRowFlags( hWndForm, SalTblQueryContext( hWndForm ), ROW_New )
+									Call SalTblKillEdit( hWndForm )
+					Column: colPRCSentFlag
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title: Snt
+						Visible? Yes
+						Editable? Yes
+						Maximum Data Length: 1
+						Data Type: String
+						Justify: Center
+						Width:  0.388"
+						Width Editable? Yes
+						Format: Uppercase
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_SQL
+								Call BuildSQL( wParam, hWndItem, 'PRC_SENT_FLAG' )
+							On PAM_QBE
+								If NOT SalIsNull( hWndItem )
+									Set sQueryTmpStr = colPRCSentFlag||'%'
+									Call PushString( sQueryTmpStr )
+									Call PushString( LIKEOPERAND )
+									Call PushString( STRINGFOLLOWING )
+									Call PushString( 'PRC_SENT_FLAG' )
+									Return TRUE
+							On PAM_DATAVAL
+								Return TRUE
+							On PAM_CHECKROWNEW
+								Return TRUE
+							On PAM_CHECKROWEDITED
+								Return TRUE
+							On PAM_CHECKROWDELETED
+								Return TRUE
+							On SAM_Click
+								Call SalPostMsg( hWndItem, PAM_EDITCHECK, 0, 0 )
+							On PAM_EDITCHECK
+								If NOT SalTblQueryRowFlags( hWndForm, SalTblQueryContext( hWndForm ), ROW_New )
+									Call SalTblKillEdit( hWndForm )
+					Column: colPRCSentDate
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title: Sent Date
+						Visible? Yes
+						Editable? No
+						Maximum Data Length: Default
+						Data Type: Date/Time
+						Justify: Left
+						Width:  1.138"
+						Width Editable? Yes
+						Format: dd-MMM-yyyy
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_SQL
+								Call BuildSQL( wParam, hWndItem, 'PRC_SENT_DATE' )
+							On PAM_DATAVAL
+								Return TRUE
+							On PAM_CHECKROWNEW
+								Return TRUE
+							On PAM_CHECKROWEDITED
+								Return TRUE
+							On PAM_CHECKROWDELETED
+								Return TRUE
+					Column: colPRCReturnedDate
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title: Return Date
+						Visible? Yes
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: Date/Time
+						Justify: Left
+						Width:  1.213"
+						Width Editable? Yes
+						Format: dd-MMM-yyyy
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_SQL
+								Call BuildSQL( wParam, hWndItem, 'PRC_RECD_DATE' )
+							On PAM_UPDATE
+								Call SalSetFieldEdit( hWndItem, TRUE )
+								Call BuildSQL( wParam, hWndItem, 'PRC_RECD_DATE' )
+							On PAM_DATAVAL
+								Return TRUE
+							On PAM_CHECKROWNEW
+								Return TRUE
+							On PAM_CHECKROWEDITED
+								Return TRUE
+							On PAM_CHECKROWDELETED
+								Return TRUE
+							On SAM_Click
+								Call SalPostMsg( hWndItem, PAM_EDITCHECK, 0, 0 )
+							On PAM_EDITCHECK
+								If SalTblQueryRowFlags( hWndForm, SalTblQueryContext( hWndForm ), ROW_New )
+									Call SalTblKillEdit( hWndForm )
+					Column: colPRCReturnedFlag
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? No
+						Editable? Yes
+						Maximum Data Length: 1
+						Data Type: String
+						Justify: Left
+						Width:  1.2"
+						Width Editable? Yes
+						Format: Uppercase
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+							On PAM_UPDATE
+								Call SalSetFieldEdit( hWndItem, TRUE )
+								Call BuildSQL( wParam, hWndItem, 'PRC_RECD_FLAG' )
+							On PAM_DATAVAL
+								If NOT SalIsNull( colPRCReturnedDate )
+									Set colPRCReturnedFlag = 'Y'
+									If (frmReceivePRCs.dfContract = 'N') or (frmReceivePRCs.dfContract = STRING_Null)
+										Set frmReceivePRCs.dfContract = 'Y'
+								Else
+									Set colPRCReturnedFlag = 'N'
+									! Set frmReceivePRCs.dfContract = 'N'
+								Call SalSetFieldEdit( hWndItem, TRUE )
+								Return TRUE
+							On PAM_CHECKROWNEW
+								Return TRUE
+							On PAM_CHECKROWEDITED
+								Return TRUE
+							On PAM_CHECKROWDELETED
+								Return TRUE
+					! Column: colCVNonProp
+.winattr
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? No
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: String
+						Justify: Left
+						Width:  Default
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+.end
+						 List Values 
+						 Message Actions 
+							 On PAM_DATAVAL
+								 Return TRUE
+							 On PAM_SQL
+								 Call BuildSQL( wParam, hWndItem, 'STOCK_ITEM.CV_NON_PROP_FLAG' )
+							 On PAM_CHECKROWNEW
+								 Return TRUE
+							 On PAM_CHECKROWEDITED
+								 Return TRUE
+							 On PAM_CHECKROWDELETED
+								 Return TRUE
+					! Column: colRTNonProp
+.winattr
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? No
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: String
+						Justify: Left
+						Width:  Default
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+.end
+						 List Values 
+						 Message Actions 
+							 On PAM_DATAVAL
+								 Return TRUE
+							 On PAM_SQL
+								 Call BuildSQL( wParam, hWndItem, 'STOCK_ITEM.RT_NON_PROP_FLAG' )
+							 On PAM_CHECKROWNEW
+								 Return TRUE
+							 On PAM_CHECKROWEDITED
+								 Return TRUE
+							 On PAM_CHECKROWDELETED
+								 Return TRUE
+				Functions
+				Window Variables
+					Sql Handle: hLocalSqlPopTbl
+					Boolean: bLocalSqlPopTbl
+					Sql Handle: hLocalSqlDoTbl
+					Boolean: bLocalSqlDoTbl
+					Sql Handle: hLocalSqlExtra
+					Boolean: bLocalSqlExtra
+					String: sSQLTABLENAME
+					String: sSQLTABLEPOPNAME
+					String: sORDERBY
+					String: sWHEREROWID
+					!
+					Boolean: bExists
+					Boolean: bEdit
+					Boolean: bFound
+					Number: nInd
+					String: sSqlPRCCultExists
+					String: sSqlPRCRootExists
+					String: sSqlExtrasCult
+					String: sQueryTmpStr
+					String: sCurrentBuildWhere
+				Message Actions
+					On PAM_POPULATE
+						If frmReceivePRCs.dfCurrYr < WhichSeasonYear( SalDateCurrent(  ) ) AND frmReceivePRCs.dfCurrYr != 77 AND NOT bForceCurrentOrderFile
+							Set sSQLTABLEPOPNAME = ' CUST_ORDER_HISTORY, STOCK_ITEM '
+							Set sSQLTABLENAME = ' CUST_ORDER_HISTORY '
+						Else
+							Set sSQLTABLEPOPNAME = ' CUSTOMER_ORDER, STOCK_ITEM '
+							Set sSQLTABLENAME = ' CUSTOMER_ORDER '
+						Set bFound = FALSE
+						Call TablePopulate( hWndForm, hLocalSqlPopTbl, colWhere, nSELECT, sSQLTABLEPOPNAME, sORDERBY, sCurrentBuildWhere, TRUE, TBL_FillNormal, PAM_SQL )
+					On PAM_REPOPULATE
+						Set bFound = FALSE
+						Call TableRePopulate( hWndForm, hLocalSqlPopTbl, nSELECT, sSQLTABLEPOPNAME, sCurrentBuildWhere, TRUE, TBL_FillNormal, PAM_SQL )
+					On PAM_SEARCH
+						If frmReceivePRCs.dfCurrYr < WhichSeasonYear( SalDateCurrent(  ) ) AND frmReceivePRCs.dfCurrYr != 77 AND NOT bForceCurrentOrderFile
+							Set sSQLTABLEPOPNAME = ' CUST_ORDER_HISTORY, STOCK_ITEM '
+							Set sSQLTABLENAME = ' CUST_ORDER_HISTORY '
+						Else
+							Set sSQLTABLEPOPNAME = ' CUSTOMER_ORDER, STOCK_ITEM '
+							Set sSQLTABLENAME = ' CUSTOMER_ORDER '
+						Call TableSearch( hWndForm, hLocalSqlPopTbl, nSELECT, sSQLTABLEPOPNAME, sORDERBY, sCurrentBuildWhere, TRUE, TBL_FillNormal, PAM_SQL )
+					! denormalising data - the sam fetch row here was checking if the cult or rootstock
+							was PRC reqd if not it was deleting the row from the table - these shouldnt have
+							been appearing anyway cos the where column specifies where PRC sent = y
+					! On SAM_FetchRow
+						      If SqlFetchRow( hLocalSqlPopTbl, lParam, nInd )
+							     If SqlExists( sSqlPRCCultExists, bExists )
+								      If bExists
+									      Call MySqlPrepExecFetch( hLocalSqlExtra, sSqlExtrasCult, nInd )
+									      Set bFound = TRUE	
+								     Else If SqlExists( sSqlPRCRootExists, bExists )
+									      If bExists
+										      Call MySqlPrepExecFetch( hLocalSqlExtra, sSqlExtrasCult, nInd )
+										      Set bFound = TRUE	
+									      Else 
+										      Call SalTblDeleteRow( hWndForm, lParam, TBL_Adjust )
+										      Call SalTblDeleteRow( hWndForm, lParam, TBL_Adjust )
+					On PAM_RESET
+						Call TableReset( hWndForm, colYr )
+					On PAM_DONTREFRESHROWID
+						Return TRUE
+					On PAM_NOROWS
+						If NOT bFound
+							Call SalMessageBox( 'No SENT PRCs were found in this customers orders.', 'Receive Customer PRC', MB_Ok )
+					On PAM_WRITEINSERTSUPDATES
+						Call TableSaveChanges( hWndForm, hLocalSqlDoTbl, 'Receive PRCs', sSQLTABLENAME, sWHEREROWID, bEdit, TRUE )
+					On SAM_Create
+						Set bLocalSqlPopTbl = SqlConnect( hLocalSqlPopTbl ) 
+						If bLocalSqlPopTbl
+							Call SqlSetLockTimeout( hLocalSqlPopTbl, 10 )
+							Call SqlSetParameter( hLocalSqlPopTbl, DBP_PRESERVE, TRUE, ''  )
+						Else
+							Call SalMessageBox( 'Connection in Database Error, could not obtain handle!', 'Error', MB_Ok )
+							Return FALSE
+						Set bLocalSqlDoTbl = SqlConnect( hLocalSqlDoTbl ) 
+						If bLocalSqlDoTbl
+							Call SqlSetLockTimeout( hLocalSqlDoTbl, 10 )
+						Else
+							Call SalMessageBox( 'Connection in Database Error, could not obtain handle!', 'Error', MB_Ok )
+							Return FALSE
+						Set bLocalSqlExtra = SqlConnect( hLocalSqlExtra ) 
+						If bLocalSqlExtra
+							Call SqlSetLockTimeout( hLocalSqlExtra, 10 )
+						Else
+							Call SalMessageBox( 'Connection in Database Error, could not obtain handle!', 'Error', MB_Ok )
+							Return FALSE
+						Set bEdit = FALSE
+						Set sSQLTABLEPOPNAME = ' CUSTOMER_ORDER, STOCK_ITEM '
+						Set sSQLTABLENAME = ' CUSTOMER_ORDER '
+						Set sWHEREROWID = ' WHERE 
+								  Cust_No = :frmReceivePRCs.tblOrders.colCustNo AND 
+								  Order_Date_Time = :frmReceivePRCs.tblOrders.colOrderDateTime '
+						Set sORDERBY = ' ORDER BY variety, cult_desc '
+					On SAM_Destroy
+						If bLocalSqlPopTbl
+							Call SqlDisconnect( hLocalSqlPopTbl )
+						If bLocalSqlDoTbl
+							Call SqlDisconnect( hLocalSqlDoTbl )
+						If bLocalSqlExtra
+							Call SqlDisconnect( hLocalSqlExtra )
+			Pushbutton: pbItemEnq
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Item Enquiry
+				Window Location and Size
+					Left:   0.35"
+					Top:    4.635"
+					Width:  1.5"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F11
+				Font Name: MS Serif
+				Font Size: 14
+				Font Enhancement: Bold-Underline
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call ItemEnquiry(  )
+					On PAM_QUERYDISABLE
+						If wParam
+							Call SalDisableWindow( hWndItem )
+						Else
+							Call SalEnableWindow( hWndItem )
+			Pushbutton: pbQuery
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: &Query - F7
+				Window Location and Size
+					Left:   2.25"
+					Top:    4.635"
+					Width:  1.1"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F7
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						If NOT TableForgetChanges( tblOrders, frmReceivePRCs.tblOrders.bEdit )
+							Return FALSE
+						Call SalWaitCursor( TRUE )
+						Call SalHideWindow( hWndItem )
+						Call SalSendMsg( pbQueryOk, PAM_ENABLE, 0, 0 )
+						Call SalSendMsg( tblOrders, PAM_RESET, 0, 0 )
+						Set bShowQueryOk = TRUE
+						Call SalSendMsgToChildren( hWndForm, PAM_QUERYDISABLE, TRUE, 0 )
+						Call SalWaitCursor( FALSE )
+					On PAM_ENABLE
+						Call SalWaitCursor( TRUE )
+						Call SalShowWindow( hWndItem )
+						Set bShowQueryOk = FALSE
+						Call SalSendMsgToChildren( hWndForm, PAM_QUERYDISABLE, FALSE, 0 )
+						Call SalWaitCursor( FALSE )
+			Pushbutton: pbQueryOk
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: O&K Query
+				Window Location and Size
+					Left:   2.25"
+					Top:    4.635"
+					Width:  1.1"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: (none)
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On PAM_ENABLE
+						Call SalShowWindow( hWndItem )
+					On SAM_Create
+						Call SalHideWindow( hWndItem )
+					On SAM_Click
+						Call SalWaitCursor( TRUE )
+						Call SalSendMsg( tblOrders, PAM_POPULATE, 0, 0 )
+						Call SalHideWindow( hWndItem )
+						Call SalSendMsg( pbQuery, PAM_ENABLE, 0, 0 )
+						Call SalWaitCursor( FALSE )
+			Pushbutton: pbRecvAll
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: &Received All - F6
+				Window Location and Size
+					Left:   3.463"
+					Top:    4.646"
+					Width:  1.7"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F6
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call PushDateTime( dtgRecvDate )
+						If SalModalDialog( dlgGetRecvDate, hWndForm )
+							Call PopDateTime( dtgRecvDate, TRUE )
+							Set nLocalRow = TBL_MinRow
+							While SalTblFindNextRow( tblOrders, nLocalRow, 0, 0 )
+								Call SalTblFetchRow( tblOrders, nLocalRow )
+								If SalIsNull( frmReceivePRCs.tblOrders.colPRCReturnedDate )
+									Set frmReceivePRCs.tblOrders.colPRCReturnedDate = dtgRecvDate
+									Call SalSetFieldEdit( frmReceivePRCs.tblOrders.colPRCReturnedDate, TRUE )
+									Call SalTblSetRowFlags( tblOrders, nLocalRow, ROW_Edited, TRUE )
+			Pushbutton: pbClear
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: &Clear Selection
+				Window Location and Size
+					Left:   5.25"
+					Top:    4.635"
+					Width:  1.4"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F3
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call ClearSelections( tblOrders )
+					On PAM_QUERYDISABLE
+						If wParam
+							Call SalDisableWindow( hWndItem )
+						Else
+							Call SalEnableWindow( hWndItem )
+			Pushbutton: pbSave
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: &Save Changes - F5
+				Window Location and Size
+					Left:   0.35"
+					Top:    4.969"
+					Width:  1.9"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F5
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call SalSendMsg( tblOrders, PAM_WRITEINSERTSUPDATES, 0, 0 )
+						Call SalSendMsg( hWndForm, PAM_WRITEINSERTSUPDATES, TRUE, 0 )
+					On PAM_QUERYDISABLE
+						If wParam
+							Call SalDisableWindow( hWndItem )
+						Else
+							Call SalEnableWindow( hWndItem )
+			Pushbutton: pbCancelContract
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Cancel Contract
+				Window Location and Size
+					Left:   5.463"
+					Top:    4.958"
+					Width:  1.9"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: (none)
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						If IDYES = SalMessageBox('This will cancel the fact that a contract has been returned for this customer,
+								Are you sure you wish to continue?', 'Warning', MB_YesNo | MB_IconStop)
+							Call SalTblSetFlagsAnyRows ( frmReceivePRCs.tblOrders, ROW_Edited, TRUE, 0, 0 )
+							Set nRow = TBL_MinRow
+							While SalTblFindNextRow( frmReceivePRCs.tblOrders, nRow, ROW_Edited, 0 )
+								If SalTblFetchRow(  frmReceivePRCs.tblOrders, nRow )
+									Set tblOrders.colPRCReturnedDate = DATETIME_Null
+							Call SalSendMsg(pbSave, SAM_Click, 0, 0)
+							Call SalSendMsg( hWndForm, PAM_WRITEINSERTSUPDATES, FALSE, 0 )
+					On PAM_QUERYDISABLE
+						If wParam
+							Call SalDisableWindow( hWndItem )
+						Else
+							Call SalEnableWindow( hWndItem )
+			Pushbutton: pbPrev
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: &Prev - F7
+				Window Location and Size
+					Left:   2.75"
+					Top:    4.969"
+					Width:  1.2"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F7
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call TableFrmPrev( hWndForm, tblOrders, hWndItem, hWndParent, hWndPushbutton, frmReceivePRCs.tblOrders.bEdit, 'Receive PRCs' )
+					On SAM_Create
+						If NumberOfRowsSelected( hWndParent ) <= 1
+							Call SalDisableWindow( hWndItem )
+							Set bPrevPbEnabled = FALSE
+						Else
+							Set bPrevPbEnabled = TRUE
+					On PAM_QUERYDISABLE
+						If wParam
+							If bPrevPbEnabled
+								Call SalDisableWindow( hWndItem )
+						Else
+							If bPrevPbEnabled
+								Call SalEnableWindow( hWndItem )
+			Pushbutton: pbNext
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: &Next - F8
+				Window Location and Size
+					Left:   3.95"
+					Top:    4.969"
+					Width:  1.3"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F8
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call TableFrmNext( hWndForm, tblOrders, hWndItem, hWndParent, hWndPushbutton, frmReceivePRCs.tblOrders.bEdit, 'Receive PRCs' )
+					On SAM_Create
+						If NumberOfRowsSelected( hWndParent ) <= 1
+							Call SalDisableWindow( hWndItem )
+							Set bNextPbEnabled = FALSE
+						Else
+							Set bNextPbEnabled = TRUE
+					On PAM_QUERYDISABLE
+						If wParam
+							If bNextPbEnabled
+								Call SalDisableWindow( hWndItem )
+						Else
+							If bNextPbEnabled
+								Call SalEnableWindow( hWndItem )
+			Pushbutton: pbExit
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: E&xit - F12
+				Window Location and Size
+					Left:   8.325"
+					Top:    4.969"
+					Width:  1.1"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F12
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						If NOT TableForgetChanges( tblOrders, frmReceivePRCs.tblOrders.bEdit )
+							Return FALSE
+						Call SalWaitCursor( TRUE )
+						Call SalDestroyWindow( hWndForm )
+					On PAM_QUERYDISABLE
+						If wParam
+							Call SalDisableWindow( hWndItem )
+						Else
+							Call SalEnableWindow( hWndItem )
+			Pushbutton: pbHelp
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title:
+				Window Location and Size
+					Left:   -0.013"
+					Top:    2.99"
+					Width:  1.2"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? No
+				Keyboard Accelerator: F1
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call ActivateHelp( sHelpFileName )
+			Frame
+				Resource Id: 33062
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   0.05"
+					Top:    4.552"
+					Width:  9.55"
+					Width Editable? Yes
+					Height: 0.76"
+					Height Editable? Yes
+				Visible? Yes
+				Corners: Square
+				Border Style: Solid
+				Border Thickness: 1
+				Border Color: Default
+				Background Color: Default
+		Functions
+			Function: UpdateCustContract
+				Description:
+				Returns
+				Parameters
+					Number: nCustNo
+					String: sContract
+					Boolean: bContractOk
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sName
+					String: sSql
+					String: sBind
+					String: sInto
+					Number: nSqlHandleNo
+					Sql Handle: hSqlHandle
+				Actions
+					If bContractOk
+						Set nSqlHandleNo = SqlHandlesGetReferenceNo( 'UPDTCUSTCONT1' )
+					Else
+						Set nSqlHandleNo = SqlHandlesGetReferenceNo( 'UPDTCUSTCONTCANCL' )
+					Select Case nActionType
+						Case nExecute
+							If bContractOk
+								Set sSql = 
+										" UPDATE
+											Customer_Master 
+										  SET
+											PRC_CONTRACT = :2 
+										  WHERE 
+										     	Cust_No = :1 and
+											(PRC_CONTRACT = 'N' or
+											PRC_CONTRACT is NULL) "
+								Set sName = 'UPDTCUSTCONT1'
+								Set sBind = ':nCustNo, :sContract'
+								Set sInto = ''
+								Call haSqlHandles[ nSqlHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nSqlHandleNo ].hSqlHandle )
+								!
+								If haSqlHandles[ nSqlHandleNo ].Execute( )
+									Call haSqlHandles[ nSqlHandleNo ].Commit( )
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Set sSql = 
+										" UPDATE
+											Customer_Master 
+										  SET
+											PRC_CONTRACT = 'N' 
+										  WHERE 
+										     	Cust_No = :1 "
+								Set sName = 'UPDTCUSTCONTCANCL'
+								Set sBind = ':nCustNo'
+								Set sInto = ''
+								Call haSqlHandles[ nSqlHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nSqlHandleNo ].hSqlHandle )
+								!
+								If haSqlHandles[ nSqlHandleNo ].Execute( )
+									Call haSqlHandles[ nSqlHandleNo ].Commit( )
+									Return TRUE
+								Else
+									Return FALSE
+						! Case nCommit
+							    Return haSqlHandles[ nSqlHandleNo ].Commit( )
+						! Case nRollback
+							    Return haSqlHandles[ nSqlHandleNo ].Rollback( )
+						Case nDisconnect
+							Return haSqlHandles[ nSqlHandleNo ].Disconnect( )
+						! Case nRePrepare
+							    Return haSqlHandles[ nSqlHandleNo ].RePrepare( )
+		Window Parameters
+		Window Variables
+			Window Handle: hWndPushbutton
+			Window Handle: hWndParent
+			Boolean: bShowQueryOk
+			Boolean: bNextPbEnabled
+			Boolean: bPrevPbEnabled
+			Number: nLocalRow
+			String: sHelpFileName
+			Number: nRow
+		Message Actions
+			On SAM_Create
+				Set sHelpFileName = 'f:\\apps\\gupta\\stock\\recvPRC.hlp'
+				Set dfCurrDate = SalDateCurrent(  )
+				! Set dfCurrYr = OurDateYear( dfCurrDate )
+				Call PopWndHdl( hWndPushbutton, TRUE )
+				Call PopWndHdl( hWndParent, TRUE )
+				Call SalPostMsg( hWndForm, PAM_CREATECOMPLETE,0,0 )
+			On PAM_CREATECOMPLETE
+				Call PopNumber( dfCustNo, TRUE )
+				Call PopString( dfCustName, TRUE )
+				Set dfCurrYr = cSeasonYear.GetSeasonYear( )
+				Call SalSendMsg( tblOrders, PAM_POPULATE, 0, 0 )
+			On SAM_Destroy
+				Call UpdateCustContract(0, '', 0, nDisconnect)
+				Call SalShowWindow( SalParentWindow( hWndForm ) )
+				Call SalBringWindowToTop( SalParentWindow( hWndForm ) )
+				Call SalSendMsg( hWndPushbutton, PAM_ENABLE, 0, 0 )
+			On PAM_WRITEINSERTSUPDATES
+				Call UpdateCustContract(dfCustNo, dfContract, wParam, nExecute)
+			On SAM_Activate
+				Return SalSendMsgToChildren( hWndForm, PAM_ACTIVATE, wParam, lParam )
+			On SAM_Close
+				If NOT TableForgetChanges( tblOrders, frmReceivePRCs.tblOrders.bEdit )
+					Return FALSE
+				Call SalWaitCursor( TRUE )
+	Dialog Box: dlgGetRecvDate
+		Class:
+		Property Template:
+		Class DLL Name:
+		Title: Received Date
+		Accesories Enabled? No
+		Visible? Yes
+		Display Settings
+			Display Style? Default
+			Visible at Design time? No
+			Type of Dialog: Modal
+			Window Location and Size
+				Left:   3.125"
+				Top:    1.625"
+				Width:  3.163"
+				Width Editable? Yes
+				Height: 1.979"
+				Height Editable? Yes
+			Absolute Screen Location? Yes
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Dark Blue
+			Background Color: Gray
+		Description:
+		Tool Bar
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: Default
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Contents
+		Contents
+			Data Field: dfDatabase
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   0.1"
+						Top:    0.01"
+						Width:  1.625"
+						Width Editable? Yes
+						Height: 0.167"
+						Height Editable? Yes
+					Visible? Yes
+					Border? No
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Tms Rmn
+					Font Size: 8
+					Font Enhancement: Default
+					Text Color: Magenta
+					Background Color: Gray
+					Input Mask: Unformatted
+				Message Actions
+					On SAM_Create
+						If SqlDatabase = 'STOCKDEV'
+							Set dfDatabase = 'FLEMINGS PLAY SYSTEM'
+						Else
+							Set dfDatabase = ''
+					On PAM_DATAVAL
+						Return TRUE
+			Background Text: Date
+				Resource Id: 33063
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   1.088"
+					Top:    0.802"
+					Width:  0.825"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Center
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Data Field: dfRecvDate
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: Date/Time
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left:   0.788"
+						Top:    1.01"
+						Width:  1.5"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Center
+					Format: dd-MMM-yyyy
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Dark Blue
+					Background Color: White
+					Input Mask: Unformatted
+				Message Actions
+			Background Text: Which Date were all PRC items received on ?
+				Resource Id: 33064
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   0.088"
+					Top:    0.219"
+					Width:  2.825"
+					Width Editable? Yes
+					Height: 0.469"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Center
+				Font Name: Utopia Black
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Blue
+				Background Color: Gray
+			Pushbutton: pbOk
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Ok - Enter
+				Window Location and Size
+					Left:   0.088"
+					Top:    1.344"
+					Width:  1.7"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: Enter
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call PushDateTime( dfRecvDate )
+						Call SalEndDialog( hWndForm, TRUE )
+			Pushbutton: pbCancel
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: Cancel - F12
+				Window Location and Size
+					Left:   1.888"
+					Top:    1.344"
+					Width:  1.1"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: F12
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Italic
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call SalEndDialog( hWndForm, FALSE )
+		Functions
+		Window Parameters
+		Window Variables
+		Message Actions
+			On SAM_Create
+				Call PopDateTime( dfRecvDate, TRUE )
+	Dialog Box: dlgAbout
+		Class:
+		Property Template:
+		Class DLL Name:
+		Title: GUPTA
+		Accesories Enabled? No
+		Visible? Yes
+		Display Settings
+			Display Style? Default
+			Visible at Design time? No
+			Type of Dialog: Modal
+			Window Location and Size
+				Left:   2.563"
+				Top:    2.26"
+				Width:  3.413"
+				Width Editable? Yes
+				Height: 2.271"
+				Height Editable? Yes
+			Absolute Screen Location? No
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Default
+		Description:
+		Tool Bar
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: Default
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Contents
+		Contents
+			Background Text: SQLWindows 5.0
+				Resource Id: 33065
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   0.463"
+					Top:    0.177"
+					Width:  2.275"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Center
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Background Text: Flemings Monbulk Nurseries System
+				Resource Id: 33066
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   0.463"
+					Top:    0.573"
+					Width:  2.275"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Center
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Background Text: July 27th, 1994
+				Resource Id: 33067
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   0.488"
+					Top:    0.938"
+					Width:  2.225"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Center
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Background Text: Version 1.00
+				Resource Id: 33068
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left:   0.488"
+					Top:    1.229"
+					Width:  2.325"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Center
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Pushbutton: pbOK
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: OK
+				Window Location and Size
+					Left:   1.075"
+					Top:    1.51"
+					Width:  1.05"
+					Width Editable? Yes
+					Height: 0.292"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: Enter
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call SalEndDialog( hWndForm, 0 )
+		Functions
+		Window Parameters
+		Window Variables
+		Message Actions

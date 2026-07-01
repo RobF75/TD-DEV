@@ -1,0 +1,662 @@
+Application Description: ToolTip Lite Utility
+		Version 1.00
+		1996-12-11
+		No Copyright
+		Maintained by C. Conrad Cady (ccady@msn.com)
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 00000000008C0000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF300000 0030000000B80200 005D010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Normal
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010003001B00 0200000000000000 0000131A250D0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.0"
+			Top:    0.0"
+			Width:  8.088"
+			Height: 5.083"
+		Options Box Location
+.data VIEWINFO
+0000: D4182D05B80B1A00
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   7.713"
+			Top:    1.052"
+			Width:  4.65"
+			Height: 5.198"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   6.4"
+			Top:    1.625"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? Yes
+		Enable Runtime Checks Of External References? Yes
+		Use Release 4.0 Scope Rules? No
+		! Outline Browser Location
+			    Visible? No
+			    Left:   Default
+			    Top:    Default
+			    Width:  Default
+			    Height: Default
+	Libraries
+		File Include: General.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Line
+				Line Color: Use Parent
+			Frame
+				Border Color: Use Parent
+				Background Color: Use Parent
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+		External Functions
+			Library name: GDI32.DLL
+				Function: GetDeviceCaps
+					Description:
+					Export Ordinal: 0
+					Returns
+						Number: INT
+					Parameters
+						Number: HANDLE
+						Number: INT
+				Function: SelectObject
+					Description:
+					Export Ordinal: 0
+					Returns
+						Number: HANDLE
+					Parameters
+						Number: HANDLE
+						Number: HANDLE
+				Function: SetBkMode
+					Description:
+					Export Ordinal: 0
+					Returns
+						Number: INT
+					Parameters
+						Number: HANDLE
+						Number: INT
+			Library name: USER32.DLL
+				Function: DrawTextA
+					Description:
+					Export Ordinal: 0
+					Returns
+						Number: INT
+					Parameters
+						Number: HANDLE
+						String: LPCSTR
+						Number: INT
+						structPointer
+							Receive Number: LONG
+							Receive Number: LONG
+							Receive Number: LONG
+							Receive Number: LONG
+						Number: UINT
+				Function: GetCursorPos
+					Description:
+					Export Ordinal: 0
+					Returns
+						Boolean: BOOL
+					Parameters
+						structPointer
+							Receive Number: LONG
+							Receive Number: LONG
+				Function: GetDC
+					Description:
+					Export Ordinal: 0
+					Returns
+						Number: HANDLE
+					Parameters
+						Window Handle: HWND
+				! Function: GetWindowLongA
+					    Description: 
+					    Export Ordinal: 0
+					    Returns 
+						    Number: LONG
+					    Parameters 
+						    Window Handle: HWND
+						    Number: INT
+				Function: IsWindow
+					Description:
+					Export Ordinal: 0
+					Returns
+						Boolean: BOOL
+					Parameters
+						Window Handle: HWND
+				Function: ReleaseDC
+					Description:
+					Export Ordinal: 0
+					Returns
+						Number: INT
+					Parameters
+						Window Handle: HWND
+						Number: HANDLE
+				! Function: SetWindowLongA
+					    Description: 
+					    Export Ordinal: 0
+					    Returns 
+						    Number: LONG
+					    Parameters 
+						    Window Handle: HWND
+						    Number: INT
+						    Number: LONG
+				Function: SetWindowPos
+					Description:
+					Export Ordinal: 0
+					Returns
+						Boolean: BOOL
+					Parameters
+						Window Handle: HWND
+						Window Handle: HWND
+						Number: INT
+						Number: INT
+						Number: INT
+						Number: INT
+						Number: UINT
+				! Function: ShowWindow
+					    Description: 
+					    Export Ordinal: 0
+					    Returns 
+						    Boolean: BOOL
+					    Parameters 
+						    Window Handle: HWND
+						    Number: INT
+				Function: WindowFromPoint 
+					Description:
+					Export Ordinal: 0
+					Returns
+						Window Handle: HWND
+					Parameters
+						Number: LONG
+						Number: LONG
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+				Number: GWL_EXSTYLE = -20
+				! Number: GWL_STYLE = -16
+				Number: TRANSPARENT = 1
+				!
+				Number: WS_DLGFRAME = 0x400000
+				Number: WS_EX_DLGMODALFRAME = 0x1
+				Number: WS_EX_TOOLWINDOW = 0x80
+				Number: DT_CALCRECT = 0x400
+				Number: DT_LEFT = 0x0
+				Number: SWP_FRAMECHANGED = 0x20
+				Number: SWP_NOACTIVATE = 0x10
+				Number: SWP_NOOWNERZORDER = 0x200
+				Number: HWND_TOPMOST = -1
+				Number: HORZRES = 8
+				Number: VERTRES = 10
+				Number: WM_GETFONT = 0x0031
+				! Number: WM_NCCREATE = 0x0081
+				! Number: WM_SETCURSOR = 0x0020
+			User
+				Number: ToolTipAplMsgOffSet = SAM_User + 4500
+				Number: nToolTimer = ToolTipAplMsgOffSet + 1
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1012930761
+0000: 5200000024000000 0000000000000000 0200000300000004 000000E0010D0000
+0020: 00FF3F1100B80000 0100FFFFE01E0000 0001FE00FF03
+.enddata
+		Internal Functions
+		Named Menus
+		Class Definitions
+.data RESOURCE 0 0 1 3600663767
+0000: 590000004A000000 0000000000000000 0200000100FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F04003C00 001063006C73546F
+0040: 6F6C546900705769 6E646F771E900000 0001000047030400 00FFFF01
+.enddata
+			! ToolTip Classes
+			General Window Class: clsToolTipWindow
+				Description:
+				Derived From
+				Class Variables
+					Window Handle: hWndToolTip
+				Instance Variables
+					Number: m_nX
+					Number: m_nY
+					Boolean: m_bWait
+					Boolean: m_bShowing
+					!
+					String: m_sTip
+					String: m_sStatusText
+				Functions
+					Function: SetTip
+						Description:
+						Returns
+						Parameters
+							String: sText
+						Static Variables
+						Local variables
+						Actions
+							Set m_sTip = sText
+					Function: SetStatusText
+						Description:
+						Returns
+						Parameters
+							String: sText
+						Static Variables
+						Local variables
+						Actions
+							Set m_sStatusText = sText
+					!
+					Function: GetTip
+						Description:
+						Returns
+							String:
+						Parameters
+						Static Variables
+						Local variables
+							String: sTemplate
+							Number: nPosition
+						Actions
+							Return m_sTip
+					Function: GetStatusText
+						Description:
+						Returns
+							String:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Return m_sStatusText
+				Message Actions
+					On WM_SETCURSOR
+						! The tool tip should only display if the item is on the 
+								active window.
+								
+								Unfortunately, Centura does some squirrely things with the
+								window handle of forms with tool bars, this code is too
+								confusing to write.  We'll pop up the tool tip whether this
+								is the active window or not.
+								
+								If you do try to figure this out, you will need to test with 
+								a dialog box, an MDI window with multiple children and tool
+								bars, and a form window with and without tool bars.
+						If NOT m_bWait
+							!
+							! Set the timer if not already set, initial wait is 1 sec.
+							! Changed this to 500 instead of 1000
+							!
+							Call SalTimerSet( hWndItem, nToolTimer, 500 )
+							Set m_bWait = TRUE
+					On SAM_Timer
+						If wParam = nToolTimer
+							Call GetCursorPos( m_nX, m_nY )
+							!
+							If hWndItem = WindowFromPoint( m_nX, m_nY )
+								If NOT m_bShowing
+									!
+									If GetTip() != STRING_Null
+										! Insure the Tip window is open
+										If Not IsWindow( hWndToolTip )
+											If IsWindow( hWndMDI )
+												Set hWndToolTip = SalCreateWindow( dlgToolTip, hWndMDI )
+											Else
+												Set hWndToolTip = SalCreateWindow( dlgToolTip, hWndForm )
+										!
+										! Cursor still in window -- show the tip (once)
+										If IsWindow( hWndToolTip )
+											!
+											Call hWndToolTip.dlgToolTip.ShowTip( GetTip() )
+										!
+										Set m_bShowing = TRUE
+									!
+									If GetStatusText() != STRING_Null
+										If IsWindow( hWndForm )
+											Call SalStatusSetText( hWndForm, GetStatusText() )
+										Else If IsWindow( hWndMDI )
+											Call SalStatusSetText( hWndMDI, GetStatusText() )
+									!
+									! Decrease timer interval to 5 ms
+									Call SalTimerSet( hWndItem, nToolTimer, 5 )
+							Else
+								!
+								! Cursor not in window any more -- clear (hide) the tip
+								If m_bShowing AND IsWindow( hWndToolTip )
+									!
+									Call hWndToolTip.dlgToolTip.HideTip()
+								Set m_bShowing = FALSE
+								!
+								If GetStatusText() != STRING_Null
+									If IsWindow( hWndForm )
+										Call SalStatusSetText( hWndForm, STRING_Null )
+									Else If IsWindow( hWndMDI )
+										Call SalStatusSetText( hWndMDI, STRING_Null )
+								!
+								! Kill the timer
+								Call SalTimerKill( hWndItem, nToolTimer )
+								Set m_bWait = FALSE
+					On SAM_Destroy
+						If m_bShowing
+							If IsWindow (hWndToolTip)
+								Call dlgToolTip.HideTip()
+							Else
+								Set m_bShowing = FALSE
+								Set hWndToolTip = hWndNULL
+							!
+							If GetStatusText() != STRING_Null
+								Call SalStatusSetText( hWndMDI, STRING_Null )
+							!
+						If m_bWait
+							Call SalTimerKill( hWndItem, nToolTimer )
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field: clsToolTipDataField
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Option Button:
+			Check Box:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+	!
+	! Issues
+		    None!  Ready to release!
+	! Author Info
+		    Authors:
+				Menachem (Nachi) Sendowski
+				Terrace Systems Corporation. Compuserve: 71075,56
+				
+				Kevin Braun
+				Eastern Business Software. Compuserve: 73314,3214
+					Moved functionality into an .apl class library.
+					Fixed sizing so that the tip doesn't slowly shrink.
+					Enhanced tool tip to display multiple lines of text.
+					Added some comments to help document code.
+					Removed automatic tool tip setting based on name of object.
+					Set tool tips off when the tip string is not set.
+					Removed checking of active window--> wouldn't work outside of MDI
+				
+				Conrad Cady
+				Cady Technical Support Services. ccady@msn.com
+					Upgraded for Centura Team Developer 1.0 and Win32
+					Fixed owner Z order problems when used on a dialog box
+					Added Nachi Sendowski's DrawText directly on background.
+					Let DrawText determine size of tip.
+					Do not allow tool tip to go off edge of screen.
+					Do not assume that we are on an MDI form.  Put status on form.
+	!
+	! ToolTip Dialogs
+	Dialog Box: dlgToolTip
+		Class:
+		Property Template:
+		Class DLL Name:
+		Title:
+		Accesories Enabled? No
+		Visible? Yes
+		Display Settings
+			Display Style? Standard
+			Visible at Design time? No
+			Type of Dialog: Modeless
+			Window Location and Size
+				Left:   0.963"
+				Top:    1.583"
+				Width:  2.917"
+				Width Editable? Yes
+				Height: 0.714"
+				Height Editable? Yes
+			Absolute Screen Location? No
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Sky
+		Description:
+		Tool Bar
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: Default
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Contents
+		Contents
+		Functions
+			Function: ShowTip
+				Description: Displays the tool tip window.
+						Calculates the size and position of the window.
+						Draws the appropriate tip text on the window.
+				Returns
+				Parameters
+					String: sText
+				Static Variables
+				Local variables
+					Number: nCursorX
+					Number: nCursorY
+					Number: nScreenWidth
+					Number: nScreenHeight
+					!
+					Number: nWindowX
+					Number: nWindowY
+					Number: nWindowWidth
+					Number: nWindowHeight
+					!
+					Number: hDC
+					Number: nTextLength
+					Number: nTextWidth
+					Number: nTextHeight
+					!
+					Number: nRectLeft
+					Number: nRectTop
+					Number: nRectRight
+					Number: nRectBottom
+					!
+				Actions
+					! Get the string size for sizing the window by the text
+					Set nTextLength = SalStrLength( sText )
+					!
+					! Get a device context, and make the background transparent
+					Set hDC = GetDC( hWndForm )
+					Call SetBkMode( hDC, TRANSPARENT )
+					!
+					! Select the font into the device context
+					Call SelectObject( hDC, SalSendMsg( hWndForm, WM_GETFONT, 0, 0 ) )
+					!
+					! Call DrawText to determine width and height of text
+					Call DrawTextA( 
+								hDC, 
+								sText, 
+								nTextLength,
+								nRectLeft, nRectTop, nTextWidth, nTextHeight,
+								DT_CALCRECT )
+					!
+					! Move dialog to cursor position plus some
+					Call GetCursorPos( nCursorX, nCursorY )
+					Set nWindowWidth = nTextWidth + 5
+					Set nWindowHeight = nTextHeight + 5
+					Set nScreenWidth = GetDeviceCaps( hDC, HORZRES )
+					Set nScreenHeight = GetDeviceCaps( hDC, VERTRES )
+					!
+					Set nWindowX = nCursorX - 2
+					If ( nWindowX + nWindowWidth ) > nScreenWidth
+						Set nWindowX = nScreenWidth - nWindowWidth
+					!
+					Set nWindowY = nCursorY + 18
+					If ( nWindowY + nWindowHeight ) > nScreenHeight
+						Set nWindowY = nCursorY - nWindowHeight - 18
+					!
+					! SetWindowPos uses, X, Y, Width, and Height
+					Call SetWindowPos( 
+								hWndForm,
+								SalNumberToWindowHandle( HWND_TOPMOST ),
+								nWindowX, nWindowY, nWindowWidth, nWindowHeight,
+								SWP_NOACTIVATE | SWP_NOOWNERZORDER | SWP_FRAMECHANGED )
+					!
+					Call ShowWindow( hWndForm, SW_SHOWNOACTIVATE )
+					!
+					! Draw the tooltip text on the background of the dialog 
+					Set nRectLeft = 1
+					Set nRectTop = 1
+					Set nRectRight = nRectLeft + nTextWidth
+					Set nRectBottom = nRectTop + nTextHeight
+					!
+					Call DrawTextA( 
+								hDC, 
+								sText, 
+								nTextLength,
+								nRectLeft, nRectTop, nRectRight, nRectBottom,
+								DT_LEFT )
+					!
+					Call ReleaseDC ( hWndForm, hDC )
+					!
+			Function: HideTip
+				Description: Hides the tool tip window.
+				Returns
+				Parameters
+				Static Variables
+				Local variables
+				Actions
+					Call SalHideWindow( hWndForm )
+		Window Parameters
+		Window Variables
+		Message Actions
+			On WM_NCCREATE
+				! Turns off the dialog caption
+				Call SetWindowLongA( hWndItem, GWL_STYLE, GetWindowLongA( hWndItem, GWL_STYLE) & (0xFFFFFFFF - WS_DLGFRAME ) )
+				! Removes the frame, and keeps the tooltip off the taskbar.
+				Call SetWindowLongA( hWndItem, GWL_EXSTYLE, GetWindowLongA( hWndItem, GWL_EXSTYLE) & (0xFFFFFFFF - WS_EX_DLGMODALFRAME) | WS_EX_TOOLWINDOW )
+			On SAM_Create
+				Call SalHideWindow( hWndForm )

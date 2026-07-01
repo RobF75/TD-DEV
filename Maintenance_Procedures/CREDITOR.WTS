@@ -1,0 +1,672 @@
+connect credcomp sysadm sysadm;
+set timeout 5;
+connect creddev sysadm sysadm;
+disconnect credcomp;
+connect creditor sysadm sysadm;
+set timeout 1;
+
+
+CREATE TABLE Account_Movement
+      (Account_Seq_No       INTEGER NOT NULL WITH DEFAULT,
+       Bank_Id              CHAR(10),
+       Account_no           CHAR(30),
+       Cheque_No            INTEGER,
+       Manually_Written     CHAR(1),
+       Date_Issued          DATETIME,
+       Authorized_By        CHAR(60),
+       Requested_By         CHAR(60),
+       Comments             CHAR(254),
+       Amount               NUMBER,
+       Transaction_Desc        CHAR(60),
+       Movement_Type        CHAR(8),
+       Cleared_Flag         CHAR(1)
+);
+
+CREATE UNIQUE INDEX XPKAcc_Movement
+  ON Account_Movement
+(
+Account_Seq_No       ASC
+);
+
+create index FK_ChqNo
+ON Account_Movement
+(
+Cheque_no               ASC
+);
+
+
+
+CREATE TABLE Auth_Signatory
+      (Bank_Id              CHAR(10) NOT NULL,
+       Account_no           CHAR(30) NOT NULL,
+       Seq_No               INTEGER NOT NULL WITH DEFAULT,
+       Signatory_Name       CHAR(60)
+);
+
+CREATE UNIQUE INDEX XPKAuthorized_Sign
+  ON Auth_Signatory
+(
+Bank_Id              ASC,
+Account_no           ASC,
+Seq_No               ASC
+);
+
+
+
+
+CREATE TABLE Bank
+      (Bank_Id              CHAR(10) NOT NULL,
+       Bank_Name            CHAR(60),
+       Bank_Branch          CHAR(60),
+       Bank_Contact         CHAR(60),
+       Bank_Phone_No        CHAR(20),
+       Bank_Fax_No          CHAR(20),
+       Bank_Add_1           CHAR(60),
+       Bank_Add_2           CHAR(60),
+       Bank_Suburb          CHAR(30),
+       Bank_Postcode        CHAR(4),
+       Bank_State           CHAR(3)
+);
+
+CREATE UNIQUE INDEX XPKBank
+  ON Bank
+(
+Bank_Id              ASC
+);
+
+
+
+
+CREATE TABLE Bank_Account
+      (Bank_Id              CHAR(10) NOT NULL,
+       Account_no           CHAR(30) NOT NULL,
+       Account_Name         CHAR(60),
+       No_of_Sign_Reqd      SMALLINT,
+       Sign_Break_Amt       NUMBER,
+       opening_balance     NUMBER,
+       open_balance_date DATETIME
+);
+
+
+CREATE UNIQUE INDEX XPKBank_Account
+  ON Bank_Account
+(
+Bank_Id              ASC,
+Account_no           ASC
+);
+
+
+CREATE TABLE Cheque_Application
+      (Application_Id       INTEGER NOT NULL WITH DEFAULT,
+       Account_Seq_No       INTEGER,
+       Seq_No               INTEGER,
+       Creditor_no          INTEGER NOT NULL,
+       Invoice_No           CHAR(30) NOT NULL,
+       Application_Date     DATETIME
+);
+
+CREATE UNIQUE INDEX XPKCheque_Applicat
+  ON Cheque_Application
+(
+Application_Id       ASC
+);
+
+commit;
+
+
+
+
+CREATE TABLE Creditor
+      (Creditor_no          INTEGER NOT NULL WITH DEFAULT,
+       Creditor_Name        CHAR(60),
+       Creditor_Contact     CHAR(60),
+       Creditor_Add1        CHAR(60),
+       Creditor_Add2        CHAR(60),
+       Creditor_Suburb      CHAR(30),
+       Creditor_Postcode    CHAR(4),
+       Creditor_State       CHAR(3),
+       Cred_Phone_No        CHAR(20),
+       Creditor_Fax_No      CHAR(20),
+       Terms_Period         SMALLINT,
+       COD                  CHAR(1),
+       Account_Id           CHAR(20),
+       Discount_Given       CHAR(1),
+       Disc_Percentage      REAL,
+       Creditor_Notes       CHAR(254)
+);
+
+CREATE UNIQUE INDEX XPKCreditor
+  ON Creditor
+(
+Creditor_no          ASC
+);
+
+
+commit;
+
+
+
+
+CREATE TABLE Invoice_Items
+      (Creditor_no          INTEGER NOT NULL,
+       Invoice_No           CHAR(30) NOT NULL,
+       Seq_No               INTEGER NOT NULL WITH DEFAULT,
+       Item_Id              INTEGER,
+       Invoice_Unit_Price   NUMBER,
+       GL_Code              CHAR(8),
+       No_of_Items          NUMBER,
+       Extended_Price       NUMBER,
+       Item_Disc_Given      NUMBER,
+       Item_Status          CHAR(10),
+       Comments             CHAR(254),
+	Purchase_Order_No CHAR(10)
+);
+
+
+CREATE UNIQUE INDEX XPKInvoice_Items
+  ON Invoice_Items
+(
+Creditor_no          ASC,
+Invoice_No           ASC,
+Seq_No               ASC
+);
+
+CREATE INDEX XAKInv_Items
+ ON Invoice_Items
+(
+Purchase_Order_No   ASC
+);
+
+
+
+CREATE TABLE General_Ledger
+      (GL_Account_Code      CHAR(8) NOT NULL,
+       GL_Account_Desc      CHAR(60),
+       GL_Comments          CHAR(254)
+);
+
+
+CREATE UNIQUE INDEX PKGeneral_Ledger
+  ON General_Ledger
+(
+GL_Account_Code      ASC
+);
+
+CREATE INDEX IE1GL_Desc
+  ON General_Ledger
+(
+GL_Account_Desc      ASC
+);
+
+
+CREATE TABLE Movement_Types
+      (Movement_Type      CHAR(8) NOT NULL,
+       Movement_Desc      CHAR(60),
+       Action                    CHAR(2)
+);
+insert into movement_types (movement_type, action) VALUES ('CHEQUE', 'DR');
+
+
+CREATE UNIQUE INDEX PKMovementTypes
+  ON Movement_Types
+(
+Movement_Type      ASC
+);
+commit;
+
+
+
+CREATE TABLE Payable_Invoice
+      (Creditor_no          INTEGER NOT NULL,
+       Invoice_No           CHAR(30) NOT NULL,
+       Discount_Received    CHAR(1),
+       Consignment_No       CHAR(18),
+       Sales_Tax_Addition   NUMBER,
+       Invoice_Status       CHAR(10),
+       Invoice_Amount       NUMBER,
+       Amount_Outstanding   NUMBER,
+       Invoice_Date         DATETIME,
+       Invoice_Comments     CHAR(254)
+);
+
+CREATE UNIQUE INDEX XPKPayable_Invoice
+  ON Payable_Invoice
+(
+Creditor_no          ASC,
+Invoice_No           ASC
+);
+
+
+
+commit;
+CREATE TABLE Payable_Items
+      (Item_Id              INTEGER NOT NULL WITH DEFAULT,
+       Item_Description     CHAR(60),
+       Sales_Tax_Exempt     CHAR(1),
+       Last_Unit_Price      NUMBER,
+       Payable_Type         CHAR(18),
+       Item_Comments        CHAR(254)
+);
+
+CREATE UNIQUE INDEX XPKPayable_Items
+  ON Payable_Items
+(
+Item_Id              ASC
+);
+
+
+
+CREATE TABLE Purch_Order_Books
+      (Beginning_Order_No   CHAR(10) NOT NULL,
+       Issued_To            CHAR(60),
+       Issued_Date          DATETIME
+);
+
+CREATE UNIQUE INDEX XPKPurch_Order_Boo
+  ON Purch_Order_Books
+(
+Beginning_Order_No   ASC
+);
+
+
+
+
+CREATE TABLE Purch_Order_Items
+      (Purchase_Order_No    CHAR(10) NOT NULL,
+       Item_Id                      INTEGER NOT NULL,
+       Required_For             CHAR(18),
+       Purch_Order_Price     NUMBER,
+       Purch_Ord_Quantity   NUMBER
+);
+
+
+CREATE UNIQUE INDEX XPKPurchase_Order_
+  ON Purch_Order_Items
+(
+Purchase_Order_No    ASC,
+Item_Id              ASC
+);
+
+
+
+
+CREATE TABLE Purchase_Order
+      (Purch_Order_No       CHAR(10) NOT NULL,
+       Creditor_no          INTEGER NOT NULL,
+       Ordered_By           CHAR(30),
+       Purch_Order_Date     DATETIME,
+       Comments             CHAR(254)
+);
+
+CREATE UNIQUE INDEX XPKPurchase_Order
+  ON Purchase_Order
+(
+Purch_Order_No       ASC
+);
+
+CREATE TABLE Seq_No_Source
+	(Source_ID           CHAR(40)  NOT NULL,
+	Next_Value          INTEGER
+);
+
+
+CREATE UNIQUE INDEX PK_Seq_No
+  ON Seq_No_Source
+(
+Source_Id              ASC
+);
+
+ALTER TABLE Seq_No_Source
+       PRIMARY KEY (Source_Id)
+;
+
+
+**** insert into this table whenever a table requires a seq no;
+INSERT INTO SEQ_NO_SOURCE (SOURCE_ID, NEXT_VALUE) VALUES ('AUTH_SIGNATORY', 1);
+INSERT INTO SEQ_NO_SOURCE (SOURCE_ID, NEXT_VALUE) VALUES ('CHEQUE_APPLICATION', 1);
+INSERT INTO SEQ_NO_SOURCE (SOURCE_ID, NEXT_VALUE) VALUES ('CREDITOR', 1);
+INSERT INTO SEQ_NO_SOURCE (SOURCE_ID, NEXT_VALUE) VALUES ('INVOICE_ITEMS', 1);
+INSERT INTO SEQ_NO_SOURCE (SOURCE_ID, NEXT_VALUE) VALUES ('PAYABLE_ITEMS', 1);
+INSERT INTO SEQ_NO_SOURCE (SOURCE_ID, NEXT_VALUE) VALUES ('SOLD_BY', 1);
+INSERT INTO SEQ_NO_SOURCE (SOURCE_ID, NEXT_VALUE) VALUES ('ACCOUNT_MOVEMENT', 1);
+
+COMMIT;
+
+
+
+
+CREATE TABLE Sold_By
+      (Sold_By_Seq_No       INTEGER NOT NULL WITH DEFAULT,
+       Item_Id              INTEGER,
+       Creditor_no          INTEGER,
+       Last_Price_Per       NUMBER,
+       Creditor_Item_Code   CHAR(20),
+       Date_Paid               DATETIME
+);
+
+CREATE UNIQUE INDEX XPKSold_By
+  ON Sold_By
+(
+Sold_By_Seq_No       ASC
+);
+
+CREATE TABLE Status_Codes
+      (Status_Code      CHAR(10) NOT NULL,
+       Description         CHAR(30),
+       Pay                   CHAR(1)
+);
+
+CREATE UNIQUE INDEX XPKStatus_code
+  ON Status_Codes
+(
+Status_Code    ASC
+);
+insert into status_codes (Status_Code, Description, Pay) VALUES ('PENDING', 'Pending approval', 'N');
+insert into status_codes (Status_Code, Description, Pay) VALUES ('APPROVED', 'Approved for payment', 'Y');
+insert into status_codes (Status_Code, Description, Pay) VALUES ('PAID', 'Paid', 'N');
+insert into status_codes (Status_Code, Description, Pay) VALUES ('HOLD', 'Hold Payment', 'N');
+
+commit;
+
+
+ALTER TABLE Account_Movement
+       PRIMARY KEY (Account_Seq_No)
+;
+
+
+ALTER TABLE Auth_Signatory
+       PRIMARY KEY (Bank_Id, Account_no, Seq_No)
+;
+
+ALTER TABLE Bank
+       PRIMARY KEY (Bank_Id)
+;
+
+ALTER TABLE Bank_Account
+       PRIMARY KEY (Bank_Id, Account_no)
+;
+
+ALTER TABLE Cheque_Application
+       PRIMARY KEY (Application_Id)
+;
+
+
+
+ALTER TABLE Creditor
+       PRIMARY KEY (Creditor_no)
+;
+
+ALTER TABLE Invoice_Items
+       PRIMARY KEY (Creditor_no, Invoice_No, Seq_No)
+;
+
+ALTER TABLE General_Ledger
+       PRIMARY KEY (GL_Account_Code)
+;
+
+ALTER TABLE Movement_Types
+       PRIMARY KEY (Movement_Type)
+;
+
+ALTER TABLE Payable_Invoice
+       PRIMARY KEY (Creditor_no, Invoice_No)
+;
+
+ALTER TABLE Payable_Items
+       PRIMARY KEY (Item_Id)
+;
+
+ALTER TABLE Purch_Order_Books
+       PRIMARY KEY (Beginning_Order_No)
+;
+
+ALTER TABLE Purch_Order_Items
+       PRIMARY KEY (Purchase_Order_No, Item_Id)
+;
+
+ALTER TABLE Purchase_Order
+       PRIMARY KEY (Purch_Order_No)
+;
+
+ALTER TABLE Sold_By
+       PRIMARY KEY (Sold_By_Seq_No)
+;
+
+ALTER TABLE Status_Codes
+       PRIMARY KEY (Status_Code)
+;
+
+ALTER TABLE Account_Movement
+       FOREIGN KEY AMBA (Bank_Id, Account_no)
+               REFERENCES Bank_Account
+               ON DELETE SET NULL
+;
+
+
+ALTER TABLE Auth_Signatory
+       FOREIGN KEY has (Bank_Id, Account_no)
+               REFERENCES Bank_Account
+               ON DELETE CASCADE
+;
+commit;
+ALTER TABLE Bank_Account
+       FOREIGN KEY has (Bank_Id)
+               REFERENCES Bank
+               ON DELETE RESTRICT
+;
+
+ALTER TABLE Cheque_Application
+       FOREIGN KEY CAII (Creditor_no, Invoice_No, Seq_No)
+               REFERENCES Invoice_Items
+               ON DELETE SET NULL
+;
+
+ALTER TABLE Cheque_Application
+       FOREIGN KEY CAAM (Account_Seq_No)
+               REFERENCES Account_movement
+               ON DELETE RESTRICT;
+;
+
+ALTER TABLE Invoice_Items
+       FOREIGN KEY has (Item_Id)
+               REFERENCES Payable_Items
+               ON DELETE SET NULL
+;
+
+ALTER TABLE Invoice_Items
+       FOREIGN KEY IIPI (Creditor_no, Invoice_No)
+               REFERENCES Payable_Invoice
+               ON DELETE RESTRICT
+;
+
+ALTER TABLE Payable_Invoice
+       FOREIGN KEY PIC (Creditor_no)
+               REFERENCES Creditor
+               ON DELETE RESTRICT
+;
+
+ALTER TABLE Purch_Order_Items
+       FOREIGN KEY POIPI (Item_Id)
+               REFERENCES Payable_Items
+               ON DELETE RESTRICT
+;
+
+ALTER TABLE Purch_Order_Items
+       FOREIGN KEY POIPO (Purchase_Order_No)
+               REFERENCES Purchase_Order
+               ON DELETE RESTRICT
+;
+
+ALTER TABLE Purchase_Order
+       FOREIGN KEY POC (Creditor_no)
+               REFERENCES Creditor
+               ON DELETE RESTRICT
+;
+
+ALTER TABLE Sold_By
+       FOREIGN KEY R_12 (Item_Id)
+               REFERENCES Payable_Items
+               ON DELETE SET NULL
+;
+
+ALTER TABLE Sold_By
+       FOREIGN KEY R_11 (Creditor_no)
+               REFERENCES Creditor
+               ON DELETE SET NULL
+;
+
+
+
+
+GRANT CONNECT TO 
+	JAN, 
+	LIZ, 
+	DAWN, 
+	GRAHAM, 
+	BRENDAN, 
+	DWAYNE, 
+	RON  
+IDENTIFIED BY 
+	JAN,
+	LIZ, 
+	DAWN, 
+	GRAHAM, 
+	BRENDAN, 
+	DWAYNE, 
+	RON ;
+
+
+GRANT DBA TO 
+	JAN, 
+	GRAHAM;
+
+CREATE PUBLIC SYNONYM ACCOUNT_MOVEMENT FOR SYSADM.ACCOUNT_MOVEMENT;
+CREATE PUBLIC SYNONYM AUTH_SIGNATORY FOR SYSADM.AUTH_SIGNATORY;
+CREATE PUBLIC SYNONYM BANK FOR SYSADM.BANK;
+CREATE PUBLIC SYNONYM BANK_ACCOUNT FOR SYSADM.BANK_ACCOUNT;
+CREATE PUBLIC SYNONYM CHEQUE_APPLICATION FOR SYSADM.CHEQUE_APPLICATION;
+CREATE PUBLIC SYNONYM CREDITOR FOR SYSADM.CREDITOR;
+CREATE PUBLIC SYNONYM INVOICE_ITEMS FOR SYSADM.INVOICE_ITEMS;
+CREATE PUBLIC SYNONYM GENERAL_LEDGER FOR SYSADM.GENERAL_LEDGER;
+CREATE PUBLIC SYNONYM MOVEMENT_TYPES FOR SYSADM.MOVEMENT_TYPES;
+CREATE PUBLIC SYNONYM PAYABLE_INVOICE FOR SYSADM.PAYABLE_INVOICE;
+CREATE PUBLIC SYNONYM PAYABLE_ITEMS FOR SYSADM.PAYABLE_ITEMS;
+CREATE PUBLIC SYNONYM PURCH_ORDER_BOOKS FOR SYSADM.PURCH_ORDER_BOOKS;
+CREATE PUBLIC SYNONYM SEQ_NO_SOURCE FOR SYSADM.SEQ_NO_SOURCE;
+CREATE PUBLIC SYNONYM PURCH_ORDER_ITEMS FOR SYSADM.PURCH_ORDER_ITEMS;
+CREATE PUBLIC SYNONYM PURCHASE_ORDER FOR SYSADM.PURCHASE_ORDER;
+CREATE PUBLIC SYNONYM SOLD_BY FOR SYSADM.SOLD_BY;
+CREATE PUBLIC SYNONYM STATUS_CODES FOR SYSADM.STATUS_CODES;
+COMMIT;
+
+*********************************************************************************************;
+THE FOLLOWING PRIVELIGES NEED TO BE DONE ;
+**********************************************************************************************;
+GRANT ALL ON 
+	ACCOUNT_MOVEMENT, 
+	AUTH_SIGNATORY,
+	BANK,
+	BANK_ACCOUNT,
+	CHEQUE_APPLICATION,
+	CREDITOR,
+	INVOICE_ITEMS,
+	GENERAL_LEDGER,
+	MOVEMENT_TYPES,
+	PAYABLE_INVOICE,
+	PAYABLE_ITEMS,
+	PURCH_ORDER_BOOKS,
+	SEQ_NO_SOURCE,
+	PURCH_ORDER_ITEMS,
+	PURCHASE_ORDER,
+	SOLD_BY,
+	STATUS_CODES
+TO 	
+	JAN,
+	LIZ, 
+	DAWN, 
+	GRAHAM, 
+	BRENDAN, 
+	DWAYNE, 
+	RON ;
+COMMIT;
+
+**stored procedures and creating triggers;
+erase getnextid;
+
+STORE GetNextId
+Procedure: GetNextId STATIC
+
+Parameters
+	String: sDomain
+	Receive Number: nFillMeIn
+Local variables
+	Sql handle: hSql1
+	Sql handle: hSql2
+	Number: nInd
+	Boolean: bFirstRow
+Actions
+	On Procedure Startup
+		Call SqlConnect(hSql1)
+		Call SqlPrepare(hSql1, 'Update Seq_No_Source SET Next_Value = Next_Value + 1 Where Source_Id = :sDomain') 
+		Call SqlConnect(hSql2)
+		Call SqlPrepare(hSql2, 'Select Next_Value - 1 from Seq_no_Source where Source_Id = :sDomain into :nFillMeIn')
+	On Procedure Execute
+		If nFillMeIn = 0
+			Call SqlExecute(hSql1)
+			Call SqlExecute(hSql2)
+	       	Else
+			Set bFirstRow = 1
+	On Procedure Fetch
+		If nFillMeIn = 0
+			If SqlFetchNext(hSql2, nInd)
+				Return 0	
+			Else
+				Return 20001
+		Else
+			If bFirstRow
+				Set bFirstRow = 0
+				Return 0
+			Else
+				Return 1
+	On Procedure Close
+		Call SqlDisconnect(hSql1)
+		Call SqlDisconnect(hSql2);	
+commit;
+
+commit;
+drop trigger acc_movement;
+drop trigger Auth_Sign_Seq;
+drop trigger Cheq_Appl_Id;
+drop trigger Creditor_No;
+drop trigger Inv_Seq_No;
+drop trigger Payable_Id;
+drop trigger Sold_By_Seq;
+commit;
+
+
+CREATE TRIGGER Acc_Movement BEFORE INSERT ON ACCOUNT_MOVEMENT ORDER 1
+	(Execute GetNextId('ACCOUNT_MOVEMENT', Account_Seq_No)) FOR EACH ROW; 
+
+
+CREATE TRIGGER Auth_Sign_Seq BEFORE INSERT ON AUTH_SIGNATORY ORDER 1
+	(Execute GetNextId('AUTH_SIGNATORY', Seq_No)) FOR EACH ROW; 
+
+CREATE TRIGGER Cheq_Appl_Id BEFORE INSERT ON CHEQUE_APPLICATION ORDER 1
+	(Execute GetNextId('CHEQUE_APPLICATION', Application_Id)) FOR EACH ROW; 
+
+CREATE TRIGGER Creditor_No BEFORE INSERT ON CREDITOR ORDER 1
+	(Execute GetNextId('CREDITOR', Creditor_No)) FOR EACH ROW; 
+
+CREATE TRIGGER Inv_Seq_No BEFORE INSERT ON INVOICE_ITEMS ORDER 1
+	(Execute GetNextId('INVOICE_ITEMS', Seq_No)) FOR EACH ROW; 
+
+CREATE TRIGGER Payable_Id BEFORE INSERT ON PAYABLE_ITEMS ORDER 1
+	(Execute GetNextId('PAYABLE_ITEMS', Item_Id)) FOR EACH ROW; 
+
+CREATE TRIGGER Sold_By_Seq BEFORE INSERT ON SOLD_BY ORDER 1
+	(Execute GetNextId('SOLD_BY', Sold_By_Seq_No)) FOR EACH ROW; 
+commit;
+
+	
+
+

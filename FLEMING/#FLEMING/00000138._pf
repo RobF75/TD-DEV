@@ -1,0 +1,982 @@
+Application Description: SQLWindows 5.01 Jans class Credit Note Listing application
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D80000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF160000 0016000000AA0200 0053010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.data DT_MAKERUNDLG
+0000: 00000000001F4B3A 5C43454E54555241 5C464C454D444556 5C437265646E6F74
+0020: 642E6578651F4B3A 5C43454E54555241 5C464C454D444556 5C437265646E6F74
+0040: 642E646C6C1F4B3A 5C43454E54555241 5C464C454D444556 5C437265646E6F74
+0060: 642E617063000001 01011F4B3A5C4345 4E545552415C464C 454D4445565C4372
+0080: 65646E6F74642E72 756E1F4B3A5C4345 4E545552415C464C 454D4445565C4372
+00A0: 65646E6F74642E64 6C6C1F4B3A5C4345 4E545552415C464C 454D4445565C4372
+00C0: 65646E6F74642E61 706300000101011F 4B3A5C43454E5455 52415C464C454D44
+00E0: 45565C437265646E 6F74642E6170641F 4B3A5C43454E5455 52415C464C454D44
+0100: 45565C437265646E 6F74642E646C6C1F 4B3A5C43454E5455 52415C464C454D44
+0120: 45565C437265646E 6F74642E61706300 000101011F4B3A5C 43454E545552415C
+0140: 464C454D4445565C 437265646E6F7464 2E61706C1F4B3A5C 43454E545552415C
+0160: 464C454D4445565C 437265646E6F7464 2E646C6C1F4B3A5C 43454E545552415C
+0180: 464C454D4445565C 437265646E6F7464 2E61706300000101 01
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: D4180909B80B1500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? No
+			Left:   5.113"
+			Top:    2.875"
+			Width:  4.675"
+			Height: 2.979"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   8.163"
+			Top:    0.469"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: GENERAL.APL
+		File Include: DIALOG.APL
+		File Include: BGTEXT.APL
+		File Include: BUTTON.APL
+		File Include: DATFIELD.APL
+		File Include: SQLHANDL.APL
+		File Include: SPNFIELD.APL
+		File Include: VTSPIN.APL
+		File Include: DATES.APL
+		File Include: FORM.APL
+		File Include: RUNPROG.APL
+		File Include: VTWIN.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: None
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Blue
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for CREDNOTE.APP
+				Number: CRNOTEAppMsgOffSet = SAM_User + 6100
+				! Message go up to AppOffSet + 99
+				Number: CRNOTEAppConstOffSet = 4550
+				Number: PAM_CRNOTE_REPORT = CRNOTEAppMsgOffSet + 1
+		Resources
+		Variables
+.data RESOURCE 0 0 1 2564304095
+0000: 8600000038000000 0000000000000000 020000050000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF039100 0000040DFA0000FF
+0040: 0F9E000000EE0100 FF3F
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 1568963221
+0000: DF0A000020050000 0000000000000000 0200001500FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 001063006C734469
+0040: 616C6F670047656E 6572616C86800000 000500000007010D 000000FFFF090D00
+0060: 00020400FC0000FF 071100000004F40D 0000FF1F1E0000D0 0003040000FF7F22
+0080: 700000000100FFFF 2101800D00000140 0000000C636C70F8 624765641E000001
+00A0: 00CF010DFE00FF03 0180380000008002 00000009636C0348 656C708600D90005
+00C0: 00B3020400FFFFC4 040000010DFE00FF 9B110001FB00FF6F 1E00EE0100FF3F2B
+00E0: 00B800000100FFFF 1801800D000300F8 0000094045786974 1E0000F4010000EC
+0100: 010D00FF3F018064 04000004000E0C50 696345807870616E 641E00E800010000
+0120: DD0200FF7F01CC80 040005F00012636C 00546F67676C6542 754074746F6E1E00
+0140: 00F4010000EE0200 FF3F018006040006 0000000E0C646647 65FFE800010000D9
+0160: 030400FF7F010C80 0D00070000100011 636C537069006E53 6561736F6E592065
+0180: 61721E0000017A00 0001F60D00FF1F01 802F020000080000 000B04636C466F72
+01A0: 6D42206173658600 00057B0001F60D00 FFDF0DDC000200FF 7F11620000040D00
+01C0: FFFFCD1E0003FD00 FF37220001F700FF 1F01800D03000900 0000177C636C5040
+01E0: 72696E7442616900 635265706F72741E A30001000067010D 00FFFF0101802E00
+0200: 00000A6000000011 6370015374617274 5072006F6772616D BA0000EC000700DD
+0220: 0200FF7F04720000 0200FFFFCD080002 FD00FF070C000000 01F60D00FF1F1900
+0240: 00DC000300FF7F1D 700000000200FFFF C12100000001FD00 FF07018036000000
+0260: 000B0000000F636C F953741FEE0000EC 000900D9010D00FF 7F0D73000100FFFF
+0280: C11A00000002FD00 FF371E0002F700FF DF22DC000200FF7F 26700000000200FF
+02A0: FFC12A00000002FD 00FF272E000002F7 00FF1F320000DC00 0200FF7F01CC8004
+02C0: 000C1C0010546F6F 006C54697057696E 64106F771E000001 00BD0003FB00FF0F
+02E0: 018034001800000D 0014631A6C70656C 6500637446726F6D 546100626C656C00
+0300: 0000047B0001F60D 00FFDF0DDC000100 FF7F1A73000100FF FFC12700000001FD
+0320: 00FFC70180040000 0E0000000D636C49 5365656349206E74 6F1E0000017A0000
+0340: 03F700FF1F0180B7 000000000F000000 16E4636C4765716C 5461473E653602CA
+0360: 00150000B3010D00 FFFFE40D000001FE 00FF9B1A0001FB00 FF6F2700EE0100FF
+0380: 3F3400B9000200FF FFE438000002FE00 FF833C00000002FB 00FF0F40000000EE
+03A0: 0200FF3F4400B800 000200FFFFE04800 000002FE00FF834C 00000002FB00FF0F
+03C0: 500000008E020001 00FE00C180010000 003F540030000001 0D0001FA00002780
+03E0: 010000FFC0580000 00010DFE00FF8365 00000001FB00FF0F 72000000EE0100FF
+0400: 3F7F00B800000100 FFFFE08C00000001 FE00FF8399000000 01FB00FF0FA60000
+0420: 00EE0100FF3FB300 B800000300FFFF10 0180220000100020 00001D636C546280
+0440: 6C4D616B65536505 636564526F77004B 6579417272617960 740000000400EF02
+0460: E8000100009F8001 FC00001B0400010D FB00FF4F110000EE 0100FFBF1EB90002
+0480: 00FFFF9001801100 001131001063436F C06C756D6E476523 6C380000027A0000
+04A0: 02F60400FFDF04D8 00010D00FF7F010C 8011001200001800 0C63636247FFD100
+04C0: 020000B3010D00FF FFC60D000204FE00 FF63018004002013 0000000C66540661
+04E0: 654361636888651E 00000100DE0003FD 00FF870180150000 00140000000B6366
+0500: 1C4361506F6F815A 00000003001E0007 19000100010100E2 07003D008001F900
+0520: 0037040003F60400 FFDF08D800010D00 FF7F
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				If strArgArray[0] = ''
+					Set SqlDatabase = 'STOCKDEV'
+					Set SqlUser = 'GRAHAM'
+					Set SqlPassword = 'GRAHAM'
+				Else
+					Set SqlDatabase = strArgArray[1]
+					Set SqlUser = strArgArray[2]
+					Set SqlPassword = strArgArray[3]
+				!
+				Call CheckProgramExistance( 'Credit Note Listing', TRUE )
+				!
+				Call SqlHandlesSetup(  )
+				!
+				Call SalModalDialog( dlgCreditNoteListing, hWndNULL )
+			On SAM_AppExit
+				Call SqlHandlesDisconnectClose(  )
+	Dialog Box: dlgCreditNoteListing
+		Class: clsDialogGeneral
+		Property Template:
+		Class DLL Name:
+		Title: Credit Note Listing
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Type of Dialog: Modal
+			Window Location and Size
+				Left:   2.788"
+				Top:    1.823"
+				Width:  4.388"
+				Width Editable? Class Default
+				Height: 2.198"
+				Height Editable? Class Default
+			Absolute Screen Location? Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+				Pushbutton: pbHelp
+					Class Child Ref Key: 6
+					Class ChildKey: 0
+					Class: clsDialogGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbReport
+					Class Child Ref Key: 0
+					Class ChildKey: 0
+					Class: clspbGeneral
+					Property Template:
+					Class DLL Name:
+					Title: Report
+					Window Location and Size
+						Left:   1.8"
+						Top:    0.0"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name: C:\CENTURA\ICONS\LETTERS.ICO
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+						On PAM_clsPB_CLICK
+							Call SalSendMsg( hWndForm, PAM_CRNOTE_REPORT, 0, 0 )
+				Pushbutton: pbExit
+					Class Child Ref Key: 7
+					Class ChildKey: 0
+					Class: clsDialogGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   3.663"
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 10
+					Class ChildKey: 0
+					Class: clsDialogGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   3.063"
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			Data Field: dfDatabase
+				Class Child Ref Key: 8
+				Class ChildKey: 0
+				Class: clsDialogGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfUser
+				Class Child Ref Key: 9
+				Class ChildKey: 0
+				Class: clsDialogGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text: Please enter a date range you would like the credit note listing from: 
+				Resource Id: 40770
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   0.05"
+					Top:    0.292"
+					Width:  4.038"
+					Width Editable? Class Default
+					Height: 0.323"
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Center
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Data Field: dfFromDate
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Date/Time
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   0.1"
+						Top:    0.708"
+						Width:  1.988"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Center
+					Format: dd-MMM-yyyy
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfToDate
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Date/Time
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   2.15"
+						Top:    0.708"
+						Width:  1.988"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Center
+					Format: dd-MMM-yyyy
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 13
+				Class ChildKey: 0
+				Class: clsDialogGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   3.288"
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+			Background Text:
+				Resource Id: 15616
+				Class Child Ref Key: 14
+				Class ChildKey: 0
+				Class: clsDialogGeneral
+				Window Location and Size
+					Left:   2.538"
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+		Functions
+			Function: ClearAllReportFields
+				Description:
+				Returns
+				Parameters
+					Receive Number: nCustNo
+					Receive String: sCustName
+					Receive Number: nCreditNoteNo
+					Receive String: sReferenceId
+					Receive Date/Time: dtTransDate
+					Receive Number: nTransAmount
+					Receive String: sTransNotes
+					Receive Number: nLabelCharges
+					Receive Number: nPostalCharges
+					Receive Number: nRailCharges
+					Receive Number: nFreightCharges
+					Receive Number: nNoTreesCredited
+					Receive Number: nTreesCreditedAmount
+					Receive Number: nInvoiceNo
+					Receive Date/Time: dtInvoiceDate
+					Receive String: sTreeType
+					Receive String: sCultDesc
+					Receive String: sRootDesc
+				Static Variables
+				Local variables
+				Actions
+					Set nCustNo = NUMBER_Null
+					Set sCustName = ''
+					Set nCreditNoteNo = NUMBER_Null
+					Set sReferenceId = ''
+					Set dtTransDate = DATETIME_Null
+					Set nTransAmount = NUMBER_Null
+					Set sTransNotes = ''
+					Set nLabelCharges = NUMBER_Null
+					Set nPostalCharges = NUMBER_Null
+					Set nRailCharges = NUMBER_Null
+					Set nFreightCharges = NUMBER_Null
+					Set nNoTreesCredited = NUMBER_Null
+					Set nTreesCreditedAmount = NUMBER_Null
+					Set nInvoiceNo = NUMBER_Null
+					Set dtInvoiceDate = DATETIME_Null
+					Set sTreeType = ''
+					Set sCultDesc = ''
+					Set sRootDesc = ''
+			Function: ClearOrderReportFields
+				Description:
+				Returns
+				Parameters
+					Receive Number: nNoTreesCredited
+					Receive Number: nTreesCreditedAmount
+					Receive Number: nInvoiceNo
+					Receive Date/Time: dtInvoiceDate
+					Receive String: sTreeTypeDesc
+					Receive String: sCultDesc
+					Receive String: sRootDesc
+				Static Variables
+				Local variables
+				Actions
+					Set nNoTreesCredited = NUMBER_Null
+					Set nTreesCreditedAmount = NUMBER_Null
+					Set nInvoiceNo = NUMBER_Null
+					Set dtInvoiceDate = DATETIME_Null
+					Set sTreeTypeDesc = ''
+					Set sCultDesc = ''
+					Set sRootDesc = ''
+		Window Parameters
+		Window Variables
+			String: sReportName
+			String: sReportBinds
+			String: sReportInputs
+			Number: nError
+			!
+			Boolean: bProcessHistTrans
+			Boolean: bProcessTrans
+			Boolean: bProcessOrders
+			Boolean: bFetchedOrders
+			!
+			String: sSql
+			String: sName
+			String: sBinds
+			String: sIntos
+			Number: nInd
+			!
+			Number: nCustNo
+			String: sCustName
+			Number: nCreditNoteNo
+			String: sReferenceId
+			Date/Time: dtTransDate
+			Number: nTransAmount
+			String: sTransNotes
+			Number: nLabelCharges
+			Number: nPostalCharges
+			Number: nRailCharges
+			Number: nFreightCharges
+			Number: nNoTreesCredited
+			Number: nTreesCreditedAmount
+			Number: nInvoiceNo
+			Date/Time: dtInvoiceDate
+			String: sTreeTypeDesc
+			String: sCultDesc
+			String: sRootDesc
+			Number: nTotalTreesCredited
+			Number: nTotalCreditedAmount
+			!
+			: hSqlTransHdl
+				Class: hcSqlHandle
+			: hSqlHistTransHdl
+				Class: hcSqlHandle
+			: hSqlOrdersHdl
+				Class: hcSqlHandle
+			!
+			String: sCompany
+		Message Actions
+			On SAM_CreateComplete
+				Set dfFromDate = SalDateMonthBegin( SalDateCurrent(  ) )
+				Set dfToDate = SalDateCurrent(  )
+				If strArgArray[0] = ''
+					Set sCompany = 'F'
+				Else
+					Set sCompany = strArgArray[4]
+				Return SalSendClassMessage( SAM_CreateComplete, wParam, lParam )
+			On PAM_CRNOTE_REPORT
+				Set sReportName = OurGetIniFileParameter( 'ACCOUNTS', 'ReportsPath', '' )||'\\credlst4.qrp'
+				Set sReportBinds = ':dlgCreditNoteListing.nCustNo, 
+						:dlgCreditNoteListing.sCustName, 
+						:dlgCreditNoteListing.dfFromDate,
+						:dlgCreditNoteListing.dfToDate, 
+						:dlgCreditNoteListing.nCreditNoteNo, 
+						:dlgCreditNoteListing.sReferenceId, 
+						:dlgCreditNoteListing.dtTransDate, 
+						:dlgCreditNoteListing.nTransAmount, 
+						:dlgCreditNoteListing.sTransNotes, 
+						:dlgCreditNoteListing.nLabelCharges, 
+						:dlgCreditNoteListing.nPostalCharges, 
+						:dlgCreditNoteListing.nRailCharges, 
+						:dlgCreditNoteListing.nFreightCharges, 
+						:dlgCreditNoteListing.nNoTreesCredited, 
+						:dlgCreditNoteListing.nTreesCreditedAmount, 
+						:dlgCreditNoteListing.sTreeTypeDesc, 
+						:dlgCreditNoteListing.sCultDesc, 
+						:dlgCreditNoteListing.sRootDesc, 
+						:dlgCreditNoteListing.nInvoiceNo, 
+						:dlgCreditNoteListing.dtInvoiceDate, 
+						:dlgCreditNoteListing.nTotalTreesCredited, 
+						:dlgCreditNoteListing.nTotalCreditedAmount,
+						:sCompany'
+				Set sReportInputs = 'CustNo, 
+						CustName, 
+						FromDate, 
+						ToDate, 
+						CreditNoteNo, 
+						ReferenceId, 
+						TransDate, 
+						TransAmount, 
+						TransNotes, 
+						LabelCharges, 
+						PostalCharges, 
+						RailCharges, 
+						FreightCharges, 
+						NoTreesCredit,
+						TreesCreditedAmount, 
+						TreeTypeDesc, 
+						CultDesc, 
+						RootDesc, 
+						InvoiceNo,  
+						InvDate, 
+						TotalTreesCredited, 
+						TotalCreditedAmount,
+						Company'
+				Set nError = 1
+				Call SalReportPrint( hWndForm, sReportName, sReportBinds, sReportInputs, 1, RPT_PrintAll | RPT_PrintNoWarn, 0, 0, nError )
+			On SAM_ReportStart
+				Set sSql = 'SELECT 
+						  Transaction.Cust_No, 
+						  Customer_Master.Cust_Name, 
+						  Transaction.Credit_Note_No, 
+						  Transaction.Reference_Id, 
+						  Transaction.Transaction_Date, 
+						  Transaction.Transaction_Amount, 
+						  Transaction.Transaction_Notes, 
+						  Transaction.Label_Charges, 
+						  Transaction.Postal_Charges, 
+						  Transaction.Rail_Charges,
+						  Transaction.Freight_Charges 
+						FROM 
+						  Transaction, 
+						  Customer_Master
+						WHERE
+						  Transaction.Transaction_Date >= :1 AND
+						  Transaction.Transaction_Date <= :2 AND 
+						  Transaction.Cust_No = Customer_Master.Cust_No AND 
+						  NOT Transaction.Credit_Note_No IS NULL  and
+						Transaction.Company = :3
+						ORDER BY 
+						  Transaction.Credit_Note_No'
+				Set sName = 'TRANSCREDLSTC'
+				Set sBinds = ':dfFromDate, :dfToDate, :sCompany'
+				Set sIntos = ':nCustNo, 
+						:sCustName, 
+						:nCreditNoteNo, 
+						:sReferenceId, 
+						:dtTransDate, 
+						:nTransAmount, 
+						:sTransNotes, 
+						:nLabelCharges, 
+						:nPostalCharges, 
+						:nRailCharges, 
+						:nFreightCharges'
+				Call hSqlTransHdl.Setup( sSql, sName, sBinds, sIntos )
+				Call SqlVarSetup( hSqlTransHdl.hSqlHandle )
+				!
+				Set sSql = 'SELECT 
+						  Trans_History.Cust_No, 
+						  Customer_Master.Cust_Name, 
+						  Trans_History.Credit_Note_No, 
+						  Trans_History.Hist_Reference_Id, 
+						  Trans_History.Hist_Trans_Date, 
+						  Trans_History.Hist_Trans_Amount, 
+						  Trans_History.Hist_Trans_Notes, 
+						  Trans_History.Hist_Label_Charges, 
+						  Trans_History.Hist_Postal_Charge, 
+						  Trans_History.Hist_Rail_Charges,
+						  Trans_History.Hist_Freight_Charg 
+						FROM 
+						  Trans_History, 
+						  Customer_Master
+						WHERE
+						  Trans_History.Hist_Trans_Date >= :1 AND
+						  Trans_History.Hist_Trans_Date <= :2 AND 
+						  Trans_History.Cust_No = Customer_Master.Cust_No AND 
+						  NOT Trans_History.Credit_Note_No IS NULL and
+						Trans_History.Hist_Company = :3
+						ORDER BY 
+						  Trans_History.Credit_Note_No'
+				Set sName = 'TRHISTCREDLSTC'
+				Set sBinds = ':dfFromDate, :dfToDate, :sCompany'
+				Set sIntos = ':nCustNo, 
+						:sCustName, 
+						:nCreditNoteNo, 
+						:sReferenceId, 
+						:dtTransDate, 
+						:nTransAmount, 
+						:sTransNotes, 
+						:nLabelCharges, 
+						:nPostalCharges, 
+						:nRailCharges, 
+						:nFreightCharges'
+				Call hSqlHistTransHdl.Setup( sSql, sName, sBinds, sIntos )
+				Call SqlVarSetup( hSqlHistTransHdl.hSqlHandle )
+				!
+				Set sSql = 'SELECT 
+						  Customer_Order.No_Trees_Credited, 
+						  Customer_Order.Credited_Amount, 
+						  Customer_Order.Invoice_No, 
+						  Customer_Order.Invoiced_Date, 
+						  Stock_Item.Tree_Type_Desc, 
+						  Stock_Item.Cult_Desc, 
+						  Stock_Item.Root_Desc
+						FROM 
+						  Customer_Order,  
+						  Stock_Item 
+						WHERE
+						  Customer_Order.Credit_Note_No = :1 AND
+						  Customer_Order.Stock_Item_No = Stock_Item.Item_No
+						UNION
+						SELECT 
+						  Cust_Order_History.No_Trees_Credited, 
+						  Cust_Order_History.Credited_Amount, 
+						  Cust_Order_History.Invoice_No, 
+						  Cust_Order_History.Invoiced_Date, 
+						  Stock_Item.Tree_Type_Desc, 
+						  Stock_Item.Cult_Desc, 
+						  Stock_Item.Root_Desc
+						FROM 
+						  Cust_Order_History,  
+						  Stock_Item 
+						WHERE
+						  Cust_Order_History.Credit_Note_No = :1 AND
+						  Cust_Order_History.Stock_Item_No = Stock_Item.Item_No'
+				Set sName = 'CREDORDDETSU'
+				Set sBinds = ':nCreditNoteNo'
+				Set sIntos = ':nNoTreesCredited, 
+						:nTreesCreditedAmount, 
+						:nInvoiceNo, 
+						:dtInvoiceDate, 
+						:sTreeTypeDesc, 
+						:sCultDesc, 
+						:sRootDesc'
+				Call hSqlOrdersHdl.Setup( sSql, sName, sBinds, sIntos )
+				Call SqlVarSetup( hSqlOrdersHdl.hSqlHandle )
+				Return TRUE
+			On SAM_ReportFetchInit
+				Call hSqlTransHdl.Execute( )
+				Call hSqlHistTransHdl.Execute( )
+				Set bProcessHistTrans = TRUE
+				Set bProcessTrans = FALSE
+				Set bProcessOrders = FALSE
+				Set nTotalTreesCredited = NUMBER_Null
+				Set nTotalCreditedAmount = NUMBER_Null
+				Return TRUE
+			On SAM_ReportFetchNext
+				Loop
+					If bProcessHistTrans AND NOT bProcessOrders 
+						Call ClearAllReportFields( nCustNo, sCustName, nCreditNoteNo, sReferenceId, dtTransDate,
+								nTransAmount, sTransNotes, nLabelCharges, nPostalCharges, nRailCharges, nFreightCharges, nNoTreesCredited,
+								nTreesCreditedAmount, nInvoiceNo, dtInvoiceDate, sTreeTypeDesc, sCultDesc, sRootDesc )
+						If hSqlHistTransHdl.FetchNext( nInd )
+							Set bProcessOrders = TRUE
+							Set bFetchedOrders = FALSE
+							Set nTotalCreditedAmount = nTotalCreditedAmount + nTransAmount
+							Call hSqlOrdersHdl.Execute( )
+						Else
+							Set bProcessHistTrans = FALSE
+							Set bProcessTrans = TRUE
+					If bProcessTrans AND NOT bProcessOrders
+						Call ClearAllReportFields( nCustNo, sCustName, nCreditNoteNo, sReferenceId, dtTransDate,
+								nTransAmount, sTransNotes, nLabelCharges, nPostalCharges, nRailCharges, nFreightCharges, nNoTreesCredited,
+								nTreesCreditedAmount, nInvoiceNo, dtInvoiceDate, sTreeTypeDesc, sCultDesc, sRootDesc )
+						If hSqlTransHdl.FetchNext( nInd )
+							Set bProcessOrders = TRUE
+							Set bFetchedOrders = FALSE
+							Set nTotalCreditedAmount = nTotalCreditedAmount + nTransAmount
+							Call hSqlOrdersHdl.Execute( )
+						Else
+							Return FALSE
+					If bProcessOrders
+						Call ClearOrderReportFields( nNoTreesCredited,nTreesCreditedAmount, nInvoiceNo, dtInvoiceDate, 
+								sTreeTypeDesc, sCultDesc, sRootDesc )
+						If hSqlOrdersHdl.FetchNext( nInd )
+							Set bFetchedOrders = TRUE
+							Set nTotalTreesCredited = nTotalTreesCredited + nNoTreesCredited
+							Return TRUE
+						Else If NOT bFetchedOrders
+							Set bProcessOrders = FALSE
+							Return TRUE
+						Else
+							Set bProcessOrders = FALSE
+			On SAM_ReportFinish
+				Call hSqlTransHdl.Disconnect( )
+				Call hSqlHistTransHdl.Disconnect( )
+				Call hSqlOrdersHdl.Disconnect( )
+				Call SalMessageBox( 'Listing Generated!', 'Credit Note Listing', MB_Ok )
+				Return TRUE

@@ -1,0 +1,18 @@
+CREATE TABLE "SYSADM"."MNPA_MASTER" (
+	"NPA_ID" INTEGER NOT NULL auto_increment (1,1), 
+	"CUST_NO" INTEGER NOT NULL, 
+	"MNPA" VARCHAR(30), 
+	"TYPE" VARCHAR(1), 
+	"SENT" DATE, 
+	"RECEIVED" DATE, 
+primary key (npa_id)
+);
+
+commit;
+
+create public synonym mnpa_master for sysadm.mnpa_master;
+
+grant all on mnpa_master to drew, graham, bec;
+
+commit;
+

@@ -1,0 +1,773 @@
+Application Description: SQLWindows version 5.01 
+		Customer Print Acknowledgement, Confirmations and NPAs program
+		TS 04/05/95
+		GF: Added function to print PRC's 23/6/98
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D80000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF160000 0016000000AA0200 0035010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.data DT_MAKERUNDLG
+0000: 0000000000204B3A 5C43454E54555241 5C53544F434B4445 565C437573747265
+0020: 70312E6578651F4B 3A5C43454E545552 415C53544F434B44 45565C5072636F6E
+0040: 66322E646C6C1F4B 3A5C43454E545552 415C53544F434B44 45565C5072636F6E
+0060: 66322E6170630000 010101164B3A5C43 454E545552415C50 72636F6E66322E72
+0080: 756E164B3A5C4345 4E545552415C5072 636F6E66322E646C 6C164B3A5C43454E
+00A0: 545552415C507263 6F6E66322E617063 0000010101164B3A 5C43454E54555241
+00C0: 5C5072636F6E6632 2E617064164B3A5C 43454E545552415C 5072636F6E66322E
+00E0: 646C6C164B3A5C43 454E545552415C50 72636F6E66322E61 7063000001010116
+0100: 4B3A5C43454E5455 52415C5072636F6E 66322E61706C164B 3A5C43454E545552
+0120: 415C5072636F6E66 322E646C6C164B3A 5C43454E54555241 5C5072636F6E6632
+0140: 2E61706300000101 01
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600040003001B00 0200000008000000 0A00401F2F0D0500 1D00FFFF4D61696E
+0020: 002900010004000C 0000000000E91E80 0A00008600FFFF49 6E7465726E616C20
+0040: 46756E6374696F6E 7300200001000400 0B0000000000E91E 800A0000DF00FFFF
+0060: 5661726961626C65 73001E0001000400 0E0000000000F51E 100D0000F400FFFF
+0080: 436C617373657300
+.enddata
+.data VIEWSIZE
+0000: 8800
+.enddata
+			Left:   -0.025"
+			Top:    0.0"
+			Width:  6.663"
+			Height: 6.25"
+		Options Box Location
+.data VIEWINFO
+0000: 1018B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.988"
+			Top:    3.083"
+			Width:  3.8"
+			Height: 2.802"
+		Class Editor Location
+			Visible? No
+			Left:   0.575"
+			Top:    0.094"
+			Width:  5.063"
+			Height: 2.719"
+		Tool Palette Location
+			Visible? No
+			Left:   6.388"
+			Top:    1.073"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? Yes
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? No
+	Libraries
+		! File Include: PRNTACK2.APL
+		File Include: PRNTACK3.APL
+		! File Include: PRNTCONF.APL
+		File Include: PRCONF2.APL
+		File Include: PRNTNPAS.APL
+		File Include: prntnpa2.apl
+		File Include: intfunc.apl
+		File Include: myfunc.apl
+		File Include: stdwind.apl
+		File Include: vtspin.apl
+		File Include: vtmeter.apl
+		File Include: vtmisc.apl
+		File Include: vttblwin.apl
+		File Include: JANFLAGS.APL
+		File Include: strings.apl
+		File Include: ADDRESS.APL
+		File Include: SQLHANDL.APL
+		File Include: ITEM.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Line
+				Line Color: Use Parent
+			Frame
+				Border Color: Use Parent
+				Background Color: Use Parent
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0'%'
+			Number: #0
+			Number: ###000
+			Number: ###000;'($'###000')'
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1623458943
+0000: B0230000860B0000 0000000000000000 0200005E01000068 020000E0040D0000
+0020: 00FF3F7502820003 04000000FFFF8879 0200010D00FE00FF A386020001FB00FF
+0040: 8F930200EE0300FF 3F9702BA000100FF FFE8A4020001FE00 FFA3B1020003FB00
+0060: FF8FB50200EE0100 FF3FC202BA000100 FFFFE8CF020003FE 00FFA3D3020001FB
+0080: 00FF8FE00200EE01 00FF3FED02BA0003 00FFFFE8F1020001 FE00FFA3FE020001
+00A0: FB00FF0F0B030000 E802040000FF3F0F 03BA000300FFFFE8 13030001FE00FFA3
+00C0: 20030001FB00FF8F 2D0300EE0200FF3F 3103BA000200FFFF E835030002FE00FF
+00E0: A339030002FB00FF 8F3D03008E020001 00FE00C180010000 003F41033A000200
+0100: 01FB002780010000 FFE845030003FE00 FF23490300010DFB 00FF8F560300EE01
+0120: 00FF3F6303BA0003 00FFFFE867030001 FE00FFA374030001 FB00FF8F810300EE
+0140: 0300FF3F8503BA00 0100FFFFE8920300 01FE00FFA39F0300 03FB00FF8FA30300
+0160: EE0100FF3FB003BA 000100FFFFE8BD03 0003FE00FFA3C103 0001FB00FF8FCE03
+0180: 00EE0100FF3FDB03 BA000300FFFFE8DF 030001FE00FFA3EC 030001FB00FF8FF9
+01A0: 0300EE0300FF3FFD 03BA000100FFFFE8 0A040001FE00FFA3 17040003FB00FF8F
+01C0: 1B0400EE0100FF3F 2804BA000100FFFF E835040003FE00FF A339040001FB00FF
+01E0: 8F460400EE0100FF 3F5304BA000300FF FFE857040001FE00 FFA364040001FB00
+0200: FF8F710400EE0300 FF3F7504BA000100 FFFFE882040001FE 00FFA38F040003FB
+0220: 00FF8F930400EE01 00FF3FA004BA0001 00FFFFE8AD040003 FE00FFA3B1040001
+0240: FB00FF8FBE0400EE 0100FF3FCB04BA00 0300FFFFE8CF0400 01FE00FFA3DC0400
+0260: 01FB00FF8FE90400 EE0300FF3FED04BA 000100FFFFE8FA04 0001FE00FF830705
+0280: 000003FB00FF8F0B 0500EE0100FF3F18 05BA000100FFFFE8 25050003FE00FFA3
+02A0: 29050001FB00FF8F 360500EE0100FF3F 4305BA000300FFFF E847050001FE00FF
+02C0: A354050001FB00FF 8F610500EE0300FF 3F6505BA000100FF FFE872050001FE00
+02E0: FFA37F050003FB00 FF8F830500EE0100 FF3F9005BA000100 FFFFE89D050003FE
+0300: 00FFA3A1050001FB 00FF8FAE0500EE01 00FF3FBB05BA0003 00FFFFE8BF050001
+0320: FE00FFA3CC050001 FB00FF8FD90500EE 0300FF3FDD05BA00 0100FFFFE8EA0500
+0340: 01FE00FFA3F70500 03FB00FF8FFB0500 EE0100FF3F0806B8 00000100FFFFE815
+0360: 060003FE00FFA319 060001FB00FF8F26 0600EE0100FF3F33 06BA000300FFFFE8
+0380: 37060001FE00FFA3 44060001FB00FF8F 510600EE0300FF3F 5506BA000100FFFF
+03A0: E862060001FE00FF A36F060003FB00FF 8F730600EE0100FF 3F8006BA000100FF
+03C0: FFE88D060003FE00 FFA391060001FA00 00FF8F9E0600EE01 00FF3FAB06BA0003
+03E0: 00FFFFE8AF060001 FE00FFA3BC060001 FB00FF8FC90600EE 0300FF3FCD06BA00
+0400: 0100FFFFE8DA0600 01FE00FFA3E70600 03FB00FF8FEB0600 EE0100FF3FF806BA
+0420: 000100FFFFE00507 000003FE00FFA309 070001FB00FF8F16 0700EE0100FF3F23
+0440: 07BA000300FFFFE8 27070001FE00FFA3 34070001FB00FF8F 410700EE0300FF3F
+0460: 4507BA000100FFFF E852070001FE00FF A35F070003FB00FF 8F630700EE0100FF
+0480: 3F7007BA000200FF FFE874070002FE00 FFA378070003FB00 FF8F7C0700EE0100
+04A0: FF3F8907BA000100 FFFFE896070003FE 00FFA39A070001FB 00FF8FA70700EE01
+04C0: 00FF3FB407BA0003 00FFFFE8B8070001 FE00FFA3C5070001 FB00FF8FD20700EE
+04E0: 0300FF3FD607BA00 0100FFFFE8E30700 02FE00FFA3E70700 02FB00FF8FEB0700
+0500: EE0300FF3FEF07BA 000100FFFFE8FC07 0001FE00FF830908 000003FB00FF8F0D
+0520: 0800EE0100FF3F1A 08BA000100FFFFE8 27080003FE00FFA3 2B080001FB00FF8F
+0540: 380800EE0100FF3F 4508BA000300FFFF E849080001FE00FF A356080002FB00FF
+0560: 8F5A0800EE0200FF 3F5E08BA000300FF FFE862080001FE00 FFA36F080001FB00
+0580: FF8F7C0800EE0300 FF3F8008BA000100 FFFFA88D08000100 FE00FFA39A080003
+05A0: FB00FF8F9E0800EE 0100FF3FAB08BA00 0100FFFFE8B80800 03FE00FFA3BC0800
+05C0: 01FB00FF8FC90800 EE0100FF3FD608BA 000300FFFFE8DA08 0001FE00FFA3E708
+05E0: 0001FB00FF8FF408 00EE0300FF3FF808 BA000100FFFFE005 09000001FE00FFA3
+0600: 12090003FB00FF8F 160900EE0100FF3F 2309BA000100FFFF E830090003FE00FF
+0620: A334090001FB00FF 8F410900EE0100FF 3F4E09BA000300FF FFE852090001FE00
+0640: FFA35F090001FB00 FF8F6C0900EE0300 FF3F7009BA000100 FFFFE87D090001FE
+0660: 00FFA38A090003FB 00FF8F8E0900EE01 00FF3F9B09BA0001 00FFFFE8A8090003
+0680: FE00FFA3AC090001 FB00FF8FB90900EE 0100FF3FC609BA00 0300FFFFE8CA0900
+06A0: 01FE00FFA3D70900 01FB00FF8FE40900 EE0300FF3FE809BA 000100FFFFE8F509
+06C0: 0001FE00FF83020A 000003FB00FF8F06 0A00EE0100FF3F13 0ABA000100FFFFE8
+06E0: 200A0003FE00FFA3 240A0001FB00FF8F 310A00EE0100FF3F 3E0ABA000300FFFF
+0700: E8420A0001FE00FF A34F0A0001FB00FF 8F5C0A00EE0300FF 3F600ABA000100FF
+0720: FFE86D0A0001FE00 FFA37A0A0003FB00 FF8F7E0A00EE0100 FF3F8B0ABA000100
+0740: FFFFE8980A0003FE 00FFA39C0A0001FB 00FF8FA90A00EE01 00FF3FB60ABA0003
+0760: 00FFFFE8BA0A0001 FE00FFA3C70A0001 FB00FF8FD40A00EE 0300FF3FD80ABA00
+0780: 0100FFFFE8E50A00 01FE00FFA3F20A00 03FB00FF8FF60A00 EE0100FF3F030BB8
+07A0: 00000100FFFFC810 0B000304FE00FFA3 140B0001FB00FF8F 210B00EE0100FF3F
+07C0: 2E0BBA000300FFFF E8320B0001FE00FF A33F0B0001FB00FF 8F4C0B00EE0300FF
+07E0: 3F500BBA000100FF FFE85D0B0001FE00 FFA36A0B0003FB00 FF8F6E0B00EE0100
+0800: FF3F7B0BBA000100 FFFFE8880B0003FE 00FFA38C0B0001FB 00FF8F990B00EE01
+0820: 00FF3FA60BBA0003 00FFFFE8AA0B0001 FE00FFA3B70B0001 FB00FF8FC40B00EE
+0840: 0300FF3FC80BBA00 0100FFFFE8D50B00 01FE00FFA3E20B00 03FB00FF8FE60B00
+0860: EE0100FF3FF30BBA 000100FFFFE10C00 0003FE00FFA3040C 0001FB00FF8F110C
+0880: 00EE0100FF3F1E0C BA000300FFFFE822 0C0001FE00FFA32F 0C0001FB00FF8F3C
+08A0: 0C00EE0300FF3F40 0CBA000100FFFFE8 4D0C0001FE00FFA3 5A0C0003FB00FF8F
+08C0: 5E0C00EE0100FF3F 6B0CBA000100FFFF E8780C0003FE00FF A37C0C0001FB00FF
+08E0: 8F890C00EE0100FF 3F960CBA000300FF FFE89A0C0001FE00 FFA3A70C0001FB00
+0900: FF8FB40C00EE0300 FF3FB80CBA000100 FFFFE8C50C0001FE 00FFA3D20C0003FB
+0920: 00FF8FD60C00EE01 00FF3FE30CBA0001 00FFFFE8F00C0003 FE00FFA3F40C0001
+0940: FB00FFEF01EF00FF 3F0E0DBA000100FF FFE81B0D0001FE00 FFA3280D0001FB00
+0960: FF8F350D00EE0100 FF3F420DBA000300 FFFFE8460D0001FE 00FFA3530D0001FB
+0980: 00FF8F600D00EE03 00FF3F640DBA0001 00FFFFE8710D0001 FE00FFA37E0D0003
+09A0: FB00FF8F820D00EE 0100FF3F8F0DBA00 0100FFFFE89C0D00 03FE00FFA3A00D00
+09C0: 01FB00FF8FAD0D00 EE0100FF3FBA0DBA 000300FFFFE8BE0D 0001FE00FFA3CB0D
+09E0: 0001FB00FF8FD80D 000C020400010000 FE00C9800100003F DC0DB200010D00FF
+0A00: FFE8E90D0003FE00 FFA3ED0D0001FB00 FF8FFA0D00EE0100 FF3F070EB8000003
+0A20: 00FFFFE80B0E0001 FE00FFA3180E0001 FB00FF8F250E00EE 0300FF3F290EBA00
+0A40: 0100FFFFE8360E00 01FE00FFA3430E00 03FB00FF8F470E00 EE0100FF3F540EBA
+0A60: 000100FFFFE8610E 0003FE00FFA3650E 0001FB00FF8F720E 00EE0100FF3F7F0E
+0A80: BA000300FFFFE883 0E0001FE00FFA390 0E0001FB00FF8F9D 0E00EE0300FF3FA1
+0AA0: 0EBA000100FFFFE8 AE0E0001FE00FFA3 BB0E0003FB00FF8F BF0E00EE0100FF3F
+0AC0: CC0EBA000100FFFF E8D90E0002E80001 00009F8001FC0000 23DD0E00010DFB00
+0AE0: FF8FEA0E00EE0300 FF3FEE0EBA000100 FFFFE8FB0E0001FE 00FF83080F000002
+0B00: FB00FF8F0C0F00EE 0200FF3F100FBA00 0200FFFFE8140F00 02FE00FFA3180F00
+0B20: 03FB00FF8F1C0F00 EE0100FF3F290FBA 000100FFFFE8360F 0003FE00FFA33A0F
+0B40: 0001FB00FF8F470F 00EE0100FF3F540F BA000300FFFFE858 0F0001FE00FFA365
+0B60: 0F0001FB00FF8F72 0F00EE0300FF3F76 0FBA000100FFFFE8 830F0001FE00FFA3
+0B80: 900F0003FB00FF8F 940F00EE0100FF3F A10FBA000100FFFF
+.enddata
+			String: sFileName
+			Number: nNumCust
+			Number: nYear
+			Boolean: bCount
+			Number: nActionType
+			Number: nCustNos[*]
+			String: sType
+			String: sTreeTypes
+			Number: nCustNumber
+			Boolean: bForceItemisedAck
+		Internal Functions
+		Named Menus
+			Menu: menuEdit
+				Resource Id: 11692
+				Title: &Edit
+				Description: Simple Edit menu with Undo, Cut, Copy, Paste, Clear.
+				Enabled when:
+				Status Text: Undo, Cut, Copy, Paste, Clear 
+				Menu Item Name:
+				Menu Item: &Undo
+					Resource Id: 11693
+					Menu Item Name:
+					Status Text: Reverses the last action
+					Keyboard Accelerator: Alt+BkSp
+					Menu Settings
+						Enabled when: SalEditCanUndo()
+						Checked when:
+					Menu Actions
+						Call SalEditUndo()
+				Menu Separator
+				Menu Item: Cu&t
+					Resource Id: 11694
+					Menu Item Name:
+					Status Text: Cuts the selection and puts it on the clipboard
+					Keyboard Accelerator: Shift+Del
+					Menu Settings
+						Enabled when: SalEditCanCut()
+						Checked when:
+					Menu Actions
+						Call SalEditCut()
+				Menu Item: &Copy
+					Resource Id: 11695
+					Menu Item Name:
+					Status Text: Copies the selection and puts it on the clipboard
+					Keyboard Accelerator: Ctrl+Ins
+					Menu Settings
+						Enabled when: SalEditCanCut()
+						Checked when:
+					Menu Actions
+						Call SalEditCopy()
+				Menu Item: &Paste
+					Resource Id: 11696
+					Menu Item Name:
+					Status Text: Inserts the Clipboard contents at the insertion point
+					Keyboard Accelerator: Shift+Ins
+					Menu Settings
+						Enabled when: SalEditCanPaste()
+						Checked when:
+					Menu Actions
+						Call SalEditPaste()
+				Menu Item: C&lear
+					Resource Id: 11697
+					Menu Item Name:
+					Status Text: Clears the selection
+					Keyboard Accelerator: Del
+					Menu Settings
+						Enabled when: SalEditCanCut()
+						Checked when:
+					Menu Actions
+						Call SalEditClear()
+			Menu: menuOLEEdit
+				Resource Id: 11698
+				Title: &Edit
+				Description: Edit menu with OLE commands.
+				Enabled when:
+				Status Text: Undo, Cut, Copy, Paste, Clear and Object Editing
+				Menu Item Name:
+				Menu Item: &Undo
+					Resource Id: 11699
+					Menu Item Name:
+					Status Text: Reverses the last action
+					Keyboard Accelerator: Alt+BkSp
+					Menu Settings
+						Enabled when: SalEditCanUndo()
+						Checked when:
+					Menu Actions
+						Call SalEditUndo()
+				Menu Separator
+				Menu Item: Cu&t
+					Resource Id: 11700
+					Menu Item Name:
+					Status Text: Cuts the selection and puts it on the clipboard
+					Keyboard Accelerator: Shift+Del
+					Menu Settings
+						Enabled when: SalEditCanCut()
+						Checked when:
+					Menu Actions
+						Call SalEditCut()
+				Menu Item: &Copy
+					Resource Id: 11701
+					Menu Item Name:
+					Status Text: Copies the selection and puts it on the clipboard
+					Keyboard Accelerator: Ctrl+Ins
+					Menu Settings
+						Enabled when: SalEditCanCut()
+						Checked when:
+					Menu Actions
+						Call SalEditCopy()
+				Menu Item: Copy &To...
+					Resource Id: 11702
+					Menu Item Name:
+					Status Text: Copies the selection to a file
+					Keyboard Accelerator: (none)
+					Menu Settings
+						Enabled when: SalEditCanCopyTo()
+						Checked when:
+					Menu Actions
+						Call SalEditCopyTo()
+				Menu Item: &Paste
+					Resource Id: 11703
+					Menu Item Name:
+					Status Text: Inserts the Clipboard contents at the insertion point
+					Keyboard Accelerator: Shift+Ins
+					Menu Settings
+						Enabled when: SalEditCanPaste()
+						Checked when:
+					Menu Actions
+						Call SalEditPaste()
+				Menu Item: Paste Link
+					Resource Id: 11704
+					Menu Item Name:
+					Status Text: Inserts a Link at the current insertion point
+					Keyboard Accelerator: (none)
+					Menu Settings
+						Enabled when: SalEditCanPasteLink()
+						Checked when:
+					Menu Actions
+						Call SalEditPasteLink()
+				Menu Item: Paste &Special...
+					Resource Id: 11705
+					Menu Item Name:
+					Status Text: Allows paste link or paste as an object
+					Keyboard Accelerator: (none)
+					Menu Settings
+						Enabled when: SalEditCanPasteSpecial()
+						Checked when:
+					Menu Actions
+						Call SalEditPasteSpecial()
+				Menu Item: Paste From...
+					Resource Id: 11706
+					Menu Item Name:
+					Status Text: Copies from a file to the current insertion point
+					Keyboard Accelerator: (none)
+					Menu Settings
+						Enabled when: SalEditCanPasteFrom()
+						Checked when:
+					Menu Actions
+						Call SalEditPasteFrom()
+				Menu Item: Insert Object...
+					Resource Id: 11707
+					Menu Item Name:
+					Status Text: Inserts an OLE Object at the insertion point
+					Keyboard Accelerator: (none)
+					Menu Settings
+						Enabled when: SalEditCanInsertObject()
+						Checked when:
+					Menu Actions
+						Call SalEditInsertObject()
+				Menu Item: C&lear
+					Resource Id: 11708
+					Menu Item Name:
+					Status Text: Clears the current selection
+					Keyboard Accelerator: Del
+					Menu Settings
+						Enabled when: SalEditCanCut()
+						Checked when:
+					Menu Actions
+						Call SalEditClear()
+				Object Menu
+					Status Text: Edit the selected object
+			Windows Menu: menuMDIWindows
+				Resource Id: 11709
+				Menu Item Name:
+				Title: &Window
+				Description: Menu to manage MDI child windows.
+				Enabled when:
+				Status Text: Manage MDI child windows
+				Menu Item: &Tile Vertical
+					Resource Id: 11710
+					Menu Item Name:
+					Status Text: Arrange MDI child windows in a vertical tiled format
+					Keyboard Accelerator: (none)
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalMDITile( hWndMDI, TRUE )
+				Menu Item: &Tile Horizontal
+					Resource Id: 11711
+					Menu Item Name:
+					Status Text: Arrange MDI child windows in a horizontal tiled format
+					Keyboard Accelerator: (none)
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalMDITile( hWndMDI, FALSE )
+				Menu Item: &Cascade
+					Resource Id: 11712
+					Menu Item Name:
+					Status Text: Arrange MDI child windows in a cascaded format
+					Keyboard Accelerator: (none)
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalMDICascade( hWndMDI )
+				Menu Item: &Arrange Icons
+					Resource Id: 11713
+					Menu Item Name:
+					Status Text: Arrange minimized MDI child windows
+					Keyboard Accelerator: (none)
+					Menu Settings
+						Enabled when:
+						Checked when:
+					Menu Actions
+						Call SalMDIArrangeIcons( hWndMDI )
+		Class Definitions
+.data RESOURCE 0 0 1 3672808367
+0000: 9107000029030000 0000000000000000 0200000900FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F3C003C00 00154F0075724672
+0040: 6D576E6400576974 684368696C006454 626CA0000000F006 000000E0010D0000
+0060: 00FF3F0D00B90001 00FFFF001A000000 03040000FE00FF83 1E00000001FB00FF
+0080: 0F2B000000EE0100 FF3F3800B8000003 00FFFF1001803C00 000100200000124F
+00A0: 75446CF8675769FF EC000600D9010D00 FF7F0D73000100FF FFCD1A0003FD00FF
+00C0: 371E0001F700FFDF 2BDC000100FF7F38 73000300FFFF0101 8011000000020000
+00E0: 0000145069636B00 496E746F5461626C E0655062436C6438 00000200EF03FE00
+0100: FF13040000010DFB 00FF0F01807F0000 0000030000000F4F E2755F4368385F54
+0120: 61A401C200100000 00A302040000FFFF E6040002FE00FF83 0800000002FB00FF
+0140: 0F0C000000EE0200 FFBF10B9000200FF FFC014000000010D FE00FF8321000000
+0160: 01FB00FF0F2E0000 00EE0100FF3F3B00 A00000040D0000FF FFE04800000001FE
+0180: 00FF835500000002 FB00FF0F59000000 EE0200FF3F5D00B8 00000100FFFFE06A
+01A0: 00000001FE00FF83 7700000002FB00FF 0F7B000000EE0200 FF3F018040760000
+01C0: 0004000040104E65 774F7543CE685461 BF00DE0002FD00FF 37040002F700FFDF
+01E0: 08DC000200FF7F0C 73000200FFFFCD10 0002FD00FF371400 03F60400FF1F1800
+0200: 00DC000300FF7F1C 60000000010D00FF FFC12900000001FD 00FF073600000001
+0220: F700FF1F430000DC 000100FF7F507000 00000200FFFFC154 00000001FD00FF07
+0240: 6100000001F700FF 1F6E0000DC000200 FF7F727000000002 00FFFF2101802100
+0260: 0005C00000000E4F 75806F6C756D6E43 6C93A0000006BD00 02FB00FF6F0400EE
+0280: 0200FFBF08B90002 00FFFFE60C0002FE 00FF9B100002FB00 FF6F1400EC010D00
+02A0: FF3F018066210006 0008114F75446174 61804669656C6443 6C9F0006BD0002FB
+02C0: 00FF6F0400EE0200 FFBF08B9000200FF FFE60C0002FE00FF 9B100002FB00FF6F
+02E0: 1400EC010D00FF3F 0180040400000700 00004E1154625140 75657279446C4210
+0300: 6F781E00000100BD 0003FB00FF8F0180 11190008000E6304 4F75536561736F80
+0320: 6E596561723800E8 00020000D9010D00 FF7F0D6300020400 FFFF01
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window: cBaseForm
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Option Button:
+			Check Box:
+			Child Table:
+			Quest Child Window: cQuickDatabase
+			List Box:
+			Combo Box:
+			Picture: cQuickPicture
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				!
+				! ASSUMPTION FOR Command Line arguments
+						Argument 1 - SqlDatabase
+						Argument 2 - SqlUser
+						Argument 3 - SqlPassword
+						Argument 4 - File Name for list of selected item numbers
+						Argument 5 - Number of Customers (number)
+						Argument 6 - Customer No (only if 1 Customer selected)
+						Argument 7 - Year ( number )
+						Argument 8 - bCount (Boolean)
+						Argument 9 - Action Type ( string ) = ( 'SELECTED' OR 'ALL' OR 'ORCHADISTS' OR 'GARDENCENTRES' )
+						Argument 10 - Report Type CONF or ACK or NPA or PRC
+						Argument 11 - TreeType ( string ) = ('ALLTREES', 'ALLTRESSNOCONT', 'CONTONLY' )
+						Argument 12 - ForceItemisedAck ( boolean )
+				!
+				!
+				! Set strArgArray[1] = 'STOCKDEV'
+				! Set strArgArray[2] = 'GRAHAM'
+				! Set strArgArray[3] = 'GRAHAM'
+				! Set strArgArray[4] = 'C:\\TEMP\\CUSTOMER.TMP'
+				! Set strArgArray[5] = '1'
+				! Set strArgArray[6] = '0'
+				! Set strArgArray[7] = '1998'
+				! Set strArgArray[8] = '1'
+				! Set strArgArray[9] = '44'
+				! Set strArgArray[10] = 'CONF'
+				! Set strArgArray[11] = 'ALLTREES'
+				! Set strArgArray[12] = '0'
+				!
+				!
+				! Set strArgArray[1] = 'STOCKDEV'
+				! Set strArgArray[2] = 'GRAHAM'
+				! Set strArgArray[3] = 'GRAHAM'
+				! Set strArgArray[4] = 'BLANK'
+				! Set strArgArray[5] = '0'
+				! Set strArgArray[6] = '0'
+				! Set strArgArray[7] = '1998'
+				! Set strArgArray[8] = '1'
+				! Set strArgArray[9] = '45'
+				! Set strArgArray[10] = 'NPA'
+				! Set strArgArray[11] = 'ALLTREES'
+				! Set strArgArray[12] = '0'
+				!
+				Set strArgArray[1] = 'STOCKDEV'
+				Set strArgArray[2] = 'GRAHAM'
+				Set strArgArray[3] = 'GRAHAM'
+				Set strArgArray[4] = 'BLANK'
+				Set strArgArray[5] = '0'
+				Set strArgArray[6] = '0'
+				Set strArgArray[7] = '1998'
+				Set strArgArray[8] = '1'
+				Set strArgArray[9] = '45'
+				Set strArgArray[10] = 'PRC'
+				Set strArgArray[11] = 'ALLTREES'
+				Set strArgArray[12] = '0'
+				!
+				! Set strArgArray[1] = 'STOCKDEV'
+				! Set strArgArray[2] = 'GRAHAM'
+				! Set strArgArray[3] = 'GRAHAM'
+				! Set strArgArray[4] = 'ONECUST'
+				! Set strArgArray[5] = '1'
+				! Set strArgArray[6] = '210615'
+				! Set strArgArray[7] = '1998'
+				! Set strArgArray[8] = '1'
+				! Set strArgArray[9] = '85'
+				! Set strArgArray[10] = 'ACK'
+				! Set strArgArray[11] = 'ALLTREES'
+				! Set strArgArray[12] = '0'
+				!
+				!
+				! Set strArgArray[1] = 'STOCK'
+				! Set strArgArray[2] = 'JAN'
+				! Set strArgArray[3] = 'JAN'
+				! Set strArgArray[4] = 'ONECUST'
+				! Set strArgArray[5] = '1'
+				! Set strArgArray[6] = '611287'
+				! Set strArgArray[7] = '1997'
+				! Set strArgArray[8] = '0'
+				! Set strArgArray[9] = '59'
+				! Set strArgArray[10] = 'CONF'
+				! Set strArgArray[11] = 'ALLTREESNOCONT'
+				! Set strArgArray[12] = '0'
+				!
+				! Set strArgArray[1] = 'STOCKDEV'
+				! Set strArgArray[2] = 'GRAHAM'
+				! Set strArgArray[3] = 'GRAHAM'
+				! Set strArgArray[4] = 'BLANK'
+				! Set strArgArray[5] = '0'
+				! Set strArgArray[6] = '0'
+				! Set strArgArray[7] = '1998'
+				! Set strArgArray[8] = '1'
+				! Set strArgArray[9] = '85'
+				! Set strArgArray[10] = 'CONF'
+				! Set strArgArray[11] = 'ALLTREES'
+				! Set strArgArray[12] = '0'
+				!
+				! Set strArgArray[1] = 'STOCKDEV'
+				! Set strArgArray[2] = 'GRAHAM'
+				! Set strArgArray[3] = 'GRAHAM'
+				! Set strArgArray[4] = 'ONECUST'
+				! Set strArgArray[5] = '1'
+				! Set strArgArray[6] = '333451'
+				! Set strArgArray[7] = '1998'
+				! Set strArgArray[8] = '0'
+				! Set strArgArray[9] = '59'
+				! Set strArgArray[10] = 'NPA'
+				! Set strArgArray[11] = 'ALLTREES'
+				! Set strArgArray[12] = '0'
+				!
+				! Set strArgArray[1] = 'STOCK'
+				! Set strArgArray[2] = 'JAN'
+				! Set strArgArray[3] = 'JAN'
+				! Set strArgArray[4] = 'D:\\TEMP\\AMANDACONF.TXT'
+				! Set strArgArray[5] = '27'
+				! Set strArgArray[6] = ''
+				! Set strArgArray[7] = '1997'
+				! Set strArgArray[8] = '0'
+				! Set strArgArray[9] = '44'
+				! Set strArgArray[10] = 'CONF'
+				! Set strArgArray[11] = 'ALLTREESNOCONT'
+				! Set strArgArray[12] = '0'
+				!
+				Set SqlDatabase = strArgArray[ 1 ]
+				Set SqlUser = strArgArray[ 2 ]
+				Set SqlPassword = strArgArray[ 3 ]
+				!
+				Set bghSqlDetail = SqlConnect( hSqlDetail )
+				If bghSqlDetail
+					Call SqlSetIsolationLevel( hSqlDetail,'RL')
+					Call SqlSetLockTimeout( hSqlDetail, SQLTIMEOUT )
+				!
+				Set sFileName = strArgArray[ 4 ]
+				Set nNumCust = SalStrToNumber( strArgArray[ 5 ] )
+				Set nCustNumber = SalStrToNumber( strArgArray[ 6 ] )
+				If sFileName = 'ONECUST'
+					Set nCustNos[0] = nCustNumber
+				Set nYear = SalStrToNumber( strArgArray[ 7 ] )
+				If strArgArray[ 8 ] = '1'
+					Set bCount = TRUE
+				Else
+					Set bCount = FALSE
+				Set nActionType= SalStrToNumber( strArgArray[ 9 ] )
+				If nActionType = nSelectedCustomers
+					If NOT ReadNumArrayListFromFile( sFileName, nCustNos )
+						Call SalMessageBox('Error in Printing Customer Reports.
+								Contact Programmers','System Message',MB_Ok)
+						Return FALSE
+				Set sType = strArgArray[ 10 ]
+				Set sTreeTypes = strArgArray[ 11 ]
+				If strArgArray[ 12 ] = '1'
+					Set bForceItemisedAck = TRUE
+				Else
+					Set bForceItemisedAck = FALSE
+				!
+				If sType = 'CONF'
+					If nActionType = nSingleCustomer
+						Set nActionType = nSelectedCustomers
+					Call SalCreateWindow( frmPrintConfs, hWndNULL, nCustNos,
+							nNumCust, nYear, bCount, nActionType, sTreeTypes, FALSE )
+				Else If sType = 'ACK'
+					If nActionType = nSingleCustomer
+						Set nActionType = nSelectedCustomers
+					Call SalCreateWindow( frmPrintAcknowlegments, hWndNULL, nCustNos,
+							nNumCust, nYear, bCount, nActionType, sTreeTypes, bForceItemisedAck )
+				Else If sType = 'NPA'
+					If nActionType = nSingleCustomer
+						Set nActionType = nSelectedCustomers
+					Call SalCreateWindow( frmPrintCustomerNPAs, hWndNULL, nCustNos, nNumCust, nYear, nActionType )
+				Else If sType = 'PRC'
+					If nActionType = nSingleCustomer
+						Set nActionType = nSelectedCustomers
+					Call SalCreateWindow( frmPrintCustomerPRCs, hWndNULL, nCustNos, nNumCust, nYear, nActionType )
+				Else
+					Call SalMessageBox('Error in Printing Customer Reports.
+							Contact Programmers','System Message',MB_Ok)
+					Call SalQuit(  )
+			On SAM_AppExit
+				If bghSqlDetail
+					Call SqlDisconnect( hSqlDetail )

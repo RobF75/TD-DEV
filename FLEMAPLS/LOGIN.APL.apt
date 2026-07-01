@@ -1,0 +1,822 @@
+.head 0 +  Application Description: SQLWindows 5.01 Stock Or Stockdev login APL
+.data CLASSPROPSSIZE
+0000: 5C00
+.enddata
+.data CLASSPROPS
+0000: 557365476C6F6261 6C50617468000400 0100000000417070 506174684C656E00
+0020: 0400240000000041 7070506174680024 006B3A5C63656E74 7572615C636C6173
+0040: 733B6B3A5C63656E 747572615C666C65 6D61706C73000000 00000000
+.enddata
+.head 1 -  Outline Version - 4.0.32
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF000000 0000000000900200 0039010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left: 0.15"
+.head 3 -  Top: 0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left: 5.113"
+.head 3 -  Top: 2.896"
+.head 3 -  Width:  4.688"
+.head 3 -  Height: 2.99"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left: Default
+.head 3 -  Top: Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left: 8.263"
+.head 3 -  Top: 0.688"
+.head 2 -  Fully Qualified External References? No
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: GENERAL.APL
+.head 2 -  File Include: DIALOG.APL
+.head 2 -  File Include: BUTTON.APL
+.head 2 -  File Include: DATFIELD.APL
+.head 2 -  File Include: RADIOBTN.APL
+.head 2 -  File Include: BGTEXT.APL
+.head 2 -  File Include: SPNFIELD.APL
+.head 2 -  File Include: VTSPIN.APL
+.head 2 -  File Include: DATES.APL
+.head 2 -  File Include: FORM.APL
+.head 2 -  File Include: RUNPROG.APL
+.head 2 -  File Include: VTWIN.APL
+.head 2 -  File Include: SQLHANDL.APL
+.head 2 -  File Include: picture.apl
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Italic
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Black
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 3 +  ! Library name: nwconn.dll
+.head 4 +    Function: GetConnectionNumber
+.head 5 -    Description: 
+.head 5 -    Export Ordinal: 10
+.head 5 +    Returns 
+.head 6 -    Number: WORD
+.head 5 -    Parameters 
+.head 4 +    Function: GetConnectionInformation
+.head 5 -    Description: 
+.head 5 -    Export Ordinal: 9
+.head 5 +    Returns 
+.head 6 -    Number: WORD
+.head 5 +    Parameters 
+.head 6 -    Number: WORD
+.head 6 -    Receive String: LPSTR
+.head 6 -    Receive Number: LPWORD
+.head 6 -    Receive Number: LPLONG
+.head 6 -    Receive Number: LPLONG
+.head 3 +  Library name: advapi32.dll
+.head 4 -  ThreadSafe: No
+.head 4 +  Function: GetUserNameA
+.head 5 -  Description:
+.head 5 -  Export Ordinal: 0
+.head 5 +  Returns
+.head 6 -  Boolean: BOOL
+.head 5 +  Parameters
+.head 6 -  Receive String: LPSTR
+.head 6 -  Receive Number: LPDWORD
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for FLMLOGIN.APL
+.head 4 -  Number: FLMLOGINAplMsgOffSet = SAM_User + 2900
+.head 4 -  ! Message go up to AplOffSet + 99
+.head 4 -  !
+.head 4 -  Number: FLMLOGINAplConstOffSet = 1400
+.head 4 -  !
+.head 3 -  Enumerations
+.head 2 +  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 673977457
+0000: 9A00000072000000 0000000000000000 0200000500000042 0100001019000000
+0020: 012200E059020000 0040730000000100 00A35B0100192500 01221403B8000000
+0040: 73D1000100006874 0100190009012279 0700006E00730034 0100008D015A0019
+0060: 0001A2227A070000 1B730001008D00A6 0100161900042200 E0E50E0000006673
+0080: 00010003
+.enddata
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 3 +  Function: GetUser
+.head 4 -  Description:
+.head 4 -  Returns
+.head 4 +  Parameters
+.head 5 -  Receive String: sUser
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  Number: nBuffer
+.head 4 +  Actions
+.head 5 -  Call SalStrSetBufferLength( sUser, 100 )
+.head 5 -  Set nBuffer = 100
+.head 5 -  Call GetUserNameA( sUser, nBuffer )
+.head 5 -  Set sUser = SalStrUpperX ( sUser )
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 734818966
+0000: 8608000099050000 0000000000000000 0200001200FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F53003C00 001063006C734469
+0040: 616C6F670047656E 6572616C9A800000 0005000000871900 0000900122001200
+0060: 0001460173000000 01D8000000192000 0400000002226000 1300000046CF0001
+0080: 06001D000000190B 0004220014D80000 0046B30001008136 0000000400020003
+00A0: 2200150000F60046 6C0001003AB00000 0019009401221600 003D4600011A0000
+00C0: 0180192200000100 000C84636C706247 650F22000000F601 0096190001223007
+00E0: 000000B801467300 0100000301806800 0000800200000009 636C0348656C709A
+0100: 00D90005005B0400 02DE220018C40173 0001006D00040096 19000122B0080000
+0120: 00C447000100009B 1D00192500012209 00EC0000C4D10001 0000663600190009
+0140: 01220A0000007BC4 00340100004F0058 0000190001C2220B 0000001EC4000100
+0160: 8D00018019010003 00000009630F4578 6974402200000001 00006F1900690122
+0180: 070063DC01730034 0100000180640400 0004000E0C506963 45007870616E6422
+01A0: 0000E800010000AD 0400026D070054C8 0273000001C60001 80040C0005001263
+01C0: 6C0F546F6767006C 65427574746F6E40 220000000100006F 04000D0206000000
+01E0: 6360027300360100 018066040006000E 0C646647657F00E8 000100002D040003
+0200: 226D06007ECC0273 0001C600018004CC 0007000CF1726247 0F00000100BD0004
+0220: B50002068D00C002 73D9000100980180 190008210011636C 537000696E536561
+0240: 736F6E0059656172 22000000F4010000 9619000122360600 FC02467300010000
+0260: 4301805300008409 00000B636C00466F 726D42617365649A 000005006F190069
+0280: 0122080043680373 0000B40100001959 00040002DB09009E 6800016D001D0096
+02A0: 19000422B60A0068 670001001B360004 003500030B00ED00 68D9000100663A00
+02C0: 19000901220C0000 007B680034010000 01806619000A00F8 17636C805072696E
+02E0: 7442610069635265 706F727442220000 0100006F19006901 22090063E6037300
+0300: 3401000001806046 0000000B002E1170 5374006172745072 6F677280616DD600
+0320: 000007BD0004B500 02060D0034047300 D100010000660400 04006D0207007B34
+0340: 00B6010008590004 0002DB08009E3400 016D000C00961900 0122B60900344700
+0360: 0100008325000000 04B500030AED0034 D900010060290000 0004006D020B007B
+0380: 34003601002D0058 0000190001DA220C 001E340001000D00 018052001800000C
+03A0: 000F63F26C53743F 3001DA000A005B19 0001DA2205001846 04730001006D0019
+03C0: 009619000122B606 0046470001000083 3200000004B50002 07ED0046D9000100
+03E0: 66360004006D0208 007B4600B601003A 5900040002DB0900 9E4600010D003E00
+0400: 0000D6040002B60A 0046670001008342 00000004B500020B ED0046D900010064
+0420: 46000004006D020C 0073460400360100 4A00580000040002 C30D0000009E4600
+0440: 010D004E000000D6 040002B00E000000 4667000100630180 0400E60D00100054
+0460: 6F6F6C5469705700 696E646F77220000 E800010000AD0400 03ED0500C8057300
+0480: 0001860001801D00 8C000E000C63F163 6247016C40000000 0200BD0019A50001
+04A0: 22068D00840573D1 0001000066190004 0069022207007B84 003601000180061D
+04C0: 000F000000080D63 6C53656E6400456D 61696C734000D100 0200005B190001D2
+04E0: 2205000010380673 000001006D001900 9604000222B60600 3867000100030180
+0500: 8100000000100000 000863514F1C456D C00000EC0006002D 190001226D0500AA
+0520: 8C06730001003600 1900194B00012208 DA0000AAA3000100 00CD320019D20001
+0540: 220BF600AA680001 00004BB000000019 00B401220E003DAA 00011A0000640000
+0560: 2C00190001226111 000000AA8F000100 06007D0000000443 0001022214FB000F
+0580: 80010000FE003101 8004001173000C6D E86C476565422200 000100006F04006D
+05A0: 03050063B6067300 360100
+.enddata
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Check Box:
+.head 3 -  Option Button:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text: clsBackTextGeneral
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 3 -  ActiveX:
+.head 2 -  Application Actions
+.head 1 +  Dialog Box: dlgFTLogin
+.head 2 -  Class: clsDialogGeneral
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title: Fleming's Nurseries Login
+.head 2 -  Accessories Enabled? Class Default
+.head 2 -  Visible? Class Default
+.head 2 -  Display Settings
+.head 3 -  Display Style? Class Default
+.head 3 -  Visible at Design time? No
+.head 3 -  Type of Dialog: Modal
+.head 3 -  Allow Dock to Parent? No
+.head 3 -  Docking Orientation: All
+.head 3 -  Window Location and Size
+.head 4 -  Left: 2.2"
+.head 4 -  Top: 0.865"
+.head 4 -  Width:  7.888"
+.head 4 -  Width Editable? Class Default
+.head 4 -  Height: 4.823"
+.head 4 -  Height Editable? Class Default
+.head 3 -  Absolute Screen Location? Class Default
+.head 3 -  Font Name: Class Default
+.head 3 -  Font Size: Class Default
+.head 3 -  Font Enhancement: Class Default
+.head 3 -  Text Color: Class Default
+.head 3 -  Background Color: Class Default
+.head 3 -  Resizable? No
+.head 3 -  Vertical Scroll? Yes
+.head 3 -  Horizontal Scroll? Yes
+.head 2 -  Description:
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Class Default
+.head 4 -  Location? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Size: 0.438"
+.head 4 -  Size Editable? Class Default
+.head 4 -  Docking Toolbar? Class Default
+.head 4 -  Toolbar Docking Orientation: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Resizable? Class Default
+.head 3 +  Contents
+.head 4 +  Pushbutton: pbHelp
+.head 5 -  Class Child Ref Key: 6
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsDialogGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left: 0.1"
+.head 6 -  Top: 0.021"
+.head 6 -  Width:  0.475"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 0.385"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name: Query.bmp
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Button Appearance: Standard
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbOk
+.head 5 -  Class Child Ref Key: 0
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clspbOk
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left: 3.513"
+.head 6 -  Top: 0.021"
+.head 6 -  Width:  0.475"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 0.385"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: Enter
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name: OK.BMP
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Button Appearance: Standard
+.head 5 +  Message Actions
+.head 6 +  On PAM_clsPB_CLICK
+.head 7 +  If SqlDatabase = 'LIVE'
+.head 8 -  Set sDatabase = 'LIVE'
+.head 7 +  Else
+.head 8 -  Set sDatabase = 'PLAY'
+.head 7 -  !
+.head 7 +  When SqlError
+.head 8 -  Call SalMessageBox( 'Error!  Please try again.','Login', MB_Ok )
+.head 7 -  Set bOk = SqlConnect( hSqlA )
+.head 7 +  If bOk
+.head 8 -  Call SqlDisconnect( hSqlA )
+.head 8 -  Call SalEndDialog( hWndForm,TRUE )
+.head 7 +  Else
+.head 8 -  Call SalEndDialog( hWndForm, FALSE )
+.head 4 +  Pushbutton: pbPrintForm
+.head 5 -  Class Child Ref Key: 10
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsDialogGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left: 4.238"
+.head 6 -  Top: 0.021"
+.head 6 -  Width:  0.6"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 0.469"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? No
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name: EXIT.ICO
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Single
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Button Appearance: Standard
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbExit
+.head 5 -  Class Child Ref Key: 15
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsDialogGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left: 7.088"
+.head 6 -  Top: Class Default
+.head 6 -  Width:  0.475"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 0.385"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Yes
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Button Appearance: Standard
+.head 5 -  Message Actions
+.head 2 +  Contents
+.head 3 +  Data Field: dfDatabase
+.head 4 -  Class Child Ref Key: 8
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsDialogGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left: Class Default
+.head 6 -  Top: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfUser
+.head 4 -  Class Child Ref Key: 9
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsDialogGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left: Class Default
+.head 6 -  Top: Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 -  !
+.head 3 +  Data Field: dfHeading
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdfGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? No
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left: 0.038"
+.head 6 -  Top: 0.333"
+.head 6 -  Width:  7.55"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 0.417"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? No
+.head 5 -  Justify: Center
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 24
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Gray
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Picture: pic1
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsPicture
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Window Location and Size
+.head 5 -  Left: 1.588"
+.head 5 -  Top: 0.833"
+.head 5 -  Width:  4.5"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 2.156"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Editable? Class Default
+.head 4 -  File Name: C:\Centura\icons\pictures\Flemrain.tif
+.head 4 -  Storage: Class Default
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Fit: Class Default
+.head 4 -  Scaling
+.head 5 -  Width:  Class Default
+.head 5 -  Height:  Class Default
+.head 4 -  Corners: Class Default
+.head 4 -  Border Style: Class Default
+.head 4 -  Border Thickness: Class Default
+.head 4 -  Tile To Parent? Class Default
+.head 4 -  Border Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 +  Message Actions
+.head 5 +  ! On SAM_Create
+.head 6 -   Call pic1.GetPicToLoad(  )
+.head 6 -   Call pic1.LoadPic(  )
+.head 3 -  Background Text: Please SELECT a Login ?
+.head 4 -  Resource Id: 20867
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsBackTextGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left: 2.2"
+.head 5 -  Top: 3.125"
+.head 5 -  Width:  3.538"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Center
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Black
+.head 4 -  Background Color: Class Default
+.head 3 +  Radio Button: rbLive
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: LIVE System
+.head 4 -  Window Location and Size
+.head 5 -  Left: 2.488"
+.head 5 -  Top: 3.344"
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Bold
+.head 4 -  Text Color: Blue
+.head 4 -  Background Color: Class Default
+.head 4 +  Message Actions
+.head 5 +  On PAM_clsRB_CLICK
+.head 6 -  Set dfHeading = "Family Trees LIVE System"
+.head 6 -  Set SqlDatabase = 'LIVE'
+.head 6 -  Set dfDatabase = SqlDatabase
+.head 6 -  Call SalColorSet( dfHeading, COLOR_IndexWindowText, COLOR_Blue )
+.head 3 +  Radio Button: rbPlay
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: PLAY System
+.head 4 -  Window Location and Size
+.head 5 -  Left: 4.138"
+.head 5 -  Top: 3.344"
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Bold
+.head 4 -  Text Color: Red
+.head 4 -  Background Color: Class Default
+.head 4 +  Message Actions
+.head 5 +  On PAM_clsRB_CLICK
+.head 6 -  Set dfHeading = "Fleming's PLAY System"
+.head 6 -  Set SqlDatabase = 'STOCKDEV'
+.head 6 -  Set dfDatabase = SqlDatabase
+.head 6 -  Call SalColorSet( dfHeading, COLOR_IndexWindowText, COLOR_Red )
+.head 3 +  Radio Button: rbLocal
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: LOCAL System
+.head 4 -  Window Location and Size
+.head 5 -  Left: 4.138"
+.head 5 -  Top: 3.646"
+.head 5 -  Width:  1.45"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Bold
+.head 4 -  Text Color: Red
+.head 4 -  Background Color: Class Default
+.head 4 +  Message Actions
+.head 5 +  On PAM_clsRB_CLICK
+.head 6 -  Set dfHeading = "Fleming's LOCAL System"
+.head 6 -  Set SqlDatabase = 'STKLOCAL'
+.head 6 -  Set dfDatabase = SqlDatabase
+.head 6 -  Call SalColorSet( dfHeading, COLOR_IndexWindowText, COLOR_Red )
+.head 3 +  Custom Control: ccSeasonYear
+.head 4 -  Class Child Ref Key: 13
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsDialogGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  DLL Name:
+.head 5 -  MS Windows Class Name:
+.head 5 -  Style:  Class Default
+.head 5 -  ExStyle:  Class Default
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left: 6.65"
+.head 6 -  Top: 0.0"
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Etched Border? Class Default
+.head 5 -  Hollow? Class Default
+.head 5 -  Vertical Scroll? Class Default
+.head 5 -  Horizontal Scroll? Class Default
+.head 5 -  Tab Stop? Class Default
+.head 5 -  Tile To Parent? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  DLL Settings
+.head 4 -  Message Actions
+.head 3 -  Background Text:
+.head 4 -  Resource Id: 35211
+.head 4 -  Class Child Ref Key: 14
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsDialogGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left: 5.838"
+.head 5 -  Top: 0.052"
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 2 -  Functions
+.head 2 +  Window Parameters
+.head 3 -  String: sStartDatabase
+.head 3 -  String: sStartUser
+.head 2 +  Window Variables
+.head 3 -  Number: nConnection 
+.head 3 -  String: sUserName 
+.head 3 -  Number: nType
+.head 3 -  Number: nID
+.head 3 -  Number: nLoginTime
+.head 3 -  Number: nRetCode
+.head 3 -  Sql Handle: hSqlA
+.head 3 -  Boolean: bOk
+.head 2 +  Message Actions
+.head 3 +  On SAM_Create
+.head 4 -  ! Set nConnection=NWGetConnectionNumber()
+.head 4 -  ! Call SalStrSetBufferLength( sUserName,20 )
+.head 4 -  ! Set nRetCode=NWGetConnectionInformation(nConnection,sUserName,nType,nID,nLoginTime)
+.head 4 -  Call GetUser( sUserName )
+.head 4 +  If sUserName = ''
+.head 5 -  Call SalModalDialog( dlgDatabaseInfo, hWndForm )
+.head 5 -  Set dfUser = SqlUser
+.head 5 -  Set sUserName = SqlUser
+.head 4 +  If sUserName = 'SUPERVISOR'
+.head 5 -  Set SqlUser = 'SYSADM'
+.head 5 -  Set SqlPassword = 'DANI'
+.head 4 +  Else If sUserName = 'ADMIN'
+.head 5 -  Set SqlUser = 'SYSADM'
+.head 5 -  Set SqlPassword = 'DANI'
+.head 4 +  Else
+.head 5 -  Set sUserName = SalStrLeftX( sUserName, 8 )
+.head 5 -  Set SqlDatabase = ''
+.head 5 -  Set SqlUser = sUserName
+.head 5 -  Set SqlPassword = sUserName
+.head 4 +  If sStartDatabase = 'STOCKDEV'
+.head 5 -  Set rbPlay = TRUE
+.head 4 +  Else If sStartDatabase = 'STKLOCAL'
+.head 5 -  Set rbLocal = TRUE
+.head 4 +  Else
+.head 5 -  Set rbLive = TRUE
+.head 4 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 3 +  On SAM_CreateComplete
+.head 4 -  Call SalSetFocus(pbOk)
+.head 4 +  If rbPlay
+.head 5 -  Call SalSendMsg( rbPlay, SAM_Click, 0, 0 )
+.head 4 +  Else If rbLocal
+.head 5 -  Call SalSendMsg( rbLocal, SAM_Click, 0, 0 )
+.head 4 +  Else
+.head 5 -  Call SalSendMsg( rbLive, SAM_Click, 0, 0 )
+.head 4 -  Return SalSendClassMessage( SAM_CreateComplete, wParam, lParam )

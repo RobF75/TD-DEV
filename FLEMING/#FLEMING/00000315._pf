@@ -1,0 +1,979 @@
+Application Description: 
+		Starter Centura Builder Application file.
+	Outline Version - 4.0.26
+	Design-time Settings
+.data DT_MAKERUNDLG
+0000: 0000000000076E65 772E657865076E65 772E646C6C076E65 772E617063000001
+0020: 01011B433A5C4445 56454C4F50315C53 7461727465725C6E 65772E72756E1B43
+0040: 3A5C444556454C4F 50315C5374617274 65725C6E65772E64 6C6C1B433A5C4445
+0060: 56454C4F50315C53 7461727465725C6E 65772E6170630000 010101076E65772E
+0080: 617064076E65772E 646C6C076E65772E 6170630000010101 1B433A5C44455645
+00A0: 4C4F50315C537461 727465725C6E6577 2E61706C1B433A5C 444556454C4F5031
+00C0: 5C53746172746572 5C6E65772E646C6C 1B433A5C44455645 4C4F50315C537461
+00E0: 727465725C6E6577 2E61706300000101 01
+.enddata
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000A60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF000000 0000000000140300 00BD010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D02000000075769 6E646F7773126672
+0080: 6D51756572794375 73744D6173746572
+.enddata
+		Outline Window State: Normal
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600040003002D00 0000000000000000 0000D21E3C0F0500 1D00FFFF4D61696E
+0020: 0000000000000000 0000000000000000 0000003B00010000 00000000000000E6
+0040: 1E840A00008600FF FF496E7465726E61 6C2046756E637469 6F6E730000000000
+0060: 0000000000000000 0000000000003200 0100000000000000 0000E61E840A0000
+0080: DF00FFFF56617269 61626C6573000000 0000000000000000 0000000000000000
+00A0: 3000010000000000 00000000FA1E0E0D 0000F400FFFF436C 6173736573000000
+00C0: 0000000000000000 0000000000000000
+.enddata
+.data VIEWSIZE
+0000: D000
+.enddata
+			Left:   -0.013"
+			Top:    0.0"
+			Width:  8.013"
+			Height: 4.969"
+		Options Box Location
+.data VIEWINFO
+0000: D4180909B80B1A00
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? No
+			Left:   4.15"
+			Top:    1.885"
+			Width:  3.8"
+			Height: 2.073"
+		Class Editor Location
+			Visible? No
+			Left:   0.575"
+			Top:    0.094"
+			Width:  5.063"
+			Height: 2.719"
+		Tool Palette Location
+			Visible? Yes
+			Left:   6.41"
+			Top:    1.592"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? Yes
+		Enable Runtime Checks Of External References? Yes
+		Use Release 4.0 Scope Rules? No
+	Libraries
+		File Include: General.apl
+		File Include: Address.apl
+		File Include: Custq.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Line
+				Line Color: Use Parent
+			Frame
+				Border Color: Use Parent
+				Background Color: 3D Face Color
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0'%'
+			Number: #0
+			Number: ###000
+			Number: ###000;'($'###000')'
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+		Resources
+		Variables
+.data RESOURCE 0 0 1 3411135138
+0000: E8050000F7010000 0000000000000000 0200003A000000A2 000000E0010D0000
+0020: 00FF3FAF00B80000 0100FFFFE0BC0000 0001FE00FF83C900 000001FB00FF0FD6
+0040: 000000EE0100FF3F E300B800000100FF FFE0F000000001FE 00FF83FD00000001
+0060: FB00FF0F0A010000 EE0100FF3F170182 000204000000FFFF E81B010002FE00FF
+0080: A31F010001FB00FF 8F2C0100EE0100FF 3F3901BA000100FF FFE846010001FE00
+00A0: FF235301000304FA 0000FF8F570100EE 0200FF3F5B01BA00 0100FFFFE8680100
+00C0: 01FE00FFA3750100 01FB00FF8F820100 EE0200FF3F8601BA 000200FFFFE88A01
+00E0: 0002FE00FFA38E01 0001FB00FF8F9B01 00EE0100FF3FA801 BA000200FFFFE8AC
+0100: 010002FE00FFA3B0 010001FB00FF8FBD 0100EE0100FF3FCA 01BA000100FFFFE8
+0120: D7010001FE00FFA3 E4010003FB00FF8F E80100EE0200FF3F EC01BA000100FFFF
+0140: E8F9010001FE00FF 830602000001FB00 FF8F130200EE0200 FF3F1702BA000200
+0160: FFFFE81B020002FE 00FFA31F020001FB 00FF8F2C0200EE01 00FF3F3902BA0002
+0180: 00FFFFE83D020002 FE00FFA341020001 FB00FF8F4E0200EE 0100FF3F5B02BA00
+01A0: 0100FFFFE8680200 01FE00FFA3750200 03FB00FF8F790200 EE0200FF3F7D02BA
+01C0: 000100FFFFE88A02 0001FE00FFA39702 0001FB00FF8FA402 00EE0200FF3FA802
+01E0: BA000200FFFFE8AC 020002FE00FFA3B0 020001FB00FF8FBD 0200EE0100FF3FCA
+0200: 02A200040D0000FF FF
+.enddata
+		Internal Functions
+		Named Menus
+		Class Definitions
+.data RESOURCE 0 0 1 4026802628
+0000: D7110000C6070000 0000000000000000 0200001E00FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F04003C00 001063006C73546F
+0040: 6F6C546900705769 6E646F771E800000 0001000000470304 0000FFFF01018015
+0060: 000000014200000E 636C700062437573 746F6D6500727352 00000003003C0000
+0080: 0204FA0000FF4F04 0000E0010D000000 FF3F1100B0000003 0400FFFF000180B7
+00A0: 0000000200200000 16636C4765006E65 72616C546162F06C 6547659136020015
+00C0: 009E00010DFD00FF 270D000001F700FF 1F1A0000DC000100 FF7F277000000001
+00E0: 00FFFF8134000000 0204FD00FF073800 000002F700FF1F3C 0000DC000200FF7F
+0100: 40700000000200FF FFC14400000002FD 00FF074800000002 F700FF1F4C0000DC
+0120: 000200FF7F507000 00000200F4010000 0F80010000FE0081 54000000010DD100
+0140: 0100003F8001F900 00075800000001F6 0D00FF1F650000DC 000100FF7F727000
+0160: 00000100FFFFC17F 00000001FD00FF07 8C00000001F700FF 1F990000DC000100
+0180: FF7FA67000000001 00FFFFC1B3000000 03FD00FF07018022 000008000300001D
+01A0: 636C0154626C4D61 6B650053656C6563 74656400526F774B 6579417200726179
+01C0: 74000000047B0002 4700010000FFE480 010000DF04D80001 0D00FF7F11730001
+01E0: 00FFFFCD1E0002FD 00FF8701801100CC 0004001001436F6C 756D6E471E656C38
+0200: 00D100020000B302 0400FFFFC6040001 0DFE00FF4301800D 000080050000000C
+0220: 636CF2704765891E 000001009E00010D FD00FF8701803800 0000060000000963
+0240: 6C0748656C7086B0 0000000500770200 FFFF8D0400010DFD 00FF37110001F700
+0260: FFDF1EDC000100FF 7F2B700000000100 FFFF3101800D0007 F000000009814578
+0280: 69741E00E8000100 00D9010D00FF7F01 0880040000080000 1C000C5069630045
+02A0: 7870616E641E00D1 00010000BB0200FF FF18018004000900 E0000012636C0154
+02C0: 6F67676C65428075 74746F6E1E00E800 010000DD0200FF7F 0100802F0000000A
+02E0: 00001C0010446961 E06C6F6747659386 0000053D00010DFB 00FF6F0D00EE0200
+0300: FFBF11A100040D00 00FFFFC61E000304 FE00FF9322000001 FB00FF8F01800481
+0320: 000B0000000CC364 664765371E00017A 000003F700FF1F01 801103000C000000
+0340: 0CC6636362476F38 00F4020000EC010D 00FFBF0DB1000204 00FFFF9001801E00
+0360: 000DA10013636C44 0B6F4368696C1864 5461655200D10003 0000B3010D00FFFF
+0380: E60D0001FE00FF9B 1A0002FB00FF0F01 8033000000000E00 000011631A6C5451
+03A0: 7565F07279446960 A00000000600CF03 04FE00FF93040000 02FB00FF6F0800EE
+03C0: 0200FF3F0C00B100 010D00FFFFE01900 000001FE00FF8326 00000001FB00FF0F
+03E0: 01805D008000000F 00000011F3517500 6174614669656C64 684401000C00EF02
+0400: FE00FF9B040002FB 00FF6F0800EE0200 FFBF0CB9000200FF FFC010000000010D
+0420: FE00FF831D000000 01FB00FF0F2A0000 008E02000100FE00 C9800100003F2E00
+0440: B00000010D00FFFF E03B00000002FE00 FF833F00000001FB 00FF6F4C00EE0200
+0460: FFBF50B9000100FF FF9801805D0010F9 001207436F6D626F FC4669ED0C00DD02
+0480: 00FF7F0473000200 FFFFCD080002FD00 FF370C0002F700FF DF10D800010D00FF
+04A0: 7F1D73000100FFFF CD2A0002D1000100 003F8001F9000037 2E0001F60D00FFDF
+04C0: 3BDC000200FF7F3F 73000100FFFFCD4C 0002FD00FF375000 01F700FF1F01805D
+04E0: 230011000012FF1F 436163B068654401 0CBD0002FB00FF6F 0400EE0200FFBF08
+0500: B9000200FFFFE60C 0002FE00FF1B1000 010DFB00FF6F1D00 EE0100FFBF2A3900
+0520: 020001FA00002780 010000FFC62E0001 0DFE00FF9B3B0002 FB00FF6F3F00EE01
+0540: 00FFBF4CB9000200 FFFFE6500001FE00 FF4301801A000080 1200000015636C1F
+0560: 4F7065807261746F 7246691338000002 003D00010DFB00FF 6F0D00EE0100FF3F
+0580: 0180060400130000 00FC136300794342 5965734E6F40466C 61671E0000F40100
+05A0: 00EC020400FF3F01 8004340000140000 002814636C705365 09656346726F6D0C
+05C0: 5461656C0000EC00 0400D9010D00FF7F 0D73000100FFFFCD 1A0001FD00FF3727
+05E0: 0001F700FF1F0180 0423001500000D24 636C536565638149 6E746F1E00E80001
+0600: 0000DD0300FF7F01 0C802F0016000010 000B636C466F7280 6D426173658600EC
+0620: 000500D9010D00FF 7F0D7200000200FF FF8D1100040DFD00 FF371E0003F700FF
+0640: DF22DC000100FF7F 010C800D00170000 F00017636C015072 696E744261016963
+0660: 5265706F728C741E 0001009E00010DFD 00FFC701800D8000 1800000011630153
+0680: 70696E5365610073 6F6E596561721EA2 000001000067010D 00FFFF2101802E00
+06A0: 0019730011700374 6172745072006F67 72616DBA0000EC00 0700DD0200FF7F04
+06C0: 7200000200FFFFCD 080002FD00FF370C 0001F60D00FFDF19 DC000300FF7F1D73
+06E0: 000200FFFFC12100 000001FD00FF0701 803600000C001A00 0F636CF953741FEE
+0700: 0000EC000900D901 0D00FF7F0D730001 00FFFFCD1A0002FD 00FF371E0002F700
+0720: FFDF22DC000200FF 7F2673000200FFFF CD2A0002FD00FF37 2E0002F700FF1F32
+0740: 0000DC000200FF7F 0108802B00001B00 00D8001063468C6D 42655461936C0000
+0760: 043D00010DFB00FF 6F0D00EE0100FFBF 1AB9000100FFFFE6 270002FE00FF6301
+0780: 800400001C000000 0C636654CE614361 891E00000100DE00 03FD00FFC7018015
+07A0: 4C001D000B661C43 61506F6F815A0000 0003001E00071900 0100010100E00900
+07C0: 3D008001F9000037 040003F60400FFDF 08D800010D00FF7F
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window: cBaseForm
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Option Button:
+			Check Box:
+			Child Table:
+			Quest Child Window: cQuickDatabase
+			List Box:
+			Combo Box:
+			Picture: cQuickPicture
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				If strArgArray[0] = ''
+					Set SqlDatabase = 'STOCKDEV'
+					Set SqlUser = 'GRAHAM'
+					Set SqlPassword = 'GRAHAM'
+				Else
+					Set SqlDatabase = strArgArray[1]
+					Set SqlUser = strArgArray[2]
+					Set SqlPassword = strArgArray[3]
+				!
+				Call CheckProgramExistance( "Query Customers", TRUE )
+				!
+				Call SqlHandlesSetup(  )
+			On SAM_AppExit
+				Call SqlHandlesDisconnectClose(  )
+	Form Window: frmQueryCustMaster
+		Class: clsfrmQueryCustMaster
+		Property Template:
+		Class DLL Name:
+		Title:
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? Yes
+			Automatically Created at Runtime? Yes
+			Initial State: Class Default
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:  
+				Top:   
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+				Pushbutton: pbSelect
+					Class Child Ref Key: 22
+					Class ChildKey: 0
+					Class: clsfrmQueryCustMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbClearRows
+					Class Child Ref Key: 7
+					Class ChildKey: 0
+					Class: clsfrmQueryCustMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbAddRows
+					Class Child Ref Key: 8
+					Class ChildKey: 0
+					Class: clsfrmQueryCustMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbSaveRows
+					Class Child Ref Key: 9
+					Class ChildKey: 0
+					Class: clsfrmQueryCustMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbQuery
+					Class Child Ref Key: 10
+					Class ChildKey: 0
+					Class: clsfrmQueryCustMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbDeleteRows
+					Class Child Ref Key: 11
+					Class ChildKey: 0
+					Class: clsfrmQueryCustMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbRePopulate
+					Class Child Ref Key: 12
+					Class ChildKey: 0
+					Class: clsfrmQueryCustMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbTools
+					Class Child Ref Key: 13
+					Class ChildKey: 0
+					Class: clsfrmQueryCustMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbHelp
+					Class Child Ref Key: 27
+					Class ChildKey: 0
+					Class: clsfrmQueryCustMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbItemEnq
+					Class Child Ref Key: 28
+					Class ChildKey: 0
+					Class: clsfrmQueryCustMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 29
+					Class ChildKey: 0
+					Class: clsfrmQueryCustMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbExit
+					Class Child Ref Key: 30
+					Class ChildKey: 0
+					Class: clsfrmQueryCustMaster
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			Child Table: tblCustMaster
+				Class Child Ref Key: 16
+				Class ChildKey: 0
+				Class: clsfrmQueryCustMaster
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					View: Class Default
+					Allow Row Sizing? Class Default
+					Lines Per Row: Class Default
+				Memory Settings
+					Maximum Rows in Memory: Class Default
+					Discardable? Class Default
+				Contents
+					Column: colUpperCustName
+						Class Child Ref Key: 17
+						Class ChildKey: 0
+						Class: clsfrmQueryCustMaster
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colCustNo
+						Class Child Ref Key: 18
+						Class ChildKey: 0
+						Class: clsfrmQueryCustMaster
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colCustName
+						Class Child Ref Key: 19
+						Class ChildKey: 0
+						Class: clsfrmQueryCustMaster
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colBusName
+						Class Child Ref Key: 20
+						Class ChildKey: 0
+						Class: clsfrmQueryCustMaster
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colARBalance
+						Class Child Ref Key: 21
+						Class ChildKey: 0
+						Class: clsfrmQueryCustMaster
+						Property Template:
+						Class DLL Name:
+						Title:
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+				Functions
+				Window Variables
+				Message Actions
+			Data Field: dfDatabase
+				Class Child Ref Key: 23
+				Class ChildKey: 0
+				Class: clsfrmQueryCustMaster
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfUser
+				Class Child Ref Key: 24
+				Class ChildKey: 0
+				Class: clsfrmQueryCustMaster
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text:
+				Resource Id: 54144
+				Class Child Ref Key: 25
+				Class ChildKey: 0
+				Class: clsfrmQueryCustMaster
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 26
+				Class ChildKey: 0
+				Class: clsfrmQueryCustMaster
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+		Functions
+		Window Parameters
+		Window Variables
+		Message Actions

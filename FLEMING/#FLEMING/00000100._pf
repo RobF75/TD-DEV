@@ -1,0 +1,2736 @@
+.head 0 +  Application Description: SQLWindows 5.01 Order processing function APL
+NOT FINALISED CONVERSION YET.
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000990000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF160000 0016000000AA0200 0053010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left:   0.15"
+.head 3 -  Top:    0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 0418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left:   5.113"
+.head 3 -  Top:    2.896"
+.head 3 -  Width:  4.688"
+.head 3 -  Height: 2.99"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   Default
+.head 3 -  Top:    Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   8.263"
+.head 3 -  Top:    0.688"
+.head 2 -  Fully Qualified External References? No
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: VTSPIN.APL
+.head 2 -  File Include: VTWIN.APL
+.head 2 -  File Include: VTMETER.APL
+.head 2 -  File Include: Meter.apl
+.head 2 -  File Include: Spnfield.apl
+.head 2 -  File Include: Itemfunc.apl
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Italic
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Black
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for ORDFUNC.APL
+.head 4 -  ! Number: ORDFUNCAplMsgOffSet = SAM_User + ?
+.head 4 -  ! Message go up to AplOffSet + 99
+.head 4 -  !
+.head 4 -  ! Number: ORDFUNCAplConstOffSet = ?
+.head 4 -  !
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 2371813546
+0000: 80050000E0010000 0000000000000000 020000360000004C 000000E0010D0000
+0020: 00FF3F5900B80000 0100FFFFE0660000 0001FE00FF837300 000001FB00FF0F80
+0040: 000000E002040000 00FF3F8400B80000 0200FFFFE0880000 0001FE00FF839500
+0060: 000001FB00FF0FA2 000000EE0100FF3F AF00B800000100FF FF80BC0000000304
+0080: 00FE00FF83C00000 0002FB00FF0FC400 0000EE0100FF3FD1 00B800000100FFFF
+00A0: E0DE00000001FE00 FF83EB00000002FB 00FF0FEF000000EE 0200FF3FF300B800
+00C0: 000200FFFFE0F700 000001FE00FFA304 010002FB00FF8F08 0100EE0200FF3F0C
+00E0: 01BA000100FFFFE8 19010001FE00FFA3 26010001FB00FF8F 330100EE0100FF3F
+0100: 4001BA000300FFFF E844010002FE00FF A348010001FB00FF 8F550100EE0100FF
+0120: 3F6201BA000100FF FFE86F010002FE00 FFA373010002FB00 FF8F770100EE0200
+0140: FF3F7B01BA000100 FFFFE888010002FE 00FFA38C010002FB 00FF8F900100EE01
+0160: 00FF3F9D01BA0001 00FFFFE8AA010001 FE00FFA3B7010001 FB00FF8FC40100EE
+0180: 0300FF3FC801BA00 0200FFFFE8CC0100 01FE00FFA3D90100 01FB00FF8FE60100
+01A0: EE0100FF3FF301BA 000200FFFFE8F701 0002FE00FFA3FB01 0002FB00FF8FFF01
+01C0: 00EE0100FF3F0C02 B800000100FFFFE8 19020001FE00FFA3 26020001FB00FF8F
+01E0: 330200EE0100FF3F 4002A200040D0000 FFFF
+.enddata
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 3 +  Function: GetOrderBasicDetails
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nCustNo
+.head 5 -  Date/Time: dtOrderSysDT
+.head 5 -  Receive Number: nItemNo
+.head 5 -  Receive Number: nSubsItemNo
+.head 5 -  Receive Number: nYear
+.head 5 -  Receive Number: nOrdAmt
+.head 5 -  Receive Number: nConfAmt
+.head 5 -  Receive String: sAllocFlag
+.head 5 -  Receive Number: nBatchLocId
+.head 5 -  Receive Number: nBatchYear
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! Sql Handle: hSqlHandle
+.head 5 -  ! Boolean: bHandleConnected
+.head 5 -  ! Boolean: bHandlePrepared
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nInd
+.head 5 -  !
+.head 5 -  Number: nGotItemNo
+.head 5 -  Number: nGotSubsItemNo
+.head 5 -  Number: nGotYear
+.head 5 -  Number: nGotOrdAmt
+.head 5 -  Number: nGotConfAmt
+.head 5 -  String: sGotAllocFlag
+.head 5 -  Number: nGotBatchLocId
+.head 5 -  Number: nGotBatchYear
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetOrderBasicDetails' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT
+    Stock_Item_No,
+    Subs_Item_No,
+    Year_Of_Sale,
+    Ordered_Amount,
+    Conf_Amt,
+    Alloc_Flag,
+    Batch_Year_Of_Sale,
+    Batch_Location_Id
+ FROM
+    Customer_Order 
+ WHERE 
+  Cust_No = :1 AND 
+  Order_Date_Time = :2 "
+.head 7 -  Set sName = 'GTORDBASICDETS'
+.head 7 -  Set sBind = ':nCustNo, :dtOrderSysDT'
+.head 7 -  Set sInto = ':nGotItemNo,
+    :nGotSubsItemNo
+    :nGotYear,
+    :nGotOrdAmt,
+    :nGotConfAmt,
+    :sGotAllocFlag,
+    :nGotBatchYear,
+    :nGotBatchLocId'
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set nItemNo = NUMBER_Null
+.head 7 -  Set nSubsItemNo = NUMBER_Null
+.head 7 -  Set nYear = NUMBER_Null
+.head 7 -  Set nOrdAmt = NUMBER_Null
+.head 7 -  Set nConfAmt = NUMBER_Null
+.head 7 -  Set sAllocFlag = ''
+.head 7 -  Set nBatchLocId = NUMBER_Null
+.head 7 -  Set nBatchYear = NUMBER_Null
+.head 7 -  !
+.head 7 -  Set nGotItemNo = NUMBER_Null
+.head 7 -  Set nGotSubsItemNo = NUMBER_Null
+.head 7 -  Set nGotYear = NUMBER_Null
+.head 7 -  Set nGotOrdAmt = NUMBER_Null
+.head 7 -  Set nGotConfAmt = NUMBER_Null
+.head 7 -  Set sGotAllocFlag = ''
+.head 7 -  Set nGotBatchLocId = NUMBER_Null
+.head 7 -  Set nGotBatchYear = NUMBER_Null
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 9 -  Set nItemNo = nGotItemNo
+.head 9 -  Set nSubsItemNo = nGotSubsItemNo
+.head 9 -  Set nYear = nGotYear
+.head 9 -  Set nOrdAmt = nGotOrdAmt
+.head 9 -  Set nConfAmt = nGotConfAmt
+.head 9 -  Set sAllocFlag = sGotAllocFlag
+.head 9 -  Set nBatchLocId = nGotBatchLocId
+.head 9 -  Set nBatchYear = nGotBatchYear
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 3 +  Function: NewChangeLogic
+.head 4 -  Description: To handle the logic required when changing a customer order
+This function used the nLess20OkDontAsk and nLess20NotOkDontAsk flags so be carefull
+when changing code.
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nCustNo
+.head 5 -  Date/Time: dtOrderSysDT
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  String: sAllocFlag
+.head 5 -  String: sSubsOkFlag
+.head 5 -  Number: nBatchLocId
+.head 5 -  Number: nBatchYear
+.head 5 -  Receive Number: nNewSubItemNo
+.head 5 -  Receive Number: nOldYear
+.head 5 -  Receive Boolean: bLogicChange
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sGenericFlag
+.head 5 -  String: sOldGenericFlag
+.head 5 -  Boolean: bOk
+.head 5 -  Boolean: bCheckItem
+.head 5 -  !
+.head 5 -  Number: nOldItemNo
+.head 5 -  Number: nOldSubsItemNo
+.head 5 -  ! Number: nOldYear
+.head 5 -  Number: nOldOrdAmt
+.head 5 -  Number: nOldConfAmt
+.head 5 -  String: sOldAllocFlag
+.head 5 -  Number: nOldBatchLocId
+.head 5 -  Number: nOldBatchYear
+.head 5 -  !
+.head 5 -  ! Number: nPassDownActionType
+.head 4 +  Actions
+.head 5 +  If IsFlagSet( nActionType, SH_cls_Execute )
+.head 6 -  Set bLogicChange = FALSE
+.head 6 -  Set nNewSubItemNo = NUMBER_Null
+.head 6 +  If GetOrderBasicDetails( nCustNo, dtOrderSysDT, nOldItemNo, nOldSubsItemNo, nOldYear, nOldOrdAmt, nOldConfAmt, sOldAllocFlag, nOldBatchLocId, nOldBatchYear, SH_cls_Execute )
+.head 7 +  If nOldYear = nYear
+.head 8 +  If nOldItemNo = nItemNo
+.head 9 +  If nOldOrdAmt = nOrdAmt
+.head 10 +  If sOldAllocFlag = sAllocFlag
+.head 11 +  If nOldConfAmt = nConfAmt
+.head 12 +  If nOldBatchLocId = nBatchLocId
+.head 13 +  If nOldBatchYear = nBatchYear
+.head 14 -  ! Then nothing has changed to the 5 fields that impact the total amount on order
+so we dont need to update anything
+.head 14 -  Return TRUE
+.head 7 -  ! Dani added to stop users increasing an ordered amount
+.head 7 -  ! Jan took out the check for increasing or decreasing conf_amount
+  this should be done local to the screen
+.head 7 +  If nOldConfAmt = NUMBER_Null
+.head 8 +  If nOldOrdAmt < nOrdAmt
+.head 9 -  Call SalMessageBeep( 0 )
+.head 9 +  If NOT SalSendMsg( hWndForm, PAM_ORDERMSGNOTIFY, ORDER_Save, ORDERMSG_IncreaseOrdAmt )
+.head 10 -  Call SalMessageBox( 'You cannot increase an ordered amount', 'Order', MB_Ok )
+.head 9 -  Return FALSE
+.head 7 +  If nConfAmt < 0 AND NOT nConfAmt  = NUMBER_Null
+.head 8 -  Call SalMessageBeep( 0 )
+.head 8 +  If NOT SalSendMsg( hWndForm, PAM_ORDERMSGNOTIFY, ORDER_Save, ORDERMSG_DecreaseConfB0 )
+.head 9 -  Call SalMessageBox( 'You cannot decrease a confirmed amount below zero!', 'Order', MB_Ok )
+.head 8 -  Return FALSE
+.head 7 -  !
+.head 7 +  If NOT nOldItemNo = nItemNo
+.head 8 -  Set bCheckItem = FALSE
+.head 8 +  If NOT nConfAmt = NUMBER_Null
+.head 9 +  If nConfAmt > 0
+.head 10 -  Set bCheckItem = TRUE
+.head 8 +  Else If nOrdAmt > 0
+.head 9 -  Set bCheckItem = TRUE
+.head 8 -  !
+.head 8 +  If bCheckItem
+.head 9 +  If IsFlagSet( nActionType, nItemCheck )
+.head 10 +  If CheckItemIsOkForCust( nItemNo, nYear, nCustNo, bOk, nActionType )
+.head 11 +  If NOT bOk
+.head 12 -  Call SalMessageBeep( 0 )
+.head 12 -  Return FALSE
+.head 7 -  !
+.head 7 -  Set bLogicChange = TRUE
+.head 7 +  If GetGenericStockItemFlag( nItemNo, sGenericFlag, SH_cls_Execute )
+.head 8 +  If GetGenericStockItemFlag( nOldItemNo, sOldGenericFlag, SH_cls_Execute )
+.head 9 +  If NewDeductFromStockItemSale( nOldItemNo, nOldYear, nOldOrdAmt, nOldConfAmt, sOldAllocFlag, sOldGenericFlag, nOldBatchLocId, nOldBatchYear,  SH_cls_Execute  )
+.head 10 +  If nOldSubsItemNo > 0
+.head 11 +  If NOT NewDeleteFromSub( nOldSubsItemNo, nOldYear, nOldOrdAmt, nOldConfAmt, sOldAllocFlag, SH_cls_Execute )
+.head 12 -  Return FALSE
+.head 10 -  !
+.head 10 +  ! If IsFlagSet( nActionType, nLess20OkDontAsk )
+.head 11 -  Set nPassDownActionType = SH_cls_Execute | nLess20OkDontAsk
+.head 10 +  ! Else If IsFlagSet( nActionType, nLess20NotOkDontAsk )
+.head 11 -  Set nPassDownActionType = SH_cls_Execute | nLess20OkDontAsk
+.head 10 +  ! Else
+.head 11 -  Set nPassDownActionType = SH_cls_Execute
+.head 10 +  If NewAddToStockItemSale( nItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, sGenericFlag, sSubsOkFlag, nBatchLocId, nBatchYear, nNewSubItemNo, nActionType )
+.head 11 -  Return TRUE
+.head 10 +  Else
+.head 11 -  Return FALSE
+.head 9 +  Else
+.head 10 -  Return FALSE
+.head 8 +  Else
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Commit )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT NewDeductFromStockItemSale( 0, 0, 0, 0, '', '', 0, 0, SH_cls_Commit  )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewAddToStockItemSale( 0, 0, 0, 0, '', '', '', 0, 0, nNewSubItemNo, SH_cls_Commit )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewDeleteFromSub( 0, 0, 0, 0, '', SH_cls_Commit )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT CheckItemIsOkForCust( 0, 0, 0, bOk, SH_cls_Commit )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Rollback )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT NewDeductFromStockItemSale( 0, 0, 0, 0, '', '', 0, 0, SH_cls_Rollback  )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewAddToStockItemSale( 0, 0, 0, 0, '', '', '', 0, 0, nNewSubItemNo, SH_cls_Rollback )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewDeleteFromSub( 0, 0, 0, 0, '', SH_cls_Rollback )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT CheckItemIsOkForCust( 0, 0, 0, bOk, SH_cls_Rollback )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Disconnect )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT GetOrderBasicDetails( 0, DATETIME_Null, nOldItemNo, nOldSubsItemNo, nOldYear, nOldOrdAmt, nOldConfAmt, sOldAllocFlag, nOldBatchLocId, nOldBatchYear, SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT GetGenericStockItemFlag( 0, sGenericFlag, SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewDeductFromStockItemSale( 0, 0, 0, 0, '', '', 0, 0, SH_cls_Disconnect  )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewAddToStockItemSale( 0, 0, 0, 0, '', '', '', 0, 0, nNewSubItemNo, SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewDeleteFromSub( 0, 0, 0, 0, '', SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT CheckItemIsOkForCust( 0, 0, 0, bOk, SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 3 +  Function: NewSetFlagsOnOrdChange
+.head 4 -  Description: Set Ack_Flag and Conf_Flag = 'N' on one order line for customer
+to force the reprint of the acknowledgments and confirmations.
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nCustNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! Sql Handle: hSqlSelectHandle
+.head 5 -  ! Boolean: bHandleSelectConnected
+.head 5 -  ! Boolean: bHandleSelectPrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlUpdHandle
+.head 5 -  ! Boolean: bHandleUpdConnected
+.head 5 -  ! Boolean: bHandleUpdPrepared
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Boolean: bOk
+.head 5 -  Number: nOurSelectHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Number: nInd
+.head 5 -  Date/Time: dtOrderDTStamp
+.head 4 +  Actions
+.head 5 -  Set nOurSelectHandleNo = SqlHandlesGetReferenceNo( 'NewSetFlagsOnOrdChangeSelect' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'NewSetFlagsOnOrdChangeUpdt' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT Order_Date_Time
+FROM Customer_Order 
+WHERE Cust_No = :1 AND
+  Year_Of_Sale = :nYear AND
+  Invoiced_Flag = 'N' AND
+  Pull_Sheet_Issued = 'N'  "
+.head 7 -  Set sName = 'STFLGSORDCHNGE'
+.head 7 -  Set sBind = ':nCustNo'
+.head 7 -  Set sInto = ':dtOrderDTStamp'
+.head 7 -  Call haSqlHandles[ nOurSelectHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurSelectHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " UPDATE Customer_Order
+SET Ack_Flag = 'N', Conf_Flag = 'N'
+WHERE Cust_No = :1 AND
+  Order_Date_Time = :2 "
+.head 7 -  Set sName = 'UPDTORDFLGS'
+.head 7 -  Set sBind = ':nCustNo, :dtOrderDTStamp'
+.head 7 -  Set sInto = ''
+.head 7 -  Call haSqlHandles[ nOurUpdtHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set dtOrderDTStamp = DATETIME_Null
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurSelectHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurSelectHandleNo ].FetchNext( nInd )
+.head 9 -  Return haSqlHandles[ nOurUpdtHandleNo ].Execute( )
+.head 8 +  Else
+.head 9 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurSelectHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: NewSaveOrder
+.head 4 -  Description: Save the changes done to an order
+BIG NOTE: nActionType These constants are the SH_cls_Execute, SH_cls_Disconnect, nReprepare,
+  SH_cls_Commit, SH_cls_Rollback are the values MUST be 2,4,8,16,32,64,128,256 etc and
+  nLess20OkDontAsk OR nLess20NotOkDontAsk must also have a value in this sequence.
+IF the application does not want the message "Item is less than 20! Continue YES/NO" to
+  be asked then OR together SH_cls_Execute | nLess20OkDontAsk OR SH_cls_Execute | nLess20NotOkDontAsk
+  to asume a no user interaction action.  By default the message will be asked!
+ALSO Assumed is that nLess20OkDontAsk and nLess20NotOkDontAsk will not be used
+  together in the one OR statement.
+USER nItemCheck Flag ORd onto the SH_cls_Execute to perform checks for item sold out, prohibited
+for customer etc.  Can also use nNoMsg flag ORd to stop these message boxes from appearing.
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nCustNo
+.head 5 -  Date/Time: dtOrderSysDT
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  String: sAllocFlag
+.head 5 -  String: sSubsOkFlag
+.head 5 -  Number: nBatchLocId
+.head 5 -  Number: nBatchYear
+.head 5 -  Window Handle: hWndHandle
+.head 5 -  Number: nPAM_EXTRAFIELDSMSG
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! Sql Handle: hSqlUpdtBasicsHandle
+.head 5 -  ! Boolean: bUpdtBasicsHandleConnected
+.head 5 -  ! Boolean: bUpdtBasicsHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlUpdateHandle
+.head 5 -  ! Boolean: bUpdateHandleConnected
+.head 5 -  ! Boolean: bUpdateHandlePrepared
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurUpdtBasicHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Boolean: bOk
+.head 5 -  Boolean: bLogicChange
+.head 5 -  !
+.head 5 -  Number: nSubsItemNo
+.head 5 -  Number: nOldYear
+.head 5 -  !
+.head 5 -  ! Number: nPassDownActionType
+.head 4 +  Actions
+.head 5 -  Set nOurUpdtBasicHandleNo = SqlHandlesGetReferenceNo( 'NewSaveOrderUpdtBasic' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'NewSaveOrderUpdt' )
+.head 5 +  If IsFlagSet( nActionType, SH_cls_Execute )
+.head 6 -  Set sSql = " UPDATE Customer_Order 
+SET 
+  Stock_Item_No = :3,
+  Year_Of_Sale = :4, 
+  Ordered_Amount = :5,
+  Alloc_Flag = :6,
+  Conf_Flag = 'N', 
+  Conf_Amt = :7, 
+  NPA_Sent_Flag = 'N', 
+  Ack_Flag = 'N',
+  Subs_Ok_Flag = :8, 
+  Subs_Item_No = :9,
+  Batch_Year_Of_Sale = :10, 
+  Batch_Location_Id = :11
+WHERE 
+  Cust_No = :1 AND 
+  Order_Date_Time = :2  "
+.head 6 -  Set sName = 'UPDTSAVEORDBAS'
+.head 6 -  Set sBind = ':nCustNo, :dtOrderSysDT, :nItemNo, :nYear, :nOrdAmt, 
+:sAllocFlag, :nConfAmt, :sSubsOkFlag, :nSubsItemNo, :nBatchYear, 
+:nBatchLocId'
+.head 6 -  Set sInto = ''
+.head 6 -  Call haSqlHandles[ nOurUpdtBasicHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 6 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtBasicHandleNo ].hSqlHandle )
+.head 6 -  !
+.head 6 -  !
+.head 6 +  If hWndHandle != hWndNULL
+.head 7 -  Set sSql = sgSql
+.head 7 +  If SalSendMsg( hWndHandle, PAM_ORDER_EXTRAUPDATE, 0, 0 )
+.head 8 -  Set sgSql = 'UPDATE  Customer_Order  SET ' || sIntoVars ||
+' WHERE Cust_No = :nCustNo AND Order_Date_Time = :dtOrderSysDT '
+.head 7 +  Else
+.head 8 -  Call CallBuildSql( hWndHandle, nUPDATE, nPAM_EXTRAFIELDSMSG,
+  ' Customer_Order ',
+  ' WHERE Cust_No = :nCustNo AND Order_Date_Time = :dtOrderSysDT ' )
+.head 7 -  Call haSqlHandles[ nOurUpdtHandleNo ].PrepareSetup( sgSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 7 -  Set sgSql = sSql
+.head 7 -  !
+.head 7 +  If NOT DetailsFormDataVal( hWndHandle )
+.head 8 -  Return FALSE
+.head 6 -  Set nSubsItemNo = NUMBER_Null
+.head 6 -  !
+.head 6 +  If NewChangeLogic( nCustNo, dtOrderSysDT, nItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, sSubsOkFlag, nBatchLocId, nBatchYear, nSubsItemNo, nOldYear, bLogicChange, nActionType )
+.head 7 +  If bLogicChange
+.head 8 +  If NOT haSqlHandles[ nOurUpdtBasicHandleNo ].Execute( )
+.head 9 -  Call NewSaveOrder( 0, DATETIME_Null, 0, 0, 0, 0, '', '', 0, 0, hWndNULL, 0, SH_cls_Rollback )
+.head 9 -  Return FALSE
+.head 6 +  Else
+.head 7 -  Call NewSaveOrder( 0, DATETIME_Null, 0, 0, 0, 0, '', '', 0, 0, hWndNULL, 0, SH_cls_Rollback )
+.head 7 -  Return FALSE
+.head 6 -  !
+.head 6 +  If hWndHandle != hWndNULL
+.head 7 +  If haSqlHandles[ nOurUpdtHandleNo ].PrepareAndExecute( )
+.head 8 -  Call NewSaveOrder( 0, DATETIME_Null, 0, 0, 0, 0, '', '', 0, 0, hWndNULL, 0, SH_cls_Commit )
+.head 7 +  Else
+.head 8 -  Call NewSaveOrder( 0, DATETIME_Null, 0, 0, 0, 0, '', '', 0, 0, hWndNULL, 0, SH_cls_Rollback )
+.head 8 -  Return FALSE
+.head 6 +  Else
+.head 7 -  Call NewSaveOrder( 0, DATETIME_Null, 0, 0, 0, 0, '', '', 0, 0, hWndNULL, 0, SH_cls_Commit )
+.head 6 -  !
+.head 6 +  If bLogicChange
+.head 7 +  If NewSetFlagsOnOrdChange( nCustNo, nYear, SH_cls_Execute )
+.head 8 -  Call NewSetFlagsOnOrdChange( 0, 0, SH_cls_Commit )
+.head 8 +  If nOldYear != nYear
+.head 9 +  If NewSetFlagsOnOrdChange( nCustNo, nOldYear, SH_cls_Execute )
+.head 10 -  Call NewSetFlagsOnOrdChange( 0, 0, SH_cls_Commit )
+.head 9 +  Else
+.head 10 -  Call NewSetFlagsOnOrdChange( 0, 0, SH_cls_Rollback )
+.head 10 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Call NewSetFlagsOnOrdChange( 0, 0, SH_cls_Rollback )
+.head 8 -  Return FALSE
+.head 6 -  Return TRUE
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Commit )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtBasicHandleNo ].Commit( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewChangeLogic( 0, DATETIME_Null, 0, 0, 0, 0, '', '', 0, 0, nSubsItemNo, nOldYear, bLogicChange, SH_cls_Commit )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Rollback )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtBasicHandleNo ].Rollback( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewChangeLogic( 0, DATETIME_Null, 0, 0, 0, 0, '', '', 0, 0, nSubsItemNo, nOldYear, bLogicChange, SH_cls_Rollback )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Disconnect )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtBasicHandleNo ].Disconnect( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewChangeLogic( 0, DATETIME_Null, 0, 0, 0, 0, '', '', 0, 0, nSubsItemNo, nOldYear, bLogicChange, SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewSetFlagsOnOrdChange( 0, 0, SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 3 +  Function: NewStockAvailableForGen
+.head 4 -  Description: To process the handling of availability of stock for generic
+This function used the nLess20OkDontAsk and nLess20NotOkDontAsk flags so be carefull
+when changing code.
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  String: sAllocFlag
+.head 5 -  String: sGenericFlag
+.head 5 -  Receive Number: nNewSubItemNo
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  Boolean: bOk
+.head 5 -  Number: nSubItemNos[*]
+.head 5 -  Number: nUpTos[*]
+.head 5 -  Number: nNumSubItemNos
+.head 5 -  Number: nReturn
+.head 5 -  !
+.head 5 -  ! Number: nPassDownActionType
+.head 4 +  Actions
+.head 5 +  If IsFlagSet( nActionType, SH_cls_Execute )
+.head 6 -  ! To be here subs are allowable for this order either because it is a generic or
+substitutes are allowable for it
+.head 6 -  Set nNewSubItemNo = NUMBER_Null
+.head 6 +  If NOT NewObtainAllSubs( nItemNo, nSubItemNos, nUpTos, nNumSubItemNos, SH_cls_Execute )
+.head 7 +  If IsFlagSet( nActionType, nLess20OkDontAsk )
+.head 8 -  Return TRUE
+.head 7 +  Else If IsFlagSet( nActionType, nLess20NotOkDontAsk )
+.head 8 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Call SalMessageBeep( 0 )
+.head 8 -  Set nReturn = SalSendMsg( hWndForm, PAM_ORDERMSGNOTIFY, ORDER_Add, ORDERMSG_StockLevelsL20 )
+.head 8 +  If nReturn = ORDERMSG_StockLevelsL20Cont
+.head 9 -  Return TRUE
+.head 8 +  Else If nReturn = ORDERMSG_StockLevelsL20NoCont
+.head 9 -  Return FALSE
+.head 8 +  Else
+.head 9 +  If NOT SalMessageBox( 'Available stock levels are less than 20.   Do you
+still want to add the order?', 'Customer Order',
+ MB_YesNo )
+.head 10 -  Return FALSE
+.head 9 +  Else
+.head 10 -  Return TRUE
+.head 6 -  !
+.head 6 +  ! If IsFlagSet( nActionType, nLess20OkDontAsk )
+.head 7 -  Set nPassDownActionType = SH_cls_Execute | nLess20OkDontAsk
+.head 6 +  ! Else If IsFlagSet( nActionType, nLess20NotOkDontAsk )
+.head 7 -  Set nPassDownActionType = SH_cls_Execute | nLess20OkDontAsk
+.head 6 +  ! Else
+.head 7 -  Set nPassDownActionType = SH_cls_Execute
+.head 6 -  !
+.head 6 +  If NOT NewAddToAvailSub( nItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, sGenericFlag, nSubItemNos, nUpTos, nNumSubItemNos, nNewSubItemNo, nActionType )
+.head 7 -  Return FALSE
+.head 6 +  Else
+.head 7 -  Return TRUE
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Commit )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT NewAddToAvailSub( 0, 0, 0, 0, '', '', nSubItemNos, nUpTos, 0, nNewSubItemNo, SH_cls_Commit )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Rollback )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT NewAddToAvailSub( 0, 0, 0, 0, '', '', nSubItemNos, nUpTos, 0, nNewSubItemNo, SH_cls_Rollback )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Disconnect )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT NewObtainAllSubs( 0, nSubItemNos, nUpTos, nNumSubItemNos, SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewAddToAvailSub( 0, 0, 0, 0, '', '', nSubItemNos, nUpTos, nNumSubItemNos, nNewSubItemNo, SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 3 +  Function: NewStockAvailable
+.head 4 -  Description: To process the handling of availability of stock
+This function used the nLess20OkDontAsk and nLess20NotOkDontAsk flags so be carefull
+when changing code.
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  String: sAllocFlag
+.head 5 -  String: sGenericFlag
+.head 5 -  Receive Number: nNewSubItemNo
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  Boolean: bOk
+.head 5 -  Number: nSubItemNos[*]
+.head 5 -  Number: nUpTos[*]
+.head 5 -  Number: nNumSubItemNos
+.head 5 -  Number: nReturn
+.head 5 -  !
+.head 5 -  ! Number: nPassDownActionType
+.head 4 +  Actions
+.head 5 +  If IsFlagSet( nActionType, SH_cls_Execute )
+.head 6 -  ! To be here subs are allowable for this order either because it is a generic or
+substitutes are allowable for it
+.head 6 -  Set nNewSubItemNo = NUMBER_Null
+.head 6 +  If NOT NewObtainAllSubs( nItemNo, nSubItemNos, nUpTos, nNumSubItemNos, SH_cls_Execute )
+.head 7 +  If IsFlagSet( nActionType, nLess20OkDontAsk )
+.head 8 -  Return TRUE
+.head 7 +  Else If IsFlagSet( nActionType, nLess20NotOkDontAsk )
+.head 8 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Call SalMessageBeep( 0 )
+.head 8 -  Set nReturn = SalSendMsg( hWndForm, PAM_ORDERMSGNOTIFY, ORDER_Add, ORDERMSG_StockLevelsL20 )
+.head 8 +  If nReturn = ORDERMSG_StockLevelsL20Cont
+.head 9 -  Return TRUE
+.head 8 +  Else If nReturn = ORDERMSG_StockLevelsL20NoCont
+.head 9 -  Return FALSE
+.head 8 +  Else
+.head 9 +  If NOT SalMessageBox( 'Available stock levels are less than 20.   Do you
+still want to add the order?', 'Customer Order',
+ MB_YesNo )
+.head 10 -  Return FALSE
+.head 9 +  Else
+.head 10 -  Return TRUE
+.head 6 -  !
+.head 6 +  ! If IsFlagSet( nActionType, nLess20OkDontAsk )
+.head 7 -  Set nPassDownActionType = SH_cls_Execute | nLess20OkDontAsk
+.head 6 +  ! Else If IsFlagSet( nActionType, nLess20NotOkDontAsk )
+.head 7 -  Set nPassDownActionType = SH_cls_Execute | nLess20OkDontAsk
+.head 6 +  ! Else
+.head 7 -  Set nPassDownActionType = SH_cls_Execute
+.head 6 -  !
+.head 6 +  If NOT NewAddToAvailSub( nItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, sGenericFlag, nSubItemNos, nUpTos, nNumSubItemNos, nNewSubItemNo, nActionType )
+.head 7 -  Return FALSE
+.head 6 +  Else
+.head 7 -  Return TRUE
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Commit )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT NewAddToAvailSub( 0, 0, 0, 0, '', '', nSubItemNos, nUpTos, 0, nNewSubItemNo, SH_cls_Commit )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Rollback )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT NewAddToAvailSub( 0, 0, 0, 0, '', '', nSubItemNos, nUpTos, 0, nNewSubItemNo, SH_cls_Rollback )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Disconnect )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT NewObtainAllSubs( 0, nSubItemNos, nUpTos, nNumSubItemNos, SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewAddToAvailSub( 0, 0, 0, 0, '', '', nSubItemNos, nUpTos, nNumSubItemNos, nNewSubItemNo, SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 3 +  Function: NewQueryOrderAddition
+.head 4 -  Description: This is called if we've tried to find a suitable substitute to use, cant
+find any, so we want to ask the user if they still want it added - if so
+add the order to the first substitute for the stock item
+This function used the nLess20OkDontAsk and nLess20NotOkDontAsk flags so be carefull
+when changing code.
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  String: sAllocFlag
+.head 5 -  String: sGenericFlag
+.head 5 -  Number: nSubItemNos[*]
+.head 5 -  Number: nUpTos[*]
+.head 5 -  Number: nNumSubItemNos
+.head 5 -  Receive Number: nNewSubItemNo
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! Sql Handle: hSqlHandle
+.head 5 -  ! Boolean: bHandleConnected
+.head 5 -  ! Boolean: bHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlUpdateHandle
+.head 5 -  ! Boolean: bUpdateHandleConnected
+.head 5 -  ! Boolean: bUpdateHandlePrepared
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Boolean: bOk
+.head 5 -  Number: nInd
+.head 5 -  Number: nCount
+.head 5 -  Number: nReturn
+.head 5 -  !
+.head 5 -  Number: nOnOrdSub
+.head 5 -  Number: nSubTotAvail
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'NewQueryOrderAddition' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'NewQueryOrderAdditionUpdt' )
+.head 5 +  If IsFlagSet( nActionType, SH_cls_Execute )
+.head 6 -  Set sSql = " SELECT 
+  On_Ord_As_Subs, 
+  Tot_Avail 
+FROM 
+  Stock_Item_Sale
+WHERE 
+  Stock_Item_No = :1 AND
+  Year_Of_Sale = :2  "
+.head 6 -  Set sName = 'QRYORDADDTN'
+.head 6 -  Set sBind = ':nSubItemNos[nCount], :nYear'
+.head 6 -  Set sInto = ':nOnOrdSub, :nSubTotAvail'
+.head 6 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 6 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 6 -  !
+.head 6 -  Set sSql = " UPDATE Stock_Item_Sale 
+SET 
+  On_Ord_As_Subs = :3,
+  Tot_Avail = :4 
+WHERE 
+  Stock_Item_No = :1 AND 
+  Year_Of_Sale = :2 "
+.head 6 -  Set sName = 'UPDTQRYORDADD'
+.head 6 -  Set sBind = ':nSubItemNos[nCount], :nYear, :nOnOrdSub, :nSubTotAvail'
+.head 6 -  Set sInto = ''
+.head 6 -  Call haSqlHandles[ nOurUpdtHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 6 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 6 -  !
+.head 6 -  ! Latest change added if not bgGeneric then return false
+.head 6 -  Set nNewSubItemNo = NUMBER_Null
+.head 6 +  If sGenericFlag = 'N'
+.head 7 -  Return FALSE
+.head 6 -  !
+.head 6 +  If IsFlagSet( nActionType, nLess20NotOkDontAsk )
+.head 7 -  Return FALSE
+.head 6 +  Else If NOT IsFlagSet( nActionType, nLess20OkDontAsk )
+.head 7 -  Call SalMessageBeep( 0 )
+.head 7 -  Set nReturn = SalSendMsg( hWndForm, PAM_ORDERMSGNOTIFY, ORDER_Add, ORDERMSG_StockLevelsL20 )
+.head 7 +  If nReturn = ORDERMSG_StockLevelsL20NoCont
+.head 8 -  Return FALSE
+.head 7 +  Else If nReturn != ORDERMSG_StockLevelsL20Cont
+.head 8 +  If IDNO = SalMessageBox( 'Available stock levels are less than 20.   Do you
+still want to add the order?', 'Customer Order',
+ MB_YesNo )
+.head 9 -  Return FALSE
+.head 6 -  !
+.head 6 -  Set nCount = 0
+.head 6 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 7 -  ! Only get the first sub and allocate order against it.
+.head 7 +  If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 8 +  If nInd !=FETCH_EOF
+.head 9 +  If sAllocFlag = 'N'
+.head 10 -  Set nOnOrdSub = nOnOrdSub + nOrdAmt
+.head 10 -  Set nSubTotAvail = nSubTotAvail - nOrdAmt
+.head 9 +  Else
+.head 10 -  Set nOnOrdSub = nOnOrdSub + nConfAmt
+.head 10 -  Set nSubTotAvail = nSubTotAvail - nConfAmt
+.head 9 +  If haSqlHandles[ nOurUpdtHandleNo ].Execute( )
+.head 10 -  Set nNewSubItemNo = nSubItemNos[nCount]
+.head 10 -  Return TRUE
+.head 9 +  Else
+.head 10 -  Set nCount = nCount + 1
+.head 10 -  Return FALSE
+.head 8 +  Else
+.head 9 -  Set nCount = nCount + 1
+.head 7 -  Return FALSE
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Commit )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Rollback )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Disconnect )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 3 +  Function: NewAddToAvailSub
+.head 4 -  Description: We need to add to the on-ord-as-subs field of the item that will be substituted for it
+This function used the nLess20OkDontAsk and nLess20NotOkDontAsk flags so be carefull
+when changing code.
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  String: sAllocFlag
+.head 5 -  String: sGenericFlag
+.head 5 -  Number: nSubItemNos[*]
+.head 5 -  Number: nUpTos[*]
+.head 5 -  Number: nNumSubItemNos
+.head 5 -  Receive Number: nNewSubItemNo
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! Sql Handle: hSqlHandle
+.head 5 -  ! Boolean: bHandleConnected
+.head 5 -  ! Boolean: bHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlUpdateHandle
+.head 5 -  ! Boolean: bUpdateHandleConnected
+.head 5 -  ! Boolean: bUpdateHandlePrepared
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Boolean: bOk
+.head 5 -  Number: nInd
+.head 5 -  Number: nCount
+.head 5 -  !
+.head 5 -  Number: nOnOrdSub
+.head 5 -  Number: nSubTotAvail
+.head 5 -  !
+.head 5 -  ! Number: nPassDownActionType
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'NewAddToAvailSub' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'NewAddToAvailSubUpdt' )
+.head 5 +  If IsFlagSet( nActionType, SH_cls_Execute )
+.head 6 -  Set sSql = " SELECT 
+  On_Ord_As_Subs, 
+  Tot_Avail 
+FROM 
+  Stock_Item_Sale
+WHERE 
+  Stock_Item_No = :1 AND
+  Year_Of_Sale = :2 "
+.head 6 -  Set sName = 'ADDTOAVAILSUB'
+.head 6 -  Set sBind = ':nSubItemNos[nCount], :nYear'
+.head 6 -  Set sInto = ':nOnOrdSub, :nSubTotAvail'
+.head 6 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 6 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 6 -  !
+.head 6 -  Set sSql = " UPDATE Stock_Item_Sale 
+SET 
+  On_Ord_As_Subs = :3,
+  Tot_Avail = :4
+WHERE 
+  Stock_Item_No = :1 AND 
+  Year_Of_Sale = :2  "
+.head 6 -  Set sName = 'UPDADTOAVAILSB'
+.head 6 -  Set sBind = ':nSubItemNos[nCount], :nYear, :nOnOrdSub, :nSubTotAvail'
+.head 6 -  Set sInto = ''
+.head 6 -  Call haSqlHandles[ nOurUpdtHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 6 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 6 -  !
+.head 6 -  Set nCount = 0
+.head 6 -  Set nNewSubItemNo = NUMBER_Null
+.head 6 -  !
+.head 6 +  While nCount <= nNumSubItemNos-1
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 9 +  If nInd !=FETCH_EOF
+.head 10 +  If sAllocFlag = 'N'
+.head 11 -  Set nOnOrdSub = nOnOrdSub + nOrdAmt
+.head 11 -  Set nSubTotAvail = nSubTotAvail - nOrdAmt
+.head 10 +  Else
+.head 11 -  Set nOnOrdSub = nOnOrdSub + nConfAmt
+.head 11 -  Set nSubTotAvail = nSubTotAvail - nConfAmt
+.head 10 -  ! Check if nOnOrdSub > max available then dont allow the addition to this sub.
+.head 10 -  ! the following up to array statement succeeded for the first sub but didnt
+allow the addition for the second sub which was ok
+.head 10 +  If nUpTos[nCount] != NUMBER_Null
+.head 11 +  If nOnOrdSub > nUpTos[nCount]
+.head 12 -  Set nCount = nCount + 1
+.head 10 +  If nSubTotAvail > 20
+.head 11 +  If haSqlHandles[ nOurUpdtHandleNo ].Execute( )
+.head 12 -  Set nNewSubItemNo = nSubItemNos[nCount]
+.head 12 -  Return TRUE
+.head 11 +  Else
+.head 12 -  Set nCount = nCount + 1
+.head 12 -  Return FALSE
+.head 10 +  Else
+.head 11 -  Set nCount = nCount + 1
+.head 9 +  Else
+.head 10 -  Set nCount = nCount + 1
+.head 8 +  Else
+.head 9 -  Set nCount = nCount + 1
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 -  !
+.head 6 -  !
+.head 6 -  ! If the user has been asked if they still want the record added and they do, then
+we need to add and return true - otherwise they dont want to add it so return
+false.  In the main part we can check if it is a generic stock item if the return has
+been true cos this is the only instance where we want to continue to include this
+order in the ordered field
+.head 6 +  If NOT NewQueryOrderAddition( nItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, sGenericFlag, nSubItemNos, nUpTos, nNumSubItemNos, nNewSubItemNo, nActionType  )
+.head 7 -  Return FALSE
+.head 6 +  Else
+.head 7 -  Return TRUE
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Commit )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewQueryOrderAddition( 0, 0, 0, 0, '', '', nSubItemNos, nUpTos, 0, nNewSubItemNo, SH_cls_Commit  )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Rollback )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewQueryOrderAddition( 0, 0, 0, 0, '', '', nSubItemNos, nUpTos, 0, nNewSubItemNo, SH_cls_Rollback  )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Disconnect )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewQueryOrderAddition( 0, 0, 0, 0, '', '', nSubItemNos, nUpTos, 0, nNewSubItemNo, SH_cls_Disconnect  )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 3 +  Function: NewObtainAllSubs
+.head 4 -  Description: To obtain in a dynamic array all of the available substitutes for this item
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nItemNo
+.head 5 -  Receive Number: nSubItemNos[*]
+.head 5 -  Receive Number: nUpTos[*]
+.head 5 -  Receive Number: nNumSubItemNos
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! Sql Handle: hSqlHandle
+.head 5 -  ! Boolean: bHandleConnected
+.head 5 -  ! Boolean: bHandlePrepared
+.head 4 +  Local variables
+.head 5 -  Boolean: bOk
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nCount
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nInd
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'NewObtainAllSubs' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT 
+  Substitute_Item_No, 
+  Sub_Up_To_Max
+FROM 
+  Substitutes
+WHERE 
+  Stock_Item_No = :1 "
+.head 7 -  Set sName = 'OBTAINALLSUBS'
+.head 7 -  Set sBind = ':nItemNo'
+.head 7 -  Set sInto = ':nSubItemNos[nCount], :nUpTos[nCount]'
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  ! To be here sgGeneric = Y, or subs ok = Y and we need to find out for this item no
+ which in order of priority as substitutes have available stock for this order
+.head 7 -  Set nNumSubItemNos = 0
+.head 7 -  Set nCount = 0
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  While haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 9 -  ! Jan, added the if ngFetch = fetch_eof then break to prevent the array from
+looking like it has 1 substitute when in fact the sgSql statement didn't
+come back with any.
+.head 9 +  If nInd  = FETCH_EOF
+.head 10 -  Break
+.head 9 -  Set nCount = nCount + 1
+.head 9 -  Set nNumSubItemNos = nNumSubItemNos + 1
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: NewDeleteOrder
+.head 4 -  Description: To Delete a record from table Customer order
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nCustNo
+.head 5 -  Date/Time: dtOrderSysDT
+.head 5 -  String: sCancelReason
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! Sql Handle: hSqlDeleteHandle
+.head 5 -  ! Boolean: bDeleteHandleConnected
+.head 5 -  ! Boolean: bDeleteHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlUpdateHandle
+.head 5 -  ! Boolean: bUpdateHandleConnected
+.head 5 -  ! Boolean: bUpdateHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlOrderHandle
+.head 5 -  ! Boolean: bOrderHandleConnected
+.head 5 -  ! Boolean: bOrderHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlOrderExtrasHandle
+.head 5 -  ! Boolean: bOrderExtrasHandleConnected
+.head 5 -  ! Boolean: bOrderExtrasHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlInsCancelHandle
+.head 5 -  ! Boolean: bInsCancelHandleConnected
+.head 5 -  ! Boolean: bInsCancelHandlePrepared
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Date/Time: dtSysDT
+.head 5 -  Number: nOurDelHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Number: nOurOrderHandleNo
+.head 5 -  Number: nOurOrderExtrasHandleNo
+.head 5 -  Number: nOurInsCancelHandleNo
+.head 5 -  Number: nInd
+.head 5 -  Boolean: bOk
+.head 5 -  !
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nSubsItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  String: sAllocFlag
+.head 5 -  Number: nBatchLocId
+.head 5 -  Number: nBatchYear
+.head 5 -  !
+.head 5 -  Date/Time: dtAckOrderSysDT
+.head 5 -  String: sTreeType
+.head 5 -  String: sTreeTypeDesc
+.head 5 -  String: sCultId
+.head 5 -  String: sCultDesc
+.head 5 -  String: sRootId
+.head 5 -  String: sRootDesc
+.head 5 -  Date/Time: dtOrderDate
+.head 5 -  Number: nContractPrice
+.head 5 -  String: sSaleCat
+.head 4 +  Actions
+.head 5 -  Set nOurDelHandleNo = SqlHandlesGetReferenceNo( 'NewDeleteOrdeDel' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'NewDeleteOrderUpdt' )
+.head 5 -  Set nOurOrderHandleNo = SqlHandlesGetReferenceNo( 'NewDeleteOrderOrder' )
+.head 5 -  Set nOurOrderExtrasHandleNo = SqlHandlesGetReferenceNo( 'NewDeleteOrderOrderExtras' )
+.head 5 -  Set nOurInsCancelHandleNo = SqlHandlesGetReferenceNo( 'NewDeleteOrderInsCancel' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " DELETE FROM Customer_Order
+ WHERE Cust_No = :1 AND Order_Date_Time = :2  "
+.head 7 -  Set sName = 'ORDDELORDROW'
+.head 7 -  Set sBind = ':nCustNo, :dtOrderSysDT'
+.head 7 -  Set sInto = ''
+.head 7 -  Call haSqlHandles[ nOurDelHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurDelHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " UPDATE Customer_Order SET Ack_Flag = 'N', Conf_Flag = 'N'
+WHERE Cust_No = :1 AND Order_Date_Time = :2  "
+.head 7 -  Set sName = 'DLORDUPDACKCNF'
+.head 7 -  Set sBind = ':nCustNo, :dtAckOrderSysDT'
+.head 7 -  Set sInto = ''
+.head 7 -  Call haSqlHandles[ nOurUpdtHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " SELECT 
+  Order_Date_Time 
+FROM 
+  Customer_Order 
+WHERE 
+  Cust_No = :1 AND 
+  Year_Of_Sale = :2  "
+.head 7 -  Set sName = 'DELORDGTORDLNE'
+.head 7 -  Set sBind = ':nCustNo, :nYear'
+.head 7 -  Set sInto = ':dtAckOrderSysDT'
+.head 7 -  Call haSqlHandles[ nOurOrderHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurOrderHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " SELECT Ord_Date, Contract_Price, Sale_Cat FROM Customer_Order
+ WHERE Cust_No = :1 AND Order_Date_Time = :2 "
+.head 7 -  Set sName = 'DELORDORDXLNE'
+.head 7 -  Set sBind = ':nCustNo, :dtOrderSysDT'
+.head 7 -  Set sInto = ':dtOrderDate, :nContractPrice, :sSaleCat'
+.head 7 -  Call haSqlHandles[ nOurOrderExtrasHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurOrderExtrasHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " INSERT INTO Cust_Cancellation ( Canc_DT, Cust_No, Canc_Reason,
+  Canc_By, Cultivar_Desc, Root_Id, Ord_Amt, Conf_Amt, Order_Date, Contract_Price,
+  Year_Of_Sale, Sale_Cat )
+  VALUES ( :1, :2, :3, :4, :5, :6, :7, :8, :9, :10, :11, :12 ) "
+.head 7 -  Set sName = 'DELORDINSCSTCAN'
+.head 7 -  Set sBind = ':dtSysDT, :nCustNo, :sCancelReason,
+  :SqlUser, :sCultDesc, :sRootId, :nOrdAmt, :nConfAmt, :dtOrderDate, :nContractPrice,
+  :nYear, :sSaleCat'
+.head 7 -  Set sInto = ''
+.head 7 -  Call haSqlHandles[ nOurInsCancelHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurInsCancelHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set dtSysDT = SalDateCurrent(  )
+.head 7 -  !
+.head 7 +  If GetOrderBasicDetails( nCustNo, dtOrderSysDT, nItemNo, nSubsItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, nBatchLocId, nBatchYear, SH_cls_Execute )
+.head 8 +  If haSqlHandles[ nOurOrderExtrasHandleNo ].Execute( )
+.head 9 +  If haSqlHandles[ nOurOrderExtrasHandleNo ].FetchNext( nInd )
+.head 10 +  If GetItemFullBasicDetails( nItemNo, sTreeType, sTreeTypeDesc, sCultId, sCultDesc, sRootId, sRootDesc, SH_cls_Execute )
+.head 11 +  If NewDeleteLogic( nItemNo, nYear, nOrdAmt, nConfAmt, nSubsItemNo, sAllocFlag, nBatchLocId, nBatchYear, SH_cls_Execute )
+.head 12 +  If haSqlHandles[ nOurDelHandleNo ].Execute( )
+.head 13 +  If haSqlHandles[ nOurInsCancelHandleNo ].Execute( )
+.head 14 +  If haSqlHandles[ nOurOrderHandleNo ].Execute( )
+.head 15 +  If haSqlHandles[ nOurOrderHandleNo ].FetchNext( nInd )
+.head 16 +  If haSqlHandles[ nOurUpdtHandleNo ].Execute( hSqlUpdateHandle )
+.head 17 -  Call NewDeleteOrder( 0, DATETIME_Null, '', SH_cls_Commit )
+.head 17 -  Return TRUE
+.head 16 +  Else
+.head 17 -  Call NewDeleteOrder( 0, DATETIME_Null, '', SH_cls_Rollback )
+.head 17 -  Return FALSE
+.head 15 +  Else
+.head 16 -  Call NewDeleteOrder( 0, DATETIME_Null, '', SH_cls_Commit )
+.head 16 -  Return TRUE
+.head 14 +  Else
+.head 15 -  Call NewDeleteOrder( 0, DATETIME_Null, '', SH_cls_Rollback )
+.head 15 -  Return FALSE
+.head 13 +  Else
+.head 14 -  Call NewDeleteOrder( 0, DATETIME_Null, '', SH_cls_Rollback )
+.head 14 -  Return FALSE
+.head 12 +  Else
+.head 13 -  Call NewDeleteOrder( 0, DATETIME_Null, '', SH_cls_Rollback )
+.head 13 -  Return FALSE
+.head 11 +  Else
+.head 12 -  Call NewDeleteOrder( 0, DATETIME_Null, '', SH_cls_Rollback )
+.head 12 -  Return FALSE
+.head 11 +  ! If GetCultDescription( sCultId, sCultDesc, SH_cls_Execute )
+.head 12 +  If NewDeleteLogic( nItemNo, nYear, nOrdAmt, nConfAmt, nSubsItemNo, sAllocFlag, SH_cls_Execute )
+.head 13 +  If SqlExecute( hSqlDeleteHandle )
+.head 14 +  If SqlExecute( hSqlInsCancelHandle )
+.head 15 +  If SqlExecute( hSqlOrderHandle )
+.head 16 +  If SqlFetchNext( hSqlOrderHandle, nInd )
+.head 17 +  If SqlExecute( hSqlUpdateHandle )
+.head 18 -  Call NewDeleteOrder( 0, DATETIME_Null, '', SH_cls_Commit )
+.head 18 -  Return TRUE
+.head 17 +  Else
+.head 18 -  Set bUpdateHandlePrepared = FALSE
+.head 18 -  Call NewDeleteOrder( 0, DATETIME_Null, '', SH_cls_Rollback )
+.head 18 -  Call SalMessageBox( 'SqlExecute hSqlUpdateHandle had a error in function NewDeleteOrder! Please contact programmers!', 'Error', MB_Ok )
+.head 18 -  Return FALSE
+.head 16 +  Else
+.head 17 -  Call NewDeleteOrder( 0, DATETIME_Null, '', SH_cls_Commit )
+.head 17 -  Return TRUE
+.head 15 +  Else
+.head 16 -  Set bOrderHandlePrepared = FALSE
+.head 16 -  Call NewDeleteOrder( 0, DATETIME_Null, '', SH_cls_Rollback )
+.head 16 -  Call SalMessageBox( 'SqlExecute hSqlOrderHandle had a error in function NewDeleteOrder! Please contact programmers!', 'Error', MB_Ok )
+.head 16 -  Return FALSE
+.head 14 +  Else
+.head 15 -  Set bInsCancelHandlePrepared = FALSE
+.head 15 -  Call NewDeleteOrder( 0, DATETIME_Null, '', SH_cls_Rollback )
+.head 15 -  Call SalMessageBox( 'SqlExecute hSqlInsCancelHandle had a error in function NewDeleteOrder! Please contact programmers!', 'Error', MB_Ok )
+.head 15 -  Return FALSE
+.head 13 +  Else
+.head 14 -  Set bDeleteHandlePrepared = FALSE
+.head 14 -  Call NewDeleteOrder( 0, DATETIME_Null, '', SH_cls_Rollback )
+.head 14 -  Call SalMessageBox( 'SqlExecute hSqlDeleteHandle had a error in function NewDeleteOrder! Please contact programmers!', 'Error', MB_Ok )
+.head 14 -  Return FALSE
+.head 12 +  Else
+.head 13 -  Call NewDeleteOrder( 0, DATETIME_Null, '', SH_cls_Rollback )
+.head 13 -  Return FALSE
+.head 10 +  Else
+.head 11 -  Return FALSE
+.head 9 +  Else
+.head 10 -  Return FALSE
+.head 8 +  Else
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurDelHandleNo ].Commit( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurInsCancelHandleNo ].Commit( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT NewDeleteLogic( 0, 0, 0, 0, 0, '', 0, 0, SH_cls_Commit )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurDelHandleNo ].Rollback( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurInsCancelHandleNo ].Rollback( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT NewDeleteLogic( 0, 0, 0, 0, 0, '', 0, 0, SH_cls_Rollback )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurDelHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurInsCancelHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurOrderHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurOrderExtrasHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT NewDeleteLogic( 0, 0, 0, 0, 0, '', 0, 0, SH_cls_Disconnect )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT GetItemFullBasicDetails( 0, sTreeType, sTreeTypeDesc, sCultId, sCultDesc, sRootId, sRootDesc, SH_cls_Disconnect )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: NewDeleteFromSub
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nSubsItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  String: sAllocFlag
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! Sql Handle: hSqlHandle
+.head 5 -  ! Boolean: bHandleConnected
+.head 5 -  ! Boolean: bHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlUpdateHandle
+.head 5 -  ! Boolean: bUpdateHandleConnected
+.head 5 -  ! Boolean: bUpdateHandlePrepared
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Boolean: bOk
+.head 5 -  Number: nInd
+.head 5 -  !
+.head 5 -  Number: nOnOrdSub
+.head 5 -  Number: nSubTotAvail
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'NewDeleteFromSub' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'NewDeleteFromSubUpdt' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT On_Ord_As_Subs, Tot_Avail FROM Stock_Item_Sale
+  WHERE Stock_Item_No = :1 AND Year_Of_Sale = :2  "
+.head 7 -  Set sName = 'DELORDFRMSUB'
+.head 7 -  Set sBind = ':nSubsItemNo, :nYear'
+.head 7 -  Set sInto = ':nOnOrdSub, :nSubTotAvail'
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " UPDATE Stock_Item_Sale SET On_Ord_As_Subs = :3,
+  Tot_Avail = :4
+  WHERE Stock_Item_No = :1 AND Year_Of_Sale = :2   "
+.head 7 -  Set sName = 'UPDDLORDFRMSB'
+.head 7 -  Set sBind = ':nSubsItemNo, :nYear, :nOnOrdSub, :nSubTotAvail'
+.head 7 -  Set sInto = ''
+.head 7 -  Call haSqlHandles[ nOurUpdtHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 9 +  If sAllocFlag = 'N'
+.head 10 -  Set nOnOrdSub = nOnOrdSub - nOrdAmt
+.head 10 -  Set nSubTotAvail = nSubTotAvail + nOrdAmt
+.head 9 +  Else
+.head 10 -  Set nOnOrdSub = nOnOrdSub - nConfAmt
+.head 10 -  Set nSubTotAvail = nSubTotAvail + nConfAmt
+.head 9 -  Return haSqlHandles[ nOurUpdtHandleNo ].Execute( )
+.head 8 +  Else
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 -  Set bHandlePrepared = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: NewDeductFromStockItemSale
+.head 4 -  Description: To deduct the ord or conf amt from the old stock item sale values
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  String: sAllocFlag
+.head 5 -  String: sGenericFlag
+.head 5 -  Number: nBatchLocId
+.head 5 -  Number: nBatchYear
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! Sql Handle: hSqlHandle
+.head 5 -  ! Boolean: bHandleConnected
+.head 5 -  ! Boolean: bHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlUpdateHandle
+.head 5 -  ! Boolean: bUpdateHandleConnected
+.head 5 -  ! Boolean: bUpdateHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlGrowSaleHandle
+.head 5 -  ! Boolean: bGrowSaleHandleConnected
+.head 5 -  ! Boolean: bGrowSaleHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlUpdateGrowSaleHandle
+.head 5 -  ! Boolean: bUpdateGrowSaleHandleConnected
+.head 5 -  ! Boolean: bUpdateGrowSaleHandlePrepared
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Number: nOurGrowSaleHandleNo
+.head 5 -  Number: nOurUpdtGrowSaleHandleNo
+.head 5 -  Boolean: bOk
+.head 5 -  Number: nInd
+.head 5 -  !
+.head 5 -  Number: nAmtOnOrder
+.head 5 -  Number: nTotAvail
+.head 5 -  !
+.head 5 -  Number: nForwardOrders
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'NewDeductFromStockItemSale' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'NewDeductFromStockItemSaleUpdt' )
+.head 5 -  Set nOurGrowSaleHandleNo = SqlHandlesGetReferenceNo( 'NewDeductFromStockItemSaleGrowSale' )
+.head 5 -  Set nOurUpdtGrowSaleHandleNo = SqlHandlesGetReferenceNo( 'NewDeductFromStockItemSaleUpdtGrowSale' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 +  If nBatchLocId > 0
+.head 8 -  Set sSql = " UPDATE Growing_Sale
+SET Forward_Orders = Forward_Orders - :4
+WHERE
+  Stock_Item_No = :1 AND
+  Year_Of_Sale = :2 AND
+  Location_Id = :3 "
+.head 8 -  Set sName = 'UPDDEDCTFSISGS'
+.head 8 -  Set sBind = ':nItemNo, :nBatchYear, :nBatchLocId, :nForwardOrders'
+.head 8 -  Set sInto = ''
+.head 8 -  Call haSqlHandles[ nOurUpdtGrowSaleHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 8 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtGrowSaleHandleNo ].hSqlHandle )
+.head 8 -  !
+.head 8 +  If sAllocFlag = 'N'
+.head 9 -  Set nForwardOrders = nOrdAmt
+.head 8 +  Else
+.head 9 -  Set nForwardOrders = nConfAmt
+.head 8 -  Return haSqlHandles[ nOurUpdtGrowSaleHandleNo ].Execute( )
+.head 7 +  Else
+.head 8 -  Set sSql = " SELECT Amt_On_Order, Tot_Avail FROM Stock_Item_Sale
+  WHERE Stock_Item_No = :1 AND Year_Of_Sale = :2   "
+.head 8 -  Set sName = 'GTDEDCTFSIS'
+.head 8 -  Set sBind = ':nItemNo, :nYear'
+.head 8 -  Set sInto = ':nAmtOnOrder, :nTotAvail'
+.head 8 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 8 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 8 -  !
+.head 8 -  Set sSql = " UPDATE Stock_Item_Sale SET Amt_On_Order = :3,
+  Tot_Avail = :4
+  WHERE Stock_Item_No = :1 AND Year_Of_Sale = :2  "
+.head 8 -  Set sName = 'UPDDEDCTFSISUD'
+.head 8 -  Set sBind = ':nItemNo, :nYear, :nAmtOnOrder, :nTotAvail'
+.head 8 -  Set sInto = ''
+.head 8 -  Call haSqlHandles[ nOurUpdtHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 8 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 8 -  !
+.head 8 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 9 +  If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 10 +  If sAllocFlag = 'N'
+.head 11 -  Set nAmtOnOrder = nAmtOnOrder - nOrdAmt
+.head 11 -  Set nTotAvail = nTotAvail + nOrdAmt
+.head 10 +  Else
+.head 11 -  Set nAmtOnOrder = nAmtOnOrder - nConfAmt
+.head 11 -  Set nTotAvail = nTotAvail + nConfAmt
+.head 10 +  If sGenericFlag = 'Y'
+.head 11 -  Set nTotAvail = 0
+.head 10 -  Return haSqlHandles[ nOurUpdtHandleNo ].SqlExecute( )
+.head 9 +  Else
+.head 10 -  Return FALSE
+.head 8 +  Else
+.head 9 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtGrowSaleHandleNo ].Commit( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtGrowSaleHandleNo ].Rollback( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurGrowSaleHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtGrowSaleHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: NewDeleteLogic
+.head 4 -  Description: To handle the logic required when cancelling a customer order
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  Number: nSubsItemNo
+.head 5 -  String: sAllocFlag
+.head 5 -  Number: nBatchLocId
+.head 5 -  Number: nBatchYear
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sGenericFlag
+.head 5 -  Boolean: bOk
+.head 4 +  Actions
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 +  If GetGenericStockItemFlag( nItemNo, sGenericFlag, SH_cls_Execute )
+.head 8 +  If NewDeductFromStockItemSale( nItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, sGenericFlag, nBatchLocId, nBatchYear, SH_cls_Execute )
+.head 9 +  If nSubsItemNo > 0
+.head 10 +  If NewDeleteFromSub( nSubsItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, SH_cls_Execute )
+.head 11 -  Return TRUE
+.head 10 +  Else
+.head 11 -  Return FALSE
+.head 9 +  Else
+.head 10 -  Return TRUE
+.head 8 +  Else
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT NewDeductFromStockItemSale( 0, 0, 0, 0, '', '', 0, 0, SH_cls_Commit )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT NewDeleteFromSub( 0, 0, 0, 0, '', SH_cls_Commit )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT NewDeductFromStockItemSale( 0, 0, 0, 0, '', '', 0, 0, SH_cls_Rollback )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT NewDeleteFromSub( 0, 0, 0, 0, '', SH_cls_Rollback )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT GetGenericStockItemFlag( 0, sGenericFlag, SH_cls_Disconnect )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT NewDeductFromStockItemSale( 0, 0, 0, 0, '', '', 0, 0, SH_cls_Disconnect )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT NewDeleteFromSub( 0, 0, 0, 0, '', SH_cls_Disconnect )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: NewAddToStockItemSale
+.head 4 -  Description: To add a record into table Customer order
+This function used the nLess20OkDontAsk and nLess20NotOkDontAsk flags so be carefull
+when changing code.
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  String: sAllocFlag
+.head 5 -  String: sGenericFlag
+.head 5 -  String: sSubsOkFlag
+.head 5 -  Number: nBatchLocId
+.head 5 -  Number: nBatchYear
+.head 5 -  Receive Number: nNewSubItemNo
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! Sql Handle: hSqlHandle
+.head 5 -  ! Boolean: bHandleConnected
+.head 5 -  ! Boolean: bHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlUpdateHandle
+.head 5 -  ! Boolean: bUpdateHandleConnected
+.head 5 -  ! Boolean: bUpdateHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlGrowSaleHandle
+.head 5 -  ! Boolean: bGrowSaleHandleConnected
+.head 5 -  ! Boolean: bGrowSaleHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlUpdateGrowSaleHandle
+.head 5 -  ! Boolean: bUpdateGrowSaleHandleConnected
+.head 5 -  ! Boolean: bUpdateGrowSaleHandlePrepared
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Number: nOurGrowSaleHandleNo
+.head 5 -  Number: nOurUpdtGrowSaleHandleNo
+.head 5 -  Boolean: bOk
+.head 5 -  Number: nInd
+.head 5 -  Number: nReturn
+.head 5 -  !
+.head 5 -  Number: nAmtOnOrder
+.head 5 -  Number: nTotAvail
+.head 5 -  !
+.head 5 -  ! Number: nPassDownActionType
+.head 5 -  Number: nBegCount
+.head 5 -  Number: nFirstCount
+.head 5 -  Number: nSecondCount
+.head 5 -  Number: nForwardOrders
+.head 5 -  String: sNotForSaleFlag
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'NewAddToStockItemSale' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'NewAddToStockItemSaleUpdt' )
+.head 5 -  Set nOurGrowSaleHandleNo = SqlHandlesGetReferenceNo( 'NewAddToStockItemSaleGrowSale' )
+.head 5 -  Set nOurUpdtGrowSaleHandleNo = SqlHandlesGetReferenceNo( 'NewAddToStockItemSaleUpdtGrowSale' )
+.head 5 +  If IsFlagSet( nActionType, SH_cls_Execute )
+.head 6 +  If nBatchLocId > 0
+.head 7 -  Set sSql = " SELECT
+  Beg_Count,
+  First_Count,
+  Second_Count,
+  Forward_Orders,
+  Not_For_Sale
+FROM
+  Growing_Sale
+WHERE
+  Stock_Item_No = :1 AND
+  Year_Of_Sale = :2  AND
+  Location_Id = :3  "
+.head 7 -  Set sName = 'GTADDTSISGS'
+.head 7 -  Set sBind = ':nItemNo, :nBatchYear, :nBatchLocId'
+.head 7 -  Set sInto = ':nBegCount, :nFirstCount, :nSecondCount, :nForwardOrders, :sNotForSaleFlag'
+.head 7 -  Call haSqlHandles[ nOurGrowSaleHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurGrowSaleHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " UPDATE Growing_Sale
+SET Forward_Orders = :4
+WHERE
+  Stock_Item_No = :1 AND
+  Year_Of_Sale = :2 AND
+  Location_Id = :3  "
+.head 7 -  Set sName = 'UPDADDTSISGS'
+.head 7 -  Set sBind = ':nItemNo, :nBatchYear, :nBatchLocId, :nForwardOrders'
+.head 7 -  Set sInto = ''
+.head 7 -  Call haSqlHandles[ nOurUpdtGrowSaleHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtGrowSaleHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set nBegCount = NUMBER_Null
+.head 7 -  Set nFirstCount = NUMBER_Null
+.head 7 -  Set nSecondCount = NUMBER_Null
+.head 7 -  Set nForwardOrders = NUMBER_Null
+.head 7 -  Set sNotForSaleFlag = ''
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurGrowSaleHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurGrowSaleHandleNo ].FetchNext( nInd )
+.head 9 -  !
+.head 9 +  If sNotForSaleFlag = 'Y'
+.head 10 -  Call SalMessageBeep( 0 )
+.head 10 -  Call SalMessageBox( 'This forward item is NOT for sale! Please refer to the STOCK ITEMS program.  YOUR order has NOT been ADDED!', 'Warning',
+MB_Ok|MB_IconExclamation )
+.head 10 -  Return FALSE
+.head 9 -  !
+.head 9 +  If nSecondCount > 0
+.head 10 -  Set nTotAvail = nSecondCount
+.head 9 +  Else If nFirstCount > 0
+.head 10 -  Set nTotAvail = nFirstCount
+.head 9 +  Else
+.head 10 -  Set nTotAvail = nBegCount
+.head 9 -  !
+.head 9 -  Set nTotAvail = nTotAvail - nForwardOrders
+.head 9 -  !
+.head 9 +  If sAllocFlag = 'N'
+.head 10 -  Set nForwardOrders = nForwardOrders + nOrdAmt
+.head 10 -  Set nTotAvail = nTotAvail - nOrdAmt
+.head 9 +  Else
+.head 10 -  Set nForwardOrders = nForwardOrders + nConfAmt
+.head 10 -  Set nTotAvail = nTotAvail - nConfAmt
+.head 9 +  If nTotAvail < 0
+.head 10 -  Call SalMessageBeep( 0 )
+.head 10 -  Call SalMessageBox( 'There is no stock available for this forward growing stock item! Please refer to the STOCK ITEMS program.  YOUR order has NOT been ADDED!', 'Warning',
+MB_Ok|MB_IconExclamation )
+.head 10 -  Return FALSE
+.head 9 -  Return haSqlHandles[ nOurUpdtGrowSaleHandleNo ].Execute( )
+.head 8 +  Else
+.head 9 -  Call SalMessageBox( 'Unable to read the stock item sale record for this item and year', 'Error', MB_Ok )
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Else
+.head 7 -  !
+.head 7 -  Set sSql = " SELECT Amt_On_Order, Tot_Avail FROM Stock_Item_Sale
+ WHERE Stock_Item_No = :1 AND Year_Of_Sale = :2   "
+.head 7 -  Set sName = 'GTADDTSISH'
+.head 7 -  Set sBind = ':nItemNo, :nYear'
+.head 7 -  Set sInto = ':nAmtOnOrder, :nTotAvail'
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " UPDATE Stock_Item_Sale SET Amt_On_Order = :3,
+  Tot_Avail = :4
+  WHERE Stock_Item_No = :1 AND Year_Of_Sale = :2  "
+.head 7 -  Set sName = 'UPDTADDTSISH'
+.head 7 -  Set sBind = ':nItemNo, :nYear, :nAmtOnOrder, :nTotAvail'
+.head 7 -  Set sInto = ''
+.head 7 -  Call haSqlHandles[ nOurUpdtHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set nNewSubItemNo = NUMBER_Null
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 9 +  If sAllocFlag = 'N'
+.head 10 -  Set nAmtOnOrder = nAmtOnOrder + nOrdAmt
+.head 10 -  Set nTotAvail = nTotAvail - nOrdAmt
+.head 9 +  Else
+.head 10 -  Set nAmtOnOrder = nAmtOnOrder + nConfAmt
+.head 10 -  Set nTotAvail = nTotAvail - nConfAmt
+.head 9 +  If nTotAvail < 20
+.head 10 +  ! If IsFlagSet( nActionType, nLess20OkDontAsk )
+.head 11 -  Set nPassDownActionType = SH_cls_Execute | nLess20OkDontAsk
+.head 10 +  ! Else If IsFlagSet( nActionType, nLess20NotOkDontAsk )
+.head 11 -  Set nPassDownActionType = SH_cls_Execute | nLess20OkDontAsk
+.head 10 +  ! Else
+.head 11 -  Set nPassDownActionType = SH_cls_Execute
+.head 10 -  !
+.head 10 +  If sGenericFlag = 'N'
+.head 11 +  If sSubsOkFlag = 'N'
+.head 12 +  If IsFlagSet( nActionType, nLess20NotOkDontAsk )
+.head 13 -  Return FALSE
+.head 12 +  Else If NOT IsFlagSet( nActionType, nLess20OkDontAsk )
+.head 13 -  Call SalMessageBeep( 0 )
+.head 13 -  Set nReturn = SalSendMsg( hWndForm, PAM_ORDERMSGNOTIFY, ORDER_Add, ORDERMSG_StockLevelsL20 )
+.head 13 +  If nReturn = ORDERMSG_StockLevelsL20NoCont
+.head 14 -  Return FALSE
+.head 13 +  Else If nReturn != ORDERMSG_StockLevelsL20Cont
+.head 14 +  If IDNO = SalMessageBox( 'Available stock levels are less than 20.   Do you
+still want to add the order?', 'Customer Order', MB_YesNo )
+.head 15 -  Return FALSE
+.head 11 +  Else
+.head 12 +  If NewStockAvailable( nItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, sGenericFlag, nNewSubItemNo, nActionType )
+.head 13 -  Return TRUE
+.head 12 +  Else
+.head 13 +  If IsFlagSet( nActionType, nLess20NotOkDontAsk )
+.head 14 -  Return FALSE
+.head 13 +  Else If NOT IsFlagSet( nActionType, nLess20OkDontAsk )
+.head 14 -  Call SalMessageBeep( 0 )
+.head 14 -  Set nReturn = SalSendMsg( hWndForm, PAM_ORDERMSGNOTIFY, ORDER_Add, ORDERMSG_StockLevelsL20 )
+.head 14 +  If nReturn = ORDERMSG_StockLevelsL20NoCont
+.head 15 -  Return FALSE
+.head 14 +  Else If nReturn != ORDERMSG_StockLevelsL20Cont
+.head 15 +  If IDNO = SalMessageBox( 'Available stock levels are less than 20.   Do you
+still want to add the order?', 'Customer Order', MB_YesNo )
+.head 16 -  Return FALSE
+.head 10 +  Else If NOT NewStockAvailableForGen( nItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, sGenericFlag, nNewSubItemNo, nActionType  )
+.head 11 -  Call SalMessageBeep( 0 )
+.head 11 -  Call SalMessageBox( 'There is no stock available for this generic stock item!,  Either substitutes have no stock counts, or there are no substitutes!  Please refer to the STOCK ITEMS program.  YOUR order has NOT been ADDED!', 'Warning',
+MB_Ok|MB_IconExclamation )
+.head 11 -  Return FALSE
+.head 9 +  If sGenericFlag = 'Y'
+.head 10 -  Set nTotAvail = 0
+.head 9 -  Return haSqlHandles[ nOurUpdtHandleNo ].Execute( )
+.head 8 +  Else
+.head 9 -  Call SalMessageBeep( 0 )
+.head 9 -  Call SalMessageBox( 'Unable to read the stock item sale record for this item and year', 'Error', MB_Ok )
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Commit )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtGrowSaleHandleNo ].Commit( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewStockAvailable( 0, 0, 0, 0, '', '', nNewSubItemNo, SH_cls_Commit )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewStockAvailableForGen( 0, 0, 0, 0, '', '', nNewSubItemNo, SH_cls_Commit  )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Rollback )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtGrowSaleHandleNo ].Rollback( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewStockAvailable( 0, 0, 0, 0, '', '', nNewSubItemNo, SH_cls_Rollback )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewStockAvailableForGen( 0, 0, 0, 0, '', '', nNewSubItemNo, SH_cls_Rollback  )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Disconnect )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 7 -  Set bOk = FALSE
+.head 6 -  !
+.head 6 +  If NOT haSqlHandles[ nOurGrowSaleHandleNo ].Disconnect( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtGrowSaleHandleNo ].Disconnect( )
+.head 7 -  Set bOk = FALSE
+.head 6 -  !
+.head 6 +  If NOT NewStockAvailable( 0, 0, 0, 0, '', '', nNewSubItemNo, SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewStockAvailableForGen( 0, 0, 0, 0, '', '', nNewSubItemNo, SH_cls_Disconnect  )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 3 +  Function: NewAdditionLogic
+.head 4 -  Description: To add a record into table Customer order
+This function used the nLess20OkDontAsk and nLess20NotOkDontAsk flags so be carefull
+when changing code.
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  String: sAllocFlag
+.head 5 -  String: sSubsOkFlag
+.head 5 -  Number: nBatchLocId
+.head 5 -  Number: nBatchYear
+.head 5 -  Receive Number: nNewSubItemNo
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sGenericFlag
+.head 5 -  Boolean: bOk
+.head 5 -  !
+.head 5 -  ! Number: nPassDownActionType
+.head 4 +  Actions
+.head 5 +  If IsFlagSet( nActionType, SH_cls_Execute )
+.head 6 -  Set nNewSubItemNo = NUMBER_Null
+.head 6 +  If GetGenericStockItemFlag( nItemNo, sGenericFlag, SH_cls_Execute )
+.head 7 +  ! If IsFlagSet( nActionType, nLess20OkDontAsk )
+.head 8 -  Set nPassDownActionType = nActionType | nLess20OkDontAsk
+.head 7 +  ! Else If IsFlagSet( nActionType, nLess20NotOkDontAsk )
+.head 8 -  Set nPassDownActionType = nActionType | nLess20OkDontAsk
+.head 7 +  ! Else
+.head 8 -  Set nPassDownActionType = nActionType
+.head 7 +  If NewAddToStockItemSale( nItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, sGenericFlag, sSubsOkFlag, nBatchLocId, nBatchYear, nNewSubItemNo, nActionType )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Commit )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT NewAddToStockItemSale( 0, 0, 0, 0, '', '', '', 0, 0, nNewSubItemNo, SH_cls_Commit )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Rollback )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT NewAddToStockItemSale( 0, 0, 0, 0, '', '', '', 0, 0, nNewSubItemNo, SH_cls_Rollback )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Disconnect )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT GetGenericStockItemFlag( 0, sGenericFlag, SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewAddToStockItemSale( 0, 0, 0, 0, '', '', '', 0, 0, nNewSubItemNo, SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 3 +  Function: NewAddOrder
+.head 4 -  Description: To add a record into table Customer order
+BIG NOTE: nActionType These constants are the SH_cls_Execute, SH_cls_Disconnect, nReprepare,
+  SH_cls_Commit, SH_cls_Rollback are the values MUST be 2,4,8,16,32,64,128,256 etc and
+  nLess20OkDontAsk OR nLess20NotOkDontAsk must also have a value in this sequence.
+IF the application does not want the message "Item is less than 20! Continue YES/NO" to
+  be asked then OR together SH_cls_Execute | nLess20OkDontAsk OR SH_cls_Execute | nLess20NotOkDontAsk
+  to asume a no user interaction action.  By default the message will be asked!
+ALSO Assumed is that nLess20OkDontAsk and nLess20NotOkDontAsk will not be used
+  together in the one OR statement.
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nCustNo
+.head 5 -  Number: nYear
+.head 5 -  Date/Time: dtOrderedDate
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  String: sSaleCat
+.head 5 -  String: sSubsOkFlag
+.head 5 -  Number: nBatchLocId
+.head 5 -  Number: nBatchYear
+.head 5 -  Window Handle: hWndHandle
+.head 5 -  Number: nPAM_EXTRAFIELDSMSG
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! Sql Handle: hSqlInsertHandle
+.head 5 -  ! Boolean: bInsertHandleConnected
+.head 5 -  ! Boolean: bInsertHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlUpdateHandle
+.head 5 -  ! Boolean: bUpdateHandleConnected
+.head 5 -  ! Boolean: bUpdateHandlePrepared
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  String: sNFlag
+.head 5 -  Number: nOurInsHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Boolean: bOk
+.head 5 -  Boolean: bCheckItem
+.head 5 -  !
+.head 5 -  Date/Time: dtOrderSysDT
+.head 5 -  String: sAllocFlag
+.head 5 -  Number: nSubsItemNo
+.head 5 -  !
+.head 5 -  ! Number: nPassDownActionType
+.head 4 +  Actions
+.head 5 -  Set nOurInsHandleNo = SqlHandlesGetReferenceNo( 'NewAddOrderIns' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'NewAddOrderUpdt' )
+.head 5 +  If IsFlagSet( nActionType, SH_cls_Execute )
+.head 6 -  Set sSql = " INSERT INTO Customer_Order ( Cust_No, Order_Date_Time,
+  Stock_Item_No, Year_Of_Sale, Subs_Ok_Flag, Ordered_Amount,
+  Ord_Date, Sale_Cat, Invoiced_Flag, Alloc_Flag, Conf_Flag, Conf_Amt, User_Id,
+  Pull_Sheet_Issued, NPA_Sent_Flag, Ack_Flag, Lbl_PullSh_Printed,
+  Subs_Item_No, Cont_Price_Flag, Custom_Bud_Flag, Contract_Dep_Reqd,
+  Trialpack_Reqd, Batch_Year_Of_Sale, Batch_Location_Id ) 
+VALUES 
+( :1, :2, :3, :4, :5, :6, :7, :8, :9, :10, :11, :12, :13, :14, :15, :16, :17, :18, :19, :20, :21, :22, :23, :24 )  "
+.head 6 -  Set sName = 'INSADDORDINS'
+.head 6 -  Set sBind = ':nCustNo, :dtOrderSysDT,
+  :nItemNo, :nYear, :sSubsOkFlag, :nOrdAmt, :dtOrderedDate, :sSaleCat, :sNFlag, :sAllocFlag, :sNFlag,
+  :nConfAmt, :SqlUser, :sNFlag, :sNFlag, :sNFlag, :sNFlag, :nSubsItemNo, :sNFlag, :sNFlag, 
+  :sNFlag, :sNFlag, :nBatchYear, :nBatchLocId'
+.head 6 -  Set sInto = ''
+.head 6 -  Call haSqlHandles[ nOurInsHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 6 -  Call SqlVarSetup( haSqlHandles[ nOurInsHandleNo ].hSqlHandle )
+.head 6 -  !
+.head 6 -  Set sNFlag = 'N'
+.head 6 -  !
+.head 6 +  If hWndHandle != hWndNULL
+.head 7 -  Set sSql = sgSql
+.head 7 +  If SalSendMsg( hWndHandle, PAM_ORDER_EXTRAUPDATE, 0, 0 )
+.head 8 -  Set sgSql = 'UPDATE  Customer_Order  SET ' || sIntoVars ||
+' WHERE Cust_No = :nCustNo AND Order_Date_Time = :dtOrderSysDT '
+.head 7 +  Else
+.head 8 -  Call CallBuildSql( hWndHandle, nUPDATE, nPAM_EXTRAFIELDSMSG,
+  ' Customer_Order ',
+  ' WHERE Cust_No = :nCustNo AND Order_Date_Time = :dtOrderSysDT ' )
+.head 7 -  Call haSqlHandles[ nOurUpdtHandleNo ].PrepareSetup( sgSql )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 7 -  Set sgSql = sSql
+.head 7 -  !
+.head 7 +  If NOT DetailsFormDataVal( hWndHandle )
+.head 8 -  Return FALSE
+.head 6 -  Set nSubsItemNo = NUMBER_Null
+.head 6 -  !
+.head 6 -  Set dtOrderSysDT = SalDateCurrent(  )
+.head 6 +  If nConfAmt >= 0
+.head 7 -  Set sAllocFlag = 'Y'
+.head 6 +  Else
+.head 7 -  Set sAllocFlag = 'N'
+.head 6 -  !
+.head 6 -  Set bCheckItem = FALSE
+.head 6 +  If NOT nConfAmt = NUMBER_Null
+.head 7 +  If nConfAmt > 0
+.head 8 -  Set bCheckItem = TRUE
+.head 6 +  Else If nOrdAmt > 0
+.head 7 -  Set bCheckItem = TRUE
+.head 6 -  !
+.head 6 +  If bCheckItem
+.head 7 +  If IsFlagSet( nActionType, nItemCheck )
+.head 8 +  If CheckItemIsOkForCust( nItemNo, nYear, nCustNo, bOk, nActionType )
+.head 9 +  If NOT bOk
+.head 10 -  Call SalMessageBeep( 0 )
+.head 10 -  Return FALSE
+.head 6 -  !
+.head 6 +  ! If IsFlagSet( nActionType, nLess20OkDontAsk )
+.head 7 -  Set nPassDownActionType = nActionType | nLess20OkDontAsk
+.head 6 +  ! Else If IsFlagSet( nActionType, nLess20NotOkDontAsk )
+.head 7 -  Set nPassDownActionType = nActionType | nLess20OkDontAsk
+.head 6 +  ! Else
+.head 7 -  Set nPassDownActionType = nActionType
+.head 6 +  If NOT NewAdditionLogic( nItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, sSubsOkFlag, nBatchLocId, nBatchYear, nSubsItemNo, nActionType )
+.head 7 -  Call NewAddOrder( 0, 0, DATETIME_Null, 0, 0, 0, '', '', 0, 0, hWndNULL, 0, SH_cls_Rollback )
+.head 7 -  Return FALSE
+.head 6 -  !
+.head 6 +  If haSqlHandles[ nOurInsHandleNo ].Execute( )
+.head 7 +  If hWndHandle != hWndNULL
+.head 8 +  If haSqlHandles[ nOurUpdtHandleNo ].PrepareAndExecute( )
+.head 9 -  Call NewAddOrder( 0, 0, DATETIME_Null, 0, 0, 0, '', '', 0, 0, hWndNULL, 0, SH_cls_Commit )
+.head 9 -  Return TRUE
+.head 8 +  Else
+.head 9 -  Call NewAddOrder( 0, 0, DATETIME_Null, 0, 0, 0, '', '', 0, 0, hWndNULL, 0, SH_cls_Rollback )
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Call NewAddOrder( 0, 0, DATETIME_Null, 0, 0, 0, '', '', 0, 0, hWndNULL, 0, SH_cls_Commit )
+.head 8 -  Return TRUE
+.head 6 +  Else
+.head 7 -  Call NewAddOrder( 0, 0, DATETIME_Null, 0, 0, 0, '', '', 0, 0, hWndNULL, 0, SH_cls_Rollback )
+.head 7 -  Return FALSE
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Commit )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurInsHandleNo ].Commit( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewAdditionLogic( 0, 0, 0, 0, '', '', 0, 0, nSubsItemNo, SH_cls_Commit )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Rollback )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurInsHandleNo ].Rollback( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewAdditionLogic( 0, 0, 0, 0, '', '', 0, 0, nSubsItemNo, SH_cls_Rollback )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Disconnect )
+.head 6 -  Set bOk = TRUE
+.head 6 +  If NOT haSqlHandles[ nOurInsHandleNo ].Disconnect( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 7 -  Set bOk = FALSE
+.head 6 +  If NOT NewAdditionLogic( 0, 0, 0, 0, '', '', 0, 0, nSubsItemNo, SH_cls_Disconnect )
+.head 7 -  Set bOk = FALSE
+.head 6 -  Return bOk
+.head 3 +  Function: NewAddToSub
+.head 4 -  Description:
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nSubItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  String: sAllocFlag
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! Sql Handle: hSqlHandle
+.head 5 -  ! Boolean: bHandleConnected
+.head 5 -  ! Boolean: bHandlePrepared
+.head 5 -  !
+.head 5 -  ! Sql Handle: hSqlUpdateHandle
+.head 5 -  ! Boolean: bUpdateHandleConnected
+.head 5 -  ! Boolean: bUpdateHandlePrepared
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurHandleNo
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Boolean: bOk
+.head 5 -  Number: nInd
+.head 5 -  Number: nCount
+.head 5 -  !
+.head 5 -  Number: nOnOrdSub
+.head 5 -  Number: nSubTotAvail
+.head 4 +  Actions
+.head 5 -  Set nOurHandleNo = SqlHandlesGetReferenceNo( 'NewAddToSub' )
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'NewAddToSubUpdt' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT On_Ord_As_Subs, Tot_Avail FROM Stock_Item_Sale
+  WHERE Stock_Item_No = :1 AND
+    Year_Of_Sale = :2  "
+.head 7 -  Set sName = 'GTADDTSUB'
+.head 7 -  Set sBind = ':nSubItemNo, :nYear'
+.head 7 -  Set sInto = ':nOnOrdSub, :nSubTotAvail'
+.head 7 -  Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSql = " UPDATE Stock_Item_Sale SET On_Ord_As_Subs = :3,
+  Tot_Avail = :4
+  WHERE Stock_Item_No = :1 AND Year_Of_Sale = :2  "
+.head 7 -  Set sName = 'UPDTADDTSUB'
+.head 7 -  Set sBind = ':nSubItemNo, :nYear, :nOnOrdSub, :nSubTotAvail'
+.head 7 -  Set sInto = ''
+.head 7 -  Call haSqlHandles[ nOurUpdtHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nOurHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+.head 9 +  If sAllocFlag = 'N'
+.head 10 -  Set nOnOrdSub = nOnOrdSub + nOrdAmt
+.head 10 -  Set nSubTotAvail = nSubTotAvail - nOrdAmt
+.head 9 +  Else
+.head 10 -  Set nOnOrdSub = nOnOrdSub + nConfAmt
+.head 10 -  Set nSubTotAvail = nSubTotAvail - nConfAmt
+.head 9 -  !
+.head 9 +  If nSubTotAvail >= 0
+.head 10 -  Return haSqlHandles[ nOurUpdtHandleNo ].Execute( )
+.head 9 +  Else
+.head 10 -  Call SalMessageBeep( 0 )
+.head 10 -  Call SalMessageBox( 'New Substitute available level falls bellow ZERO.  Substitute not Changed!', 'Error', MB_Ok )
+.head 10 -  Return FALSE
+.head 8 +  Else
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Return haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Return haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: NewChangeOrderSubstitute
+.head 4 -  Description: Change order line substitute item no
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nCustNo
+.head 5 -  Date/Time: dtOrderSysDT
+.head 5 -  Number: nNewSubsItemNo
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables
+.head 5 -  ! Sql Handle: hSqlUpdateHandle
+.head 5 -  ! Boolean: bUpdateHandleConnected
+.head 5 -  ! Boolean: bUpdateHandlePrepared
+.head 4 +  Local variables
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nOurUpdtHandleNo
+.head 5 -  Boolean: bOk
+.head 5 -  !
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nOrdAmt
+.head 5 -  Number: nConfAmt
+.head 5 -  String: sAllocFlag
+.head 5 -  Number: nBatchLocId
+.head 5 -  Number: nBatchYear
+.head 5 -  !
+.head 5 -  Number: nOldSubsItemNo
+.head 4 +  Actions
+.head 5 -  Set nOurUpdtHandleNo = SqlHandlesGetReferenceNo( 'NewChangeOrderSubstituteUpdt' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " UPDATE Customer_Order SET Subs_Item_No = :3
+  WHERE Cust_No = :1 AND Order_Date_Time = :2 "
+.head 7 -  Set sName = 'UPDTCHORDSUB'
+.head 7 -  Set sBind = ':nCustNo, :dtOrderSysDT, :nNewSubsItemNo'
+.head 7 -  Set sInto = ''
+.head 7 -  Call haSqlHandles[ nOurUpdtHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nOurUpdtHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If GetOrderBasicDetails( nCustNo, dtOrderSysDT, nItemNo, nOldSubsItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, nBatchLocId, nBatchYear, SH_cls_Execute )
+.head 8 +  If NewDeleteFromSub( nOldSubsItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, SH_cls_Execute )
+.head 9 +  If NewAddToSub( nNewSubsItemNo, nYear, nOrdAmt, nConfAmt, sAllocFlag, SH_cls_Execute )
+.head 10 +  If haSqlHandles[ nOurUpdtHandleNo ].Execute( )
+.head 11 -  Call NewChangeOrderSubstitute( 0, DATETIME_Null, 0, SH_cls_Commit )
+.head 11 -  Return TRUE
+.head 10 +  Else
+.head 11 -  Call NewChangeOrderSubstitute( 0, DATETIME_Null, 0, SH_cls_Rollback )
+.head 11 -  Call SalMessageBeep( 0 )
+.head 11 -  Call SalMessageBox( 'SqlExecute hSqlUpdateHandle had a error in function NewChangeOrderSubstitute! Please contact programmers!', 'Error', MB_Ok )
+.head 11 -  Return FALSE
+.head 9 +  Else
+.head 10 -  Call NewChangeOrderSubstitute( 0, DATETIME_Null, 0, SH_cls_Rollback )
+.head 10 -  Return FALSE
+.head 8 +  Else
+.head 9 -  Call NewChangeOrderSubstitute( 0, DATETIME_Null, 0, SH_cls_Rollback )
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Call NewChangeOrderSubstitute( 0, DATETIME_Null, 0, SH_cls_Rollback )
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Commit
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Commit( )
+.head 8 -  Set bOk = FALSE
+.head 7 -  !
+.head 7 +  If NOT NewDeleteFromSub( 0, 0, 0, 0, '', SH_cls_Commit )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT NewAddToSub( 0, 0, 0, 0, '', SH_cls_Commit )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Rollback
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Rollback( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT NewDeleteFromSub( 0, 0, 0, 0, '', SH_cls_Rollback )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT NewAddToSub( 0, 0, 0, 0, '', SH_cls_Rollback )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Set bOk = TRUE
+.head 7 +  If NOT haSqlHandles[ nOurUpdtHandleNo ].Disconnect( )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT NewDeleteFromSub( 0, 0, 0, 0, '', SH_cls_Disconnect )
+.head 8 -  Set bOk = FALSE
+.head 7 +  If NOT NewAddToSub( 0, 0, 0, 0, '', SH_cls_Disconnect )
+.head 8 -  Set bOk = FALSE
+.head 7 -  Return bOk
+.head 3 +  Function: CheckItemIsOkForCust
+.head 4 -  Description: This function performs Sold out Flag check on the stock item,
+CV_Not_Sale_Flag, RT_Not_Sale_Flag check and if the item is not
+prohibited where this customer lives
+nActionType ( user SH_cls_Execute | nNoMesg to supress the error messages )
+.head 4 +  Returns
+.head 5 -  Boolean:
+.head 4 +  Parameters
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nCustNo
+.head 5 -  Receive Boolean: bItemOk
+.head 5 -  Number: nActionType
+.head 4 -  Static Variables
+.head 4 +  Local variables
+.head 5 -  String: sState
+.head 5 -  String: sCVNotSaleFlag
+.head 5 -  String: sRTNotSaleFlag
+.head 5 -  String: sSoldOutFlag
+.head 5 -  String: sTmp
+.head 5 -  Date/Time: dtTmp
+.head 5 -  Boolean: bPickUpAddr
+.head 5 -  Boolean: bProhibited
+.head 5 -  !
+.head 5 -  Number: nInd
+.head 4 +  Actions
+.head 5 +  If IsFlagSet( nActionType, SH_cls_Execute )
+.head 6 -  Set bItemOk = FALSE
+.head 6 -  Set sState = ''
+.head 6 -  Set sCVNotSaleFlag = ''
+.head 6 -  Set sRTNotSaleFlag = ''
+.head 6 -  Set sSoldOutFlag = ''
+.head 6 -  !
+.head 6 +  If GetItemNotSaleFlags( nItemNo, sCVNotSaleFlag, sRTNotSaleFlag, SH_cls_Execute )
+.head 7 +  If sCVNotSaleFlag = 'Y'
+.head 8 +  If IsFlagSet( nActionType, nNoMesg )
+.head 9 -  Return TRUE
+.head 8 +  Else
+.head 9 -  Call SalMessageBox( 'This cultivar is NOT for Sale', 'Warning', MB_Ok )
+.head 9 -  Call SalSendMsg( hWndForm, PAM_ORDERMSGNOTIFY, ORDER_Add, ORDERMSG_CultNotSale )
+.head 9 -  Set bItemOk = FALSE
+.head 9 -  Return TRUE
+.head 7 +  Else If sRTNotSaleFlag = 'Y'
+.head 8 +  If IsFlagSet( nActionType, nNoMesg )
+.head 9 -  Return TRUE
+.head 8 +  Else
+.head 9 -  Call SalMessageBox( 'This rootstock is NOT for Sale', 'Warning', MB_Ok )
+.head 9 -  Call SalSendMsg( hWndForm, PAM_ORDERMSGNOTIFY, ORDER_Add, ORDERMSG_RootNotSale )
+.head 9 -  Set bItemOk = FALSE
+.head 9 -  Return TRUE
+.head 7 +  Else
+.head 8 +  If GetItemSoldOutFlag( nItemNo, nYear, sSoldOutFlag, SH_cls_Execute )
+.head 9 +  If sSoldOutFlag = 'Y'
+.head 10 +  If IsFlagSet( nActionType, nNoMesg )
+.head 11 -  Return TRUE
+.head 10 +  Else
+.head 11 -  Call SalMessageBox( 'This stock item is SOLD OUT.', 'Warning', MB_Ok )
+.head 11 -  Call SalSendMsg( hWndForm, PAM_ORDERMSGNOTIFY, ORDER_Add, ORDERMSG_ItemSoldOut )
+.head 11 -  Set bItemOk = FALSE
+.head 11 -  Return TRUE
+.head 9 +  Else
+.head 10 +  If GetShipAddress( nCustNo, nYear, dtTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sState, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, bPickUpAddr, SH_cls_Execute )
+.head 11 +  If bPickUpAddr
+.head 12 -  Set bItemOk = TRUE
+.head 12 -  Return TRUE
+.head 11 +  Else
+.head 12 +  If sState = ''
+.head 13 +  If GetBusAddress( nCustNo, dtTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sState, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+.head 14 +  If sState = ''
+.head 15 -  Set bItemOk = TRUE
+.head 15 -  Return TRUE
+.head 13 +  Else
+.head 14 -  Return FALSE
+.head 12 -  !
+.head 12 +  If IsItemProhibitedInState( nItemNo, nYear, sState, bProhibited, SH_cls_Execute )
+.head 13 +  If bProhibited
+.head 14 +  If NOT IsFlagSet( nActionType, nNoMesg )
+.head 15 -  Call SalMessageBox( 'This item is prohibited in this customers state!', 'Warning', MB_Ok )
+.head 15 -  Call SalSendMsg( hWndForm, PAM_ORDERMSGNOTIFY, ORDER_Add, ORDERMSG_ItemProhibited )
+.head 15 -  Set bItemOk = FALSE
+.head 13 +  Else
+.head 14 -  Set bItemOk = TRUE
+.head 13 -  Return TRUE
+.head 12 +  Else
+.head 13 -  Return FALSE
+.head 10 +  Else
+.head 11 -  Return FALSE
+.head 8 +  Else
+.head 9 -  Return FALSE
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  Else If IsFlagSet( nActionType, SH_cls_Disconnect )
+.head 6 -  Call GetItemNotSaleFlags( 0, sCVNotSaleFlag, sRTNotSaleFlag, SH_cls_Disconnect )
+.head 6 -  Call GetItemSoldOutFlag( 0, 0, sSoldOutFlag, SH_cls_Disconnect )
+.head 6 -  Call GetShipAddress( 0, 0, dtTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sState, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, bPickUpAddr, SH_cls_Disconnect )
+.head 6 -  Call GetBusAddress( 0, dtTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sState, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Disconnect )
+.head 6 -  Call IsItemProhibitedInState( 0, 0, sState, bProhibited, SH_cls_Disconnect )
+.head 6 -  Return TRUE
+.head 3 +  ! Function: GetItemNotSaleFlags
+.head 4 -  Description: 
+.head 4 +  Returns 
+.head 5 -  Boolean: 
+.head 4 +  Parameters 
+.head 5 -  Number: nItemNo
+.head 5 -  Receive String: sCVNotSaleFlag
+.head 5 -  Receive String: sRTNotSaleFlag
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables 
+.head 5 -  ! hcSqlHandle: fcOurHandle
+.head 4 +  Local variables 
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nSqlHandleNo
+.head 5 -  !
+.head 5 -  String: sGotCVNotSaleFlag
+.head 5 -  String: sGotRTNotSaleFlag
+.head 5 -  !
+.head 5 -  Number: nInd
+.head 4 +  Actions 
+.head 5 -  Set nSqlHandleNo = SqlHandlesGetReferenceNo( 'GetItemNotSaleFlags' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT CV_Not_Sale_Flag, RT_Not_Sale_Flag
+FROM Stock_Item
+WHERE Item_No = :1 "
+.head 7 -  Set sName = 'GETITMNOTSALEFLGS'
+.head 7 -  Set sBind = ':nItemNo'
+.head 7 -  Set sInto = ':sGotCVNotSaleFlag, :sGotRTNotSaleFlag'
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nSqlHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nSqlHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sCVNotSaleFlag = ''
+.head 7 -  Set sRTNotSaleFlag = ''
+.head 7 -  Set sGotCVNotSaleFlag = ''
+.head 7 -  Set sGotRTNotSaleFlag = ''
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nSqlHandleNo ].Execute( )
+.head 8 -  Call haSqlHandles[ nSqlHandleNo ].FetchNext( nInd )
+.head 8 -  Set sCVNotSaleFlag = sGotCVNotSaleFlag
+.head 8 -  Set sRTNotSaleFlag = sGotRTNotSaleFlag
+.head 8 -  Return TRUE
+.head 7 +  Else 
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nSqlHandleNo ].Disconnect( )
+.head 3 +  ! Function: GetItemSoldOutFlag
+.head 4 -  Description: 
+.head 4 +  Returns 
+.head 5 -  Boolean: 
+.head 4 +  Parameters 
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  Receive String: sSoldOutFlag
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables 
+.head 5 -  ! hcSqlHandle: fcOurHandle
+.head 4 +  Local variables 
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nSqlHandleNo
+.head 5 -  !
+.head 5 -  String: sGotSoldOutFlag
+.head 5 -  !
+.head 5 -  Number: nInd
+.head 4 +  Actions 
+.head 5 -  Set nSqlHandleNo = SqlHandlesGetReferenceNo( 'GetItemSoldOutFlag' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT Sold_Out_Flag
+FROM Stock_Item_Sale
+WHERE Stock_Item_No = :1 AND Year_Of_Sale = :2 "
+.head 7 -  Set sName = 'GETSOLDOUTFLAG'
+.head 7 -  Set sBind = ':nItemNo, :nYear'
+.head 7 -  Set sInto = ':sGotSoldOutFlag'
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nSqlHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nSqlHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set sSoldOutFlag = ''
+.head 7 -  Set sGotSoldOutFlag = ''
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nSqlHandleNo ].Execute( )
+.head 8 -  Call haSqlHandles[ nSqlHandleNo ].FetchNext( nInd )
+.head 8 -  Set sSoldOutFlag = sGotSoldOutFlag
+.head 8 -  Return TRUE
+.head 7 +  Else 
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nSqlHandleNo ].Disconnect( )
+.head 3 +  ! Function: IsItemProhibitedInState
+.head 4 -  Description: 
+.head 4 +  Returns 
+.head 5 -  Boolean: 
+.head 4 +  Parameters 
+.head 5 -  Number: nItemNo
+.head 5 -  Number: nYear
+.head 5 -  String: sState
+.head 5 -  Receive Boolean: bProhibited
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables 
+.head 5 -  ! hcSqlHandle: fcOurHandle
+.head 4 +  Local variables 
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nSqlHandleNo
+.head 5 -  !
+.head 5 -  Date/Time: dtProhibDT
+.head 5 -  Number: nInd
+.head 4 +  Actions 
+.head 5 -  Set nSqlHandleNo = SqlHandlesGetReferenceNo( 'IsItemProhibitedInState' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT
+  Prohibition.Prohib_Date_Time
+FROM
+  Stock_Item, Prohibition
+WHERE
+  Stock_Item.Item_No = :1 AND
+  ( Stock_Item.Cultivar_Id = Prohibition.Cult_Id OR
+    Stock_Item.Rootstock_Id = Prohibition.Root_Id ) AND
+  Prohibition.State_Prohib_In = :2 AND
+  Prohibition.Year_Of_Prohib = :3 "
+.head 7 -  Set sName = 'ISITEMPROHIB'
+.head 7 -  Set sBind = ':nItemNo, :sState, :nYear'
+.head 7 -  Set sInto = ':dtProhibDT'
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nSqlHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nSqlHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set bProhibited = FALSE
+.head 7 -  Set dtProhibDT = DATETIME_Null
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nSqlHandleNo ].Execute( )
+.head 8 -  Call haSqlHandles[ nSqlHandleNo ].FetchNext( nInd )
+.head 8 +  If dtProhibDT != DATETIME_Null
+.head 9 -  Set bProhibited = TRUE
+.head 8 -  Return TRUE
+.head 7 +  Else 
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nSqlHandleNo ].Disconnect( )
+.head 3 +  ! Function: CheckCustPurchOrdNoReqd
+.head 4 -  Description: Need to check if a customer has POS goods to be sent on this invoice
+prior to finishing with the customer
+.head 4 +  Returns 
+.head 5 -  Boolean: 
+.head 4 +  Parameters 
+.head 5 -  Number: nCustNo
+.head 5 -  Receive Boolean: bReqd
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables 
+.head 5 -  ! hcSqlHandle: fcOurHandle
+.head 4 +  Local variables 
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nSqlHandleNo
+.head 5 -  Number: nInd
+.head 5 -  String: sGotPurchOrdNoReqd
+.head 4 +  Actions 
+.head 5 -  Set nSqlHandleNo = SqlHandlesGetReferenceNo( 'CheckCustPurchOrdNoReqd' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT Purch_Ord_No_Reqd
+FROM Customer_Master
+WHERE
+  Cust_No = :1 "
+.head 7 -  Set sName = 'CSTPONREQD'
+.head 7 -  Set sBind = ':nCustNo'
+.head 7 -  Set sInto = ':sGotPurchOrdNoReqd'
+.head 7 -  !
+.head 7 -  Set bReqd = FALSE
+.head 7 -  Set sGotPurchOrdNoReqd = ''
+.head 7 -  !
+.head 7 -  Call haSqlHandles[ nSqlHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nSqlHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nSqlHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nSqlHandleNo ].FetchNext( nInd )
+.head 9 +  If sGotPurchOrdNoReqd = 'Y'
+.head 10 -  Set bReqd = TRUE
+.head 8 -  Return TRUE
+.head 7 +  Else 
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nSqlHandleNo ].Disconnect( )
+.head 3 +  ! Function: GetCustItemQuotPrice
+.head 4 -  Description: 
+.head 4 +  Returns 
+.head 5 -  Boolean: 
+.head 4 +  Parameters 
+.head 5 -  Number: nCustNo
+.head 5 -  Number: nYear
+.head 5 -  Number: nItemNo
+.head 5 -  Receive Boolean: bFound
+.head 5 -  Receive Number: nQuotPrice
+.head 5 -  Number: nActionType
+.head 4 +  Static Variables 
+.head 5 -  ! hcSqlHandle: fcOurHandle
+.head 4 +  Local variables 
+.head 5 -  String: sSql
+.head 5 -  String: sBind
+.head 5 -  String: sInto
+.head 5 -  String: sName
+.head 5 -  Number: nSqlHandleNo
+.head 5 -  Number: nInd
+.head 5 -  Number: nFlags
+.head 5 -  !
+.head 5 -  Number: nGotQuotPrice
+.head 4 +  Actions 
+.head 5 -  Set nSqlHandleNo = SqlHandlesGetReferenceNo( 'GetCustItemQuotPrice' )
+.head 5 +  Select Case nActionType
+.head 6 +  Case SH_cls_Execute
+.head 7 -  Set sSql = " SELECT
+  Contract_Price
+FROM Quotation
+WHERE
+  Cust_No = :1 AND
+  Stock_Item_No = :2 AND
+  Year_Of_Sale = :3 "
+.head 7 -  Set sName = 'GETCSTITMQUOT'
+.head 7 -  Set sBind = ':nCustNo, :nItemNo, :nYear'
+.head 7 -  Set sInto = ':nGotQuotPrice'
+.head 7 -  Call haSqlHandles[ nSqlHandleNo ].Setup( sSql, sName, sBind, sInto )
+.head 7 -  Call SqlVarSetup( haSqlHandles[ nSqlHandleNo ].hSqlHandle )
+.head 7 -  !
+.head 7 -  Set nQuotPrice = NUMBER_Null
+.head 7 -  Set nGotQuotPrice = NUMBER_Null
+.head 7 -  Set bFound = FALSE
+.head 7 -  !
+.head 7 +  If haSqlHandles[ nSqlHandleNo ].Execute( )
+.head 8 +  If haSqlHandles[ nSqlHandleNo ].FetchNext( nInd )
+.head 9 -  Set nQuotPrice = nGotQuotPrice
+.head 9 -  Set bFound = TRUE
+.head 8 -  Return TRUE
+.head 7 +  Else 
+.head 8 -  Return FALSE
+.head 6 +  Case SH_cls_Disconnect
+.head 7 -  Return haSqlHandles[ nSqlHandleNo ].Disconnect( )
+.head 3 -  !
+.head 3 -  !
+.head 3 -  !
+.head 3 -  !
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 2596045202
+0000: F508000071040000 0000000000000000 0200001300FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F0D003C00 001163006C735370
+0040: 696E53650061736F 6E59656172001E00 0000010000008F01 0D00FE00FF030180
+0060: 3400000084010000 14636C0070625365 6C6563740046726F 6D5461626C00656C
+0080: 0000000400009E00 010DFD00FF270D00 0001F700FF1F1A00 00DC000100FF7F27
+00A0: 700000000100FFFF 2101800400000240 0000000D636C5312 656563496E74886F
+00C0: 1E000001001E0003 0400FD00FF070180 2200000000030000 001D636C0154626C
+00E0: 4D616B653C536565 6400526F774B6579 4172007261797400 0000047B00024404
+0100: 0000010000FFE080 01000000DF04D800 010D00FF7F117000 00000100FFFFC91E
+0120: 000002FD00FF0701 80B700000C000400 0F636C1B61654765 006E6572616C3602
+0140: 00E115000000D901 0D00FF7F0D720000 0100FFFFCD1A0001 FD00FF37270001F7
+0160: 00FF9F3400DC0002 00FF7F3870000000 0200FFFFC13C0000 0002FD00FF074000
+0180: 000002F700FF1F44 0000DC000200FF7F 48700000000200FF FFC14C00000002FD
+01A0: 00FF075000000002 4700010000FFE480 0100001F54000018 00010D000100FD00
+01C0: 93800100007F5860 000000010D00FFFF C16500000001FD00 FF077200000001F7
+01E0: 00FF1F7F0000DC00 0100FF7F8C700000 000100FFFFC19900 000001FD00FF07A6
+0200: 00000001F700FF1F B30000D800030400 FF7F0108800D0000 05000050000C636C
+0220: 70473E651E00D100 010000B3010D00FF FF1801800D000600 E0000009636C4045
+0240: 7869741E0000F401 0000EC010D00FF3F 0180060400070000 000E0C5069634580
+0260: 7870616E641E00E8 00010000DD0200FF 7F010C8004000800 00F00012636C0054
+0280: 6F67676C65427540 74746F6E1E0000F4 010000EE0200FF3F 0180060D00090000
+02A0: 008E0C636247FFE8 00010000D9010D00 FF7F0100802F0000 000A000010000B63
+02C0: 6C466F72006D4261 7365860000EC0005 00D9010D00FF7F0D 73000200FFFF0D11
+02E0: 00040D00FD00FF37 1E0003F700FF9F22 00DC000100FF7F01 0C800D000B0000F0
+0300: 0017636C01507269 6E74426101696352 65706F728C741E00 01009E00010DFD00
+0320: FFC701800D00000C 0000000B68634053 716C48616E6C8865 1E000001009E0001
+0340: 0DFD00FFC7018004 8C000D000C63E164 6647651F000100BD 0003FB00FF0F0180
+0360: 2E000000000E0000 0011630B70537461 72007450726F6772 616D60BA00000007
+0380: 00EF02FE00FF9304 000002FB00FF6F08 00EE0200FF3F0C00 B100010D00FFFFE0
+03A0: 1900000003FE00FF 831D00000002FB00 FF0F21000000EE01 00FF3F0180062F00
+03C0: 0F0000000810636C 4469616CF06F6747 65C86C860000059E 00010DFD00FF370D
+03E0: 0002F700FF9F1100 D800040D00FF7F1E 73000300FFFFCD22 0001FD00FFC70180
+0400: 040000100000000C 63661C5461436163 1868651E000100BD 0003FB00FF0F0180
+0420: 1500190011000B63 38664361506F006F 6C5A00000003003D 0007190200000101
+0440: 003E067A000080F2 0100004F040000EC 030400FFBF08B100 010D00FFFF180180
+0460: 0400120030000010 63546F026F546970 57696E20646F771E 0000017A000003F7
+0480: 00FF1F
+.enddata
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Check Box:
+.head 3 -  Option Button:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text:
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 -  Application Actions

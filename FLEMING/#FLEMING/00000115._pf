@@ -1,0 +1,3538 @@
+Application Description: SQLWindows 5.01 Jans Labels Printing App
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 00000000007A0000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF000000 0000000000140300 009F010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 0218B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.113"
+			Top:    2.906"
+			Width:  4.688"
+			Height: 2.979"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   2.225"
+			Top:    1.885"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: GENERAL.APL
+		File Include: FORM.APL
+		File Include: BUTTON.APL
+		File Include: DATFIELD.APL
+		File Include: BGTEXT.APL
+		File Include: GROUPBOX.APL
+		File Include: CHECKBOX.APL
+		File Include: TABLE.APL
+		File Include: SQLHANDL.APL
+		File Include: STRINGS.APL
+		File Include: METER.APL
+		File Include: STACKS.APL
+		File Include: VTMETER.APL
+		File Include: FLAGS.APL
+		File Include: DIALOG.APL
+		File Include: FRMCTBL.APL
+		File Include: QUERY.APL
+		File Include: CMBFIELD.APL
+		File Include: RADIOBTN.APL
+		File Include: SPNFIELD.APL
+		File Include: VTSPIN.APL
+		File Include: DATES.APL
+		File Include: PICK.APL
+		File Include: ACTIVATE.APL
+		File Include: RUNPROG.APL
+		File Include: ADDRESS.APL
+		File Include: VTWIN.APL
+		File Include: EXTRNPRG.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: None
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Blue
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for ADDRLBLD.APL
+				Number: ADDRLBLDAplMsgOffSet = SAM_User + 7400
+				! Message go up to AplMsgOffSet + 99
+				Number: ADDRLBLDAplConstOffSet = 5200
+				Number: PAM_ADDRLBLD_INITCSTMASTER = ADDRLBLDAplMsgOffSet + 1
+				Number: PAM_ADDRLBLD_INITMAILLIST = ADDRLBLDAplMsgOffSet + 2
+				Number: PAM_ADDRLBLD_PRNTLABELS = ADDRLBLDAplMsgOffSet + 3
+				! Messages
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 838646365
+0000: A000000041000000 0000000000000000 020000060000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E8040D0000 FF3FAB00B8000001 00FFFF
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 3335768950
+0000: BD110000D4070000 0000000000000000 0200001F00FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 000B63006C73466F
+0040: 726D426100736586 00000005003C0000 010DF8000000FF4F 0D0000E002040000
+0060: 00FF3F1100A00000 040D0000FFFF801E 000000030400FE00 FF832200000001FB
+0080: 00FF0F01800D0001 000100000017633E 6C507220696E7442 616963005265706F
+00A0: 72741E00D9000100 B3010D00FFFF1801 800D000200200000 0C636C7062004765
+00C0: 6E6572616C1EA200 0001000067010D00 FFFF010180380000 0003C00000000963
+00E0: 6C8148656C708600 EC000500D9020400 FF7F04620000010D 00FFFFCD110001FD
+0100: 00FF371E0001F700 FF1F2B0000DC0001 00FF7F01CC800D00 047C000945307869
+0120: 741E00017A000001 F60D00FF1F018004 32000005000C0750 696345784070616E
+0140: 641E0000F4010000 EE0200FF3F018006 0400060000007812 636C54006F67676C
+0160: 6542757420746F6E 1E0000017A000002 F700FF1F01800403 00070000000C8764
+0180: 6647657F00F40100 00EC030400FF3F01 8004110000080000 008E0C6362479F38
+01A0: 00E800020000D901 0D00FF7F0D630002 0400FFFF010180B7 0000000940000000
+01C0: 16636C473E655461 E0626C6547652336 020015003C000001 0DFB00FF6F0D00EE
+01E0: 0100FF3F1A00B800 000100FFFFE02700 000001FE00FF8334 00000002FB00FF4F
+0200: 380000EE0200FF3F 3C00B800000200FF FFE04000000002FE 00FF834400000002
+0220: FB00FF0F48000000 EE0200FF3F4C00B8 00000200FFFFE050 00000002E8000100
+0240: 001F800100FC0000 0354000000010DA3 000100007F80F201 00000F58000000EC
+0260: 010D00FF3F6500B8 00000100FFFFE072 00000001FE00FF83 7F00000001FB00FF
+0280: 0F8C000000EE0100 FF3F9900B8000001 00FFFFE0A6000000 01FE00FF83B30000
+02A0: 0003FB00FF0F0180 220001000A000000 1D63026C54626C4D 616B006553656C65
+02C0: 6374650064526F77 4B65794100727261 7974000000F60400 8E02000100FE00C9
+02E0: 80010000BF04B100 010D00FFFFE61100 01FE00FF9B1E0002 FB00FF8F01801101
+0300: 000B000000106302 6C436F6C756D6E3C 47656C38A3000200 0067020400FFFF8D
+0320: 0400010DFD00FF87 01802F00C0000C00 000010014469616C 6F67473E658600D9
+0340: 000500B3010D00FF FFE60D0002FE00FF 1B1100040DFB00FF 6F1E00EE0300FFBF
+0360: 22B9000100FFFF90 01802B00000DB900 1046196D42655461 03656C000000047A
+0380: 000001F60D00FFDF 0DDC000100FF7F1A 73000100FFFFCD27 0002FD00FF070180
+03A0: 33000000000E0000 0011636C0D545175 6572587944696FA0 B000000006007703
+03C0: 00FFFFCD040002FD 00FF37080002F700 FFDF0CD800010D00 FF7F197000000001
+03E0: 00FFFFC126000000 01FD00FF0701805D 0000C0000F000000 1179517561007461
+0400: 4669656C6444B401 000C00770200FFFF CD040002FD00FF37 080002F700FFDF0C
+0420: DC000200FF7F1060 000000010D00FFFF C11D00000001FD00 FF072A0000000247
+0440: 00010000FFE48001 00001F2E0000D800 010D00FF7F3B7000 00000200FFFFC13F
+0460: 00000001FD00FF37 4C0002F700FFDF50 DC000100FF7F01CC 805D0010FC001203
+0480: 436F6D626F46FE69 F60C00EE0200FFBF 04B9000200FFFFE6 080002FE00FF9B0C
+04A0: 0002FB00FF6F1000 EC010D00FFBF1DB9 000100FFFFE62A00 02E8000100009F80
+04C0: 01FC00001B2E0001 0DFB00FF6F3B00EE 0200FFBF3FB90001 00FFFFE64C0002FE
+04E0: 00FF9B500001FB00 FF8F01805D910011 000012FF0F436163 68D86544010CDE00
+0500: 02FD00FF37040002 F700FFDF08DC0002 00FF7F0C73000200 FFFF8D1000010DFD
+0520: 00FF371D0001F700 FFDF2A1C00020001 00FD009380010000 7F2E6300010D00FF
+0540: FFCD3B0002FD00FF 373F0001F700FFDF 4CDC000200FF7F50 73000100FFFF2101
+0560: 801A000012C00000 0015636C0F4F7065 72C061746F724669 8938000002009E00
+0580: 010DFD00FF370D00 01F700FF1F018004 030013000000137C 636C790043425965
+05A0: 734E6F46206C6167 1E0000017A000002 F60400FF1F01800D 0300140000001106
+05C0: 635370696E530065 61736F6E59656188 721E000001009E00 010DFD00FF870180
+05E0: 3400080015000014 636C057053656C65 638146726F6D5461 91656C0000043D00
+0600: 010DFB00FF6F0D00 EE0100FFBF1AB900 0100FFFFE6270001 FE00FF6301800400
+0620: 80160000000D636C 2453656563496E10 746F1E00000100BD 0003FB00FF0F0180
+0640: 2E00810017000000 111B707461720074 50726F6772616D60 BA0000000700EF02
+0660: FE00FF9B040002FB 00FF6F0800EE0200 FFBF0CB100010D00 FFFFE6190003FE00
+0680: FF9B1D0002FB00FF 0F21000000EE0100 FF3F018000360000 0018000000C80F63
+06A0: 6C5374FF60EE0000 000900CF010DFE00 FF930D000001FB00 FF6F1A00EE0200FF
+06C0: BF1EB9000200FFFF E6220002FE00FF9B 260002FB00FF6F2A 00EE0200FFBF2EB9
+06E0: 000200FFFFE03200 000002FE00FF6301 800D00C619001563 2270507269744700
+0700: 434F72646572466F 116D1E000001003D 00010DFB00FF8F01 800D99001A0014FF
+0720: 01416464724C6162 20656C731E000001 7A000001F60D00FF 1F01800D03001B00
+0740: 000019F4636C7003 4D61696C4669006C 654C697374696E8C 671E0001009E0001
+0760: 0DFD00FFC7018004 80001C0000001063 01546F6F6C546970 0057696E646F771E
+0780: 00D100010000BB03 00FFFF9801800400 1D81000C63665461 726C43611EA20000
+07A0: 010000770300FFFF 2101801500001E03 000B636643614750 6F6F5AA000000003
+07C0: 0000470719000040 010100740C00004F 800100FE008D0400 0304FD00FF370800
+07E0: 01F60D00FF1F
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field: clsdfGeneral
+			Spin Field:
+			Multiline Field:
+			Pushbutton: clspbGeneral
+			Radio Button: clsrbGeneral
+			Check Box: clscbGeneral
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text: clsBackTextGeneral
+			Group Box: clsgbGeneral
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				! Set strArgArray[1] = 'STOCKDEV'
+				! Set strArgArray[2] = 'JAN'
+				! Set strArgArray[3] = 'JAN'
+				! Set strArgArray[4] = 'C:\\TEMP\\DORMBUDCUST.TXT'
+				! Set strArgArray[5] = 'CUSTOMER_MASTER'
+				!
+				If SalStrUpperX( SalStrRightX( strArgArray[0],3 ) ) = 'EXE'
+					Set SqlDatabase = strArgArray[1]
+					Set SqlUser = strArgArray[2]
+					Set SqlPassword = strArgArray[3]
+				Else
+					Set SqlDatabase = 'STKLOCAL'
+					Set SqlUser = 'JAN'
+					Set SqlPassword = 'JAN'
+				!
+				! strArgArray[4] = sSelectionFileName = full path of string file of selection cust_no, or datetime_stamps
+				! strArgArray[5] = sSelectionType = 'CUSTOMER_MASTER' OR 'MAILING_LIST'
+				!
+				Call CheckProgramExistance( 'Printing Address Labels', TRUE )
+				!
+				Call SqlHandlesSetup(  )
+			On SAM_AppExit
+				Call SqlHandlesDisconnectClose(  )
+	Form Window: frmUserOptions
+		Class: clsFormGeneral
+		Property Template:
+		Class DLL Name:
+		Title: Printing Address Labels
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Automatically Created at Runtime? Yes
+			Initial State: Class Default
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   0.0"
+				Top:    0.0"
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+				Pushbutton: pbHelp
+					Class Child Ref Key: 1
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbItemEnq
+					Class Child Ref Key: 5
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbReport
+					Class Child Ref Key: 0
+					Class ChildKey: 0
+					Class: clspbGeneral
+					Property Template:
+					Class DLL Name:
+					Title: Prnt Lbl
+					Window Location and Size
+						Left:   4.45"
+						Top:    0.0"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name: C:\CENTURA\ICONS\LABELS.ICO
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+						On PAM_clsPB_CLICK
+							! Set parameters here
+							If rbPostalAddress
+								Set sAddressTypes = 'POSTAL'
+							Else If rbBusAddress
+								Set sAddressTypes = 'BUS'
+							Else
+								Set sAddressTypes = 'SHIP'
+							!
+							If rbLaserPrinter
+								Set sPrinterTypes = 'LASER'
+							Else
+								Set sPrinterTypes = 'IMPACT'
+							!
+							If rbSelectedPrior
+								If rbCustomerMaster
+									Set sSelectionType = 'CUSTOMER_MASTER'
+								Else
+									Set sSelectionType = 'MAILING_LIST'
+								Set sCustomerTypes = 'SELECTED'
+							Else If rbOrchardists
+								Set sCustomerTypes = 'ORCHARDISTS'
+							Else
+								Set sCustomerTypes = 'GARDEN_CENTRES'
+							!
+							If rbAllStates
+								Set sStates = 'ALL'
+							Else If rbACT
+								Set sStates = 'ACT'
+							Else If rbNSW
+								Set sStates = 'NSW'
+							Else If rbNT
+								Set sStates = 'NT'
+							Else If rbQLD
+								Set sStates = 'QLD'
+							Else If rbSA
+								Set sStates = 'SA'
+							Else If rbTAS
+								Set sStates = 'TAS'
+							Else If rbVIC
+								Set sStates = 'VIC'
+							Else
+								Set sStates = 'WA'
+							!
+							If cbCurrentYearsOrders
+								Set sCurrentOrdersSelection = 'CURRENT_YEARS_ORDERS_PLACED'
+							Else If cbNoCurrentYearsOrders
+								Set sCurrentOrdersSelection = 'NO_CURRENT_YEARS_ORDERS_PLACED'
+							Else
+								Set sCurrentOrdersSelection = ''
+							!
+							Call SalCreateWindow( frmPrintLabels, hWndForm, 
+									sAddressTypes, 
+									sPrinterTypes, 
+									sCustomerTypes, 
+									sStates, 
+									sCurrentOrdersSelection, 
+									cbUseSelectionCriteria, 
+									dfSelectedPriorFile, 
+									sSelectionType, 
+									ccSeasonYear.GetSeasonYear( ), 
+									cbForceChildAddress, 
+									cbAttentionMainContact, 
+									dfSelectedOutputCSVFile )
+						On PAM_ADDRLBLD_PRNTLABELS
+							If wParam
+								Return SalSendMsg( hWndItem, PAM_clsPB_ENABLE, 0, 0 )
+							Else
+								Return SalSendMsg( hWndItem, PAM_clsPB_DISABLE, 0, 0 )
+				Pushbutton: pbPrintGCOrderForm
+					Class Child Ref Key: 0
+					Class ChildKey: 0
+					Class: clspbPrintGCOrderForm
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   5.05"
+						Top:    0.0"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+						On PAM_cls_SETFIELDS
+							Set bOk = TRUE
+							Set pbPrintGCOrderForm.nYear = ccSeasonYear.GetSeasonYear( )
+							!
+							If rbCustomerMaster
+								Set pbPrintGCOrderForm.sOrderFormSourceType = 'CUSTOMER_MASTER'
+							Else
+								Set pbPrintGCOrderForm.sOrderFormSourceType = 'MAILING_LIST'
+							!
+							If rbSelectedPrior
+								If rbCustomerMaster
+									Call ReadNumArrayListFromFile( dfSelectedPriorFile, pbPrintGCOrderForm.naCustNos )
+								Else
+									Call ReadDateTimeArrayListFromFile( dfSelectedPriorFile, pbPrintGCOrderForm.dtaMailListTimeStamps )
+							Else
+								Set sCustLikeType = "'%GC%'"
+								!
+								If rbNT
+									Set sStateRange = ' BETWEEN 080000 AND 099999 '
+								Else If rbNSW
+									Set sStateRange = ' BETWEEN 200000 AND 299999 '
+								Else If rbACT
+									Set sStateRange = ' BETWEEN 200000 AND 299999 '
+								Else If rbVIC
+									Set sStateRange = ' BETWEEN 300000 AND 399999 '
+								Else If rbQLD
+									Set sStateRange = ' BETWEEN 400000 AND 499999 '
+								Else If rbSA
+									Set sStateRange = ' BETWEEN 500000 AND 599999 '
+								Else If rbWA
+									Set sStateRange = ' BETWEEN 600000 AND 699999 '
+								Else If rbTAS
+									Set sStateRange = ' BETWEEN 700000 AND 799999 '
+								Else
+									Set sStateRange = ''
+								!
+								If cbCurrentYearsOrders
+									If cbUseSelectionCriteria
+										If sStateRange = ''
+											Set sSql = " SELECT 
+													  @UPPER( Customer_Master.Cust_Name ), 
+													  Customer_Master.Cust_No 
+													FROM Customer_Master 
+													INTO 
+													  :frmUserOptions.sTmp, 
+													  :frmUserOptions.pbPrintGCOrderForm.naCustNos[ pbPrintGCOrderForm.nPos ] 
+													WHERE 
+													  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+													  Customer_Master.Mailing_List_Flag = 'Y' AND 
+													  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+													    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+													  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+													    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+													  ( Customer_Master.Closed_Account = 'N' OR 
+													    Customer_Master.Closed_Account IS NULL ) AND 
+													  EXISTS ( SELECT 
+													                    Customer_Order.Cust_No 
+													                 FROM 
+													                   Customer_Order 
+													                 WHERE 
+													                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+													                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+													                   Customer_Order.Conf_Amt > 0 ) 
+													ORDER BY 2 "
+										Else
+											Set sSql = " SELECT 
+													  @UPPER( Customer_Master.Cust_Name ), 
+													  Customer_Master.Cust_No 
+													FROM Customer_Master 
+													INTO 
+													  :frmUserOptions.sTmp, 
+													  :frmUserOptions.pbPrintGCOrderForm.naCustNos[ pbPrintGCOrderForm.nPos ] 
+													WHERE 
+													  Customer_Master.Cust_No " || sStateRange || " AND 
+													  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+													  Customer_Master.Mailing_List_Flag = 'Y' AND 
+													  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+													    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+													  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+													    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+													  ( Customer_Master.Closed_Account = 'N' OR 
+													    Customer_Master.Closed_Account IS NULL ) AND 
+													  EXISTS ( SELECT 
+													                    Customer_Order.Cust_No 
+													                 FROM 
+													                   Customer_Order 
+													                 WHERE 
+													                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+													                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+													                   Customer_Order.Conf_Amt > 0 ) 
+													ORDER BY 2 "
+									Else
+										If sStateRange = ''
+											Set sSql = " SELECT 
+													  @UPPER( Customer_Master.Cust_Name ), 
+													  Customer_Master.Cust_No 
+													FROM Customer_Master 
+													INTO 
+													  :frmUserOptions.sTmp, 
+													  :frmUserOptions.pbPrintGCOrderForm.naCustNos[ pbPrintGCOrderForm.nPos ] 
+													WHERE 
+													  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+													  EXISTS ( SELECT 
+													                    Customer_Order.Cust_No 
+													                 FROM 
+													                   Customer_Order 
+													                 WHERE 
+													                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+													                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+													                   Customer_Order.Conf_Amt > 0 ) 
+													ORDER BY 2 "
+										Else
+											Set sSql = " SELECT 
+													  @UPPER( Customer_Master.Cust_Name ), 
+													  Customer_Master.Cust_No 
+													FROM Customer_Master 
+													INTO 
+													  :frmUserOptions.sTmp, 
+													  :frmUserOptions.pbPrintGCOrderForm.naCustNos[ pbPrintGCOrderForm.nPos ] 
+													WHERE 
+													  Customer_Master.Cust_No " || sStateRange || " AND 
+													  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+													  EXISTS ( SELECT 
+													                    Customer_Order.Cust_No 
+													                 FROM 
+													                   Customer_Order 
+													                 WHERE 
+													                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+													                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+													                   Customer_Order.Conf_Amt > 0 ) 
+													ORDER BY 2 "
+								If cbNoCurrentYearsOrders
+									If cbUseSelectionCriteria
+										If sStateRange = ''
+											Set sSql = " SELECT 
+													  @UPPER( Customer_Master.Cust_Name ), 
+													  Customer_Master.Cust_No 
+													FROM Customer_Master 
+													INTO 
+													  :frmUserOptions.sTmp, 
+													  :frmUserOptions.pbPrintGCOrderForm.naCustNos[ pbPrintGCOrderForm.nPos ] 
+													WHERE 
+													  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+													  Customer_Master.Mailing_List_Flag = 'Y' AND 
+													  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+													    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+													  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+													    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+													  ( Customer_Master.Closed_Account = 'N' OR 
+													    Customer_Master.Closed_Account IS NULL ) AND 
+													  NOT EXISTS ( SELECT 
+													                    Customer_Order.Cust_No 
+													                 FROM 
+													                   Customer_Order 
+													                 WHERE 
+													                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+													                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+													                   Customer_Order.Conf_Amt > 0 ) 
+													ORDER BY 2 "
+										Else
+											Set sSql = " SELECT 
+													  @UPPER( Customer_Master.Cust_Name ), 
+													  Customer_Master.Cust_No 
+													FROM Customer_Master 
+													INTO 
+													  :frmUserOptions.sTmp, 
+													  :frmUserOptions.pbPrintGCOrderForm.naCustNos[ pbPrintGCOrderForm.nPos ] 
+													WHERE 
+													  Customer_Master.Cust_No " || sStateRange || " AND 
+													  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+													  Customer_Master.Mailing_List_Flag = 'Y' AND 
+													  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+													    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+													  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+													    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+													  ( Customer_Master.Closed_Account = 'N' OR 
+													    Customer_Master.Closed_Account IS NULL ) AND 
+													  NOT EXISTS ( SELECT 
+													                    Customer_Order.Cust_No 
+													                 FROM 
+													                   Customer_Order 
+													                 WHERE 
+													                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+													                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+													                   Customer_Order.Conf_Amt > 0 ) 
+													ORDER BY 2 "
+									Else
+										If sStateRange = ''
+											Set sSql = " SELECT 
+													  @UPPER( Customer_Master.Cust_Name ), 
+													  Customer_Master.Cust_No 
+													FROM Customer_Master 
+													INTO 
+													  :frmUserOptions.sTmp, 
+													  :frmUserOptions.pbPrintGCOrderForm.naCustNos[ pbPrintGCOrderForm.nPos ] 
+													WHERE 
+													  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+													  NOT EXISTS ( SELECT 
+													                    Customer_Order.Cust_No 
+													                 FROM 
+													                   Customer_Order 
+													                 WHERE 
+													                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+													                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+													                   Customer_Order.Conf_Amt > 0 ) 
+													ORDER BY 2 "
+										Else
+											Set sSql = " SELECT 
+													  @UPPER( Customer_Master.Cust_Name ), 
+													  Customer_Master.Cust_No 
+													FROM Customer_Master 
+													INTO 
+													  :frmUserOptions.sTmp, 
+													  :frmUserOptions.pbPrintGCOrderForm.naCustNos[ pbPrintGCOrderForm.nPos ] 
+													WHERE 
+													  Customer_Master.Cust_No " || sStateRange || " AND 
+													  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+													  NOT EXISTS ( SELECT 
+													                    Customer_Order.Cust_No 
+													                 FROM 
+													                   Customer_Order 
+													                 WHERE 
+													                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+													                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+													                   Customer_Order.Conf_Amt > 0 ) 
+													ORDER BY 2 "
+								Else
+									If cbUseSelectionCriteria
+										If sStateRange = ''
+											Set sSql = " SELECT 
+													  @UPPER( Customer_Master.Cust_Name ), 
+													  Customer_Master.Cust_No 
+													FROM Customer_Master 
+													INTO 
+													  :frmUserOptions.sTmp, 
+													  :frmUserOptions.pbPrintGCOrderForm.naCustNos[ pbPrintGCOrderForm.nPos ] 
+													WHERE 
+													  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+													  Customer_Master.Mailing_List_Flag = 'Y' AND 
+													  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+													    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+													  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+													    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+													  ( Customer_Master.Closed_Account = 'N' OR 
+													    Customer_Master.Closed_Account IS NULL ) 
+													ORDER BY 2 "
+										Else
+											Set sSql = " SELECT 
+													  @UPPER( Customer_Master.Cust_Name ), 
+													  Customer_Master.Cust_No
+													FROM Customer_Master 
+													INTO 
+													  :frmUserOptions.sTmp, 
+													  :frmUserOptions.pbPrintGCOrderForm.naCustNos[ pbPrintGCOrderForm.nPos ] 
+													WHERE 
+													  Customer_Master.Cust_No " || sStateRange || " AND 
+													  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+													  Customer_Master.Mailing_List_Flag = 'Y' AND 
+													  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+													    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+													  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+													    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+													  ( Customer_Master.Closed_Account = 'N' OR 
+													    Customer_Master.Closed_Account IS NULL ) 
+													ORDER BY 2 "
+									Else
+										If sStateRange = ''
+											Set sSql = " SELECT 
+													  @UPPER( Customer_Master.Cust_Name ), 
+													  Customer_Master.Cust_No 
+													FROM Customer_Master 
+													INTO 
+													  :frmUserOptions.sTmp, 
+													  :frmUserOptions.pbPrintGCOrderForm.naCustNos[ pbPrintGCOrderForm.nPos ] 
+													WHERE 
+													  Customer_Master.Customer_Type LIKE " || sCustLikeType || " 
+													ORDER BY 2 "
+										Else
+											Set sSql = " SELECT 
+													  @UPPER( Customer_Master.Cust_Name ), 
+													  Customer_Master.Cust_No 
+													FROM Customer_Master 
+													INTO 
+													  :frmUserOptions.sTmp, 
+													  :frmUserOptions.pbPrintGCOrderForm.naCustNos[ pbPrintGCOrderForm.nPos ] 
+													WHERE 
+													  Customer_Master.Cust_No " || sStateRange || " AND 
+													  Customer_Master.Customer_Type LIKE " || sCustLikeType || " 
+													ORDER BY 2 "
+								!
+								If fcOurHandle.PrepareSetup( sSql )
+									If fcOurHandle.PrepareAndExecute( )
+										Set pbPrintGCOrderForm.nPos = 0
+										Set pbPrintGCOrderForm.naCustNos[ pbPrintGCOrderForm.nPos ] = NUMBER_Null
+										While fcOurHandle.FetchNext( nInd )
+											Set pbPrintGCOrderForm.nPos = pbPrintGCOrderForm.nPos + 1
+											Set pbPrintGCOrderForm.naCustNos[ pbPrintGCOrderForm.nPos ] = NUMBER_Null
+									Else
+										Set bOk = FALSE
+								Else
+									Set bOk = FALSE
+							Return bOk
+						On PAM_ADDRLBLD_PRNTLABELS
+							If wParam
+								Return SalSendMsg( hWndItem, PAM_clsPB_DISABLE, 0, 0 )
+							Else
+								Return SalSendMsg( hWndItem, PAM_clsPB_ENABLE, 2, 0 )
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 6
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbExit
+					Class Child Ref Key: 2
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			Data Field: dfDatabase
+				Class Child Ref Key: 3
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfUser
+				Class Child Ref Key: 4
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text:
+				Resource Id: 49031
+				Class Child Ref Key: 8
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 7
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+			!
+			Group Box: Report Type
+				Resource Id: 8914
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsgbGeneral
+				Window Location and Size
+					Left:   2.713"
+					Top:    0.031"
+					Width:  2.75"
+					Width Editable? Class Default
+					Height: 0.573"
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Radio Button: rbLabels
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Labels
+				Window Location and Size
+					Left:   2.888"
+					Top:    0.26"
+					Width:  0.913"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_clsRB_CLICK
+						Call SalSendMsgToChildren( hWndForm, PAM_ADDRLBLD_PRNTLABELS, TRUE, 0 )
+			Radio Button: rbGCOrdFrm
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: G.C. Ord. Frm.
+				Window Location and Size
+					Left:   3.85"
+					Top:    0.26"
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_clsRB_CLICK
+						Call SalSendMsgToChildren( hWndForm, PAM_ADDRLBLD_PRNTLABELS, FALSE, 0 )
+			!
+			Group Box: Data Source
+				Resource Id: 29558
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsgbGeneral
+				Window Location and Size
+					Left:   0.138"
+					Top:    0.646"
+					Width:  2.488"
+					Width Editable? Class Default
+					Height: 0.917"
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Radio Button: rbCustomerMaster
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Cust. Master File
+				Window Location and Size
+					Left:   0.288"
+					Top:    0.917"
+					Width:  1.725"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_clsRB_CLICK
+						Call SalSendMsgToChildren( hWndForm, PAM_ADDRLBLD_INITCSTMASTER, 0, 0 )
+			Radio Button: rbMailList
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Mailing List File
+				Window Location and Size
+					Left:   0.288"
+					Top:    1.167"
+					Width:  1.65"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_clsRB_CLICK
+						Call SalSendMsgToChildren( hWndForm, PAM_ADDRLBLD_INITMAILLIST, 0, 0 )
+			!
+			Group Box: Address Types
+				Resource Id: 49032
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsgbGeneral
+				Window Location and Size
+					Left:   0.125"
+					Top:    1.823"
+					Width:  2.5"
+					Width Editable? Class Default
+					Height: 1.885"
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			! clsrbGeneral: rbMainAddress
+.winattr class Radio Button:
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Main Address
+				Window Location and Size
+					Left:   0.463"
+					Top:    1.938"
+					Width:  1.4"
+					Width Editable? Yes
+					Height: 0.25"
+					Height Editable? Yes
+				Visible? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+.end
+				     Message Actions 
+					     On PAM_ADDRLBLD_INITMAILLIST
+						     Set rbMainAddress = TRUE
+					     On PAM_ADDRLBLD_INITCSTMASTER
+						     Set rbMainAddress = TRUE
+			Check Box: cbAttentionMainContact
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clscbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Attention ( Main Contact )
+				Window Location and Size
+					Left:   0.275"
+					Top:    2.073"
+					Width:  2.275"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsCB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						If rbLabels
+							Return SalSendMsg( hWndItem, PAM_clsCB_ENABLE, 0, 0 )
+					On PAM_ADDRLBLD_PRNTLABELS
+						If wParam AND rbLabels AND rbCustomerMaster
+							Return SalSendMsg( hWndItem, PAM_clsCB_ENABLE, 0, 0 )
+						Else
+							Return SalSendMsg( hWndItem, PAM_clsCB_DISABLE, 0, 0 )
+			Radio Button: rbPostalAddress
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Postal Address
+				Window Location and Size
+					Left:   0.263"
+					Top:    2.458"
+					Width:  1.488"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Set rbPostalAddress = TRUE
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Set rbPostalAddress = TRUE
+					On PAM_ADDRLBLD_PRNTLABELS
+						If wParam
+							Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+						Else
+							Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+			Radio Button: rbBusAddress
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Business Address
+				Window Location and Size
+					Left:   0.263"
+					Top:    2.708"
+					Width:  1.8"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						If rbLabels
+							Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+					On PAM_ADDRLBLD_PRNTLABELS
+						If wParam AND rbLabels AND rbCustomerMaster
+							Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+						Else
+							Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+			Radio Button: rbShipAddress
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Shipping Address
+				Window Location and Size
+					Left:   0.263"
+					Top:    2.958"
+					Width:  1.738"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						If rbLabels
+							Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+					On PAM_clsRB_CLICK
+						Set cbForceChildAddress = FALSE
+					On PAM_ADDRLBLD_PRNTLABELS
+						If wParam AND rbLabels AND rbCustomerMaster
+							Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+						Else
+							Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+			Check Box: cbForceChildAddress
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clscbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Force Child Address
+				Window Location and Size
+					Left:   0.263"
+					Top:    3.344"
+					Width:  1.9"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Set cbForceChildAddress = FALSE
+						Return SalSendMsg( hWndItem, PAM_clsCB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						If rbLabels
+							Set cbForceChildAddress = FALSE
+							Return SalSendMsg( hWndItem, PAM_clsCB_ENABLE, 0, 0 )
+					On PAM_clsCB_VALIDATE
+						If rbShipAddress
+							Return VALIDATE_Cancel
+						Else
+							Return VALIDATE_Ok
+					On PAM_ADDRLBLD_PRNTLABELS
+						If wParam AND rbLabels AND rbCustomerMaster
+							Return SalSendMsg( hWndItem, PAM_clsCB_ENABLE, 0, 0 )
+						Else
+							Return SalSendMsg( hWndItem, PAM_clsCB_DISABLE, 0, 0 )
+			!
+			Group Box: Customer Types
+				Resource Id: 3576
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsgbGeneral
+				Window Location and Size
+					Left:   2.713"
+					Top:    0.646"
+					Width:  6.875"
+					Width Editable? Class Default
+					Height: 4.25"
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Radio Button: rbSelectedPrior
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Selected Prior
+				Window Location and Size
+					Left:   2.85"
+					Top:    0.917"
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Set rbSelectedPrior = TRUE
+					On PAM_ADDRLBLD_INITCSTMASTER
+						If dfSelectedPriorFile = ''
+							Set rbSelectedPrior = FALSE
+							Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+						Else
+							Set rbSelectedPrior = TRUE
+							Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+			Radio Button: rbOrchardists
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Orchardists
+				Window Location and Size
+					Left:   2.85"
+					Top:    1.167"
+					Width:  1.288"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+			Radio Button: rbGardenCentres
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Garden Centres
+				Window Location and Size
+					Left:   2.85"
+					Top:    1.417"
+					Width:  1.575"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						If dfSelectedPriorFile = ''
+							Set rbGardenCentres = TRUE
+						Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+			Data Field: dfSelectedPriorFile
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   4.338"
+						Top:    0.917"
+						Width:  5.038"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? No
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Pushbutton: pbOverideSelectedPriorFile
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Overide
+				Window Location and Size
+					Left:   7.625"
+					Top:    0.771"
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: 0.135"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: None
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_clsPB_CLICK
+						If SalIsWindowVisible( dfSelectedPriorFile )
+							Call SalHideWindow( dfSelectedPriorFile )
+						Else
+							Call SalShowWindow( dfSelectedPriorFile )
+							Set rbSelectedPrior = TRUE
+			Background Text: selected prior file.
+				Resource Id: 63325
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   8.263"
+					Top:    0.75"
+					Width:  1.138"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Arial
+				Font Size: 8
+				Font Enhancement: Class Default
+				Text Color: Black
+				Background Color: Class Default
+			!
+			Group Box: Orders Selections
+				Resource Id: 4492
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsgbGeneral
+				Window Location and Size
+					Left:   2.838"
+					Top:    1.75"
+					Width:  3.238"
+					Width Editable? Class Default
+					Height: 0.927"
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Check Box: cbCurrentYearsOrders
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clscbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Current Years Orders Placed
+				Window Location and Size
+					Left:   3.013"
+					Top:    2.021"
+					Width:  2.638"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Set cbCurrentYearsOrders = FALSE
+						Return SalSendMsg( hWndItem, PAM_clsCB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Set cbCurrentYearsOrders = FALSE
+						Return SalSendMsg( hWndItem, PAM_clsCB_ENABLE, 0, 0 )
+					On PAM_clsCB_VALIDATE
+						If cbNoCurrentYearsOrders
+							! Call SalMessageBox( 'Please uncheck the "No Current Years Orders Placed" check box first!', 'Warning', MB_Ok )
+							Return VALIDATE_Cancel
+						Else
+							Return VALIDATE_Ok
+			Check Box: cbNoCurrentYearsOrders
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clscbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: No Current Years Orders Placed
+				Window Location and Size
+					Left:   3.013"
+					Top:    2.271"
+					Width:  2.888"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Set cbNoCurrentYearsOrders = FALSE
+						Return SalSendMsg( hWndItem, PAM_clsCB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Set cbNoCurrentYearsOrders = FALSE
+						Return SalSendMsg( hWndItem, PAM_clsCB_ENABLE, 0, 0 )
+					On PAM_clsCB_VALIDATE
+						If cbCurrentYearsOrders
+							! Call SalMessageBox( 'Please uncheck the "Current Years Orders Placed" check box first!', 'Warning', MB_Ok )
+							Return VALIDATE_Cancel
+						Else
+							Return VALIDATE_Ok
+			!
+			Group Box: States
+				Resource Id: 3577
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsgbGeneral
+				Window Location and Size
+					Left:   7.975"
+					Top:    1.208"
+					Width:  1.4"
+					Width Editable? Class Default
+					Height: 2.667"
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Radio Button: rbAllStates
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: All States
+				Window Location and Size
+					Left:   8.138"
+					Top:    1.469"
+					Width:  1.075"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Set rbAllStates = TRUE
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Set rbAllStates = TRUE
+						Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+			Radio Button: rbACT
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: ACT
+				Window Location and Size
+					Left:   8.138"
+					Top:    1.719"
+					Width:  0.675"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+			Radio Button: rbNSW
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: NSW
+				Window Location and Size
+					Left:   8.138"
+					Top:    1.969"
+					Width:  0.775"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+			Radio Button: rbNT
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: NT
+				Window Location and Size
+					Left:   8.138"
+					Top:    2.219"
+					Width:  0.6"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+			Radio Button: rbQLD
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: QLD
+				Window Location and Size
+					Left:   8.138"
+					Top:    2.469"
+					Width:  0.675"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+			Radio Button: rbSA
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: SA
+				Window Location and Size
+					Left:   8.138"
+					Top:    2.719"
+					Width:  0.575"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+			Radio Button: rbTAS
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: TAS
+				Window Location and Size
+					Left:   8.138"
+					Top:    2.969"
+					Width:  0.65"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+			Radio Button: rbVIC
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: VIC
+				Window Location and Size
+					Left:   8.138"
+					Top:    3.219"
+					Width:  0.625"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+			Radio Button: rbWA
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: WA
+				Window Location and Size
+					Left:   8.138"
+					Top:    3.469"
+					Width:  0.625"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+			!
+			Check Box: cbUseSelectionCriteria
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clscbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Inforce Selection Criteria
+				Window Location and Size
+					Left:   2.838"
+					Top:    2.76"
+					Width:  2.288"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Blue
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Set cbUseSelectionCriteria = FALSE
+						Return SalSendMsg( hWndItem, PAM_clsCB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Set cbUseSelectionCriteria = TRUE
+						Return SalSendMsg( hWndItem, PAM_clsCB_ENABLE, 0, 0 )
+			Background Text: Included -
+				Resource Id: 3582
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   5.225"
+					Top:    2.802"
+					Width:  0.888"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Black
+				Background Color: Class Default
+			Background Text: Excluded -
+				Resource Id: 3583
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   5.188"
+					Top:    3.052"
+					Width:  0.925"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Black
+				Background Color: Class Default
+			Background Text: Mailing List Flag
+				Resource Id: 3580
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   6.175"
+					Top:    2.802"
+					Width:  1.438"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Dark Gray
+				Background Color: Class Default
+			Background Text: Don't Sell Flag
+				Resource Id: 3581
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   6.175"
+					Top:    3.24"
+					Width:  1.238"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Dark Gray
+				Background Color: Class Default
+			Background Text: Bad Debt Flag
+				Resource Id: 3578
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   6.175"
+					Top:    3.052"
+					Width:  1.225"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Dark Gray
+				Background Color: Class Default
+			Background Text: Closed Account Flag
+				Resource Id: 3579
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   6.175"
+					Top:    3.438"
+					Width:  1.638"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Left
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Dark Gray
+				Background Color: Class Default
+			!
+			Group Box: Sorted By
+				Resource Id: 53809
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsgbGeneral
+				Window Location and Size
+					Left:   2.838"
+					Top:    3.104"
+					Width:  2.138"
+					Width Editable? Class Default
+					Height: 1.146"
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Radio Button: rbOrdByCustNo
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Customer Number
+				Window Location and Size
+					Left:   2.988"
+					Top:    3.385"
+					Width:  1.775"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+			Radio Button: rbOrdByCustName
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Customer Name
+				Window Location and Size
+					Left:   2.988"
+					Top:    3.635"
+					Width:  1.6"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Set rbOrdByCustName = TRUE
+						Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+			Radio Button: rbOrdByUnSorted
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Unsorted
+				Window Location and Size
+					Left:   2.975"
+					Top:    3.906"
+					Width:  1.088"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Set rbOrdByUnSorted = TRUE
+						Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+			!
+			Check Box: cbSelectedOutputCSVFile
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clscbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Desired CSV Output file name
+				Window Location and Size
+					Left:   2.838"
+					Top:    4.333"
+					Width:  2.7"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_clsCB_CLICK
+						If wParam
+							Call SalShowWindow( dfSelectedOutputCSVFile )
+						Else
+							Call SalHideWindow( dfSelectedOutputCSVFile )
+			Data Field: dfSelectedOutputCSVFile
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   2.838"
+						Top:    4.594"
+						Width:  6.525"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? No
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			!
+			Group Box: Printer Types
+				Resource Id: 3584
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsgbGeneral
+				Window Location and Size
+					Left:   0.125"
+					Top:    3.948"
+					Width:  2.5"
+					Width Editable? Class Default
+					Height: 0.938"
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Radio Button: rbImpactPrinter
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Impact Printer
+				Window Location and Size
+					Left:   0.288"
+					Top:    4.229"
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_INITMAILLIST
+						Set rbImpactPrinter = TRUE
+					On PAM_ADDRLBLD_INITCSTMASTER
+						Set rbImpactPrinter = TRUE
+					On PAM_ADDRLBLD_PRNTLABELS
+						If wParam
+							Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+						Else
+							Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+			Radio Button: rbLaserPrinter
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Laser Printer
+				Window Location and Size
+					Left:   0.288"
+					Top:    4.479"
+					Width:  1.388"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_ADDRLBLD_PRNTLABELS
+						If wParam
+							Return SalSendMsg( hWndItem, PAM_clsRB_ENABLE, 0, 0 )
+						Else
+							Return SalSendMsg( hWndItem, PAM_clsRB_DISABLE, 0, 0 )
+		Functions
+		Window Parameters
+		Window Variables
+			String: sAddressTypes
+			String: sPrinterTypes
+			String: sCustomerTypes
+			String: sStates
+			! String: sSelectionFileName
+			String: sCurrentOrdersSelection
+			String: sSelectionType
+			String: sCustLikeType
+			String: sStateRange
+			String: sTmp
+			: fcOurHandle
+				Class: hcSqlHandle
+			Number: nInd
+			String: sSql
+			Boolean: bOk
+		Message Actions
+			On PAM_cls_SETINSTANCEVARS
+				Set dfSelectedPriorFile = strArgArray[4]
+				Set sSelectionType = strArgArray[5]
+				!
+				! If sSelectionType = 'CUSTOMER_MASTER'
+					     Set rbBusAddress = TRUE
+				! Else
+					     Set rbPostalAddress = TRUE
+				Set rbLabels = TRUE
+				Call SalSendMsg( rbLabels, PAM_clsRB_CLICK, TRUE, 0 )
+				Set rbPostalAddress = TRUE
+				If dfSelectedPriorFile = ''
+					Set rbGardenCentres = TRUE
+				Else
+					Set rbSelectedPrior = TRUE
+				Set rbAllStates = TRUE
+				Set rbImpactPrinter = TRUE
+				Set cbUseSelectionCriteria = TRUE
+				!
+				Call SalSendMsg( cbSelectedOutputCSVFile, PAM_clsCB_CLICK, FALSE, 0 )
+				Set dfSelectedOutputCSVFile = OurGetIniFileParameter( 'GENERAL', 'TempStoragePath', 'c:\\temp' ) || '\\lbloutpt.csv'
+			On SAM_CreateComplete
+				If sSelectionType = 'CUSTOMER_MASTER'
+					Set rbCustomerMaster = TRUE
+					Call SalSendMsg( rbCustomerMaster, SAM_Click, 0, 0 )
+				Else
+					Set rbMailList = TRUE
+					Call SalSendMsg( rbMailList, SAM_Click, 0, 0 )
+				Return SalSendClassMessage( SAM_CreateComplete, wParam, lParam )
+			On SAM_Destroy
+				Call fcOurHandle.Disconnect( )
+				Return SalSendClassMessage( SAM_Destroy, wParam, lParam )
+	Form Window: frmPrintLabels
+		Class: clsFormPrintReport
+		Property Template:
+		Class DLL Name:
+		Title: Generating Labels
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Automatically Created at Runtime? Class Default
+			Initial State: Minimized
+			Maximizable? No
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   Default
+				Top:    Default
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+		Contents
+		Functions
+			Function: ResetReportFields
+				Description:
+				Returns
+				Parameters
+				Static Variables
+				Local variables
+				Actions
+					Set sAddressL1 = ''
+					Set sAddressL2 = ''
+					Set sAddressL3 = ''
+					Set sAddressL4 = ''
+					Set sAddressL5 = ''
+					Set sAddressL6 = ''
+					Set nCustNo = NUMBER_Null
+			Function: GetMailListCustDetails
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Date/Time: dtMailListTimeStamp
+					Receive String: sCustName
+					Receive String: sBusName
+					Receive String: sAddressL1
+					Receive String: sAddressL2
+					Receive String: sSuburb
+					Receive String: sState
+					Receive String: sPostcode
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSqlHandle
+					String: sBindHandle
+					String: sIntoHandle
+					String: sNameHandle
+					Number: nOurHandleNo
+					Number: nInd
+					String: sGotCustName
+					String: sGotBusName
+					String: sGotAddressL1
+					String: sGotAddressL2
+					String: sGotSuburb
+					String: sGotState
+					String: sGotPostcode
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETMLCSTDETS' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSqlHandle = " SELECT
+									  Name, 
+									  Bus_Name, 
+									  Address_1, 
+									  Address_2, 
+									  Suburb, 
+									  State, 
+									  Postcode 
+									FROM
+									  Mailing_List
+									WHERE
+									  Time_Stamp = :1 "
+							Set sNameHandle = 'GETMLCSTDETS'
+							Set sBindHandle = ':dtMailListTimeStamp'
+							Set sIntoHandle = ':sGotCustName, 
+									:sGotBusName, 
+									:sGotAddressL1, 
+									:sGotAddressL2, 
+									:sGotSuburb, 
+									:sGotState, 
+									:sGotPostcode'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSqlHandle, sNameHandle, sBindHandle, sIntoHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sCustName = ''
+							Set sBusName = ''
+							Set sAddressL1 = ''
+							Set sAddressL2 = ''
+							Set sSuburb = ''
+							Set sState = ''
+							Set sPostcode = ''
+							Set sGotCustName = ''
+							Set sGotBusName = ''
+							Set sGotAddressL1 = ''
+							Set sGotAddressL2 = ''
+							Set sGotSuburb = ''
+							Set sGotState = ''
+							Set sGotPostcode = ''
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set sCustName = sGotCustName
+									Set sBusName = sGotBusName
+									Set sAddressL1 = sGotAddressL1
+									Set sAddressL2 = sGotAddressL2
+									Set sSuburb = sGotSuburb
+									Set sState = sGotState
+									Set sPostcode = sGotPostcode
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: GetCustBusNamesNSelectCriteria
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					Receive String: sCustName
+					Receive String: sBusName
+					Receive Boolean: bValidCustomer
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSqlHandle
+					String: sBindHandle
+					String: sIntoHandle
+					String: sNameHandle
+					Number: nOurHandleNo
+					Number: nInd
+					String: sGotCustName
+					String: sGotBusName
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GETCSTDTSWCHKS' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSqlHandle = " SELECT
+									  Cust_Name, 
+									  Bus_Name
+									FROM
+									  Customer_Master
+									WHERE
+									  Cust_No = :1 AND 
+									  Mailing_List_Flag = 'Y' AND 
+									  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+									    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+									  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+									    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+									  ( Customer_Master.Closed_Account = 'N' OR 
+									    Customer_Master.Closed_Account IS NULL ) "
+							Set sNameHandle = 'GETCSTDTSWCHKS'
+							Set sBindHandle = ':nCustNo'
+							Set sIntoHandle = ':sGotCustName, :sGotBusName'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSqlHandle, sNameHandle, sBindHandle, sIntoHandle )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sCustName = ''
+							Set sBusName = ''
+							Set sGotCustName = ''
+							Set sGotBusName = ''
+							Set bValidCustomer = TRUE
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set sCustName = sGotCustName
+									Set sBusName = sGotBusName
+								Else
+									Set bValidCustomer = FALSE
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: MakeCSVLine
+				Description:
+				Returns
+					String:
+				Parameters
+				Static Variables
+				Local variables
+				Actions
+					Return '"' || sAddressL1 || '",' ||
+							'"' || sAddressL2 || '",' ||
+							'"' || sAddressL3 || '",' ||
+							'"' || sAddressL4 || '",' ||
+							'"' || sAddressL5 || '",' ||
+							'"' || sAddressL6 || '",' ||
+							SalNumberToStrX( nCustNo, 0 )
+		Window Parameters
+			! sAddressType = 'POSTAL' OR 'MAIN' OR 'BUS' OR 'SHIP'
+			String: sAddressType
+			! sPrinterType = 'IMPACT' OR 'LASER'
+			String: sPrinterType
+			! sCustomerType = 'SELECTED' OR 'ORCHARDISTS' OR 'GARDEN_CENTRES'
+			String: sCustomerType
+			! sState = 'ALL' OR 'ACT' OR 'NSW' OR 'NT' OR 'QLD' OR 'SA' OR 'TAS' OR 'VIC' OR 'WA'
+			String: sState
+			! sCurrentOrdersSelection = 'CURRENT_YEARS_ORDERS_PLACED' OR 'NO_CURRENT_YEARS_ORDERS_PLACED'
+			String: sCurrentOrdersSelection
+			Boolean: bInforceSelectionCriteria
+			String: sSelectionFileName
+			String: sSelectionType
+			Number: nYear
+			Boolean: bForceChildAddress
+			Boolean: bAttentionMainContact
+			String: sOutputCSVFileName
+		Window Variables
+			: fcLabelHdl
+				Class: hcSqlHandle
+			Number: nInd
+			String: sSql
+			Boolean: bOk
+			String: sCustLikeType
+			String: sStateRange
+			: fcSelectionFile
+				Class: clsStrFileHandle
+			String: sTmp
+			Date/Time: dtTmp
+			Boolean: bTmp
+			Boolean: bValidCustomer
+			: fcReprintCSVFile
+				Class: clsStrFileHandle
+			Boolean: bCSVFileOk
+			String: sContactTitle
+			String: sContactGivenName
+			String: sContactSurname
+			!
+			String: sFileString
+			Date/Time: dtMailListTimeStamp
+			Number: nCustNo
+			String: sAttention
+			String: sCustName
+			String: sBusName
+			String: sAddressL1BA
+			String: sAddressL2BA
+			String: sSuburbBA
+			String: sStateBA
+			String: sPostcodeBA
+			!
+			! Report Fields bellow
+			String: sAddressL1
+			String: sAddressL2
+			String: sAddressL3
+			String: sAddressL4
+			String: sAddressL5
+			String: sAddressL6
+		Message Actions
+			On PAM_cls_SETINSTANCEVARS
+				If sPrinterType = 'LASER'
+					Call SalMessageBox( 'Please insert label sheets into the Laser Printer now.', 'Labels', MB_Ok )
+					Set sReportFileNameNoPath = 'laserlb3.qrp'
+				Else
+					! Call SalMessageBox( 'Please check now, that the Impact label printer has user defined paper size of ( Width 1310 and Lenghth 1200 inches ) set.', 'Labels', MB_Ok )
+					Set sReportFileNameNoPath = 'impctlb3.qrp'
+				Set sReportBind = ':sAddressL1,
+						:sAddressL2,
+						:sAddressL3,
+						:sAddressL4,
+						:sAddressL5, 
+						:sAddressL6, 
+						:nCustNo'
+				Set sReportInto = 'AddressLine1,
+						AddressLine2,
+						AddressLine3,
+						AddressLine4,
+						AddressLine5, 
+						AddressLine6, 
+						CustNo'
+			On SAM_ReportStart
+				Call fcReprintCSVFile.Setup( sOutputCSVFileName, NUMBER_Null, NUMBER_Null )
+				If fcReprintCSVFile.Open( )
+					Set bCSVFileOk = TRUE
+				Else
+					Set bCSVFileOk = FALSE
+				Return TRUE
+			On SAM_ReportFetchInit
+				Set bOk = TRUE
+				!
+				If sCustomerType = 'ORCHARDISTS' OR sCustomerType = 'GARDEN_CENTRES'
+					If sCustomerType = 'ORCHARDISTS'
+						Set sCustLikeType = "'%OR%'"
+					Else
+						Set sCustLikeType = "'%GC%'"
+					!
+					If sState = 'NT'
+						Set sStateRange = ' BETWEEN 080000 AND 099999 '
+					Else If sState = 'NSW'
+						Set sStateRange = ' BETWEEN 200000 AND 299999 '
+					Else If sState = 'ACT'
+						Set sStateRange = ' BETWEEN 200000 AND 299999 '
+					Else If sState = 'VIC'
+						Set sStateRange = ' BETWEEN 300000 AND 399999 '
+					Else If sState = 'QLD'
+						Set sStateRange = ' BETWEEN 400000 AND 499999 '
+					Else If sState = 'SA'
+						Set sStateRange = ' BETWEEN 500000 AND 599999 '
+					Else If sState = 'WA'
+						Set sStateRange = ' BETWEEN 600000 AND 699999 '
+					Else If sState = 'TAS'
+						Set sStateRange = ' BETWEEN 700000 AND 799999 '
+					Else
+						Set sStateRange = ''
+					!
+					If sAddressType = 'MAIN'
+						If sCurrentOrdersSelection = 'CURRENT_YEARS_ORDERS_PLACED'
+							If bInforceSelectionCriteria
+								If sStateRange = ''
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name, 
+											  Customer_Address.Address_1, 
+											  Customer_Address.Address_2, 
+											  Customer_Address.Suburb, 
+											  Customer_Address.State, 
+											  Customer_Address.Postcode
+											 FROM 
+											  Customer_Master, 
+											  Customer_Address 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName, 
+											  :frmPrintLabels.sAddressL1BA, 
+											  :frmPrintLabels.sAddressL2BA, 
+											  :frmPrintLabels.sSuburbBA, 
+											  :frmPrintLabels.sStateBA, 
+											  :frmPrintLabels.sPostcodeBA 
+											WHERE 
+											  Customer_Master.Cust_No = Customer_Address.Cust_No AND 
+											  Customer_Address.Main_Address_Flag = 'Y' AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  Customer_Master.Mailing_List_Flag = 'Y' AND 
+											  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+											    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+											  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+											    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+											  ( Customer_Master.Closed_Account = 'N' OR 
+											    Customer_Master.Closed_Account IS NULL ) AND 
+											  EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+								Else
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name, 
+											  Customer_Address.Address_1, 
+											  Customer_Address.Address_2, 
+											  Customer_Address.Suburb, 
+											  Customer_Address.State, 
+											  Customer_Address.Postcode
+											 FROM 
+											  Customer_Master, 
+											  Customer_Address 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName, 
+											  :frmPrintLabels.sAddressL1BA, 
+											  :frmPrintLabels.sAddressL2BA, 
+											  :frmPrintLabels.sSuburbBA, 
+											  :frmPrintLabels.sStateBA, 
+											  :frmPrintLabels.sPostcodeBA 
+											WHERE 
+											  Customer_Master.Cust_No " || sStateRange || " AND 
+											  Customer_Master.Cust_No = Customer_Address.Cust_No AND 
+											  Customer_Address.Main_Address_Flag = 'Y' AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  Customer_Master.Mailing_List_Flag = 'Y' AND 
+											  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+											    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+											  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+											    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+											  ( Customer_Master.Closed_Account = 'N' OR 
+											    Customer_Master.Closed_Account IS NULL ) AND 
+											  EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+							Else
+								If sStateRange = ''
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name, 
+											  Customer_Address.Address_1, 
+											  Customer_Address.Address_2, 
+											  Customer_Address.Suburb, 
+											  Customer_Address.State, 
+											  Customer_Address.Postcode 
+											FROM 
+											  Customer_Master, 
+											  Customer_Address 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName, 
+											  :frmPrintLabels.sAddressL1BA, 
+											  :frmPrintLabels.sAddressL2BA, 
+											  :frmPrintLabels.sSuburbBA, 
+											  :frmPrintLabels.sStateBA, 
+											  :frmPrintLabels.sPostcodeBA 
+											WHERE 
+											  Customer_Master.Cust_No = Customer_Address.Cust_No AND 
+											  Customer_Address.Main_Address_Flag = 'Y' AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+								Else
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name, 
+											  Customer_Address.Address_1, 
+											  Customer_Address.Address_2, 
+											  Customer_Address.Suburb, 
+											  Customer_Address.State, 
+											  Customer_Address.Postcode 
+											FROM 
+											  Customer_Master, 
+											  Customer_Address 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName, 
+											  :frmPrintLabels.sAddressL1BA, 
+											  :frmPrintLabels.sAddressL2BA, 
+											  :frmPrintLabels.sSuburbBA, 
+											  :frmPrintLabels.sStateBA, 
+											  :frmPrintLabels.sPostcodeBA 
+											WHERE 
+											  Customer_Master.Cust_No " || sStateRange || " AND 
+											  Customer_Master.Cust_No = Customer_Address.Cust_No AND 
+											  Customer_Address.Main_Address_Flag = 'Y' AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+						Else If sCurrentOrdersSelection = 'NO_CURRENT_YEARS_ORDERS_PLACED'
+							If bInforceSelectionCriteria
+								If sStateRange = ''
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name, 
+											  Customer_Address.Address_1, 
+											  Customer_Address.Address_2, 
+											  Customer_Address.Suburb, 
+											  Customer_Address.State, 
+											  Customer_Address.Postcode
+											 FROM 
+											  Customer_Master, 
+											  Customer_Address 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName, 
+											  :frmPrintLabels.sAddressL1BA, 
+											  :frmPrintLabels.sAddressL2BA, 
+											  :frmPrintLabels.sSuburbBA, 
+											  :frmPrintLabels.sStateBA, 
+											  :frmPrintLabels.sPostcodeBA 
+											WHERE 
+											  Customer_Master.Cust_No = Customer_Address.Cust_No AND 
+											  Customer_Address.Main_Address_Flag = 'Y' AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  Customer_Master.Mailing_List_Flag = 'Y' AND 
+											  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+											    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+											  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+											    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+											  ( Customer_Master.Closed_Account = 'N' OR 
+											    Customer_Master.Closed_Account IS NULL ) AND 
+											  NOT EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+								Else
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name, 
+											  Customer_Address.Address_1, 
+											  Customer_Address.Address_2, 
+											  Customer_Address.Suburb, 
+											  Customer_Address.State, 
+											  Customer_Address.Postcode
+											 FROM 
+											  Customer_Master, 
+											  Customer_Address 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName, 
+											  :frmPrintLabels.sAddressL1BA, 
+											  :frmPrintLabels.sAddressL2BA, 
+											  :frmPrintLabels.sSuburbBA, 
+											  :frmPrintLabels.sStateBA, 
+											  :frmPrintLabels.sPostcodeBA 
+											WHERE 
+											  Customer_Master.Cust_No " || sStateRange || " AND 
+											  Customer_Master.Cust_No = Customer_Address.Cust_No AND 
+											  Customer_Address.Main_Address_Flag = 'Y' AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  Customer_Master.Mailing_List_Flag = 'Y' AND 
+											  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+											    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+											  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+											    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+											  ( Customer_Master.Closed_Account = 'N' OR 
+											    Customer_Master.Closed_Account IS NULL ) AND 
+											  NOT EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+							Else
+								If sStateRange = ''
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name, 
+											  Customer_Address.Address_1, 
+											  Customer_Address.Address_2, 
+											  Customer_Address.Suburb, 
+											  Customer_Address.State, 
+											  Customer_Address.Postcode 
+											FROM 
+											  Customer_Master, 
+											  Customer_Address 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName, 
+											  :frmPrintLabels.sAddressL1BA, 
+											  :frmPrintLabels.sAddressL2BA, 
+											  :frmPrintLabels.sSuburbBA, 
+											  :frmPrintLabels.sStateBA, 
+											  :frmPrintLabels.sPostcodeBA 
+											WHERE 
+											  Customer_Master.Cust_No = Customer_Address.Cust_No AND 
+											  Customer_Address.Main_Address_Flag = 'Y' AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  NOT EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+								Else
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name, 
+											  Customer_Address.Address_1, 
+											  Customer_Address.Address_2, 
+											  Customer_Address.Suburb, 
+											  Customer_Address.State, 
+											  Customer_Address.Postcode 
+											FROM 
+											  Customer_Master, 
+											  Customer_Address 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName, 
+											  :frmPrintLabels.sAddressL1BA, 
+											  :frmPrintLabels.sAddressL2BA, 
+											  :frmPrintLabels.sSuburbBA, 
+											  :frmPrintLabels.sStateBA, 
+											  :frmPrintLabels.sPostcodeBA 
+											WHERE 
+											  Customer_Master.Cust_No " || sStateRange || " AND 
+											  Customer_Master.Cust_No = Customer_Address.Cust_No AND 
+											  Customer_Address.Main_Address_Flag = 'Y' AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  NOT EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+						Else
+							If bInforceSelectionCriteria
+								If sStateRange = ''
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name, 
+											  Customer_Address.Address_1, 
+											  Customer_Address.Address_2, 
+											  Customer_Address.Suburb, 
+											  Customer_Address.State, 
+											  Customer_Address.Postcode 
+											FROM 
+											  Customer_Master, 
+											  Customer_Address 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName, 
+											  :frmPrintLabels.sAddressL1BA, 
+											  :frmPrintLabels.sAddressL2BA, 
+											  :frmPrintLabels.sSuburbBA, 
+											  :frmPrintLabels.sStateBA, 
+											  :frmPrintLabels.sPostcodeBA 
+											WHERE 
+											  Customer_Master.Cust_No = Customer_Address.Cust_No AND 
+											  Customer_Address.Main_Address_Flag = 'Y' AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  Customer_Master.Mailing_List_Flag = 'Y' AND 
+											  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+											    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+											  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+											    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+											  ( Customer_Master.Closed_Account = 'N' OR 
+											    Customer_Master.Closed_Account IS NULL ) 
+											ORDER BY 1 "
+								Else
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name, 
+											  Customer_Address.Address_1, 
+											  Customer_Address.Address_2, 
+											  Customer_Address.Suburb, 
+											  Customer_Address.State, 
+											  Customer_Address.Postcode 
+											FROM 
+											  Customer_Master, 
+											  Customer_Address 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName, 
+											  :frmPrintLabels.sAddressL1BA, 
+											  :frmPrintLabels.sAddressL2BA, 
+											  :frmPrintLabels.sSuburbBA, 
+											  :frmPrintLabels.sStateBA, 
+											  :frmPrintLabels.sPostcodeBA 
+											WHERE 
+											  Customer_Master.Cust_No " || sStateRange || " AND 
+											  Customer_Master.Cust_No = Customer_Address.Cust_No AND 
+											  Customer_Address.Main_Address_Flag = 'Y' AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  Customer_Master.Mailing_List_Flag = 'Y' AND 
+											  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+											    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+											  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+											    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+											  ( Customer_Master.Closed_Account = 'N' OR 
+											    Customer_Master.Closed_Account IS NULL ) 
+											ORDER BY 1 "
+							Else
+								If sStateRange = ''
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name, 
+											  Customer_Address.Address_1, 
+											  Customer_Address.Address_2, 
+											  Customer_Address.Suburb, 
+											  Customer_Address.State, 
+											  Customer_Address.Postcode 
+											FROM 
+											  Customer_Master, 
+											  Customer_Address 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName, 
+											  :frmPrintLabels.sAddressL1BA, 
+											  :frmPrintLabels.sAddressL2BA, 
+											  :frmPrintLabels.sSuburbBA, 
+											  :frmPrintLabels.sStateBA, 
+											  :frmPrintLabels.sPostcodeBA 
+											WHERE 
+											  Customer_Master.Cust_No = Customer_Address.Cust_No AND 
+											  Customer_Address.Main_Address_Flag = 'Y' AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " 
+											ORDER BY 1 "
+								Else
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name, 
+											  Customer_Address.Address_1, 
+											  Customer_Address.Address_2, 
+											  Customer_Address.Suburb, 
+											  Customer_Address.State, 
+											  Customer_Address.Postcode 
+											FROM 
+											  Customer_Master, 
+											  Customer_Address 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName, 
+											  :frmPrintLabels.sAddressL1BA, 
+											  :frmPrintLabels.sAddressL2BA, 
+											  :frmPrintLabels.sSuburbBA, 
+											  :frmPrintLabels.sStateBA, 
+											  :frmPrintLabels.sPostcodeBA 
+											WHERE 
+											  Customer_Master.Cust_No " || sStateRange || " AND 
+											  Customer_Master.Cust_No = Customer_Address.Cust_No AND 
+											  Customer_Address.Main_Address_Flag = 'Y' AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " 
+											ORDER BY 1 "
+					Else
+						If sCurrentOrdersSelection = 'CURRENT_YEARS_ORDERS_PLACED'
+							If bInforceSelectionCriteria
+								If sStateRange = ''
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name 
+											FROM Customer_Master 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName 
+											WHERE 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  Customer_Master.Mailing_List_Flag = 'Y' AND 
+											  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+											    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+											  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+											    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+											  ( Customer_Master.Closed_Account = 'N' OR 
+											    Customer_Master.Closed_Account IS NULL ) AND 
+											  EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+								Else
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name 
+											FROM Customer_Master 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName 
+											WHERE 
+											  Customer_Master.Cust_No " || sStateRange || " AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  Customer_Master.Mailing_List_Flag = 'Y' AND 
+											  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+											    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+											  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+											    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+											  ( Customer_Master.Closed_Account = 'N' OR 
+											    Customer_Master.Closed_Account IS NULL ) AND 
+											  EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+							Else
+								If sStateRange = ''
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name 
+											FROM Customer_Master 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName 
+											WHERE 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+								Else
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name 
+											FROM Customer_Master 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName 
+											WHERE 
+											  Customer_Master.Cust_No " || sStateRange || " AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+						If sCurrentOrdersSelection = 'NO_CURRENT_YEARS_ORDERS_PLACED'
+							If bInforceSelectionCriteria
+								If sStateRange = ''
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name 
+											FROM Customer_Master 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName 
+											WHERE 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  Customer_Master.Mailing_List_Flag = 'Y' AND 
+											  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+											    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+											  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+											    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+											  ( Customer_Master.Closed_Account = 'N' OR 
+											    Customer_Master.Closed_Account IS NULL ) AND 
+											  NOT EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+								Else
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name 
+											FROM Customer_Master 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName 
+											WHERE 
+											  Customer_Master.Cust_No " || sStateRange || " AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  Customer_Master.Mailing_List_Flag = 'Y' AND 
+											  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+											    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+											  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+											    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+											  ( Customer_Master.Closed_Account = 'N' OR 
+											    Customer_Master.Closed_Account IS NULL ) AND 
+											  NOT EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+							Else
+								If sStateRange = ''
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name 
+											FROM Customer_Master 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName 
+											WHERE 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  NOT EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+								Else
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name 
+											FROM Customer_Master 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName 
+											WHERE 
+											  Customer_Master.Cust_No " || sStateRange || " AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  NOT EXISTS ( SELECT 
+											                    Customer_Order.Cust_No 
+											                 FROM 
+											                   Customer_Order 
+											                 WHERE 
+											                   Customer_Order.Cust_No = Customer_Master.Cust_No AND 
+											                   Customer_Order.Year_Of_Sale = :frmPrintLabels.nYear AND 
+											                   Customer_Order.Conf_Amt > 0 ) 
+											ORDER BY 1 "
+						Else
+							If bInforceSelectionCriteria
+								If sStateRange = ''
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name 
+											FROM Customer_Master 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName 
+											WHERE 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  Customer_Master.Mailing_List_Flag = 'Y' AND 
+											  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+											    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+											  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+											    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+											  ( Customer_Master.Closed_Account = 'N' OR 
+											    Customer_Master.Closed_Account IS NULL ) 
+											ORDER BY 1 "
+								Else
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name 
+											FROM Customer_Master 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName 
+											WHERE 
+											  Customer_Master.Cust_No " || sStateRange || " AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " AND 
+											  Customer_Master.Mailing_List_Flag = 'Y' AND 
+											  ( Customer_Master.Dont_Sell_Flag = 'N' OR 
+											    Customer_Master.Dont_Sell_Flag IS NULL ) AND 
+											  ( Customer_Master.Bad_Debt_Flag = 'N' OR
+											    Customer_Master.Bad_Debt_Flag IS NULL ) AND 
+											  ( Customer_Master.Closed_Account = 'N' OR 
+											    Customer_Master.Closed_Account IS NULL ) 
+											ORDER BY 1 "
+							Else
+								If sStateRange = ''
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name 
+											FROM Customer_Master 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName 
+											WHERE 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " 
+											ORDER BY 1 "
+								Else
+									Set sSql = " SELECT 
+											  @UPPER( Customer_Master.Cust_Name ), 
+											  Customer_Master.Cust_No, 
+											  Customer_Master.Cust_Name, 
+											  Customer_Master.Bus_Name 
+											FROM Customer_Master 
+											INTO 
+											  :frmPrintLabels.sTmp, 
+											  :frmPrintLabels.nCustNo, 
+											  :frmPrintLabels.sCustName, 
+											  :frmPrintLabels.sBusName 
+											WHERE 
+											  Customer_Master.Cust_No " || sStateRange || " AND 
+											  Customer_Master.Customer_Type LIKE " || sCustLikeType || " 
+											ORDER BY 1 "
+				Else
+					Call fcSelectionFile.Setup( sSelectionFileName, OF_Read | OF_Text, NUMBER_Null )
+				!
+				If sCustomerType = 'ORCHARDISTS' OR sCustomerType = 'GARDEN_CENTRES'
+					If fcLabelHdl.PrepareSetup( sSql )
+						If NOT fcLabelHdl.PrepareAndExecute( )
+							Set bOk = FALSE
+					Else
+						Set bOk = FALSE
+				Else
+					If NOT fcSelectionFile.Open( )
+						Set bOk = FALSE
+				Return bOk
+			On SAM_ReportFetchNext
+				Loop
+					Call ResetReportFields(  )
+					If sCustomerType = 'SELECTED'
+						If fcSelectionFile.Read( sFileString )
+							If sSelectionType = 'CUSTOMER_MASTER'
+								Set bValidCustomer = TRUE
+								Set nCustNo = SalStrToNumber( sFileString )
+								If bInforceSelectionCriteria
+									Call GetCustBusNamesNSelectCriteria( nCustNo, sCustName, sBusName, bValidCustomer, SH_cls_Execute )
+								Else
+									Call GetCustBusNames( nCustNo, sCustName, sBusName, SH_cls_Execute )
+								If bValidCustomer
+									Call SwapSurnameWithFirstname( sCustName )
+									!
+									If bAttentionMainContact
+										Call GetMainContact( nCustNo, sContactTitle, sContactGivenName, sContactSurname, TRUE, SH_cls_Execute )
+										Set sAttention = FormatAttentionContactName( sContactTitle, sContactGivenName, sContactSurname )
+									!
+									If sAddressType = 'BUS'
+										If bForceChildAddress
+											Call GetBusAddressPrivateFunction( nCustNo, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+										Else
+											Call GetBusAddress( nCustNo, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+										Call FixLineSpaceAddress( sAttention, sCustName, sBusName, sAddressL1BA, sAddressL2BA, sSuburbBA, sStateBA, sPostcodeBA, sAddressL1, sAddressL2, sAddressL3, sAddressL4, sAddressL5, sAddressL6 )
+									Else If sAddressType = 'SHIP'
+										Call GetShipAddress( nCustNo, nYear, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, bTmp, SH_cls_Execute )
+										Call FixLineSpaceAddress( sAttention, sCustName, sBusName, sAddressL1BA, sAddressL2BA, sSuburbBA, sStateBA, sPostcodeBA, sAddressL1, sAddressL2, sAddressL3, sAddressL4, sAddressL5, sAddressL6 )
+									Else If sAddressType = 'MAIN'
+										If bForceChildAddress
+											Call GetMainAddressPrivateFunction( nCustNo, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+										Else
+											Call GetMainAddress( nCustNo, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+										Call FixLineSpaceAddress( sAttention, sCustName, sBusName, sAddressL1BA, sAddressL2BA, sSuburbBA, sStateBA, sPostcodeBA, sAddressL1, sAddressL2, sAddressL3, sAddressL4, sAddressL5, sAddressL6 )
+									Else
+										If bForceChildAddress
+											Call GetPostalAddressPrivateFunction( nCustNo, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+										Else
+											Call GetPostalAddress( nCustNo, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+										Call FixLineSpaceAddress( sAttention, sCustName, sBusName, sAddressL1BA, sAddressL2BA, sSuburbBA, sStateBA, sPostcodeBA, sAddressL1, sAddressL2, sAddressL3, sAddressL4, sAddressL5, sAddressL6 )
+									!
+									If bCSVFileOk
+										Set bTmp = fcReprintCSVFile.Write( MakeCSVLine( ) )
+									Return TRUE
+							Else
+								Set dtMailListTimeStamp = SalStrToDate( sFileString )
+								Call GetMailListCustDetails( dtMailListTimeStamp, sCustName, sBusName, sAddressL1BA, sAddressL2BA, sSuburbBA, sStateBA, sPostcodeBA, SH_cls_Execute )
+								Call FixLineSpaceAddress( sAttention, sCustName, sBusName, sAddressL1BA, sAddressL2BA, sSuburbBA, sStateBA, sPostcodeBA, sAddressL1, sAddressL2, sAddressL3, sAddressL4, sAddressL5, sAddressL6 )
+								If bCSVFileOk
+									Call fcReprintCSVFile.Write( MakeCSVLine( ) )
+								Return TRUE
+						Else
+							Return FALSE
+					Else
+						If fcLabelHdl.FetchNext( nInd )
+							Call SwapSurnameWithFirstname( sCustName )
+							!
+							If bAttentionMainContact
+								Call GetMainContact( nCustNo, sContactTitle, sContactGivenName, sContactSurname, TRUE, SH_cls_Execute )
+								Set sAttention = FormatAttentionContactName( sContactTitle, sContactGivenName, sContactSurname )
+							!
+							If sAddressType = 'BUS'
+								If bForceChildAddress
+									Call GetBusAddressPrivateFunction( nCustNo, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+								Else
+									Call GetBusAddress( nCustNo, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+								Call FixLineSpaceAddress( sAttention, sCustName, sBusName, sAddressL1BA, sAddressL2BA, sSuburbBA, sStateBA, sPostcodeBA, sAddressL1, sAddressL2, sAddressL3, sAddressL4, sAddressL5, sAddressL6 )
+							Else If sAddressType = 'SHIP'
+								Call GetShipAddress( nCustNo, nYear, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, bTmp, SH_cls_Execute )
+								Call FixLineSpaceAddress( sAttention, sCustName, sBusName, sAddressL1BA, sAddressL2BA, sSuburbBA, sStateBA, sPostcodeBA, sAddressL1, sAddressL2, sAddressL3, sAddressL4, sAddressL5, sAddressL6 )
+							Else If sAddressType = 'MAIN'
+								If bForceChildAddress
+									Call GetMainAddressPrivateFunction( nCustNo, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+								Else
+									Call GetMainAddress( nCustNo, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+								Call FixLineSpaceAddress( sAttention, sCustName, sBusName, sAddressL1BA, sAddressL2BA, sSuburbBA, sStateBA, sPostcodeBA, sAddressL1, sAddressL2, sAddressL3, sAddressL4, sAddressL5, sAddressL6 )
+							Else
+								If bForceChildAddress
+									Call GetPostalAddressPrivateFunction( nCustNo, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+								Else
+									Call GetPostalAddress( nCustNo, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Execute )
+								Call FixLineSpaceAddress( sAttention, sCustName, sBusName, sAddressL1BA, sAddressL2BA, sSuburbBA, sStateBA, sPostcodeBA, sAddressL1, sAddressL2, sAddressL3, sAddressL4, sAddressL5, sAddressL6 )
+							If bCSVFileOk
+								Call fcReprintCSVFile.Write( MakeCSVLine( ) )
+							Return TRUE
+						Else
+							Return FALSE
+			On SAM_ReportFinish
+				If sCustomerType = 'SELECTED'
+					Call fcSelectionFile.Close( )
+				If bCSVFileOk
+					Call fcReprintCSVFile.Close( )
+				Return SalSendClassMessage( SAM_ReportFinish, wParam, lParam )
+			On SAM_Destroy
+				Call GetCustBusNames( 0, sCustName, sBusName, SH_cls_Disconnect )
+				Call GetCustBusNamesNSelectCriteria( 0, sCustName, sBusName, bValidCustomer, SH_cls_Disconnect )
+				Call GetBusAddress( 0, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Disconnect )
+				Call GetMainAddress( 0, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, SH_cls_Disconnect )
+				Call GetShipAddress( 0, 0, dtTmp, sTmp, sAddressL1BA, sAddressL2BA, sSuburbBA, sPostcodeBA, sStateBA, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, sTmp, bTmp, SH_cls_Execute )
+				Call GetMailListCustDetails( DATETIME_Null, sCustName, sBusName, sAddressL1BA, sAddressL2BA, sSuburbBA, sStateBA, sPostcodeBA, SH_cls_Disconnect )
+				Call fcLabelHdl.Disconnect( )
+				Return SalSendClassMessage( SAM_Destroy, wParam, lParam )

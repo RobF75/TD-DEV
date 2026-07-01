@@ -1,0 +1,140 @@
+
+--------------------------- Revision History ---------------------------------
+
+Version 1
+---------
+
+- Original release version.
+
+- Each icon library was seperate .EXE file which was executed to display icons.
+
+---------------------------------------------------------------------------
+
+Version 2
+---------
+
+- Single EXE display program.
+
+- Icons now stored in DLL files (file suffix is actually .ICL).
+
+- Dynamic menus which are user defined.
+
+- Animation display.
+
+- Many more icons added to collection.
+
+---------------------------------------------------------------------------
+Version 2a
+----------
+
+Fixed a couple of problems in this version
+
+- Animating icons would disappear on some displays (eg VGA). This problem has
+  been fixed.
+
+- Don't allow animation until an icon collection has been selected from the
+  menu otherwise unspecified memory is copied to the display.
+
+- Some more icons added to the collection.
+
+---------------------------------------------------------------------------
+Version 3
+---------
+
+- Allow 2 levels of hierarchy in the menu system.
+
+- Change heading to show menu description rather than the ICL filename.
+
+- Provide facility to reload menus without restarting program
+
+- Clicking on an icon in the client area will allow the user to save that
+  icon to a .ICO file.
+
+- Include Common Dialog routines for File Save and Choose Color.
+
+- Provide ability to clear the icon screen without loading new icons.
+
+- Increase icon collection from 3000 icons in 60 categories to over
+  10000 icons in more than 150 categories in the REGISTERED version of
+  the program.
+ 
+- All icons have been "tidied" up, in particular where the background was a
+  fixed color (usually white) it has been changed to transparent. The icons
+  usually look much better this way.
+
+- Allow the background color of the display area to be changed. Note that if
+  there are multiple instances of ICOLIB running, all will have the same
+  background color after the next repaint of each client area.
+
+- Fixed a bug which limited the number of categories to 143.
+
+- The help file was updated to describe these changes.
+
+------------------------------------------------------------------------------
+Version 4
+---------
+
+  28/12/94
+- Save window position and size on program exit in INI file. Restore this
+  position and size when restarting the program.
+
+  3/1/95
+- Allow the use of path names for ICL files specified in the icolib.ini file.
+  There is a limit of 66 characters for the pathname. Examples...
+     Item_1=icons\rabbit.icl,This is a rabbit...
+     Item_2=..\icondir\rabbit.icl,This is a rabbit...
+     Item_3=d:\tmp\rabbit.icl,This is a rabbit...
+     Item_4=\top_dir\icons\rabbit.icl,This is a rabbit...
+
+- Restructure all of the ICL files into appropriate subdirectories and change
+  the icolib.ini file to reflect these changes. Also rename some meaningless
+  ICL filenames into more meaningful names.
+
+  21/1/95
+- Increased szItem size from 8 to 11 characters to allow for "Item_xx_xx\0".
+
+  1/4/95
+- Fixed fault: If user saved an icon and changed directory for this save
+  operation, the icolib.ini file would be written to this new location
+  rather than the directory containing the icolib.exe file.
+
+- New release zip files (registered) created for version 4.016 to update the
+  display program, icolib.exe.
+
+------------------------------------------------------------------------------
+Version 4A
+----------
+
+- Updated registration information.
+
+------------------------------------------------------------------------------
+Version 4B
+----------
+
+- Updated registration details to include information on how to register
+  with credit cards through the Internet Web or by telephone. (PsL)
+
+- Fixed the following minor bug...
+
+  In the ICOLIB.INI file:
+    [Init]
+    Left=362
+    Top=115
+    Width=531
+    Height=122  <---- value less than 123 will cause GPF when program loads.
+
+  If "Height" is set to a value less than 123, then icolib.exe will force
+  the "Hieght" to be 123.
+
+------------------------------------------------------------------------------
+
+If you have any comments, suggestions or problems, I am happy to hear from
+you. I can be contacted by email at steve@cc.monash.edu.au or by paper mail
+at:  PO Box 414
+     Caulfield East 3145
+     Victoria, Australia.
+
+
+Regards,
+
+  Steve Balogh        (steve@cc.monash.edu.au)

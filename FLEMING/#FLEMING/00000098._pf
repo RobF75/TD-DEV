@@ -1,0 +1,2925 @@
+Application Description: SQLWindows 5.01 Jans Labels printing  APL
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000C50000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF000000 0000000000900200 0039010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D0200000012496E 7465726E616C2046
+0080: 756E6374696F6E73 1147656E65726174 654C6162656C4669 6C65
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 0418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.113"
+			Top:    2.896"
+			Width:  4.688"
+			Height: 2.99"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   8.263"
+			Top:    0.688"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: VTSPIN.APL
+		File Include: VTWIN.APL
+		File Include: VTMETER.APL
+		File Include: vtdos.apl
+		File Include: Dlgctbl.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Italic
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Black
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+			! Library name: sqlc6132.dll
+				! Function: CStructGetByte
+					  Description: Extract a byte from a buffer.
+							nResult = CStructGetByte( strBuffer, nOffset )
+					  Export Ordinal: 0
+					  Returns 
+						  Number: BYTE
+					  Parameters 
+						  String: LPVOID
+						  Number: LONG
+				! Function: CStructGetInt
+					  Description: Extract an integer from a buffer.
+							nResult = CStructGetInt( strBuffer, nOffset )
+					  Export Ordinal: 0
+					  Returns 
+						  Number: INT
+					  Parameters 
+						  String: LPVOID
+						  Number: LONG
+				! Function: CStructGetWord
+					  Description: Extract a word from a buffer.
+							nResult = CStructGetWord( strBuffer, nOffset )
+					  Export Ordinal: 0
+					  Returns 
+						  Number: WORD
+					  Parameters 
+						  String: LPVOID
+						  Number: LONG
+				! Function: CStructGetLong
+					  Description: Extract a long from a buffer.
+							nResult = CStructGetLong( strBuffer, nOffset )
+					  Export Ordinal: 0
+					  Returns 
+						  Number: LONG
+					  Parameters 
+						  String: LPVOID
+						  Number: LONG
+				! Function: CStructGetFloat
+					  Description: Extract a float from a buffer.
+							nResult = CStructGetFloat( strBuffer, nOffset )
+					  Export Ordinal: 0
+					  Returns 
+						  Number: FLOAT
+					  Parameters 
+						  String: LPVOID
+						  Number: LONG
+				! Function: CStructGetDouble
+					  Description: Extract a double from a buffer.
+							nResult = CStructGetDouble( strBuffer, nOffset )
+					  Export Ordinal: 0
+					  Returns 
+						  Number: DOUBLE
+					  Parameters 
+						  String: LPVOID
+						  Number: LONG
+				! Function: CStructGetBFloat
+					  Description: Extract a BFloat from a buffer and convert to double.
+							nResult = CStructGetBFloat( strBuffer, nOffset )
+					  Export Ordinal: 0
+					  Returns 
+						  Number: DOUBLE
+					  Parameters 
+						  String: LPVOID
+						  Number: LONG
+				! Function: CStructGetString
+					  Description: Extract a string from a buffer.
+							nLength = CStructGetString( strBuffer, nOffset, nMaxWidth, strExtract )
+					  Export Ordinal: 0
+					  Returns 
+						  Number: LONG
+					  Parameters 
+						  String: LPVOID
+						  Number: LONG
+						  Number: LONG
+						  Receive String: LPSTR
+				! Function: CStructGetFarPointer
+					  Description: Extract a far pointer from a buffer.
+							nFarPointer = CStructGetFarPointer( strBuffer, nOffset )
+					  Export Ordinal: 0
+					  Returns 
+						  Number: LONG
+					  Parameters 
+						  Receive String: LPVOID
+						  Number: LONG
+				! Function: CStructPutByte
+					  Description: Insert a byte into a buffer.
+							bOK = CStructPutByte( strBuffer, nOffset, nInsert )
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Receive String: LPVOID
+						  Number: LONG
+						  Number: BYTE
+				! Function: CStructPutInt
+					  Description: Insert an integer into a buffer.
+							bOK = CStructPutInt( strBuffer, nOffset, nInsert )
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Receive String: LPVOID
+						  Number: LONG
+						  Number: INT
+				  Function: CStructPutWord
+					  Description: Insert a word into a buffer.
+							bOK = CStructPutWord( strBuffer, nOffset, nInsert )
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Receive String: LPVOID
+						  Number: LONG
+						  Number: WORD
+				! Function: CStructPutLong
+					  Description: Insert a long into a buffer.
+							bOK = CStructPutLong( strBuffer, nOffset, nInsert )
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Receive String: LPVOID
+						  Number: LONG
+						  Number: LONG
+				! Function: CStructPutFloat
+					  Description: Insert a byte into a buffer.
+							bOK = CStructPutFloat( strBuffer, nOffset, nInsert )
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Receive String: LPVOID
+						  Number: LONG
+						  Number: FLOAT
+				! Function: CStructPutDouble
+					  Description: Insert a double into a buffer.
+							bOK = CStructPutDouble( strBuffer, nOffset, nInsert )
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Receive String: LPVOID
+						  Number: LONG
+						  Number: DOUBLE
+				! Function: CStructPutBFloat
+					  Description: Convert double to BFloat and insert it into a buffer.
+							bOK = CStructPutBFloat( strBuffer, nOffset, nInsert )
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Receive String: LPVOID
+						  Number: LONG
+						  Number: DOUBLE
+				! Function: CStructPutString
+					  Description: Insert a string into a buffer.
+							bOK = CStructPutString( strBuffer, nOffset, nMaxWidth, strInsert )
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Receive String: LPVOID
+						  Number: LONG
+						  Number: LONG
+						  String: LPSTR
+				! Function: CStructPutFarPointer
+					  Description: Insert a far pointer into a buffer.
+							bOK = CStructPutFarPointer( strBuffer, nOffset, nFarPointer )
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Receive String: LPVOID
+						  Number: LONG
+						  Number: LONG
+				! Function: CStructCopyBuffer
+					  Description: Copy data from one String to another.
+							bOK = CStructCopyBuffer( strDest, nDestOffset, 
+							                         strSrc, nSrcOffset, nCopyLen ) 
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  String: LPVOID
+						  Number: LONG
+						  String: LPVOID
+						  Number: LONG
+						  Number: LONG
+				! Function: CStructAllocFarMem
+					  Description: Allocate memory and return a far pointer.
+							nFarPointer = CStructAllocFarMem( nBytes )
+					  Export Ordinal: 0
+					  Returns 
+						  Number: LONG
+					  Parameters 
+						  Number: LONG
+				! Function: CStructFreeFarMem
+					  Description: Free memory allocated by CStructAllocFarMem.
+							bOK = CStructFreeFarMem( nFarPointer )
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Number: LONG
+				! Function: CStructCopyToFarMem
+					  Description: Copy data from far memory to a String.
+							bOK = CStructCopyToFarMem( nFarPointer, strData, nDataLen  )
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Number: LONG
+						  String: LPVOID
+						  Number: LONG
+				! Function: CStructCopyFromFarMem
+					  Description: Copy from a String to far memory.
+							bOK = CStructCopyFromFarMem( nFarPointer, strData, nMaxLen )
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Number: LONG
+						  Receive String: LPVOID
+						  Number: LONG
+			! Library name: kernel32.dll
+				  Function: CloseHandle
+					  Description: 
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Window Handle: HWND
+				  Function: CreateFileA
+					  Description: 
+					  Export Ordinal: 0
+					  Returns 
+						  Window Handle: HWND
+					  Parameters 
+						  String: HSTRING
+						  Number: DWORD
+						  Number: DWORD
+						  Number: HANDLE
+						  Number: DWORD
+						  Number: DWORD
+						  Number: HANDLE
+				  Function: WriteFile
+					  Description: 
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Window Handle: HWND
+						  String: LPCSTR
+						  Number: DWORD
+						  Receive Number: LPDWORD
+						  Number: HANDLE
+			! Library name: gdi32.dll
+				  Function: CreateDCA
+					  Description: 
+					  Export Ordinal: 0
+					  Returns 
+						  Window Handle: HWND
+					  Parameters 
+						  String: LPCSTR
+						  String: LPCSTR
+						  String: LPCSTR
+						  Number: LONG
+				  Function: DeleteDC
+					  Description: 
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Window Handle: HWND
+				  Function: Escape
+					  Description: 
+					  Export Ordinal: 0
+					  Returns 
+						  Number: WORD
+					  Parameters 
+						  Window Handle: HWND
+						  Number: WORD
+						  Number: WORD
+						  String: LPCSTR
+						  Number: LONG
+			! Library name: spoolss.dll
+				  Function: OpenPrinterA
+					  Description: 
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Receive String: LPSTR
+						  Window Handle: HWND
+						  Number: LONG
+				  Function: ClosePrinter
+					  Description: 
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Window Handle: HWND
+				  Function: WritePrinter
+					  Description: 
+					  Export Ordinal: 0
+					  Returns 
+						  Boolean: BOOL
+					  Parameters 
+						  Window Handle: HWND
+						  String: LPVOID
+						  Number: DWORD
+						  Receive Number: LPDWORD
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for LABELS.APL
+				Number: LABELSFUNCAplMsgOffSet = SAM_User + 5100
+				Number: LABELSFUNCAplConstOffSet = 2500
+				! Message go up to AplOffSet + 99
+				Number: PAM_clsLABELS_GETFIELDDATA = LABELSFUNCAplMsgOffSet + 1
+				Number: PAM_clsLABELS_PRINTLABEL = LABELSFUNCAplMsgOffSet + 1
+				!
+				Number: GENERIC_WRITE = 0x40000000
+				Number: OPEN_EXISTING = 3
+				Number: LABELSTARTOFFSET = 25
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 3308672768
+0000: CA0000005F000000 0000000000000000 020000070000004C 0000000002040000
+0020: 00010000FE00C180 010000003F500038 0000020001FB0027 80010000FF005400
+0040: 0000010D0000FE00 FF836100000001FB 00FF0F6E000000EE 0100FF3F7B00B800
+0060: 000100FFFF808800 0000040D00FE00FF 03
+.enddata
+		Named Menus
+		Internal Functions
+			Function: PrintLabels
+				Description: Given a stock item no, label Id and how many labels this prints labels to the bar code printer
+						on the com port
+						hWndTable is the handle that will receive the PAM_clsLABELS_GETFIELDDATA message with the
+						wParam as nItemNo and lParam as HString ( use SalNumberToHString to extract the string )
+						  To Return a value alway Call PushString( ... ) If number comvert to string and MUST 
+						  RETURN TRUE
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					String: sLabelId
+					Number: nHowMany
+					Number: nLocId
+					Window Handle: hWndTable
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sTmpFileName
+				Actions
+					Select Case nActionType
+						Case SH_cls_Execute
+							! Set sTmpFileName = OurGetIniFileParameter( 'GENERAL', 'TempStoragePath', 'C:\\TEMP' ) || '\\label.tmp'
+							Set sTmpFileName = GetNextBCQueueFileName(  )
+							Call GenerateLabelFile( 0, '', nItemNo, sLabelId, nHowMany, nLocId, hWndTable, sTmpFileName, 'CREATE/OVERWRITE', SH_cls_Execute )
+							! Call OutputLabelFile( sTmpFileName )
+							Return TRUE
+						Case SH_cls_Disconnect
+							Return GenerateLabelFile( 0, '', 0, '', 0, 0, hWndNULL, '', '', SH_cls_Disconnect )
+			Function: GetNextBCQueueFileName
+				Description:
+				Returns
+					String:
+				Parameters
+				Static Variables
+				Local variables
+					Number: nNumQueueFiles
+					String: sQueuePath
+					String: saQueuelFiles[*]
+					Number: naQueueSizes[*]
+					Date/Time: dtaQueueTimeStamps[*]
+					Number: naQueueAttributes[*]
+				Actions
+					Set sQueuePath = OurGetIniFileParameter( 'GENERAL', 'BCLabelsPath', 'C:\\TEMP' )
+					Set nNumQueueFiles = VisDosEnumFileInfo( sQueuePath || '\\*.bcl', FA_Standard, saQueuelFiles, naQueueSizes, dtaQueueTimeStamps, naQueueAttributes )
+					If nNumQueueFiles < 0
+						Set nNumQueueFiles = 0
+					Return sQueuePath||'\\'||SalStrRightX( SqlUser, 3 )||SalNumberToStrX( nNumQueueFiles+1, 0 )||'.bcl'
+			Function: PrintStockItemsLabels
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					String: sCustName
+					! naItemNos is a NUMBER_Null terminated array and naQuantities is also and must match the positioning
+							  of naItemNos with the quantites
+					Number: naItemNos[*]
+					Number: naQuantities[*]
+					! sLabelUse = 'FC' or 'HG' or 'BC'
+					String: sLabelUse
+					Number: nActionType
+				Static Variables
+				Local variables
+					String: sLabelFile
+					!
+					Number: nPos
+					Boolean: bFirst
+					Boolean: bNoLabelId
+					!
+					String: sLabelId
+					Number: nTotalCount
+					: fcMeter
+						Class: clsMeterBar
+					!
+					String: sShortCustName
+				Actions
+					Select Case nActionType
+						Case SH_cls_Execute
+							! Set sLabelFile = OurGetIniFileParameter( 'GENERAL', 'TempStoragePath', 'C:\\TEMP' ) || '\\label.tmp'
+							Set sLabelFile = GetNextBCQueueFileName(  )
+							!
+							Set nPos = 0
+							While naItemNos[ nPos ] != NUMBER_Null
+								Set nPos = nPos + 1
+							Set nTotalCount = nPos
+							!
+							Call fcMeter.Setup( 'Generating Labels', nTotalCount )
+							!
+							Set bNoLabelId = FALSE
+							Set bFirst = TRUE
+							Set nPos = 0
+							While naItemNos[ nPos ] != NUMBER_Null
+								Call GetStockItemLabelIdForUse( naItemNos[ nPos ], sLabelUse, sLabelId, SH_cls_Execute )
+								!
+								If sLabelId = ''
+									Set bNoLabelId = TRUE
+								Else
+									If bFirst
+										If sLabelUse = 'BC'
+											If SalStrLength( sCustName ) > 33
+												Set sShortCustName = SalStrLeftX( sCustName, 33 )
+											Else
+												Set sShortCustName = sCustName
+											Call GenerateLabelFile( nCustNo, sShortCustName, 0, 'BCHEAD', 1, 0, hWndNULL, sLabelFile, 'CREATE/OVERWRITE', SH_cls_Execute )
+											Call GenerateLabelFile( nCustNo, sCustName, naItemNos[ nPos ], sLabelId, naQuantities[ nPos ], 0, hWndNULL, sLabelFile, 'APPEND', SH_cls_Execute )
+										Else
+											Call GenerateLabelFile( nCustNo, sCustName, naItemNos[ nPos ], sLabelId, naQuantities[ nPos ], 0, hWndNULL, sLabelFile, 'CREATE/OVERWRITE', SH_cls_Execute )
+										Set bFirst = FALSE
+									Else
+										Call GenerateLabelFile( nCustNo, sCustName, naItemNos[ nPos ], sLabelId, naQuantities[ nPos ], 0, hWndNULL, sLabelFile, 'APPEND', SH_cls_Execute )
+								Set nPos = nPos + 1
+								!
+								Call fcMeter.Increment( 1 )
+							! Call OutputLabelFile( sLabelFile )
+							!
+							If bNoLabelId
+								Call SalMessageBox( 'One or More of your selected stock items did not print, due to no label being setup for it.', 'Warning', MB_Ok )
+							Call fcMeter.End( )
+							Return TRUE
+						Case SH_cls_Disconnect
+							Call GetStockItemLabelIdForUse( 0, '', sLabelId, SH_cls_Disconnect )
+							Call GenerateLabelFile( 0, '', 0, '', 0, 0, hWndNULL, '', '', SH_cls_Disconnect )
+							Return TRUE
+			Function: CheckLabelPrePrinted
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sLabelId
+					Receive Boolean: bPrePrinted
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					Number: nInd
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'LBLPREPRNTED' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT Preprinted 
+									FROM Labels
+									WHERE Label_Id = :1 AND Preprinted = 'Y' " 
+							Set sName = 'LBLPREPRNTED'
+							Set sBind = ':sLabelId'
+							Set sInto = ''
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set bPrePrinted = FALSE
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set bPrePrinted = TRUE
+								Else
+									Set bPrePrinted = FALSE
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: CheckLabelHasPicture
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					String: sLabelId
+					Receive Boolean: bHasPicture
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					Number: nInd
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'LBLHASPIC' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT Field_Type 
+									FROM Label_Fields
+									WHERE Label_Id = :1  AND Field_Type = 'P' " 
+							Set sName = 'LBLHASPIC'
+							Set sBind = ':sLabelId'
+							Set sInto = ''
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set bHasPicture = FALSE
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								If haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									Set bHasPicture = TRUE
+								Else
+									Set bHasPicture = FALSE
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: GetStockItemLabelIdForUse
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nItemNo
+					String: sLabelUse
+					Receive String: sLabelId
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					Number: nInd
+					String: sGotLabelId
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'STCKUSELBLID' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Set sSql = " SELECT Label_Id 
+									FROM Stock_Labels
+									WHERE Stock_Item_No = :1 AND Stock_Label_Use = :2 " 
+							Set sName = 'STCKUSELBLID'
+							Set sBind = ':nItemNo, :sLabelUse'
+							Set sInto = ':sGotLabelId'
+							!
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sLabelId = ''
+							Set sGotLabelId = ''
+							!
+							If haSqlHandles[ nOurHandleNo ].Execute( )
+								Call haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+								Set sLabelId = sGotLabelId
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: GenerateLabelFile
+				Description: Given a stock item no, label Id and how many labels this prints labels to the bar code printer
+						on the com port
+						hWndTable is the handle that will receive the PAM_clsLabels_GETFIELDDATA message with the
+						wParam as nItemNo and lParam as HString ( use SalNumberToHString to extract the string )
+						  To Return a value alway Call PushString( ... ) If number comvert to string and MUST 
+						  RETURN TRUE
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					String: sCustName
+					Number: nItemNo
+					String: sLabelId
+					Number: nHowMany
+					Number: nLocId
+					Window Handle: hWndTable
+					String: sLabelFile
+					! sLabelFileTreatment = 'CREATE/OVERWRITE OR APPEND'
+					String: sLabelFileTreatment
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					String: sHeadTemp
+					!
+					Number: nInd
+					Number: nTmp
+					!
+					Boolean: bExists
+					!
+					String: sFormat
+					String: sFormatChar
+					String: sType
+					Long String: sLiteral
+					String: sPicFile
+					String: sDataDesc
+					Number: nOffSet
+					Long String: sLabelFormat
+					Long String: lsImage
+					String: sStartText
+					String: sCarrRet
+					String: sItemNo
+					String: sMany
+					Number: nFilesize
+					! -------------------------
+					String: sSOH
+					String: sSTX
+					String: sETX
+					String: sCR
+					String: sESC
+					!
+					Boolean: bFirstPicture
+					Boolean: bFirstFieldFetched
+					Boolean: bOk
+					!
+					String: saLabelPics[*]
+					Number: nNumLabelPics
+					!
+					Number: nLength
+					String: sPicName
+					String: sPrioSpacesString
+					File Handle: hOutFile
+					File Handle: hRecFile
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'LBLFIELDS' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Call SalWaitCursor( TRUE )
+							!
+							Set sSql = " SELECT 
+									  Field_Format_Char, 
+									  Field_Type, 
+									  Field_Literal, 
+									  Field_Picture_File, 
+									  Field_Data_Desc 
+									FROM 
+									  Label_Fields 
+									WHERE 
+									  Label_Id = :1 "
+							Set sName = 'LBLFIELDS'
+							Set sBind = ':sLabelId'
+							Set sInto = ':sFormatChar, :sType, :sLiteral, :sPicFile, :sDataDesc'
+							Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sSOH = ' '
+							Set sSTX = ' '
+							Set sETX = ' '
+							Set sCR = ' '
+							Set sESC = ' '
+							! Call CStructPutByte( sSOH, 0, 1 )
+							Set sSOH = SalNumberToChar( 1 )
+							! Call CStructPutByte( sSTX, 0, 2 )
+							Set sSTX = SalNumberToChar( 2 )
+							! Call CStructPutByte( sETX, 0, 3 )
+							Set sETX = SalNumberToChar( 3 )
+							! Call CStructPutByte( sCR, 0, 13 )
+							Set sCR = SalNumberToChar( 13 )
+							! Call CStructPutByte( sESC, 0, 27 )
+							Set sESC = SalNumberToChar( 27 )
+							Set nNumLabelPics = 0
+							If sLabelFileTreatment = 'APPEND'
+								If NOT SalFileOpen( hOutFile, sLabelFile, OF_Append | OF_ReadWrite | OF_Binary )
+									Call SalWaitCursor( FALSE )
+									Return FALSE
+							Else
+								If NOT SalFileOpen( hOutFile, sLabelFile, OF_Create | OF_ReadWrite | OF_Binary )
+									Call SalWaitCursor( FALSE )
+									Return FALSE
+							!
+							Set sLabelFormat = sSOH || 'D' || sCR || 
+									sSTX || 'qB' || sCR || sSTX || 'M3000' || 
+									sCR || sSTX || 'RY' || sCR || 
+									sSTX || 's' || sCR || sSTX || 'f110' || 
+									sCR || sSTX || 'O0103' || sCR || 
+									sSTX || 'V0' || sCR
+							! Set sLabelFormat = sSOH || 'D' || sCR || sSTX || 'qB' || sCR || sSTX || 'M3000' || sCR || sSTX || 'RY' || sCR || sSTX || 's' || sCR || sSTX || 'f110' || sCR || sSTX || 'O0103' || sCR || sSTX || 'V0' || sCR || 'c0994' || sCR
+							Set nLength = SalStrLength( sLabelFormat )
+							Call SalFileWrite( hOutFile, sLabelFormat, nLength )
+							!
+							Call CheckLabelPrePrinted( sLabelId, bExists, SH_cls_Execute )
+							If bExists
+								Call SalMessageBox( 'Your selection is of a label which is
+										preprinted', 'Labels Use', MB_Ok )
+								Call SalWaitCursor( FALSE )
+								Return FALSE
+							Else
+								If sLabelId = 'BCODE' OR sLabelId = 'BCHEAD'
+									! Want to get the number as multiples of 2
+									If nHowMany > 2
+										Set nHowMany = nHowMany/2 + 0.5
+									Else
+										Set nHowMany = 1
+									Set nHowMany = SalNumberTruncate( nHowMany, 5, 0 )
+									Set sMany = SalFmtFormatNumber( nHowMany, '0000' )
+								Else
+									! Want to get the number as multiples of 3
+									Set nHowMany = nHowMany/4 + 0.9
+									Set nHowMany = SalNumberTruncate( nHowMany, 5, 0 )
+									Set sMany = SalFmtFormatNumber( nHowMany, '0000' )
+							!
+							If NOT haSqlHandles[ nOurHandleNo ].Execute( )
+								Call SalWaitCursor( FALSE )
+								Return FALSE
+							!
+							Set bFirstFieldFetched = FALSE
+							Call CheckLabelHasPicture( sLabelId, bExists, SH_cls_Execute )
+							If bExists
+								Set bFirstPicture = TRUE
+								While haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+									If sType = 'P'
+										Call ExtractPicName( sPicFile, sPicName )
+										If NOT PicIsLoaded( sPicFile, saLabelPics, nNumLabelPics )
+											If SalFileOpen( hRecFile, sPicFile, OF_Read | OF_Binary )
+												If bFirstPicture
+													Set sLabelFormat = sSTX || 'IBI' || sPicName || sCR
+													Set bFirstPicture = FALSE
+												Else
+													Set sLabelFormat = sCR || sSOH || 'D' || sCR || sSTX || 'IBI' || sPicName || sCR
+												Call SalFileWrite( hOutFile, sLabelFormat, SalStrLength( sLabelFormat ) )
+												Call SalFileSeek( hRecFile, 0, FILE_SeekEnd )
+												Set nFilesize = SalFileTell( hRecFile )
+												Call SalFileSeek( hRecFile, 0, FILE_SeekBegin )
+												Set lsImage = ''
+												Call SalFileRead( hRecFile, lsImage, nFilesize )
+												Call SalFileWrite( hOutFile, lsImage, nFilesize )
+												Call SalFileClose( hRecFile )
+												Set nNumLabelPics = nNumLabelPics + 1
+												Set saLabelPics[ nNumLabelPics ] = sPicFile
+								If haSqlHandles[ nOurHandleNo ].FetchRow( 0, nInd )
+									Set bFirstFieldFetched = TRUE
+							!
+							Call ExtractLabelDataFields( nCustNo, sCustName, sLabelId, nItemNo, nLocId, '', sFormat, 'EXTRACT_LABEL_DATA_FIELDS', SH_cls_Execute )
+							!
+							Set sHeadTemp = OurGetIniFileParameter( 'GENERAL', 'BarcodePrinterHeadTemp', '10' )
+							Set sLabelFormat = sCR || sSTX || 'L' || 
+									sCR || 'D11' || sCR || 'PK' || 
+									sCR || 'SM' || sCR || 'H' || sHeadTemp || 
+									sCR || 'z' || sCR || 'Q' || sMany || 
+									sCR 
+							Set nLength = SalStrLength( sLabelFormat )
+							Call SalFileWrite( hOutFile, sLabelFormat, nLength )
+							!
+							Set bOk = TRUE
+							While bOk 
+								If bFirstFieldFetched
+									Set bFirstFieldFetched = FALSE
+								Else
+									Set bOk = haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+								If bOk
+									If SalStrScan( sLabelId, 'LBL%' ) >= 0
+										Set sLabelFormat = SalNumberToStrX( SalStrToNumber( SalStrMidX( sFormatChar, 7, 4 ) ) + LABELSTARTOFFSET, 0 )
+										Call StringStartPad( sLabelFormat, '0', 4 )
+										Set sFormatChar = SalStrLeftX( sFormatChar, 7 ) || sLabelFormat || SalStrMidX( sFormatChar, 11, 4 )
+									!
+									Set sLabelFormat = sFormatChar
+									Call SalFileWrite( hOutFile, sLabelFormat, SalStrLength( sLabelFormat ) )
+									If sType = 'L'
+										Set sLabelFormat = SalStrLeftX( sLiteral, SalStrLength( sLiteral ) ) || sCR
+										Call SalFileWrite( hOutFile, sLabelFormat, SalStrLength( sLabelFormat ) )
+									Else If sType = 'B'
+										Set sItemNo = SalFmtFormatNumber( nItemNo, '00000' )
+										Set sLabelFormat = '9317036' || sItemNo || sCR
+										Call SalFileWrite( hOutFile, sLabelFormat, SalStrLength( sLabelFormat ) )
+									Else If sType = 'D'
+										If SalSendMsg( hWndTable, PAM_clsLABELS_GETFIELDDATA, nItemNo, SalHStringToNumber( sDataDesc ) )
+											Call PopString( sFormat, TRUE )
+										Else
+											Call ExtractLabelDataFields( nCustNo, sCustName, '', 0, 0, sDataDesc, sFormat, 'LOCAL_LOOKUP', SH_cls_Execute )
+										Call ReplaceAtCharToRegisteredChar( sFormat )
+										Set sLabelFormat = sFormat || sCR
+										Call SalFileWrite( hOutFile, sLabelFormat, SalStrLength( sLabelFormat ) )
+									Else If sType = 'P'
+										Call ExtractPicName( sPicFile, sPicName )
+										Set sLabelFormat = sPicName || sCR
+										Call SalFileWrite( hOutFile, sLabelFormat, SalStrLength( sLabelFormat ) )
+							!
+							Set sLabelFormat = 'E' || sCR
+							Call SalFileWrite( hOutFile, sLabelFormat, SalStrLength( sLabelFormat ) )
+							Call SalFileClose( hOutFile )
+							!
+							Call SalWaitCursor( FALSE )
+							Return TRUE
+						Case SH_cls_Disconnect
+							Call CheckLabelPrePrinted( '', bExists, SH_cls_Disconnect )
+							Call CheckLabelHasPicture( '', bExists, SH_cls_Disconnect )
+							Call ExtractLabelDataFields( 0, '', '', 0, 0, '', sFormat, '', SH_cls_Disconnect )
+							Call haSqlHandles[ nOurHandleNo ].Disconnect( )
+							Return TRUE
+			Function: ExtractLabelDataFields
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					String: sCustName
+					String: sLabelId
+					Number: nItemNo
+					Number: nLocId
+					String: sDataField
+					Receive String: sDataFieldValue
+					! sMethod = 'EXTRACT_LABEL_DATA_FIELDS' OR 'LOCAL_LOOKUP'
+					String: sMethod
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+					! bellow arrays are NULL terminated
+					String: saDataDesc[*]
+					String: saFieldValue[*]
+				Local variables
+					String: sSql
+					String: sBind
+					String: sInto
+					String: sName
+					Number: nOurHandleNo
+					!
+					Number: nInd
+					Number: nFieldCount
+					String: sGotDataDesc
+					String: sGotFieldValue
+					Boolean: bFound
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'LBLDATAFIELDS' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							If sMethod = 'EXTRACT_LABEL_DATA_FIELDS'
+								!
+								Set nFieldCount = 0
+								Set saDataDesc[ 0 ] = ''
+								Set saFieldValue[ 0 ] = ''
+								!
+								Set sSql = " SELECT DISTINCT 
+										  Field_Data_Desc 
+										FROM 
+										  Label_Fields 
+										WHERE 
+										  Label_Id = :1 AND Field_Type = 'D' "
+								Set sName = 'LBLDATAFIELDS'
+								Set sBind = ':sLabelId'
+								Set sInto = ':sGotDataDesc'
+								Call haSqlHandles[ nOurHandleNo ].Setup( sSql, sName, sBind, sInto )
+								Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+								!
+								If haSqlHandles[ nOurHandleNo ].Execute( )
+									While haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+										Call GetFieldValue( nCustNo, sCustName, nItemNo, nLocId, sGotDataDesc, sGotFieldValue, SH_cls_Execute )
+										Set saDataDesc[ nFieldCount ] = sGotDataDesc
+										Set saFieldValue[ nFieldCount ] = sGotFieldValue
+										Set nFieldCount = nFieldCount + 1
+										Set saDataDesc[ nFieldCount ] = ''
+										Set saFieldValue[ nFieldCount ] = ''
+									Return TRUE
+								Else
+									Return FALSE
+							Else
+								Set sDataFieldValue = ''
+								Set bFound = FALSE
+								Set nFieldCount = 0
+								While saDataDesc[ nFieldCount ] != '' AND NOT bFound
+									If saDataDesc[ nFieldCount ] = sDataField
+										Set sDataFieldValue = saFieldValue[ nFieldCount ]
+										Set bFound = TRUE
+									Else
+										Set nFieldCount = nFieldCount + 1
+								Return bFound
+						Case SH_cls_Disconnect
+							Call GetFieldValue( 0, '', 0, 0, '', sGotFieldValue, SH_cls_Disconnect )
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			! Function: OutputLabelFile
+				  Description: 
+				  Returns 
+					  Boolean: 
+				  Parameters 
+					  String: sLabelFile
+				  Static Variables 
+				  Local variables 
+					  File Handle: hOutFile
+					  Window Handle: hWndPrinterDC
+					  String: strBuffer
+					  Number: nLength
+					  Number: nReturn
+					  Number: nBytesRead
+					  Number: nTotalBytesRead
+					  Long String: sLabelFormat
+					  String: sLength
+					  Number: nFileSize
+				  Actions 
+					  Call SalWaitCursor( TRUE )
+					  If NOT SalFileOpen( hOutFile, sLabelFile, OF_Read | OF_Binary )
+						  Call SalWaitCursor( FALSE )
+						  Return FALSE
+					!
+					  Call SalFileSeek( hOutFile, 0, FILE_SeekEnd )
+					  Set nFileSize = SalFileTell( hOutFile )
+					  Call SalFileSeek( hOutFile, 0, FILE_SeekBegin )
+					!
+					! Direct printing to Barcode using a DC (device context)
+					! Refer to the Microsoft SDK manuals
+					!
+					! Set hWndPrinterDC = CreateDC( 'EPSON9', 'Epson DFX-5000 Barcode','LPT3',0 )
+					  If hWndPrinterDC = hWndNULL
+						  Call SalMessageBox('Create DC failed','Message',MB_Ok)
+						  Call SalWaitCursor( FALSE )
+						  Return FALSE
+					  Set strBuffer = sLabelFile
+					  Set nLength = SalStrLength(strBuffer)
+					! Set nReturn = Escape(hWndPrinterDC, 10, nLength+1, strBuffer,0)
+					!
+					  Set nLength = 100
+					! Set nLength = 4500
+					!
+					  Set nTotalBytesRead = 0
+					  While nTotalBytesRead < nFileSize
+						  Set nBytesRead = SalFileRead( hOutFile, sLabelFormat, nLength )
+						  Set nTotalBytesRead = nTotalBytesRead + nBytesRead
+						  Set sLength = '00'
+						  Call CStructPutWord( sLength, 0, nBytesRead )
+						  Set sLabelFormat = sLength || sLabelFormat
+						! Set nReturn = Escape(hWndPrinterDC, 19, nBytesRead, sLabelFormat,0)
+					!
+					  Call SalFileClose( hOutFile )
+					!
+					  Set nLength = SalStrLength(strBuffer)
+					! Set nReturn = Escape(hWndPrinterDC, 11, nLength, strBuffer,0)
+					! If NOT DeleteDC(hWndPrinterDC)
+						  Call SalMessageBox('Delete DC failed','Message',MB_Ok)
+						  Call SalWaitCursor( FALSE )
+						  Return FALSE
+					! Else
+						  Call SalWaitCursor( FALSE )
+						  Return TRUE
+			! Function: OutputLabelFile
+				  Description: 
+				  Returns 
+					  Boolean: 
+				  Parameters 
+					  String: sLabelFile
+				  Static Variables 
+				  Local variables 
+					  File Handle: hOutFile
+					  Window Handle: hWndPrinterDC
+					  String: strBuffer
+					  Number: nLength
+					  Number: nReturn
+					  Number: nBytesRead
+					  Number: nTotalBytesRead
+					  Long String: sLabelFormat
+					  String: sLength
+					  Number: nFileSize
+				  Actions 
+					  Call SalWaitCursor( TRUE )
+					  If NOT SalFileOpen( hOutFile, sLabelFile, OF_Read | OF_Binary )
+						  Call SalWaitCursor( FALSE )
+						  Return FALSE
+					!
+					  Call SalFileSeek( hOutFile, 0, FILE_SeekEnd )
+					  Set nFileSize = SalFileTell( hOutFile )
+					  Call SalFileSeek( hOutFile, 0, FILE_SeekBegin )
+					!
+					! Direct printing to Barcode using a DC (device context)
+					! Refer to the Microsoft SDK manuals
+					!
+					  Set hWndPrinterDC = CreateDCA( '', 'Epson DFX-5000 Barcode','',0 )
+					  If hWndPrinterDC = hWndNULL
+						  Call SalMessageBox('Create DC failed','Message',MB_Ok)
+						  Call SalWaitCursor( FALSE )
+						  Return FALSE
+					  Set strBuffer = sLabelFile
+					  Set nLength = SalStrLength(strBuffer)
+					  Set nReturn = Escape(hWndPrinterDC, 10, nLength+1, strBuffer,0)
+					!
+					  Set nLength = 100
+					! Set nLength = 4500
+					!
+					  Set nTotalBytesRead = 0
+					  While nTotalBytesRead < nFileSize
+						  Set nBytesRead = SalFileRead( hOutFile, sLabelFormat, nLength )
+						  Set nTotalBytesRead = nTotalBytesRead + nBytesRead
+						  Set sLength = '00'
+						  Call CStructPutWord( sLength, 0, nBytesRead )
+						  Set sLabelFormat = sLength || sLabelFormat
+						  Set nReturn = Escape(hWndPrinterDC, 19, nBytesRead, sLabelFormat,0)
+					!
+					  Call SalFileClose( hOutFile )
+					!
+					  Set nLength = SalStrLength(strBuffer)
+					  Set nReturn = Escape(hWndPrinterDC, 11, nLength, strBuffer,0)
+					  If NOT DeleteDC(hWndPrinterDC)
+						  Call SalMessageBox('Delete DC failed','Message',MB_Ok)
+						  Call SalWaitCursor( FALSE )
+						  Return FALSE
+					  Else 
+						  Call SalWaitCursor( FALSE )
+						  Return TRUE
+			! make new version of OutputLabelFile which uses k:\centura\reports\barcode.qrp with sInputLine as only RepVar
+					 and linked to a new printer Generic Text only Barcode with continuos paper no page breaks. 
+			! Function: OutputLabelFile
+				  Description: 
+				  Returns 
+				  Parameters 
+					  String: sLabelFile
+				  Static Variables 
+				  Local variables 
+				  Actions 
+					  Call SalWaitCursor( TRUE )
+					  Call SalCreateWindow( frmPrintBarcodeLabels, hWndForm, sLabelFile )
+					  Call SalWaitCursor( FALSE )
+			!
+			! Function: OutputLabelFile
+				  Description: 
+				  Returns 
+					  Boolean: 
+				  Parameters 
+					  String: sLabelFile
+				  Static Variables 
+				  Local variables 
+					  File Handle: hOutFile
+					  Window Handle: hWndPrinterDC
+					  Number: nLength
+					  Number: nBytesRead
+					  Number: nBytesWritten
+					  Number: nTotalBytesRead
+					  Long String: sLabelFormat
+					  Number: nFileSize
+				  Actions 
+					  Call SalWaitCursor( TRUE )
+					  If NOT SalFileOpen( hOutFile, sLabelFile, OF_Read | OF_Binary )
+						  Call SalWaitCursor( FALSE )
+						  Return FALSE
+					!
+					  Call SalFileSeek( hOutFile, 0, FILE_SeekEnd )
+					  Set nFileSize = SalFileTell( hOutFile )
+					  Call SalFileSeek( hOutFile, 0, FILE_SeekBegin )
+					!
+					! Direct printing to Barcode using a DC (device context)
+					! Refer to the Microsoft SDK manuals
+					!
+					  Set hWndPrinterDC = CreateFileA( '\\FLEMING-1\BARCODE', GENERIC_WRITE, 0, NUMBER_Null, OPEN_EXISTING, 0, NUMBER_Null )
+					  If hWndPrinterDC = hWndNULL
+						  Call SalMessageBox('Create DC failed','Message',MB_Ok)
+						  Call SalWaitCursor( FALSE )
+						  Return FALSE
+					!
+					  Set nLength = 100
+					! Set nLength = 4500
+					!
+					  Set nTotalBytesRead = 0
+					  While nTotalBytesRead < nFileSize
+						  Set nBytesRead = SalFileRead( hOutFile, sLabelFormat, nLength )
+						  Set nTotalBytesRead = nTotalBytesRead + nBytesRead
+						  Call WriteFile( hWndPrinterDC, sLabelFormat, nBytesRead, nBytesWritten, 0 )
+					!
+					  Call SalFileClose( hOutFile )
+					!
+					  If NOT CloseHandle( hWndPrinterDC )
+						  Call SalMessageBox('Delete DC failed','Message',MB_Ok)
+						  Call SalWaitCursor( FALSE )
+						  Return FALSE
+					  Else 
+						  Call SalWaitCursor( FALSE )
+						  Return TRUE
+			! Function: OutputLabelFile
+				  Description: 
+				  Returns 
+					  Boolean: 
+				  Parameters 
+					  String: sLabelFile
+				  Static Variables 
+				  Local variables 
+					  File Handle: hOutFile
+					  Window Handle: hWndPrinterDC
+					  String: sPrinterName
+					  Number: nLength
+					  Number: nBytesRead
+					  Number: nBytesWritten
+					  Number: nReturn
+					  Number: nTotalBytesRead
+					  Long String: sLabelFormat
+					  Number: nFileSize
+				  Actions 
+					  Call SalWaitCursor( TRUE )
+					  If NOT SalFileOpen( hOutFile, sLabelFile, OF_Read | OF_Binary )
+						  Call SalWaitCursor( FALSE )
+						  Return FALSE
+					!
+					  Call SalFileSeek( hOutFile, 0, FILE_SeekEnd )
+					  Set nFileSize = SalFileTell( hOutFile )
+					  Call SalFileSeek( hOutFile, 0, FILE_SeekBegin )
+					!
+					! Direct printing to Barcode using a DC (device context)
+					! Refer to the Microsoft SDK manuals
+					!
+					  Set sPrinterName = 'Epson DFX-5000 Barcode'
+					  If NOT OpenPrinterA( sPrinterName, hWndPrinterDC, 0 )
+						  Call SalMessageBox('Opening Printer failed.','Message',MB_Ok)
+						  Call SalWaitCursor( FALSE )
+						  Return FALSE
+					!
+					  Set nLength = 100
+					! Set nLength = 4500
+					!
+					  Set nTotalBytesRead = 0
+					  While nTotalBytesRead < nFileSize
+						  Set nBytesRead = SalFileRead( hOutFile, sLabelFormat, nLength )
+						  Set nTotalBytesRead = nTotalBytesRead + nBytesRead
+						  Set nReturn = WritePrinter( hWndPrinterDC, sLabelFormat, nBytesRead, nBytesWritten )
+					!
+					  Call SalFileClose( hOutFile )
+					!
+					  If NOT ClosePrinter( hWndPrinterDC )
+						  Call SalMessageBox('Closing Printer failed','Message',MB_Ok)
+						  Call SalWaitCursor( FALSE )
+						  Return FALSE
+					  Else 
+						  Call SalWaitCursor( FALSE )
+						  Return TRUE
+			Function: GetFieldValue
+				Description:
+				Returns
+					Boolean:
+				Parameters
+					Number: nCustNo
+					String: sCustName
+					Number: nItemNo
+					Number: nLocId
+					String: sDataDesc
+					Receive String: sFieldValue
+					Number: nActionType
+				Static Variables
+					! hcSqlHandle: fcOurHandle
+.winattr class :
+						Class: hcSqlHandle
+.end
+				Local variables
+					String: sSql
+					Number: nOurHandleNo
+					!
+					Number: nInd
+					String: sTable
+					Boolean: bNumber
+					Number: nOffSet
+					String: sGotFieldValue
+					Number: nGotFieldValue
+					String: sPrioSpacesString
+				Actions
+					Set nOurHandleNo = SqlHandlesGetReferenceNo( 'GetFieldValue' )
+					Select Case nActionType
+						Case SH_cls_Execute
+							Call SalStrLeft( sDataDesc, SalStrScan( sDataDesc, '.' ), sTable )
+							Set bNumber = FALSE
+							Set nOffSet = NUMBER_Null
+							If sTable = 'CULTIVAR'
+								If sDataDesc = 'CULTIVAR.CV_LABEL_LINE_1'
+									Set sSql = 'SELECT '||sDataDesc||', CV_LL1_OFFSET '||' 
+											FROM Stock_Item, Cultivar 
+											INTO :sGotFieldValue, :nOffSet
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo AND 
+											  Stock_Item.Cultivar_Id = Cultivar.Cult_Id'
+								Else If sDataDesc = 'CULTIVAR.CV_LABEL_LINE_2'
+									Set sSql = 'SELECT '||sDataDesc||', CV_LL2_OFFSET '||' 
+											FROM Stock_Item, Cultivar 
+											INTO :sGotFieldValue, :nOffSet
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo AND 
+											  Stock_Item.Cultivar_Id = Cultivar.Cult_Id'
+								Else If sDataDesc = 'CULTIVAR.CV_LABEL_LINE_3'
+									Set sSql = 'SELECT '||sDataDesc||', CV_LL3_OFFSET '||' 
+											FROM Stock_Item, Cultivar 
+											INTO :sGotFieldValue, :nOffSet
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo AND 
+											  Stock_Item.Cultivar_Id = Cultivar.Cult_Id'
+								Else If sDataDesc = 'CULTIVAR.CV_LABEL_LINE_4'
+									Set sSql = 'SELECT '||sDataDesc||', CV_LL4_OFFSET '||' 
+											FROM Stock_Item, Cultivar 
+											INTO :sGotFieldValue, :nOffSet
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo AND 
+											  Stock_Item.Cultivar_Id = Cultivar.Cult_Id'
+								Else If sDataDesc = 'CULTIVAR.CV_LABEL_LINE_5'
+									Set sSql = 'SELECT '||sDataDesc||', CV_LL5_OFFSET '||' 
+											FROM Stock_Item, Cultivar 
+											INTO :sGotFieldValue, :nOffSet
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo AND 
+											  Stock_Item.Cultivar_Id = Cultivar.Cult_Id'
+								Else If sDataDesc = 'CULTIVAR.VARIETY'
+									Set sSql = 'SELECT Variety 
+											FROM Stock_Item 
+											INTO :sGotFieldValue 
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo '
+								Else If sDataDesc = 'CULTIVAR.CULT_DESC'
+									Set sSql = 'SELECT Cult_Desc 
+											FROM Stock_Item 
+											INTO :sGotFieldValue 
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo '
+								Else
+									Set sSql = 'SELECT '||sDataDesc||
+											' FROM Stock_Item, Cultivar 
+											INTO :sGotFieldValue 
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo AND 
+											  Stock_Item.Cultivar_Id = Cultivar.Cult_Id'
+							Else If sTable = 'ROOTSTOCK'
+								If sDataDesc = 'ROOTSTOCK.RT_LABEL_LINE_1'
+									Set sSql = 'SELECT '||sDataDesc||', RT_LL1_OFFSET '||' 
+											FROM Stock_Item, Rootstock 
+											INTO :sGotFieldValue, :nOffSet
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo AND 
+											  Stock_Item.Rootstock_Id = Rootstock.Root_Id'
+								Else If sDataDesc = 'ROOTSTOCK.RT_LABEL_LINE_2'
+									Set sSql = 'SELECT '||sDataDesc||', RT_LL2_OFFSET '||' 
+											FROM Stock_Item, Rootstock 
+											INTO :sGotFieldValue, :nOffSet
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo AND 
+											  Stock_Item.Rootstock_Id = Rootstock.Root_Id'
+								Else If sDataDesc = 'ROOTSTOCK.RT_LABEL_LINE_3'
+									Set sSql = 'SELECT '||sDataDesc||', RT_LL3_OFFSET '||' 
+											FROM Stock_Item, Rootstock 
+											INTO :sGotFieldValue, :nOffSet
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo AND 
+											  Stock_Item.Rootstock_Id = Rootstock.Root_Id'
+								Else If sDataDesc = 'ROOTSTOCK.RT_LABEL_LINE_4'
+									Set sSql = 'SELECT '||sDataDesc||', RT_LL4_OFFSET '||' 
+											FROM Stock_Item, Rootstock 
+											INTO :sGotFieldValue, :nOffSet
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo AND 
+											  Stock_Item.Rootstock_Id = Rootstock.Root_Id'
+								Else If sDataDesc = 'ROOTSTOCK.RT_LABEL_LINE_5'
+									Set sSql = 'SELECT '||sDataDesc||', RT_LL5_OFFSET '||' 
+											FROM Stock_Item, Rootstock 
+											INTO :sGotFieldValue, :nOffSet
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo AND 
+											  Stock_Item.Rootstock_Id = Rootstock.Root_Id'
+								Else If sDataDesc = 'ROOTSTOCK.ROOT_DESC'
+									Set sSql = 'SELECT Root_Desc
+											FROM Stock_Item 
+											INTO :sGotFieldValue 
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo'
+								Else
+									Set sSql = 'SELECT '||sDataDesc||
+											' FROM Stock_Item, Rootstock 
+											INTO :sGotFieldValue 
+											WHERE 
+											  Stock_Item.Item_No = :nItemNo AND 
+											  Stock_Item.Rootstock_Id = Rootstock.Root_Id'
+							Else If sTable = 'FARM_MASTER'
+								Set sSql = 'SELECT '||sDataDesc||
+										' FROM Farm_Master, Location 
+										INTO :sGotFieldValue
+										WHERE 
+										  Farm_Master.Farm_Name = Location.Farm_Name AND Location.Location_Id = :nLocId'
+							Else If sTable = 'LOCATION'
+								If sDataDesc = 'LOCATION.ROW#' OR sDataDesc = 'LOCATION.SEQ#'
+									Set bNumber = TRUE
+									Set sSql = 'SELECT '||sDataDesc||
+											' FROM Location 
+											INTO :nGotFieldValue
+											WHERE 
+											  Location_Id = :nLocId'
+								Else
+									Set sSql = 'SELECT '||sDataDesc||
+											' FROM Location 
+											INTO :sGotFieldValue
+											WHERE 
+											  Location_Id = :nLocId'
+							Else If sTable = 'STOCK_ITEM'
+								If sDataDesc = 'STOCK_ITEM.ITEM_NO'
+									Set sSql = 'SELECT '||sDataDesc||
+											' FROM Stock_Item 
+											INTO :nGotFieldValue
+											WHERE Item_No = :nItemNo'
+									Set nGotFieldValue = nItemNo
+									Set bNumber = TRUE
+								Else
+									Set sSql = 'SELECT '||sDataDesc||
+											' FROM Stock_Item 
+											INTO :sGotFieldValue
+											WHERE Item_No = :nItemNo'
+							Else If sTable = 'TREE_TYPE'
+								Set sSql = 'SELECT '||sDataDesc||
+										' FROM Stock_Item, Tree_Type 
+										INTO :sGotFieldValue
+										WHERE Stock_Item.Item_No = :nItemNo AND 
+										Stock_Item.Tree_Type = Tree_Type.Tree_Type '
+							Else If sTable = 'CUSTOMER_MASTER'
+								If sDataDesc = 'CUSTOMER_MASTER.CUST_NO'
+									Set sFieldValue = SalNumberToStrX( nCustNo, 0 )
+									Return TRUE
+								Else If sDataDesc = 'CUSTOMER_MASTER.CUST_NAME'
+									Set sFieldValue = sCustName
+									Return TRUE
+								Else
+									Set sSql = 'SELECT '||sDataDesc||
+											' FROM Customer_Master 
+											INTO :sGotFieldValue
+											WHERE Cust_No = :nCustNo '
+							Else
+								Call SalMessageBox( 'Undefined lookup table for datafield. Error retrieving Data', 'Labels', MB_Ok )
+								Return FALSE
+							!
+							Call haSqlHandles[ nOurHandleNo ].RePrepare( )
+							Call haSqlHandles[ nOurHandleNo ].PrepareSetup( sSql )
+							Call SqlVarSetup( haSqlHandles[ nOurHandleNo ].hSqlHandle )
+							!
+							Set sFieldValue = ''
+							Set sGotFieldValue = ''
+							!
+							If haSqlHandles[ nOurHandleNo ].PrepareAndExecute( )
+								Call haSqlHandles[ nOurHandleNo ].FetchNext( nInd )
+								If nOffSet > 0
+									Set sPrioSpacesString = ''
+									Call SalStrRepeat( ' ', nOffSet, sPrioSpacesString )
+									Set sGotFieldValue = sPrioSpacesString || sGotFieldValue
+								If bNumber
+									Set sGotFieldValue = SalNumberToStrX( nGotFieldValue, 0 )
+								Set sFieldValue = sGotFieldValue
+								Return TRUE
+							Else
+								Return FALSE
+						Case SH_cls_Disconnect
+							Return haSqlHandles[ nOurHandleNo ].Disconnect( )
+			Function: ReplaceAtCharToRegisteredChar
+				Description:
+				Returns
+				Parameters
+					Receive String: sFormatString
+				Static Variables
+				Local variables
+					String: sRegisteredMark
+				Actions
+					Set sRegisteredMark = ' '
+					! Call CStructPutByte( sRegisteredMark, 0, 169 )
+					Set sRegisteredMark = SalNumberToChar( 169 )
+					!
+					Call StringReplace( sFormatString, '@', sRegisteredMark )
+			Function: PicIsLoaded
+				Description: Checks if the picture file has been loaded before into the saLabelPics array.
+				Returns
+					Boolean:
+				Parameters
+					String: sPicFileName
+					String: saLabelPics[*]
+					Number: nNumLabelPics
+				Static Variables
+				Local variables
+					Number: nCount
+					Boolean: bFound
+				Actions
+					If nNumLabelPics > 0
+						Set nCount = 1
+						While ( nCount <= nNumLabelPics AND NOT bFound ) 
+							If saLabelPics[ nCount ] = sPicFileName
+								Set bFound = TRUE
+							Else
+								Set nCount = nCount + 1
+						If bFound
+							Return TRUE
+						Else
+							Return FALSE
+					Else
+						Return FALSE
+			Function: ExtractPicName
+				Description: ! The next blocked code extracts the flem3 part of a filename f:\apps\ezilabl\flem3.img
+						NOTE must specify full drive:\\path\\filename.extension eg f:\apps\ezilabl\flem3.img
+						NOTE This will extract the name regardless of the file extension'
+				Returns
+					Boolean:
+				Parameters
+					String: sPicFile
+					Receive String: sPicName
+				Static Variables
+				Local variables
+					Number: nDotPos
+					Number: nBackSlashPos
+				Actions
+					Set nDotPos = FindCharInFileNameFromEnd( sPicFile, '.' )
+					Set nBackSlashPos = FindCharInFileNameFromEnd( sPicFile, '\\' )
+					If nDotPos >= 0 AND nBackSlashPos >= 0
+						Set sPicName = SalStrMidX( sPicFile, nBackSlashPos+1, nDotPos - nBackSlashPos - 1 )
+						Return TRUE
+					Else
+						Set sPicName = ''
+						Return FALSE
+			Function: FindCharInFileNameFromEnd
+				Description: Returns a positive integer representing the seach character and -1 for not found
+				Returns
+					Number:
+				Parameters
+					String: sPicFile
+					String: sFindChar
+				Static Variables
+				Local variables
+					Number: nPos
+					Boolean: bFound
+				Actions
+					Set bFound = FALSE
+					Set nPos = SalStrLength( sPicFile ) - 1
+					While nPos >= 0 AND NOT bFound
+						If SalStrMidX( sPicFile, nPos, 1 ) = sFindChar
+							Set bFound = TRUE
+						Else
+							Set nPos = nPos - 1
+					If bFound
+						Return nPos
+					Else
+						Return -1
+			!
+		Class Definitions
+.data RESOURCE 0 0 1 2823378531
+0000: DE090000DB040000 0000000000000000 0200001500FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F15003C00 001463006C737062
+0040: 5072696E00744974 656D4C616200656C 7352000000037800 000002F004000000
+0060: FF9F0400C000010D 000000FF7F114000 000003040000FFFF 0101801E00000001
+0080: 4000000013636C44 0069616C6F674368 69006C645461626C 6552A20000030000
+00A0: 67010D00FFFFC90D 000001FD00FF071A 00000002F700FF1F 0180340000000002
+00C0: 0000001417705365 6C0065637446726F 6D540E616C000000 F60400EC010D00FF
+00E0: BF0DB9000100FFFF E61A0001FE00FF83 2700000001FB00FF 0F01800400190003
+0100: 000D63926C536565 6340496E746F1E00 00F4010000EC0304 00FF3F0180602200
+0120: 00000400081D636C 54626C4DE0616B65 5365016564526F77 4B65007941727261
+0140: 797400D800000400 3302040001FA0000 078001000000FFC6 0400010DFE00FF9B
+0160: 110001FB00FF4F1E 0000EE0200FF3F01 8000B70000000500 0000D80F636C6100
+0180: 6547656E6572616C 683602001500CF01 0DFE00FF930D0000 01FB00FF6F1A00EE
+01A0: 0100FFBF27B90001 00FFFFE434000002 FE00FF8338000000 02FB00FF0F3C0000
+01C0: 00EE0200FF3F4000 B800000200FFFFE0 4400000002FE00FF 834800000002FB00
+01E0: FF0F4C000000EE02 00FF3F5000380000 020001FA00002780 010000FFC0540000
+0200: 00010DE800010000 9F8001FC00000358 000000010DFB00FF 0F65000000EE0100
+0220: FF3F7200B8000001 00FFFFE07F000000 01FE00FF838C0000 0001FB00FF0F9900
+0240: 0000EE0100FF3FA6 00B800000100FFFF E0B300000003FE00 FF4301800D000080
+0260: 060000000C636CF2 704765891E000001 009E00010DFD00FF C701800D00000700
+0280: 000009636C074578 69741EA200000100 0067010D00FFFF31 0180040008700000
+02A0: 000C500069634578 70616E64441E0000 010000EF02FE00FF 6301800400800900
+02C0: 000012636C07546F 67676C0065427574 746F6E1EA2000001 0000770200FFFF31
+02E0: 018004000A100000 000C665461074361 636865441E000001 0000EF03FE00FF43
+0300: 0180150000000B00 00000B6366430E61 506F6F6C405A0000 000300000F071900
+0320: 0080000101008204 009E008001FC0000 1B04000304FB00FF 6F0800EC010D00FF
+0340: 3F01800604000C00 0000080C636C6466 4765FFE800010000 DD0300FF7F01C080
+0360: 2F0000000D14000B 6C466F72006D4261 7365860000EC0005 00D9010D00FF7F0D
+0380: 73000200FFFF0D11 00040D00FD00FF37 1E0003F700FF9F22 00DC000100FF7F01
+03A0: 0C800D000E0000F0 0017636C39507242 610169635265706F 728C741E0001009E
+03C0: 00010DFD00FFC701 800D00000F000000 0B68634053716C48 616E6C8C651E0001
+03E0: 009E00010DFD00FF 0701802E00000000 1000000011636C05 7053746172740050
+0400: 726F6772616DBAA0 0000000700007702 00FFFFC904000002 FD00FF37080002F7
+0420: 00FF9F0C00D80001 0D00FF7F19720000 0300FFFFC11D0000 0002FD00FF072100
+0440: 000001F700FF1F01 802F230011000010 74636C446F794765 6C648600000500CF
+0460: 010DFE00FF9B0D00 02FB00FF6F1100EC 040D00FFBF1EB900 0300FFFFE6220001
+0480: FE00FF6301800D00 C012000000116300 5370696E53656173 006F6E596561721E
+04A0: 00D100010000B301 0D00FFFF1801800D 0013003000000C63 63627E471EA30001
+04C0: 000067010D00FFFF 3101800400147000 00001054046F6F54 69705769406E646F
+04E0: 771E0000F4010000 EE0300FF3F
+.enddata
+			Pushbutton Class: clspbPrintItemLabels
+				Title: Labels
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name: C:\CENTURA\ICONS\METOLBL.ICO
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clspbActivateWindow
+				Class Variables
+					String: sTmp
+					Number: nTmp
+					Window Handle: hWndTmp
+				Instance Variables
+					! PRIVATE
+					Number: nYear
+					Number: nItemNo
+					String: sTreeTypeDesc
+					String: sCultDesc
+					String: sRootDesc
+				Functions
+					Function: SetPrintLabelFields
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: nNewItemNo
+							String: sNewTreeTypeDesc
+							String: sNewCultDesc
+							String: sNewRootDesc
+						Static Variables
+						Local variables
+						Actions
+							Set nItemNo = nNewItemNo
+							Set sTreeTypeDesc = sNewTreeTypeDesc
+							Set sCultDesc = sNewCultDesc
+							Set sRootDesc = sNewRootDesc
+							Return TRUE
+				Message Actions
+					On SAM_Create
+						Call SalSendClassMessage( SAM_Create, wParam, lParam )
+						Set clspbPrintItemLabels.nActivateWindowType = ACTIVATE_DialogModal
+						Set clspbPrintItemLabels.sActivateDialogName = 'dlgPrintItemLabels'
+					On PAM_clsACTIVATE_PUSHFIELDS
+						Call SalSendMsg( hWndItem, PAM_cls_SETFIELDS, 0, 0 )
+						Call PushWndHdl( hWndItem )
+						Call PushNumber( nItemNo )
+						Call PushString( sTreeTypeDesc )
+						Call PushString( sCultDesc )
+						Call PushString( sRootDesc )
+						Return TRUE
+					On PAM_clsACTIVATE_POPFIELDS
+						Call PopString( sTmp, TRUE )
+						Call PopString( sTmp, TRUE )
+						Call PopString( sTmp, TRUE )
+						Call PopNumber( nTmp, TRUE )
+						Call PopWndHdl( hWndTmp, TRUE )
+						Return TRUE
+			!
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+	! Dialog Box: dlgLbl
+.winattr
+		Class:
+		Property Template:
+		Class DLL Name:
+		Title: Stock Items Labels
+		Accesories Enabled? No
+		Visible? Yes
+		Display Settings
+			Display Style? Default
+			Visible at Design time? No
+			Type of Dialog: Modal
+			Window Location and Size
+				Left:   1.288"
+				Top:    1.969"
+				Width:  6.7"
+				Width Editable? Yes
+				Height: 1.604"
+				Height Editable? Yes
+			Absolute Screen Location? Yes
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Light Green
+.end
+		  Description: 
+		  Tool Bar 
+			  Contents 
+		  Contents 
+			  Data Field: dfItemNo
+				  Message Actions 
+			  Child Table: tblLbl
+				  Contents 
+					  Column: colWhere
+						  List Values 
+						  Message Actions 
+							  On PAM_WHEREPOPULATE
+								  Set sBuildWhere = ' WHERE STOCK_LABELS.STOCK_ITEM_NO = :dlgLbl.dfItemNo
+										AND STOCK_LABELS.LABEL_ID = LABELS.LABEL_ID' 
+					  Column: colMany
+						  List Values 
+						  Message Actions 
+					  Column: colLabId
+						  List Values 
+						  Message Actions 
+							  On PAM_SQL
+								  Call BuildSQL(  wParam, hWndItem, 'STOCK_LABELS.LABEL_ID' )
+					  Column: colLabDesc
+						  List Values 
+						  Message Actions 
+							  On PAM_SQL
+								  Call BuildSQL(  wParam, hWndItem, 'LABELS.LABEL_DESC' )
+					  Column: colUse
+						  List Values 
+						  Message Actions 
+							  On PAM_SQL
+								  Call BuildSQL(  wParam, hWndItem, 'STOCK_LABELS.STOCK_LABEL_USE' )
+					  Column: colRowId
+						  List Values 
+						  Message Actions 
+							  On PAM_SQL
+								  Call BuildSQL( wParam, hWndItem, 'STOCK_LABELS.ROWID' )
+				  Functions 
+				  Window Variables 
+					  Sql Handle: hLocalSqlPopTbl
+					  Boolean: bLocalSqlPopTbl
+					  String: sSQLTABLENAME
+					  String: sORDERBY
+					  String: sCurrentBuildWhere
+				  Message Actions 
+					  On PAM_POPULATE
+						  Call TablePopulate( hWndForm, hLocalSqlPopTbl, colWhere, nSELECT, sSQLTABLENAME, sORDERBY, sCurrentBuildWhere, FALSE, TBL_FillNormal, PAM_SQL )
+					  On PAM_REPOPULATE
+						  Call TableRePopulate( hWndForm, hLocalSqlPopTbl, nSELECT, sSQLTABLENAME, sCurrentBuildWhere, FALSE, TBL_FillNormal, PAM_SQL )
+					  On SAM_Create
+						  Set bLocalSqlPopTbl = SqlConnect( hLocalSqlPopTbl ) 
+						  If bLocalSqlPopTbl
+							  Call SqlSetLockTimeout( hLocalSqlPopTbl, SQLTIMEOUT )
+							  Call SqlSetParameter( hLocalSqlPopTbl, DBP_PRESERVE, TRUE, ''  )
+						  Else 
+							  Call SalMessageBox( 'Connection in Database Error, could not obtain handle!', 'Error', MB_Ok )
+							  Return FALSE
+						  Set sSQLTABLENAME = ' STOCK_LABELS, LABELS '
+						  Set sORDERBY = ''
+					  On SAM_Destroy
+						  If bLocalSqlPopTbl
+							  Call SqlDisconnect( hLocalSqlPopTbl )
+			  Pushbutton: pbPrint
+				  Message Actions 
+					  On SAM_Click
+						  If NOT SalTblAnyRows( tblLbl, ROW_Edited, 0 )
+							  Call SalMessageBox( 'How many would you like?', 'Error', MB_Ok )
+						  Else 
+							! Call PrintLabels( dfItemNo, dlgLbl.tblLbl.colLabId, dlgLbl.tblLbl.colMany, 0, hWndNULL )
+							  Call NewPrintLabels( dfItemNo, dlgLbl.tblLbl.colLabId, dlgLbl.tblLbl.colMany, 0, hWndNULL, nExecute )
+							  Call SalEndDialog( hWndForm, 0 )
+			  Pushbutton: pbCancel
+				  Message Actions 
+					  On SAM_Click
+						  Call SalWaitCursor( TRUE )
+						  Call SalEndDialog( hWndForm, 0 )
+			  Pushbutton: pbHelp
+				  Message Actions 
+					  On SAM_Click
+						  Call ActivateHelp( sHelpFileName )
+			  Frame 
+		  Functions 
+		  Window Parameters 
+		  Window Variables 
+			  String: sHelpFileName
+		  Message Actions 
+			  On SAM_Create
+				  Set sHelpFileName = 'g:\\apps\\gupta\\help\\lbl.hlp'
+				  Call SalPostMsg(  hWndForm, PAM_CREATECOMPLETE, 0, 0 ) 
+			  On PAM_CREATECOMPLETE
+				  Call PopNumber( dfItemNo, TRUE )
+				  Call SalSendMsg( tblLbl, PAM_POPULATE, 0, 0 ) 
+			  On SAM_Destroy
+				  Call SalWaitCursor( FALSE )
+			  On SAM_Close
+				  Call SalWaitCursor( TRUE )
+	! clsFormPrintReport: frmPrintBarcodeLabels
+.winattr class Form Window:
+		Class: clsFormPrintReport
+		Property Template:
+		Class DLL Name:
+		Title: Print Barcode Labels
+		Icon File:
+		Accesories Enabled? Yes
+		Visible? Yes
+		Display Settings
+			Display Style? Default
+			Visible at Design time? Yes
+			Automatically Created at Runtime? No
+			Initial State: Minimized
+			Maximizable? Yes
+			Minimizable? Yes
+			System Menu? Yes
+			Resizable? Yes
+			Window Location and Size
+				Left:   Default
+				Top:    Default
+				Width:  9.988"
+				Width Editable? Yes
+				Height: 5.948"
+				Height Editable? Yes
+			Form Size
+				Width:  Default
+				Height: Default
+				Number of Pages: Dynamic
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Default
+.end
+		  Description: 
+		  Named Menus 
+		  Menu 
+		  Tool Bar 
+			  Contents 
+		  Contents 
+		  Functions 
+		  Window Parameters 
+			  String: sLabelFile
+		  Window Variables 
+			  File Handle: hOutFile
+			  String: sInputLine
+			  Number: nLength
+			  Number: nFileSize
+			  Number: nTotalBytesRead
+			  Number: nBytesRead
+		  Message Actions 
+			  On PAM_cls_SETINSTANCEVARS
+				  Set sReportFileNameNoPath = 'barcode.qrp'
+				  Set sReportBind = ':frmPrintBarcodeLabels.sInputLine'
+				  Set sReportInto = 'sInputLine'
+			  On SAM_ReportStart
+				  Return SalFileOpen( hOutFile, sLabelFile, OF_Read | OF_Binary )
+			  On SAM_ReportFetchInit
+				  Call SalFileSeek( hOutFile, 0, FILE_SeekEnd )
+				  Set nFileSize = SalFileTell( hOutFile )
+				  Call SalFileSeek( hOutFile, 0, FILE_SeekBegin )
+				!
+				  Set nLength = 100
+				  Set nTotalBytesRead = 0
+				  Return TRUE
+			  On SAM_ReportFetchNext
+				  If nTotalBytesRead < nFileSize
+					  Set nBytesRead = SalFileRead( hOutFile, sInputLine, nLength )
+					  Set nTotalBytesRead = nTotalBytesRead + nBytesRead
+					  Return TRUE
+				  Else 
+					  Return FALSE
+			  On SAM_ReportFinish
+				  Call SalFileClose( hOutFile )
+				  Return SalSendClassMessage( SAM_ReportFinish, wParam, lParam )
+	Dialog Box: dlgPrintItemLabels
+		Class: clsDialogChildTable
+		Property Template:
+		Class DLL Name:
+		Title: Stock Item Labels
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Type of Dialog: Modal
+			Window Location and Size
+				Left:   0.0"
+				Top:    1.969"
+				Width:  9.988"
+				Width Editable? Class Default
+				Height: 3.51"
+				Height Editable? Class Default
+			Absolute Screen Location? Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+				Pushbutton: pbClearRows
+					Class Child Ref Key: 5
+					Class ChildKey: 0
+					Class: clsDialogChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbAddRows
+					Class Child Ref Key: 6
+					Class ChildKey: 0
+					Class: clsDialogChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbSaveRows
+					Class Child Ref Key: 7
+					Class ChildKey: 0
+					Class: clsDialogChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrint
+					Class Child Ref Key: 0
+					Class ChildKey: 0
+					Class: clspbGeneral
+					Property Template:
+					Class DLL Name:
+					Title: Print
+					Window Location and Size
+						Left:   4.513"
+						Top:    0.0"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name: C:\CENTURA\ICONS\METOLBL.ICO
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+						On PAM_clsPB_CLICK
+							Set bPrinted = FALSE
+							Call TableLoop( tblLabels, tblLabels, PAM_clsLABELS_PRINTLABEL, 0, 0, 0, 'Printing Labels', TBL_cls_LowToHi )
+							If NOT bPrinted
+								Call SalMessageBox( 'Type the quantity you require next to the label you require.', 'Note', MB_Ok )
+				Pushbutton: pbQuery
+					Class Child Ref Key: 8
+					Class ChildKey: 0
+					Class: clsDialogChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   3.9"
+						Top:    0.0"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbDeleteRows
+					Class Child Ref Key: 9
+					Class ChildKey: 0
+					Class: clsDialogChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbRePopulate
+					Class Child Ref Key: 11
+					Class ChildKey: 0
+					Class: clsDialogChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbTools
+					Class Child Ref Key: 17
+					Class ChildKey: 0
+					Class: clsDialogChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbHelp
+					Class Child Ref Key: 24
+					Class ChildKey: 0
+					Class: clsDialogChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 25
+					Class ChildKey: 0
+					Class: clsDialogChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   8.663"
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbExit
+					Class Child Ref Key: 26
+					Class ChildKey: 0
+					Class: clsDialogChildTable
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   9.263"
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			Background Text: Tree Type Desc.
+				Resource Id: 39728
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   2.075"
+					Top:    0.042"
+					Width:  1.375"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text: Cultivar Description
+				Resource Id: 39729
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   1.775"
+					Top:    0.292"
+					Width:  1.675"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Background Text: Rootstock Description
+				Resource Id: 39730
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   1.613"
+					Top:    0.542"
+					Width:  1.838"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Data Field: dfTreeTypeDesc
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   3.488"
+						Top:    0.0"
+						Width:  2.313"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfCultDesc
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   3.488"
+						Top:    0.25"
+						Width:  4.938"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfRootDesc
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsdfGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? No
+				Display Settings
+					Window Location and Size
+						Left:   3.488"
+						Top:    0.5"
+						Width:  4.938"
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Child Table: tblLabels
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsTableGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left:   0.025"
+						Top:    0.802"
+						Width:  9.813"
+						Width Editable? Class Default
+						Height: 1.625"
+						Height Editable? Class Default
+					Visible? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					View: Class Default
+					Allow Row Sizing? Class Default
+					Lines Per Row: Class Default
+				Memory Settings
+					Maximum Rows in Memory: Class Default
+					Discardable? Class Default
+				Contents
+					Column: colLabelId
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Label Id
+						Visible? Class Default
+						Editable? No
+						Maximum Data Length: Class Default
+						Data Type: String
+						Justify: Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colLabelDesc
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Label Description
+						Visible? Class Default
+						Editable? No
+						Maximum Data Length: Class Default
+						Data Type: String
+						Justify: Class Default
+						Width:  5.713"
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colLabelUse
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Label Use
+						Visible? Class Default
+						Editable? No
+						Maximum Data Length: Class Default
+						Data Type: String
+						Justify: Center
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colQuantity
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Quantity
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Number
+						Justify: Right
+						Width:  Class Default
+						Width Editable? Class Default
+						Format: #0
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+							! On SAM_Validate
+								  Call SalTblSetRowFlags( hWndForm, lParam, ROW_Edited, FALSE )
+								  Return VALIDATE_OkClearFlag
+							On SAM_AnyEdit
+								Call SalTblSetRowFlags( hWndForm, lParam, ROW_Edited, FALSE )
+				Functions
+				Window Variables
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set sSQLPopHandle = " SELECT  
+								  Stock_Labels.Label_Id, 
+								  Labels.Label_Desc, 
+								  Stock_Labels.Stock_Label_Use 
+								FROM   
+								  Stock_Labels, Labels   
+								WHERE 
+								  Stock_Labels.Stock_Item_No = :1 AND 
+								  Stock_Labels.Label_Id = Labels.Label_Id "
+						Set sNAMEPopHandle = 'POPPRSTCKLBLS'
+						Set sBINDPopHandle = ':hWndParent.nItemNo'
+						Set sINTOPopHandle = ':hWndForm.colLabelId, :hWndForm.colLabelDesc, :hWndForm.colLabelUse'
+						!
+						Set sSQLRefreshHandle = " SELECT  
+								  Stock_Labels.Label_Id, 
+								  Labels.Label_Desc, 
+								  Stock_Labels.Stock_Label_Use 
+								FROM   
+								  Stock_Labels, Labels   
+								WHERE 
+								  Stock_Labels.Stock_Item_No = :1 AND 
+								  Stock_Labels.Label_Id = :2 AND 
+								  Stock_Labels.Label_Id = Labels.Label_Id "
+						Set sNAMERefreshHandle = 'REFPRSTCKLBLS'
+						Set sBINDRefreshHandle = ':hWndParent.nItemNo, :hWndForm.colLabelId'
+						Set sINTORefreshHandle = ':hWndForm.colLabelId, :hWndForm.colLabelDesc, :hWndForm.colLabelUse'
+						!
+						Set sSQLInsertHandle = ''
+						Set sNAMEInsertHandle = ''
+						Set sBINDInsertHandle = ''
+						Set sINTOInsertHandle = ''
+						!
+						Set sSQLUpdateHandle = ''
+						Set sNAMEUpdateHandle = ''
+						Set sBINDUpdateHandle = ''
+						Set sINTOUpdateHandle = ''
+						!
+						Set sSQLDeleteHandle = ''
+						Set sNAMEDeleteHandle = ''
+						Set sBINDDeleteHandle = ''
+						Set sINTODeleteHandle = ''
+						!
+						Set bAddAllowed = FALSE
+						Set bSaveAllowed = FALSE
+						Set bDeleteAllowed = FALSE
+						Set bUnDeleteAllowed = FALSE
+						Set bRepopulateAllowed = TRUE
+						Set bClearSelectAllowed = TRUE
+						Set bQueryAllowed = FALSE
+						Set bReportAllowed = FALSE
+						Set bOrderAllowed = FALSE
+						!
+						Set bSelectFirstRow = FALSE
+					On PAM_clsLABELS_PRINTLABEL
+						If colQuantity > 0
+							Call PrintLabels( hWndParent.nItemNo, colLabelId, colQuantity, NUMBER_Null, hWndNULL, SH_cls_Execute )
+							Set hWndParent.bPrinted = TRUE
+						Return TRUE
+					On SAM_Destroy
+						Call PrintLabels( 0, '', 0, 0, hWndNULL, SH_cls_Disconnect )
+						Return SalSendClassMessage( SAM_Destroy, wParam, lParam )
+			Data Field: dfUser
+				Class Child Ref Key: 21
+				Class ChildKey: 0
+				Class: clsDialogChildTable
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 22
+				Class ChildKey: 0
+				Class: clsDialogChildTable
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+			Background Text:
+				Resource Id: 39731
+				Class Child Ref Key: 23
+				Class ChildKey: 0
+				Class: clsDialogChildTable
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Data Field: dfDatabase
+				Class Child Ref Key: 20
+				Class ChildKey: 0
+				Class: clsDialogChildTable
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+		Functions
+		Window Parameters
+		Window Variables
+			Number: nItemNo
+			Boolean: bPrinted
+		Message Actions
+			On PAM_cls_SETINSTANCEVARS
+				Set hWndChildTable = tblLabels
+			On PAM_clsDLG_POPFIELDS
+				Call PopString( dfRootDesc, TRUE )
+				Call PopString( dfCultDesc, TRUE )
+				Call PopString( dfTreeTypeDesc, TRUE )
+				Call PopNumber( nItemNo, TRUE )
+				Call PopWndHdl( hWndActivateButton, TRUE )
+				Return TRUE
+	! Our Dialog Box: dlgPrintLabelsDetails
+		  Description: 
+		  Tool Bar 
+			  Contents 
+		  Contents 
+			  Background Text: Season
+			  Custom Control: cSeasonYear
+				  Message Actions 
+					  On PAM_SETINSTANCEVARS
+						  Set cSeasonYear.bEditable = TRUE
+			  Radio Button: rbFieldCount
+				  Message Actions 
+			  Radio Button: rbBarCode
+				  Message Actions 
+			  Radio Button: rbHeelGround
+				  Message Actions 
+					  On SAM_Create
+						  Set rbHeelGround = TRUE
+			  Pushbutton: pbOk
+				  Message Actions 
+					  On PAM_CLICK
+						  If rbFieldCount
+							  Set sLabelUse = 'FC'
+						  Else If rbBarCode
+							  Set sLabelUse = 'BC'
+						  Else 
+							  Set sLabelUse = 'HG'
+						!
+						  Set bOk = TRUE
+						  Set nPos = 0
+						  Set naItemNos[ nPos ] = NUMBER_Null
+						  Set naQuantities[ nPos ] = NUMBER_Null
+						  Call MyTableLoop( tblSelectedItems, hWndItem, PAM_ROWACTION, 0, 0, 'Collecting Quantites', nLowToHi )
+						!
+						  If bOk 
+							  Call PrintStockItemsLabels( nCustNo, sCustName, naItemNos, naQuantities, sLabelUse, sTMPFILE, nExecute )
+						  Else 
+							  Call SalMessageBox( 'Please make sure that all quantites are greater than zero first!', 'Warning', MB_Ok )
+					  On PAM_ROWACTION
+						  If tblSelectedItems.colQuantity <= 0
+							  Set bOk = FALSE
+						  Set naItemNos[ nPos ] = tblSelectedItems.colItemNo
+						  Set naQuantities[ nPos ] = tblSelectedItems.colQuantity
+						  Set nPos = nPos + 1
+						  Set naItemNos[ nPos ] = NUMBER_Null
+						  Set naQuantities[ nPos ] = NUMBER_Null
+						  Return TRUE
+			  Child Table: tblSelectedItems
+				  Contents 
+					  Column: colItemNo
+						  List Values 
+						  Message Actions 
+					  Column: colTreeType
+						  List Values 
+						  Message Actions 
+					  Column: colCultDesc
+						  List Values 
+						  Message Actions 
+					  Column: colRootDesc
+						  List Values 
+						  Message Actions 
+					  Column: colQuantity
+						  List Values 
+						  Message Actions 
+				  Functions 
+				  Window Variables 
+					  Number: nTotalRows
+				  Message Actions 
+					  On PAM_SETTABLELOOPTOTALROWS
+						  Call PushNumber( nTotalRows )
+						  Return TRUE
+		  Functions 
+		  Window Parameters 
+			  Number: nCustNo
+			  String: sCustName
+			! NULL TERMINATED LIST OF item numbers
+			  Number: naItemNos[*]
+			! NULL TERMINATED LIST OF item numbers
+			  Number: naQuantities[*]
+			  Boolean: bEditQuantitiesAllowed
+		  Window Variables 
+			  Number: nPos
+			  Number: nRow
+			  String: sTmp
+			  String: sLabelId
+			  String: sLabelUse
+			  Boolean: bSelectedQuantities
+		  Message Actions 
+			  On PAM_SETINSTANCEVARS
+				  Set sDatabase = SqlDatabase
+			  On SAM_CreateComplete
+				  If naQuantities[ 0 ] = NUMBER_Null
+					  Set bSelectedQuantities = FALSE
+				  Else 
+					  Set bSelectedQuantities = TRUE
+				!
+				  Set nPos = 0
+				  Set tblSelectedItems.nTotalRows = 0
+				  While naItemNos[ nPos ] != NUMBER_Null
+					!
+					  Set nRow = SalTblInsertRow( tblSelectedItems, TBL_MaxRow )
+					  Call SalTblSetContext( tblSelectedItems, nRow )
+					  Call SalTblSetRowFlags( tblSelectedItems, nRow, ROW_HideMarks, TRUE )
+					  Set tblSelectedItems.nTotalRows = tblSelectedItems.nTotalRows + 1
+					  Set tblSelectedItems.colItemNo = naItemNos[ nPos ]
+					  Call GetItemFullBasicDetails( naItemNos[ nPos ], tblSelectedItems.colTreeType, sTmp, tblSelectedItems.colCultDesc, sTmp, tblSelectedItems.colRootDesc, nExecute )
+					  If bSelectedQuantities
+						  Set tblSelectedItems.colQuantity = naQuantities[ nPos ]
+					!
+					  Set nPos = nPos + 1
+				!
+				  If NOT bEditQuantitiesAllowed AND bSelectedQuantities
+					  Call SalTblSetColumnFlags( tblSelectedItems.colQuantity, COL_Editable, FALSE )
+				  Call SalWaitCursor( FALSE )
+			  On SAM_Destroy
+				  Call PrintStockItemsLabels( nCustNo, sCustName, naItemNos, naQuantities, '', '', nDisconnect )
+				  Call GetItemFullBasicDetails(0, tblSelectedItems.colTreeType, sTmp, tblSelectedItems.colCultDesc, sTmp, tblSelectedItems.colRootDesc, nDisconnect )

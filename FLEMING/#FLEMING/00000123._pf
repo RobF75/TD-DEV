@@ -1,0 +1,1318 @@
+Application Description: SQLWindows 5.01 Jans Broken Bundles Report
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D80000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF6E0000 006E000000020300 00AB010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? No
+			Left:   5.1"
+			Top:    2.906"
+			Width:  4.688"
+			Height: 2.979"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   7.413"
+			Top:    0.708"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: GENERAL.APL
+		File Include: FORM.APL
+		File Include: BUTTON.APL
+		File Include: DATFIELD.APL
+		File Include: BGTEXT.APL
+		File Include: GROUPBOX.APL
+		File Include: CHECKBOX.APL
+		File Include: TABLE.APL
+		File Include: SQLHANDL.APL
+		File Include: STRINGS.APL
+		File Include: METER.APL
+		File Include: STACKS.APL
+		File Include: VTMETER.APL
+		File Include: FLAGS.APL
+		File Include: DIALOG.APL
+		File Include: FRMCTBL.APL
+		File Include: QUERY.APL
+		File Include: CMBFIELD.APL
+		File Include: RADIOBTN.APL
+		File Include: SPNFIELD.APL
+		File Include: VTSPIN.APL
+		File Include: DATES.APL
+		File Include: PICK.APL
+		File Include: ACTIVATE.APL
+		File Include: RUNPROG.APL
+		File Include: VTWIN.APL
+		! File Include: ITEMFUNC.APL
+		! File Include: STCKITMQ.APL
+		File Include: DLGCTBL.APL
+		File Include: TREETYPE.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: None
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Blue
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for BRKBNDLD.APL
+				Number: BRKBNDLDAplMsgOffSet = SAM_User + 7800
+				! Message go up to AplMsgOffSet + 99
+				Number: BRKBNDLDAplConstOffSet = 5400
+				! Messages
+				Number: PAM_BRKBNDLD_GETSELECTEDITEMS = BRKBNDLDAplMsgOffSet + 1
+				Number: PAM_BRKBNDLD_GETSELECTED = BRKBNDLDAplMsgOffSet + 2
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 3531506165
+0000: 8600000038000000 0000000000000000 020000050000004C 000000E0040D0000
+0020: 00FF3F5900A00000 010D0000FFFFE066 00000001FE00FF83 7300000001FB00FF
+0040: 0F80000000EE0100 FF3F
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 3892129020
+0000: A20D000023060000 0000000000000000 0200001800FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F0D003C00 000C63006C736362
+0040: 47656E650072616C 1E00000001780000 0001F40D0000FF1F 01800D2200000100
+0060: 001104636C537069 6E53006561736F6E 596561C8721E0000 019E00010DFD00FF
+0080: 070180040000C000 020000000CE16466 47651F0001003D00 0304FA0000FF0F01
+00A0: 8033008000000300 0000110354626C51 7565007279446961 6C6F6700A0000000
+00C0: 06000000CF0304FE 00FF130400000204 FA0000FF0F080000 00EE0200FF3F0C00
+00E0: B00000010D00FFFF E01900000001FE00 FF832600000001FB 00FF0F01805D0098
+0100: 0000040011F35175 006174614669656C 64684401000C00EF 02FE00FF9B040002
+0120: FB00FF6F0800EE02 00FFBF0CB9000200 FFFFC01000000001 0DFE00FF831D0000
+0140: 0001FB00FF0F2A00 00008E02000100FE 00C180010000003F 2E00B00000010D00
+0160: FFFFE03B00000002 FE00FF833F000000 01FB00FF0F4C0000 00EE0200FF3F5000
+0180: B800000100FFFF18 01805D000500E000 0012636C07436F6D 626FFC4669ED0C00
+01A0: DD0200FF7F047300 0200FFFFCD080002 FD00FF370C0002F7 00FFDF10D800010D
+01C0: 00FF7F1D73000100 FFFFCD2A0002D100 0100003F8001F900 00372E0001F60D00
+01E0: FFDF3BDC000200FF 7F3F73000100FFFF CD4C0002FD00FF37 500001F700FF1F01
+0200: 801A300000000600 15FC636C004F7065 7261746F721C4669 380000E800020000
+0220: D9010D00FF7F0D72 00000100FFFF3101 80040007C0000000 13636C0779434259
+0240: 6500734E6F466C61 671EA20000010000 67020400FFFF0101 8015000000084300
+0260: 0E636C7000625472 6565547970006573 520000000300BD00 02FB00FF6F0400EC
+0280: 010D00FF3F1100B0 0000030400FFFF00 0180220000000900 A000001D636C5401
+02A0: 4D616B6553656C00 6563746564526F77 004B657941727261 7960740000000400
+02C0: EF02E8000100009F 8001FC00001B0400 010DFB00FF6F1100 EE0100FF3F1E00B9
+02E0: 000200FFFF000180 B70000000A006000 000F636C61E0626C 65476520616C3602
+0300: 0015003D00010DFB 00FF6F0D00EE0100 FF3F1A00B9000100 FFFFE02700000001
+0320: FE00FF8334000000 02FB00FF4F380000 EE0200FF3F3C00B8 00000200FFFFE040
+0340: 00000002FE00FF83 4400000002FB00FF 0F48000000EE0200 FFBF4CB9000200FF
+0360: FFE6500002E80001 00009F8001FC0000 0354000000010DA3 000100007F80F201
+0380: 00000F58000000EC 010D00FF3F6500B8 00000100FFFFE072 00000001FE00FF83
+03A0: 7F00000001FB00FF 0F8C000000EE0100 FF3F9900B8000001 00FFFFE0A6000000
+03C0: 01FE00FF83B30000 0003FB00FF8F0180 0D01000B0000000C 63EB7047371E0001
+03E0: 7A000001F60D00FF 1F01800D23000C00 00091C636C457869 88741E000001009E
+0400: 00010DFD00FFC701 80048C000D000C63 0150696345787061 106E641E00000100
+0420: BD0002FB00FF8F01 800481000E000000 121F546F6700676C 65427574746F886E
+0440: 1E00000100DE0002 FD00FF0701802B00 0080000F00000011 6301466F726D4368
+0460: 69706C6454616CB0 000000040067010D 00FFFFCD0D0001FD 00FF371A0001F700
+0480: FFDF27DC000200FF 7F01CC800D001000 000B686353716C48 84616E6C651E00E8
+04A0: 00010000D9010D00 FF7F0188801E0000 11009C00134469E5 6F43689F5200E800
+04C0: 030000D9010D00FF 7F0D73000100FFFF CD1A0002FD00FF87 01802E0080001200
+04E0: 0000116305705374 6172740050726F67 72616DBAB0000000 0700770200FFFFCD
+0500: 040002FD00FF3708 0002F700FF9F0C00 D800010D00FF7F19 6300030400FFFFC9
+0520: 1D000002FD00FF07 2100000001F700FF 1F01802F00000000 130000000E766346
+0540: 471E656C8600D800 000500B3010D00FF FFE60D0002FE00FF 13110000040DFA00
+0560: 00FF6F1E00EE0300 FF3F2200B9000100 FFFF1801800D0014 00E0000017636C03
+0580: 5072696E74420061 7369635265706F18 72741E0001003D00 010DFB00FF8F0180
+05A0: 2F190015001063BA 6C446F7C476586B3 00050067010D00FF FFCD0D0002FD00FF
+05C0: 37110004F700FFDF 1EDC000300FF7F22 73000100FFFF2101 8034000016410000
+05E0: 14636C704B656563 46E0726F6D546144 6C0000040000CF01 0DFE00FF9B0D0001
+0600: FB00FF6F1A00EE01 00FFBF27B9000100 FFFF180180040017 002000000D636C53
+0620: 65096563496E746F 441E0000010000EF 03FE00FF03
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text: clsBackTextGeneral
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				If strArgArray[0] = ''
+					Set SqlDatabase = 'STOCKDEV'
+					Set SqlUser = 'GRAHAM'
+					Set SqlPassword = 'GRAHAM'
+				Else
+					Set SqlDatabase = strArgArray[1]
+					Set SqlUser = strArgArray[2]
+					Set SqlPassword = strArgArray[3]
+				!
+				Call CheckProgramExistance( 'Broken Bundles Report', TRUE )
+				!
+				Call SqlHandlesSetup(  )
+			On SAM_AppExit
+				Call SqlHandlesDisconnectClose(  )
+	Form Window: frmBrokenBundlesDetails
+		Class: clsFormGeneral
+		Property Template:
+		Class DLL Name:
+		Title: Broken Bundles Report
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Automatically Created at Runtime? Yes
+			Initial State: Class Default
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   0.0"
+				Top:    0.0"
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+				Pushbutton: pbHelp
+					Class Child Ref Key: 1
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbItemEnq
+					Class Child Ref Key: 5
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbOk
+					Class Child Ref Key: 0
+					Class ChildKey: 0
+					Class: clspbOk
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   4.613"
+						Top:    0.0"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 6
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbExit
+					Class Child Ref Key: 2
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			Data Field: dfDatabase
+				Class Child Ref Key: 3
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfUser
+				Class Child Ref Key: 4
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text:
+				Resource Id: 54508
+				Class Child Ref Key: 8
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 7
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+			!
+			Background Text: Reporting is only on Bare Rooted Orders.
+				Resource Id: 36332
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   3.25"
+					Top:    0.26"
+					Width:  3.45"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Blue
+				Background Color: Class Default
+			!
+			Background Text: Allowable
+				Resource Id: 54509
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   3.763"
+					Top:    0.729"
+					Width:  0.85"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Custom Control: ccAllowablePerc
+.data CLASSPROPSSIZE
+0000: 1F00
+.enddata
+.data CLASSPROPS
+0000: 56543A5370696E46 69656C64000F0001 0000006400000001 00000000000000
+.enddata
+.data INHERITPROPS
+0000: 0100
+.enddata
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsSpinGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   4.663"
+						Top:    0.677"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set ccAllowablePerc.nMaxValue = 100
+						Set ccAllowablePerc.nInitialValue = 35
+			Background Text: %
+				Resource Id: 54510
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsBackTextGeneral
+				Window Location and Size
+					Left:   5.663"
+					Top:    0.677"
+					Width:  0.25"
+					Width Editable? Class Default
+					Height: 0.271"
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Arial
+				Font Size: 18
+				Font Enhancement: Bold
+				Text Color: Class Default
+				Background Color: Class Default
+			!
+			Group Box: Exculude Tree Types
+				Resource Id: 4163
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsgbGeneral
+				Window Location and Size
+					Left:   2.925"
+					Top:    1.135"
+					Width:  4.15"
+					Width Editable? Class Default
+					Height: 2.208"
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Pushbutton: pbClearSelectedTreeTypes
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbTblClearRows
+				Property Template:
+				Class DLL Name:
+				Title:
+				Window Location and Size
+					Left:   3.025"
+					Top:    1.385"
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbClearSelectedTreeTypes.hWndTable = tblSelectedTreeTypes
+			Pushbutton: pbPickTreeTypes
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbTreeTypes
+				Property Template:
+				Class DLL Name:
+				Title:
+				Window Location and Size
+					Left:   3.625"
+					Top:    1.385"
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbPickTreeTypes.hWndPickIntoTable = tblSelectedTreeTypes
+					On PAM_cls_GETFIELDS
+						Call pbPickTreeTypes.GetTreeTypeFields( tblSelectedTreeTypes.colType, tblSelectedTreeTypes.colTypeDesc, sTmp )
+						Set nTmp = SalTblQueryContext( tblSelectedTreeTypes )
+						Call SalTblSetRowFlags( tblSelectedTreeTypes, nTmp, ROW_Selected, TRUE )
+						Call SalTblSetRowFlags( tblSelectedTreeTypes, nTmp, ROW_HideMarks, TRUE )
+						Return TRUE
+			Child Table: tblSelectedTreeTypes
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsTableGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left:   3.025"
+						Top:    1.969"
+						Width:  3.9"
+						Width Editable? Class Default
+						Height: 1.271"
+						Height Editable? Class Default
+					Visible? Class Default
+					Font Name: Arial
+					Font Size: 8
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					View: Class Default
+					Allow Row Sizing? Class Default
+					Lines Per Row: Class Default
+				Memory Settings
+					Maximum Rows in Memory: 6000
+					Discardable? No
+				Contents
+					Column: colType
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Type
+						Visible? No
+						Editable? No
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  1.017"
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+					Column: colTypeDesc
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Tree Type Description
+						Visible? Class Default
+						Editable? No
+						Maximum Data Length: Class Default
+						Data Type: Class Default
+						Justify: Class Default
+						Width:  4.517"
+						Width Editable? Class Default
+						Format: Class Default
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+				Functions
+				Window Variables
+					Number: nTmp
+					String: sTmp
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set sSQLPopHandle = " SELECT Tree_Type, Tree_Type_Desc 
+								FROM Tree_Type 
+								WHERE @UPPER( Tree_Type_Desc ) LIKE '%WEEPING%' 
+								ORDER BY Tree_Type "
+						Set sNAMEPopHandle = 'BRKBNDLXTTYPE'
+						Set sBINDPopHandle = ''
+						Set sINTOPopHandle = ':frmBrokenBundlesDetails.tblSelectedTreeTypes.colType, :frmBrokenBundlesDetails.tblSelectedTreeTypes.colTypeDesc '
+						!
+						Set bAddAllowed = TRUE
+						Set bSelectFirstRow = FALSE
+					On SAM_FetchRowDone
+						Call SalTblSetRowFlags( hWndForm, lParam, ROW_New, TRUE )
+						Call SalTblSetRowFlags( hWndForm, lParam, ROW_HideMarks, TRUE )
+						Return SalSendClassMessage( SAM_FetchRowDone, wParam, lParam )
+					On PAM_BRKBNDLD_GETSELECTEDITEMS
+						Set nTmp = 0
+						Set saExcludingTreeTypes[ nTmp ] = ''
+						If TableLoop( hWndForm, hWndForm, PAM_BRKBNDLD_GETSELECTED, 0, 0, 0, 'Extracting Tree Types to exclude.', TBL_cls_LowToHi )
+							Return TRUE
+						Else
+							Return FALSE
+					On PAM_BRKBNDLD_GETSELECTED
+						Set saExcludingTreeTypes[ nTmp ] = tblSelectedTreeTypes.colType
+						Set nTmp = nTmp + 1
+						Set saExcludingTreeTypes[ nTmp ] = ''
+						Return TRUE
+		Functions
+		Window Parameters
+		Window Variables
+			String: saExcludingTreeTypes[*]
+		Message Actions
+			On SAM_CreateComplete
+				Call SalSendClassMessage( SAM_CreateComplete, wParam, lParam )
+				Call SalSendMsg( tblSelectedTreeTypes, PAM_clsTBL_POPULATE, 0, 0 )
+			On PAM_clsPB_OKACTION
+				Call SalSendMsg( tblSelectedTreeTypes, PAM_BRKBNDLD_GETSELECTEDITEMS, 0, 0 )
+				Call SalCreateWindow( frmBrokenBundlesList, hWndForm, saExcludingTreeTypes, SalStrToNumber( ccAllowablePerc.GetNumber( ) ), ccSeasonYear.GetSeasonYear( ) )
+	Form Window: frmBrokenBundlesList
+		Class: clsFormPrintReport
+		Property Template:
+		Class DLL Name:
+		Title: Broken Bundles Report
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Automatically Created at Runtime? Class Default
+			Initial State: Class Default
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   Default
+				Top:    Default
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+		Contents
+		Functions
+		Window Parameters
+			String: saExcludingTreeTypes[*]
+			Number: nCompPerc
+			Number: nYear
+		Window Variables
+			Boolean: bProcessCustomers
+			Boolean: bPopulateCustomers
+			Boolean: bProcessOrders
+			Boolean: bPopulateOrders
+			String: sSql
+			Number: nInd
+			: fcBrkBndlCustHdl
+				Class: hcSqlHandle
+			: fcReportHdl
+				Class: hcSqlHandle
+			! hcSqlHandle: fcBrkBndlCustHdl
+.winattr class :
+				Class: hcSqlHandle
+.end
+			! Number: nBrkBndlCustNo
+			! String: sBrkBndlCustNoList
+			String: sExcludingTreeTypesList
+			!
+			String: sUpperCustName
+			String: sVarietyType
+			String: sUpperVariety
+			String: sUpperCultDesc
+			String: sUpperRootDesc
+			! Report Columns
+			Number: nCustNo
+			String: sCustName
+			String: sTreeTypeDesc
+			String: sCultDesc
+			String: sRootDesc
+			Number: nOrdAmt
+			Number: nConfAmt
+		Message Actions
+			On PAM_cls_SETINSTANCEVARS
+				Set sReportFileNameNoPath = 'brkbndl2.qrp'
+				Set sReportBind = ':frmBrokenBundlesList.nYear, 
+						:frmBrokenBundlesList.nCompPerc, 
+						:frmBrokenBundlesList.nCustNo, 
+						:frmBrokenBundlesList.sCustName, 
+						:frmBrokenBundlesList.sTreeTypeDesc, 
+						:frmBrokenBundlesList.sCultDesc, 
+						:frmBrokenBundlesList.sRootDesc, 
+						:frmBrokenBundlesList.nOrdAmt, 
+						:frmBrokenBundlesList.nConfAmt'
+				Set sReportInto = 'YearOfSale, 
+						CompPerc, 
+						CustNo, 
+						CustName,  
+						TreeTypeDesc, 
+						CultDesc, 
+						RootDesc, 
+						OrdAmt, 
+						ConfAmt'
+				Set sReportType = 'VIEW'
+			! On SAM_ReportStart
+				 Set sExcludingTreeTypesList = ''
+				 Call MakeStringList( saExcludingTreeTypes, ',', "'", sExcludingTreeTypesList )
+				!
+				 If sExcludingTreeTypesList = ''
+					 Set sSql = " SELECT
+							  Customer_Order.Cust_No 
+							FROM 
+							  Customer_Order, 
+							  Stock_Item 
+							INTO 
+							  :frmBrokenBundlesList.nBrkBndlCustNo 
+							WHERE
+							  Customer_Order.Stock_Item_No = Stock_Item.Item_No AND 
+							  Customer_Order.Year_Of_Sale = :frmBrokenBundlesList.nYear  AND 
+							  NOT Stock_Item.Tree_Type LIKE 'C%' 
+							GROUP BY 1 
+							HAVING 
+							  ((SUM( @IF(@MOD( Customer_Order.Ordered_Amount, 5 ), 1, 0)))/
+							  (COUNT( Customer_Order.Ordered_Amount ))*100)>= :frmBrokenBundlesList.nCompPerc "
+				 Else 
+					 Set sSql = " SELECT
+							  Customer_Order.Cust_No 
+							FROM 
+							  Customer_Order, 
+							  Stock_Item 
+							INTO 
+							  :frmBrokenBundlesList.nBrkBndlCustNo 
+							WHERE
+							  Customer_Order.Stock_Item_No = Stock_Item.Item_No AND 
+							  Customer_Order.Year_Of_Sale = :frmBrokenBundlesList.nYear  AND 
+							  NOT Stock_Item.Tree_Type LIKE 'C%' AND 
+							  NOT Stock_Item.Tree_Type IN ( " || sExcludingTreeTypesList || " ) 
+							GROUP BY 1 
+							HAVING 
+							  ((SUM( @IF(@MOD( Customer_Order.Ordered_Amount, 5 ), 1, 0)))/
+							  (COUNT( Customer_Order.Ordered_Amount ))*100)>= :frmBrokenBundlesList.nCompPerc "
+				 Call fcBrkBndlCustHdl.PrepareSetup( sSql )
+				 Call SqlVarSetup( fcBrkBndlCustHdl.hSqlHandle )
+				 If fcBrkBndlCustHdl.PrepareAndExecute( )
+					 Set sBrkBndlCustNoList = ''
+					 While fcBrkBndlCustHdl.FetchNext( nInd )
+						 If sBrkBndlCustNoList = ''
+							 Set sBrkBndlCustNoList = SalNumberToStrX( nBrkBndlCustNo, 0 )
+						 Else 
+							 Set sBrkBndlCustNoList = sBrkBndlCustNoList || ', ' || SalNumberToStrX( nBrkBndlCustNo, 0 )
+				 Else 
+					 Return FALSE
+				!
+				 If sBrkBndlCustNoList = ''
+					 Return FALSE
+				 Else 
+					 Set sSql = " SELECT
+							  Customer_Master.Cust_No, 
+							  Customer_Master.Cust_Name, 
+							  @UPPER( Customer_Master.Cust_Name ), 
+							  Stock_Item.Variety_Type, 
+							  @UPPER( Stock_Item.Variety ), 
+							  @UPPER( Stock_Item.Cult_Desc ), 
+							  @UPPER( Stock_Item.Root_Desc ), 
+							  Stock_Item.Tree_Type, 
+							  Stock_Item.Cult_Desc, 
+							  Stock_Item.Root_Desc, 
+							  Customer_Order.Ordered_Amount, 
+							  Customer_Order.Conf_Amt 
+							FROM 
+							  Customer_Master, 
+							  Customer_Order, 
+							  Stock_Item 
+							INTO 
+							  :frmBrokenBundlesList.nCustNo,
+							  :frmBrokenBundlesList.sCustName,
+							  :frmBrokenBundlesList.sUpperCustName,
+							  :frmBrokenBundlesList.sVarietyType,
+							  :frmBrokenBundlesList.sUpperVariety,
+							  :frmBrokenBundlesList.sUpperCultDesc,
+							  :frmBrokenBundlesList.sUpperRootDesc,
+							  :frmBrokenBundlesList.sTreeType,
+							  :frmBrokenBundlesList.sCultDesc,
+							  :frmBrokenBundlesList.sRootDesc,
+							  :frmBrokenBundlesList.nOrdAmt,
+							  :frmBrokenBundlesList.nConfAmt 
+							WHERE
+							  Customer_Master.Cust_No IN ( " || sBrkBndlCustNoList || " ) AND 
+							  Customer_Master.Cust_No = Customer_Order.Cust_No AND 
+							  Customer_Order.Stock_Item_No = Stock_Item.Item_No AND 
+							  Customer_Order.Year_Of_Sale = :frmBrokenBundlesList.nYear AND 
+							  NOT Stock_Item.Tree_Type LIKE 'C%' 
+							ORDER BY
+							  3,1,4,5,6,7,8 "
+				!
+				 Call fcReportHdl.PrepareSetup( sSql )
+				 Call SqlVarSetup( fcReportHdl.hSqlHandle )
+				!
+				 Return fcReportHdl.PrepareAndExecute( )
+			! On SAM_ReportStart
+				 Set sExcludingTreeTypesList = ''
+				 Call MakeStringList( saExcludingTreeTypes, ',', "'", sExcludingTreeTypesList )
+				!
+				 If sExcludingTreeTypesList = ''
+					 Set sINSql = " SELECT
+							  Customer_Order.Cust_No 
+							FROM 
+							  Customer_Order, 
+							  Stock_Item 
+							WHERE
+							  Customer_Order.Stock_Item_No = Stock_Item.Item_No AND 
+							  Customer_Order.Year_Of_Sale = :frmBrokenBundlesList.nYear  AND 
+							  NOT Stock_Item.Tree_Type LIKE 'C%' 
+							GROUP BY 1 
+							HAVING 
+							  ((SUM( @IF(@MOD( Customer_Order.Ordered_Amount, 5 ), 1, 0)))/
+							  (COUNT( Customer_Order.Ordered_Amount ))*100)>= :frmBrokenBundlesList.nCompPerc "
+				 Else 
+					 Set sINSql = " SELECT
+							  Customer_Order.Cust_No 
+							FROM 
+							  Customer_Order, 
+							  Stock_Item 
+							WHERE
+							  Customer_Order.Stock_Item_No = Stock_Item.Item_No AND 
+							  Customer_Order.Year_Of_Sale = :frmBrokenBundlesList.nYear  AND 
+							  NOT Stock_Item.Tree_Type LIKE 'C%' AND 
+							  NOT Stock_Item.Tree_Type IN ( " || sExcludingTreeTypesList || " ) 
+							GROUP BY 1 
+							HAVING 
+							  ((SUM( @IF(@MOD( Customer_Order.Ordered_Amount, 5 ), 1, 0)))/
+							  (COUNT( Customer_Order.Ordered_Amount ))*100)>= :frmBrokenBundlesList.nCompPerc "
+				!
+				 Set sSql = " SELECT
+						  Customer_Master.Cust_No, 
+						  Customer_Master.Cust_Name, 
+						  @UPPER( Customer_Master.Cust_Name ), 
+						  Stock_Item.Variety_Type, 
+						  @UPPER( Stock_Item.Variety ), 
+						  @UPPER( Stock_Item.Cult_Desc ), 
+						  @UPPER( Stock_Item.Root_Desc ), 
+						  Stock_Item.Tree_Type, 
+						  Stock_Item.Cult_Desc, 
+						  Stock_Item.Root_Desc, 
+						  Customer_Order.Ordered_Amount, 
+						  Customer_Order.Conf_Amt 
+						FROM 
+						  Customer_Master, 
+						  Customer_Order, 
+						  Stock_Item 
+						INTO 
+						  :frmBrokenBundlesList.nCustNo,
+						  :frmBrokenBundlesList.sCustName,
+						  :frmBrokenBundlesList.sUpperCustName,
+						  :frmBrokenBundlesList.sVarietyType,
+						  :frmBrokenBundlesList.sUpperVariety,
+						  :frmBrokenBundlesList.sUpperCultDesc,
+						  :frmBrokenBundlesList.sUpperRootDesc,
+						  :frmBrokenBundlesList.sTreeType,
+						  :frmBrokenBundlesList.sCultDesc,
+						  :frmBrokenBundlesList.sRootDesc,
+						  :frmBrokenBundlesList.nOrdAmt,
+						  :frmBrokenBundlesList.nConfAmt 
+						WHERE
+						  Customer_Master.Cust_No IN ( " || sINSql || " ) AND 
+						  Customer_Master.Cust_No = Customer_Order.Cust_No AND 
+						  Customer_Order.Stock_Item_No = Stock_Item.Item_No AND 
+						  Customer_Order.Year_Of_Sale = :frmBrokenBundlesList.nYear AND 
+						  NOT Stock_Item.Tree_Type LIKE 'C%' 
+						ORDER BY
+						  3,1,4,5,6,7,8 "
+				!
+				 Call fcReportHdl.PrepareSetup( sSql )
+				 Call SqlVarSetup( fcReportHdl.hSqlHandle )
+				!
+				 Return fcReportHdl.PrepareAndExecute( )
+			On SAM_ReportStart
+				Set sExcludingTreeTypesList = ''
+				Call MakeStringList( saExcludingTreeTypes, ',', "'", sExcludingTreeTypesList )
+				Return TRUE
+			On SAM_ReportFetchInit
+				Set bProcessCustomers = TRUE
+				Set bPopulateCustomers = TRUE
+				Set bProcessOrders = FALSE
+				Set bPopulateOrders = FALSE
+				Return TRUE
+			On SAM_ReportFetchNext
+				Loop
+					If bProcessCustomers
+						If bPopulateCustomers
+							If sExcludingTreeTypesList = ''
+								Set sSql = " SELECT
+										  Customer_Order.Cust_No 
+										FROM 
+										  Customer_Order, 
+										  Stock_Item 
+										INTO 
+										  :frmBrokenBundlesList.nCustNo 
+										WHERE
+										  Customer_Order.Stock_Item_No = Stock_Item.Item_No AND 
+										  Customer_Order.Year_Of_Sale = :frmBrokenBundlesList.nYear  AND 
+										  NOT Stock_Item.Tree_Type LIKE 'C%' 
+										GROUP BY 1 
+										HAVING 
+										  ((SUM( @IF(@MOD( Customer_Order.Ordered_Amount, 5 ), 1, 0)))/
+										  (COUNT( Customer_Order.Ordered_Amount ))*100)>= :frmBrokenBundlesList.nCompPerc "
+							Else
+								Set sSql = " SELECT
+										  Customer_Order.Cust_No 
+										FROM 
+										  Customer_Order, 
+										  Stock_Item 
+										INTO 
+										  :frmBrokenBundlesList.nCustNo 
+										WHERE
+										  Customer_Order.Stock_Item_No = Stock_Item.Item_No AND 
+										  Customer_Order.Year_Of_Sale = :frmBrokenBundlesList.nYear  AND 
+										  NOT Stock_Item.Tree_Type LIKE 'C%' AND 
+										  NOT Stock_Item.Tree_Type IN ( " || sExcludingTreeTypesList || " ) 
+										GROUP BY 1 
+										HAVING 
+										  ((SUM( @IF(@MOD( Customer_Order.Ordered_Amount, 5 ), 1, 0)))/
+										  (COUNT( Customer_Order.Ordered_Amount ))*100)>= :frmBrokenBundlesList.nCompPerc "
+							Call fcBrkBndlCustHdl.PrepareSetup( sSql )
+							Call SqlVarSetup( fcBrkBndlCustHdl.hSqlHandle )
+							!
+							Call fcBrkBndlCustHdl.PrepareAndExecute( )
+							Set bPopulateCustomers = FALSE
+						!
+						If fcBrkBndlCustHdl.FetchNext( nInd )
+							Set bProcessCustomers = FALSE
+							Set bProcessOrders = TRUE
+							Set bPopulateOrders = TRUE
+						Else
+							Return FALSE
+					If bProcessOrders
+						If bPopulateOrders
+							Set sSql = " SELECT
+									  Customer_Master.Cust_No, 
+									  Customer_Master.Cust_Name, 
+									  @UPPER( Customer_Master.Cust_Name ), 
+									  Stock_Item.Variety_Type, 
+									  @UPPER( Stock_Item.Variety ), 
+									  @UPPER( Stock_Item.Cult_Desc ), 
+									  @UPPER( Stock_Item.Root_Desc ), 
+									  Stock_Item.Tree_Type_Desc, 
+									  Stock_Item.Cult_Desc, 
+									  Stock_Item.Root_Desc, 
+									  Customer_Order.Ordered_Amount, 
+									  Customer_Order.Conf_Amt 
+									FROM 
+									  Customer_Master, 
+									  Customer_Order, 
+									  Stock_Item 
+									INTO 
+									  :frmBrokenBundlesList.nCustNo,
+									  :frmBrokenBundlesList.sCustName,
+									  :frmBrokenBundlesList.sUpperCustName,
+									  :frmBrokenBundlesList.sVarietyType,
+									  :frmBrokenBundlesList.sUpperVariety,
+									  :frmBrokenBundlesList.sUpperCultDesc,
+									  :frmBrokenBundlesList.sUpperRootDesc,
+									  :frmBrokenBundlesList.sTreeTypeDesc,
+									  :frmBrokenBundlesList.sCultDesc,
+									  :frmBrokenBundlesList.sRootDesc,
+									  :frmBrokenBundlesList.nOrdAmt,
+									  :frmBrokenBundlesList.nConfAmt 
+									WHERE
+									  Customer_Master.Cust_No = :frmBrokenBundlesList.nCustNo  AND 
+									  Customer_Master.Cust_No = Customer_Order.Cust_No AND 
+									  Customer_Order.Stock_Item_No = Stock_Item.Item_No AND 
+									  Customer_Order.Year_Of_Sale = :frmBrokenBundlesList.nYear AND 
+									  NOT Stock_Item.Tree_Type LIKE 'C%' 
+									ORDER BY
+									  3,1,4,5,6,7,8 "
+							!
+							Call fcReportHdl.PrepareSetup( sSql )
+							Call SqlVarSetup( fcReportHdl.hSqlHandle )
+							!
+							Call fcReportHdl.PrepareAndExecute( )
+							Set bPopulateOrders = FALSE
+						!
+						If fcReportHdl.FetchNext( nInd )
+							Return TRUE
+						Else
+							Set bProcessCustomers = TRUE
+							Set bProcessOrders = FALSE
+			On SAM_ReportFinish
+				Call fcReportHdl.Disconnect( )
+				Call fcBrkBndlCustHdl.Disconnect( )
+				Return SalSendClassMessage( SAM_ReportFinish, wParam, lParam )

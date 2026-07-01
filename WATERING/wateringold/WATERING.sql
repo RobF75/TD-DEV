@@ -1,0 +1,323 @@
+connect watering sysadm graham;
+set timeout 1;
+
+CREATE TABLE Channels
+      (Channel_No           INTEGER NOT NULL,
+       Board_No              CHAR(2) NOT NULL, 
+       Board_Port_No      CHAR(2) NOT NULL
+);
+
+CREATE UNIQUE CLUSTERED HASHED INDEX XPKE_12
+  ON Channels
+(
+Channel_No
+)
+SIZE 100 ROWS;
+**********************************************************;
+Changes to make it Mesh Watering;
+**********************************************************;
+
+Alter table
+	Channels
+add
+	Upper_Address char(8), 
+  	Lower_Address char(8),
+  	Sixteen_Bit_Address char(4),
+  	Bank_No CHAR(2), 
+  	Bank_Port_No CHAR(2); 
+update
+	channels
+set
+	Bank_No = Board_no,
+	Bank_Port_No = Board_Port_no;
+alter table
+	channels
+modify
+	Bank_No CHAR(2) NOT NULL,
+	Bank_Port_No CHAR(2) NOT NULL;
+commit;
+Alter table
+	channels
+drop
+	Board_No,
+	Board_Port_No;
+commit;
+***********************************************************;
+
+************************************************************;
+Create new tables for Fertigation;
+************************************************************;
+connect watering sysadm graham;
+set timeout 1;
+drop table Fertigation;
+CREATE TABLE Fertigation
+      (
+	Fert_Id		INTEGER NOT NULL,
+       Channel_No           INTEGER,
+       Fert_Desc         CHAR(30) NOT NULL,
+       Fert_Litres_Min   NUMBER
+);
+
+CREATE UNIQUE CLUSTERED HASHED INDEX XPKFertigate
+  ON Fertigation
+(
+Fert_Id	
+)
+SIZE 100 ROWS;
+ALTER TABLE Fertigation
+       PRIMARY KEY (Fert_Id)
+;
+
+CREATE PUBLIC SYNONYM FERTIGATION FOR SYSADM.FERTIGATION;
+commit;
+drop table Station_Fertigation;
+
+CREATE TABLE Station_Fertigation
+      (Program_No           INTEGER NOT NULL,
+	Fert_Id		INTEGER NOT NULL,
+       Station_No             INTEGER NOT NULL,
+       Channel_No           INTEGER,
+       On_Delay         INTEGER NOT NULL,
+       Off_Delay   INTEGER NOT NULL
+);
+
+CREATE UNIQUE CLUSTERED HASHED INDEX XPKStat_Fert
+  ON Station_Fertigation
+(
+Program_No,
+Fert_Id,
+Station_No	
+)
+SIZE 300 ROWS;
+ALTER TABLE Station_Fertigation
+       PRIMARY KEY (Program_No,
+	Fert_Id,
+	Station_No)
+;
+ALTER TABLE Station_Fertigation
+       FOREIGN KEY FERT1 (sTATION_No)
+               REFERENCES station
+               ON DELETE CASCADE
+;
+ALTER TABLE Station_Fertigation
+       FOREIGN KEY FERT (Program_No)
+               REFERENCES Program
+               ON DELETE CASCADE
+;
+CREATE PUBLIC SYNONYM STATION_FERTIGATION FOR SYSADM.STATION_FERTIGATION;
+commit;
+alter table
+	program
+add
+	Fertigate CHAR (1);
+************************************************************;
+
+
+CREATE TABLE Prog_Switches
+      (Program_No           INTEGER NOT NULL, 
+       Switch_No              INTEGER NOT NULL,
+       Valid_State            CHAR(3) NOT NULL, 
+       Prog_Action           CHAR(10), 
+       ProgIn_Progress   CHAR(10)
+);
+
+CREATE UNIQUE CLUSTERED HASHED INDEX XPKProg_Switch
+  ON Prog_Switches
+(
+Program_No, 
+Switch_No
+)
+SIZE 100 ROWS;
+
+CREATE TABLE Switch
+      (Switch_No              INTEGER NOT NULL,
+       Channel_No           INTEGER,
+       Switch_Desc          CHAR(30) NOT NULL,
+       Switch_Status        CHAR(3) NOT NULL, 
+       Testing_Switch       CHAR(1)
+);
+
+CREATE UNIQUE CLUSTERED HASHED INDEX XPKSwitch
+  ON Switch
+(
+Switch_No
+)
+SIZE 100 ROWS;
+
+CREATE TABLE Prog_Stations
+      (Instance_No          INTEGER NOT NULL,
+       Program_No           INTEGER NOT NULL, 
+       Water_Seq_No       INTEGER NOT NULL, 
+       Station_No             INTEGER NOT NULL,
+       Crnt_Water_Sec     NUMBER NOT NULL, 
+       Watered_Sec         NUMBER NOT NULL, 
+       Station_Status       CHAR(10) NOT NULL 
+);
+
+
+CREATE UNIQUE CLUSTERED HASHED INDEX XPKProg_Pumps
+  ON Prog_Stations
+(
+Instance_No
+)
+SIZE 100 ROWS;
+
+
+
+
+CREATE TABLE Program
+      (Program_No           INTEGER NOT NULL,
+       Prog_Start_DT       DATETIME NOT NULL, 
+       Prog_Next_DT       DATETIME NOT NULL, 
+       Prog_Desc             CHAR(30) NOT NULL,
+       Recurr_Days          SMALLINT NOT NULL,
+       Prog_Status           CHAR(10) NOT NULL,
+	Fertigate   CHAR(1)
+);
+
+
+CREATE UNIQUE CLUSTERED HASHED INDEX XPKProgram
+  ON Program
+(
+Program_No
+)
+SIZE 100 ROWS;
+
+
+
+
+CREATE TABLE Pump
+      (Pump_No              INTEGER NOT NULL,
+       Channel_No           INTEGER,
+       Pump_Desc            CHAR(30) NOT NULL,
+       Pump_Litres_Min      NUMBER NOT NULL,
+       Start_Delay_Secs   NUMBER NOT NULL, 
+       Delayed_Secs        NUMBER NOT NULL, 
+       Pump_Status          CHAR(10) NOT NULL 
+);
+
+
+CREATE UNIQUE CLUSTERED HASHED INDEX XPKPump
+  ON Pump
+(
+Pump_No
+)
+SIZE 100 ROWS;
+
+CREATE TABLE Station
+      (Station_No           INTEGER NOT NULL,
+       Channel_No           INTEGER,
+       Pump_No              INTEGER NOT NULL, 
+       Station_Desc         CHAR(30) NOT NULL,
+       Station_Litres_Min   NUMBER NOT NULL,
+       Def_Water_Secs       NUMBER NOT NULL, 
+       ToBe_Tested         CHAR(1), 
+       Common_Relay       CHAR(1)
+);
+
+
+CREATE UNIQUE CLUSTERED HASHED INDEX XPKStation
+  ON Station
+(
+Station_No
+)
+SIZE 300 ROWS;
+
+
+
+
+ALTER TABLE Channels
+       PRIMARY KEY (Channel_No)
+;
+
+ALTER TABLE Prog_Stations
+       PRIMARY KEY (Instance_No)
+;
+
+ALTER TABLE Prog_Switches
+       PRIMARY KEY (Program_No, Switch_No)
+;
+
+ALTER TABLE Switch
+       PRIMARY KEY (Switch_No)
+;
+
+ALTER TABLE Program
+       PRIMARY KEY (Program_No)
+;
+
+ALTER TABLE Pump
+       PRIMARY KEY (Pump_No)
+;
+
+ALTER TABLE Station
+       PRIMARY KEY (Station_No)
+;
+
+
+ALTER TABLE Prog_Stations
+       FOREIGN KEY PStarted (Station_No)
+               REFERENCES Station
+               ON DELETE CASCADE
+;
+
+ALTER TABLE Prog_Stations
+       FOREIGN KEY PStarts (Program_No)
+               REFERENCES Program
+               ON DELETE CASCADE
+;
+
+ALTER TABLE Prog_Switches
+       FOREIGN KEY PMHave (Program_No)
+               REFERENCES Program
+               ON DELETE CASCADE
+;
+
+ALTER TABLE Switch
+       FOREIGN KEY Outputs (Channel_No)
+               REFERENCES Channels
+               ON DELETE SET NULL
+;
+
+ALTER TABLE Pump
+       FOREIGN KEY Outputs (Channel_No)
+               REFERENCES Channels
+               ON DELETE SET NULL
+;
+
+ALTER TABLE Station
+       FOREIGN KEY Outputs (Channel_No)
+               REFERENCES Channels
+               ON DELETE SET NULL
+;
+
+GRANT CONNECT TO SYSADM IDENTIFIED BY GRAHAM;
+GRANT CONNECT TO JAN IDENTIFIED BY JAN;
+GRANT CONNECT TO GRAHAM IDENTIFIED BY GRAHAM;
+
+GRANT DBA TO GRAHAM;
+GRANT DBA TO JAN;
+
+CREATE PUBLIC SYNONYM CHANNELS FOR SYSADM.CHANNELS;
+CREATE PUBLIC SYNONYM PROG_STATIONS FOR SYSADM.PROG_STATIONS;
+
+CREATE PUBLIC SYNONYM PROG_SWITCHES FOR SYSADM.PROG_SWITCHES;
+CREATE PUBLIC SYNONYM SWITCH FOR SYSADM.SWITCH;
+
+CREATE PUBLIC SYNONYM PROGRAM FOR SYSADM.PROGRAM;
+CREATE PUBLIC SYNONYM PUMP FOR SYSADM.PUMP;
+CREATE PUBLIC SYNONYM STATION FOR SYSADM.STATION;
+
+GRANT ALL ON CHANNELS TO GRAHAM,JAN;
+GRANT ALL ON PROG_STATIONS TO GRAHAM,JAN;
+
+GRANT ALL ON PROG_SWITCHES TO GRAHAM,JAN;
+GRANT ALL ON SWITCH TO GRAHAM,JAN;
+
+GRANT ALL ON PROGRAM TO GRAHAM,JAN;
+GRANT ALL ON PUMP TO GRAHAM,JAN;
+GRANT ALL ON STATION TO GRAHAM,JAN;
+
+COMMIT;
+DISCONNECT WATER7;
+

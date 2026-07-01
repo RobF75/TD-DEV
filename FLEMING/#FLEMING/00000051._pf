@@ -1,0 +1,584 @@
+Application Description: SQLWindows 5.01 Jans Dialog Class
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF160000 0016000000A60200 004F010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.1"
+			Top:    2.969"
+			Width:  4.688"
+			Height: 2.917"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   6.6"
+			Top:    0.521"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: Spnfield.apl
+		File Include: VTSPIN.APL
+		File Include: VTWIN.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Italic
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Black
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for DIALOG.APL
+				Number: DIALOGaplOffSet = SAM_User + 300
+				! Message go up to DIALOGaplOffSet + 99
+				Number: DIALOGAplConstOffSet = 150
+				! Messages
+				Number: PAM_clsDLG_SHOW = DIALOGaplOffSet + 1
+				Number: PAM_clsDLG_EXIT = DIALOGaplOffSet + 2
+				Number: PAM_clsDLG_RETURN = DIALOGaplOffSet + 3
+				Number: PAM_clsDLG_ACTIVATE = DIALOGaplOffSet + 4
+				Number: PAM_clsDLG_PUSHFIELDS = DIALOGaplOffSet + 5
+				Number: PAM_clsDLG_POPFIELDS = DIALOGaplOffSet + 6
+				Number: PAM_clsDLG_NOTTREESYS = DIALOGaplOffSet + 7
+				! Constants
+				Number: DLG_Modal = DIALOGAplConstOffSet + 1
+				Number: DLG_Modeless = DIALOGAplConstOffSet + 2
+				!
+				Number: DLG_EndOnExit = DIALOGAplConstOffSet + 3
+				Number: DLG_HideOnExit = DIALOGAplConstOffSet + 4
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1347615921
+0000: 8600000038000000 0000000000000000 020000050000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E8040D0000 FF3F
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 948947840
+0000: A60A000012050000 0000000000000000 0200001500FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 001063006C734469
+0040: 616C6F670047656E 6572616C86800000 000500000007010D 000000FFFF090D00
+0060: 00020400FC0000FF 071100000004F40D 0000FF1F1E0000D0 0003040000FF7F22
+0080: 700000000100FFFF 2101800D00000140 00000011636C5300 70696E536561736F
+00A0: 806E596561721E00 EC000100D9010D00 FF7F010080340000 0002000010001463
+00C0: 6C70625300656C65 637446726F006D54 61626C656C00D000 00040000B3010D00
+00E0: FFFFE60D0001FE00 FF831A00000001FB 00FF0F27000000EE 0100FF3F01800404
+0100: 000003000000480D 636C536565026349 6E746F1E00D10001 0000B3030400FFFF
+0120: 800180B700000004 210016636C47659F 5461F34765513602 0015009E00010DFD
+0140: 00FF270D000001F7 00FFDF1ADC000100 FF7F2773000100FF FF893400000204FD
+0160: 00FF073800000002 F700FF1F3C0000DC 000200FF7F407000 00000200FFFFC144
+0180: 00000002FD00FF07 4800000002F700FF 1F4C0000DC000200 FF7F507000000002
+01A0: 00F40100000F8001 0000FE0081540000 00010DD100010000 3F8001F900000758
+01C0: 00000001F60D00FF 1F650000DC000100 FF7F727000000001 00FFFFC17F000000
+01E0: 01FD00FF078C0000 0001F700FF1F9900 00DC000100FF7FA6 700000000100FFFF
+0200: C1B300000003FD00 FF87018022000C00 05001D636C015462 6C4D616B652C5365
+0220: 63656400526F774B 6579417200726179 74000000047B0002 4700010000FFE480
+0240: 010000DF04D80001 0D00FF7F11720000 0100FFFFCD1E0002 FD00FFC701800D00
+0260: 00060000000C636C E5704765116C1E00 0001003D00010DFB 00FF0F0180380001
+0280: 000700000009630E 6C48656C70648600 000500EF02FE00FF 1B0400010DFB00FF
+02A0: 6F1100EE0100FFBF 1EB9000100FFFFE0 2B00000001FE00FF 6301800D00E00800
+02C0: 0000090345786974 1E00D100010000B3 010D00FFFF180180 040009003800000C
+02E0: 5069006345787061 6E641EA200000100 00770200FFFF3101 8004000AC0000000
+0300: 12636C03546F6767 6C6500427574746F 6E1E00D100010000 BB0200FFFF180180
+0320: 04000B008800000C 6654610165436163 68651EA200000100 00770300FFFF2101
+0340: 801500000C000000 000B636643610750 6F6F6C5AA0000000 0300000707190000
+0360: 0040010100B20400 004F800100FE008D 04000304FD00FF37 080001F60D00FF1F
+0380: 01800433000D000C 84636C646647657F 00F4010000EE0300 FF3F0180042F0000
+03A0: 0E0000000A0B6C46 6F726D4042617365 860000F60500EC01 0D00FFBF0DB90002
+03C0: 00FFFFC61100040D FE00FF9B1E0003FB 00FF6F2200EE0100 FF3F0180060D000F
+03E0: 000000F817636C80 5072696E74426100 69635265706F7274 461E00010000CF01
+0400: 0DFE00FF6301800D 0000100000000B68 635320716C48616E 6C65461E00010000
+0420: CF010DFE00FF0301 802E000000C61100 1163027053746172 745000726F677261
+0440: 6DBA00D000000700 00BB0200FFFFE404 000002FE00FF9B08 0002FB00FF4F0C00
+0460: 00EC010D00FF3F19 00B9000300FFFFE0 1D00000002FE00FF 832100000001FB00
+0480: FF0F018036000000 00120000000F63F2 6C53743FEE00D800 000900B3010D00FF
+04A0: FFE60D0001FE00FF 9B1A0002FB00FF6F 1E00EE0200FFBF22 B9000200FFFFE026
+04C0: 00000002FE00FF83 2A00000002FB00FF 4F2E0000EE0200FF 3F3200B800000200
+04E0: FFFF180180040013 003000001063546F 026F54697057696E 20646F771E000001
+0500: 7A000003F700FF1F 01800D0300140000 000CC66363624777 6C00F4010000EC01
+0520: 0D00FF3F
+.enddata
+			Dialog Box Class: clsDialogGeneral
+				Title:
+				Accesories Enabled? Yes
+				Visible? Class Default
+				Display Settings
+					Display Style? Class Default
+					Visible at Design time? Yes
+					Type of Dialog: Modal
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  5.0"
+						Width Editable? Class Default
+						Height: 2.083"
+						Height Editable? Class Default
+					Absolute Screen Location? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+				Next Class Child Key: 14
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Tool Bar
+					Display Settings
+						Display Style? Class Default
+						Location? Class Default
+						Visible? Class Default
+						Size: 0.594"
+						Size Editable? Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Contents
+						Pushbutton: pbHelp
+							Class Child Ref Key: 0
+							Class ChildKey: 6
+							Class: clspbHelp
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   0.0"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbPrintForm
+							Class Child Ref Key: 0
+							Class ChildKey: 10
+							Class: clspbPrintForm
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   3.663"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbExit
+							Class Child Ref Key: 0
+							Class ChildKey: 7
+							Class: clspbExit
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   4.263"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+				Contents
+					Data Field: dfDatabase
+						Class Child Ref Key: 0
+						Class ChildKey: 8
+						Class: clsdfDatabase
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   0.0"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? No
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Gray
+							Input Mask: Class Default
+						Message Actions
+					Data Field: dfUser
+						Class Child Ref Key: 0
+						Class ChildKey: 9
+						Class: clsdfUser
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   0.9"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? No
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Gray
+							Input Mask: Class Default
+						Message Actions
+					Custom Control: ccSeasonYear
+						Class Child Ref Key: 0
+						Class ChildKey: 13
+						Class: clsSpinSeasonYear
+						Property Template:
+						Class DLL Name:
+						Display Settings
+							DLL Name:
+							MS Windows Class Name:
+							Style:  Class Default
+							ExStyle:  Class Default
+							Title:
+							Window Location and Size
+								Left:   3.888"
+								Top:    0.0"
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Etched Border? Class Default
+							Hollow? Class Default
+							Vertical Scroll? Class Default
+							Horizontal Scroll? Class Default
+							Tab Stop? Class Default
+							Tile To Parent? Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							DLL Settings
+						Message Actions
+							On PAM_clsDLG_NOTTREESYS
+								Call SalPostMsg( hWndItem, PAM_clsSPN_DISABLE, 0, 0 )
+					Background Text:
+						Resource Id: 35180
+						Class Child Ref Key: 0
+						Class ChildKey: 14
+						Class: clsBackTextSeasonYear
+						Window Location and Size
+							Left:   3.138"
+							Top:    0.052"
+							Width:  Class Default
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+				Derived From
+				Class Variables
+					Number: nTmp
+					String: sTmp
+					Date/Time: dtTmp
+					Window Handle: hWndTmp
+					Number: nReturn
+				Instance Variables
+					Number: nDialogType
+					Number: nActionOnExit
+					String: sHelpFileName
+					Boolean: bMapEnterToTab
+					Boolean: bPrintFormAllowed
+					Boolean: bTreeSystem
+				Functions
+				Message Actions
+					On SAM_Create
+						Call OurWaitCursor( TRUE )
+						Set nDialogType = DLG_Modal
+						Set nActionOnExit = DLG_EndOnExit
+						Set sHelpFileName = ''
+						Set bMapEnterToTab = FALSE
+						Set bPrintFormAllowed = FALSE
+						Set bTreeSystem = TRUE
+						Call SalSendMsg( hWndForm, PAM_clsDLG_POPFIELDS, 0, 0 )
+						Call SalSendMsg( hWndForm, PAM_cls_SETINSTANCEVARS, 0, 0 )
+						If NOT bPrintFormAllowed
+							Call SalSendMsg( pbPrintForm, PAM_clsPB_HIDE, 0, 0 )
+						If NOT bTreeSystem
+							Call SalSendMsgToChildren( hWndForm, PAM_clsDLG_NOTTREESYS, 0, 0 )
+					On SAM_CreateComplete
+						If bMapEnterToTab
+							Call OurMapEnterToTab( TRUE )
+						Call OurWaitCursor( FALSE )
+					On SAM_Destroy
+						If nActionOnExit = FRM_EndOnExit
+							Return SalSendMsg( hWndForm, PAM_cls_DESTROY, 0, 0 )
+					On PAM_cls_DESTROY
+						If bMapEnterToTab
+							Call OurMapEnterToTab( FALSE )
+						If SalParentWindow( hWndForm )
+							Call SalSendMsg( SalParentWindow( hWndForm ), PAM_cls_PARENTACTIVATE, 0, 0 )
+						Return TRUE
+					On SAM_Close
+						Set nReturn = SalSendMsg( hWndForm, PAM_cls_EXIT, 0, 0 )
+						If nReturn = PB_ExitHideWindow
+							Call SalHideWindow( hWndForm )
+							Return FALSE
+					On PAM_cls_CLOSE
+						Set nReturn =  SalSendMsg( hWndForm, PAM_cls_EXIT, wParam, lParam )
+						If nReturn = PB_ExitDestroyWindow
+							Return SalDestroyWindow( hWndForm )
+						Else If nReturn = PB_ExitEndDialog
+							Return SalEndDialog( hWndForm, wParam )
+						Else If nReturn = PB_ExitHideWindow
+							Return SalHideWindow( hWndForm )
+					On PAM_cls_PARENTACTIVATE
+						Call SalShowWindow( hWndForm )
+						Call SalBringWindowToTop( hWndForm )
+					On SAM_Activate
+						Call SalSendMsgToChildren( hWndForm, PAM_clsDLG_ACTIVATE, wParam, lParam )
+					On PAM_cls_EXIT
+						Call SalSendMsg( hWndForm, PAM_clsDLG_PUSHFIELDS, 0, 0 )
+						Call SalSendMsg( SalParentWindow( hWndForm ), PAM_clsDLG_RETURN, 0, SalWindowHandleToNumber( hWndForm ) )
+						If nDialogType = DLG_Modal
+							Return PB_ExitEndDialog
+						Else If nActionOnExit = DLG_EndOnExit
+							Return PB_ExitDestroyWindow
+						Else
+							Return PB_ExitHideWindow
+					On PAM_cls_HELP
+						Return DisplayHelp( hWndForm )
+					On PAM_clsDLG_SHOW
+						Call SalSendMsg( hWndForm, PAM_clsDLG_POPFIELDS, 0, 0 )
+						Return SalShowWindow( hWndForm )
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text: clsBackTextSeasonYear
+			Group Box:
+			Line:
+			Frame:
+			Custom Control: clsSpinSeasonYear
+		Application Actions

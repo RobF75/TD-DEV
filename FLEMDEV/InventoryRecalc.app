@@ -1,0 +1,326 @@
+.head 0 +  Application Description: Centura SQLWindows/32 Standard Application Template
+.data CLASSPROPSSIZE
+0000: 5C00
+.enddata
+.data CLASSPROPS
+0000: 4170705061746800 24006B3A5C63656E 747572615C636C61 73733B6B3A5C6365
+0020: 6E747572615C666C 656D61706C730041 7070506174684C65 6E00040024000000
+0040: 00557365476C6F62 616C506174680004 0001000000000000 00000000
+.enddata
+.head 1 -  Outline Version - 4.0.32
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000E80000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE8FFFFFFFFFFFF FF000000007C0200 004D010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.data DT_MAKERUNDLG
+0000: 0000000000264B3A 5C43454E54555241 5C464C454D444556 5C496E76656E746F
+0020: 7279526563616C63 2E657865264B3A5C 43454E545552415C 464C454D4445565C
+0040: 496E76656E746F72 79526563616C632E 646C6C264B3A5C43 454E545552415C46
+0060: 4C454D4445565C49 6E76656E746F7279 526563616C632E61 7063000001010126
+0080: 4B3A5C43454E5455 52415C464C454D44 45565C496E76656E 746F727952656361
+00A0: 6C632E72756E264B 3A5C43454E545552 415C464C454D4445 565C496E76656E74
+00C0: 6F7279526563616C 632E646C6C264B3A 5C43454E54555241 5C464C454D444556
+00E0: 5C496E76656E746F 7279526563616C63 2E61706300000101 01264B3A5C43454E
+0100: 545552415C464C45 4D4445565C496E76 656E746F72795265 63616C632E617064
+0120: 264B3A5C43454E54 5552415C464C454D 4445565C496E7665 6E746F7279526563
+0140: 616C632E646C6C26 4B3A5C43454E5455 52415C464C454D44 45565C496E76656E
+0160: 746F727952656361 6C632E6170630000 010101264B3A5C43 454E545552415C46
+0180: 4C454D4445565C49 6E76656E746F7279 526563616C632E61 706C264B3A5C4345
+01A0: 4E545552415C464C 454D4445565C496E 76656E746F727952 6563616C632E646C
+01C0: 6C264B3A5C43454E 545552415C464C45 4D4445565C496E76 656E746F72795265
+01E0: 63616C632E617063 0000010101
+.enddata
+.head 2 -  Outline Window State: Normal
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600040003002D00 0000000000000000 0000B71E5D0E0500 1D00FFFF4D61696E
+0020: 0000000000000000 0000000000000000 0000003B00010000 00000000000000E9
+0040: 1E800A00008600FF FF496E7465726E61 6C2046756E637469 6F6E730000000000
+0060: 0000000000000000 0000000000003200 0100000000000000 0000E91E800A0000
+0080: DF00FFFF56617269 61626C6573000000 0000000000000000 0000000000000000
+00A0: 3000010000000000 00000000F51E100D 0000F400FFFF436C 6173736573000000
+00C0: 0000000000000000 0000000000000000
+.enddata
+.data VIEWSIZE
+0000: D000
+.enddata
+.head 3 -  Left: -0.013"
+.head 3 -  Top: 0.0"
+.head 3 -  Width:  8.013"
+.head 3 -  Height: 4.969"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: D4180909B80B1A00
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left: 4.15"
+.head 3 -  Top: 1.885"
+.head 3 -  Width:  3.8"
+.head 3 -  Height: 2.073"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left: 0.575"
+.head 3 -  Top: 0.094"
+.head 3 -  Width:  5.063"
+.head 3 -  Height: 2.719"
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left: 6.388"
+.head 3 -  Top: 0.729"
+.head 2 -  Fully Qualified External References? Yes
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? Yes
+.head 2 -  Use Release 4.0 Scope Rules? No
+.head 1 +  Libraries
+.head 2 -  File Include: Itemfunc.apl
+.head 2 -  File Include: Spnfield.apl
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: MS Sans Serif
+.head 4 -  Font Size: 8
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Line
+.head 4 -  Line Color: Use Parent
+.head 3 +  Frame
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: 3D Face Color
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0'%'
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;'($'###000')'
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 3 -  Enumerations
+.head 2 +  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 316008985
+0000: E40100004C010000 0000000000000000 020000100000005F 0100005019000000
+0020: 0100E8C601000040 73000000010000A3 7801001925000120 C701BA000073D100
+0040: 0100006891010019 00890120C801006E 00730034010000AA 015A00190001A220
+0060: C90100001B730001 008D00C301009619 000120E020020000 00467300010000A3
+0080: DC01001925000120 2102BA000073D100 01000068F5010019 008901202202006E
+00A0: 007300340100000E 025A00190001A220 230200001B730001 008D00270200483B
+00C0: 0100000700808406 01002A0200267300 010000A32B02003B 3300078606BA012A
+00E0: 73C900010000E82F 02003B8C00078806 016E2A7300320100 0033025A00190004
+0100: 8100AC0E0000009B 7300018D004C0200 9619000120E03B25 0000004673000100
+0120: 00A3650200192500 0120E425BA000073 D100010000687E02 001900890120E525
+0140: 006E007300340100 0097025A00190001 8220FB290000001B 730001000D00
+.enddata
+.head 3 -  Number: naItemNos[*]
+.head 3 -  Number: nYear
+.head 2 +  Internal Functions
+.head 2 +  Named Menus
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 4192309406
+0000: 860800008E050000 0000000000000000 0200001200FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F19003C00 001163006C735370
+0040: 696E53650061736F 6E59656172002200 0000010000004F19 00000101FE000600
+0060: 0000031601730000 0034010000018040 0400000001000008 0C636C6466476580
+0080: 6E6572616C2200EC 0001002904000003 FE6E0000B8CC0173 0001060001801D00
+00A0: 000000020000000D 636C0153656E6445 6D6100696C734000 0000027B00194B00
+00C0: 01FE051800000078 0273A20000010000 CD190004C20002FE 0006F600786C0001
+00E0: 0001008053000000 030000100010636C 446961A06C6F6747 6565839A00000005
+0100: BD0019A50001FE12 8C0000D80273D100 0100006619000400 0D02130000007BD8
+0120: 003601001D005900 190004C0FE001400 00009ED800010D00 3600000094040000
+0140: 03FEB015000000D8 67000100833A0000 0019250001FE1600 EC0000D8D1000100
+0160: 0080018081000000 0401000863514F45 6D07C0000000067B 00194B0001FE051B
+0180: 00500373A2000001 0000CD1900191200 01FE080000F60050 680001000032B000
+01A0: 000019008401FE0B 0000003D5000011A 00004B00002C0019 0001FE610E000000
+01C0: 508F000100060064 000000194B0001FE 11D800000050A300 010000C17D000000
+01E0: 04D0000102FE14FE 008380010000007F 01CC800400051C00 0C6D6C47BE6522D1
+0200: 000100005B040003 DB0500985C037300 010D000180190099 0006000CC3706247
+0220: 653F00017A000019 4B0001FE07180000 00280473A2000001 0000010180680000
+0240: 0007C30009636C81 48656C709A00EC00 0500AD0400026F00 348C047300010036
+0260: 000400194B0001FE 08DB0034A3000100 00CD1D0019120001 FE090000F6003468
+0280: 0001000036B30019 008401FE0A000000 3D3400011A00004F 00002C00190001FE
+02A0: 6D0B00348F000100 C6000180198C0008 0009630745786974 22A20000010000B7
+02C0: 1900B401FE070031 4C047300011A0000 0180042300090000 0C07506963457840
+02E0: 70616E64220000F4 010000D604000237 00C4046673000100 6301800400860A00
+0300: 12636C07546F6767 6C0065427574746F 6E22A20000010000 B70400B602060031
+0320: D0047300011B0001 8046300000000B00 1116637053746100 727450726F677261
+0340: C06DD600000007DE 0004FA0002C600F4 0473680001000004 B3000400B6020700
+0360: 3DF40001DB0008AC 000400026D0800F4 CF000106000C0000 00194B0001FE09DB
+0380: 00F4A300010000C1 2500000004DA0003 0AF600F46C000100 29B00000000400B6
+03A0: 020B003DF400011B 002D00002C001900 01FE6D0C00F48F00 0100060001805200
+03C0: 000C000C000F636C F953741F300100ED 0A002D190001FE6D 0500068805730000
+03E0: 010036001900194B 0001FE069A000006 05A300010000CD32 0004DA000207F600
+0400: 066C00010036B300 0400B60208003D06 0001DB003AAC0004 00026D090006CF00
+0420: 0106003E00000004 6B00020ADB0006B3 000100C142000000 04DA00020BF60006
+0440: 6C00010046B20000 0400B6020C003D06 00011B004A0000AC 00040002610D0000
+0460: 0006CF000106004E 000000046B00020E DB0006B300010031 018053000D43000B
+0480: 636C46006F726D42 6173659AB2000005 00B71900B401FE08 00318405730001DA
+04A0: 000019AC00040002 6D090084CF000136 001D00194B0004FE 0ADB0084B3000100
+04C0: 8D360004009A0003 0B00F600846C0001 003AB3001900B401 FE0C003D8400011A
+04E0: 000001801933000E 00177C636C504072 696E744261690063 5265706F727422A3
+0500: 00010000B71900B4 01FE090021020673 0000011A00000180 0403000F00000010
+0520: 07546F6F6C540069 7057696E646F7744 2200000100006F04 006D030500635606
+0540: 7300360100018006 0400100000008C0C 63726247EF6CE800 0100002D040002FE
+0560: 690600009ECC0673 0001C60001801DC8 001100000CF16362 47134000000200BD
+0580: 0019E50001FE8D00 B60673D100010000 66190004006902FE 07007BB600360100
+.enddata
+.head 2 +  Default Classes
+.head 3 -  MDI Window: cBaseMDI
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Option Button:
+.head 3 -  Check Box:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window: cQuickDatabase
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text:
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 3 -  ActiveX:
+.head 2 +  Application Actions
+.head 3 +  On SAM_AppStartup
+.head 4 +  If SalStrUpperX( SalStrRightX( strArgArray[0],3 ) ) = 'EXE'
+.head 5 -  Set SqlDatabase = strArgArray[1]
+.head 5 -  Set SqlUser = strArgArray[2]
+.head 5 -  Set SqlPassword = strArgArray[3]
+.head 4 +  Else
+.head 5 -  Set SqlDatabase = 'STOCK'
+.head 5 -  Set SqlUser = 'GRAHAM'
+.head 5 -  Set SqlPassword = 'GRAHAM'
+.head 4 -  !
+.head 4 -  Call CheckProgramExistance( "Recalc Inventory", TRUE )
+.head 4 -  !
+.head 4 -  Call SqlHandlesSetup(  )
+.head 4 -  Set nYear = WhichSeasonYear( SalDateCurrent(  ) ) 
+.head 4 -  ! Call RecalculateInventoryFigures( naItemNos, nYear-1, 'ALL', SH_cls_Execute ) 
+.head 4 -  Call RecalculateInventoryFigures( naItemNos, nYear, 'ALL', SH_cls_Execute ) 
+.head 4 -  Call RecalculateInventoryFigures( naItemNos, nYear+1, 'ALL', SH_cls_Execute ) 
+.head 4 -  Call RecalculateInventoryFigures( naItemNos, nYear+2, 'ALL', SH_cls_Execute ) 
+.head 3 +  On SAM_AppExit
+.head 4 -  Call SqlHandlesDisconnectClose(  )
+.head 4 -  Return TRUE

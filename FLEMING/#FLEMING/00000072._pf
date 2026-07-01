@@ -1,0 +1,1201 @@
+Application Description: SQLWindows 5.01 Jans Run Program Class
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D60000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF000000 0000000000900200 0039010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 0418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.1"
+			Top:    2.979"
+			Width:  4.688"
+			Height: 2.906"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   6.6"
+			Top:    0.521"
+		Fully Qualified External References? No
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: Button.apl
+		File Include: Datfield.apl
+		File Include: Bgtext.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Gray
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Italic
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Black
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+			Library name: kernel32.dll
+				Function: GetModuleHandleA
+					Description:
+					Export Ordinal: 0
+					Returns
+						Number: WORD
+					Parameters
+						String: LPSTR
+				Function: WinExec
+					Description:
+					Export Ordinal: 0
+					Returns
+						Number: INT
+					Parameters
+						String: LPSTR
+						Number: INT
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for RUNPROG.APL
+				Number: RUNPROGAplMsgOffSet = SAM_User + 8000
+				Number: RUNPROGAplConstOffSet = 4200
+				! Message go up to AplOffSet + 99
+				Number: PAM_clsPB_LOADING_START = RUNPROGAplMsgOffSet + 1
+				Number: PAM_clsPB_LOADING_END = RUNPROGAplMsgOffSet + 2
+				Number: PAM_clsPB_LOADING_MINIMIZE = RUNPROGAplMsgOffSet + 3
+				Number: nTimerId = RUNPROGAplMsgOffSet + 4
+				Number: USR_ACCT = RUNPROGAplMsgOffSet + 5
+				Number: USR_STCKCONTROL = RUNPROGAplMsgOffSet + 6
+				Number: USR_PRICEADJ = RUNPROGAplMsgOffSet + 7
+				Number: USR_SYSADM = RUNPROGAplMsgOffSet + 8
+				Number: USR_FAMILY = RUNPROGAplMsgOffSet + 9
+				Number: USR_GENERAL = RUNPROGAplMsgOffSet + 10
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1347615921
+0000: 8600000038000000 0000000000000000 020000050000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E8040D0000 FF3F
+.enddata
+			String: sDatabase
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 2216029225
+0000: A60A000010050000 0000000000000000 0200001500FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2E003C00 001163006C737062
+0040: 5374617200745072 6F6772616D00BA00 0000070000000F02 040000FE00FF9304
+0060: 000002FB00FF0F08 000000EE0200FF3F 0C00800000010D00 0000FFFF80190000
+0080: 00030400FE00FF83 1D00000002FB00FF 0F21000000EE0100 FF3F018000360000
+00A0: 0001000000C80F63 6C5374FF00EE0000 0009000000CF010D FE00FF930D000001
+00C0: FB00FF0F1A000000 EE0200FF3F1E00B8 00000200FFFFE022 00000002FE00FF83
+00E0: 2600000002FB00FF 0F2A000000EE0200 FF3F2E00B9000200 FFFFE03200000002
+0100: FE00FF4301800D00 0080020000000C63 6C027047656E6572 61886C1E00000100
+0120: 9E00010DFD00FF07 0180380000000003 00000009636C0748 656C708680000000
+0140: 0500000067020400 FFFF8D0400010DFD 00FF071100000001 F700FFDF1EDC0001
+0160: 00FF7F2B70000000 0100FFFF3101800D 0004F30009814578 69741E00E8000100
+0180: 00D9010D00FF7F01 C880040000051C00 0C50696300457870 616E641E00D10001
+01A0: 0000BB0200FFFF18 018004000600E000 0012636C01546F67 676C654280757474
+01C0: 6F6E1E00E8000100 00DD0200FF7F01CC 800400071C000C64 6647FE65D1000100
+01E0: 00B3030400FFFF80 01802F0000000821 000B636C466F0072 6D426173658600D9
+0200: 000500B3010D00FF FFE60D0002FE00FF 1B1100040DFA0000 FF6F1E00EE0300FF
+0220: BF22B9000100FFFF 1801800D000900E1 0017636C03507269 6E74420261696352
+0240: 65706F1872741E00 01003D00010DFB00 FF8F01800D01000A 0000000B68806353
+0260: 716C48616E106C65 1E000001003D0001 0DFB00FF8F01802F 01000B0000001063
+0280: 026C4469616C6F67 7C476586B2000005 0067010D00FFFFCD 0D0002FD00FF3711
+02A0: 0004F700FFDF1EDC 000300FF7F227300 0100FFFF3101800D 000C620000116353
+02C0: 0070696E53656173 6F806E596561721E 00E800010000D901 0D00FF7F01C08034
+02E0: 0000000D50001463 6C705300656C6563 7446726F006D5461 626C656C00D00000
+0300: 040000B3010D00FF FFE60D0001FE00FF 9B1A0001FB00FF0F 27000000EE0100FF
+0320: 3F01800604000E00 0000480D636C5365 650263496E746F1E 00D100010000BB03
+0340: 00FFFF000180B700 00000F0020000016 636C47659F5461F3 4765513602001500
+0360: 9E00010DFD00FF27 0D000001F700FFDF 1ADC000100FF7F27 73000100FFFFC934
+0380: 000002FD00FF2738 000002F700FF1F3C 0000DC000200FF7F 40700000000200FF
+03A0: FFC14400000002FD 00FF074800000002 F700FF1F4C0000DC 000200FF7F507000
+03C0: 00000200F4010000 0F80010000FE0081 54000000010DD100 0100003F8001F900
+03E0: 00075800000001F6 0D00FF1F650000DC 000100FF7F727000 00000100FFFFC17F
+0400: 00000001FD00FF07 8C00000001F700FF 1F990000DC000100 FF7FA67000000001
+0420: 00FFFFC1B3000000 03FD00FF87018022 000000100000001D 636C0154626C4D61
+0440: 6B652C5365636564 00526F774B657941 7200726179740000 00047B0002470001
+0460: 0000FFE480010000 DF04D800010D00FF 7F117200000100FF FFCD1E0002FD00FF
+0480: C701800D8C001100 0C63F1636247196C 1E0001003D00010D FB00FF8F01800401
+04A0: 0012000000106303 546F6F6C54690070 57696E646F771EA2 0000010000770300
+04C0: FFFF310180040013 100000000C665461 0365436163686546 1E00010000EF03FE
+04E0: 00FF430180150000 00140000000B6366 438E61506F6F405A 0000000300008F07
+0500: 1900800001010094 07009E008001FC00 001B04000304FB00 FF6F0800EC010D00
+0520: FF3F
+.enddata
+			Pushbutton Class: clspbStartProgram
+				Title:
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clspbGeneral
+				Class Variables
+					String: sIniFile
+					String: sAppFileName
+					String: sAppDescription
+					Number: nRunModeReturn
+					Window Handle: hWndThisWnd
+					String: sTmp
+					Number: nTmp
+				Instance Variables
+					! PUBLIC
+					String: sLiveProgramSection
+					String: sLiveProgramDescription
+					String: sLiveProgramTitle
+					String: sLiveProgramDefaultPathNameExt
+					!
+					String: sPlayProgramSection
+					String: sPlayProgramDescription
+					String: sPlayProgramTitle
+					String: sPlayProgramDefaultPathNameExt
+					!
+					! sUserTypeRestrictions = NULL, SystemAdministrators, AccountsUsers, SQLConsoleUsers, 
+							WinTalkUsers, RepWinUsers, QuestUsers, TeamWinUsers, SqlWinUsers
+					String: sUserTypeRestrictions
+					Boolean: bLoadAndWait
+					Number: nRunMode
+					String: sExtraParameterCommandLine
+					Number: nTimerDelay
+					Number: nTimerId
+					!
+					Boolean: bStartGuptaApps
+					! PRIVATE
+					String: sLiveProgramPathNameExt
+					String: sPlayProgramPathNameExt
+					String: sLiveUsers
+					String: sPlayUsers
+					Boolean: bAccessGranted
+				Functions
+					Function: GetAppNameFromPath
+						Description:
+						Returns
+							String:
+						Parameters
+							String: sAppFullName
+						Static Variables
+						Local variables
+							String: sTokens[*]
+							Number: nNumTokens
+							String: sTmp
+							Number: nPos
+						Actions
+							Set nNumTokens = SalStrTokenize( sAppFullName, '', '\\', sTokens )
+							Set sTmp = sTokens[ nNumTokens - 1 ]
+							Set nPos = SalStrScan( sTmp, '.' ) 
+							If nPos >= 0
+								Set sTmp = SalStrLeftX( sTmp, nPos )
+							Return SalStrUpperX( sTmp )
+				Message Actions
+					On SAM_Create
+						Set sIniFile = FlemSysIniFileName
+						Set sLiveProgramSection = IniGeneralLiveSectionName
+						Set sLiveProgramDescription = ''
+						Set sLiveProgramTitle = ''
+						Set sLiveProgramDefaultPathNameExt = ''
+						Set sLiveProgramPathNameExt = ''
+						Set sPlayProgramSection = IniGeneralPlaySectionName
+						Set sPlayProgramDescription = ''
+						Set sPlayProgramTitle = ''
+						Set sPlayProgramDefaultPathNameExt = ''
+						Set sPlayProgramPathNameExt = ''
+						Set sUserTypeRestrictions = ''
+						Set bLoadAndWait = FALSE
+						Set nRunMode = Window_Normal
+						Set sExtraParameterCommandLine = ''
+						Set nTimerDelay = 5000
+						! DF 28/4/97 defined in constants now
+						! Set nTimerId = 5000
+						Set bStartGuptaApps = TRUE
+						Set bAccessGranted = TRUE
+						Call SalSendClassMessage( SAM_Create, wParam, lParam )
+						Call SalGetProfileString( sLiveProgramSection, sLiveProgramTitle, sLiveProgramDefaultPathNameExt, sLiveProgramPathNameExt, sIniFile )
+						Call SalGetProfileString( sPlayProgramSection, sPlayProgramTitle, sPlayProgramDefaultPathNameExt, sPlayProgramPathNameExt, sIniFile )
+						If sUserTypeRestrictions != ''
+							Call SalGetProfileString( sLiveProgramSection, sUserTypeRestrictions, '', sLiveUsers, sIniFile )
+							Call SalGetProfileString( sPlayProgramSection, sUserTypeRestrictions, '', sPlayUsers, sIniFile )
+							If SqlDatabase = 'STOCK'
+								If NOT SalStrScan( sLiveUsers, SqlUser ) >= 0
+									Call SalSendMsg( hWndItem, PAM_clsPB_HIDE, 0, 0 )
+									Call SalSendMsg( hWndItem, PAM_clsPB_DISABLE, 0, 0 )
+									Set bAccessGranted = FALSE
+							Else
+								If NOT SalStrScan( sPlayUsers, SqlUser ) >= 0
+									Call SalSendMsg( hWndItem, PAM_clsPB_HIDE, 0, 0 )
+									Call SalSendMsg( hWndItem, PAM_clsPB_DISABLE, 0, 0 )
+									Set bAccessGranted = FALSE
+						Return TRUE
+					On PAM_clsPB_CLICK
+						If bAccessGranted
+							Call OurWaitCursor( TRUE )
+							If SqlDatabase = 'STOCK'
+								Set sAppFileName = sLiveProgramPathNameExt
+								Set sAppDescription = sLiveProgramDescription
+							Else
+								Set sAppFileName = sPlayProgramPathNameExt
+								Set sAppDescription = sPlayProgramDescription
+							!
+							Call SalSendMsg( hWndForm, PAM_clsPB_LOADING_START, 0, SalHStringToNumber( sAppDescription ) )
+							If bLoadAndWait
+								Set sAppFileName = sAppFileName||' '||SqlDatabase||' '||SqlUser||' '||SqlPassword||' '||sExtraParameterCommandLine
+								Call SalPostMsg( hWndItem, PAM_clsPB_LOADING_MINIMIZE, 0, 0 )
+								If bStartGuptaApps
+									If SalLoadAppAndWait( sAppFileName, nRunMode, nRunModeReturn )
+										Call SalSendMsg( hWndItem, PAM_clsPB_LOADING_END, 0, 0 )
+										Return TRUE
+									Else
+										Call SalSendMsg( hWndItem, PAM_clsPB_LOADING_END, 0, 0 )
+										Return FALSE
+								Else
+									Set nTmp = WinExec( sAppFileName||' '||sExtraParameterCommandLine, SW_SHOW )
+									If nTmp >= 32
+										Call SalSendMsg( hWndItem, PAM_clsPB_LOADING_END, 0, 0 )
+										Return TRUE
+									Else
+										Call SalSendMsg( hWndItem, PAM_clsPB_LOADING_END, 0, 0 )
+										Return FALSE
+							Else
+								If bStartGuptaApps
+									If SalLoadApp( sAppFileName, SqlDatabase||' '||SqlUser||' '||SqlPassword||' '||sExtraParameterCommandLine )
+										!
+										! If we've started it set a timer.
+										Call SalTimerSet ( hWndItem, nTimerId, nTimerDelay )
+										Return TRUE
+									Else
+										! Had trouble starting it so quit.
+										Call SalSendMsg( hWndItem, PAM_clsPB_LOADING_END, 0, 0 )
+										Return FALSE
+								Else
+									Set nTmp = WinExec( sAppFileName||' '||sExtraParameterCommandLine, SW_SHOW )
+									If nTmp >= 32
+										Call SalSendMsg( hWndItem, PAM_clsPB_LOADING_END, 0, 0 )
+										Return TRUE
+									Else
+										! Had trouble starting it so quit.
+										Call SalSendMsg( hWndItem, PAM_clsPB_LOADING_END, 0, 0 )
+										Return FALSE
+						Else
+							Call SalMessageBox( 'Access Denied', 'Warning', MB_Ok )
+					! DF 28/4/97 was WM_TIMER
+					On SAM_Timer
+						!
+						! DF 28/4/97
+						If wParam = nTimerId
+							! Kill our timer.
+							Call SalTimerKill ( hWndItem, nTimerId )
+							!
+							! Check for the module running.
+							If GetModuleHandleA( GetAppNameFromPath( sAppFileName ) )
+								!
+								! It's still running so set our timer again and wait.
+								Call SalTimerSet ( hWndItem, nTimerId, nTimerDelay )
+							Else
+								!
+								! It's no longer running so stop waiting.
+								Call SalSendMsg( hWndItem, PAM_clsPB_LOADING_END, 0, 0 )
+						! DF 28/4/97
+						Call SalSendClassMessage( SAM_Timer, wParam, lParam )
+					On PAM_clsPB_LOADING_MINIMIZE
+						If NOT bLoadAndWait
+							Call SalGetWindowText( hWndForm, sTmp, 60 )
+							Set hWndThisWnd = FindWindowA( 0, sTmp )
+							Call ShowWindow( hWndThisWnd, SW_MINIMIZE )
+						Return TRUE
+					On PAM_clsPB_LOADING_END
+						If NOT bLoadAndWait
+							Call SalTimerKill ( hWndItem, nTimerId )
+							Call SalGetWindowText( hWndForm, sTmp, 60 )
+							Set hWndThisWnd = FindWindowA( 0, sTmp )
+							Call ShowWindow( hWndThisWnd, SW_MINIMIZE )
+						! Else
+							 Call SalGetWindowText( hWndForm, sTmp, 60 )
+							 Set hWndThisWnd = FindWindowA( 0, sTmp )
+							 Call ShowWindow( hWndThisWnd, SW_RESTORE )
+						Call SalSendMsg( hWndForm, PAM_clsPB_LOADING_END, wParam, lParam )
+						Call SalSendMsg( hWndItem, PAM_clsPB_ENABLE, 2, 0 )
+						Call OurWaitCursor( FALSE )
+					On PAM_clsPB_ENABLE
+						If wParam = 2
+							Return SalSendClassMessage( PAM_clsPB_ENABLE, 0, 0 )
+						Else
+							Return TRUE
+			General Window Class: clsStartProgram
+				Description:
+				Derived From
+				Class Variables
+					Boolean: __cbLive
+					Boolean: __cbInitialized
+					String: __csAccUsers
+					String: __csSectionName
+					String: __csAccSectionName
+					String: __csFamUsers
+					String: __csPAdjUsers
+					String: __csSContUsers
+					String: __csSysAdmUsers
+				Instance Variables
+					String: isAppName
+					String: isDBName
+					String: isProgramExePath
+					String: isParams
+					Boolean: ibLoadAndWait
+					Number: inRunMode
+					Number: __inRunModeReturn
+					Boolean: ibExecProgram
+					Boolean: __ibDefaultSection
+				Functions
+					Function: LaunchApp
+						Description:
+						Returns
+						Parameters
+						Static Variables
+						Local variables
+							Window Handle: hWnd
+							Number: nhWnd
+							String: sAppName
+						Actions
+							! Try to find an existing instance of the app
+									and bring it to the top
+							Set hWnd = SalAppFind( isProgramExePath, FALSE )
+							! If we found it
+							If hWnd
+								! GetLastActivePopup will return the handle of any modal dialogs in use
+								Set hWnd = GetLastActivePopup( hWnd )
+								Return SalBringWindowToTop( hWnd )
+							Else
+								! The app was not found, try to load it
+								Return SalLoadApp( isProgramExePath, isDBName||' '||SqlUser||' '||SqlPassword||' '||isParams )
+					Function: LaunchAppAndWait
+						Description:
+						Returns
+						Parameters
+						Static Variables
+						Local variables
+							Window Handle: hWnd
+							Number: nRunModeReturn
+						Actions
+							! Try to find an existing instance of the app
+									and bring it to the top
+							Set hWnd = SalAppFind( isProgramExePath, FALSE )
+							! If we found it
+							If hWnd
+								! GetLastActivePopup will return the handle of any modal dialogs in use
+								Set hWnd = GetLastActivePopup( hWnd )
+								Return SalBringWindowToTop( hWnd )
+							Else
+								! The app was not found, try to load it
+								Return SalLoadAppAndWait( isProgramExePath, inRunMode, __inRunModeReturn )
+					Function: ExecProgram
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Number: nTmp
+						Actions
+							Set nTmp = WinExec( isProgramExePath||' '||isParams, SW_SHOW )
+							If nTmp >= 32
+								Return TRUE
+							Else
+								Return FALSE
+					Function: CloseApp
+						Description:
+						Returns
+						Parameters
+							String: sApp
+						Static Variables
+						Local variables
+							Window Handle: hWnd
+							Window Handle: hWndChild
+						Actions
+							! Try to find an existing instance of the app
+									and bring it to the top
+							Set hWnd = SalAppFind( sApp, FALSE )
+							! If we found it
+							If hWnd
+								! Post it a close message
+								! This message must be posted, if you send,
+										it screws up Windows
+								Call SalPostMsg( hWnd, SAM_Close, 0, 0 )
+							Return TRUE
+					Function: OnClose
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: sProgName
+							Window Handle: hWndCalledFrom
+						Static Variables
+						Local variables
+						Actions
+							If not CloseApp( sProgName )
+								Return FALSE
+							! Post ourselves a close message
+							Call SalPostMsg( hWndCalledFrom, PAM_cls_CLOSE, 0, 0  )
+					Function: ShutDown
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: sProgName
+						Static Variables
+						Local variables
+						Actions
+							! If either of the subsystem apps is still around, don't exit
+							If SalAppFind( sProgName, FALSE )
+								Return FALSE
+							Call SalQuit()
+					Function: Enabled
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: nUserType
+						Static Variables
+						Local variables
+						Actions
+							Set __ibDefaultSection = TRUE
+							Select Case nUserType
+								Case USR_ACCT
+									If SalStrScan( __csAccUsers, SqlUser ) >= 0
+										Set __ibDefaultSection = FALSE
+										Return TRUE
+									Else
+										Return FALSE
+								Case USR_FAMILY
+									If SalStrScan( __csFamUsers, SqlUser ) >= 0
+										Set __ibDefaultSection = FALSE
+										Return TRUE
+									Else
+										Return FALSE
+								Case USR_PRICEADJ
+									If SalStrScan( __csPAdjUsers, SqlUser ) >= 0
+										Return TRUE
+									Else
+										Return FALSE
+								Case USR_STCKCONTROL
+									If SalStrScan( __csSContUsers, SqlUser ) >= 0
+										Return TRUE
+									Else
+										Return FALSE
+								Case USR_SYSADM
+									If SalStrScan( __csSysAdmUsers, SqlUser ) >= 0
+										Set __ibDefaultSection = FALSE
+										Return TRUE
+									Else
+										Return FALSE
+								Case USR_GENERAL
+									Return TRUE
+								Default
+									Return TRUE
+					Function: SetCreditorDatabase
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							If sDatabase = 'LIVE'
+								Set isDBName = 'CREDITOR'
+							Else
+								Set isDBName = 'CREDDEV'
+					Function: SetAppName
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: sAppName
+						Static Variables
+						Local variables
+						Actions
+							Set isAppName = sAppName
+					Function: SetParams
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: sParams
+						Static Variables
+						Local variables
+						Actions
+							Set isParams = sParams
+					Function: SetRunMode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: nRunMode
+						Static Variables
+						Local variables
+						Actions
+							Set inRunMode = nRunMode
+					Function: SetLoadAndWait
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Boolean: bLoadAndWait
+						Static Variables
+						Local variables
+						Actions
+							Set ibLoadAndWait = bLoadAndWait
+					Function: SetExecProgram
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Boolean: bExecProgram
+						Static Variables
+						Local variables
+						Actions
+							Set ibExecProgram = bExecProgram
+					Function: StartProgram
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Call DisplayStartMessage( )
+							If NOT __ibDefaultSection
+								Call SalGetProfileString( __csAccSectionName, isAppName, '', isProgramExePath, FlemSysIniFileName )
+							Else
+								Call SalGetProfileString( __csSectionName, isAppName, '', isProgramExePath, FlemSysIniFileName )
+							If ibExecProgram
+								Call ExecProgram(  )
+								Call SalSendMsg( hWndItem, PAM_clsPB_LOADING_END, 0, 0 )
+							Else If ibLoadAndWait
+								Set isProgramExePath = isProgramExePath||' '||isDBName||' '||SqlUser||' '||SqlPassword||' '||isParams
+								Call LaunchAppAndWait(  )
+								Call SalSendMsg( hWndItem, PAM_clsPB_LOADING_END, 0, 0 )
+							Else
+								Call LaunchApp(  )
+							Call ClearStartMessage(  )
+							Return TRUE
+					Function: DisplayStartMessage
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Call SalSendMsg( hWndForm, PAM_clsPB_LOADING_START, 0, SalHStringToNumber( isAppName ) )
+					Function: ClearStartMessage
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Call SalSendMsg( hWndForm, PAM_clsPB_LOADING_END, 0, 0 )
+				Message Actions
+					On SAM_Create
+						If NOT __cbInitialized
+							If sDatabase = 'LIVE'
+								Set __cbLive = TRUE
+								Set __csSectionName = IniGeneralLiveSectionName
+								Set __csAccSectionName = IniAccountsLiveSectionName
+							Else
+								Set __cbLive = FALSE
+								Set __csSectionName = IniGeneralPlaySectionName
+								Set __csAccSectionName = IniAccountsPlaySectionName
+							Call SalGetProfileString( __csAccSectionName, 'AccountsUsers', '', __csAccUsers, FlemSysIniFileName )
+							Call SalGetProfileString( __csAccSectionName, 'FlemingsFamily', '', __csFamUsers, FlemSysIniFileName )
+							Call SalGetProfileString( __csSectionName, 'PriceAdjusters', '', __csPAdjUsers, FlemSysIniFileName )
+							Call SalGetProfileString( __csSectionName, 'StockControllers', '', __csSContUsers, FlemSysIniFileName )
+							Call SalGetProfileString( __csAccSectionName, 'SystemAdministrators', '', __csSysAdmUsers, FlemSysIniFileName )
+							Set __cbInitialized = TRUE
+						Set isParams = ''
+						Set ibExecProgram = FALSE
+						Set inRunMode = Window_Normal
+						Set __ibDefaultSection = TRUE
+						! If sDatabase = 'LIVE'
+							 Set isDBName = 'STOCK'
+						! Else
+							 Set isDBName = 'STOCKDEV'
+						Set isDBName = SqlDatabase
+						! do initialize code to get users path and rights etc
+			Pushbutton Class: clspbStartProg
+				Title:
+				Window Location and Size
+					Left:  
+					Top:   
+					Width:  1.8"
+					Width Editable? Class Default
+					Height: 0.6"
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clsStartProgram
+					Class: clspbGeneral
+				Class Variables
+				Instance Variables
+					Number: __inTimerDelay
+				Functions
+					Function: GetAppNameFromPath
+						Description:
+						Returns
+							String:
+						Parameters
+							String: sAppFullName
+						Static Variables
+						Local variables
+							String: sTokens[*]
+							Number: nNumTokens
+							String: sTmp
+							Number: nPos
+						Actions
+							Set nNumTokens = SalStrTokenize( sAppFullName, '', '\\', sTokens )
+							Set sTmp = sTokens[ nNumTokens - 1 ]
+							Set nPos = SalStrScan( sTmp, '.' ) 
+							If nPos >= 0
+								Set sTmp = SalStrLeftX( sTmp, nPos )
+							Return SalStrUpperX( sTmp )
+				Message Actions
+					On SAM_Create
+						Set __inTimerDelay = 5000
+						! When using clspbStartProg - set the instance variable appearanceonclick = nothing
+						Call SalSendClassMessageNamed( clsStartProgram, SAM_Create, wParam, lParam )
+						Return SalSendClassMessageNamed( clspbGeneral, SAM_Create, wParam, lParam )
+					On SAM_Timer
+						!
+						If wParam = nTimerId
+							! Kill our timer.
+							Call SalTimerKill ( hWndItem, nTimerId )
+							!
+							! Check for the module running in the same process space as the calling app - until it starts
+									properly it will be in the same space so we dont want to enable the pb until it has completely started
+							If GetModuleHandleA( GetAppNameFromPath( clspbStartProg.isProgramExePath ) )
+								!
+								! It's still running so set our timer again and wait.
+								Call SalTimerSet ( hWndItem, nTimerId, __inTimerDelay )
+							Else
+								!
+								! It's no longer running so stop waiting.
+								Call SalSendMsg( hWndItem, PAM_clsPB_LOADING_END, 0, 0 )
+						Call SalSendClassMessage( SAM_Timer, wParam, lParam )
+					On PAM_clsPB_CLICK
+						Call SalDisableWindow( hWndItem )
+						Call hWndItem.clsStartProgram..StartProgram(  )
+						! If the program being started is not an exec program and not a loadandwait then its a loadapp
+								so we want to set a timer and only enable the pb when the program has been loaded
+						If NOT clspbStartProg.ibExecProgram
+							If NOT clspbStartProg.ibLoadAndWait
+								Call SalTimerSet ( hWndItem, nTimerId, __inTimerDelay )
+						Return TRUE
+					On PAM_clsPB_LOADING_END
+						! Call SalSendMsg( hWndForm, PAM_clsPB_LOADING_END, wParam, lParam )
+						Call SalEnableWindow( hWndItem )
+						Call OurWaitCursor( FALSE )
+			Data Field Class: clsdfStartProgram
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? No
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clsStartProgram
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On PAM_clsPB_CLICK
+						Call hWndForm.clsStartProgram..StartProgram(  )
+						Return TRUE
+			Form Window Class: clsfrmStartForm
+				Title:
+				Icon File:
+				Accesories Enabled? Class Default
+				Visible? Class Default
+				Display Settings
+					Display Style? Class Default
+					Visible at Design time? Yes
+					Automatically Created at Runtime? Class Default
+					Initial State: Class Default
+					Maximizable? Class Default
+					Minimizable? Class Default
+					System Menu? Class Default
+					Resizable? Class Default
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Form Size
+						Width:  Class Default
+						Height: Class Default
+						Number of Pages: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+				Next Class Child Key: 8
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+				Description:
+				Derived From
+					Class: clsFormGeneral
+					Class: clsStartProgram
+				Menu
+				Tool Bar
+					Display Settings
+						Display Style? Class Default
+						Location? Class Default
+						Visible? Class Default
+						Size: Class Default
+						Size Editable? Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Contents
+						Pushbutton: pbHelp
+							Class Child Ref Key: 1
+							Class ChildKey: 5
+							Class: clsFormGeneral
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbItemEnq
+							Class Child Ref Key: 5
+							Class ChildKey: 6
+							Class: clsFormGeneral
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbPrintForm
+							Class Child Ref Key: 6
+							Class ChildKey: 7
+							Class: clsFormGeneral
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+						Pushbutton: pbExit
+							Class Child Ref Key: 2
+							Class ChildKey: 8
+							Class: clsFormGeneral
+							Property Template:
+							Class DLL Name:
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Keyboard Accelerator: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Picture File Name:
+							Picture Transparent Color: Class Default
+							Image Style: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Message Actions
+				Contents
+					Data Field: dfDatabase
+						Class Child Ref Key: 3
+						Class ChildKey: 1
+						Class: clsFormGeneral
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					Data Field: dfUser
+						Class Child Ref Key: 4
+						Class ChildKey: 2
+						Class: clsFormGeneral
+						Property Template:
+						Class DLL Name:
+						Data
+							Maximum Data Length: Class Default
+							Data Type: Class Default
+							Editable? Class Default
+						Display Settings
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Justify: Class Default
+							Format: Class Default
+							Country: Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							Input Mask: Class Default
+						Message Actions
+					Background Text:
+						Resource Id: 34623
+						Class Child Ref Key: 8
+						Class ChildKey: 3
+						Class: clsFormGeneral
+						Window Location and Size
+							Left:   Class Default
+							Top:    Class Default
+							Width:  Class Default
+							Width Editable? Class Default
+							Height: Class Default
+							Height Editable? Class Default
+						Visible? Class Default
+						Justify: Class Default
+						Font Name: Class Default
+						Font Size: Class Default
+						Font Enhancement: Class Default
+						Text Color: Class Default
+						Background Color: Class Default
+					Custom Control: ccSeasonYear
+						Class Child Ref Key: 7
+						Class ChildKey: 4
+						Class: clsFormGeneral
+						Property Template:
+						Class DLL Name:
+						Display Settings
+							DLL Name:
+							MS Windows Class Name:
+							Style:  Class Default
+							ExStyle:  Class Default
+							Title:
+							Window Location and Size
+								Left:   Class Default
+								Top:    Class Default
+								Width:  Class Default
+								Width Editable? Class Default
+								Height: Class Default
+								Height Editable? Class Default
+							Visible? Class Default
+							Border? Class Default
+							Etched Border? Class Default
+							Hollow? Class Default
+							Vertical Scroll? Class Default
+							Horizontal Scroll? Class Default
+							Tab Stop? Class Default
+							Tile To Parent? Class Default
+							Font Name: Class Default
+							Font Size: Class Default
+							Font Enhancement: Class Default
+							Text Color: Class Default
+							Background Color: Class Default
+							DLL Settings
+						Message Actions
+				Class Variables
+				Instance Variables
+				Functions
+				Message Actions
+					On SAM_Create
+						Call SalSendClassMessageNamed( clsFormBase, SAM_Create, wParam, lParam )
+						Call SalSendClassMessageNamed( clsStartProgram, SAM_Create, wParam, lParam )
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions

@@ -1,0 +1,733 @@
+.head 0 +  Application Description: SQLWindows 5.01 Jans Data Field Class
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 00000000009C0000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF000000 0000000000050300 0039010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 0000E119990B0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left:   0.15"
+.head 3 -  Top:    0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 1418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left:   5.1"
+.head 3 -  Top:    2.896"
+.head 3 -  Width:  4.688"
+.head 3 -  Height: 2.99"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   Default
+.head 3 -  Top:    Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   6.6"
+.head 3 -  Top:    0.521"
+.head 2 -  Fully Qualified External References? No
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: Dialog.apl
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Gray
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Italic
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Black
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for DATFIELD.APL
+.head 4 -  Number: DFAplMsgOffSet = SAM_User + 200
+.head 4 -  ! Message go up to AplOffSet + 99
+.head 4 -  Number: DFAplConstOffSet = 100
+.head 4 -  !
+.head 4 -  Number: PAM_clsDF_ENABLE = DFAplMsgOffSet + 1
+.head 4 -  Number: PAM_clsDF_DISABLE = DFAplMsgOffSet + 2
+.head 4 -  !
+.head 4 -  Number: PAM_clsDF_SHOW = DFAplMsgOffSet + 3
+.head 4 -  Number: PAM_clsDF_HIDE = DFAplMsgOffSet + 4
+.head 4 -  !
+.head 4 -  Number: PAM_clsDF_CLEAR = DFAplMsgOffSet + 5
+.head 4 -  Number: PAM_clsDF_ZOOMEND = DFAplMsgOffSet + 6
+.head 4 -  !
+.head 4 -  Number: DF_ClearOnInit = DFAplConstOffSet + 1
+.head 4 -  Number: DF_DisableOnInit = DFAplConstOffSet + 2
+.head 4 -  Number: DF_EnableOnInit = DFAplConstOffSet + 3
+.head 4 -  Number: DF_HideOnInit = DFAplConstOffSet + 4
+.head 4 -  Number: DF_ShowOnInit = DFAplConstOffSet + 5
+.head 4 -  Number: DF_NothingOnInit = DFAplConstOffSet + 6
+.head 4 -  !
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 1518025171
+0000: 7C0000002D000000 0000000000000000 020000050000005D 00010DF8000000FF
+0020: 8F6A0001FB00FF8F 770001FB00FF8F84 0001FB00FF0F9100 040DFA0000FF0F
+.enddata
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 3271935583
+0000: 9E0700009F030000 0000000000000000 0200001000FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F04003C00 000C63006C736466
+0040: 47656E650072616C 1C00000001180000 00030400FD00FF07 01802F0000080001
+0060: 000010636C014469 616C6F67473E657C 00C0000005000000 E0010D000000FF3F
+0080: 0D00E802040000FF 3F1100E0040D0000 00FF3F1E00EE0300 FF3F2200EE0100FF
+00A0: 3F0180040D000002 0000000E0C706247 65DF1C6800010000 01F60D00FF1F0180
+00C0: 0D03000300000009 1C636C4578698874 1C00000100660001 0D00FFFF21018004
+00E0: 0000047200000C50 006963457870616E 64441C0000010000 B3020400FFFF9801
+0100: 80040005E1001263 6C01546F67676C65 42807574746F6E1C 00680001000002F7
+0120: 00FF1F01800D0300 060000001104636C 5370696E53006561 736F6E5965618872
+0140: 1C00000100660001 0D00FFFF3101802F 0007400000000E63 6C46E06F726D4765
+0160: 9B7C0005CD00010D FE00FFEB0D02FE00 FF5311000D00FE00 FFDB1E04FE00FFFB
+0180: 22FE00FF6301800D 0080080000001763 6C0F5072696E0074 4261736963526560
+01A0: 706F72741C003401 0000010DFB00FF8F 01800D0100090000 000B68806353716C
+01C0: 48616E106C651C00 000100CD00010DFE 00FF0301802E0000 00C00A0000001163
+01E0: 0270537461727450 00726F6772616DAC 00D800000700EE02 00FF3F0400E60200
+0200: 00FFBF08EE0200FF 3F0C00EC010D00FF 3F1900EE0300FF3F 1D00EE0200FF3F21
+0220: 00EE0100FF3F0180 00340000000B0000 007814636C65006C 65637446726F6D00
+0240: 5461626C65640000 6C00040001F60D00 FF5F0D01F30000FF 1F1A0001F700FF1F
+0260: 270001F700FF1F01 800413000C00000D 64636C5365638149 6E746F1C00680001
+0280: 000003F700FF1F01 8022200000000D00 001D04636C54626C 4D61F06B65536500
+02A0: 6564526F774B6579 0041727261796C00 006C000400024700 010000FFE0800100
+02C0: 00005F0401F60D00 FF1F110001F700FF 5F1E02F30000FF1F 0180B7000000000E
+02E0: 0000000F6C636C61 653C47656C0C8402 0015000000D9010D 00FF7F0DCD010000
+0300: FF7F1ADF00FF7F27 DF00FF7F34DC0002 00FF7F38DC000200 FF7F3CDC000200FF
+0320: 7F40DC000200FF7F 44DC000200FF7F48 DC000200FF7F4CDC 000200FF7F501C00
+0340: 02000100FD009380 0100007F54180001 0D000100FD009380 0100007F58D80001
+0360: 0D00FF7F65DC0001 00FF7F72DC000100 FF7F7FDC000100FF 7F8CDC000100FF7F
+0380: 99DC000100FF7FA6 DC000100FF7FB3DC 000300FF7F010C80 0D000F000018000C
+03A0: 63636247BF1CD100 010000EC010D00FF 3F
+.enddata
+.head 3 +  Data Field Class: clsdfGeneral
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  0.825"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 0.25"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 -  Derived From
+.head 4 +  Class Variables
+.head 5 -  Window Handle: hWndSrc
+.head 4 +  Instance Variables
+.head 5 -  Number: nActionOnInitialize
+.head 5 -  String: sFieldName
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Set nActionOnInitialize = DF_ClearOnInit
+.head 6 -  Set sFieldName = 'Data Field'
+.head 6 -  Call SalSendMsg( hWndItem, PAM_cls_SETINSTANCEVARS, 0, 0 ) 
+.head 5 +  On SAM_DragDrop
+.head 6 -  Set hWndSrc = SalNumberToWindowHandle( wParam )
+.head 6 +  If hWndSrc != hWndItem AND SalParentWindow( hWndSrc ) = hWndForm
+.head 7 -  Call SalDragDropStop(  )
+.head 7 -  Call SalModalDialog( dlgDFZoom, hWndForm, hWndItem, sFieldName, SalHStringToNumber( MyValue ) )
+.head 5 +  On PAM_clsDF_ZOOMEND
+.head 6 -  Set MyValue = SalNumberToHString( lParam )
+.head 6 -  Return TRUE
+.head 5 -  !
+.head 5 +  On PAM_cls_INITIALISE
+.head 6 +  Select Case nActionOnInitialize
+.head 7 +  Case DF_ClearOnInit
+.head 8 -  Call SalSendMsg( hWndItem, PAM_clsDF_CLEAR, 0, 0 )
+.head 8 -  Break
+.head 7 +  Case DF_DisableOnInit
+.head 8 -  Call SalSendMsg( hWndItem, PAM_clsDF_DISABLE, 0, 0 )
+.head 8 -  Break
+.head 7 +  Case DF_EnableOnInit
+.head 8 -  Call SalSendMsg( hWndItem, PAM_clsDF_ENABLE, 0, 0 )
+.head 8 -  Break
+.head 7 +  Case DF_HideOnInit
+.head 8 -  Call SalSendMsg( hWndItem, PAM_clsDF_HIDE, 0, 0 )
+.head 8 -  Break
+.head 7 +  Case DF_ShowOnInit
+.head 8 -  Call SalSendMsg( hWndItem, PAM_clsDF_SHOW, 0, 0 )
+.head 8 -  Break
+.head 5 -  !
+.head 5 +  On PAM_clsDF_DISABLE
+.head 6 -  Return SalDisableWindow( hWndItem )
+.head 5 +  On PAM_clsDF_ENABLE
+.head 6 -  Return SalEnableWindow( hWndItem )
+.head 5 +  On PAM_clsDF_HIDE
+.head 6 -  Return SalHideWindow( hWndItem )
+.head 5 +  On PAM_clsDF_SHOW
+.head 6 -  Return SalShowWindow( hWndItem )
+.head 5 +  On PAM_clsDF_CLEAR
+.head 6 -  Return SalClearField( hWndItem )
+.head 3 -  !
+.head 3 +  Data Field Class: clsdfDatabase
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? No
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  0.875"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Magenta
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clsdfGeneral
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Call SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 6 -  Call SalSetWindowText( hWndItem, SqlDatabase )
+.head 6 -  Set nActionOnInitialize = DF_NothingOnInit
+.head 6 -  Return TRUE
+.head 3 +  Data Field Class: clsdfUser
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? No
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:  
+.head 6 -  Top:   
+.head 6 -  Width:  0.875"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Magenta
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  List in Tool Palette? Yes
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Description:
+.head 4 +  Derived From
+.head 5 -  Class: clsdfGeneral
+.head 4 -  Class Variables
+.head 4 -  Instance Variables
+.head 4 -  Functions
+.head 4 +  Message Actions
+.head 5 +  On SAM_Create
+.head 6 -  Call SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 6 -  Call SalSetWindowText( hWndItem, SqlUser )
+.head 6 -  Set nActionOnInitialize = DF_NothingOnInit
+.head 6 -  Return TRUE
+.head 3 -  !
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton:
+.head 3 -  Radio Button:
+.head 3 -  Check Box:
+.head 3 -  Option Button:
+.head 3 -  Child Table:
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text:
+.head 3 -  Group Box:
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 -  Application Actions
+.head 1 +  Dialog Box: dlgDFZoom
+.head 2 -  Class: clsDialogGeneral
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title:
+.head 2 -  Accesories Enabled? Class Default
+.head 2 -  Visible? Class Default
+.head 2 -  Display Settings
+.head 3 -  Display Style? Class Default
+.head 3 -  Visible at Design time? No
+.head 3 -  Type of Dialog: Modal
+.head 3 -  Window Location and Size
+.head 4 -  Left:   0.013"
+.head 4 -  Top:    1.896"
+.head 4 -  Width:  9.975"
+.head 4 -  Width Editable? Class Default
+.head 4 -  Height: 1.802"
+.head 4 -  Height Editable? Class Default
+.head 3 -  Absolute Screen Location? Class Default
+.head 3 -  Font Name: Class Default
+.head 3 -  Font Size: Class Default
+.head 3 -  Font Enhancement: Class Default
+.head 3 -  Text Color: Class Default
+.head 3 -  Background Color: Class Default
+.head 2 -  Description:
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Class Default
+.head 4 -  Location? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Size: Class Default
+.head 4 -  Size Editable? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Contents
+.head 4 +  Pushbutton: pbOk
+.head 5 -  Class Child Ref Key: 0
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clspbOk
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   4.738"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbHelp
+.head 5 -  Class Child Ref Key: 6
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsDialogGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbPrintForm
+.head 5 -  Class Child Ref Key: 10
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsDialogGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   8.663"
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbExit
+.head 5 -  Class Child Ref Key: 7
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsDialogGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   9.263"
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 2 +  Contents
+.head 3 +  Data Field: dfZoom
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsdfGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   0.05"
+.head 6 -  Top:    0.313"
+.head 6 -  Width:  9.725"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 -  !
+.head 3 +  Data Field: dfDatabase
+.head 4 -  Class Child Ref Key: 8
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsDialogGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfUser
+.head 4 -  Class Child Ref Key: 9
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsDialogGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Custom Control: ccSeasonYear
+.head 4 -  Class Child Ref Key: 13
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsDialogGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  DLL Name:
+.head 5 -  MS Windows Class Name:
+.head 5 -  Style:  Class Default
+.head 5 -  ExStyle:  Class Default
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   8.888"
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Etched Border? Class Default
+.head 5 -  Hollow? Class Default
+.head 5 -  Vertical Scroll? Class Default
+.head 5 -  Horizontal Scroll? Class Default
+.head 5 -  Tab Stop? Class Default
+.head 5 -  Tile To Parent? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  DLL Settings
+.head 4 -  Message Actions
+.head 3 -  Background Text:
+.head 4 -  Resource Id: 54763
+.head 4 -  Class Child Ref Key: 14
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsDialogGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   8.138"
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 2 -  Functions
+.head 2 +  Window Parameters
+.head 3 -  Window Handle: hWndParent
+.head 3 -  String: sFieldName
+.head 3 -  Number: nStrFieldValue
+.head 2 +  Window Variables
+.head 3 -  Number: nFontEnhancements
+.head 3 -  Number: nFontSize
+.head 3 -  String: sFontName
+.head 2 +  Message Actions
+.head 3 +  On SAM_Create
+.head 4 -  Call SalSetWindowText( hWndForm, sFieldName || ' ZOOM ' )
+.head 4 -  Set dfZoom = SalNumberToHString( nStrFieldValue )
+.head 4 -  !
+.head 4 +  If SalIsWindowEnabled( hWndParent )
+.head 5 -  Call SalEnableWindow( dfZoom )
+.head 4 +  Else
+.head 5 -  Call SalDisableWindow( dfZoom )
+.head 4 -  Call SalSetMaxDataLength( dfZoom, SalGetMaxDataLength( hWndParent ) )
+.head 4 -  Call SalFontGet( hWndParent, sFontName, nFontSize, nFontEnhancements )
+.head 4 -  Call SalFontSet( dfZoom, sFontName, nFontSize, nFontEnhancements )
+.head 4 -  Call SalFmtSetFormat( dfZoom, SalFmtGetFormat( hWndParent ) )
+.head 4 -  !
+.head 4 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 3 +  On PAM_clsPB_OKACTION
+.head 4 -  Call SalSendMsg( hWndParent, PAM_clsDF_ZOOMEND, 0, SalHStringToNumber( dfZoom ) )
+.head 4 -  Return SalSendMsg( pbExit, SAM_Click, TRUE, 0 )

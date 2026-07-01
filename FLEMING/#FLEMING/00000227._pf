@@ -1,0 +1,1128 @@
+.head 0 +  Application Description: SQLWindows 5.01 Jans class Promo ordered by report application
+.head 1 -  Outline Version - 4.0.26
+.head 1 +  Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000D80000 002C000000020000 0003000000000000 008B010000FCFFFF
+0040: FFE9FFFFFF000000 0000000000140300 009F010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.head 2 -  Outline Window State: Maximized
+.head 2 +  Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 00001027F5140500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+.head 3 -  Left:   0.15"
+.head 3 -  Top:    0.042"
+.head 3 -  Width:  7.875"
+.head 3 -  Height: 4.635"
+.head 2 +  Options Box Location
+.data VIEWINFO
+0000: 1018B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+.head 3 -  Visible? Yes
+.head 3 -  Left:   5.113"
+.head 3 -  Top:    2.885"
+.head 3 -  Width:  4.675"
+.head 3 -  Height: 2.969"
+.head 2 +  Class Editor Location
+.head 3 -  Visible? No
+.head 3 -  Left:   Default
+.head 3 -  Top:    Default
+.head 3 -  Width:  Default
+.head 3 -  Height: Default
+.head 2 +  Tool Palette Location
+.head 3 -  Visible? No
+.head 3 -  Left:   8.15"
+.head 3 -  Top:    0.469"
+.head 2 -  Fully Qualified External References? Yes
+.head 2 -  Reject Multiple Window Instances? No
+.head 2 -  Enable Runtime Checks Of External References? No
+.head 2 -  Use Release 4.0 Scope Rules? Yes
+.head 1 +  Libraries
+.head 2 -  File Include: GENERAL.APL
+.head 2 -  File Include: FORM.APL
+.head 2 -  File Include: BUTTON.APL
+.head 2 -  File Include: DATFIELD.APL
+.head 2 -  File Include: SPNFIELD.APL
+.head 2 -  File Include: BGTEXT.APL
+.head 2 -  File Include: RADIOBTN.APL
+.head 2 -  File Include: CHECKBOX.APL
+.head 2 -  File Include: GROUPBOX.APL
+.head 2 -  File Include: TABLE.APL
+.head 2 -  File Include: PICK.APL
+.head 2 -  File Include: VTSPIN.APL
+.head 2 -  File Include: SQLHANDL.APL
+.head 2 -  File Include: STRINGS.APL
+.head 2 -  File Include: METER.APL
+.head 2 -  File Include: STACKS.APL
+.head 2 -  File Include: VTMETER.APL
+.head 2 -  File Include: FLAGS.APL
+.head 2 -  File Include: DIALOG.APL
+.head 2 -  File Include: ACTIVATE.APL
+.head 2 -  File Include: DATES.APL
+.head 2 -  File Include: FRMCTBL.APL
+.head 2 -  File Include: QUERY.APL
+.head 2 -  File Include: CMBFIELD.APL
+.head 2 -  File Include: DLGCTBL.APL
+.head 2 -  File Include: RUNPROG.APL
+.head 2 -  File Include: VTWIN.APL
+.head 2 -  File Include: LISTBOX.APL
+.head 1 +  Global Declarations
+.head 2 +  Window Defaults
+.head 3 +  Tool Bar
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Form Window
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Dialog Box
+.head 4 -  Display Style? Etched
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: System Default
+.head 4 -  Background Color: System Default
+.head 3 +  Top Level Table Window
+.head 4 -  Font Name: System Default
+.head 4 -  Font Size: System Default
+.head 4 -  Font Enhancement: System Default
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  Data Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Multiline Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: White
+.head 3 +  Spin Field
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 3 +  Background Text
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Pushbutton
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: None
+.head 3 +  Radio Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Check Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Option Button
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 3 +  Group Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Blue
+.head 4 -  Background Color: Use Parent
+.head 3 +  Child Table Window
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Dark Blue
+.head 4 -  Background Color: Sky
+.head 3 +  List Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: White
+.head 3 +  Combo Box
+.head 4 -  Font Name: Use Parent
+.head 4 -  Font Size: Use Parent
+.head 4 -  Font Enhancement: Use Parent
+.head 4 -  Text Color: Use Parent
+.head 4 -  Background Color: White
+.head 3 +  Line
+.head 4 -  Line Color: Black
+.head 3 +  Frame
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Gray
+.head 3 +  Picture
+.head 4 -  Border Color: Use Parent
+.head 4 -  Background Color: Use Parent
+.head 2 +  Formats
+.head 3 -  Number: 0%
+.head 3 -  Number: #0
+.head 3 -  Number: ###000
+.head 3 -  Number: ###000;###000
+.head 3 -  Date/Time: hh:mm:ss AMPM
+.head 3 -  Date/Time: M/d/yy
+.head 3 -  Date/Time: MM-dd-yy
+.head 3 -  Date/Time: dd-MMM-yyyy
+.head 3 -  Date/Time: MMM d, yyyy
+.head 3 -  Date/Time: MMM d, yyyy hh:mm AMPM
+.head 3 -  Date/Time: MMMM d, yyyy hh:mm AMPM
+.head 2 +  External Functions
+.head 2 +  Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+.head 3 +  System
+.head 3 +  User
+.head 4 -  ! For PAM_User messages for PRTPROMOORD.APP
+.head 4 -  Number: PRTPROMOAppMsgOffSet = SAM_User + 8400
+.head 4 -  Number: PAM_clsPRTPROMO_GETSELPROMOIDS = PRTPROMOAppMsgOffSet + 1
+.head 4 -  Number: PAM_clsPRTPROMO_GETSELECTED = PRTPROMOAppMsgOffSet + 2
+.head 4 -  ! Message go up to AppOffSet + 99
+.head 4 -  Number: PRTPROMOAppConstOffSet = 5650
+.head 4 -  !
+.head 2 -  Resources
+.head 2 +  Variables
+.data RESOURCE 0 0 1 1373187828
+0000: 8600000038000000 0000000000000000 020000050000004C 000000E0010D0000
+0020: 00FF3F5900B80000 0100FFFFE0660000 0001FE00FF837300 000001FB00FF0F80
+0040: 000000E8040D0000 FF3F
+.enddata
+.head 2 +  Named Menus
+.head 2 +  Internal Functions
+.head 2 +  Class Definitions
+.data RESOURCE 0 0 1 1573726717
+0000: 7E0F0000E4060000 0000000000000000 0200001B00FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 000B63006C73466F
+0040: 726D426100736586 00000005003C0000 010DF8000000FF4F 0D0000E002040000
+0060: 00FF3F1100A00000 040D0000FFFF801E 000000030400FE00 FF832200000001FB
+0080: 00FF0F01800D0001 000100000017633E 6C507220696E7442 616963005265706F
+00A0: 72741E00D9000100 B3010D00FFFF1801 800D000200200000 0C636C7062004765
+00C0: 6E6572616C1EA200 0001000067010D00 FFFF3101800D0003 C000000009636CC1
+00E0: 457869741EE80001 0000D9010D00FF7F 0188800400000400 1C000C5069630045
+0100: 7870616E641E00D1 00010000B3020400 FFFF980180040005 E10012636C01546F
+0120: 67676C6542807574 746F6E1E00E80001 0000DD0200FF7F01 0C8004000600001C
+0140: 000C646647FE65D1 00010000B3030400 FFFF1801800D0007 0020000011636C53
+0160: 7000696E53656173 6F6E40596561721E 0000F4010000EC01 0D00FF3F0180060D
+0180: 00080000008E0C63 6247FFE800010000 D9010D00FF7F0108 8022000009000010
+01A0: 001D636C54626C00 4D616B6553656C65 0063746564526F77 4B00657941727261
+01C0: 7974B00000000400 770200F40100000F 80010000FE008D04 00010DFD00FF2711
+01E0: 000001F700FFDF1E DC000200FF7F0100 80B70000000A0000 30000F636C6162F0
+0200: 6C654765106C3602 001500009E00010D FD00FF370D0001F7 00FF1F1A0000DC00
+0220: 0100FF7F27700000 000100FFFFC13400 000002FD00FF0738 00000002F700FF1F
+0240: 3C0000DC000200FF 7F40700000000200 FFFFC14400000002 FD00FF0748000000
+0260: 02F700FF1F4C0000 DC000200FF7F5070 0000000200F40100 004F800100FE0081
+0280: 54000000010DD100 0100003F8001F900 00075800000001F6 0D00FF1F650000DC
+02A0: 000100FF7F727000 00000100FFFFC17F 00000001FD00FF07 8C00000001F700FF
+02C0: 1F990000DC000100 FF7FA67000000001 00FFFFC1B3000000 03FD00FF87018034
+02E0: 0000000B00000014 636C657053656381 46726F6D5461836C 000000043D00010D
+0300: FB00FF6F0D00EE01 00FFBF1AB9000100 FFFFE6270001FE00 FF6301800400800C
+0320: 0000000D636C2453 656563496E10746F 1E00000100BD0003 FB00FF8F01800D11
+0340: 000D00000B688063 53716C48616E106C 651E000001003D00 010DFB00FF0F0180
+0360: 2F0001000E000000 1063026C4469616C 6F677C476586B200 00050067010D00FF
+0380: FFCD0D0002FD00FF 37110004F60D00FF DF1EDC000300FF7F 2273000100FFFF01
+03A0: 01802B0000000F70 0000001046336D42 65544E616C0000F4 040000EC010D00FF
+03C0: BF0DB9000100FFFF E61A0001FE00FF9B 270002FB00FF0F01 8033000000001000
+03E0: 0000116313546251 7565B0727944696F 60A00000000600EF 03FE00FF9B040002
+0400: FB00FF6F0800EE02 00FFBF0CB100010D 00FFFFE019000000 01FE00FF83260000
+0420: 0001FB00FF0F0180 5D00100000110000 1163F35175006174 614669656C646844
+0440: 01000C00EF02FE00 FF9B040002FB00FF 6F0800EE0200FFBF 0CB9000200FFFFC6
+0460: 1000010DFE00FF83 1D00000001FB00FF 0F2A0000008E0200 0100FE00C9800100
+0480: 003F2E00B0000001 0D00FFFFE03B0000 0002FE00FF833F00 000001FB00FF6F4C
+04A0: 00EE0200FFBF50B9 000100FFFF180180 5D001200F0000012 6307436F6D626FFC
+04C0: 4669ED0C00DD0200 FF7F0473000200FF FFCD080002FD00FF 370C0002F700FFDF
+04E0: 10D800010D00FF7F 1D73000100FFFFCD 2A0002D100010000 3F8001F90000372E
+0500: 0001F60D00FFDF3B DC000200FF7F3F73 000100FFFFCD4C00 02FD00FF37500001
+0520: F700FF1F01805D03 001300000012FF1F 436163B068654401 0CBD0002FB00FF6F
+0540: 0400EE0200FFBF08 B9000200FFFFE60C 0002FE00FF1B1000 010DFB00FF6F1D00
+0560: EE0100FFBF2A3900 020001FA00002780 010000FFC62E0001 0DFE00FF9B3B0002
+0580: FB00FF6F3F00EE01 00FFBF4CB9000200 FFFFE6500001FE00 FF4301801A000080
+05A0: 1400000015636C1F 4F7065807261746F 7246691338000002 003D00010DFB00FF
+05C0: 6F0D00EE0100FF3F 0180460400150000 F813636C00794342 5965734E6F40466C
+05E0: 61671E0000F40100 00EC020400FF3F01 80241E0000160000 EE1344034368696C
+0600: 6454066165520000 00F4030000EC010D 00FFBF0DB9000100 FFFFE61A0002FE00
+0620: FF4301802E0000E0 1700000011067074 6172745000726F67 72616DBA00D80000
+0640: 0700BB0200FFFFE6 040002FE00FF9B08 0002FB00FF6F0C00 EC010D00FFBF19B1
+0660: 00030400FFFFE61D 0002FE00FF832100 000001FB00FF8F01 8004010018000000
+0680: 106303546F6F6C54 69007057696E646F 771EA20000010000 770300FFFF310180
+06A0: 04001903000C6366 5461E74361461E00 010000EF03FE00FF 430180150000061A
+06C0: 000B6366438E6150 6F6F405A00000003 00008F0719008000 0101003008009E00
+06E0: 8001FC00001B0400 0304FB00FF6F0800 EC010D00FF3F
+.enddata
+.head 2 +  Default Classes
+.head 3 -  MDI Window:
+.head 3 -  Form Window:
+.head 3 -  Dialog Box:
+.head 3 -  Table Window:
+.head 3 -  Quest Window:
+.head 3 -  Data Field:
+.head 3 -  Spin Field:
+.head 3 -  Multiline Field:
+.head 3 -  Pushbutton: clspbPickInto
+.head 3 -  Radio Button:
+.head 3 -  Check Box: clscbGeneral
+.head 3 -  Option Button:
+.head 3 -  Child Table: clsTableGeneral
+.head 3 -  Quest Child Window:
+.head 3 -  List Box:
+.head 3 -  Combo Box:
+.head 3 -  Picture:
+.head 3 -  Vertical Scroll Bar:
+.head 3 -  Horizontal Scroll Bar:
+.head 3 -  Column:
+.head 3 -  Background Text: clsBackTextGeneral
+.head 3 -  Group Box: clsgbGeneral
+.head 3 -  Line:
+.head 3 -  Frame:
+.head 3 -  Custom Control:
+.head 2 +  Application Actions
+.head 3 +  On SAM_AppStartup
+.head 4 +  If strArgArray[0] = ''
+.head 5 -  Set SqlDatabase = 'STOCKDEV'
+.head 5 -  Set SqlUser = 'JAN'
+.head 5 -  Set SqlPassword = 'JAN'
+.head 4 +  Else
+.head 5 -  Set SqlDatabase = strArgArray[1]
+.head 5 -  Set SqlUser = strArgArray[2]
+.head 5 -  Set SqlPassword = strArgArray[3]
+.head 4 -  !
+.head 4 -  Call CheckProgramExistance( 'Print Ordered Promotional material Listing', TRUE )
+.head 4 -  !
+.head 4 -  Call SqlHandlesSetup(  )
+.head 3 +  On SAM_AppExit
+.head 4 -  Call SqlHandlesDisconnectClose(  )
+.head 1 +  Form Window: frmPrintPromoInterface
+.head 2 -  Class: clsFormGeneral
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title: Print Ordered Promotional material Listing
+.head 2 -  Icon File:
+.head 2 -  Accesories Enabled? Class Default
+.head 2 -  Visible? Class Default
+.head 2 -  Display Settings
+.head 3 -  Display Style? Class Default
+.head 3 -  Visible at Design time? No
+.head 3 -  Automatically Created at Runtime? Yes
+.head 3 -  Initial State: Class Default
+.head 3 -  Maximizable? Class Default
+.head 3 -  Minimizable? Class Default
+.head 3 -  System Menu? Class Default
+.head 3 -  Resizable? Class Default
+.head 3 -  Window Location and Size
+.head 4 -  Left:   0.0"
+.head 4 -  Top:    0.0"
+.head 4 -  Width:  Class Default
+.head 4 -  Width Editable? Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Height Editable? Class Default
+.head 3 -  Form Size
+.head 4 -  Width:  Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Number of Pages: Class Default
+.head 3 -  Font Name: Class Default
+.head 3 -  Font Size: Class Default
+.head 3 -  Font Enhancement: Class Default
+.head 3 -  Text Color: Class Default
+.head 3 -  Background Color: Class Default
+.head 2 -  Description:
+.head 2 -  Named Menus
+.head 2 -  Menu
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Class Default
+.head 4 -  Location? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Size: Class Default
+.head 4 -  Size Editable? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Contents
+.head 4 +  Pushbutton: pbReport
+.head 5 -  Class Child Ref Key: 0
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clspbGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title: Report
+.head 5 -  Window Location and Size
+.head 6 -  Left:   4.45"
+.head 6 -  Top:    0.0"
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name: C:\CENTURA\ICONS\LETTERS.BMP
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 +  Message Actions
+.head 6 +  On PAM_clsPB_CLICK
+.head 7 +  If rbSelectedPromos
+.head 8 -  Set sPromoType = 'SELECTED'
+.head 8 +  If SalSendMsg( tblSelectedPromos, PAM_clsPRTPROMO_GETSELPROMOIDS, 0, 0 )
+.head 9 -  Call PopString( sSelectedPromoIdList, TRUE )
+.head 8 +  Else
+.head 9 -  Call SalMessageBox( 'Please select some Promos first, or choose All.', 'Warning', MB_Ok )
+.head 9 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Set sPromoType = 'ALL'
+.head 7 -  !
+.head 7 +  If rbView
+.head 8 -  Set sReportType = 'VIEW'
+.head 7 +  Else
+.head 8 -  Set sReportType = 'PRINT'
+.head 7 -  !
+.head 7 +  If hWndReport = hWndNULL
+.head 8 -  Set hWndReport = SalCreateWindow( frmPrintPromoOrderedBy, hWndForm, sSelectedPromoIdList, 
+ccSeasonYear.GetSeasonYear( ), sPromoType, sReportType )
+.head 8 -  Return TRUE
+.head 7 +  Else
+.head 8 -  Call SalMessageBox( 'Please close down your first report!', 'Warning', MB_Ok )
+.head 8 -  Return FALSE
+.head 4 +  Pushbutton: pbHelp
+.head 5 -  Class Child Ref Key: 1
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbItemEnq
+.head 5 -  Class Child Ref Key: 5
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbExit
+.head 5 -  Class Child Ref Key: 2
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 4 +  Pushbutton: pbPrintForm
+.head 5 -  Class Child Ref Key: 6
+.head 5 -  Class ChildKey: 0
+.head 5 -  Class: clsFormGeneral
+.head 5 -  Property Template:
+.head 5 -  Class DLL Name:
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Keyboard Accelerator: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Picture File Name:
+.head 5 -  Picture Transparent Color: Class Default
+.head 5 -  Image Style: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Message Actions
+.head 2 +  Contents
+.head 3 -  Group Box: Promos Type
+.head 4 -  Resource Id: 9336
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsgbGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   5.538"
+.head 5 -  Top:    0.365"
+.head 5 -  Width:  2.088"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 1.146"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Radio Button: rbAllPromos
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: All Promos
+.head 4 -  Window Location and Size
+.head 5 -  Left:   5.75"
+.head 5 -  Top:    0.729"
+.head 5 -  Width:  1.175"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbSelectedPromos
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: Selected Promos
+.head 4 -  Window Location and Size
+.head 5 -  Left:   5.75"
+.head 5 -  Top:    0.979"
+.head 5 -  Width:  1.688"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 +  Message Actions
+.head 5 +  On PAM_clsRB_CLICK
+.head 6 +  If tblSelectedPromos.bPopulated
+.head 7 -  Return TRUE
+.head 6 +  Else
+.head 7 -  Return SalSendMsg( tblSelectedPromos, PAM_clsTBL_POPULATE, 0, 0 )
+.head 3 -  !
+.head 3 -  Group Box: Selected Promos
+.head 4 -  Resource Id: 9337
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsgbGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.213"
+.head 5 -  Top:    1.667"
+.head 5 -  Width:  5.425"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 3.063"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Pushbutton: pbClearSelectedItems
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clspbTblClearRows
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title:
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.313"
+.head 5 -  Top:    1.906"
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Keyboard Accelerator: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Picture File Name:
+.head 4 -  Picture Transparent Color: Class Default
+.head 4 -  Image Style: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set pbClearSelectedItems.hWndTable = tblSelectedPromos
+.head 3 +  Child Table: tblSelectedPromos
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsTableGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   2.313"
+.head 6 -  Top:    2.552"
+.head 6 -  Width:  5.188"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: 2.104"
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Font Name: Arial
+.head 5 -  Font Size: 8
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  View: Class Default
+.head 5 -  Allow Row Sizing? Class Default
+.head 5 -  Lines Per Row: Class Default
+.head 4 -  Memory Settings
+.head 5 -  Maximum Rows in Memory: 6000
+.head 5 -  Discardable? No
+.head 4 +  Contents
+.head 5 +  Column: colPromoId
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Promo Id
+.head 6 -  Visible? No
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  1.017"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colUpperPromoDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Upper Promo Desc
+.head 6 -  Visible? No
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  5.4"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 5 +  Column: colPromoDesc
+.head 6 -  Class Child Ref Key: 0
+.head 6 -  Class ChildKey: 0
+.head 6 -  Class: clsColumnGeneral
+.head 6 -  Property Template:
+.head 6 -  Class DLL Name:
+.head 6 -  Title: Promo. Description
+.head 6 -  Visible? Class Default
+.head 6 -  Editable? No
+.head 6 -  Maximum Data Length: Class Default
+.head 6 -  Data Type: Class Default
+.head 6 -  Justify: Class Default
+.head 6 -  Width:  6.117"
+.head 6 -  Width Editable? Class Default
+.head 6 -  Format: Class Default
+.head 6 -  Country: Class Default
+.head 6 -  Input Mask: Class Default
+.head 6 -  Cell Options
+.head 7 -  Cell Type? Class Default
+.head 7 -  Multiline Cell? Class Default
+.head 7 -  Cell DropDownList
+.head 8 -  Sorted? Class Default
+.head 8 -  Vertical Scroll? Class Default
+.head 8 -  Auto Drop Down? Class Default
+.head 8 -  Allow Text Editing? Class Default
+.head 7 -  Cell CheckBox
+.head 8 -  Check Value:
+.head 8 -  Uncheck Value:
+.head 8 -  Ignore Case? Class Default
+.head 6 -  List Values
+.head 6 -  Message Actions
+.head 4 -  Functions
+.head 4 +  Window Variables
+.head 5 -  String: sTmp
+.head 5 -  Number: nTmp
+.head 5 -  String: sPromoIdList
+.head 5 -  Boolean: bPopulated
+.head 4 +  Message Actions
+.head 5 +  On PAM_cls_SETINSTANCEVARS
+.head 6 -  Set sSQLPopHandle = "SELECT 
+  Promo_Id, 
+  @UPPER( Promo_Desc ), 
+  Promo_Desc 
+FROM 
+  Promo 
+ORDER BY 1,2,3"
+.head 6 -  Set sNAMEPopHandle = 'POPPRMOSEL'
+.head 6 -  Set sBINDPopHandle = ''
+.head 6 -  Set sINTOPopHandle = ':frmPrintPromoInterface.tblSelectedPromos.colPromoId, 
+:frmPrintPromoInterface.tblSelectedPromos.colUpperPromoDesc, 
+:frmPrintPromoInterface.tblSelectedPromos.colPromoDesc'
+.head 6 -  !
+.head 6 -  Set bAddAllowed = FALSE
+.head 6 -  Set bPopulated = FALSE
+.head 5 +  On PAM_clsTBL_POPULATE
+.head 6 -  Set bPopulated = TRUE
+.head 6 -  Return SalSendClassMessage( PAM_clsTBL_POPULATE, wParam, lParam )
+.head 5 +  On PAM_clsPRTPROMO_GETSELPROMOIDS
+.head 6 -  Set sPromoIdList = ''
+.head 6 +  If TableLoop( hWndForm, hWndForm, PAM_clsPRTPROMO_GETSELECTED, 0, ROW_Selected, 0, 'Extracting Selected Items', TBL_cls_LowToHi )
+.head 7 +  If sPromoIdList = ''
+.head 8 -  Return FALSE
+.head 7 +  Else
+.head 8 -  Call PushString( sPromoIdList )
+.head 8 -  Return TRUE
+.head 6 +  Else
+.head 7 -  Return FALSE
+.head 5 +  On PAM_clsPRTPROMO_GETSELECTED
+.head 6 +  If sPromoIdList = ''
+.head 7 -  Set sPromoIdList = "'" || colPromoId || "'"
+.head 6 +  Else
+.head 7 -  Set sPromoIdList = sPromoIdList || ', ' || "'" || colPromoId || "'"
+.head 6 -  Return TRUE
+.head 3 -  !
+.head 3 -  Group Box: Report Types
+.head 4 -  Resource Id: 9338
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsgbGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.213"
+.head 5 -  Top:    0.365"
+.head 5 -  Width:  2.038"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: 1.146"
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Radio Button: rbView
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: View then Print
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.413"
+.head 5 -  Top:    0.74"
+.head 5 -  Width:  1.538"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 +  Radio Button: rbPrint
+.head 4 -  Class Child Ref Key: 0
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsrbGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Title: Print Only
+.head 4 -  Window Location and Size
+.head 5 -  Left:   2.413"
+.head 5 -  Top:    0.99"
+.head 5 -  Width:  1.138"
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 4 -  Message Actions
+.head 3 -  !
+.head 3 -  !
+.head 3 +  Data Field: dfDatabase
+.head 4 -  Class Child Ref Key: 3
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 +  Data Field: dfUser
+.head 4 -  Class Child Ref Key: 4
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Data
+.head 5 -  Maximum Data Length: Class Default
+.head 5 -  Data Type: Class Default
+.head 5 -  Editable? Class Default
+.head 4 -  Display Settings
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Justify: Class Default
+.head 5 -  Format: Class Default
+.head 5 -  Country: Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  Input Mask: Class Default
+.head 4 -  Message Actions
+.head 3 -  Background Text:
+.head 4 -  Resource Id: 15618
+.head 4 -  Class Child Ref Key: 8
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Window Location and Size
+.head 5 -  Left:   Class Default
+.head 5 -  Top:    Class Default
+.head 5 -  Width:  Class Default
+.head 5 -  Width Editable? Class Default
+.head 5 -  Height: Class Default
+.head 5 -  Height Editable? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Justify: Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 +  Custom Control: ccSeasonYear
+.head 4 -  Class Child Ref Key: 7
+.head 4 -  Class ChildKey: 0
+.head 4 -  Class: clsFormGeneral
+.head 4 -  Property Template:
+.head 4 -  Class DLL Name:
+.head 4 -  Display Settings
+.head 5 -  DLL Name:
+.head 5 -  MS Windows Class Name:
+.head 5 -  Style:  Class Default
+.head 5 -  ExStyle:  Class Default
+.head 5 -  Title:
+.head 5 -  Window Location and Size
+.head 6 -  Left:   Class Default
+.head 6 -  Top:    Class Default
+.head 6 -  Width:  Class Default
+.head 6 -  Width Editable? Class Default
+.head 6 -  Height: Class Default
+.head 6 -  Height Editable? Class Default
+.head 5 -  Visible? Class Default
+.head 5 -  Border? Class Default
+.head 5 -  Etched Border? Class Default
+.head 5 -  Hollow? Class Default
+.head 5 -  Vertical Scroll? Class Default
+.head 5 -  Horizontal Scroll? Class Default
+.head 5 -  Tab Stop? Class Default
+.head 5 -  Tile To Parent? Class Default
+.head 5 -  Font Name: Class Default
+.head 5 -  Font Size: Class Default
+.head 5 -  Font Enhancement: Class Default
+.head 5 -  Text Color: Class Default
+.head 5 -  Background Color: Class Default
+.head 5 -  DLL Settings
+.head 4 -  Message Actions
+.head 2 -  Functions
+.head 2 -  Window Parameters
+.head 2 +  Window Variables
+.head 3 -  String: sSelectedPromoIdList
+.head 3 -  String: sPromoType
+.head 3 -  String: sReportType
+.head 3 -  Window Handle: hWndReport
+.head 2 +  Message Actions
+.head 3 +  On SAM_Create
+.head 4 -  Set rbPrint = FALSE
+.head 4 -  Set rbAllPromos = TRUE
+.head 4 -  Set hWndReport = hWndNULL
+.head 4 -  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+.head 3 +  On PAM_clsFRM_REPORTCLOSED
+.head 4 -  Set hWndReport = hWndNULL
+.head 4 -  Return TRUE
+.head 1 +  Form Window: frmPrintPromoOrderedBy
+.head 2 -  Class: clsFormPrintBasicReport
+.head 2 -  Property Template:
+.head 2 -  Class DLL Name:
+.head 2 -  Title:
+.head 2 -  Icon File:
+.head 2 -  Accesories Enabled? Class Default
+.head 2 -  Visible? Class Default
+.head 2 -  Display Settings
+.head 3 -  Display Style? Class Default
+.head 3 -  Visible at Design time? Yes
+.head 3 -  Automatically Created at Runtime? Class Default
+.head 3 -  Initial State: Class Default
+.head 3 -  Maximizable? Class Default
+.head 3 -  Minimizable? Class Default
+.head 3 -  System Menu? Class Default
+.head 3 -  Resizable? Class Default
+.head 3 -  Window Location and Size
+.head 4 -  Left:   Default
+.head 4 -  Top:    Default
+.head 4 -  Width:  Class Default
+.head 4 -  Width Editable? Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Height Editable? Class Default
+.head 3 -  Form Size
+.head 4 -  Width:  Class Default
+.head 4 -  Height: Class Default
+.head 4 -  Number of Pages: Class Default
+.head 3 -  Font Name: Class Default
+.head 3 -  Font Size: Class Default
+.head 3 -  Font Enhancement: Class Default
+.head 3 -  Text Color: Class Default
+.head 3 -  Background Color: Class Default
+.head 2 -  Description:
+.head 2 -  Named Menus
+.head 2 -  Menu
+.head 2 +  Tool Bar
+.head 3 -  Display Settings
+.head 4 -  Display Style? Class Default
+.head 4 -  Location? Class Default
+.head 4 -  Visible? Class Default
+.head 4 -  Size: Class Default
+.head 4 -  Size Editable? Class Default
+.head 4 -  Font Name: Class Default
+.head 4 -  Font Size: Class Default
+.head 4 -  Font Enhancement: Class Default
+.head 4 -  Text Color: Class Default
+.head 4 -  Background Color: Class Default
+.head 3 -  Contents
+.head 2 -  Contents
+.head 2 -  Functions
+.head 2 +  Window Parameters
+.head 3 -  ! sSelectedPromoIdList is a comma separated list of promo ids
+.head 3 -  String: sSelectedPromoIdList
+.head 3 -  Number: nYear
+.head 3 -  ! sPromoType = 'SELECTED' OR 'ALL'
+.head 3 -  String: sPromoType
+.head 3 -  ! sReportPrintOrView = 'VIEW' OR 'PRINT'
+.head 3 -  String: sReportPrintOrView
+.head 2 +  Window Variables
+.head 3 -  ! REPORT FIELDS
+.head 3 -  String: sPromoId
+.head 3 -  String: sUpperPromoDesc
+.head 3 -  String: sPromoDesc
+.head 3 -  Number: nCustNo
+.head 3 -  String: sCustName
+.head 3 -  Number: nNoUnits
+.head 2 +  Message Actions
+.head 3 +  On PAM_cls_SETINSTANCEVARS
+.head 4 -  Set sReportFileNameNoPath = 'promord.qrp'
+.head 4 -  !
+.head 4 -  Set sReportBind = ':frmPrintPromoOrderedBy.nYear, 
+:frmPrintPromoOrderedBy.sPromoId,
+:frmPrintPromoOrderedBy.sUpperPromoDesc,
+:frmPrintPromoOrderedBy.sPromoDesc,
+:frmPrintPromoOrderedBy.nCustNo,
+:frmPrintPromoOrderedBy.sCustName,
+:frmPrintPromoOrderedBy.nNoUnits'
+.head 4 -  Set sReportInto = 'nYearOfSale, 
+sPromoId,
+sUpperPromoDesc,
+sPromoDesc,
+nCustNo,
+sCustName,
+nNoUnits'
+.head 4 -  Set sReportType = sReportPrintOrView
+.head 3 +  On PAM_clsFRM_REPORTSTART
+.head 4 +  If sPromoType = 'ALL'
+.head 5 -  Set sReportSql = "SELECT 
+  Cust_Promo.Promo_Id,
+  @UPPER( Promo.Promo_Desc ),  
+  Promo.Promo_Desc, 
+  Cust_Promo.Cust_No, 
+  Customer_Master.Cust_Name,  
+  Cust_Promo.No_Units 
+FROM 
+  Cust_Promo, 
+  Promo, 
+  Customer_Master 
+INTO 
+  :frmPrintPromoOrderedBy.sPromoId, 
+  :frmPrintPromoOrderedBy.sUpperPromoDesc, 
+  :frmPrintPromoOrderedBy.sPromoDesc, 
+  :frmPrintPromoOrderedBy.nCustNo, 
+  :frmPrintPromoOrderedBy.sCustName, 
+  :frmPrintPromoOrderedBy.nNoUnits 
+WHERE 
+  Cust_Promo.Cust_No = Customer_Master.Cust_No AND 
+  Cust_Promo.Promo_Id = Promo.Promo_Id AND 
+  Cust_Promo.Year_Of_Order = :frmPrintPromoOrderedBy.nYear AND 
+  ( Cust_Promo.Promo_Sent_Flag = 'N' OR 
+  Cust_Promo.Promo_Sent_Flag  IS NULL ) AND 
+  ( Cust_Promo.Promo_Inv_Flag = 'N' OR 
+  Cust_Promo.Promo_Inv_Flag IS NULL ) 
+ORDER BY 2,4 "
+.head 4 +  Else
+.head 5 -  Set sReportSql = "SELECT 
+  Cust_Promo.Promo_Id,
+  @UPPER( Promo.Promo_Desc ),  
+  Promo.Promo_Desc, 
+  Cust_Promo.Cust_No, 
+  Customer_Master.Cust_Name,  
+  Cust_Promo.No_Units 
+FROM 
+  Cust_Promo, 
+  Promo, 
+  Customer_Master 
+INTO 
+  :frmPrintPromoOrderedBy.sPromoId, 
+  :frmPrintPromoOrderedBy.sUpperPromoDesc, 
+  :frmPrintPromoOrderedBy.sPromoDesc, 
+  :frmPrintPromoOrderedBy.nCustNo, 
+  :frmPrintPromoOrderedBy.sCustName, 
+  :frmPrintPromoOrderedBy.nNoUnits 
+WHERE 
+  Cust_Promo.Cust_No = Customer_Master.Cust_No AND 
+  Cust_Promo.Promo_Id = Promo.Promo_Id AND 
+  Cust_Promo.Year_Of_Order = :frmPrintPromoOrderedBy.nYear AND 
+  Cust_Promo.Promo_Id  IN ( " || sSelectedPromoIdList || " ) AND 
+  ( Cust_Promo.Promo_Sent_Flag = 'N' OR 
+  Cust_Promo.Promo_Sent_Flag  IS NULL ) AND 
+  ( Cust_Promo.Promo_Inv_Flag = 'N' OR 
+  Cust_Promo.Promo_Inv_Flag IS NULL ) 
+ORDER BY 2,4 "

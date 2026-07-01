@@ -1,0 +1,585 @@
+Application Description: SQLWindows version 5.01
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 00000000009E0000 002C000000020000 0003000000FFFFFF FFFFFFFFFFFCFFFF
+0040: FFE9FFFFFF6AFFFF FF000000007E0200 009F010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000007000000 0000C819DD0A0500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   -0.05"
+			Top:    0.01"
+			Width:  8.025"
+			Height: 5.042"
+		Options Box Location
+.data VIEWINFO
+0000: D4188507B80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.613"
+			Top:    3.719"
+			Width:  4.175"
+			Height: 2.156"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   7.163"
+			Top:    1.958"
+		Fully Qualified External References? Yes
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: myfunc.apl
+		File Include: intfunc.apl
+		File Include: vtspin.apl
+		File Include: vtmeter.apl
+		File Include: vtmisc.apl
+		File Include: vttblwin.apl
+		File Include: strings.apl
+		File Include: SQLHANDL.APL
+		File Include: STDWIND.APL
+		File Include: JANFLAGS.APL
+		File Include: ADDRESS.APL
+		File Include: CSTNOTLD.APL
+		File Include: tgroups.apl
+		Select From: CSTINREG.APL
+			Constants
+		File Include: ITEM.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Light Green
+			Dialog Box
+				Display Style? Standard
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Light Green
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Gray
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Dark Green
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Green
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Gray
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Dark Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Number: 0000000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+			Date/Time: dd-MMM-yyyy hh:mm:ss AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+		Resources
+		Variables
+.data RESOURCE 0 0 1 2052548219
+0000: 3C240000AA0B0000 0000000000000000 020000640100000A 020000E003040000
+0020: 00FF3F0E02820001 0D000000FFFFE81B 020001FE00FFA328 020003FB00FF8F2C
+0040: 0200EE0100FF3F39 02BA000100FFFFE8 46020003FE00FFA3 4A020001FB00FF8F
+0060: 570200EE0100FF3F 6402BA000300FFFF E868020001FE00FF A375020001FB00FF
+0080: 8F820200EE0300FF 3F8602BA000100FF FFE893020001FE00 FFA3A0020003FB00
+00A0: FF8FA40200EE0100 FF3FB102BA000100 FFFFE8BE020003FE 00FFA3C2020001FB
+00C0: 00FF8FCF0200EE01 00FF3FDC02A20002 040000FFFFE8E002 0003FE00FFA3E402
+00E0: 0001FB00FF8FF102 00EE0100FF3FFE02 BA000200FFFFD002 03000004FE00FFA3
+0100: 06030002FB00FF8F 0A0300EE0200FF3F 0E033A00020001FA 0000078001000000
+0120: FFE812030002EC00 01009F8001FC0000 A316030003FB00FF 8F1A0300EC010D00
+0140: FF3F2703BA000100 FFFFE834030003FE 00FFA338030001FB 00FF8F450300EE01
+0160: 00FF3F5203BA0003 00FFFFE856030001 FE00FFA363030001 FB00FF8F700300EE
+0180: 0300FF3F7403BA00 0100FFFFE8810300 01FE00FFA38E0300 03FB00FF8F920300
+01A0: EE0100FF3F9F03BA 000100FFFFE8AC03 0003FE00FFA3B003 0001FB00FF8FBD03
+01C0: 00EE0100FF3FCA03 BA000300FFFFE8CE 030001FE00FFA3DB 030001FB00FF8FE8
+01E0: 0300EE0300FF3FEC 03BA000100FFFFE8 F9030001FE00FFA3 06040003FB00FF8F
+0200: 0A0400EE0100FF3F 1704BA000100FFFF E824040003FE00FF A328040001FB00FF
+0220: 8F350400EE0100FF 3F4204BA000300FF FFE846040001FE00 FFA353040001FB00
+0240: FF8F600400EE0300 FF3F6404BA000100 FFFFE871040001FE 00FFA37E040003FB
+0260: 00FF8F820400EE01 00FF3F8F04BA0001 00FFFFE89C040003 FE00FFA3A0040001
+0280: FB00FF8FAD0400EE 0100FF3FBA04BA00 0300FFFFE8BE0400 01FE00FFA3CB0400
+02A0: 01FB00FF8FD80400 EE0300FF3FDC04BA 000100FFFFE8E904 0001FE00FFA3F604
+02C0: 0003FB00FF8FFA04 00EE0100FF3F0705 B800000100FFFFE8 14050003FE00FFA3
+02E0: 18050001FB00FF8F 250500EE0100FF3F 3205BA000300FFFF E836050001FE00FF
+0300: A343050001FB00FF 8F500500EE0300FF 3F5405BA000100FF FFE861050001FE00
+0320: FFA36E050003FB00 FF8F720500EE0100 FF3F7F05BA000100 FFFFE88C050003FE
+0340: 00FFA390050001FB 00FF8F9D0500EE01 00FF3FAA05BA0003 00FFFFE8AE050001
+0360: FE00FFA3BB050001 FB00FF8FC80500EE 0300FF3FCC05BA00 0100FFFFE8D90500
+0380: 01FE00FFA3E60500 03FB00FF8FEA0500 EE0100FF3FF705BA 000100FFFFE00406
+03A0: 000003FE00FFA308 060001FB00FF8F15 0600EE0100FF3F22 06BA000300FFFFE8
+03C0: 26060001FE00FFA3 33060001FB00FF8F 400600EE0300FF3F 4406BA000100FFFF
+03E0: E851060001FE00FF A35E060003FB00FF 8F620600EE0100FF 3F6F06BA000100FF
+0400: FFE87C060003FE00 FFA380060001FB00 FF8F8D0600EA0100 00FF3F9A06BA0003
+0420: 00FFFFE89E060001 FE00FFA3AB060001 FB00FF8FB80600EE 0300FF3FBC06BA00
+0440: 0100FFFFE8C90600 01FE00FFA3D60600 03FB00FF8FDA0600 EE0100FF3FE706BA
+0460: 000100FFFFE8F406 0003FE00FFA3F806 0001FB00FF0F0507 0000EE0100FF3F12
+0480: 07BA000300FFFFE8 16070001FE00FFA3 23070001FB00FF8F 300700EE0300FF3F
+04A0: 3407BA000100FFFF E841070002FE00FF A345070002FB00FF 8F490700EE0300FF
+04C0: 3F4D07BA000100FF FFE85A070001FE00 FFA367070003FB00 FF8F6B0700EE0100
+04E0: FF3F7807BA000100 FFFFE885070003FE 00FFA389070001FB 00FF8F960700EE01
+0500: 00FF3FA307BA0003 00FFFFE8A7070001 FE00FFA3B4070002 FB00FF8FB80700EE
+0520: 0200FF3FBC07BA00 0300FFFFE8C00700 01FE00FFA3CD0700 01FB00FF8FDA0700
+0540: EE0300FF3FDE07BA 000100FFFFE8EB07 0001FE00FFA3F807 0003FB00FF8FFC07
+0560: 00EE0100FF3F0908 B800000100FFFFE8 16080003FE00FFA3 1A080001FB00FF8F
+0580: 270800EE0200FF3F 2B08BA000200FFFF E82F080003FE00FF A333080001FB00FF
+05A0: 8F400800EE0100FF 3F4D08BA000300FF FFE851080001FE00 FFA35E080001FB00
+05C0: FF8F6B0800EE0300 FF3F6F08BA000100 FFFFE87C080001FE 00FFA389080003FB
+05E0: 00FF8F8D0800EA01 0000FF3F9A08BA00 0100FFFFE8A70800 03FE00FFA3AB0800
+0600: 01FB00FF8FB80800 EE0100FF3FC508BA 000300FFFFE8C908 0001FE00FFA3D608
+0620: 0001FB00FF8FE308 00EE0300FF3FE708 BA000100FFFFE8F4 080001FE00FF8301
+0640: 09000003FB00FF8F 050900EC010D00FF 3F1209BA000100FF FFE81F090003FE00
+0660: FFA323090001FB00 FF8F300900EE0100 FF3F3D09BA000300 FFFFE841090001FE
+0680: 00FFA34E090001FB 00FF8F5B0900EE03 00FF3F5F09BA0001 00FFFFE86C090001
+06A0: FE00FFA379090003 FB00FF8F7D0900EE 0100FF3F8A09BA00 0100FFFFE8970900
+06C0: 03FE00FFA39B0900 01FB00FF8FA80900 EE0100FF3FB509BA 000300FFFFE8B909
+06E0: 0001FE00FFA3C609 0001FB00FF8FD309 00EE0300FF3FD709 BA000100FFFFE8E4
+0700: 090001FE00FFA3F1 090003FB00FF8FF5 0900EE0100FF3F02 0AB800000100FFFF
+0720: E80F0A0003FE00FF A3130A0001FB00FF 8F200A00EE0100FF 3F2D0ABA000300FF
+0740: FFE8310A0001FE00 FFA33E0A0001FB00 FF8F4B0A00EE0300 FF3F4F0ABA000100
+0760: FFFFE85C0A0001FE 00FFA3690A0003FB 00FF8F6D0A00EE01 00FF3F7A0ABA0001
+0780: 00FFFFE8870A0003 FE00FFA38B0A0001 FB00FF8F980A00EE 0100FF3FA50ABA00
+07A0: 0300FFFFE8A90A00 01FE00FFA3B60A00 01FB00FF8FC30A00 EE0300FF3FC70ABA
+07C0: 000100FFFFE8D40A 0001FE00FFA3E10A 0003FB00FF8FE50A 00EE0100FF3FF20A
+07E0: BA000100FFFFE8FF 0A0003FE00FF8303 0B000001FB00FF8F 100B00EE0100FF3F
+0800: 1D0BB200030400FF FFE8210B0001FE00 FFA32E0B0001FB00 FF8F3B0B00EE0300
+0820: FF3F3F0BBA000100 FFFFE84C0B0001FE 00FFA3590B0003FB 00FF8F5D0B00EE01
+0840: 00FF3F6A0BBA0001 00FFFFE8770B0003 FE00FFA37B0B0001 FB00FF8F880B00EE
+0860: 0100FF3F950BBA00 0300FFFFE8990B00 01FE00FFA3A60B00 01FB00FF8FB30B00
+0880: EE0300FF3FB70BBA 000100FFFFE8C40B 0001FE00FFA3D10B 0003FB00FF8FD50B
+08A0: 00EE0100FF3FE20B BA000100FFFFE8EF 0B0003FE00FFA3F3 0B0001FB00FF1F0C
+08C0: 0000EE0100FF3F0D 0CA200040D0000FF FFE81A0C0003FE00 FFA31E0C0001FB00
+08E0: FF8F2B0C00EE0100 FF3F380CBA000300 FFFFE83C0C0001FE 00FFA3490C0001FB
+0900: 00FF8F560C00EE03 00FF3F5A0CBA0001 00FFFFE8670C0001 FE00FFA3740C0001
+0920: FB00FF8F810C00EE 0100FF3F8E0CBA00 0300FFFFE8920C00 01FE00FFA39F0C00
+0940: 01FB00FF8FAC0C00 EE0100FF3FB90CBA 000100FFFFE8C60C 0003FE00FFA3CA0C
+0960: 0001FB00FF8FD70C 00EE0100FF3FE40C BA000100FFFFE8F1 0C0001FE00FFA3FE
+0980: 0C0003FB00FF8F02 0D00EE0100FF3F0F 0DBA000100FFFFE8 1C0D0001FE00FFA3
+09A0: 290D0001FB00FF8F 360D00EE0300FF3F 3A0DBA000100FFFF E8470D0001FE00FF
+09C0: A3540D0001FB00FF 8F610D00EE0100FF 3F6E0DBA000300FF FFE8720D0001FE00
+09E0: FFA37F0D0001FB00 FF8F8C0D00EE0300 FF3F900DBA000100 FFFFE89D0D0001FE
+0A00: 00FFA3AA0D0003FB 00FF8FAE0D00EE01 00FF3FBB0DBA0001 00FFFFE8C80D0003
+0A20: FE00FFA3CC0D0001 FB00FF8FD90D00EE 0100FF3FE60DBA00 0300FFFFE8EA0D00
+0A40: 01FE00FFA3F70D00 01FB00FF0F040E00 00EE0300FF3F080E BA000100FFFFE815
+0A60: 0E0001FE00FFA322 0E0001FB00FF8F2F 0E00EE0100FF3F3C 0EBA000100FFFFE8
+0A80: 490E0001FE00FFA3 560E0003FB00FF8F 5A0E00EE0100FF3F 670EBA000100FFFF
+0AA0: E8740E0003FE00FF A3780E0001FB00FF 8F850E00EE0100FF 3F920EB200020400
+0AC0: FFFFE8960E0002FE 00FFA39A0E0002FB 00FF8F9E0E00EE02 00FF3FA20EBA0003
+0AE0: 00FFFFE8A60E0001 FE00FFA3B30E0001 FB00FF8FC00E00EE 0200FF3FC40EBA00
+0B00: 0200FFFFE8C80E00 02FE00FFA3CC0E00 02FB00FF8FD00E00 EE0300FF3FD40EBA
+0B20: 000100FFFFE8E10E 0001FE00FFA3EE0E 0002FB00FF8FF20E 00EE0200FF3FF60E
+0B40: BA000200FFFFE8FA 0E0002FE00FFA3FE 0E0003FB00FF0F02 0F0000EE0100FF3F
+0B60: 0F0FBA000100FFFF C81C0F000204FE00 FFA3200F0002FB00 FF8F240F00EE0200
+0B80: FF3F280FBA000200 FFFFE82C0F0003FE 00FFA3300F0001FB 00FF8F3D0F00EE01
+0BA0: 00FF3F4A0FBA0003 00FFFFE84E0F0001 FE00FFA35B0F0001 FB00FF0F
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 3672808367
+0000: 9107000029030000 0000000000000000 0200000900FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F3C003C00 00154F0075724672
+0040: 6D576E6400576974 684368696C006454 626CA0000000F006 000000E0010D0000
+0060: 00FF3F0D00B90001 00FFFF001A000000 03040000FE00FF83 1E00000001FB00FF
+0080: 0F2B000000EE0100 FF3F3800B8000003 00FFFF1001803C00 000100200000124F
+00A0: 75446CF8675769FF EC000600D9010D00 FF7F0D73000100FF FFCD1A0003FD00FF
+00C0: 371E0001F700FFDF 2BDC000100FF7F38 73000300FFFF0101 8011000000020000
+00E0: 0000145069636B00 496E746F5461626C E0655062436C6438 00000200EF03FE00
+0100: FF13040000010DFB 00FF0F01807F0000 0000030000000F4F E2755F4368385F54
+0120: 61A401C200100000 00A302040000FFFF E6040002FE00FF83 0800000002FB00FF
+0140: 0F0C000000EE0200 FFBF10B9000200FF FFC014000000010D FE00FF8321000000
+0160: 01FB00FF0F2E0000 00EE0100FF3F3B00 A00000040D0000FF FFE04800000001FE
+0180: 00FF835500000002 FB00FF0F59000000 EE0200FF3F5D00B8 00000100FFFFE06A
+01A0: 00000001FE00FF83 7700000002FB00FF 0F7B000000EE0200 FF3F018040760000
+01C0: 0004000040104E65 774F7543CE685461 BF00DE0002FD00FF 37040002F700FFDF
+01E0: 08DC000200FF7F0C 73000200FFFFCD10 0002FD00FF371400 03F60400FF1F1800
+0200: 00DC000300FF7F1C 60000000010D00FF FFC12900000001FD 00FF073600000001
+0220: F700FF1F430000DC 000100FF7F507000 00000200FFFFC154 00000001FD00FF07
+0240: 6100000001F700FF 1F6E0000DC000200 FF7F727000000002 00FFFF2101802100
+0260: 0005C00000000E4F 75806F6C756D6E43 6C93A0000006BD00 02FB00FF6F0400EE
+0280: 0200FFBF08B90002 00FFFFE60C0002FE 00FF9B100002FB00 FF6F1400EC010D00
+02A0: FF3F018066210006 0008114F75446174 61804669656C6443 6C9F0006BD0002FB
+02C0: 00FF6F0400EE0200 FFBF08B9000200FF FFE60C0002FE00FF 9B100002FB00FF6F
+02E0: 1400EC010D00FF3F 0180040400000700 00004E1154625140 75657279446C4210
+0300: 6F781E00000100BD 0003FB00FF8F0180 11190008000E6304 4F75536561736F80
+0320: 6E596561723800E8 00020000D9010D00 FF7F0D6300020400 FFFF01
+.enddata
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Check Box:
+			Option Button:
+			Child Table:
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control: cSpinField
+		Application Actions
+			On SAM_AppStartup
+				! ASSUMPTION FOR Command Line arguments
+						Argument 1 - SqlDatabase
+						Argument 2 - SqlUser
+						Argument 3 - SqlPassword
+						Argument 4 - File Name for list of selected item numbers
+						Argument 5 - Year ( number )
+						Argument 6 - Stock Type ( 'CONT' = Containers, 'BARE' = Bare root, 'BOTH' = Bare root and Containers )
+						Argument 7 - Action Type ( number ) = ( nAllRegions, nSelectionRegions )
+				!
+				If strArgArray[1] = STRING_Null
+					Set SqlDatabase = 'STOCKDEV'
+					Set SqlUser = 'GRAHAM'
+					Set SqlPassword = 'GRAHAM'
+					Set strArgArray[4] = 'c:\\temp\\regions.tmp'
+					Set strArgArray[5] = '1998'
+					Set strArgArray[6] = 'BARE'
+					Set strArgArray[7] = '66'
+				Else
+					Set SqlDatabase = strArgArray[ 1 ]
+					Set SqlUser = strArgArray[ 2 ]
+					Set SqlPassword = strArgArray[ 3 ]
+				!
+				!
+				Set bghSqlDetail = SqlConnect( hSqlDetail )
+				If bghSqlDetail
+					Call SqlSetIsolationLevel( hSqlDetail,'RL')
+					Call SqlSetLockTimeout( hSqlDetail, SQLTIMEOUT )
+			On SAM_AppExit
+				If bghSqlDetail
+					Call SqlDisconnect( hSqlDetail )
+	Form Window: frmPrintReport
+		Class: OurFormWindow
+		Property Template:
+		Class DLL Name:
+		Title: Print Cust Not On Loads
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Automatically Created at Runtime? Yes
+			Initial State: Minimized
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   2.475"
+				Top:    2.063"
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+		Contents
+			Data Field: dfDatabase
+				Class Child Ref Key: 3
+				Class ChildKey: 0
+				Class: OurFormWindow
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfCurrentDate
+				Class Child Ref Key: 4
+				Class ChildKey: 0
+				Class: OurFormWindow
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   7.513"
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			!
+			Pushbutton: pbExit
+				Class Child Ref Key: 1
+				Class ChildKey: 0
+				Class: OurFormWindow
+				Property Template:
+				Class DLL Name:
+				Title:
+				Window Location and Size
+					Left:   8.663"
+					Top:    5.313"
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+			Frame
+				Resource Id: 5303
+				Class Child Ref Key: 2
+				Class ChildKey: 0
+				Class: OurFormWindow
+				Window Location and Size
+					Left:   Class Default
+					Top:    5.24"
+					Width:  9.8"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Corners: Class Default
+				Border Style: Class Default
+				Border Thickness: Class Default
+				Border Color: Class Default
+				Background Color: Class Default
+			Pushbutton: pbItemEnq
+				Class Child Ref Key: 5
+				Class ChildKey: 0
+				Class: OurFormWindow
+				Property Template:
+				Class DLL Name:
+				Title:
+				Window Location and Size
+					Left:   1.225"
+					Top:    5.323"
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+		Functions
+		Window Parameters
+		Window Variables
+			String: saAllRegions[ * ]
+			Number: nYear
+			Number: nActionType
+			String: sStockType
+		Message Actions
+			On PAM_SETINSTANCEVARS
+				Set sDatabase = SqlDatabase
+			On SAM_CreateComplete
+				Set nYear = SalStrToNumber( strArgArray[ 5 ] )
+				Set sStockType = strArgArray[6]
+				Set nActionType = SalStrToNumber( strArgArray[ 7 ] )
+				!
+				If nActionType = nSelectionRegions
+					If NOT ReadStrArrayListFromFile( strArgArray[ 4 ], saAllRegions )
+						Call SalMessageBox( 'An error occurred! Cannot do this report now! Contact Programmers.', 'Error', MB_Ok )
+						Call SalDestroyWindow( hWndForm )
+				!
+				If NOT SalCreateWindow( frmPrintCustNotOnLoads, hWndForm, saAllRegions, nYear, sStockType, nActionType )
+					Call SalMessageBox( 'Not enough system memory to perform this task!', 'Error', MB_Ok )
+				Call SalWaitCursor( FALSE )
+			On PAM_REPORTFINISHED
+				Call SalDestroyWindow( hWndForm )

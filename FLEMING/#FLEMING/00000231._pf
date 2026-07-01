@@ -1,0 +1,1054 @@
+Application Description: SQLWindows 5.01 Jans class Stock Items at estimated available date report application
+	Outline Version - 4.0.26
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000500000 002C000000020000 0003000000000000 008B010000FCFFFF
+0040: FFE9FFFFFF000000 0000000000140300 009F010000010000 0000000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Maximized
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600010000001B00 0200000000000000 00001027F5140500 1D00FFFF4D61696E
+0020: 00
+.enddata
+.data VIEWSIZE
+0000: 2100
+.enddata
+			Left:   0.15"
+			Top:    0.042"
+			Width:  7.875"
+			Height: 4.635"
+		Options Box Location
+.data VIEWINFO
+0000: 0418B80BB80B2500
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left:   5.113"
+			Top:    2.885"
+			Width:  4.675"
+			Height: 2.969"
+		Class Editor Location
+			Visible? No
+			Left:   Default
+			Top:    Default
+			Width:  Default
+			Height: Default
+		Tool Palette Location
+			Visible? No
+			Left:   8.15"
+			Top:    0.469"
+		Fully Qualified External References? Yes
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? No
+		Use Release 4.0 Scope Rules? Yes
+	Libraries
+		File Include: GENERAL.APL
+		File Include: FORM.APL
+		File Include: BUTTON.APL
+		File Include: DATFIELD.APL
+		File Include: SPNFIELD.APL
+		File Include: BGTEXT.APL
+		File Include: RADIOBTN.APL
+		File Include: CHECKBOX.APL
+		File Include: GROUPBOX.APL
+		File Include: TABLE.APL
+		File Include: PICK.APL
+		File Include: VTSPIN.APL
+		File Include: SQLHANDL.APL
+		File Include: STRINGS.APL
+		File Include: METER.APL
+		File Include: STACKS.APL
+		File Include: VTMETER.APL
+		File Include: FLAGS.APL
+		File Include: DIALOG.APL
+		File Include: ACTIVATE.APL
+		File Include: DATES.APL
+		File Include: FRMCTBL.APL
+		File Include: CMBFIELD.APL
+		File Include: DLGCTBL.APL
+		File Include: RUNPROG.APL
+		File Include: VTWIN.APL
+		File Include: LISTBOX.APL
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: System Default
+				Font Size: System Default
+				Font Enhancement: System Default
+				Text Color: Dark Blue
+				Background Color: Sky
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: White
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: None
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Blue
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Dark Blue
+				Background Color: Sky
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: White
+			Line
+				Line Color: Black
+			Frame
+				Border Color: Use Parent
+				Background Color: Gray
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0%
+			Number: #0
+			Number: ###000
+			Number: ###000;###000
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+				! For PAM_User messages for PRTSTKATDATE.APP
+				Number: PRTSTKATDATEAppMsgOffSet = SAM_User + 8600
+				Number: PAM_GETSELECTED = PRTSTKATDATEAppMsgOffSet + 1
+				Number: PAM_GETSELECTEDDATES = PRTSTKATDATEAppMsgOffSet + 2
+				! Message go up to AppOffSet + 99
+				Number: PRTSTKATDATEAppConstOffSet = 5750
+				!
+		Resources
+		Variables
+.data RESOURCE 0 0 1 1347615921
+0000: 8600000038000000 0000000000000000 020000050000006A 000000E0010D0000
+0020: 00FF3F7700B80000 0100FFFFE0840000 0001FE00FF839100 000001FB00FF0F9E
+0040: 000000E8040D0000 FF3F
+.enddata
+		Named Menus
+		Internal Functions
+		Class Definitions
+.data RESOURCE 0 0 1 3768589640
+0000: A50B000077050000 0000000000000000 0200001700FFFF01 00160000436C6173
+0020: 73566172004F7574 6C696E6552006567 496E666F2F003C00 000B63006C73466F
+0040: 726D426100736586 00000005003C0000 010DF8000000FF4F 0D0000E002040000
+0060: 00FF3F1100A00000 040D0000FFFF801E 000000030400FE00 FF832200000001FB
+0080: 00FF0F01800D0001 000100000017633E 6C507220696E7442 616963005265706F
+00A0: 72741E00D9000100 B3010D00FFFF1801 800D000200200000 0C636C7062004765
+00C0: 6E6572616C1EA200 0001000067010D00 FFFF010180380000 0003C00000000963
+00E0: 6C8148656C708600 EC000500D9020400 FF7F04620000010D 00FFFFCD110001FD
+0100: 00FF371E0001F700 FF1F2B0000DC0001 00FF7F01CC800D00 047C000945307869
+0120: 741E00017A000001 F60D00FF1F018004 32000005000C0750 696345784070616E
+0140: 641E0000F4010000 EE0200FF3F018006 0400060000007812 636C54006F67676C
+0160: 6542757420746F6E 1E0000017A000002 F700FF1F01800403 00070000000C8764
+0180: 6647657F00F40100 00EC030400FF3F01 80060D0008000000 0811636C5370696E
+01A0: 00536561736F6E59 651061721E000001 003D00010DFB00FF 8F01800D81000900
+01C0: 00000CE36362473F 00017A000001F60D 00FF1F0180B70000 00000A00000016E4
+01E0: 636C476503546162 6C65473E653602C2 0015000000B3010D 00FFFFE60D0001FE
+0200: 00FF831A00000001 FB00FF0F27000000 EE0100FF3F3400B8 00000200FFFFE438
+0220: 000002FE00FF833C 00000002FB00FF0F 40000000EE0200FF 3F4400B800000200
+0240: FFFFE04800000002 FE00FF834C000000 02FB00FF0F500000 008E02000100FE00
+0260: C180010000003F54 00300000010D0001 FA00002780010000 FFC058000000010D
+0280: FE00FF8365000000 01FB00FF0F720000 00EE0100FF3F7F00 B800000100FFFFE0
+02A0: 8C00000001FE00FF 839900000001FB00 FF0FA6000000EE01 00FF3FB300B80000
+02C0: 0300FFFF10018022 00000B002000001D 636C5462006C4D61 6B6553656C006563
+02E0: 746564526F77004B 6579417272617960 740000000400EF02 E8000100009F8001
+0300: FC00001B0400010D FB00FF4F110000EE 0100FFBF1EB90002 00FFFF1001803400
+0320: 000C00A000001463 6C703C5365467230 6F6D5461656CB000 0000040067010D00
+0340: FFFFCD0D0001FD00 FF371A0001F700FF DF27DC000100FF7F 01CC8004000D9000
+0360: 0D636C5365046563 496E746F1EA20000 010000770300FFFF 3101800D000E0000
+0380: 00000B6863537110 6C48616E6C651EA2 000001000067010D 00FFFF2101802F00
+03A0: 000F400000001063 6C448069616C6F67 4765476C860000F6 0500EC010D00FF3F
+03C0: 0D00B9000200FFFF C61100040DFE00FF 9B1E0003FB00FF6F 2200EE0100FF3F01
+03E0: 80042B0000100000 006C1063466DC642 655461896C000004 009E00010DFD00FF
+0400: 370D0001F700FFDF 1ADC000100FF7F27 73000200FFFF2101 801E000011430013
+0420: 636C44176F436869 706C64546152A000 000003000067010D 00FFFFCD0D0001FD
+0440: 00FF371A0002F700 FF1F01802E000000 0012000000113663 7074610072745072
+0460: 6F677261C06DBA00 000007DE0002FD00 FF37040002F700FF DF08DC000200FF7F
+0480: 0C6300010D00FFFF 81190000000304FD 00FF071D00000002 F700FF1F210000DC
+04A0: 000100FF7F010080 3600000013000090 000F636C5374FFC1 EE000000099E0001
+04C0: 0DFD00FF370D0001 F700FFDF1ADC0002 00FF7F1E73000200 FFFFCD220002FD00
+04E0: FF072600000002F7 00FF1F2A0000DC00 0200FF7F2E720000 0200FFFFC1320000
+0500: 0002FD00FFC70180 04C0001400000010 01546F6F6C546970 0057696E646F771E
+0520: 00D100010000BB03 00FFFF9801800400 1581000C63665461 0343616368651EA3
+0540: 00010000770300FF FF21018015000016 000000000B636643 6147506F6F5AA000
+0560: 0000030000470719 000040010100C008 00004F800100FE00 8D04000304FD00FF
+0580: 37080001F60D00FF 1F
+.enddata
+			! Child Table Class: clsTableGenWithSelCol
+.winattr
+				Display Settings
+					Window Location and Size
+						Left:  
+						Top:   
+						Width:  1.2"
+						Width Editable? Yes
+						Height: 0.833"
+						Height Editable? Yes
+					Visible? Yes
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Dark Blue
+					Background Color: Default
+					View: Table
+					Allow Row Sizing? No
+					Lines Per Row: Default
+				Memory Settings
+					Maximum Rows in Memory: Default
+					Discardable? Yes
+				Next Class Child Key: 1
+				List in Tool Palette? Yes
+				Property Template:
+				Class DLL Name:
+.end
+				  Description: 
+				  Derived From 
+					  Class: clsTableGeneral
+				  Contents 
+					  Column: colSelected
+						  List Values 
+						  Message Actions 
+							  On SAM_Validate
+								  If MyValue = 'Y'
+									  Call SalTblSetRowFlags( hWndForm, lParam, nSelectedRowFlag, TRUE )
+								  Else 
+									  Call SalTblSetRowFlags( hWndForm, lParam, nSelectedRowFlag, FALSE )
+								  Return VALIDATE_Ok
+							  On PAM_clsTBL_ROWACTION
+								  If wParam
+									  Set MyValue = 'Y'
+									  Call SalTblSetRowFlags( hWndForm, lParam, nSelectedRowFlag, TRUE )
+								  Else 
+									  Set MyValue = 'N'
+									  Call SalTblSetRowFlags( hWndForm, lParam, nSelectedRowFlag, FALSE )
+								  Call SalSetFieldEdit( hWndItem, TRUE )
+								  Return TRUE
+				  Class Variables 
+				  Instance Variables 
+					  Number: nSelectedRowFlag
+					  Boolean: bHideMarks
+				  Functions 
+					  Function: SetSelectedForTable
+						  Description: 
+						  Returns 
+							  Boolean: 
+						  Parameters 
+							  Number: nFlagsOn
+							  Number: nFlagsOff
+							  Boolean: bSelected
+						  Static Variables 
+						  Local variables 
+						  Actions 
+							  Return TableLoop( hWndForm, colSelected, PAM_clsTBL_ROWACTION, bSelected, nFlagsOn, nFlagsOff, 'Setting Selected', TBL_cls_LowToHi )
+				  Message Actions 
+					  On SAM_Create
+						  Set nSelectedRowFlag = ROW_UnusedFlag1
+						  Set bHideMarks = TRUE
+						  Return SalSendClassMessage( SAM_Create, wParam, lParam )
+					  On SAM_FetchRowDone
+						  Call SalTblSetRowFlags( hWndForm, lParam, ROW_HideMarks, bHideMarks )
+						  Return SalSendClassMessage( SAM_FetchRowDone, wParam, lParam )
+			!
+		Default Classes
+			MDI Window:
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton: clspbGeneral
+			Radio Button:
+			Check Box: clscbGeneral
+			Option Button:
+			Child Table: clsTableGeneral
+			Quest Child Window:
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text: clsBackTextGeneral
+			Group Box: clsgbGeneral
+			Line:
+			Frame:
+			Custom Control:
+		Application Actions
+			On SAM_AppStartup
+				If strArgArray[0] = ''
+					Set SqlDatabase = 'STKLOCAL'
+					Set SqlUser = 'JAN'
+					Set SqlPassword = 'JAN'
+				Else
+					Set SqlDatabase = strArgArray[1]
+					Set SqlUser = strArgArray[2]
+					Set SqlPassword = strArgArray[3]
+				!
+				Call CheckProgramExistance( 'Print Stock Items available at date', TRUE )
+				!
+				Call SqlHandlesSetup(  )
+			On SAM_AppExit
+				Call SqlHandlesDisconnectClose(  )
+	Form Window: frmStockAtDate
+		Class: clsFormGeneral
+		Property Template:
+		Class DLL Name:
+		Title: Print Stock Items available at date
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? No
+			Automatically Created at Runtime? Yes
+			Initial State: Class Default
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   0.0"
+				Top:    0.0"
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+				Pushbutton: pbReport
+					Class Child Ref Key: 0
+					Class ChildKey: 0
+					Class: clspbGeneral
+					Property Template:
+					Class DLL Name:
+					Title: Report
+					Window Location and Size
+						Left:   4.45"
+						Top:    0.0"
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name: C:\CENTURA\ICONS\LETTERS.BMP
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+						On PAM_clsPB_CLICK
+							If SalSendMsg( tblFutureIncEstAvailDates, PAM_GETSELECTEDDATES, 0, 0 )
+								Call PopString( sSelectedDateList, TRUE )
+							Else
+								Call SalMessageBox( 'Please enter some dates first.', 'Warning', MB_Ok )
+								Return FALSE
+							!
+							If rbView
+								Set sReportType = 'VIEW'
+							Else
+								Set sReportType = 'PRINT'
+							!
+							If hWndReport = hWndNULL
+								Set hWndReport = SalCreateWindow( frmPrintStockAtDate, hWndForm, sSelectedDateList, sReportType )
+								Return TRUE
+							Else
+								Call SalMessageBox( 'Please close down your first report!', 'Warning', MB_Ok )
+								Return FALSE
+				Pushbutton: pbHelp
+					Class Child Ref Key: 1
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbItemEnq
+					Class Child Ref Key: 5
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbExit
+					Class Child Ref Key: 2
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+				Pushbutton: pbPrintForm
+					Class Child Ref Key: 6
+					Class ChildKey: 0
+					Class: clsFormGeneral
+					Property Template:
+					Class DLL Name:
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Keyboard Accelerator: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Picture File Name:
+					Picture Transparent Color: Class Default
+					Image Style: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Message Actions
+		Contents
+			Pushbutton: pbAddFutureDate
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbTblAddRows
+				Property Template:
+				Class DLL Name:
+				Title:
+				Window Location and Size
+					Left:   5.513"
+					Top:    0.281"
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbAddFutureDate.hWndTable = tblFutureIncEstAvailDates
+			Pushbutton: pbClearFutureDate
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clspbTblClearRows
+				Property Template:
+				Class DLL Name:
+				Title:
+				Window Location and Size
+					Left:   4.913"
+					Top:    0.281"
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Keyboard Accelerator: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Picture File Name:
+				Picture Transparent Color: Class Default
+				Image Style: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set pbClearFutureDate.hWndTable = tblFutureIncEstAvailDates
+			Child Table: tblFutureIncEstAvailDates
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsTableGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left:   4.913"
+						Top:    0.865"
+						Width:  1.813"
+						Width Editable? Class Default
+						Height: 0.938"
+						Height Editable? Class Default
+					Visible? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					View: Class Default
+					Allow Row Sizing? Class Default
+					Lines Per Row: Class Default
+				Memory Settings
+					Maximum Rows in Memory: Class Default
+					Discardable? Class Default
+				Contents
+					Column: colEstAvailDate
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class: clsColumnGeneral
+						Property Template:
+						Class DLL Name:
+						Title: Est.Avail.Date
+						Visible? Class Default
+						Editable? Class Default
+						Maximum Data Length: Class Default
+						Data Type: Date/Time
+						Justify: Class Default
+						Width:  1.3"
+						Width Editable? Class Default
+						Format: dd-MMM-yyyy
+						Country: Class Default
+						Input Mask: Class Default
+						Cell Options
+							Cell Type? Class Default
+							Multiline Cell? Class Default
+							Cell DropDownList
+								Sorted? Class Default
+								Vertical Scroll? Class Default
+								Auto Drop Down? Class Default
+								Allow Text Editing? Class Default
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Class Default
+						List Values
+						Message Actions
+				Functions
+				Window Variables
+					String: sDateList
+				Message Actions
+					On PAM_cls_SETINSTANCEVARS
+						Set tblFutureIncEstAvailDates.bAddAllowed = TRUE
+						Set tblFutureIncEstAvailDates.bSaveAllowed = FALSE
+						Set tblFutureIncEstAvailDates.bDeleteAllowed = FALSE
+						Set tblFutureIncEstAvailDates.bUnDeleteAllowed = FALSE
+						Set tblFutureIncEstAvailDates.bRepopulateAllowed = FALSE
+						Set tblFutureIncEstAvailDates.bClearSelectAllowed = TRUE
+						Set tblFutureIncEstAvailDates.bQueryAllowed = FALSE
+						Set tblFutureIncEstAvailDates.bReportAllowed = FALSE
+						Set tblFutureIncEstAvailDates.bOrderAllowed = FALSE
+						Set tblFutureIncEstAvailDates.bSelectingColumnsAllowed = FALSE
+						Set tblFutureIncEstAvailDates.bMakeCSVFileAllowed = FALSE
+						Set tblFutureIncEstAvailDates.bZoomTableAllowed = FALSE
+					On PAM_GETSELECTEDDATES
+						Set sDateList = ''
+						If TableLoop( hWndForm, hWndForm, PAM_GETSELECTED, 0, 0, 0, 'Extracting Selected Items', TBL_cls_LowToHi )
+							Call PushString( sDateList )
+							Return TRUE
+						Else
+							Return FALSE
+					On PAM_GETSELECTED
+						If sDateList = ''
+							Set sDateList = DateToStrX( colEstAvailDate )
+						Else
+							Set sDateList = sDateList || ', ' || DateToStrX( colEstAvailDate )
+						Return TRUE
+			!
+			Group Box: Report Types
+				Resource Id: 9338
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsgbGeneral
+				Window Location and Size
+					Left:   2.213"
+					Top:    0.365"
+					Width:  2.038"
+					Width Editable? Class Default
+					Height: 1.146"
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Radio Button: rbView
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: View then Print
+				Window Location and Size
+					Left:   2.413"
+					Top:    0.74"
+					Width:  1.538"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+			Radio Button: rbPrint
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class: clsrbGeneral
+				Property Template:
+				Class DLL Name:
+				Title: Print Only
+				Window Location and Size
+					Left:   2.413"
+					Top:    0.99"
+					Width:  1.138"
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+				Message Actions
+			!
+			!
+			Data Field: dfDatabase
+				Class Child Ref Key: 3
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Data Field: dfUser
+				Class Child Ref Key: 4
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Class Default
+					Data Type: Class Default
+					Editable? Class Default
+				Display Settings
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Justify: Class Default
+					Format: Class Default
+					Country: Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					Input Mask: Class Default
+				Message Actions
+			Background Text:
+				Resource Id: 15618
+				Class Child Ref Key: 8
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Window Location and Size
+					Left:   Class Default
+					Top:    Class Default
+					Width:  Class Default
+					Width Editable? Class Default
+					Height: Class Default
+					Height Editable? Class Default
+				Visible? Class Default
+				Justify: Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Custom Control: ccSeasonYear
+				Class Child Ref Key: 7
+				Class ChildKey: 0
+				Class: clsFormGeneral
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					DLL Name:
+					MS Windows Class Name:
+					Style:  Class Default
+					ExStyle:  Class Default
+					Title:
+					Window Location and Size
+						Left:   Class Default
+						Top:    Class Default
+						Width:  Class Default
+						Width Editable? Class Default
+						Height: Class Default
+						Height Editable? Class Default
+					Visible? Class Default
+					Border? Class Default
+					Etched Border? Class Default
+					Hollow? Class Default
+					Vertical Scroll? Class Default
+					Horizontal Scroll? Class Default
+					Tab Stop? Class Default
+					Tile To Parent? Class Default
+					Font Name: Class Default
+					Font Size: Class Default
+					Font Enhancement: Class Default
+					Text Color: Class Default
+					Background Color: Class Default
+					DLL Settings
+				Message Actions
+		Functions
+		Window Parameters
+		Window Variables
+			String: sSelectedDateList
+			String: sReportType
+			Window Handle: hWndReport
+		Message Actions
+			On SAM_Create
+				Set rbPrint = FALSE
+				Set hWndReport = hWndNULL
+				Return SalSendClassMessage( SAM_Create, wParam, lParam )
+			On PAM_clsFRM_REPORTCLOSED
+				Set hWndReport = hWndNULL
+				Return TRUE
+	Form Window: frmPrintStockAtDate
+		Class: clsFormPrintBasicReport
+		Property Template:
+		Class DLL Name:
+		Title:
+		Icon File:
+		Accesories Enabled? Class Default
+		Visible? Class Default
+		Display Settings
+			Display Style? Class Default
+			Visible at Design time? Yes
+			Automatically Created at Runtime? Class Default
+			Initial State: Class Default
+			Maximizable? Class Default
+			Minimizable? Class Default
+			System Menu? Class Default
+			Resizable? Class Default
+			Window Location and Size
+				Left:   Default
+				Top:    Default
+				Width:  Class Default
+				Width Editable? Class Default
+				Height: Class Default
+				Height Editable? Class Default
+			Form Size
+				Width:  Class Default
+				Height: Class Default
+				Number of Pages: Class Default
+			Font Name: Class Default
+			Font Size: Class Default
+			Font Enhancement: Class Default
+			Text Color: Class Default
+			Background Color: Class Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Class Default
+				Location? Class Default
+				Visible? Class Default
+				Size: Class Default
+				Size Editable? Class Default
+				Font Name: Class Default
+				Font Size: Class Default
+				Font Enhancement: Class Default
+				Text Color: Class Default
+				Background Color: Class Default
+			Contents
+		Contents
+		Functions
+		Window Parameters
+			! sSelectedDateList is a comma separated list of dates
+			String: sSelectedDateList
+			! sReportPrintOrView = 'VIEW' OR 'PRINT'
+			String: sReportPrintOrView
+		Window Variables
+			! REPORT FIELDS
+			Number: nItemNo
+			String: sUpperVarietyType
+			String: sUpperVariety
+			String: sUpperCultDesc
+			String: sUpperRootDesc
+			String: sUpperTreeTypeDesc
+			String: sTreeTypeDesc
+			String: sCultDesc
+			String: sRootDesc
+			String: sFarmName
+			Number: nRowNo
+			Number: nSeqNo
+			Number: nSecondCount
+			Date/Time: dtEstSaleDate
+		Message Actions
+			On PAM_cls_SETINSTANCEVARS
+				Set sReportFileNameNoPath = 'prtstkatdate.qrp'
+				!
+				Set sReportBind = ':frmPrintStockAtDate.nItemNo,
+						:frmPrintStockAtDate.sUpperVarietyType,
+						:frmPrintStockAtDate.sUpperVariety,
+						:frmPrintStockAtDate.sUpperCultDesc,
+						:frmPrintStockAtDate.sUpperRootDesc,
+						:frmPrintStockAtDate.sUpperTreeTypeDesc,
+						:frmPrintStockAtDate.sTreeTypeDesc,
+						:frmPrintStockAtDate.sCultDesc,
+						:frmPrintStockAtDate.sRootDesc,
+						:frmPrintStockAtDate.sFarmName, 
+						:frmPrintStockAtDate.nRowNo, 
+						:frmPrintStockAtDate.nSeqNo, 
+						:frmPrintStockAtDate.nSecondCount,
+						:frmPrintStockAtDate.dtEstSaleDate'
+				Set sReportInto = 'nItemNo,
+						sUpperVarietyType,
+						sUpperVariety,
+						sUpperCultDesc,
+						sUpperRootDesc,
+						sUpperTreeTypeDesc,
+						sTreeTypeDesc,
+						sCultDesc,
+						sRootDesc,
+						sFarmName, 
+						nRowNo, 
+						nSeqNo, 
+						nSecondCount,
+						dtEstSaleDate'
+				Set sReportSql = " select 
+						  stock_item.item_no, 
+						  @UPPER( stock_item.variety_type ), 
+						  @UPPER( stock_item.variety ), 
+						  @UPPER( stock_item.cult_desc ), 
+						  @UPPER( stock_item.root_desc ), 
+						  @UPPER( stock_item.tree_type_desc ), 
+						  stock_item.tree_type_desc, 
+						  stock_item.cult_desc, 
+						  stock_item.root_desc, 
+						  location.farm_name, 
+						  location.row#, 
+						  location.seq#, 
+						  growing_sale.second_count, 
+						  growing_sale.est_sale_date
+						from 
+						  stock_item, 
+						  growing_sale, 
+						  location 
+						into 
+						  :frmPrintStockAtDate.nItemNo,
+						  :frmPrintStockAtDate.sUpperVarietyType,
+						  :frmPrintStockAtDate.sUpperVariety,
+						  :frmPrintStockAtDate.sUpperCultDesc,
+						  :frmPrintStockAtDate.sUpperRootDesc,
+						  :frmPrintStockAtDate.sUpperTreeTypeDesc, 
+						  :frmPrintStockAtDate.sTreeTypeDesc,
+						  :frmPrintStockAtDate.sCultDesc,
+						  :frmPrintStockAtDate.sRootDesc,
+						  :frmPrintStockAtDate.sFarmName, 
+						  :frmPrintStockAtDate.nRowNo, 
+						  :frmPrintStockAtDate.nSeqNo, 
+						  :frmPrintStockAtDate.nSecondCount,
+						  :frmPrintStockAtDate.dtEstSaleDate
+						where 
+						  stock_item.item_no = growing_sale.stock_item_no and 
+						  growing_sale.location_id = location.location_id and 
+						  growing_sale.est_sale_date in ( " || sSelectedDateList || " ) 
+						order by 
+						  10,11,12,2,3,4,5,6 "
+				Set sReportType = sReportPrintOrView
